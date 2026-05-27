@@ -25,7 +25,7 @@ export default function DiscoverPage() {
       <PromotedMomentumRail />
 
       <section className="terminalStatus compactStats">
-        <div className="statusIdentity"><strong>AppScreener</strong><span>LIVE</span></div>
+        <div className="statusIdentity"><strong>Ecosystem</strong><span>LIVE</span></div>
         <Metric label="Tools tracked" value={liveMetrics.toolsTracked.toLocaleString()} />
         <Metric label="Mentions 24h" value={`${(liveMetrics.mentions24h / 1000).toFixed(1)}k`} />
         <Metric label="Breaking out" value={liveMetrics.breakingOut.toString()} />

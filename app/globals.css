@@ -1103,7 +1103,7 @@ body {
 .attentionHeatmapComponent .attentionNode {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem;
   width: 100%;
   min-width: 0;
@@ -1133,7 +1133,7 @@ body {
 }
 
 .attentionHeatmapComponent .attentionNode span {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   min-width: 0;
   overflow: hidden;
   text-overflow: clip;
@@ -2304,6 +2304,26 @@ a:hover .toolLogo {
 @media (max-width: 1320px) {
   .homeTertiary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1280px) {
+  .topbar .searchBox {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .topbar .commandTrigger span {
+    min-width: 0;
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .topbar .commandTrigger kbd {
+    flex: 0 0 auto;
+    margin-left: auto;
   }
 }
 

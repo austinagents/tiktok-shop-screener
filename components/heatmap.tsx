@@ -98,7 +98,6 @@ export function AttentionHeatmap({ items }: { items: AttentionSubCategory[] }) {
             <button className={`attentionNode heatmap-tag-button ${tag.size}`} key={tag.label} type="button">
               <tag.icon size={tag.iconSize ?? 14} />
               <span>{tag.label}</span>
-              {tag.badge ? <em>{tag.badge}</em> : null}
             </button>
           ))}
         </div>
@@ -128,7 +127,6 @@ export function AttentionHeatmap({ items }: { items: AttentionSubCategory[] }) {
                   <button className={`attentionNode heatmap-tag-button ${tag.size}`} key={tag.label} type="button">
                     <tag.icon size={tag.iconSize ?? 14} />
                     <span>{tag.label}</span>
-                    {tag.badge ? <em>{tag.badge}</em> : null}
                   </button>
                 ))}
               </div>
@@ -183,7 +181,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   },
   {
     id: "growth",
-    title: "Growth & Outreach",
+    title: "Growth & Sales",
     color: "#f2aa3d",
     icon: Megaphone,
     top: 70,
