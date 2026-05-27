@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { TimeframeToggle } from "@/components/timeframe-toggle";
 import { ToolTable } from "@/components/tool-table";
 import { displayCategory } from "@/lib/format";
 import type { Tool } from "@/lib/types";
@@ -45,7 +44,6 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
               <h1>Trending Tools</h1>
               <p>The live screener for AI product attention.</p>
             </div>
-            <TimeframeToggle compact options={["24H", "7D", "30D"]} />
           </div>
           <ToolTable tools={filteredTools} focused />
         </div>
