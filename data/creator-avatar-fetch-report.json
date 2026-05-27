@@ -1,0 +1,137 @@
+{
+  "attemptedAt": "2026-05-24T10:19:23.071Z",
+  "source": "x_profile_image_url",
+  "attemptedHandles": 100,
+  "updated": 0,
+  "missing": 0,
+  "failedBatches": [
+    {
+      "handles": [
+        "karpathy",
+        "simonw",
+        "hamelhusain",
+        "swyx",
+        "chipro",
+        "jeremyphoward",
+        "rasbt",
+        "thom_wolf",
+        "jerryjliu0",
+        "hwchase17",
+        "rlancemartin",
+        "lilianweng",
+        "natolambert",
+        "drjimfan",
+        "fchollet",
+        "andrewyng",
+        "officiallogank",
+        "borismpower",
+        "alexalbert__",
+        "sh_reya"
+      ],
+      "reason": "fetch failed"
+    },
+    {
+      "handles": [
+        "eugeneyan",
+        "jxnlco",
+        "danshipper",
+        "skirano",
+        "goodside",
+        "osanseviero",
+        "_akhaliq",
+        "tim_dettmers",
+        "soumithchintala",
+        "gregkamradt",
+        "yoheinakajima",
+        "mreflow",
+        "bentossell",
+        "rowancheung",
+        "liorsinai",
+        "alliekmiller",
+        "rubenhssd",
+        "thatroblennon",
+        "nickfloats",
+        "minchoi"
+      ],
+      "reason": "fetch failed"
+    },
+    {
+      "handles": [
+        "theomediaai",
+        "linusekenstam",
+        "juliangoldieseo",
+        "wesrothmoney",
+        "mattshumer_",
+        "dharmesh",
+        "emollick",
+        "amasad",
+        "rauchg",
+        "t3dotgg",
+        "leeerob",
+        "steipete",
+        "mitsuhiko",
+        "jeffdean",
+        "demishassabis",
+        "noamshazeer",
+        "aidangomez",
+        "clementdelangue",
+        "julsimon",
+        "_philschmid"
+      ],
+      "reason": "fetch failed"
+    },
+    {
+      "handles": [
+        "lewistunstall",
+        "risingsayak",
+        "mervenoyann",
+        "abidlabs",
+        "freddyaboulton",
+        "tri_dao",
+        "awnihannun",
+        "percyliang",
+        "chelseabfinn",
+        "pabbeel",
+        "svlevine",
+        "animaanandkumar",
+        "giffmana",
+        "rosstaylor90",
+        "lucidrains",
+        "_rockt",
+        "janleike",
+        "amandaaskell",
+        "leopoldasch",
+        "hardmaru"
+      ],
+      "reason": "fetch failed"
+    },
+    {
+      "handles": [
+        "aravsrinivas",
+        "davidsholz",
+        "emostaque",
+        "c_valenzuelab",
+        "demi_guo",
+        "_mohansolo",
+        "patrickc",
+        "natfriedman",
+        "danielgross",
+        "suhail",
+        "clairevo",
+        "jasonzhou1993",
+        "moritzkremb",
+        "colemedin",
+        "daveebbelaar",
+        "liamottley",
+        "nicksaraev",
+        "sander_schulhoff",
+        "thesephist",
+        "mckaywrigley"
+      ],
+      "reason": "fetch failed"
+    }
+  ],
+  "notes": [
+    "No avatars were updated. X profile metadata was unavailable or blocked from this environment."
+  ]
+}

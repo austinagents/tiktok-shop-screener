@@ -1,0 +1,32 @@
+{
+  "name": "appscreener",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_DIST_DIR=.next-dev next dev",
+    "start": "NEXT_DIST_DIR=.next-dev next dev",
+    "build": "NEXT_DIST_DIR=.next-prod next build",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "import:taaft": "node scripts/import-taaft.mjs",
+    "import:creators": "node scripts/import-favikon-creators.mjs",
+    "creators:avatars": "node scripts/fetch-creator-avatars.mjs",
+    "logos:fetch": "node scripts/fetch-logos.mjs",
+    "logos:validate": "node scripts/validate-logos.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.9",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.18",
+    "typescript": "^5.6.3"
+  }
+}
