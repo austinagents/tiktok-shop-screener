@@ -306,6 +306,310 @@ p { color: var(--muted); line-height: 1.5; }
 .screenshotGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
 .screenshotGrid img { width: 100%; border: 1px solid var(--line); background: var(--panel); }
 
+.toolProfilePage {
+  gap: 14px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.toolProfileNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toolProfileNav > a {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.toolProfileNav > a:hover {
+  color: var(--text-primary);
+}
+
+.toolProfileActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toolProfileTop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.toolProfileHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 252px;
+  padding: 20px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028), transparent),
+    var(--bg-elevated);
+  box-shadow: var(--inner-highlight);
+}
+
+.toolProfileIdentity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.toolProfileIdentity > img {
+  width: 112px;
+  height: 112px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: #06090c;
+}
+
+.toolProfileIdentity h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 2px 0 4px;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.toolProfileIdentity h1 span {
+  padding: 3px 7px;
+  border: 1px solid rgba(137, 220, 211, 0.24);
+  border-radius: 999px;
+  color: var(--accent-primary);
+  background: rgba(137, 220, 211, 0.06);
+  font-size: 10px;
+  font-weight: 760;
+  text-transform: uppercase;
+}
+
+.toolProfileIdentity p {
+  max-width: 560px;
+  margin: 0 0 10px;
+  color: var(--text-muted);
+}
+
+.toolProfileLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 14px;
+  align-items: start;
+}
+
+.toolProfileMain,
+.toolProfileRail {
+  display: grid;
+  gap: 14px;
+}
+
+.toolTrendingCard {
+  align-content: start;
+  min-height: 252px;
+}
+
+.toolTrendingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 8px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.toolTrendingGrid span {
+  min-height: 76px;
+  padding: 13px;
+  border-right: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+  background: rgba(7, 13, 17, 0.44);
+}
+
+.toolTrendingGrid span:nth-child(2n) {
+  border-right: 0;
+}
+
+.toolTrendingGrid span:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.toolTrendingGrid small,
+.toolReasonGrid small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 11px;
+}
+
+.toolTrendingGrid strong {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-primary);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.toolTrendingGrid .movementBadge {
+  font-size: 20px;
+}
+
+.toolTrendNote {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 12px 0 0;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.toolTrendNote span {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--green);
+}
+
+.toolReasonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.toolReasonGrid span {
+  display: grid;
+  gap: 6px;
+  min-height: 88px;
+  padding: 10px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  background: rgba(7, 13, 17, 0.52);
+}
+
+.toolReasonGrid strong {
+  color: var(--text-primary);
+  font-size: 12px;
+}
+
+.toolAboutList {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.toolFactsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.toolFactsGrid span,
+.toolInfoRow {
+  padding: 9px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  background: rgba(7, 13, 17, 0.62);
+}
+
+.toolFactsGrid small,
+.toolInfoRow small {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.toolFactsGrid strong,
+.toolInfoRow strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.toolFactsGrid a,
+.toolInfoRow a {
+  color: var(--accent-primary);
+}
+
+.toolCreatorGrid,
+.toolWorkflowGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.toolCreatorCard,
+.toolWorkflowCard {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-sm);
+  background: rgba(7, 13, 17, 0.58);
+}
+
+.toolCreatorCard {
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+}
+
+.toolCreatorCard em,
+.toolCreatorCard > small {
+  grid-column: 1 / -1;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-style: normal;
+}
+
+.toolCreatorCard strong,
+.toolWorkflowCard strong {
+  color: var(--text-primary);
+}
+
+.toolCreatorCard small,
+.toolWorkflowCard small {
+  color: var(--text-muted);
+}
+
+.toolWorkflowCard .movementBadge {
+  justify-self: start;
+}
+
+.workflowCreatorMeta {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.workflowCreatorStrip {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+}
+
+.workflowCreatorStrip img,
+.workflowCreatorStrip span {
+  margin-right: -5px;
+  border: 1px solid var(--line-soft);
+}
+
+.toolMentionRow small {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.toolProfileRail .sidePanel {
+  padding: 14px;
+}
+
 .pickerGrid { display: flex; flex-wrap: wrap; gap: 8px; }
 .compareChart { display: flex; align-items: flex-end; gap: 14px; height: 300px; padding: 18px; border: 1px solid var(--line); background: var(--panel); }
 .compareColumn { display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 6px; align-items: flex-end; width: 160px; height: 100%; }
@@ -2078,20 +2382,34 @@ body {
 .boostMarketplaceCard button {
   min-height: 30px;
   padding: 0 9px;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(137, 220, 211, 0.24);
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.018);
-  color: var(--text-secondary);
+  background: rgba(137, 220, 211, 0.045);
+  box-shadow: inset 0 0 18px rgba(137, 220, 211, 0.026);
+  color: var(--text-primary);
   cursor: pointer;
   font-size: 10px;
   font-weight: 760;
   text-transform: uppercase;
 }
 
+.boostMarketplaceCard:nth-child(2) button {
+  border-color: rgba(56, 189, 248, 0.24);
+  background: rgba(56, 189, 248, 0.044);
+  box-shadow: inset 0 0 18px rgba(56, 189, 248, 0.024);
+}
+
 .boostMarketplaceCard button:hover {
-  border-color: var(--border-active);
+  border-color: rgba(137, 220, 211, 0.38);
   color: var(--text-primary);
-  background: rgba(172, 217, 133, 0.055);
+  background: rgba(137, 220, 211, 0.072);
+  box-shadow: inset 0 0 18px rgba(137, 220, 211, 0.04), 0 0 18px rgba(137, 220, 211, 0.035);
+}
+
+.boostMarketplaceCard:nth-child(2) button:hover {
+  border-color: rgba(56, 189, 248, 0.38);
+  background: rgba(56, 189, 248, 0.07);
+  box-shadow: inset 0 0 18px rgba(56, 189, 248, 0.04), 0 0 18px rgba(56, 189, 248, 0.034);
 }
 
 .boostHeader {
@@ -2332,6 +2650,15 @@ a:hover .toolLogo {
     grid-template-columns: 1fr;
   }
 
+  .toolProfileTop,
+  .toolProfileLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .toolProfileRail {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .promotedRail,
   .homePrimary,
   .homeRail,
@@ -2419,6 +2746,33 @@ a:hover .toolLogo {
   .homeTertiary,
   .launchRail,
   .boostTierGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolProfileHero {
+    min-height: 0;
+    padding: 14px;
+  }
+
+  .toolProfileIdentity {
+    align-items: flex-start;
+  }
+
+  .toolProfileIdentity > img {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+  }
+
+  .toolProfileIdentity h1 {
+    font-size: 24px;
+    flex-wrap: wrap;
+  }
+
+  .toolProfileRail,
+  .toolReasonGrid,
+  .toolCreatorGrid,
+  .toolWorkflowGrid {
     grid-template-columns: 1fr;
   }
 
