@@ -172,6 +172,39 @@ export type Workflow = {
   featured?: boolean;
 };
 
+export type MicroWorkflow = {
+  id: string;
+  name: string;
+  slug: string;
+  description: string;
+  outcome: string;
+  status: RelationshipStatus;
+  confidence: number;
+  sourceType: RelationshipSourceType;
+};
+
+export type WorkflowMicroWorkflowRelationship = {
+  id: string;
+  workflowSlug: string;
+  microWorkflowSlug: string;
+  position?: number;
+  required?: boolean;
+  confidence: number;
+  status: RelationshipStatus;
+  sourceType: RelationshipSourceType;
+};
+
+export type MicroWorkflowToolRelationship = {
+  id: string;
+  microWorkflowSlug: string;
+  toolSlug: string;
+  position?: number;
+  required?: boolean;
+  confidence: number;
+  status: RelationshipStatus;
+  sourceType: RelationshipSourceType;
+};
+
 export type MovementEvent = {
   id: string;
   toolSlug?: string;
@@ -204,6 +237,7 @@ export type CreatorToolRelationship = {
   creatorId: string;
   toolSlug: string;
   relationshipType: "uses" | "teaches" | "mentions" | "recommends" | "builds_with" | "switched_to" | "abandoned";
+  validationLayer?: "observed" | "verified" | "creator_claimed";
   confidence: number;
   status: RelationshipStatus;
   sourceType: RelationshipSourceType;

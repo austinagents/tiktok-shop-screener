@@ -18,7 +18,7 @@ export default function WorkflowsPage() {
       </section>
       <div className="tableWrap">
         <table className="terminalTable">
-          <thead><tr><th>Stack</th><th>Outcome</th><th>Tools</th><th>Momentum</th><th>Saves</th><th>Stack Size</th><th>Growth</th><th>Sparkline</th><th></th></tr></thead>
+          <thead><tr><th>Stack</th><th>Outcome</th><th>Tools</th><th>Momentum</th><th>Saves</th><th>Stack Size</th><th>Growth</th><th>Sparkline</th><th>Detail</th><th></th></tr></thead>
           <tbody>
             {workflows.map((workflow) => (
               <tr key={workflow.id}>
@@ -30,6 +30,7 @@ export default function WorkflowsPage() {
                 <td>{workflow.toolSlugs.length}</td>
                 <td><MovementBadge value={workflow.growth24h} /></td>
                 <td><Sparkline data={workflow.sparkline} /></td>
+                <td><Link href={`/workflows/${workflow.slug}`} className="viewLink">View workflow</Link></td>
                 <td><SaveButton kind="workflows" id={workflow.slug} label="Save" /></td>
               </tr>
             ))}

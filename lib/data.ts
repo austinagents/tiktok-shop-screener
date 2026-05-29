@@ -6,7 +6,7 @@ import { logoAssets } from "./logo-assets";
 import { normalizeAudienceTags, normalizeCreatorSpecializations, normalizeCreatorTypes, normalizeInfluenceTags, normalizePlatformFocus, primarySpecializationFrom } from "./creator-tags";
 import { calculateListingScore, listingChecksForSeed, listingStatusFromChecks, trustedSourceUrls, trustedSourcesForSeed } from "./listing-policy";
 import { breakingOutScoreFor, estimateUsers, organicRankingLabel, organicTrendingScoreFor, rankingModeSort, sizeClassForUsers } from "./ranking";
-import type { AttentionFeedItem, AttentionSubCategory, BoostTier, Category, CategoryName, CreatorProfile, CreatorSignal, CreatorToolRelationship, CreatorWorkflowRelationship, DiscoveryEdge, FeatureFlag, LogoSource, MovementEvent, Platform, PricingType, PromotionPlacement, Tool, Workflow, WorkflowToolRelationship } from "./types";
+import type { AttentionFeedItem, AttentionSubCategory, BoostTier, Category, CategoryName, CreatorProfile, CreatorSignal, CreatorToolRelationship, CreatorWorkflowRelationship, DiscoveryEdge, FeatureFlag, LogoSource, MicroWorkflow, MicroWorkflowToolRelationship, MovementEvent, Platform, PricingType, PromotionPlacement, Tool, Workflow, WorkflowMicroWorkflowRelationship, WorkflowToolRelationship } from "./types";
 
 const categoryNames: CategoryName[] = [
   "AI Video",
@@ -582,7 +582,17 @@ const workflowSeeds: Array<[string, string, string[], number, number, number, nu
   ["Research Assistant Stack", "Collect sources, compare claims, and synthesize briefings.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 74, 28, 49, 3600, 47],
   ["AI Sales Automation Stack", "Enrich leads, write outreach, and run follow-up workflows.", ["Clay", "Zapier", "Lindy", "ChatGPT", "Make"], 72, 35, 58, 3300, 44],
   ["Design-to-Code Stack", "Turn brand ideas and screens into working interfaces.", ["Midjourney", "Ideogram", "Framer AI", "V0", "Bolt", "Cursor"], 76, 34, 61, 4100, 55],
-  ["Podcast Repurposing Stack", "Convert long audio into clips, posts, show notes, and assets.", ["Descript", "ElevenLabs", "CapCut", "ChatGPT", "Notion AI"], 66, 22, 37, 2600, 31]
+  ["Podcast Repurposing Stack", "Convert long audio into clips, posts, show notes, and assets.", ["Descript", "ElevenLabs", "CapCut", "ChatGPT", "Notion AI"], 66, 22, 37, 2600, 31],
+  ["Competitive Intelligence", "Track competitors, collect market signals, and synthesize strategic briefs.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 71, 27, 46, 3100, 39],
+  ["Landing Page Builder", "Turn positioning and visual direction into a publishable landing page.", ["ChatGPT", "Claude", "Framer AI", "V0", "Bolt", "Lovable"], 75, 33, 57, 3800, 51],
+  ["AI Agent Builder", "Plan, prototype, and ship an AI agent for a focused business task.", ["Claude", "ChatGPT", "Lindy", "Make", "Zapier", "Replit"], 79, 42, 70, 4500, 63],
+  ["Founder Outbound", "Find prospects, draft founder-led outreach, and run follow-up loops.", ["Clay", "ChatGPT", "Claude", "Zapier", "Make"], 73, 36, 59, 3400, 46],
+  ["LinkedIn Lead Engine", "Build targeted LinkedIn prospect lists and turn them into outreach sequences.", ["Clay", "ChatGPT", "Claude", "Zapier", "Make"], 69, 29, 48, 2900, 37],
+  ["Newsletter Operator", "Research, draft, package, and publish a repeatable newsletter issue.", ["Perplexity", "NotebookLM", "ChatGPT", "Claude", "Notion AI", "Jasper"], 68, 24, 41, 2700, 35],
+  ["Meeting Summary", "Capture meeting notes and turn them into summaries, decisions, and follow-ups.", ["Granola", "Claude", "ChatGPT", "Notion AI", "Linear"], 65, 21, 36, 2400, 29],
+  ["AI Content Repurposing", "Turn long-form content into clips, posts, scripts, and reusable assets.", ["Descript", "CapCut", "ChatGPT", "Claude", "ElevenLabs", "Notion AI"], 70, 31, 52, 3200, 42],
+  ["Market Research", "Collect market sources, compare claims, and synthesize opportunity analysis.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 72, 28, 47, 3300, 40],
+  ["Customer Support Automation", "Convert support knowledge into response drafts and automated triage flows.", ["Glean", "Claude", "ChatGPT", "Lindy", "Zapier", "Make"], 67, 26, 43, 2600, 34]
 ];
 
 function workflowToolRoleFor(workflowSlug: string, toolSlug: string): WorkflowToolRelationship["role"] {
@@ -636,6 +646,96 @@ export const workflows: Workflow[] = workflowSeeds.map(([name, outcome, names, m
   sparkline: wave(index + 6, momentumScore / 2)
 }));
 
+const microWorkflowSeeds: Array<[string, string, string]> = [
+  ["Source Discovery", "Find relevant sources, companies, references, or inputs.", "Reusable discovery layer for research, content, sales, and market workflows."],
+  ["Knowledge Retrieval", "Retrieve and organize source-grounded context.", "Connects research, enterprise search, and briefing workflows."],
+  ["Brief Synthesis", "Turn scattered inputs into a useful brief, summary, or plan.", "Core reasoning layer for knowledge and creator workflows."],
+  ["Task Planning", "Convert goals into structured tasks, specs, or project steps.", "Bridge between idea, execution, and product-building workflows."],
+  ["Code Generation", "Generate or modify code from instructions.", "Core build primitive across coding, founder, and design-to-code workflows."],
+  ["Code Review", "Debug, review, or improve code quality.", "Trust and quality primitive distinct from initial code generation."],
+  ["UI Generation", "Generate screens, components, or frontend interfaces.", "Connects design, prototyping, and app-building workflows."],
+  ["App Prototyping", "Turn an idea or interface into a working product prototype.", "Outcome-oriented build primitive for product and software workflows."],
+  ["Visual Asset Generation", "Create images, mockups, brand visuals, thumbnails, or concepts.", "Reusable creative primitive across design, video, and marketing workflows."],
+  ["Script Writing", "Turn research or ideas into video, audio, or social scripts.", "Creator production primitive for short-form, long-form, and repurposed content."],
+  ["Voice Generation", "Generate narration, dubbing, or spoken audio.", "Audio primitive shared by video, podcast, avatar, and content workflows."],
+  ["Video Generation", "Generate or transform video scenes.", "Core creation primitive for short-form and long-form video workflows."],
+  ["Media Editing", "Edit, clip, polish, or repurpose audio and video assets.", "Post-production primitive across video and podcast workflows."]
+];
+
+export const microWorkflows: MicroWorkflow[] = microWorkflowSeeds.map(([name, outcome, description], index) => ({
+  id: `mwf_${index + 1}`,
+  name,
+  slug: slugify(name),
+  description,
+  outcome,
+  status: "accepted",
+  confidence: 94,
+  sourceType: "manual"
+}));
+
+const workflowMicroWorkflowSeeds: Record<string, string[]> = {
+  "solo-founder-stack": ["task-planning", "brief-synthesis", "code-generation", "ui-generation", "app-prototyping"],
+  "ai-coding-stack": ["task-planning", "code-generation", "code-review", "ui-generation", "app-prototyping"],
+  "faceless-tiktok-engine": ["script-writing", "visual-asset-generation", "voice-generation", "video-generation", "media-editing"],
+  "ai-youtube-production-stack": ["source-discovery", "knowledge-retrieval", "brief-synthesis", "script-writing", "voice-generation", "video-generation", "media-editing"],
+  "research-assistant-stack": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
+  "ai-sales-automation-stack": ["source-discovery", "brief-synthesis", "task-planning"],
+  "design-to-code-stack": ["visual-asset-generation", "ui-generation", "app-prototyping", "code-generation"],
+  "podcast-repurposing-stack": ["brief-synthesis", "script-writing", "voice-generation", "media-editing"],
+  "competitive-intelligence": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
+  "landing-page-builder": ["task-planning", "brief-synthesis", "visual-asset-generation", "ui-generation", "app-prototyping"],
+  "ai-agent-builder": ["task-planning", "brief-synthesis", "app-prototyping", "code-generation", "code-review"],
+  "founder-outbound": ["source-discovery", "brief-synthesis", "task-planning"],
+  "linkedin-lead-engine": ["source-discovery", "brief-synthesis", "task-planning"],
+  "newsletter-operator": ["source-discovery", "knowledge-retrieval", "brief-synthesis", "script-writing"],
+  "meeting-summary": ["knowledge-retrieval", "brief-synthesis", "task-planning"],
+  "ai-content-repurposing": ["brief-synthesis", "script-writing", "voice-generation", "media-editing"],
+  "market-research": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
+  "customer-support-automation": ["knowledge-retrieval", "brief-synthesis", "task-planning"]
+};
+
+export const workflowMicroWorkflowRelationships: WorkflowMicroWorkflowRelationship[] = Object.entries(workflowMicroWorkflowSeeds).flatMap(([workflowSlug, microWorkflowSlugs]) =>
+  microWorkflowSlugs.map((microWorkflowSlug, index) => ({
+    id: `wmwr_${workflowSlug}_${microWorkflowSlug}`,
+    workflowSlug,
+    microWorkflowSlug,
+    position: index + 1,
+    required: index < 2,
+    confidence: 92,
+    status: "accepted",
+    sourceType: "manual"
+  }))
+);
+
+const microWorkflowToolSeeds: Record<string, string[]> = {
+  "source-discovery": ["perplexity", "notebooklm", "clay"],
+  "knowledge-retrieval": ["notebooklm", "glean", "perplexity", "claude"],
+  "brief-synthesis": ["claude", "chatgpt", "perplexity", "notebooklm"],
+  "task-planning": ["chatgpt", "claude", "linear"],
+  "code-generation": ["cursor", "claude", "windsurf", "replit"],
+  "code-review": ["cursor", "claude", "windsurf"],
+  "ui-generation": ["v0", "bolt", "framer-ai"],
+  "app-prototyping": ["lovable", "v0", "bolt", "cursor", "replit"],
+  "visual-asset-generation": ["midjourney", "ideogram", "runway"],
+  "script-writing": ["chatgpt", "claude", "perplexity"],
+  "voice-generation": ["elevenlabs", "heygen", "suno"],
+  "video-generation": ["kling", "pika", "runway", "heygen"],
+  "media-editing": ["capcut", "descript", "runway"]
+};
+
+export const microWorkflowToolRelationships: MicroWorkflowToolRelationship[] = Object.entries(microWorkflowToolSeeds).flatMap(([microWorkflowSlug, toolSlugs]) =>
+  toolSlugs.map((toolSlug, index) => ({
+    id: `mwtr_${microWorkflowSlug}_${toolSlug}`,
+    microWorkflowSlug,
+    toolSlug,
+    position: index + 1,
+    required: index < 2,
+    confidence: 92,
+    status: "accepted",
+    sourceType: "manual"
+  }))
+);
+
 export const movementEvents: MovementEvent[] = [
   { id: "event_1", categorySlug: "ai-video", title: "AI Video momentum +31%", description: "Kling, Runway, and CapCut are pulling more creator mentions into short-form workflows.", eventType: "category_shift", sourceUrl: "#", timestamp: "12 min ago" },
   { id: "event_2", toolSlug: "manus", title: "Manus entered Breaking Out", description: "Launch analysis and benchmark threads pushed acceleration above the breakout threshold.", eventType: "launch", sourceUrl: "#", timestamp: "19 min ago" },
@@ -650,6 +750,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_logan-kilpatrick",
     toolSlug: "chatgpt",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 96,
     status: "accepted",
     sourceType: "manual",
@@ -661,6 +762,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_guillermo-rauch",
     toolSlug: "v0",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 98,
     status: "accepted",
     sourceType: "manual",
@@ -672,6 +774,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_lee-robinson",
     toolSlug: "v0",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 95,
     status: "accepted",
     sourceType: "manual",
@@ -683,6 +786,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_amjad-masad",
     toolSlug: "replit",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 99,
     status: "accepted",
     sourceType: "manual",
@@ -694,6 +798,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_simon-willison",
     toolSlug: "chatgpt",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 94,
     status: "accepted",
     sourceType: "manual",
@@ -705,6 +810,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_simon-willison",
     toolSlug: "claude",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 94,
     status: "accepted",
     sourceType: "manual",
@@ -716,6 +822,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_andrej-karpathy",
     toolSlug: "cursor",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 90,
     status: "accepted",
     sourceType: "manual",
@@ -727,6 +834,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_greg-kamradt",
     toolSlug: "cursor",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 91,
     status: "accepted",
     sourceType: "manual",
@@ -738,6 +846,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_nick-st-pierre",
     toolSlug: "midjourney",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 97,
     status: "accepted",
     sourceType: "manual",
@@ -749,6 +858,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_linus-ekenstam",
     toolSlug: "midjourney",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 93,
     status: "accepted",
     sourceType: "manual",
@@ -760,6 +870,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_min-choi",
     toolSlug: "kling",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -771,6 +882,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_theoretically-media",
     toolSlug: "runway",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -782,6 +894,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_theoretically-media",
     toolSlug: "pika",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 90,
     status: "accepted",
     sourceType: "manual",
@@ -793,6 +906,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_dan-shipper",
     toolSlug: "chatgpt",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -804,6 +918,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_ethan-mollick",
     toolSlug: "chatgpt",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 95,
     status: "accepted",
     sourceType: "manual",
@@ -815,6 +930,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_ethan-mollick",
     toolSlug: "claude",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 93,
     status: "accepted",
     sourceType: "manual",
@@ -826,6 +942,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_theo-browne",
     toolSlug: "cursor",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 93,
     status: "accepted",
     sourceType: "manual",
@@ -837,6 +954,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_pietro-schirano",
     toolSlug: "v0",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -848,6 +966,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_min-choi",
     toolSlug: "runway",
     relationshipType: "uses",
+    validationLayer: "verified",
     confidence: 91,
     status: "accepted",
     sourceType: "manual",
@@ -859,6 +978,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_greg-kamradt",
     toolSlug: "claude",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -870,6 +990,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_theo-browne",
     toolSlug: "v0",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 91,
     status: "accepted",
     sourceType: "manual",
@@ -881,6 +1002,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_matt-wolfe",
     toolSlug: "chatgpt",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 92,
     status: "accepted",
     sourceType: "manual",
@@ -892,6 +1014,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_wes-roth",
     toolSlug: "notebooklm",
     relationshipType: "teaches",
+    validationLayer: "verified",
     confidence: 91,
     status: "accepted",
     sourceType: "manual",
@@ -903,6 +1026,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_dan-shipper",
     toolSlug: "claude",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 90,
     status: "accepted",
     sourceType: "manual",
@@ -914,6 +1038,7 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_andrej-karpathy",
     toolSlug: "chatgpt",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 91,
     status: "accepted",
     sourceType: "manual",
@@ -925,11 +1050,612 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     creatorId: "creator_wes-roth",
     toolSlug: "claude",
     relationshipType: "mentions",
+    validationLayer: "observed",
     confidence: 90,
     status: "accepted",
     sourceType: "manual",
     sourceUrl: "https://x.com/WesRothMoney",
     evidenceText: "AI news creator publicly discusses Claude in model and product coverage."
+  },
+  {
+    id: "ctr_aravind-srinivas_perplexity",
+    creatorId: "creator_aravind-srinivas",
+    toolSlug: "perplexity",
+    relationshipType: "uses",
+    validationLayer: "verified",
+    confidence: 98,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/AravSrinivas",
+    evidenceText: "Perplexity founder/operator publicly associated with building and using Perplexity."
+  },
+  {
+    id: "ctr_david-holz_midjourney",
+    creatorId: "creator_david-holz",
+    toolSlug: "midjourney",
+    relationshipType: "uses",
+    validationLayer: "verified",
+    confidence: 98,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/DavidSHolz",
+    evidenceText: "Midjourney founder/operator publicly associated with building and using Midjourney."
+  },
+  {
+    id: "ctr_cristobal-valenzuela_runway",
+    creatorId: "creator_cristobal-valenzuela",
+    toolSlug: "runway",
+    relationshipType: "uses",
+    validationLayer: "verified",
+    confidence: 98,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/c_valenzuelab",
+    evidenceText: "Runway founder/operator publicly associated with building and using Runway."
+  },
+  {
+    id: "ctr_varun-mohan_windsurf",
+    creatorId: "creator_varun-mohan",
+    toolSlug: "windsurf",
+    relationshipType: "uses",
+    validationLayer: "verified",
+    confidence: 96,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/_mohansolo",
+    evidenceText: "Windsurf founder/operator publicly associated with building and using Windsurf."
+  },
+  {
+    id: "ctr_alex-albert_claude",
+    creatorId: "creator_alex-albert",
+    toolSlug: "claude",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/alexalbert__",
+    evidenceText: "Reviewed manual candidate for Claude-focused educational content and workflow explanation."
+  },
+  {
+    id: "ctr_riley-goodside_chatgpt",
+    creatorId: "creator_riley-goodside",
+    toolSlug: "chatgpt",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 91,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/goodside",
+    evidenceText: "Reviewed manual candidate for ChatGPT-focused educational content and prompt/workflow explanation."
+  },
+  {
+    id: "ctr_andrew-ng_chatgpt",
+    creatorId: "creator_andrew-ng",
+    toolSlug: "chatgpt",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 91,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/AndrewYNg",
+    evidenceText: "Reviewed manual candidate for ChatGPT-focused educational content and AI workflow explanation."
+  },
+  {
+    id: "ctr_shawn-wang_claude",
+    creatorId: "creator_shawn-wang",
+    toolSlug: "claude",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/swyx",
+    evidenceText: "Reviewed manual candidate for public Claude discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_shawn-wang_chatgpt",
+    creatorId: "creator_shawn-wang",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/swyx",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_chip-huyen_chatgpt",
+    creatorId: "creator_chip-huyen",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/chipro",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_jeremy-howard_chatgpt",
+    creatorId: "creator_jeremy-howard",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/jeremyphoward",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_harrison-chase_chatgpt",
+    creatorId: "creator_harrison-chase",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/hwchase17",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_harrison-chase_claude",
+    creatorId: "creator_harrison-chase",
+    toolSlug: "claude",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/hwchase17",
+    evidenceText: "Reviewed manual candidate for public Claude discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_lance-martin_claude",
+    creatorId: "creator_lance-martin",
+    toolSlug: "claude",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/RLanceMartin",
+    evidenceText: "Reviewed manual candidate for Claude-focused educational content and workflow explanation."
+  },
+  {
+    id: "ctr_lance-martin_chatgpt",
+    creatorId: "creator_lance-martin",
+    toolSlug: "chatgpt",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/RLanceMartin",
+    evidenceText: "Reviewed manual candidate for ChatGPT-focused educational content and workflow explanation."
+  },
+  {
+    id: "ctr_jason-liu_chatgpt",
+    creatorId: "creator_jason-liu",
+    toolSlug: "chatgpt",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/jxnlco",
+    evidenceText: "Reviewed manual candidate for ChatGPT-focused educational content and workflow explanation."
+  },
+  {
+    id: "ctr_hamel-husain_claude",
+    creatorId: "creator_hamel-husain",
+    toolSlug: "claude",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/HamelHusain",
+    evidenceText: "Reviewed manual candidate for public Claude discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_hamel-husain_chatgpt",
+    creatorId: "creator_hamel-husain",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/HamelHusain",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_rowan-cheung_chatgpt",
+    creatorId: "creator_rowan-cheung",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 89,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/rowancheung",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_rowan-cheung_claude",
+    creatorId: "creator_rowan-cheung",
+    toolSlug: "claude",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 89,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/rowancheung",
+    evidenceText: "Reviewed manual candidate for public Claude discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_matt-wolfe_claude",
+    creatorId: "creator_matt-wolfe",
+    toolSlug: "claude",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mreflow",
+    evidenceText: "Reviewed manual candidate for Claude-focused educational content and AI tools coverage."
+  },
+  {
+    id: "ctr_matt-wolfe_midjourney",
+    creatorId: "creator_matt-wolfe",
+    toolSlug: "midjourney",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 89,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mreflow",
+    evidenceText: "Reviewed manual candidate for Midjourney-focused educational content and AI tools coverage."
+  },
+  {
+    id: "ctr_wes-roth_chatgpt",
+    creatorId: "creator_wes-roth",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/WesRothMoney",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_ben-tossell_chatgpt",
+    creatorId: "creator_ben-tossell",
+    toolSlug: "chatgpt",
+    relationshipType: "teaches",
+    validationLayer: "verified",
+    confidence: 90,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/bentossell",
+    evidenceText: "Reviewed manual candidate for ChatGPT-focused educational content and practical workflow explanation."
+  },
+  {
+    id: "ctr_yohei-nakajima_chatgpt",
+    creatorId: "creator_yohei-nakajima",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/yoheinakajima",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_dave-ebbelaar_make",
+    creatorId: "creator_dave-ebbelaar",
+    toolSlug: "make",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/daveebbelaar",
+    evidenceText: "Reviewed manual candidate for public Make discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_dave-ebbelaar_zapier",
+    creatorId: "creator_dave-ebbelaar",
+    toolSlug: "zapier",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/daveebbelaar",
+    evidenceText: "Reviewed manual candidate for public Zapier discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_cole-medin_lindy",
+    creatorId: "creator_cole-medin",
+    toolSlug: "lindy",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/ColeMedin",
+    evidenceText: "Reviewed manual candidate for public Lindy discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_cole-medin_make",
+    creatorId: "creator_cole-medin",
+    toolSlug: "make",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/ColeMedin",
+    evidenceText: "Reviewed manual candidate for public Make discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_liam-ottley_zapier",
+    creatorId: "creator_liam-ottley",
+    toolSlug: "zapier",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/LiamOttley",
+    evidenceText: "Reviewed manual candidate for public Zapier discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_liam-ottley_make",
+    creatorId: "creator_liam-ottley",
+    toolSlug: "make",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/LiamOttley",
+    evidenceText: "Reviewed manual candidate for public Make discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_nick-saraev_make",
+    creatorId: "creator_nick-saraev",
+    toolSlug: "make",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/nicksaraev",
+    evidenceText: "Reviewed manual candidate for public Make discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_sander-schulhoff_chatgpt",
+    creatorId: "creator_sander-schulhoff",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/sander_schulhoff",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_mckay-wrigley_lovable",
+    creatorId: "creator_mckay-wrigley",
+    toolSlug: "lovable",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mckaywrigley",
+    evidenceText: "Reviewed manual candidate for public Lovable discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_mckay-wrigley_bolt",
+    creatorId: "creator_mckay-wrigley",
+    toolSlug: "bolt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mckaywrigley",
+    evidenceText: "Reviewed manual candidate for public Bolt discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_jason-zhou_lovable",
+    creatorId: "creator_jason-zhou",
+    toolSlug: "lovable",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/jasonzhou1993",
+    evidenceText: "Reviewed manual candidate for public Lovable discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_jason-zhou_framer-ai",
+    creatorId: "creator_jason-zhou",
+    toolSlug: "framer-ai",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/jasonzhou1993",
+    evidenceText: "Reviewed manual candidate for public Framer AI discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_peter-steinberger_cursor",
+    creatorId: "creator_peter-steinberger",
+    toolSlug: "cursor",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/steipete",
+    evidenceText: "Reviewed manual candidate for public Cursor discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_armin-ronacher_cursor",
+    creatorId: "creator_armin-ronacher",
+    toolSlug: "cursor",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mitsuhiko",
+    evidenceText: "Reviewed manual candidate for public Cursor discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_nat-friedman_cursor",
+    creatorId: "creator_nat-friedman",
+    toolSlug: "cursor",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 88,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/natfriedman",
+    evidenceText: "Reviewed manual candidate for public Cursor discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_boris-power_chatgpt",
+    creatorId: "creator_boris-power",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/BorisMPower",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_matt-shumer_lindy",
+    creatorId: "creator_matt-shumer",
+    toolSlug: "lindy",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/mattshumer_",
+    evidenceText: "Reviewed manual candidate for public Lindy discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_dharmesh-shah_chatgpt",
+    creatorId: "creator_dharmesh-shah",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/dharmesh",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_allie-k-miller_chatgpt",
+    creatorId: "creator_allie-k-miller",
+    toolSlug: "chatgpt",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/alliekmiller",
+    evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_ruben-hassid_clay",
+    creatorId: "creator_ruben-hassid",
+    toolSlug: "clay",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/RubenHssd",
+    evidenceText: "Reviewed manual candidate for public Clay discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_rob-lennon_jasper",
+    creatorId: "creator_rob-lennon",
+    toolSlug: "jasper",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/thatroblennon",
+    evidenceText: "Reviewed manual candidate for public Jasper discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_julian-goldie_jasper",
+    creatorId: "creator_julian-goldie",
+    toolSlug: "jasper",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 86,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/JulianGoldieSEO",
+    evidenceText: "Reviewed manual candidate for public Jasper discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_theoretically-media_elevenlabs",
+    creatorId: "creator_theoretically-media",
+    toolSlug: "elevenlabs",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/TheoMediaAI",
+    evidenceText: "Reviewed manual candidate for public ElevenLabs discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_theoretically-media_capcut",
+    creatorId: "creator_theoretically-media",
+    toolSlug: "capcut",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/TheoMediaAI",
+    evidenceText: "Reviewed manual candidate for public CapCut discussion; not treated as verified usage."
+  },
+  {
+    id: "ctr_nick-st-pierre_ideogram",
+    creatorId: "creator_nick-st-pierre",
+    toolSlug: "ideogram",
+    relationshipType: "mentions",
+    validationLayer: "observed",
+    confidence: 87,
+    status: "accepted",
+    sourceType: "manual",
+    sourceUrl: "https://x.com/nickfloats",
+    evidenceText: "Reviewed manual candidate for public Ideogram discussion; not treated as verified usage."
   }
 ];
 
@@ -1187,6 +1913,22 @@ export const getTool = (slug: string) => tools.find((tool) => tool.slug === slug
 export const getCategory = (slug: string) => categories.find((category) => category.slug === slug);
 export const getWorkflow = (slug: string) => workflows.find((workflow) => workflow.slug === slug);
 export const toolsForWorkflow = (workflow: Workflow) => workflow.toolSlugs.map(getTool).filter(Boolean) as Tool[];
+export const microWorkflowsForWorkflow = (workflowSlug: string) =>
+  workflowMicroWorkflowRelationships
+    .filter((relationship) => relationship.status === "accepted" && relationship.workflowSlug === workflowSlug)
+    .sort((a, b) => (a.position ?? 99) - (b.position ?? 99))
+    .map((relationship) => microWorkflows.find((microWorkflow) => microWorkflow.slug === relationship.microWorkflowSlug))
+    .filter(Boolean) as MicroWorkflow[];
+export const toolsForMicroWorkflow = (microWorkflowSlug: string) =>
+  microWorkflowToolRelationships
+    .filter((relationship) => relationship.status === "accepted" && relationship.microWorkflowSlug === microWorkflowSlug)
+    .sort((a, b) => (a.position ?? 99) - (b.position ?? 99))
+    .map((relationship) => getTool(relationship.toolSlug))
+    .filter(Boolean) as Tool[];
+export const microWorkflowToolPairsForWorkflow = (workflowSlug: string) =>
+  microWorkflowsForWorkflow(workflowSlug).flatMap((microWorkflow) =>
+    toolsForMicroWorkflow(microWorkflow.slug).map((tool) => ({ microWorkflow, tool }))
+  );
 export const categoryTools = (slug: string) => tools.filter((tool) => slugify(tool.category) === slug);
 const strictBreakingOutTools = rankingModeSort(tools, "Breaking Out").filter(isBreakingOut);
 const accelerationBackfillTools = rankingModeSort(tools, "Breaking Out").filter((tool) => !strictBreakingOutTools.some((item) => item.slug === tool.slug));

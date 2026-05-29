@@ -29,7 +29,7 @@ export default function DiscoverPage() {
         <Metric label="Tools tracked" value={liveMetrics.toolsTracked.toLocaleString()} />
         <Metric label="Mentions 24h" value={`${(liveMetrics.mentions24h / 1000).toFixed(1)}k`} />
         <Metric label="Breaking out" value={liveMetrics.breakingOut.toString()} />
-        <Metric label="Workflows" value={liveMetrics.workflowsTracked.toString()} />
+        <Link className="metric" href="/workflows"><span>Workflows</span><strong>{liveMetrics.workflowsTracked}</strong></Link>
         <Metric label="Attention rotation" value="+31%" />
       </section>
 
