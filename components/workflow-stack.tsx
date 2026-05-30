@@ -6,7 +6,7 @@ function isTool(tool: Tool | undefined): tool is Tool {
   return Boolean(tool);
 }
 
-export function WorkflowStack({ toolSlugs, limit = 6 }: { toolSlugs: string[]; limit?: number }) {
+export function WorkflowStack({ toolSlugs, limit = 5 }: { toolSlugs: string[]; limit?: number }) {
   const stackTools = toolSlugs.map(getTool).filter(isTool).slice(0, limit);
 
   return (
@@ -14,7 +14,6 @@ export function WorkflowStack({ toolSlugs, limit = 6 }: { toolSlugs: string[]; l
       {stackTools.map((tool, index) => (
         <ToolLogo officialSrc={tool.officialLogoUrl} src={tool.logoUrl} faviconSrc={tool.faviconUrl} fallback={tool.iconUrl} alt={tool.name} key={tool.slug} size={24} />
       ))}
-      <span>{toolSlugs.length}</span>
     </div>
   );
 }

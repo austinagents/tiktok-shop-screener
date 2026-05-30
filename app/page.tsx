@@ -55,7 +55,7 @@ export default function DiscoverPage() {
           <PreviewPanel href="/workflows" title="Trending Workflows" meta="stacks spreading now">
             {workflows.slice(0, 4).map((workflow) => (
               <Link href={`/workflows/${workflow.slug}`} className="workflowPreview" key={workflow.id}>
-                <WorkflowStack toolSlugs={workflow.toolSlugs} limit={4} />
+                <WorkflowStack toolSlugs={workflow.toolSlugs} />
                 <span><strong>{workflow.name}</strong><small>{workflow.savesCount.toLocaleString()} saves</small></span>
                 <MovementBadge value={workflow.growth24h} />
               </Link>

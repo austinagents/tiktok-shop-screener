@@ -261,7 +261,18 @@ const rawTools: Array<[string, CategoryName, string, string, string, string, num
   ["Jasper", "AI Marketing", "AI content platform for marketing teams and brand workflows.", "https://www.jasper.ai", "Creator, Pro, Business", "2021-01-01", 240, 1820, 6800, -11, -7, 14, 2, 43],
   ["Glean", "AI Research", "Enterprise search and knowledge assistant across workplace data.", "https://www.glean.com", "Enterprise", "2019-01-01", 310, 1900, 5200, 17, 29, 22, 3, 55],
   ["Make", "AI Automation", "Visual automation platform with AI-enabled workflow building.", "https://www.make.com", "Free, Core, Pro", "2012-01-01", 350, 2180, 7900, 18, 33, 24, 5, 58],
-  ["Framer AI", "AI Design", "Website builder with AI page generation and design iteration.", "https://www.framer.com/ai", "Free, Mini, Basic", "2023-01-01", 390, 2450, 7100, 23, 40, 32, 3, 60]
+  ["Framer AI", "AI Design", "Website builder with AI page generation and design iteration.", "https://www.framer.com/ai", "Free, Mini, Basic", "2023-01-01", 390, 2450, 7100, 23, 40, 32, 3, 60],
+  ["Vercel", "AI Coding", "Frontend cloud and deployment platform used to ship web apps, previews, and production releases.", "https://vercel.com", "Free, Pro, Enterprise", "2015-01-01", 540, 3100, 14200, 18, 34, 46, 6, 72],
+  ["n8n", "AI Automation", "Workflow automation platform for connecting AI agents, business systems, APIs, and data sources.", "https://n8n.io", "Free, Starter, Pro", "2019-01-01", 470, 2800, 9800, 24, 41, 38, 6, 68],
+  ["Apollo", "AI Marketing", "Sales intelligence and prospecting platform for building account lists and outbound pipelines.", "https://www.apollo.io", "Free, Basic, Professional", "2015-01-01", 430, 2550, 11800, 16, 29, 34, 5, 63],
+  ["Framer", "AI Design", "Website design and publishing platform for building responsive marketing pages and product sites.", "https://www.framer.com", "Free, Mini, Basic", "2014-01-01", 410, 2500, 9300, 19, 35, 36, 5, 64],
+  ["Typefully", "AI Marketing", "Social writing and scheduling platform for planning and publishing text-first content.", "https://typefully.com", "Free, Creator, Team", "2020-01-01", 260, 1420, 5400, 15, 27, 26, 4, 52],
+  ["Slack", "AI Workflow", "Team communication platform used as an operating layer for notifications, approvals, and automations.", "https://slack.com", "Free, Pro, Business+", "2013-01-01", 520, 4200, 24000, 8, 16, 45, 6, 74],
+  ["HubSpot", "AI Marketing", "CRM and marketing platform for managing contacts, sales pipelines, and customer workflows.", "https://www.hubspot.com", "Free, Starter, Professional", "2006-01-01", 390, 3100, 21000, 7, 14, 32, 5, 66],
+  ["Instantly", "AI Marketing", "Outbound email platform for sending, testing, and managing cold email campaigns.", "https://instantly.ai", "Growth, Hypergrowth", "2021-01-01", 310, 1900, 7200, 20, 34, 29, 5, 61],
+  ["Taplio", "AI Marketing", "LinkedIn content and relationship platform for writing posts, scheduling, and tracking engagement.", "https://taplio.com", "Starter, Standard, Pro", "2021-01-01", 280, 1600, 6100, 17, 30, 27, 4, 58],
+  ["LinkedIn", "AI Marketing", "Professional network used for publishing, prospecting, recruiting, and relationship-driven growth.", "https://www.linkedin.com", "Free, Premium, Sales Navigator", "2003-01-01", 640, 6200, 32000, 6, 13, 58, 7, 82],
+  ["Google Maps", "AI Research", "Local search and mapping platform used to discover businesses, locations, and market context.", "https://www.google.com/maps", "Free", "2005-01-01", 480, 4400, 28000, 5, 11, 34, 4, 76]
 ] as const;
 
 const baseTools: Tool[] = rawTools.map((item, index) => {
@@ -575,34 +586,46 @@ export const attentionSubCategories: AttentionSubCategory[] = canonicalAttention
 });
 
 const workflowSeeds: Array<[string, string, string[], number, number, number, number, number]> = [
-  ["Solo Founder Stack", "Ship and sell an MVP with lean team leverage.", ["ChatGPT", "Claude", "Cursor", "Lovable", "V0", "Linear", "Gamma"], 83, 38, 64, 5200, 71],
-  ["AI Coding Stack", "Plan, generate, review, and deploy production code faster.", ["Claude", "Cursor", "Windsurf", "V0", "Bolt", "Replit"], 88, 46, 79, 6100, 86],
-  ["Faceless TikTok Engine", "Produce short-form clips without filming yourself.", ["Kling", "Pika", "ElevenLabs", "CapCut", "Suno", "HeyGen"], 81, 41, 68, 4700, 64],
-  ["AI YouTube Production Stack", "Research, script, voice, edit, and publish long-form video.", ["Perplexity", "NotebookLM", "Runway", "ElevenLabs", "Descript", "Gamma"], 77, 32, 53, 3900, 58],
-  ["Research Assistant Stack", "Collect sources, compare claims, and synthesize briefings.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 74, 28, 49, 3600, 47],
-  ["AI Sales Automation Stack", "Enrich leads, write outreach, and run follow-up workflows.", ["Clay", "Zapier", "Lindy", "ChatGPT", "Make"], 72, 35, 58, 3300, 44],
-  ["Design-to-Code Stack", "Turn brand ideas and screens into working interfaces.", ["Midjourney", "Ideogram", "Framer AI", "V0", "Bolt", "Cursor"], 76, 34, 61, 4100, 55],
-  ["Podcast Repurposing Stack", "Convert long audio into clips, posts, show notes, and assets.", ["Descript", "ElevenLabs", "CapCut", "ChatGPT", "Notion AI"], 66, 22, 37, 2600, 31],
-  ["Competitive Intelligence", "Track competitors, collect market signals, and synthesize strategic briefs.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 71, 27, 46, 3100, 39],
-  ["Landing Page Builder", "Turn positioning and visual direction into a publishable landing page.", ["ChatGPT", "Claude", "Framer AI", "V0", "Bolt", "Lovable"], 75, 33, 57, 3800, 51],
-  ["AI Agent Builder", "Plan, prototype, and ship an AI agent for a focused business task.", ["Claude", "ChatGPT", "Lindy", "Make", "Zapier", "Replit"], 79, 42, 70, 4500, 63],
-  ["Founder Outbound", "Find prospects, draft founder-led outreach, and run follow-up loops.", ["Clay", "ChatGPT", "Claude", "Zapier", "Make"], 73, 36, 59, 3400, 46],
-  ["LinkedIn Lead Engine", "Build targeted LinkedIn prospect lists and turn them into outreach sequences.", ["Clay", "ChatGPT", "Claude", "Zapier", "Make"], 69, 29, 48, 2900, 37],
-  ["Newsletter Operator", "Research, draft, package, and publish a repeatable newsletter issue.", ["Perplexity", "NotebookLM", "ChatGPT", "Claude", "Notion AI", "Jasper"], 68, 24, 41, 2700, 35],
-  ["Meeting Summary", "Capture meeting notes and turn them into summaries, decisions, and follow-ups.", ["Granola", "Claude", "ChatGPT", "Notion AI", "Linear"], 65, 21, 36, 2400, 29],
-  ["AI Content Repurposing", "Turn long-form content into clips, posts, scripts, and reusable assets.", ["Descript", "CapCut", "ChatGPT", "Claude", "ElevenLabs", "Notion AI"], 70, 31, 52, 3200, 42],
-  ["Market Research", "Collect market sources, compare claims, and synthesize opportunity analysis.", ["Perplexity", "NotebookLM", "Claude", "ChatGPT", "Glean"], 72, 28, 47, 3300, 40],
-  ["Customer Support Automation", "Convert support knowledge into response drafts and automated triage flows.", ["Glean", "Claude", "ChatGPT", "Lindy", "Zapier", "Make"], 67, 26, 43, 2600, 34]
+  ["Solo Founder MVP", "Launch a working MVP without hiring a team.", ["Claude", "V0", "Cursor", "Vercel"], 86, 42, 72, 5600, 76],
+  ["SaaS In A Weekend", "Ship a simple SaaS product in 48 hours.", ["ChatGPT", "Lovable", "Cursor", "Vercel"], 84, 39, 68, 5200, 70],
+  ["AI Agent Builder", "Create a working AI agent for repetitive business tasks.", ["Claude", "Cursor", "n8n"], 82, 41, 69, 4800, 64],
+  ["Landing Page Builder", "Launch a conversion-focused landing page.", ["Claude", "V0", "Framer"], 78, 34, 58, 3900, 52],
+  ["Research Assistant", "Collect source material, organize references, and synthesize a research brief.", ["Perplexity", "NotebookLM", "Claude"], 76, 29, 51, 3700, 48],
+  ["Competitive Intelligence", "Understand how competitors operate.", ["Perplexity", "NotebookLM", "Claude"], 74, 27, 48, 3300, 41],
+  ["Founder Outbound Engine", "Generate qualified sales conversations.", ["Apollo", "Clay", "ChatGPT", "Lindy"], 75, 36, 61, 3600, 49],
+  ["AI Influencer", "Create a scalable content creator without being on camera.", ["ChatGPT", "ElevenLabs", "HeyGen"], 77, 40, 66, 4100, 55],
+  ["Faceless TikTok Engine", "Script, voice, generate, and edit short-form videos without filming yourself.", ["ChatGPT", "ElevenLabs", "Kling", "CapCut"], 81, 41, 68, 4700, 64],
+  ["Faceless YouTube Channel", "Create long-form YouTube videos without filming.", ["Perplexity", "Claude", "ElevenLabs", "Runway"], 73, 31, 54, 3500, 43],
+  ["Podcast Repurposing", "Convert long audio into clips, written posts, and reusable content assets.", ["Descript", "Claude", "CapCut", "Typefully"], 69, 23, 39, 2800, 32],
+  ["Newsletter Operator", "Research a topic, draft an issue, and organize the final newsletter package.", ["Perplexity", "Claude", "Notion AI", "Jasper"], 70, 25, 43, 2900, 36],
+  ["Daily AI News Channel", "Find daily AI stories, write a script, generate voice, and edit a news clip.", ["Perplexity", "Claude", "HeyGen"], 72, 34, 55, 3200, 42],
+  ["LinkedIn Thought Leader", "Turn expert ideas into polished LinkedIn posts and reusable publishing notes.", ["Perplexity", "Claude", "Taplio"], 68, 22, 38, 2600, 33],
+  ["X Growth Engine", "Find timely angles, draft concise posts, and maintain an idea backlog.", ["Perplexity", "Claude", "Typefully"], 69, 28, 45, 3000, 38],
+  ["Market Research Sprint", "Collect market sources, compare patterns, and produce an opportunity brief.", ["Perplexity", "NotebookLM", "Claude"], 73, 28, 47, 3300, 40],
+  ["Customer Research Engine", "Organize customer knowledge, synthesize insights, and turn them into action items.", ["Perplexity", "NotebookLM", "Claude"], 67, 20, 34, 2400, 30],
+  ["Product Discovery", "Turn research and customer signals into a prioritized product direction.", ["Perplexity", "Claude", "Linear"], 71, 26, 44, 3100, 39],
+  ["Design-to-Code", "Create visual direction, generate interface screens, and turn them into code.", ["Ideogram", "V0", "Cursor"], 77, 35, 60, 4200, 56],
+  ["AI Executive Assistant", "Capture meetings, summarize decisions, and create follow-up tasks.", ["ChatGPT", "Notion AI", "Zapier"], 70, 24, 42, 3000, 37],
+  ["Agency Prospecting", "Find target accounts, enrich prospects, and generate outreach drafts.", ["Apollo", "Clay", "ChatGPT", "HubSpot"], 72, 32, 50, 3200, 43],
+  ["B2B Lead Research", "Build an enriched B2B account list and summarize the strongest outreach angles.", ["Apollo", "Clay", "ChatGPT"], 71, 30, 49, 3100, 41],
+  ["LinkedIn Lead Engine", "Build targeted LinkedIn lead lists and turn them into outreach sequences.", ["LinkedIn", "Clay", "ChatGPT", "Taplio"], 69, 29, 48, 2900, 37],
+  ["Local Business Prospecting", "Find local businesses, enrich account context, and draft personalized outreach.", ["Google Maps", "Clay", "ChatGPT"], 66, 24, 39, 2500, 31],
+  ["Recruiter Outreach System", "Find candidate or hiring signals, draft outreach, and automate follow-up.", ["LinkedIn", "ChatGPT", "HubSpot"], 65, 23, 37, 2400, 29],
+  ["CRM Automation", "Convert sales process rules into automated CRM handoffs and follow-up flows.", ["ChatGPT", "Zapier", "Make"], 67, 26, 43, 2700, 34],
+  ["Meeting Intelligence", "Capture calls, synthesize decisions, and publish team-ready notes.", ["Granola", "ChatGPT", "Linear"], 66, 21, 36, 2500, 30],
+  ["Business Operations Hub", "Centralize internal knowledge, draft operating procedures, and automate tasks.", ["ChatGPT", "Notion AI", "Zapier"], 68, 25, 41, 2800, 35],
+  ["AI Content Repurposing", "Turn long-form content into short clips, posts, voice assets, and summaries.", ["Claude", "ChatGPT", "Typefully"], 70, 31, 52, 3200, 42],
+  ["Customer Support Automation", "Retrieve support knowledge, draft responses, and route repeated issues.", ["Glean", "Claude", "Lindy", "Zapier"], 67, 26, 43, 2600, 34]
 ];
 
 function workflowToolRoleFor(workflowSlug: string, toolSlug: string): WorkflowToolRelationship["role"] {
   if (["perplexity", "notebooklm", "glean"].includes(toolSlug)) return "research";
-  if (["cursor", "windsurf", "v0", "bolt", "lovable", "replit"].includes(toolSlug)) return "generation";
+  if (["cursor", "windsurf", "v0", "bolt", "lovable", "replit", "vercel"].includes(toolSlug)) return "generation";
   if (["kling", "pika", "runway", "capcut", "descript"].includes(toolSlug)) return "editing";
-  if (["zapier", "make", "lindy"].includes(toolSlug)) return "automation";
+  if (["zapier", "make", "lindy", "n8n", "hubspot"].includes(toolSlug)) return "automation";
   if (["gamma", "notion-ai", "linear"].includes(toolSlug)) return "publishing";
-  if (workflowSlug.includes("sales") || ["clay"].includes(toolSlug)) return "analysis";
-  if (["claude", "chatgpt", "elevenlabs", "suno", "midjourney", "ideogram", "heygen", "framer-ai"].includes(toolSlug)) return "generation";
+  if (workflowSlug.includes("sales") || ["clay", "apollo", "linkedin", "google-maps"].includes(toolSlug)) return "analysis";
+  if (["claude", "chatgpt", "elevenlabs", "suno", "midjourney", "ideogram", "heygen", "framer-ai", "framer", "typefully", "taplio"].includes(toolSlug)) return "generation";
   return "other";
 }
 
@@ -674,23 +697,35 @@ export const microWorkflows: MicroWorkflow[] = microWorkflowSeeds.map(([name, ou
 }));
 
 const workflowMicroWorkflowSeeds: Record<string, string[]> = {
-  "solo-founder-stack": ["task-planning", "brief-synthesis", "code-generation", "ui-generation", "app-prototyping"],
-  "ai-coding-stack": ["task-planning", "code-generation", "code-review", "ui-generation", "app-prototyping"],
-  "faceless-tiktok-engine": ["script-writing", "visual-asset-generation", "voice-generation", "video-generation", "media-editing"],
-  "ai-youtube-production-stack": ["source-discovery", "knowledge-retrieval", "brief-synthesis", "script-writing", "voice-generation", "video-generation", "media-editing"],
-  "research-assistant-stack": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
-  "ai-sales-automation-stack": ["source-discovery", "brief-synthesis", "task-planning"],
-  "design-to-code-stack": ["visual-asset-generation", "ui-generation", "app-prototyping", "code-generation"],
-  "podcast-repurposing-stack": ["brief-synthesis", "script-writing", "voice-generation", "media-editing"],
+  "solo-founder-mvp": ["task-planning", "app-prototyping", "code-generation"],
+  "saas-in-a-weekend": ["brief-synthesis", "ui-generation", "code-generation", "app-prototyping"],
+  "ai-agent-builder": ["task-planning", "app-prototyping", "code-generation"],
+  "landing-page-builder": ["brief-synthesis", "ui-generation", "app-prototyping"],
+  "research-assistant": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
   "competitive-intelligence": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
-  "landing-page-builder": ["task-planning", "brief-synthesis", "visual-asset-generation", "ui-generation", "app-prototyping"],
-  "ai-agent-builder": ["task-planning", "brief-synthesis", "app-prototyping", "code-generation", "code-review"],
-  "founder-outbound": ["source-discovery", "brief-synthesis", "task-planning"],
+  "founder-outbound-engine": ["source-discovery", "brief-synthesis", "task-planning"],
+  "ai-influencer": ["visual-asset-generation", "script-writing", "voice-generation", "media-editing"],
+  "faceless-tiktok-engine": ["script-writing", "voice-generation", "video-generation", "media-editing"],
+  "faceless-youtube-channel": ["source-discovery", "script-writing", "voice-generation", "media-editing"],
+  "podcast-repurposing": ["brief-synthesis", "script-writing", "media-editing"],
+  "newsletter-operator": ["source-discovery", "brief-synthesis", "script-writing"],
+  "daily-ai-news-channel": ["source-discovery", "script-writing", "voice-generation", "media-editing"],
+  "linkedin-thought-leader": ["brief-synthesis", "script-writing"],
+  "x-growth-engine": ["source-discovery", "script-writing"],
+  "market-research-sprint": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
+  "customer-research-engine": ["knowledge-retrieval", "brief-synthesis", "task-planning"],
+  "product-discovery": ["source-discovery", "brief-synthesis", "task-planning"],
+  "design-to-code": ["visual-asset-generation", "ui-generation", "code-generation"],
+  "ai-executive-assistant": ["knowledge-retrieval", "brief-synthesis", "task-planning"],
+  "agency-prospecting": ["source-discovery", "brief-synthesis"],
+  "b2b-lead-research": ["source-discovery", "brief-synthesis"],
   "linkedin-lead-engine": ["source-discovery", "brief-synthesis", "task-planning"],
-  "newsletter-operator": ["source-discovery", "knowledge-retrieval", "brief-synthesis", "script-writing"],
-  "meeting-summary": ["knowledge-retrieval", "brief-synthesis", "task-planning"],
+  "local-business-prospecting": ["source-discovery", "brief-synthesis"],
+  "recruiter-outreach-system": ["source-discovery", "brief-synthesis", "task-planning"],
+  "crm-automation": ["task-planning", "brief-synthesis"],
+  "meeting-intelligence": ["knowledge-retrieval", "brief-synthesis"],
+  "business-operations-hub": ["knowledge-retrieval", "brief-synthesis", "task-planning"],
   "ai-content-repurposing": ["brief-synthesis", "script-writing", "voice-generation", "media-editing"],
-  "market-research": ["source-discovery", "knowledge-retrieval", "brief-synthesis"],
   "customer-support-automation": ["knowledge-retrieval", "brief-synthesis", "task-planning"]
 };
 
@@ -708,19 +743,19 @@ export const workflowMicroWorkflowRelationships: WorkflowMicroWorkflowRelationsh
 );
 
 const microWorkflowToolSeeds: Record<string, string[]> = {
-  "source-discovery": ["perplexity", "notebooklm", "clay"],
-  "knowledge-retrieval": ["notebooklm", "glean", "perplexity", "claude"],
-  "brief-synthesis": ["claude", "chatgpt", "perplexity", "notebooklm"],
-  "task-planning": ["chatgpt", "claude", "linear"],
-  "code-generation": ["cursor", "claude", "windsurf", "replit"],
-  "code-review": ["cursor", "claude", "windsurf"],
-  "ui-generation": ["v0", "bolt", "framer-ai"],
-  "app-prototyping": ["lovable", "v0", "bolt", "cursor", "replit"],
-  "visual-asset-generation": ["midjourney", "ideogram", "runway"],
-  "script-writing": ["chatgpt", "claude", "perplexity"],
-  "voice-generation": ["elevenlabs", "heygen", "suno"],
-  "video-generation": ["kling", "pika", "runway", "heygen"],
-  "media-editing": ["capcut", "descript", "runway"]
+  "source-discovery": ["perplexity", "clay"],
+  "knowledge-retrieval": ["notebooklm", "glean"],
+  "brief-synthesis": ["claude", "chatgpt"],
+  "task-planning": ["chatgpt", "linear"],
+  "code-generation": ["cursor", "claude"],
+  "code-review": ["cursor", "claude"],
+  "ui-generation": ["v0", "framer-ai"],
+  "app-prototyping": ["lovable", "bolt"],
+  "visual-asset-generation": ["midjourney", "ideogram"],
+  "script-writing": ["chatgpt", "claude"],
+  "voice-generation": ["chatgpt", "elevenlabs"],
+  "video-generation": ["kling", "runway"],
+  "media-editing": ["descript", "capcut"]
 };
 
 export const microWorkflowToolRelationships: MicroWorkflowToolRelationship[] = Object.entries(microWorkflowToolSeeds).flatMap(([microWorkflowSlug, toolSlugs]) =>
@@ -1783,7 +1818,7 @@ export const attentionFeed: AttentionFeedItem[] = [
   { id: "feed_1", title: "Cursor coding-agent momentum rising", description: "Coding-agent tools are clustering around build workflow comparisons.", severity: "high", entityType: "tool", entitySlug: "cursor", timestamp: "4 min ago" },
   { id: "feed_2", title: "AI Video overtook AI Image", description: "Short-form video workflows are pulling attention from static image generation.", severity: "high", entityType: "category", entitySlug: "ai-video", timestamp: "9 min ago" },
   { id: "feed_3", title: "Kling workflow saves +41%", description: "Faceless TikTok and YouTube production stacks are driving repeat saves.", severity: "medium", entityType: "tool", entitySlug: "kling", timestamp: "17 min ago" },
-  { id: "feed_4", title: "Research workflows trending among founders", description: "NotebookLM, Perplexity, and Claude are appearing together in founder research stacks.", severity: "medium", entityType: "workflow", entitySlug: "research-assistant-stack", timestamp: "24 min ago" }
+  { id: "feed_4", title: "Research workflows trending among founders", description: "NotebookLM, Perplexity, and Claude are appearing together in founder research stacks.", severity: "medium", entityType: "workflow", entitySlug: "research-assistant", timestamp: "24 min ago" }
 ];
 
 function overlapCount(a: string[], b: string[]) {

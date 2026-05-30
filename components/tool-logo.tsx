@@ -30,7 +30,7 @@ export function ToolLogo({
       width={size}
       height={size}
       onError={() => {
-        setIndex((currentIndex) => Math.min(currentIndex + 1, sources.length - 1));
+        setIndex((currentIndex) => currentIndex + 1);
       }}
     />
   );

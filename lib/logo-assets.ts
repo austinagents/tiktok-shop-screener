@@ -187,6 +187,61 @@ export const logoAssets: Record<string, LogoAsset> = {
     "faviconUrl": "",
     "logoSource": "website-icon"
   },
+  "vercel": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=vercel.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=vercel.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "n8n": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=n8n.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=n8n.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "apollo": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=apollo.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=apollo.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "framer": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=framer.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=framer.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "typefully": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=typefully.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=typefully.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "slack": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=slack.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "hubspot": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=hubspot.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "instantly": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=instantly.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=instantly.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "taplio": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=taplio.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=taplio.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "linkedin": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=linkedin.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=linkedin.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "google-maps": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=google.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=google.com&sz=64",
+    "logoSource": "google-favicon"
+  },
   "adapt": {
     "officialLogoUrl": "/logos/tools/adapt.svg",
     "faviconUrl": "/logos/tools/adapt.svg",
