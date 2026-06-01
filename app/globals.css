@@ -3004,17 +3004,20 @@ body {
 }
 
 .rotationRow span {
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 13px;
+  font-weight: 680;
+  line-height: normal;
 }
 
 .editorialNote {
   margin: 0;
   padding: 10px 0;
   border-bottom: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: 13px;
-  line-height: 1.5;
+  font-weight: 680;
+  line-height: normal;
 }
 
 .editorialNote:last-child {
@@ -3250,7 +3253,7 @@ body {
 .brandMark {
   width: 36px;
   height: 36px;
-  border-color: var(--border-active);
+  border-color: #D6DEE7;
   border-radius: var(--radius-sm);
   background:
     linear-gradient(145deg, rgba(149, 184, 123, 0.075), transparent),
