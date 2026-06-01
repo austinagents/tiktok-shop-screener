@@ -56,7 +56,7 @@ export default function DiscoverPage() {
             {workflows.slice(0, 4).map((workflow) => (
               <Link href={`/workflows/${workflow.slug}`} className="workflowPreview" key={workflow.id}>
                 <WorkflowStack toolSlugs={workflow.toolSlugs} />
-                <span><strong>{workflow.name}</strong><small>{workflow.savesCount.toLocaleString()} saves</small></span>
+                <span><strong>{workflow.name}</strong></span>
                 <MovementBadge value={workflow.growth24h} />
               </Link>
             ))}

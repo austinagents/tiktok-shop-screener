@@ -12,6 +12,7 @@ export type WorkflowProcessStep = {
   faviconUrl: string;
   iconUrl: string;
   task: string;
+  lookFor?: string;
   output: string;
   connection: string;
 };
@@ -50,9 +51,20 @@ export function WorkflowProcessTabs({ steps }: { steps: WorkflowProcessStep[] })
         <article className="workflowProcessPanel">
           <small>Step {selectedIndex + 1}</small>
           <h3>{selectedStep.toolName}</h3>
-          <p>{selectedStep.task}</p>
-          <div className="workflowProcessMeta"><span>Output</span><strong>{selectedStep.output}</strong></div>
-          <div className="workflowProcessMeta"><span>Why this step matters</span><strong>{selectedStep.connection}</strong></div>
+          {selectedStep.lookFor ? (
+            <>
+              <div className="workflowProcessMeta"><span>What to do</span><strong>{selectedStep.task}</strong></div>
+              <div className="workflowProcessMeta"><span>What to look for</span><strong>{selectedStep.lookFor}</strong></div>
+              <div className="workflowProcessMeta"><span>Output</span><strong>{selectedStep.output}</strong></div>
+              <div className="workflowProcessMeta"><span>Why this step matters</span><strong>{selectedStep.connection}</strong></div>
+            </>
+          ) : (
+            <>
+              <p>{selectedStep.task}</p>
+              <div className="workflowProcessMeta"><span>Output</span><strong>{selectedStep.output}</strong></div>
+              <div className="workflowProcessMeta"><span>Why this step matters</span><strong>{selectedStep.connection}</strong></div>
+            </>
+          )}
         </article>
       </div>
     </div>

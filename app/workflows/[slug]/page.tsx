@@ -5,7 +5,8 @@ import { SaveButton } from "@/components/save-button";
 import { TimeframeToggle } from "@/components/timeframe-toggle";
 import { WorkflowProcessTabs } from "@/components/workflow-process-tabs";
 import { WorkflowStack } from "@/components/workflow-stack";
-import { creatorWorkflowRelationships, creators, getWorkflow, toolsForWorkflow, workflows } from "@/lib/data";
+import { creatorWorkflowRelationships, creators, evidenceSourcesForTool, getWorkflow, toolsForWorkflow, workflows } from "@/lib/data";
+import type { ToolEvidenceSource } from "@/lib/types";
 
 export function generateStaticParams() {
   return workflows.map((workflow) => ({ slug: workflow.slug }));
@@ -23,11 +24,13 @@ export default function WorkflowDetailPage({ params }: { params: { slug: string 
     faviconUrl: tool.faviconUrl,
     iconUrl: tool.iconUrl,
     task: taskForWorkflowTool(workflow.slug, tool.name),
+    lookFor: lookForWorkflowTool(workflow.slug, tool.name),
     output: outputForWorkflowTool(workflow.slug, tool.name),
     connection: connectionForWorkflowTool(workflow.slug, tool.name, index === stackTools.length - 1, workflow.outcome)
   }));
   const workflowCreatorRelationships = creatorWorkflowRelationships.filter((relationship) => relationship.status === "accepted" && relationship.workflowSlug === workflow.slug);
   const related = workflows.filter((item) => item.slug !== workflow.slug && item.toolSlugs.some((slug) => workflow.toolSlugs.includes(slug))).slice(0, 4);
+  const proofSources = evidenceForWorkflowStack(workflow.toolSlugs);
 
   return (
     <div className="stack">
@@ -53,6 +56,7 @@ export default function WorkflowDetailPage({ params }: { params: { slug: string 
           <WorkflowProcessTabs steps={workflowProcessSteps} />
         </section>
       ) : null}
+      <WorkflowProofSources evidenceItems={proofSources} workflowName={workflow.name} />
       <section className="sidePanel">
         <div className="panelHeader"><h2>Creator Relationships</h2></div>
         {workflowCreatorRelationships.length ? (
@@ -74,6 +78,86 @@ export default function WorkflowDetailPage({ params }: { params: { slug: string 
       <section><div className="sectionHeader"><h2>Related Workflows</h2></div><div className="workflowGrid">{related.map((item) => <a className="workflowRow" href={`/workflows/${item.slug}`} key={item.id}><WorkflowStack toolSlugs={item.toolSlugs} /><span><strong>{item.name}</strong><small>{item.outcome}</small></span><MovementBadge value={item.growth24h} /></a>)}</div></section>
     </div>
   );
+}
+
+function WorkflowProofSources({ evidenceItems, workflowName }: { evidenceItems: ToolEvidenceSource[]; workflowName: string }) {
+  const buckets = sourceTypesFor(evidenceItems);
+  return (
+    <section className="toolIntelPanel">
+      <div className="toolPanelHeader">
+        <div><h2>Proof Sources</h2><p>Public receipts discussing the {workflowName} stack.</p></div>
+      </div>
+      {buckets.length ? (
+        <div className="toolEvidenceRow">
+          {buckets.map((sourceType) => (
+            <article className="toolEvidenceCard" key={sourceType}>
+              <div className="toolReceiptSourceHeader"><span>{sourceTypeIcon(sourceType)}</span><strong>{sourceTypeLabel(sourceType)}</strong></div>
+              <div className="toolReceiptPreviewList">
+                {evidenceItems.filter((item) => item.sourceType === sourceType).slice(0, 3).map((item) => (
+                  <article className="toolReceiptPreview" key={item.id}>
+                    {item.sourceImageUrl ? <img src={item.sourceImageUrl} alt="" /> : null}
+                    <div className="toolEvidenceIdentity"><strong>{item.sourceAuthor || item.platformLabel}</strong><p>{item.sourceTitle}</p></div>
+                    {item.snippet ? <p className="toolEvidenceSnippet">{item.snippet}</p> : null}
+                    <a className="toolReportCta" href={item.sourceUrl} target="_blank" rel="noreferrer">Open source →</a>
+                  </article>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p className="emptyState">No proof sources are indexed for this workflow stack yet.</p>
+      )}
+    </section>
+  );
+}
+
+function evidenceForWorkflowStack(toolSlugs: string[]) {
+  const stackTools = toolsForWorkflow({ toolSlugs } as (typeof workflows)[number]);
+  const stackNames = new Set(stackTools.map((tool) => normalizeToolName(tool.name)));
+  const expectedSize = stackNames.size;
+  const byId = new Map<string, ToolEvidenceSource>();
+
+  toolSlugs.forEach((toolSlug) => {
+    evidenceSourcesForTool(toolSlug).forEach((source) => {
+      const matched = new Set(source.matchedTools.map(normalizeToolName));
+      if (matched.size !== expectedSize) return;
+      if (![...stackNames].every((toolName) => matched.has(toolName))) return;
+      byId.set(source.id, source);
+    });
+  });
+
+  return [...byId.values()].sort((a, b) => new Date(b.detectedAt).getTime() - new Date(a.detectedAt).getTime());
+}
+
+function sourceTypesFor(evidenceItems: ToolEvidenceSource[]) {
+  const ordered: ToolEvidenceSource["sourceType"][] = ["x", "youtube", "github", "news", "newsletter_blog", "article", "directory", "docs", "official", "other"];
+  return ordered.filter((sourceType) => evidenceItems.some((item) => item.sourceType === sourceType));
+}
+
+function sourceTypeLabel(type: ToolEvidenceSource["sourceType"]) {
+  if (type === "x") return "X";
+  if (type === "youtube") return "YouTube";
+  if (type === "github") return "GitHub";
+  if (type === "docs") return "Docs";
+  if (type === "official") return "Official";
+  if (type === "news") return "News";
+  if (type === "newsletter_blog") return "Newsletter / Blog";
+  if (type === "directory") return "Directory";
+  if (type === "article") return "Article";
+  return "Other";
+}
+
+function sourceTypeIcon(type: ToolEvidenceSource["sourceType"]) {
+  if (type === "youtube") return "YT";
+  if (type === "github") return "GH";
+  if (type === "newsletter_blog") return "NB";
+  if (type === "directory") return "DIR";
+  return sourceTypeLabel(type).slice(0, 2).toUpperCase();
+}
+
+function normalizeToolName(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
 }
 
 function Metric({ label, value }: { label: string; value: ReactNode }) {
@@ -259,7 +343,12 @@ function educationForWorkflowTool(workflowSlug: string, toolName: string) {
 
 function taskForWorkflowTool(workflowSlug: string, toolName: string) {
   const education = educationForWorkflowTool(workflowSlug, toolName);
-  return education ? `What to do: ${education.do} What to look for: ${education.look}` : "What to do: Review this tool's role in the workflow. What to look for: A concrete artifact that can move into the next step.";
+  return education?.do ?? "Review this tool's role in the workflow and use it to create the artifact needed for the next step.";
+}
+
+function lookForWorkflowTool(workflowSlug: string, toolName: string) {
+  const education = educationForWorkflowTool(workflowSlug, toolName);
+  return education ? `${education.look} ${education.check}` : "A concrete artifact that is clear enough to move into the next step.";
 }
 
 function outputForWorkflowTool(workflowSlug: string, toolName: string) {
@@ -268,5 +357,5 @@ function outputForWorkflowTool(workflowSlug: string, toolName: string) {
 
 function connectionForWorkflowTool(workflowSlug: string, toolName: string, isFinalStep: boolean, workflowOutcome: string) {
   const education = educationForWorkflowTool(workflowSlug, toolName);
-  return education ? `You did this right if: ${education.check} Why it matters: ${education.why}` : (isFinalStep ? workflowOutcome : "You did this right if: the artifact is clear enough for the next step. Why it matters: each step should reduce ambiguity before the workflow continues.");
+  return education?.why ?? (isFinalStep ? workflowOutcome : "Each step should reduce ambiguity before the workflow continues.");
 }

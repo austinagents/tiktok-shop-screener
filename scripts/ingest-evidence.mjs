@@ -443,18 +443,23 @@ function toolQueryJobs() {
     ? publicTools.filter((tool) => tool.slug === onlyTool || compact(tool.name) === compact(onlyTool))
     : publicTools;
   const selected = maxTools > 0 ? selectedTools.slice(0, maxTools) : selectedTools;
-  const intents = ["tutorial", "guide", "workflow", "integration", "documentation", "release", "announcement", "use case", "examples", "demo"];
+  const exclusions = "-login -status -download -docs -documentation";
   return selected.flatMap((tool) => {
-    const domain = hostnameFor(tool.websiteUrl);
+    const toolNames = uniqueBy([tool.name, ...(tool.aliases ?? [])].filter(Boolean), compact).slice(0, 3);
     const queries = [
-      ...(domain ? [
-        `site:${domain} ${quoted(tool.name)}`,
-        `site:${domain} ${tool.name} guide`,
-        `site:${domain} ${tool.name} documentation`
-      ] : []),
-      ...intents.flatMap((intent) => [
-        `${quoted(tool.name)} ${intent}`,
-        `${tool.name} ${intent}`
+      ...toolNames.flatMap((name) => [
+        `site:x.com ${quoted(name)}`,
+        `site:twitter.com ${quoted(name)}`,
+        `site:youtube.com ${quoted(name)} tutorial`,
+        `site:youtube.com ${quoted(name)} review`,
+        `site:youtube.com ${quoted(name)} workflow`,
+        `site:github.com ${quoted(name)}`,
+        `${quoted(name)} tutorial ${exclusions}`,
+        `${quoted(name)} review ${exclusions}`,
+        `${quoted(name)} workflow ${exclusions}`,
+        `${quoted(name)} "use case" ${exclusions}`,
+        `${quoted(name)} github ${exclusions}`,
+        `${quoted(name)} youtube ${exclusions}`
       ])
     ];
     const selectedQueries = queryLimit > 0 ? uniqueBy(queries, (query) => query).slice(0, queryLimit) : uniqueBy(queries, (query) => query);

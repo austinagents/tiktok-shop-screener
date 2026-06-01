@@ -78,8 +78,8 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
 
         <ToolEvidence tool={tool} evidenceItems={toolEvidenceItems} />
         <CommonlyAppearsWithOverview tool={tool} relationships={relationshipSummaries} />
-        <EvidenceMicroWorkflows tool={tool} groups={microWorkflowGroups} />
         <EvidenceWorkflows tool={tool} groups={workflowGroups} />
+        <EvidenceMicroWorkflows tool={tool} groups={microWorkflowGroups} />
 
         <section className="toolReportGrid">
           <Panel className="toolReportAbout" title={`About ${tool.name}`}>
@@ -249,30 +249,12 @@ const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label:
   { type: "x", label: "X", icon: "X" },
   { type: "youtube", label: "YouTube", icon: "YT" },
   { type: "github", label: "GitHub", icon: "GH" },
-  { type: "article", label: "Articles", icon: "AR" },
-  { type: "directory", label: "Directories", icon: "DIR" }
+  { type: "article", label: "Articles", icon: "AR" }
 ];
 
-function ReceiptPreview({ evidence, showMatchedTools }: { evidence: ToolEvidenceSource; showMatchedTools: boolean }) {
-  return (
-    <article className="toolReceiptPreview">
-      {evidence.sourceImageUrl ? <img src={evidence.sourceImageUrl} alt="" /> : null}
-      <div className="toolEvidenceIdentity">
-        <strong>{evidence.sourceAuthor || evidence.platformLabel}</strong>
-        <p>{evidence.sourceTitle}</p>
-      </div>
-      {showMatchedTools ? <div className="toolEvidenceMatches">
-        <small>Matched</small>
-        <div>{evidence.matchedTools.map((toolName) => <span key={toolName}>{toolName}</span>)}</div>
-      </div> : null}
-      {evidence.snippet ? <p className="toolEvidenceSnippet">{evidence.snippet}</p> : null}
-      <a className="toolReportCta" href={evidence.sourceUrl} target="_blank" rel="noreferrer">Open source →</a>
-    </article>
-  );
-}
-
-function SourceReceiptCard({ source, evidenceItems, mode = "tool" }: { source: (typeof receiptSourceCards)[number]; evidenceItems: ToolEvidenceSource[]; mode?: "tool" | "relationship" }) {
-  const receipts = rankEvidence(evidenceItems.filter((item) => item.sourceType === source.type)).slice(0, 3);
+function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof receiptSourceCards)[number]; evidenceItems: ToolEvidenceSource[]; tool: Tool }) {
+  const sourceSummaries = sourceSummariesFor(evidenceItems.filter((item) => item.sourceType === source.type && !isOfficialOwnedPublicSource(item, tool))).slice(0, 3);
+  if (!sourceSummaries.length) return null;
 
   return (
     <article className="toolEvidenceCard">
@@ -280,27 +262,155 @@ function SourceReceiptCard({ source, evidenceItems, mode = "tool" }: { source: (
         <span>{source.icon}</span>
         <strong>{source.label}</strong>
       </div>
-      {receipts.length ? (
-        <div className="toolReceiptPreviewList">
-          {receipts.map((item) => <ReceiptPreview evidence={item} showMatchedTools={mode === "relationship"} key={item.id} />)}
-        </div>
-      ) : (
-        <p className="toolReceiptEmpty">No receipts indexed yet.</p>
-      )}
+      <div className="toolReceiptPreviewList">
+        {sourceSummaries.map((summary) => (
+          <div className="toolIntelMiniRow" key={summary.key}>
+            {summary.imageUrl ? <img src={summary.imageUrl} alt="" width={28} height={28} /> : <span className="toolReceiptSourceHeader"><span>{source.icon}</span></span>}
+            <span>
+              <strong className="toolSourceEntityTitle">{summary.title}</strong>
+              {summary.name ? <small className="toolSourceEntityMeta">{summary.name}</small> : null}
+            </span>
+          </div>
+        ))}
+      </div>
       <span className="toolReportCta">View All →</span>
     </article>
   );
 }
 
 function ToolEvidence({ tool, evidenceItems }: { tool: Tool; evidenceItems: ToolEvidenceSource[] }) {
+  const publicSourceEvidence = evidenceItems.filter((item) => !isOfficialOwnedPublicSource(item, tool));
+  const activeSources = receiptSourceCards.filter((source) => publicSourceEvidence.some((item) => item.sourceType === source.type));
+  if (!activeSources.length) return null;
+
   return (
     <Panel className="toolEvidenceFeed" title="Detected Across Public Sources" subtitle={`Evidence specific to ${tool.name} across indexed public receipts.`}>
       <div className="toolEvidenceRow">
-        {receiptSourceCards.map((source) => <SourceReceiptCard source={source} evidenceItems={evidenceItems} key={source.type} />)}
+        {activeSources.map((source) => <SourceReceiptCard source={source} evidenceItems={publicSourceEvidence} tool={tool} key={source.type} />)}
       </div>
       <p className="toolReceiptFooter">These receipts answer where {tool.name} is appearing across public sources.</p>
     </Panel>
   );
+}
+
+function sourceSummariesFor(evidenceItems: ToolEvidenceSource[]) {
+  const groups = new Map<string, { name: string; receipts: ToolEvidenceSource[] }>();
+
+  evidenceItems.forEach((item) => {
+    const name = sourceNameForEvidence(item);
+    const key = normalizeToolName(name);
+    const existing = groups.get(key);
+    if (existing) {
+      existing.receipts.push(item);
+      return;
+    }
+    groups.set(key, { name, receipts: [item] });
+  });
+
+  return [...groups.entries()]
+    .map(([key, group]) => ({
+      key,
+      name: group.name,
+      count: group.receipts.length,
+      strongestReceipt: rankEvidence(group.receipts)[0],
+      title: rankEvidence(group.receipts)[0]?.sourceTitle || group.name,
+      imageUrl: rankEvidence(group.receipts).find((item) => item.sourceImageUrl)?.sourceImageUrl
+    }))
+    .sort((a, b) => b.count - a.count || evidenceStrength(b.strongestReceipt) - evidenceStrength(a.strongestReceipt));
+}
+
+function sourceNameForEvidence(item: ToolEvidenceSource) {
+  if (item.sourceType === "github") return githubEntityName(item.sourceUrl) || cleanSourceName(item.sourceAuthor) || "GitHub";
+  if (item.sourceType === "x") return cleanSourceName(item.sourceAuthor, ["X"]) || xEntityName(item.sourceUrl) || "X";
+  if (item.sourceType === "youtube") return cleanSourceName(item.sourceAuthor, ["YouTube"]) || cleanSourceName(item.platformLabel, ["YouTube"]) || "YouTube";
+  return item.sourceAuthor || item.platformLabel || domainFor(item.sourceUrl);
+}
+
+function cleanSourceName(value?: string, blocked: string[] = []) {
+  const name = String(value ?? "").trim();
+  if (!name) return "";
+  return blocked.some((item) => normalizeToolName(item) === normalizeToolName(name)) ? "" : name;
+}
+
+function githubEntityName(sourceUrl: string) {
+  try {
+    const url = new URL(sourceUrl);
+    const [owner, repo] = url.pathname.split("/").filter(Boolean);
+    if (owner && repo) return `${owner}/${repo}`;
+    return owner || "";
+  } catch {
+    return "";
+  }
+}
+
+function xEntityName(sourceUrl: string) {
+  try {
+    const url = new URL(sourceUrl);
+    const [handle] = url.pathname.split("/").filter(Boolean);
+    return handle ? `@${handle}` : "";
+  } catch {
+    return "";
+  }
+}
+
+const officialSourceKeysByTool: Record<string, string[]> = {
+  chatgpt: ["openai", "chatgpt"],
+  claude: ["anthropic", "anthropics", "claude", "claudeai"],
+  cursor: ["cursor", "anysphere"],
+  elevenlabs: ["elevenlabs"],
+  heygen: ["heygen"],
+  n8n: ["n8n"],
+  vercel: ["vercel"]
+};
+
+function isOfficialOwnedPublicSource(item: ToolEvidenceSource, tool: Tool) {
+  const keys = officialSourceKeysForTool(tool);
+  if (!keys.length) return false;
+
+  if (item.sourceType === "x" || item.sourceType === "youtube") {
+    const entityName = sourceNameForEvidence(item);
+    return officialKeyMatches(entityName, keys);
+  }
+
+  if (item.sourceType === "github") {
+    const owner = githubEntityName(item.sourceUrl).split("/")[0];
+    return officialKeyMatches(owner, keys);
+  }
+
+  if (item.sourceType === "article") {
+    return officialDomainMatches(item.sourceUrl, tool);
+  }
+
+  return false;
+}
+
+function officialSourceKeysForTool(tool: Tool) {
+  return [
+    tool.name,
+    tool.slug,
+    ...(officialSourceKeysByTool[tool.slug] ?? [])
+  ].map(normalizeToolName).filter(Boolean);
+}
+
+function officialKeyMatches(value: string, keys: string[]) {
+  const normalized = normalizeToolName(value);
+  return keys.some((key) => normalized === key || normalized.includes(key));
+}
+
+function officialDomainMatches(sourceUrl: string, tool: Tool) {
+  const sourceDomain = rootDomainForUrl(sourceUrl);
+  const officialDomain = rootDomainForUrl(tool.websiteUrl);
+  if (!sourceDomain || !officialDomain) return false;
+  return sourceDomain === officialDomain || sourceDomain.endsWith(`.${officialDomain}`);
+}
+
+function rootDomainForUrl(sourceUrl: string) {
+  try {
+    const parts = new URL(sourceUrl).hostname.replace(/^www\./, "").toLowerCase().split(".").filter(Boolean);
+    return parts.length > 2 ? parts.slice(-2).join(".") : parts.join(".");
+  } catch {
+    return "";
+  }
 }
 
 type ToolRelationshipSummary = {
@@ -313,6 +423,8 @@ type ToolRelationshipSummary = {
 type EvidenceGraphGroup = {
   key: string;
   label: string;
+  href?: string;
+  ctaLabel: string;
   toolSlugs: string[];
   toolNames: string[];
   receipts: ToolEvidenceSource[];
@@ -330,8 +442,6 @@ function CommonlyAppearsWithOverview({ tool, relationships }: { tool: Tool; rela
               <ToolLogo officialSrc={relationship.tool.officialLogoUrl} src={relationship.tool.logoUrl} faviconSrc={relationship.tool.faviconUrl} fallback={relationship.tool.iconUrl} alt="" size={30} />
               <span>
                 <strong>{relationship.tool.name}</strong>
-                <small>{relationship.sharedReceiptCount} shared {relationship.sharedReceiptCount === 1 ? "receipt" : "receipts"}</small>
-                <small>{relationship.sourceMix.map((source) => `${sourceTypeLabel(source.type)} ${source.count}`).join(" · ")}</small>
               </span>
             </Link>
           ))}
@@ -373,28 +483,19 @@ function EvidenceWorkflows({ tool, groups }: { tool: Tool; groups: EvidenceGraph
 
 function EvidenceGraphGroupCard({ group }: { group: EvidenceGraphGroup }) {
   return (
-    <details className="toolRelationshipReceiptGroup">
-      <summary className="toolRelationshipReceiptHeader">
+    <article className="toolRelationshipReceiptGroup">
+      <div className="toolRelationshipReceiptHeader">
         <div>
           <h3>{group.label}</h3>
           <div className="toolStackSummary compact">
             <WorkflowStack toolSlugs={group.toolSlugs} limit={5} />
-            <small>{group.toolNames.join(" + ")}</small>
-          </div>
-          <div className="toolRelationshipSources">
-            {group.sourceMix.map((source) => <span key={source.type}>{sourceTypeLabel(source.type)} {source.count}</span>)}
           </div>
         </div>
         <span className="toolGraphStats">
-          <small>{group.receipts.length} {group.receipts.length === 1 ? "receipt" : "receipts"}</small>
-          <small>Last seen {group.lastSeen}</small>
-          <em>Expand →</em>
+          {group.href ? <Link className="toolReportCta" href={group.href}>{group.ctaLabel}</Link> : <em>{group.ctaLabel}</em>}
         </span>
-      </summary>
-      <div className="toolEvidenceRow compact">
-        {receiptSourceCards.map((source) => <SourceReceiptCard source={source} evidenceItems={group.receipts} mode="relationship" key={source.type} />)}
       </div>
-    </details>
+    </article>
   );
 }
 function TrendingCard({ tool, rank }: { tool: Tool; rank: number }) {
@@ -674,7 +775,7 @@ function evidenceGraphGroups(tool: Tool, evidenceItems: ToolEvidenceSource[], la
       const uniqueReceipts = rankEvidence([...new Map(group.receipts.map((item) => [item.id, item])).values()]);
       return {
         key,
-        label: graphGroupLabel(group.toolSlugs, group.toolNames, layer),
+        ...graphGroupRoute(group.toolSlugs, group.toolNames, layer),
         toolSlugs: group.toolSlugs,
         toolNames: group.toolNames,
         receipts: uniqueReceipts,
@@ -685,14 +786,23 @@ function evidenceGraphGroups(tool: Tool, evidenceItems: ToolEvidenceSource[], la
     .sort((a, b) => b.receipts.length - a.receipts.length || evidenceStrength(b.receipts[0]) - evidenceStrength(a.receipts[0]));
 }
 
-function graphGroupLabel(toolSlugs: string[], toolNames: string[], layer: "micro" | "workflow") {
+function graphGroupRoute(toolSlugs: string[], toolNames: string[], layer: "micro" | "workflow"): { label: string; href?: string; ctaLabel: string } {
   const exactKey = [...toolSlugs].sort().join("|");
   if (layer === "workflow") {
     const knownWorkflow = workflows.find((workflow) => [...workflow.toolSlugs].sort().join("|") === exactKey);
-    if (knownWorkflow) return knownWorkflow.name;
+    if (knownWorkflow) return { label: knownWorkflow.name, href: `/workflows/${knownWorkflow.slug}`, ctaLabel: "View Workflow →" };
+    return { label: toolNames.join(" + "), href: "/workflows", ctaLabel: "View Workflow →" };
   }
   const knownMicroWorkflow = microWorkflows.find((microWorkflow) => [...toolsForMicroWorkflow(microWorkflow.slug).map((tool) => tool.slug)].sort().join("|") === exactKey);
-  return knownMicroWorkflow?.name || toolNames.join(" + ");
+  return {
+    label: knownMicroWorkflow?.name || toolNames.join(" + "),
+    href: `/micro-workflows/${microWorkflowPairSlug(toolSlugs)}`,
+    ctaLabel: "View Micro Workflow →"
+  };
+}
+
+function microWorkflowPairSlug(toolSlugs: string[]) {
+  return [...toolSlugs].sort().join("-");
 }
 
 function commonRelationshipSummaries(tool: Tool, groups: EvidenceGraphGroup[]): ToolRelationshipSummary[] {

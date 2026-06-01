@@ -1807,6 +1807,19 @@ p { color: var(--muted); line-height: 1.5; }
   min-width: 0;
 }
 
+.toolSourceEntityTitle {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.toolSourceEntityMeta {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .toolIntelMiniRow .movementBadge {
   font-size: 12px;
 }

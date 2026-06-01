@@ -45,7 +45,7 @@ export function ToolTable({ tools, compact = false, focused = false }: { tools: 
         <tbody>
           {tools.map((tool, index) => (
             <tr className={tool.lifecycleState === "Breaking Out" ? "breakoutRow" : ""} key={tool.id}>
-              <td className="rank" data-label="Rank"><span className="rankMove">↗</span>#{index + 1}</td>
+              <td className="rank" data-label="Rank">{!focused && <span className="rankMove">↗</span>}#{index + 1}</td>
               <td data-label="Tool">
                 <Link href={`/tools/${tool.slug}`} className="toolCell">
                   <ToolLogo officialSrc={tool.officialLogoUrl} src={tool.logoUrl} faviconSrc={tool.faviconUrl} fallback={tool.iconUrl} alt="" />
