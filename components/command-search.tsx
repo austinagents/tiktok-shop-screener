@@ -1,7 +1,7 @@
 "use client";
 
 import { Search, X } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
 import { getTool } from "@/lib/data";
@@ -14,6 +14,7 @@ export function CommandSearch() {
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [active, setActive] = useState(0);
+  const inputRef = useRef<HTMLInputElement>(null);
   const searchState = useMemo(() => searchEcosystem(query), [query]);
   const results = useMemo(() => {
     return searchState.results.slice(0, query.trim() ? 10 : 8);
@@ -67,23 +68,31 @@ export function CommandSearch() {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [active, open, results]);
+  }, [active, open, query, results]);
+
+  useEffect(() => {
+    if (open) inputRef.current?.focus();
+  }, [open]);
 
   return (
     <>
-      <button className="searchBox commandTrigger" onClick={() => setOpen(true)} type="button">
-        <Search size={16} />
-        <span>Search products, creators, workflows...</span>
-        <kbd>/</kbd>
-      </button>
-      {open && (
-        <div className="commandOverlay" role="dialog" aria-label="Command search">
+      {open && <button className="commandOverlay" onClick={() => setOpen(false)} type="button" aria-label="Close command search" />}
+      <div className={`commandSearchRoot${open ? " open" : ""}`} role={open ? "dialog" : undefined} aria-label={open ? "Command search" : undefined}>
+        {open ? (
+          <div className="searchBox commandInput">
+            <Search size={16} />
+            <input ref={inputRef} value={query} onChange={(event) => { setQuery(event.target.value); setActive(0); }} placeholder="Search products, creators, workflows..." />
+            <button onClick={() => setOpen(false)} type="button"><X size={16} /></button>
+          </div>
+        ) : (
+          <button className="searchBox commandTrigger" onClick={() => setOpen(true)} type="button">
+            <Search size={16} />
+            <span>Search products, creators, workflows...</span>
+            <kbd>/</kbd>
+          </button>
+        )}
+        {open && (
           <div className="commandPanel">
-            <div className="commandInput">
-              <Search size={16} />
-              <input autoFocus value={query} onChange={(event) => { setQuery(event.target.value); setActive(0); }} placeholder="Slash search AppScreener" />
-              <button onClick={() => setOpen(false)} type="button"><X size={16} /></button>
-            </div>
             <div className="commandResults">
               {results.length ? grouped.map(([type, items]) => (
                 <div className="commandGroup" key={type}>
@@ -109,8 +118,8 @@ export function CommandSearch() {
               )) : <p className="emptyState">No matching ecosystem nodes found.</p>}
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </>
   );
 }

@@ -253,7 +253,7 @@ const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label:
 ];
 
 function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof receiptSourceCards)[number]; evidenceItems: ToolEvidenceSource[]; tool: Tool }) {
-  const sourceSummaries = sourceSummariesFor(evidenceItems.filter((item) => item.sourceType === source.type && !isOfficialOwnedPublicSource(item, tool))).slice(0, 3);
+  const sourceSummaries = sourceSummariesFor(evidenceItems.filter((item) => item.sourceType === source.type && isPublicSourceDisplayReceipt(item, tool))).slice(0, 3);
   if (!sourceSummaries.length) return null;
 
   return (
@@ -264,13 +264,13 @@ function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof re
       </div>
       <div className="toolReceiptPreviewList">
         {sourceSummaries.map((summary) => (
-          <div className="toolIntelMiniRow" key={summary.key}>
+          <a className="toolIntelMiniRow" href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" key={summary.key}>
             {summary.imageUrl ? <img src={summary.imageUrl} alt="" width={28} height={28} /> : <span className="toolReceiptSourceHeader"><span>{source.icon}</span></span>}
             <span>
               <strong className="toolSourceEntityTitle">{summary.title}</strong>
               {summary.name ? <small className="toolSourceEntityMeta">{summary.name}</small> : null}
             </span>
-          </div>
+          </a>
         ))}
       </div>
       <span className="toolReportCta">View All →</span>
@@ -280,7 +280,7 @@ function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof re
 
 function ToolEvidence({ tool, evidenceItems }: { tool: Tool; evidenceItems: ToolEvidenceSource[] }) {
   const publicSourceEvidence = evidenceItems.filter((item) => !isOfficialOwnedPublicSource(item, tool));
-  const activeSources = receiptSourceCards.filter((source) => publicSourceEvidence.some((item) => item.sourceType === source.type));
+  const activeSources = receiptSourceCards.filter((source) => publicSourceEvidence.some((item) => item.sourceType === source.type && isPublicSourceDisplayReceipt(item, tool)));
   if (!activeSources.length) return null;
 
   return (
@@ -313,7 +313,8 @@ function sourceSummariesFor(evidenceItems: ToolEvidenceSource[]) {
       name: group.name,
       count: group.receipts.length,
       strongestReceipt: rankEvidence(group.receipts)[0],
-      title: rankEvidence(group.receipts)[0]?.sourceTitle || group.name,
+      title: sourceTitleForDisplay(rankEvidence(group.receipts)[0]) || group.name,
+      sourceUrl: rankEvidence(group.receipts)[0]?.sourceUrl || "#",
       imageUrl: rankEvidence(group.receipts).find((item) => item.sourceImageUrl)?.sourceImageUrl
     }))
     .sort((a, b) => b.count - a.count || evidenceStrength(b.strongestReceipt) - evidenceStrength(a.strongestReceipt));
@@ -324,6 +325,18 @@ function sourceNameForEvidence(item: ToolEvidenceSource) {
   if (item.sourceType === "x") return cleanSourceName(item.sourceAuthor, ["X"]) || xEntityName(item.sourceUrl) || "X";
   if (item.sourceType === "youtube") return cleanSourceName(item.sourceAuthor, ["YouTube"]) || cleanSourceName(item.platformLabel, ["YouTube"]) || "YouTube";
   return item.sourceAuthor || item.platformLabel || domainFor(item.sourceUrl);
+}
+
+function sourceTitleForDisplay(item?: ToolEvidenceSource) {
+  if (!item) return "";
+  if (item.sourceType === "x") return item.snippet || item.sourceTitle;
+  return item.sourceTitle;
+}
+
+function isPublicSourceDisplayReceipt(item: ToolEvidenceSource, tool: Tool) {
+  if (isOfficialOwnedPublicSource(item, tool)) return false;
+  if (isLowValueGithubReceipt(item)) return false;
+  return true;
 }
 
 function cleanSourceName(value?: string, blocked: string[] = []) {
@@ -340,6 +353,24 @@ function githubEntityName(sourceUrl: string) {
     return owner || "";
   } catch {
     return "";
+  }
+}
+
+function isLowValueGithubReceipt(item: ToolEvidenceSource) {
+  if (item.sourceType !== "github") return false;
+  try {
+    const url = new URL(item.sourceUrl);
+    const hostname = url.hostname.replace(/^www\./, "").toLowerCase();
+    const segments = url.pathname.split("/").filter(Boolean).map((segment) => segment.toLowerCase());
+    const [owner, repo] = segments;
+    if (hostname === "docs.github.com") return true;
+    if (!owner || !repo) return true;
+    if (["topics", "marketplace", "features", "explore", "collections", "trending", "login"].includes(owner)) return true;
+    if (["docs", "documentation", "wiki", "marketplace"].includes(repo)) return true;
+    if (segments.some((segment) => ["docs", "documentation", "wiki", "marketplace"].includes(segment))) return true;
+    return false;
+  } catch {
+    return true;
   }
 }
 
