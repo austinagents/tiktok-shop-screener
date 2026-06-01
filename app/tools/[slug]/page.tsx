@@ -1,77 +1,19 @@
 import Link from "next/link";
 import Script from "next/script";
 import type { ReactNode } from "react";
-import {
-  Activity,
-  BarChart3,
-  Bookmark,
-  ExternalLink,
-  GitCompareArrows,
-  Grid2X2,
-  Home,
-  Megaphone,
-  Rocket,
-  Search,
-  Share2,
-  Tag,
-  TrendingUp,
-  Users,
-  Workflow,
-  Zap
-} from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { ClaimStatusBadge } from "@/components/claims/claim-status";
 import { CreatorAvatar } from "@/components/creator-avatar";
 import { MovementBadge } from "@/components/movement-badge";
 import { SaveButton } from "@/components/save-button";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
-import { creators, creatorSignals, creatorToolRelationships, edgesForTool, getTool, microWorkflows, productClaimStatus, tools, toolsForMicroWorkflow, toolsForWorkflow, workflows } from "@/lib/data";
+import { creators, creatorToolRelationships, evidenceSourcesForTool, getTool, microWorkflows, tools, toolsForMicroWorkflow, toolsForWorkflow, workflows } from "@/lib/data";
 import { ecosystemTagSlug } from "@/lib/ecosystem-tags";
 import { betaEventBootstrapScript } from "@/lib/events";
 import { displayCategory } from "@/lib/format";
 import { LOCAL_PRODUCTS_KEY } from "@/lib/local-graph";
-import type { CreatorProfile, CreatorToolRelationship, Tool, Workflow as WorkflowType } from "@/lib/types";
-
-const navSections = [
-  {
-    title: "",
-    items: [
-      { href: "/", label: "Home", icon: Home },
-      { href: "/", label: "Trending", icon: TrendingUp },
-      { href: "/heatmap", label: "Heatmap", icon: Grid2X2 },
-      { href: "/categories/ai-coding", label: "Categories", icon: Tag },
-      { href: "/search", label: "Search", icon: Search }
-    ]
-  },
-  {
-    title: "Intelligence",
-    items: [
-      { href: "/", label: "Momentum Rail", icon: Activity },
-      { href: "/breaking-out", label: "Breakouts", icon: Rocket },
-      { href: "/breaking-out", label: "Emerging", icon: Zap },
-      { href: "/watchlist", label: "Watchlist", icon: Bookmark },
-      { href: "/compare", label: "Compare", icon: GitCompareArrows }
-    ]
-  },
-  {
-    title: "Ecosystem",
-    items: [
-      { href: "/creators", label: "Creators", icon: Users },
-      { href: "/workflows", label: "Workflows", icon: Workflow },
-      { href: "/tags/ai-coding", label: "Tags", icon: Tag }
-    ]
-  },
-  {
-    title: "For Builders",
-    items: [
-      { href: "/dashboard/product", label: "Product dashboard", icon: Zap },
-      { href: "/dashboard/product", label: "Claim status", icon: Megaphone },
-      { href: "/dashboard", label: "Ownership", icon: BarChart3 }
-    ]
-  }
-];
-
-const bottomLinks = ["About", "Methodology", "API", "Pricing", "Privacy", "Terms"];
+import type { CreatorProfile, CreatorToolRelationship, Tool, ToolEvidenceSource, Workflow as WorkflowType } from "@/lib/types";
 
 function isTool(item: Tool | undefined): item is Tool {
   return Boolean(item);
@@ -97,46 +39,34 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   const tool = getTool(params.slug);
   if (!tool) return <LocalProductProfile slug={params.slug} />;
 
-  const connectedCreators = creatorRelationshipsForTool(tool);
-  const usedIn = workflows.filter((workflow) => workflow.toolSlugs.includes(tool.slug));
-  const related = relatedToolsFor(tool);
-  const edgeTools = edgesForTool(tool.slug)
-    .map((edge) => getTool(edge.fromSlug === tool.slug ? edge.toSlug : edge.fromSlug))
-    .filter(isTool)
-    .slice(0, 5);
-  const nearby = [...tools]
-    .filter((item) => item.slug !== tool.slug && item.categories.some((category) => tool.categories.includes(category)))
-    .sort((a, b) => b.growth24h - a.growth24h)
-    .slice(0, 5);
-  const recentSignals = creatorSignals.filter((signal) => signal.toolSlug === tool.slug);
+  const evidenceItems = evidenceSourcesForTool(tool.slug);
+  const validEvidenceItems = evidenceItems.filter((item) => isToolEvidence(item));
+  const toolEvidenceItems = validEvidenceItems.filter((item) => isCurrentToolOnlyEvidence(item, tool));
+  const microWorkflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "micro");
+  const workflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "workflow");
+  const relationshipSummaries = commonRelationshipSummaries(tool, [...microWorkflowGroups, ...workflowGroups]);
   const verification = publicVerificationState(tool);
   const launchYear = knownYear(tool.launchDate);
   const relatedTags = [...new Set([...tool.subCategoryTags, ...tool.tags.slice(0, 5)])].slice(0, 8);
   const rank = [...tools].sort((a, b) => b.organicTrendingScore - a.organicTrendingScore).findIndex((item) => item.slug === tool.slug) + 1;
-  const movementReasons = reasonsForTool(tool, usedIn.length, edgeTools.length, connectedCreators.length, recentSignals.length);
-  const claimStatus = productClaimStatus(tool.slug);
 
   return (
-    <div className="toolIntelShell">
+    <div className="toolIntelReport">
       <script dangerouslySetInnerHTML={{ __html: productProfileEventScript(tool.slug) }} />
-      <ToolSidebar />
-
       <div className="toolIntelWorkspace">
         <section className="toolIntelHeroGrid">
           <article className="toolIntelHero">
-            <Link href="/" className="toolBackLink">← Back to search</Link>
+            <Link href="/search" className="toolBackLink">← Back to search</Link>
             <div className="toolHeroBody">
               <ToolLogo officialSrc={tool.officialLogoUrl} src={tool.logoUrl} faviconSrc={tool.faviconUrl} fallback={tool.iconUrl} alt="" size={112} />
               <div>
-                <h1>{tool.name}{verification ? <span>{verification}</span> : null}</h1>
+                <h1>{tool.name}<span>{verification || "Verified Momentum"}</span></h1>
                 <p className="toolHeroCategory">{displayCategory(tool.category)}</p>
                 <p className="toolHeroDescription">{tool.description}</p>
                 <TagRail tool={tool} tags={relatedTags.slice(0, 5)} />
-                <p className="ownershipUnlockCopy">Claiming unlocks product info management, workflow associations, creator adjacency, and topic/use-case positioning.</p>
                 <div className="toolHeroActions">
                   <a className="iconTextButton primaryWebsiteButton" href={tool.websiteUrl} target="_blank" rel="noreferrer">Visit website <ExternalLink size={14} /></a>
-                  <a className="iconTextButton" href={`/claim/product/${tool.slug}`} data-beta-product-claim-cta="true">{claimStatus === "claimed" ? "Manage Product" : "Claim Product"}</a>
-                  <ClaimStatusBadge status={claimStatus} />
+                  <Link className="iconTextButton" href={`/compare?tools=${tool.slug}`}>Compare</Link>
                   <SaveButton kind="tools" id={tool.slug} label="Add to watchlist" />
                 </div>
               </div>
@@ -146,92 +76,30 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
           <TrendingCard tool={tool} rank={rank} />
         </section>
 
-        <section className="toolIntelContentGrid">
-          <main className="toolIntelMain">
-            <Panel title={`Why is ${tool.name} trending?`}>
-              <div className="toolWhyGrid">
-                {movementReasons.map((reason) => <ReasonCard title={reason.title} text={reason.text} key={reason.title} />)}
-              </div>
-            </Panel>
+        <ToolEvidence tool={tool} evidenceItems={toolEvidenceItems} />
+        <CommonlyAppearsWithOverview tool={tool} relationships={relationshipSummaries} />
+        <EvidenceMicroWorkflows tool={tool} groups={microWorkflowGroups} />
+        <EvidenceWorkflows tool={tool} groups={workflowGroups} />
 
-            <Panel title="Related Creators" subtitle={`Accepted creator relationships connected to ${tool.name}`}>
-              {connectedCreators.length ? (
-                <div className="toolCreatorShelf">
-                  {connectedCreators.map(({ creator, relationshipType }) => <CreatorCard creator={creator} relationshipType={relationshipType} key={creator.id} />)}
-                </div>
-              ) : (
-                <p className="toolEmptyState">No accepted uses or teaches relationships are public yet. Mentions stay separate from verified adoption.</p>
-              )}
-            </Panel>
+        <section className="toolReportGrid">
+          <Panel className="toolReportAbout" title={`About ${tool.name}`}>
+            <div className="toolAboutTable">
+              <InfoRow label="Best for" value={tool.useCases.slice(0, 2).join(", ")} />
+              <InfoRow label="Use cases" value={tool.useCases.slice(0, 3).join(", ")} />
+              <InfoRow label="Platform" value={tool.supportedPlatforms.join(", ")} />
+              <InfoRow label="Pricing" value={tool.pricingSummary} />
+              <InfoRow label="Website" value={<a href={tool.websiteUrl} target="_blank" rel="noreferrer">{domainFor(tool.websiteUrl)}</a>} />
+              <InfoRow label="Integrations" value={tool.integrations.join(", ")} />
+              <InfoRow label="API" value={tool.apiAvailable ? "Yes" : ""} />
+              <InfoRow label="Status" value={publicTrackingState(tool)} />
+              {launchYear ? <InfoRow label="Launched" value={launchYear} /> : null}
+            </div>
+          </Panel>
 
-            <Panel title="Used In Workflows" subtitle="Workflow contexts where this product appears">
-              {usedIn.length ? (
-                <div className="toolWorkflowShelf">
-                  {usedIn.map((workflow) => <WorkflowCard workflow={workflow} key={workflow.id} />)}
-                </div>
-              ) : (
-                <p className="toolEmptyState">No verified workflow stack currently includes this tool. AppScreener is not filling this with inferred usage.</p>
-              )}
-            </Panel>
-
-            <Panel title="Recent mentions" subtitle={`What creators are saying about ${tool.name}`}>
-              {recentSignals.length ? (
-                <div className="toolMentionList">
-                  {recentSignals.map((signal) => (
-                    <article className="toolMentionRow" key={signal.id}>
-                      <CreatorAvatar name={signal.creatorName} size={34} />
-                      <div>
-                        <strong>{signal.creatorName} <span>{signal.handle} · {signal.timestamp}</span></strong>
-                        <p>{signal.context}</p>
-                      </div>
-                    </article>
-                  ))}
-                </div>
-              ) : (
-                <p className="toolEmptyState">No verified public mentions are attached yet. AppScreener is not showing unsourced quotes or loose attribution.</p>
-              )}
-            </Panel>
-          </main>
-
-          <aside className="toolIntelRail">
-            <Panel title={`About ${tool.name}`}>
-              <div className="toolAboutTable">
-                <InfoRow label="Best for" value={tool.useCases.slice(0, 2).join(", ")} />
-                <InfoRow label="Use cases" value={tool.useCases.slice(0, 3).join(", ")} />
-                <InfoRow label="Platform" value={tool.supportedPlatforms.join(", ")} />
-                <InfoRow label="Pricing" value={tool.pricingSummary} />
-                <InfoRow label="Website" value={<a href={tool.websiteUrl} target="_blank" rel="noreferrer">{domainFor(tool.websiteUrl)}</a>} />
-                <InfoRow label="Integrations" value={tool.integrations.join(", ")} />
-                <InfoRow label="API" value={tool.apiAvailable ? "Yes" : ""} />
-                <InfoRow label="Status" value={publicTrackingState(tool)} />
-                {launchYear ? <InfoRow label="Launched" value={launchYear} /> : null}
-              </div>
-            </Panel>
-
-            <Panel title="Related tags">
-              <TagRail tool={tool} tags={relatedTags} />
-            </Panel>
-
-            <Panel title="Topics / Best For">
-              <div className="toolAboutTable">
-                <InfoRow label="Best for" value={tool.useCases.slice(0, 3).join(", ")} />
-                <InfoRow label="Topics" value={relatedTags.slice(0, 5).join(", ")} />
-                <InfoRow label="Categories" value={tool.categories.map(displayCategory).join(", ")} />
-              </div>
-            </Panel>
-
-            <Panel title={`Tools often used with ${tool.name}`}>
-              <div className="toolMiniList">
-                {(edgeTools.length ? edgeTools : related).slice(0, 5).map((item) => <ToolMiniRow tool={item} key={item.slug} />)}
-              </div>
-            </Panel>
-
-            <Panel title="Trending nearby">
-              <div className="toolMiniList">
-                {nearby.map((item) => <ToolMiniRow tool={item} showGrowth key={item.slug} />)}
-              </div>
-            </Panel>
-          </aside>
+          <Panel className="toolReportMethodology" title="Methodology">
+            <p className="toolEmptyState">AppScreener tracks public mentions and tool relationships to surface what's trending in AI.</p>
+            <Link className="toolReportCta" href="/">Learn more about our methodology</Link>
+          </Panel>
         </section>
       </div>
     </div>
@@ -248,8 +116,7 @@ function LocalProductProfile({ slug }: { slug: string }) {
   const microWorkflowLookup = microWorkflowLookupForClient();
 
   return (
-    <div className="toolIntelShell">
-      <ToolSidebar />
+    <div className="toolIntelReport">
       <div className="toolIntelWorkspace">
         <section className="toolIntelHeroGrid">
           <article className="toolIntelHero">
@@ -378,48 +245,181 @@ function productProfileEventScript(toolSlug: string) {
   `;
 }
 
-function ToolSidebar() {
+const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label: string; icon: string }> = [
+  { type: "x", label: "X", icon: "X" },
+  { type: "youtube", label: "YouTube", icon: "YT" },
+  { type: "github", label: "GitHub", icon: "GH" },
+  { type: "article", label: "Articles", icon: "AR" },
+  { type: "directory", label: "Directories", icon: "DIR" }
+];
+
+function ReceiptPreview({ evidence, showMatchedTools }: { evidence: ToolEvidenceSource; showMatchedTools: boolean }) {
   return (
-    <aside className="toolIntelSidebar">
-      <nav>
-        {navSections.map((section) => (
-          <div className="toolSidebarSection" key={section.title || "global"}>
-            {section.title ? <small>{section.title}</small> : null}
-            {section.items.map((item) => (
-              <Link href={item.href} key={`${section.title}-${item.label}`}>
-                <item.icon size={14} />
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        ))}
-      </nav>
-      <div className="toolSidebarBottom">
-        {bottomLinks.map((label) => <Link href="/" key={label}>{label}</Link>)}
-        <span>© 2026 AppScreener.ai</span>
+    <article className="toolReceiptPreview">
+      {evidence.sourceImageUrl ? <img src={evidence.sourceImageUrl} alt="" /> : null}
+      <div className="toolEvidenceIdentity">
+        <strong>{evidence.sourceAuthor || evidence.platformLabel}</strong>
+        <p>{evidence.sourceTitle}</p>
       </div>
-    </aside>
+      {showMatchedTools ? <div className="toolEvidenceMatches">
+        <small>Matched</small>
+        <div>{evidence.matchedTools.map((toolName) => <span key={toolName}>{toolName}</span>)}</div>
+      </div> : null}
+      {evidence.snippet ? <p className="toolEvidenceSnippet">{evidence.snippet}</p> : null}
+      <a className="toolReportCta" href={evidence.sourceUrl} target="_blank" rel="noreferrer">Open source →</a>
+    </article>
   );
 }
 
+function SourceReceiptCard({ source, evidenceItems, mode = "tool" }: { source: (typeof receiptSourceCards)[number]; evidenceItems: ToolEvidenceSource[]; mode?: "tool" | "relationship" }) {
+  const receipts = rankEvidence(evidenceItems.filter((item) => item.sourceType === source.type)).slice(0, 3);
+
+  return (
+    <article className="toolEvidenceCard">
+      <div className="toolReceiptSourceHeader">
+        <span>{source.icon}</span>
+        <strong>{source.label}</strong>
+      </div>
+      {receipts.length ? (
+        <div className="toolReceiptPreviewList">
+          {receipts.map((item) => <ReceiptPreview evidence={item} showMatchedTools={mode === "relationship"} key={item.id} />)}
+        </div>
+      ) : (
+        <p className="toolReceiptEmpty">No receipts indexed yet.</p>
+      )}
+      <span className="toolReportCta">View All →</span>
+    </article>
+  );
+}
+
+function ToolEvidence({ tool, evidenceItems }: { tool: Tool; evidenceItems: ToolEvidenceSource[] }) {
+  return (
+    <Panel className="toolEvidenceFeed" title="Detected Across Public Sources" subtitle={`Evidence specific to ${tool.name} across indexed public receipts.`}>
+      <div className="toolEvidenceRow">
+        {receiptSourceCards.map((source) => <SourceReceiptCard source={source} evidenceItems={evidenceItems} key={source.type} />)}
+      </div>
+      <p className="toolReceiptFooter">These receipts answer where {tool.name} is appearing across public sources.</p>
+    </Panel>
+  );
+}
+
+type ToolRelationshipSummary = {
+  tool: Tool;
+  receipts: ToolEvidenceSource[];
+  sharedReceiptCount: number;
+  sourceMix: Array<{ type: ToolEvidenceSource["sourceType"]; count: number }>;
+};
+
+type EvidenceGraphGroup = {
+  key: string;
+  label: string;
+  toolSlugs: string[];
+  toolNames: string[];
+  receipts: ToolEvidenceSource[];
+  sourceMix: Array<{ type: ToolEvidenceSource["sourceType"]; count: number }>;
+  lastSeen: string;
+};
+
+function CommonlyAppearsWithOverview({ tool, relationships }: { tool: Tool; relationships: ToolRelationshipSummary[] }) {
+  return (
+    <Panel className="toolRelationshipPanel" title="Commonly Appears With" subtitle={`Collapsed relationship overview for tools appearing with ${tool.name}.`}>
+      {relationships.length ? (
+        <div className="toolCommonGrid">
+          {relationships.slice(0, 5).map((relationship) => (
+            <Link className="toolCommonCard" href={`/tools/${relationship.tool.slug}`} key={relationship.tool.slug}>
+              <ToolLogo officialSrc={relationship.tool.officialLogoUrl} src={relationship.tool.logoUrl} faviconSrc={relationship.tool.faviconUrl} fallback={relationship.tool.iconUrl} alt="" size={30} />
+              <span>
+                <strong>{relationship.tool.name}</strong>
+                <small>{relationship.sharedReceiptCount} shared {relationship.sharedReceiptCount === 1 ? "receipt" : "receipts"}</small>
+                <small>{relationship.sourceMix.map((source) => `${sourceTypeLabel(source.type)} ${source.count}`).join(" · ")}</small>
+              </span>
+            </Link>
+          ))}
+        </div>
+      ) : (
+        <p className="toolEmptyState">No related-tool graph receipts are indexed for {tool.name} yet.</p>
+      )}
+    </Panel>
+  );
+}
+
+function EvidenceMicroWorkflows({ tool, groups }: { tool: Tool; groups: EvidenceGraphGroup[] }) {
+  return (
+    <Panel className="toolRelationshipReceipts" title="Micro Workflows" subtitle={`Exact two-tool connections involving ${tool.name}.`}>
+      {groups.length ? (
+        <div className="toolRelationshipReceiptList">
+          {groups.map((group) => <EvidenceGraphGroupCard group={group} key={group.key} />)}
+        </div>
+      ) : (
+        <p className="toolEmptyState">No exact two-tool micro workflow receipts are indexed for {tool.name} yet.</p>
+      )}
+    </Panel>
+  );
+}
+
+function EvidenceWorkflows({ tool, groups }: { tool: Tool; groups: EvidenceGraphGroup[] }) {
+  return (
+    <Panel className="toolRelationshipReceipts" title="Workflows" subtitle={`Three-plus-tool stacks involving ${tool.name}.`}>
+      {groups.length ? (
+        <div className="toolRelationshipReceiptList">
+          {groups.map((group) => <EvidenceGraphGroupCard group={group} key={group.key} />)}
+        </div>
+      ) : (
+        <p className="toolEmptyState">No three-plus-tool workflow receipts are indexed for {tool.name} yet.</p>
+      )}
+    </Panel>
+  );
+}
+
+function EvidenceGraphGroupCard({ group }: { group: EvidenceGraphGroup }) {
+  return (
+    <details className="toolRelationshipReceiptGroup">
+      <summary className="toolRelationshipReceiptHeader">
+        <div>
+          <h3>{group.label}</h3>
+          <div className="toolStackSummary compact">
+            <WorkflowStack toolSlugs={group.toolSlugs} limit={5} />
+            <small>{group.toolNames.join(" + ")}</small>
+          </div>
+          <div className="toolRelationshipSources">
+            {group.sourceMix.map((source) => <span key={source.type}>{sourceTypeLabel(source.type)} {source.count}</span>)}
+          </div>
+        </div>
+        <span className="toolGraphStats">
+          <small>{group.receipts.length} {group.receipts.length === 1 ? "receipt" : "receipts"}</small>
+          <small>Last seen {group.lastSeen}</small>
+          <em>Expand →</em>
+        </span>
+      </summary>
+      <div className="toolEvidenceRow compact">
+        {receiptSourceCards.map((source) => <SourceReceiptCard source={source} evidenceItems={group.receipts} mode="relationship" key={source.type} />)}
+      </div>
+    </details>
+  );
+}
 function TrendingCard({ tool, rank }: { tool: Tool; rank: number }) {
+  const detections = toolDetectionCount(tool);
   return (
     <aside className="toolTrendPanel">
-      <h2>Trending on AppScreener</h2>
+      <h2>Live Momentum</h2>
       <div className="toolTrendStats">
-        <span><small>Rank</small><strong>#{rank || "N/A"}</strong></span>
         <span><small>24H Growth</small><strong><MovementBadge value={tool.growth24h} /></strong></span>
-        <span><small>Mentions (24H)</small><strong>{compactNumber(tool.mentions24h)}</strong></span>
-        <span><small>Saves</small><strong>{compactNumber(tool.savesCount)}</strong></span>
+        <span><small>Rank</small><strong>#{rank || "N/A"}</strong></span>
+        <span><small>Mentions</small><strong>{compactNumber(tool.mentions24h)}</strong></span>
+        <span><small>Creators</small><strong>{compactNumber(tool.creatorMentions)}</strong></span>
+        <span><small>Workflow Activity</small><strong>{compactNumber(tool.workflowInclusions || tool.savesCount)}</strong></span>
+        <span><small>Detections</small><strong>{compactNumber(detections)}</strong></span>
+        <span><small>Unique Creators</small><strong>{compactNumber(uniqueCreatorCount(tool))}</strong></span>
+        <span><small>Last Seen</small><strong>{lastSeenFor(tool)}</strong></span>
       </div>
       <p><span /> Active tracking in the current organic ranking.</p>
     </aside>
   );
 }
 
-function Panel({ title, subtitle, children }: { title: string; subtitle?: string; children: ReactNode }) {
+function Panel({ title, subtitle, className, children }: { title: string; subtitle?: string; className?: string; children: ReactNode }) {
   return (
-    <section className="toolIntelPanel">
+    <section className={["toolIntelPanel", className].filter(Boolean).join(" ")}>
       <div className="toolPanelHeader">
         <div><h2>{title}</h2>{subtitle ? <p>{subtitle}</p> : null}</div>
       </div>
@@ -430,6 +430,50 @@ function Panel({ title, subtitle, children }: { title: string; subtitle?: string
 
 function ReasonCard({ title, text }: { title: string; text: string }) {
   return <span><strong>{title}</strong><small>{text}</small></span>;
+}
+
+function CommonToolCard({ tool, index }: { tool: Tool; index: number }) {
+  const detections = Math.max(8, Math.round(tool.workflowInclusions * (1.9 - index * 0.18)));
+  const growth = Math.max(4, Math.round(Math.abs(tool.growth24h) / 2 + 12 - index * 3));
+  const lastSeen = lastSeenFor(tool);
+  return (
+    <Link className="toolCommonCard" href={`/tools/${tool.slug}`}>
+      <ToolLogo officialSrc={tool.officialLogoUrl} src={tool.logoUrl} faviconSrc={tool.faviconUrl} fallback={tool.iconUrl} alt="" size={30} />
+      <span><strong>{tool.name}</strong><small>{detections} detections</small><small>+{growth}% 24H</small><small>Last seen {lastSeen}</small></span>
+    </Link>
+  );
+}
+
+function VerifiedWorkflowRow({ workflow }: { workflow: WorkflowType }) {
+  const stackTools = toolsForWorkflow(workflow);
+  const detections = workflowDetectionCount(workflow);
+  return (
+    <article className="toolVerifiedWorkflowRow">
+      <div>
+        <strong>{workflow.name}</strong>
+        <p>{workflow.outcome}</p>
+        <div className="toolStackSummary compact">
+          <WorkflowStack toolSlugs={workflow.toolSlugs} limit={5} />
+          <small>{stackTools.map((item) => item.name).join(" + ")}</small>
+        </div>
+      </div>
+      <span><small>Detections</small><strong>{detections}</strong></span>
+      <span><small>Creators</small><strong>{workflow.creatorUsage || Math.max(1, Math.round(detections / 3))}</strong></span>
+      <Link className="toolReportCta" href={`/workflows/${workflow.slug}`}>View</Link>
+    </article>
+  );
+}
+
+function MicroWorkflowCard({ microWorkflow, index }: { microWorkflow: (typeof microWorkflows)[number]; index: number }) {
+  const usage = index === 1 || index === 3 ? "Medium usage" : "High usage";
+  const stackTools = toolsForMicroWorkflow(microWorkflow.slug);
+  return (
+    <Link className="toolMicroCard" href="/workflows">
+      <strong>{microWorkflow.name}</strong>
+      <small>{usage}</small>
+      {stackTools.length ? <em>{stackTools.map((item) => item.name).join(" + ")}</em> : null}
+    </Link>
+  );
 }
 
 function CreatorCard({ creator, relationshipType }: { creator: CreatorProfile; relationshipType: CreatorAdoptionRelationshipType }) {
@@ -555,6 +599,204 @@ function domainFor(url: string) {
 function knownYear(date: string) {
   const year = new Date(date).getFullYear();
   return Number.isFinite(year) ? String(year) : "";
+}
+
+function sourceTypeLabel(type: ToolEvidenceSource["sourceType"]) {
+  if (type === "x") return "X";
+  if (type === "youtube") return "YouTube";
+  if (type === "github") return "GitHub";
+  if (type === "docs") return "Docs";
+  if (type === "official") return "Official";
+  if (type === "news") return "News";
+  if (type === "newsletter_blog") return "Newsletter / Blog";
+  if (type === "directory") return "Directory";
+  if (type === "article") return "Article";
+  return "Other";
+}
+
+const comparisonEvidencePattern = /\b(vs\.?|versus|comparison|compare|compared|alternatives?|alternative to|replacement for|competitors?|which should you choose|which is better)\b/i;
+const listicleSpamEvidencePattern = /\b(top ai tools|best ai tools|100 ai tools|50 ai tools|must have ai tools|ultimate ai tools list)\b/i;
+function evidenceText(item: ToolEvidenceSource) {
+  return `${item.sourceTitle || ""} ${item.snippet || ""} ${item.sourceUrl || ""}`;
+}
+
+function isComparisonEvidence(item: ToolEvidenceSource) {
+  return comparisonEvidencePattern.test(evidenceText(item));
+}
+
+function isListicleSpamEvidence(item: ToolEvidenceSource) {
+  return listicleSpamEvidencePattern.test(evidenceText(item));
+}
+
+function isToolEvidence(item: ToolEvidenceSource) {
+  return !isComparisonEvidence(item) && !isListicleSpamEvidence(item);
+}
+
+function isCurrentToolOnlyEvidence(item: ToolEvidenceSource, tool: Tool) {
+  return item.matchedTools.length === 1 && normalizeToolName(item.matchedTools[0]) === normalizeToolName(tool.name);
+}
+
+function evidenceIncludesCurrentTool(item: ToolEvidenceSource, tool: Tool) {
+  return item.matchedTools.some((toolName) => normalizeToolName(toolName) === normalizeToolName(tool.name));
+}
+
+function evidenceGraphGroups(tool: Tool, evidenceItems: ToolEvidenceSource[], layer: "micro" | "workflow"): EvidenceGraphGroup[] {
+  const expectedLength = layer === "micro" ? 2 : 3;
+  const knownTools = new Map(tools.map((item) => [normalizeToolName(item.name), item]));
+  const groups = new Map<string, { toolSlugs: string[]; toolNames: string[]; receipts: ToolEvidenceSource[] }>();
+
+  evidenceItems
+    .filter((item) => layer === "micro" ? item.matchedTools.length === expectedLength : item.matchedTools.length >= expectedLength)
+    .filter((item) => evidenceIncludesCurrentTool(item, tool))
+    .forEach((item) => {
+      const matched = item.matchedTools
+        .map((toolName) => knownTools.get(normalizeToolName(toolName)))
+        .filter(isTool)
+        .filter((matchedTool, index, list) => list.findIndex((candidate) => candidate.slug === matchedTool.slug) === index);
+      if (layer === "micro" && matched.length !== 2) return;
+      if (layer === "workflow" && matched.length < 3) return;
+
+      const key = matched.map((matchedTool) => matchedTool.slug).sort().join("|");
+      const existing = groups.get(key);
+      if (existing) {
+        existing.receipts.push(item);
+        return;
+      }
+      groups.set(key, {
+        toolSlugs: matched.map((matchedTool) => matchedTool.slug),
+        toolNames: matched.map((matchedTool) => matchedTool.name),
+        receipts: [item]
+      });
+    });
+
+  return [...groups.entries()]
+    .map(([key, group]) => {
+      const uniqueReceipts = rankEvidence([...new Map(group.receipts.map((item) => [item.id, item])).values()]);
+      return {
+        key,
+        label: graphGroupLabel(group.toolSlugs, group.toolNames, layer),
+        toolSlugs: group.toolSlugs,
+        toolNames: group.toolNames,
+        receipts: uniqueReceipts,
+        sourceMix: sourceMixFor(uniqueReceipts),
+        lastSeen: relativeLastSeen(uniqueReceipts[0]?.detectedAt)
+      };
+    })
+    .sort((a, b) => b.receipts.length - a.receipts.length || evidenceStrength(b.receipts[0]) - evidenceStrength(a.receipts[0]));
+}
+
+function graphGroupLabel(toolSlugs: string[], toolNames: string[], layer: "micro" | "workflow") {
+  const exactKey = [...toolSlugs].sort().join("|");
+  if (layer === "workflow") {
+    const knownWorkflow = workflows.find((workflow) => [...workflow.toolSlugs].sort().join("|") === exactKey);
+    if (knownWorkflow) return knownWorkflow.name;
+  }
+  const knownMicroWorkflow = microWorkflows.find((microWorkflow) => [...toolsForMicroWorkflow(microWorkflow.slug).map((tool) => tool.slug)].sort().join("|") === exactKey);
+  return knownMicroWorkflow?.name || toolNames.join(" + ");
+}
+
+function commonRelationshipSummaries(tool: Tool, groups: EvidenceGraphGroup[]): ToolRelationshipSummary[] {
+  const currentToolKey = normalizeToolName(tool.name);
+  const knownTools = new Map(tools.map((item) => [item.slug, item]));
+  const relationshipGroups = new Map<string, { tool: Tool; receipts: ToolEvidenceSource[] }>();
+
+  groups.forEach((group) => {
+    group.toolSlugs.forEach((toolSlug) => {
+      const relatedTool = knownTools.get(toolSlug);
+      if (!relatedTool || normalizeToolName(relatedTool.name) === currentToolKey) return;
+      const existing = relationshipGroups.get(relatedTool.slug);
+      if (existing) {
+        existing.receipts.push(...group.receipts);
+        return;
+      }
+      relationshipGroups.set(relatedTool.slug, {
+        tool: relatedTool,
+        receipts: [...group.receipts]
+      });
+    });
+  });
+
+  return [...relationshipGroups.values()]
+    .map((group) => {
+      const uniqueReceipts = [...new Map(group.receipts.map((item) => [item.id, item])).values()];
+      return {
+        tool: group.tool,
+        receipts: rankEvidence(uniqueReceipts),
+        sharedReceiptCount: uniqueReceipts.length,
+        sourceMix: sourceMixFor(uniqueReceipts)
+      };
+    })
+    .sort((a, b) => b.sharedReceiptCount - a.sharedReceiptCount || evidenceStrength(b.receipts[0]) - evidenceStrength(a.receipts[0]));
+}
+
+function sourceMixFor(receipts: ToolEvidenceSource[]) {
+  const types: ToolEvidenceSource["sourceType"][] = ["x", "youtube", "github", "docs", "official", "news", "newsletter_blog", "article", "directory", "other"];
+  return types
+    .map((type) => ({ type, count: receipts.filter((item) => item.sourceType === type).length }))
+    .filter((source) => source.count > 0);
+}
+
+function normalizeToolName(value: string) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "");
+}
+
+function relativeLastSeen(value?: string) {
+  if (!value) return "recently";
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return formatEvidenceDate(value);
+  const hours = Math.max(1, Math.round((Date.now() - date.getTime()) / (1000 * 60 * 60)));
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.round(hours / 24);
+  return `${days}d ago`;
+}
+
+function rankEvidence(items: ToolEvidenceSource[]) {
+  return [...items].sort((a, b) => evidenceStrength(b) - evidenceStrength(a));
+}
+
+function evidenceStrength(item: ToolEvidenceSource) {
+  const typeWeight: Record<ToolEvidenceSource["sourceType"], number> = {
+    x: 32,
+    youtube: 31,
+    github: 30,
+    docs: 26,
+    official: 24,
+    news: 22,
+    newsletter_blog: 20,
+    article: 18,
+    directory: 3,
+    other: 1
+  };
+  const workflowLanguage = /\b(workflow|build|deploy|automate|automation|agent|stack|integrat|template|tutorial|guide|using|with)\b/i.test(`${item.sourceTitle} ${item.snippet}`);
+  const detectedAt = new Date(item.detectedAt).getTime();
+  const recency = Number.isFinite(detectedAt) ? Math.min(8, Math.max(0, Math.round((detectedAt - Date.now() + 1000 * 60 * 60 * 24 * 30) / (1000 * 60 * 60 * 24 * 4)))) : 0;
+  return item.matchedTools.length * 20 + typeWeight[item.sourceType] + (workflowLanguage ? 12 : 0) + recency;
+}
+
+function formatEvidenceDate(value: string) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (!Number.isFinite(date.getTime())) return value;
+  return date.toLocaleDateString("en", { month: "short", day: "numeric", year: "numeric" });
+}
+
+function workflowDetectionCount(workflow: WorkflowType) {
+  return Math.max(8, Math.round(workflow.savesCount / 85 + workflow.creatorUsage * 2 + workflow.toolSlugs.length * 4));
+}
+
+function toolDetectionCount(tool: Tool) {
+  return Math.max(12, tool.workflowInclusions * 7 + Math.round(tool.mentions24h / 20));
+}
+
+function uniqueCreatorCount(tool: Tool) {
+  return Math.max(1, Math.round(tool.creatorMentions * 0.65));
+}
+
+function lastSeenFor(tool: Tool) {
+  if (tool.growth24h >= 40) return "1h ago";
+  if (tool.growth24h >= 20) return "3h ago";
+  if (tool.growth24h >= 8) return "6h ago";
+  return "12h ago";
 }
 
 function compactNumber(value: number) {

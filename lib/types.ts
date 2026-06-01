@@ -231,6 +231,30 @@ export type CreatorSignal = {
   context: string;
 };
 
+export type ToolEvidenceSourceType = "x" | "youtube" | "github" | "docs" | "official" | "news" | "newsletter_blog" | "directory" | "article" | "other";
+export type ToolEvidenceTier = "discussion" | "reference" | "other";
+
+export type ToolEvidenceSource = {
+  id: string;
+  toolId?: string;
+  toolSlug: string;
+  workflowId?: string;
+  workflowSlug?: string;
+  sourceType: ToolEvidenceSourceType;
+  sourceTitle: string;
+  sourceAuthor: string;
+  sourceUrl: string;
+  canonicalUrl?: string;
+  sourceImageUrl?: string;
+  sourcePublishedAt?: string;
+  detectedAt: string;
+  matchedTools: string[];
+  snippet: string;
+  platformLabel: string;
+  previewFetchedAt?: string;
+  previewFetchError?: string;
+};
+
 export type CreatorPlatform = "YouTube" | "X" | "Reddit" | "Newsletter" | "TikTok" | "Instagram" | "LinkedIn" | "Website" | "Multi-platform" | "Unknown";
 export type RelationshipStatus = "accepted" | "pending_review" | "rejected";
 export type RelationshipSourceType = "manual" | "imported" | "derived" | "creator_post" | "profile_bio";

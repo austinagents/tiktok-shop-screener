@@ -2,11 +2,12 @@ import { calculateMomentumScore, getLifecycle, isBreakingOut, normalizeProductDi
 import { attentionSubCategoryLabels, canonicalAttentionSubCategories } from "./attention-subcategories";
 import importedPdfCreators from "../data/pdf-x-creators.json";
 import importedTaaftTools from "../data/taaft-tools.json";
+import importedToolEvidenceSources from "../data/tool-evidence-sources.json";
 import { logoAssets } from "./logo-assets";
 import { normalizeAudienceTags, normalizeCreatorSpecializations, normalizeCreatorTypes, normalizeInfluenceTags, normalizePlatformFocus, primarySpecializationFrom } from "./creator-tags";
 import { calculateListingScore, listingChecksForSeed, listingStatusFromChecks, trustedSourceUrls, trustedSourcesForSeed } from "./listing-policy";
 import { breakingOutScoreFor, estimateUsers, organicRankingLabel, organicTrendingScoreFor, rankingModeSort, sizeClassForUsers } from "./ranking";
-import type { AttentionFeedItem, AttentionSubCategory, BoostTier, Category, CategoryName, ClaimStatus, CreatorClaimRequest, CreatorProfile, CreatorSignal, CreatorToolRelationship, CreatorWorkflowRelationship, DiscoveryEdge, FeatureFlag, LogoSource, MicroWorkflow, MicroWorkflowToolRelationship, MovementEvent, Platform, PricingType, ProductClaimRequest, PromotionPlacement, Tool, Workflow, WorkflowMicroWorkflowRelationship, WorkflowToolRelationship } from "./types";
+import type { AttentionFeedItem, AttentionSubCategory, BoostTier, Category, CategoryName, ClaimStatus, CreatorClaimRequest, CreatorProfile, CreatorSignal, CreatorToolRelationship, CreatorWorkflowRelationship, DiscoveryEdge, FeatureFlag, LogoSource, MicroWorkflow, MicroWorkflowToolRelationship, MovementEvent, Platform, PricingType, ProductClaimRequest, PromotionPlacement, Tool, ToolEvidenceSource, ToolEvidenceSourceType, ToolEvidenceTier, Workflow, WorkflowMicroWorkflowRelationship, WorkflowToolRelationship } from "./types";
 
 const categoryNames: CategoryName[] = [
   "AI Video",
@@ -1821,6 +1822,28 @@ export const creatorIntelligenceStatus = {
 };
 
 export const creatorSignals: CreatorSignal[] = [];
+
+export const toolEvidenceSources: ToolEvidenceSource[] = importedToolEvidenceSources as ToolEvidenceSource[];
+
+export const evidenceSourcesForTool = (toolSlug: string) => toolEvidenceSources.filter((source) => source.toolSlug === toolSlug);
+
+export const discussionEvidenceSourceTypes: ToolEvidenceSourceType[] = ["x", "youtube", "github", "news", "newsletter_blog", "article"];
+export const referenceEvidenceSourceTypes: ToolEvidenceSourceType[] = ["official", "docs", "directory"];
+
+export const evidenceTierForSourceType = (sourceType: ToolEvidenceSourceType): ToolEvidenceTier => {
+  if (discussionEvidenceSourceTypes.includes(sourceType)) return "discussion";
+  if (referenceEvidenceSourceTypes.includes(sourceType)) return "reference";
+  return "other";
+};
+
+export const evidenceTierCountsForTool = (toolSlug: string) => {
+  const sources = evidenceSourcesForTool(toolSlug);
+  return {
+    discussionEvidenceCount: sources.filter((source) => evidenceTierForSourceType(source.sourceType) === "discussion").length,
+    referenceEvidenceCount: sources.filter((source) => evidenceTierForSourceType(source.sourceType) === "reference").length,
+    otherEvidenceCount: sources.filter((source) => evidenceTierForSourceType(source.sourceType) === "other").length
+  };
+};
 
 export const creatorClaimRequests: CreatorClaimRequest[] = [
   {
