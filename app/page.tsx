@@ -4,7 +4,6 @@ import { CreatorAvatar } from "@/components/creator-avatar";
 import { AttentionHeatmap } from "@/components/heatmap";
 import { BoostPanel } from "@/components/boost-panel";
 import { HomeTrendingFilter } from "@/components/home-trending-filter";
-import { MovementBadge } from "@/components/movement-badge";
 import { PromotedMomentumRail } from "@/components/promoted-momentum-rail";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
@@ -57,7 +56,6 @@ export default function DiscoverPage() {
               <Link href={`/workflows/${workflow.slug}`} className="workflowPreview" key={workflow.id}>
                 <WorkflowStack toolSlugs={workflow.toolSlugs} />
                 <span><strong>{workflow.name}</strong></span>
-                <MovementBadge value={workflow.growth24h} />
               </Link>
             ))}
           </PreviewPanel>
@@ -81,7 +79,6 @@ export default function DiscoverPage() {
           {categories.slice(0, 4).map((category) => (
             <div className="rotationRow" key={category.slug}>
               <span>{displayCategory(category.name)}</span>
-              <MovementBadge value={category.growth24h} />
             </div>
           ))}
         </PreviewPanel>
