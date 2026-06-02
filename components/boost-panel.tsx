@@ -6,10 +6,10 @@ import { useEffect, useRef, useState } from "react";
 import type { BoostTier } from "@/lib/types";
 
 const adViewPackages = [
-  { value: "10000", label: "10,000 views — $99" },
-  { value: "25000", label: "25,000 views — $199" },
-  { value: "50000", label: "50,000 views — $349" },
-  { value: "100000", label: "100,000 views — $599" }
+  { value: "10000", label: "10,000 views ($99)" },
+  { value: "25000", label: "25,000 views ($199)" },
+  { value: "50000", label: "50,000 views ($349)" },
+  { value: "100000", label: "100,000 views ($599)" }
 ];
 
 export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
@@ -78,18 +78,18 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
         <span className="boostKicker"><Battery size={14} /> Boosts</span>
         <div className="boostZoneHeader">
           <h2>Boost Visibility</h2>
+          {selectedTier ? (
+            <div className="boostContinueRow">
+              <button type="button">Continue</button>
+            </div>
+          ) : null}
         </div>
-        {selectedTier ? (
-          <div className="boostContinueRow">
-            <button type="button">Continue</button>
-          </div>
-        ) : null}
         <div className="boostTierGrid" role="radiogroup" aria-label="Boost tiers">
           {tiers.map((tier) => (
             <button
               className={selectedTier === tier.id ? "active" : ""}
               key={tier.id}
-              onClick={() => setSelectedTier(tier.id)}
+              onClick={() => setSelectedTier((currentTier) => (currentTier === tier.id ? "" : tier.id))}
               role="radio"
               aria-checked={selectedTier === tier.id}
             >
