@@ -3325,9 +3325,10 @@ body {
 }
 
 .promotedRail {
-  display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
@@ -3341,6 +3342,9 @@ body {
 
 .railLabel {
   display: grid;
+  flex: 0 0 auto;
+  flex-grow: 0;
+  flex-shrink: 0;
   gap: 2px;
   padding: 10px 14px;
   border-right: 1px solid var(--border-subtle);
@@ -3380,6 +3384,7 @@ body {
 }
 
 .railViewport {
+  flex: 1 1 auto;
   min-width: 0;
   overflow: hidden;
   mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
@@ -3819,8 +3824,14 @@ body {
   align-items: center;
 }
 
-.adPackageSelector select,
-.adPackageSelector button {
+.adPackageDropdown {
+  position: relative;
+  min-width: 0;
+}
+
+.adPackageTrigger,
+.adPackageContinue,
+.adPackageMenu button {
   min-height: 34px;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
@@ -3830,17 +3841,50 @@ body {
   font-size: 12px;
 }
 
-.adPackageSelector select {
-  appearance: none;
+.adPackageTrigger {
   min-width: 0;
   width: 100%;
   padding: 0 9px;
+  text-align: left;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 4.5L6 7.5L9 4.5' stroke='%23849197' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-position: right 13px center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.adPackageSelector button {
+.adPackageMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
+  display: grid;
+  width: 100%;
+  margin-top: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: rgba(11, 16, 21, 0.98);
+}
+
+.adPackageMenu button {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid var(--border-subtle);
+  border-radius: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.adPackageMenu button:last-child {
+  border-bottom: 0;
+}
+
+.adPackageMenu button:hover,
+.adPackageMenu button[aria-selected="true"] {
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text-primary);
+}
+
+.adPackageContinue {
   padding: 0 12px;
   color: var(--text-primary);
   cursor: pointer;
@@ -3848,13 +3892,13 @@ body {
   font-weight: 740;
 }
 
-.adPackageSelector button:disabled {
+.adPackageContinue:disabled {
   color: var(--text-faint);
   cursor: not-allowed;
   opacity: 0.55;
 }
 
-.adPackageSelector button:not(:disabled):hover {
+.adPackageContinue:not(:disabled):hover {
   border-color: var(--border-strong);
   background: rgba(255, 255, 255, 0.025);
 }
@@ -3875,13 +3919,18 @@ body {
 
 .boostContinueRow {
   position: absolute;
+  left: 10px;
   right: 10px;
   bottom: calc(10px + 34px + 7px);
   z-index: 1;
-  width: calc((100% - 20px - 24px) / 5);
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 6px;
+  pointer-events: none;
 }
 
 .boostContinueRow button {
+  grid-column: 5;
   width: 100%;
   min-height: 30px;
   padding: 0 9px;
@@ -3892,6 +3941,7 @@ body {
   cursor: pointer;
   font-size: 11px;
   font-weight: 740;
+  pointer-events: auto;
 }
 
 .boostContinueRow button:hover {
@@ -5286,7 +5336,6 @@ a:hover .toolLogo {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .promotedRail,
   .homePrimary,
   .homeRail,
   .homeSecondary,
@@ -5297,11 +5346,6 @@ a:hover .toolLogo {
 
   .homeSecondary > .boostPanel {
     margin-top: 0;
-  }
-
-  .railLabel {
-    border-right: 0;
-    border-bottom: 1px solid var(--border-subtle);
   }
 
   .homeRail {
@@ -5409,10 +5453,6 @@ a:hover .toolLogo {
 
   .homeStack {
     gap: 12px;
-  }
-
-  .promotedRail {
-    grid-template-columns: 1fr;
   }
 
   .railLabel {

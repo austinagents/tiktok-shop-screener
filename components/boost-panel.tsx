@@ -2,7 +2,7 @@
 
 import { BadgeDollarSign, Battery, Megaphone, PackagePlus, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { BoostTier } from "@/lib/types";
 
 const adViewPackages = [
@@ -14,8 +14,22 @@ const adViewPackages = [
 
 export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
   const [selectedAdPackage, setSelectedAdPackage] = useState("");
+  const [adPackageOpen, setAdPackageOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState<string>("");
+  const adPackageRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  const selectedAdPackageLabel = adViewPackages.find((adPackage) => adPackage.value === selectedAdPackage)?.label ?? "Select package";
+
+  useEffect(() => {
+    function closeOnOutsideClick(event: MouseEvent) {
+      if (!adPackageRef.current?.contains(event.target as Node)) {
+        setAdPackageOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", closeOnOutsideClick);
+    return () => document.removeEventListener("mousedown", closeOnOutsideClick);
+  }, []);
 
   return (
     <section className="previewPanel boostPanel">
@@ -25,19 +39,36 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
           <h2>Discovery Spotlight</h2>
         </div>
         <div className="adPackageSelector">
-          <select
-            aria-label="Select ad view package"
-            value={selectedAdPackage}
-            onChange={(event) => setSelectedAdPackage(event.target.value)}
-          >
-            <option value="">Select package</option>
-            {adViewPackages.map((adPackage) => (
-              <option key={adPackage.value} value={adPackage.value}>
-                {adPackage.label}
-              </option>
-            ))}
-          </select>
-          <button disabled={!selectedAdPackage} type="button">
+          <div className="adPackageDropdown" ref={adPackageRef}>
+            <button
+              aria-expanded={adPackageOpen}
+              aria-haspopup="listbox"
+              className="adPackageTrigger"
+              type="button"
+              onClick={() => setAdPackageOpen((isOpen) => !isOpen)}
+            >
+              {selectedAdPackageLabel}
+            </button>
+            {adPackageOpen ? (
+              <div className="adPackageMenu" role="listbox" aria-label="Select ad view package">
+                {adViewPackages.map((adPackage) => (
+                  <button
+                    aria-selected={selectedAdPackage === adPackage.value}
+                    key={adPackage.value}
+                    role="option"
+                    type="button"
+                    onClick={() => {
+                      setSelectedAdPackage(adPackage.value);
+                      setAdPackageOpen(false);
+                    }}
+                  >
+                    {adPackage.label}
+                  </button>
+                ))}
+              </div>
+            ) : null}
+          </div>
+          <button className="adPackageContinue" disabled={!selectedAdPackage} type="button">
             Continue
           </button>
         </div>

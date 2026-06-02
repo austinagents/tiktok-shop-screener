@@ -1,7 +1,6 @@
 "use client";
 
 import type { CSSProperties } from "react";
-import { useEffect, useRef } from "react";
 import { promotionPlacements, tools } from "@/lib/data";
 import { boostRailScoreFor, rankingModeSort } from "@/lib/ranking";
 import { ToolLogo } from "./tool-logo";
@@ -9,10 +8,6 @@ import { ToolLogo } from "./tool-logo";
 const visibleRailSlots = 8;
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const safeSponsoredTextColor = "#789F99";
-const discoverySlotBaseFontSize = 30;
-const discoverySlotInitialFontSize = 20;
-const discoverySlotMinFontSize = 1;
-const discoverySlotSafeWidthRatio = 0.88;
 const temporaryDiscoverySlotSlug = "clocsy";
 
 export const INDUSTRY_LEADER_EXCLUSIONS = [
@@ -100,39 +95,7 @@ const organicBackfillItems = rankingModeSort(tools, "Trending")
   .map((tool) => ({ tool, placement: null, railScore: tool.organicTrendingScore }));
 
 function DiscoverySlotName({ name }: { name: string }) {
-  const nameRef = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    const element = nameRef.current;
-    const container = element?.parentElement;
-    if (!element || !container) return;
-
-    const fitText = () => {
-      const availableWidth = container.clientWidth * discoverySlotSafeWidthRatio;
-      let nextFontSize = discoverySlotInitialFontSize;
-
-      element.style.fontSize = `${nextFontSize}px`;
-
-      while (nextFontSize < discoverySlotBaseFontSize && element.scrollWidth <= availableWidth) {
-        nextFontSize += 0.5;
-        element.style.fontSize = `${nextFontSize}px`;
-      }
-
-      if (element.scrollWidth > availableWidth) {
-        nextFontSize -= 0.5;
-        element.style.fontSize = `${Math.max(discoverySlotMinFontSize, nextFontSize)}px`;
-      }
-    };
-
-    fitText();
-    const resizeObserver = new ResizeObserver(fitText);
-    resizeObserver.observe(container);
-    document.fonts?.ready.then(fitText).catch(() => undefined);
-
-    return () => resizeObserver.disconnect();
-  }, [name]);
-
-  return <span ref={nameRef}>{name.toUpperCase()}</span>;
+  return <span>{name.toUpperCase()}</span>;
 }
 
 export function PromotedMomentumRail() {
