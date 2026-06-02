@@ -1,7 +1,11 @@
-import { Activity, Bookmark, GitCompareArrows, Grid2X2, Workflow } from "lucide-react";
+"use client";
+
+import { Activity, Bookmark, Grid2X2, UserPlus, UserRound, Workflow } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { useEffect, useState } from "react";
+import { LOCAL_CREATORS_KEY, LOCAL_PRODUCTS_KEY } from "@/lib/local-graph";
 import { CommandSearch } from "./command-search";
 
 const tabs = [
@@ -9,11 +13,12 @@ const tabs = [
   { href: "/workflows", label: "Workflows", icon: Workflow },
   { href: "/creators", label: "Creators", icon: Activity },
   { href: "/heatmap", label: "Heatmap", icon: Grid2X2 },
-  { href: "/compare", label: "Compare", icon: GitCompareArrows },
   { href: "/watchlist", label: "Watchlist", icon: Bookmark }
 ];
 
 export function AppShell({ children }: { children: ReactNode }) {
+  const hasProfile = useHasLocalProfile();
+
   return (
     <>
       <header className="topbar">
@@ -32,9 +37,42 @@ export function AppShell({ children }: { children: ReactNode }) {
               {tab.label}
             </Link>
           ))}
+          <Link href="/dashboard">
+            {hasProfile ? <UserRound size={15} /> : <UserPlus size={15} />}
+            {hasProfile ? "Profile" : "Sign Up"}
+          </Link>
         </nav>
       </header>
       <main className="pageShell">{children}</main>
     </>
   );
+}
+
+function useHasLocalProfile() {
+  const [hasProfile, setHasProfile] = useState(false);
+
+  useEffect(() => {
+    const updateProfileState = () => {
+      setHasProfile(hasStoredRecords(LOCAL_PRODUCTS_KEY) || hasStoredRecords(LOCAL_CREATORS_KEY));
+    };
+
+    updateProfileState();
+    window.addEventListener("storage", updateProfileState);
+    window.addEventListener("appscreener:profile-updated", updateProfileState);
+    return () => {
+      window.removeEventListener("storage", updateProfileState);
+      window.removeEventListener("appscreener:profile-updated", updateProfileState);
+    };
+  }, []);
+
+  return hasProfile;
+}
+
+function hasStoredRecords(key: string) {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(key) ?? "[]");
+    return Array.isArray(parsed) && parsed.length > 0;
+  } catch {
+    return false;
+  }
 }

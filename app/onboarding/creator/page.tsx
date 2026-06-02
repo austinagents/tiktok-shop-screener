@@ -67,10 +67,10 @@ export default function CreatorOnboardingPage() {
       {submitted ? (
         <section className="sidePanel claimConfirmation">
           <div className="panelHeader"><h2>Your creator profile has been created</h2></div>
-          <p>Continue to your dashboard to add tools, workflows, and micro workflows that improve discovery.</p>
+          <p>Continue to your profile to manage this creator asset and add tools, workflows, and micro workflows that improve discovery.</p>
           <p className="onboardingNote">You can keep strengthening your creator profile as you connect more graph relationships.</p>
           <div className="claimActionRail">
-            <Link className="primaryButton" href="/dashboard/creator">Continue to Creator Dashboard</Link>
+            <Link className="primaryButton" href="/dashboard">Continue to Profile</Link>
           </div>
         </section>
       ) : (
@@ -79,7 +79,7 @@ export default function CreatorOnboardingPage() {
             <div className="panelHeader onboardingFormHeader">
               <div>
                 <h2>Creator details</h2>
-                <p>Create your creator profile, then continue to the dashboard to improve discovery.</p>
+                <p>Create your creator profile, then continue to your profile to improve discovery.</p>
               </div>
               <p className="onboardingSecondaryPath">Already have a profile?<br /><Link href="/search?type=creator">Search & claim an existing creator profile →</Link></p>
             </div>

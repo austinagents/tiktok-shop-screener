@@ -30,12 +30,14 @@ export function saveLocalProduct(record: LocalProductRecord) {
   const next = upsertBySlug(readLocalProducts(), record);
   localStorage.setItem(LOCAL_PRODUCTS_KEY, JSON.stringify(next));
   localStorage.setItem(ACTIVE_PRODUCT_SLUG_KEY, record.slug);
+  window.dispatchEvent(new Event("appscreener:profile-updated"));
 }
 
 export function saveLocalCreator(record: LocalCreatorRecord) {
   const next = upsertBySlug(readLocalCreators(), record);
   localStorage.setItem(LOCAL_CREATORS_KEY, JSON.stringify(next));
   localStorage.setItem(ACTIVE_CREATOR_SLUG_KEY, record.slug);
+  window.dispatchEvent(new Event("appscreener:profile-updated"));
 }
 
 export function latestLocalProduct() {

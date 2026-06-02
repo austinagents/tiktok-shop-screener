@@ -66,10 +66,10 @@ export default function ProductOnboardingPage() {
       {submitted ? (
         <section className="sidePanel claimConfirmation">
           <div className="panelHeader"><h2>Your product profile has been created</h2></div>
-          <p>Continue to your dashboard to add workflow, micro workflow, and creator relationships that improve discovery.</p>
+          <p>Continue to your profile to manage this product asset and add workflow, micro workflow, and creator relationships that improve discovery.</p>
           <p className="onboardingNote">You can keep strengthening your product profile as you connect more graph relationships.</p>
           <div className="claimActionRail">
-            <Link className="primaryButton" href="/dashboard/product">Continue to Product Dashboard</Link>
+            <Link className="primaryButton" href="/dashboard">Continue to Profile</Link>
           </div>
         </section>
       ) : (
@@ -78,7 +78,7 @@ export default function ProductOnboardingPage() {
             <div className="panelHeader onboardingFormHeader">
               <div>
                 <h2>Product details</h2>
-                <p>Create your product profile, then continue to the dashboard to improve discovery.</p>
+                <p>Create your product profile, then continue to your profile to improve discovery.</p>
               </div>
               <p className="onboardingSecondaryPath">Already listed?<br /><Link href="/search?type=product">Search & claim an existing product →</Link></p>
             </div>

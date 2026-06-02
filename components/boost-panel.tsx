@@ -5,7 +5,15 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { BoostTier } from "@/lib/types";
 
+const adViewPackages = [
+  { value: "10000", label: "10,000 views — $99" },
+  { value: "25000", label: "25,000 views — $199" },
+  { value: "50000", label: "50,000 views — $349" },
+  { value: "100000", label: "100,000 views — $599" }
+];
+
 export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
+  const [selectedAdPackage, setSelectedAdPackage] = useState("");
   const [selectedTier, setSelectedTier] = useState<string>("");
   const router = useRouter();
 
@@ -13,9 +21,25 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
     <section className="previewPanel boostPanel">
       <div className="boostZone boostAdsZone">
         <span className="boostKicker"><Megaphone size={14} /> Ads</span>
-        <div>
-          <h2>Get Featured</h2>
-          <p>Reserve premium placements across AppScreener attention surfaces.</p>
+        <div className="boostZoneHeader">
+          <h2>Discovery Spotlight</h2>
+        </div>
+        <div className="adPackageSelector">
+          <select
+            aria-label="Select ad view package"
+            value={selectedAdPackage}
+            onChange={(event) => setSelectedAdPackage(event.target.value)}
+          >
+            <option value="">Select package</option>
+            {adViewPackages.map((adPackage) => (
+              <option key={adPackage.value} value={adPackage.value}>
+                {adPackage.label}
+              </option>
+            ))}
+          </select>
+          <button disabled={!selectedAdPackage} type="button">
+            Continue
+          </button>
         </div>
       </div>
 
@@ -24,6 +48,11 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
         <div className="boostZoneHeader">
           <h2>Boost Visibility</h2>
         </div>
+        {selectedTier ? (
+          <div className="boostContinueRow">
+            <button type="button">Continue</button>
+          </div>
+        ) : null}
         <div className="boostTierGrid" role="radiogroup" aria-label="Boost tiers">
           {tiers.map((tier) => (
             <button
