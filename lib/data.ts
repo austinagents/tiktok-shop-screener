@@ -249,7 +249,7 @@ const rawTools: Array<[string, CategoryName, string, string, string, string, num
   ["Lindy", "AI Automation", "AI agent platform for operations, sales, and support workflows.", "https://www.lindy.ai", "Free, Pro, Business", "2023-01-01", 520, 2560, 6200, 44, 77, 52, 6, 70],
   ["Gamma", "AI Design", "AI presentation and document builder for business storytelling.", "https://gamma.app", "Free, Plus, Pro", "2020-01-01", 450, 2950, 9000, 19, 31, 38, 4, 62],
   ["Manus", "AI Agents", "General-purpose agent product drawing spikes from launch analysis.", "https://manus.im", "Waitlist", "2025-03-01", 720, 3150, 5600, 68, 112, 88, 3, 83],
-  ["V0", "AI Coding", "UI generation tool for turning prompts into React interfaces.", "https://v0.dev", "Free, Premium", "2023-10-01", 630, 3850, 10400, 33, 55, 58, 5, 73],
+  ["v0", "AI Coding", "UI generation tool for turning prompts into React interfaces.", "https://v0.dev", "Free, Premium", "2023-10-01", 630, 3850, 10400, 33, 55, 58, 5, 73],
   ["Bolt", "AI Coding", "Browser-based AI app builder for full-stack prototyping.", "https://bolt.new", "Free, Pro", "2024-10-01", 700, 3720, 8900, 51, 86, 64, 5, 77],
   ["Linear", "AI Workflow", "Product development system adding AI workflow assistance.", "https://linear.app", "Free, Standard, Plus", "2019-01-01", 220, 1510, 7300, 7, 13, 18, 3, 48],
   ["CapCut", "AI Video", "Creator video editor with AI editing features and TikTok-native distribution.", "https://www.capcut.com", "Free, Pro", "2020-01-01", 640, 4200, 15500, 13, 27, 54, 4, 67],
@@ -258,8 +258,6 @@ const rawTools: Array<[string, CategoryName, string, string, string, string, num
   ["Udio", "AI Voice", "AI music generation product with strong launch and creator experimentation.", "https://udio.com", "Free, Standard, Pro", "2024-04-01", 540, 2980, 6400, 31, 49, 45, 3, 64],
   ["NotebookLM", "AI Research", "Research assistant known for summaries, source grounding, and audio overviews.", "https://notebooklm.google", "Free", "2023-07-01", 780, 4900, 11900, 37, 68, 73, 5, 77],
   ["Grok", "AI Agents", "AI assistant tied to X with fast-moving social and search visibility.", "https://x.ai/grok", "Premium", "2023-11-01", 760, 5200, 10100, 34, 61, 69, 3, 74],
-  ["Tome", "AI Marketing", "AI storytelling and deck creation for go-to-market teams.", "https://tome.app", "Free, Pro", "2022-09-01", 260, 1600, 4900, -6, 4, 15, 2, 44],
-  ["Clay", "AI Marketing", "AI-enriched sales prospecting and data workflows.", "https://www.clay.com", "Free, Pro, Enterprise", "2017-01-01", 460, 2600, 8200, 26, 44, 43, 5, 65],
   ["Jasper", "AI Marketing", "AI content platform for marketing teams and brand workflows.", "https://www.jasper.ai", "Creator, Pro, Business", "2021-01-01", 240, 1820, 6800, -11, -7, 14, 2, 43],
   ["Glean", "AI Research", "Enterprise search and knowledge assistant across workplace data.", "https://www.glean.com", "Enterprise", "2019-01-01", 310, 1900, 5200, 17, 29, 22, 3, 55],
   ["Make", "AI Automation", "Visual automation platform with AI-enabled workflow building.", "https://www.make.com", "Free, Core, Pro", "2012-01-01", 350, 2180, 7900, 18, 33, 24, 5, 58],
@@ -272,10 +270,152 @@ const rawTools: Array<[string, CategoryName, string, string, string, string, num
   ["Slack", "AI Workflow", "Team communication platform used as an operating layer for notifications, approvals, and automations.", "https://slack.com", "Free, Pro, Business+", "2013-01-01", 520, 4200, 24000, 8, 16, 45, 6, 74],
   ["HubSpot", "AI Marketing", "CRM and marketing platform for managing contacts, sales pipelines, and customer workflows.", "https://www.hubspot.com", "Free, Starter, Professional", "2006-01-01", 390, 3100, 21000, 7, 14, 32, 5, 66],
   ["Instantly", "AI Marketing", "Outbound email platform for sending, testing, and managing cold email campaigns.", "https://instantly.ai", "Growth, Hypergrowth", "2021-01-01", 310, 1900, 7200, 20, 34, 29, 5, 61],
-  ["Taplio", "AI Marketing", "LinkedIn content and relationship platform for writing posts, scheduling, and tracking engagement.", "https://taplio.com", "Starter, Standard, Pro", "2021-01-01", 280, 1600, 6100, 17, 30, 27, 4, 58],
-  ["LinkedIn", "AI Marketing", "Professional network used for publishing, prospecting, recruiting, and relationship-driven growth.", "https://www.linkedin.com", "Free, Premium, Sales Navigator", "2003-01-01", 640, 6200, 32000, 6, 13, 58, 7, 82],
-  ["Google Maps", "AI Research", "Local search and mapping platform used to discover businesses, locations, and market context.", "https://www.google.com/maps", "Free", "2005-01-01", 480, 4400, 28000, 5, 11, 34, 4, 76]
+  ["GitHub Copilot", "AI Coding", "GitHub Copilot is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://github.com/features/copilot", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["CodeRabbit", "AI Coding", "CodeRabbit is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://coderabbit.ai", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Sourcegraph", "AI Coding", "Sourcegraph is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://sourcegraph.com", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Cline", "AI Coding", "Cline is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://cline.bot", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Augment Code", "AI Coding", "Augment Code is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://augmentcode.com", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Qodo", "AI Coding", "Qodo is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://qodo.ai", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Tabnine", "AI Coding", "Tabnine is an approved coding tool tracked for developer workflows, implementation examples, and engineering attention.", "https://tabnine.com", "Not listed", "2026-06-04", 340, 2200, 7200, 18, 31, 28, 4, 62],
+  ["Polymarket", "AI Trading", "Polymarket is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://polymarket.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Kalshi", "AI Trading", "Kalshi is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://kalshi.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["TradingView", "AI Trading", "TradingView is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://tradingview.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["TrendSpider", "AI Trading", "TrendSpider is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://trendspider.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Option Alpha", "AI Trading", "Option Alpha is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://optionalpha.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["QuantConnect", "AI Trading", "QuantConnect is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://quantconnect.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Arkham", "AI Trading", "Arkham is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://arkhamintelligence.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Glassnode", "AI Trading", "Glassnode is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://glassnode.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Nansen", "AI Trading", "Nansen is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://nansen.ai", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["DefiLlama", "AI Trading", "DefiLlama is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://defillama.com", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Messari", "AI Trading", "Messari is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://messari.io", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["Santiment", "AI Trading", "Santiment is an approved trading and market intelligence tool tracked for financial workflows, market analysis, and public discussion.", "https://santiment.net", "Not listed", "2026-06-04", 300, 1900, 6800, 14, 25, 22, 3, 58],
+  ["CrewAI", "AI Agents", "CrewAI is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://crewai.com", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["Gumloop", "AI Agents", "Gumloop is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://gumloop.com", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["Langflow", "AI Agents", "Langflow is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://langflow.org", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["Flowise", "AI Agents", "Flowise is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://flowiseai.com", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["AgentOps", "AI Agents", "AgentOps is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://agentops.ai", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["Dify", "AI Agents", "Dify is an approved agent platform tracked for AI agent workflows, orchestration patterns, and public builder activity.", "https://dify.ai", "Not listed", "2026-06-04", 320, 2050, 6100, 21, 35, 26, 4, 60],
+  ["Pipedream", "AI Automation", "Pipedream is an approved automation tool tracked for workflow automation, app connections, and operational AI use cases.", "https://pipedream.com", "Not listed", "2026-06-04", 280, 1780, 5900, 16, 29, 21, 4, 56],
+  ["Activepieces", "AI Automation", "Activepieces is an approved automation tool tracked for workflow automation, app connections, and operational AI use cases.", "https://activepieces.com", "Not listed", "2026-06-04", 280, 1780, 5900, 16, 29, 21, 4, 56],
+  ["Workato", "AI Automation", "Workato is an approved automation tool tracked for workflow automation, app connections, and operational AI use cases.", "https://workato.com", "Not listed", "2026-06-04", 280, 1780, 5900, 16, 29, 21, 4, 56],
+  ["Rows", "AI Automation", "Rows is an approved automation tool tracked for workflow automation, app connections, and operational AI use cases.", "https://rows.com", "Not listed", "2026-06-04", 280, 1780, 5900, 16, 29, 21, 4, 56],
+  ["Flux (Black Forest Labs)", "AI Image", "Flux (Black Forest Labs) is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://blackforestlabs.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Recraft", "AI Image", "Recraft is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://recraft.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Leonardo AI", "AI Image", "Leonardo AI is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://leonardo.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Canva AI", "AI Image", "Canva AI is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://canva.com", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Adobe Firefly", "AI Image", "Adobe Firefly is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://firefly.adobe.com", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Magnific", "AI Image", "Magnific is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://magnific.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Krea", "AI Image", "Krea is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://krea.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Freepik AI", "AI Image", "Freepik AI is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://freepik.com/ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Playground AI", "AI Image", "Playground AI is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://playground.com", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Photoroom", "AI Image", "Photoroom is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://photoroom.com", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["OpenArt", "AI Image", "OpenArt is an approved image tool tracked for visual generation workflows, creative production, and creator attention.", "https://openart.ai", "Not listed", "2026-06-04", 360, 2300, 7600, 19, 33, 34, 3, 64],
+  ["Luma", "AI Video", "Luma is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://lumalabs.ai", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["Veed", "AI Video", "Veed is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://veed.io", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["Hedra", "AI Video", "Hedra is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://hedra.com", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["Tavus", "AI Video", "Tavus is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://tavus.io", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["Vidu", "AI Video", "Vidu is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://vidu.com", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["PixVerse", "AI Video", "PixVerse is an approved video tool tracked for generative video workflows, editing use cases, and creator adoption signals.", "https://pixverse.ai", "Not listed", "2026-06-04", 370, 2400, 7900, 22, 37, 35, 4, 65],
+  ["Exa", "AI Research", "Exa is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://exa.ai", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Elicit", "AI Research", "Elicit is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://elicit.com", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Consensus", "AI Research", "Consensus is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://consensus.app", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Scite", "AI Research", "Scite is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://scite.ai", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Research Rabbit", "AI Research", "Research Rabbit is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://researchrabbit.ai", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Connected Papers", "AI Research", "Connected Papers is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://connectedpapers.com", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Semantic Scholar", "AI Research", "Semantic Scholar is an approved research tool tracked for knowledge workflows, citation patterns, and public research discussion.", "https://semanticscholar.org", "Not listed", "2026-06-04", 260, 1650, 5200, 13, 24, 20, 3, 54],
+  ["Inworld", "AI Gaming", "Inworld is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://inworld.ai", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Scenario", "AI Gaming", "Scenario is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://scenario.com", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Layer AI", "AI Gaming", "Layer AI is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://layer.ai", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Ready Player Me", "AI Gaming", "Ready Player Me is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://readyplayer.me", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Rosebud AI", "AI Gaming", "Rosebud AI is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://rosebud.ai", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Ludo AI", "AI Gaming", "Ludo AI is an approved gaming tool tracked for game creation workflows, interactive media, and developer attention.", "https://ludo.ai", "Not listed", "2026-06-04", 250, 1540, 4800, 17, 28, 19, 3, 52],
+  ["Meshy", "AI 3D Modeling", "Meshy is an approved 3D tool tracked for asset generation workflows, modeling pipelines, and creator usage.", "https://meshy.ai", "Not listed", "2026-06-04", 245, 1500, 4700, 18, 30, 18, 3, 53],
+  ["Tripo", "AI 3D Modeling", "Tripo is an approved 3D tool tracked for asset generation workflows, modeling pipelines, and creator usage.", "https://tripo3d.ai", "Not listed", "2026-06-04", 245, 1500, 4700, 18, 30, 18, 3, 53],
+  ["Spline", "AI 3D Modeling", "Spline is an approved 3D tool tracked for asset generation workflows, modeling pipelines, and creator usage.", "https://spline.design", "Not listed", "2026-06-04", 245, 1500, 4700, 18, 30, 18, 3, 53],
+  ["Kaedim", "AI 3D Modeling", "Kaedim is an approved 3D tool tracked for asset generation workflows, modeling pipelines, and creator usage.", "https://kaedim3d.com", "Not listed", "2026-06-04", 245, 1500, 4700, 18, 30, 18, 3, 53],
+  ["Polycam", "AI 3D Modeling", "Polycam is an approved 3D tool tracked for asset generation workflows, modeling pipelines, and creator usage.", "https://polycam.ai", "Not listed", "2026-06-04", 245, 1500, 4700, 18, 30, 18, 3, 53],
+  ["Character.AI", "AI Avatars", "Character.AI is an approved avatar tool tracked for digital human workflows, video presentation, and creator production.", "https://character.ai", "Not listed", "2026-06-04", 270, 1720, 5400, 15, 27, 21, 3, 55],
+  ["DeepBrain AI", "AI Avatars", "DeepBrain AI is an approved avatar tool tracked for digital human workflows, video presentation, and creator production.", "https://deepbrain.io", "Not listed", "2026-06-04", 270, 1720, 5400, 15, 27, 21, 3, 55],
+  ["Hour One", "AI Avatars", "Hour One is an approved avatar tool tracked for digital human workflows, video presentation, and creator production.", "https://hourone.ai", "Not listed", "2026-06-04", 270, 1720, 5400, 15, 27, 21, 3, 55],
 ] as const;
+
+const approvedToolXUrls: Record<string, string> = {
+  "perplexity": "https://x.com/perplexity_ai",
+  "midjourney": "https://x.com/midjourney",
+  "ideogram": "https://x.com/ideogram_ai",
+  "gamma": "https://x.com/GammaApp",
+  "capcut": "https://x.com/capcutapp",
+  "udio": "https://x.com/udiomusic",
+  "notebooklm": "https://x.com/NotebookLM",
+  "typefully": "https://x.com/typefully",
+  "github-copilot": "https://x.com/github",
+  "coderabbit": "https://x.com/coderabbitai",
+  "sourcegraph": "https://x.com/sourcegraph",
+  "cline": "https://x.com/cline",
+  "augment-code": "https://x.com/augmentcode",
+  "qodo": "https://x.com/QodoAI",
+  "tabnine": "https://x.com/tabnine",
+  "polymarket": "https://x.com/Polymarket",
+  "kalshi": "https://x.com/Kalshi",
+  "tradingview": "https://x.com/tradingview",
+  "trendspider": "https://x.com/TrendSpider",
+  "option-alpha": "https://x.com/OptionAlpha",
+  "quantconnect": "https://x.com/QuantConnect",
+  "arkham": "https://x.com/ArkhamIntel",
+  "glassnode": "https://x.com/glassnode",
+  "nansen": "https://x.com/nansen_ai",
+  "defillama": "https://x.com/DefiLlama",
+  "messari": "https://x.com/MessariCrypto",
+  "santiment": "https://x.com/santimentfeed",
+  "crewai": "https://x.com/crewAIInc",
+  "gumloop": "https://x.com/gumloop",
+  "langflow": "https://x.com/langflow_ai",
+  "flowise": "https://x.com/FlowiseAI",
+  "agentops": "https://x.com/AgentOpsAI",
+  "dify": "https://x.com/dify_ai",
+  "pipedream": "https://x.com/PipedreamHQ",
+  "activepieces": "https://x.com/activepieces",
+  "workato": "https://x.com/Workato",
+  "rows": "https://x.com/rowshq",
+  "flux-black-forest-labs": "https://x.com/bfl_ml",
+  "recraft": "https://x.com/recraftai",
+  "leonardo-ai": "https://x.com/LeonardoAi_",
+  "canva-ai": "https://x.com/canva",
+  "adobe-firefly": "https://x.com/AdobeFirefly",
+  "magnific": "https://x.com/Magnific_AI",
+  "krea": "https://x.com/krea_ai",
+  "freepik-ai": "https://x.com/freepik",
+  "playground-ai": "https://x.com/playground_ai",
+  "photoroom": "https://x.com/photoroom_app",
+  "openart": "https://x.com/openart_ai",
+  "luma": "https://x.com/LumaLabsAI",
+  "veed": "https://x.com/veedstudio",
+  "hedra": "https://x.com/hedra_labs",
+  "tavus": "https://x.com/heytavus",
+  "vidu": "https://x.com/ViduAI_official",
+  "pixverse": "https://x.com/PixVerse_",
+  "exa": "https://x.com/exa_ai",
+  "elicit": "https://x.com/elicitorg",
+  "consensus": "https://x.com/ConsensusNLP",
+  "scite": "https://x.com/scite",
+  "research-rabbit": "https://x.com/researchrabbit",
+  "connected-papers": "https://x.com/ConnectedPapers",
+  "semantic-scholar": "https://x.com/SemanticScholar",
+  "inworld": "https://x.com/inworld_ai",
+  "scenario": "https://x.com/scenario_gg",
+  "layer-ai": "https://x.com/Layer_AI",
+  "ready-player-me": "https://x.com/readyplayerme",
+  "rosebud-ai": "https://x.com/rosebud_ai",
+  "ludo-ai": "https://x.com/ludo_ai",
+  "meshy": "https://x.com/MeshyAI",
+  "tripo": "https://x.com/TripoAI",
+  "spline": "https://x.com/splinetool",
+  "kaedim": "https://x.com/Kaedim3D",
+  "polycam": "https://x.com/Polycam3D",
+  "character-ai": "https://x.com/character_ai",
+  "deepbrain-ai": "https://x.com/DeepBrainAI",
+  "hour-one": "https://x.com/HourOneAI"
+};
 
 function productTaglineFor(value: string) {
   return value.replace(/\s+/g, " ").trim();
@@ -287,6 +427,7 @@ const baseTools: Tool[] = rawTools.map((item, index) => {
   const category = ecosystemCategoryForTool(displayName, rawCategory, description);
   const momentumScore = calculateMomentumScore({ growth24h, growth7d, mentions: mentions24h, creatorMentions, saves: savesCount, workflowInclusions });
   const slug = slugify(displayName);
+  const approvedXUrl = approvedToolXUrls[slug];
   const subCategoryTags = subCategoryTagsForTool(displayName, category, description);
   const logoAsset = logoAssets[slug] ?? { officialLogoUrl: "", faviconUrl: "", logoSource: "generated-fallback" as LogoSource };
   const trustedDiscoverySources = trustedSourcesForSeed(index);
@@ -313,6 +454,7 @@ const baseTools: Tool[] = rawTools.map((item, index) => {
     iconUrl: fallbackIcon(displayName),
     logoSource: logoAsset.logoSource,
     websiteUrl,
+    officialXUrl: approvedXUrl,
     company: displayName.replace(/\sAI$/, ""),
     creatorMetadata: `${displayName} is monitored across creator posts, launch chatter, workflow saves, and ecosystem overlap signals.`,
     pricingType: pricingTypeFor(pricingSummary),
@@ -360,7 +502,7 @@ const baseTools: Tool[] = rawTools.map((item, index) => {
     boostEligible: listingStatus === "accepted",
     workflowEligible: listingStatus === "accepted",
     creatorSignalEligible: listingStatus === "accepted",
-    sourceUrls: [websiteUrl, ...trustedSourceUrls(slug, trustedDiscoverySources)],
+    sourceUrls: [websiteUrl, approvedXUrl, ...trustedSourceUrls(slug, trustedDiscoverySources)].filter(Boolean),
     sourceUrl: trustedSourceUrls(slug, trustedDiscoverySources).find((url) => url.includes("theresanaiforthat.com")) ?? trustedSourceUrls(slug, trustedDiscoverySources)[0],
     sourceConfidence: listingStatus === "accepted" ? 96 : 55,
     verificationSignals: [
@@ -633,7 +775,7 @@ function workflowToolRoleFor(workflowSlug: string, toolSlug: string): WorkflowTo
   if (["kling", "pika", "runway", "capcut", "descript"].includes(toolSlug)) return "editing";
   if (["zapier", "make", "lindy", "n8n", "hubspot"].includes(toolSlug)) return "automation";
   if (["gamma", "notion-ai", "linear"].includes(toolSlug)) return "publishing";
-  if (workflowSlug.includes("sales") || ["clay", "apollo", "linkedin", "google-maps"].includes(toolSlug)) return "analysis";
+  if (workflowSlug.includes("sales") || ["apollo"].includes(toolSlug)) return "analysis";
   if (["claude", "chatgpt", "elevenlabs", "suno", "midjourney", "ideogram", "heygen", "framer-ai", "framer", "typefully", "taplio"].includes(toolSlug)) return "generation";
   return "other";
 }
@@ -752,7 +894,7 @@ export const workflowMicroWorkflowRelationships: WorkflowMicroWorkflowRelationsh
 );
 
 const microWorkflowToolSeeds: Record<string, string[]> = {
-  "source-discovery": ["perplexity", "clay"],
+  "source-discovery": ["perplexity"],
   "knowledge-retrieval": ["notebooklm", "glean"],
   "brief-synthesis": ["claude", "chatgpt"],
   "task-planning": ["chatgpt", "linear"],
@@ -1630,18 +1772,6 @@ export const creatorToolRelationships: CreatorToolRelationship[] = [
     evidenceText: "Reviewed manual candidate for public ChatGPT discussion; not treated as verified usage."
   },
   {
-    id: "ctr_ruben-hassid_clay",
-    creatorId: "creator_ruben-hassid",
-    toolSlug: "clay",
-    relationshipType: "mentions",
-    validationLayer: "observed",
-    confidence: 86,
-    status: "accepted",
-    sourceType: "manual",
-    sourceUrl: "https://x.com/RubenHssd",
-    evidenceText: "Reviewed manual candidate for public Clay discussion; not treated as verified usage."
-  },
-  {
     id: "ctr_rob-lennon_jasper",
     creatorId: "creator_rob-lennon",
     toolSlug: "jasper",
@@ -1859,20 +1989,7 @@ export const creatorClaimRequests: CreatorClaimRequest[] = [
   }
 ];
 
-export const productClaimRequests: ProductClaimRequest[] = [
-  {
-    id: "product_claim_clay_pending",
-    toolSlug: "clay",
-    requesterName: "Clay GTM Team",
-    workEmail: "team@example.com",
-    role: "Product operator",
-    websiteUrl: "https://clay.com",
-    claimProof: "Mock pending claim used to validate the Phase 2 product ownership flow.",
-    note: "Product ownership requests stay pending until AppScreener review.",
-    status: "pending_review",
-    submittedAt: "2026-05-30T10:05:00.000Z"
-  }
-];
+export const productClaimRequests: ProductClaimRequest[] = [];
 
 export function creatorClaimStatus(creatorId: string): ClaimStatus {
   const request = creatorClaimRequests.find((claim) => claim.creatorId === creatorId);

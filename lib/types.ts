@@ -65,6 +65,7 @@ export type Tool = {
   iconUrl: string;
   logoSource: LogoSource;
   websiteUrl: string;
+  officialXUrl?: string;
   company: string;
   creatorMetadata: string;
   pricingType: PricingType;

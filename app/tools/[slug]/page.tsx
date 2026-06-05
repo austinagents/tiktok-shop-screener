@@ -2,6 +2,8 @@ import Link from "next/link";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
+import xProofQualityV3 from "@/data/x-proof-quality-v3-clean.json";
+import xProofSourcesV2 from "@/data/x-proof-sources-v2-all.json";
 import { ClaimStatusBadge } from "@/components/claims/claim-status";
 import { CreatorAvatar } from "@/components/creator-avatar";
 import { MovementBadge } from "@/components/movement-badge";
@@ -40,7 +42,7 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   if (!tool) return <LocalProductProfile slug={params.slug} />;
 
   const evidenceItems = evidenceSourcesForTool(tool.slug);
-  const validEvidenceItems = evidenceItems.filter((item) => isToolEvidence(item));
+  const validEvidenceItems = [...evidenceItems, ...xProofSourcesForTool(tool)].filter((item) => isToolEvidence(item));
   const toolEvidenceItems = validEvidenceItems.filter((item) => isCurrentToolOnlyEvidence(item, tool));
   const microWorkflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "micro");
   const workflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "workflow");
@@ -245,12 +247,271 @@ function productProfileEventScript(toolSlug: string) {
   `;
 }
 
-const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label: string; icon: string }> = [
-  { type: "x", label: "X", icon: "X" },
-  { type: "youtube", label: "YouTube", icon: "YT" },
-  { type: "github", label: "GitHub", icon: "GH" },
-  { type: "article", label: "Articles", icon: "AR" }
+const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label: string; icon: ReactNode; iconClassName: string }> = [
+  { type: "x", label: "X", icon: <SourceXIcon />, iconClassName: "sourceIconX" },
+  { type: "youtube", label: "YouTube", icon: <SourceYouTubeIcon />, iconClassName: "sourceIconYouTube" },
+  { type: "github", label: "GitHub", icon: <SourceGitHubIcon />, iconClassName: "sourceIconGitHub" },
+  { type: "article", label: "Articles", icon: <SourceArticleIcon />, iconClassName: "sourceIconArticle" }
 ];
+
+function SourceXIcon() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M9.42 6.78 14.55 1h-1.22L8.88 6.02 5.32 1H1.22l5.38 7.6L1.22 15h1.22l4.7-5.3L10.88 15h4.1L9.42 6.78Zm-1.66 1.87-.54-.76L2.88 1.9h1.73l3.5 4.85.54.76 4.55 6.3h-1.73L7.76 8.65Z" />
+    </svg>
+  );
+}
+
+function SourceYouTubeIcon() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M14.4 4.5a2 2 0 0 0-1.4-1.42C11.76 2.75 8 2.75 8 2.75s-3.76 0-5 .33A2 2 0 0 0 1.6 4.5 20.7 20.7 0 0 0 1.27 8c0 1.18.1 2.36.33 3.5A2 2 0 0 0 3 12.92c1.24.33 5 .33 5 .33s3.76 0 5-.33a2 2 0 0 0 1.4-1.42c.23-1.14.33-2.32.33-3.5 0-1.18-.1-2.36-.33-3.5ZM6.66 10.35v-4.7L10.67 8 6.66 10.35Z" />
+    </svg>
+  );
+}
+
+function SourceGitHubIcon() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M8 .9a7.1 7.1 0 0 0-2.25 13.83c.36.07.5-.16.5-.35v-1.23c-2.04.44-2.47-.98-2.47-.98-.33-.85-.81-1.08-.81-1.08-.67-.46.05-.45.05-.45.74.05 1.13.76 1.13.76.66 1.13 1.73.8 2.15.61.07-.48.26-.8.47-.99-1.63-.18-3.34-.81-3.34-3.62 0-.8.29-1.45.76-1.96-.08-.19-.33-.94.07-1.94 0 0 .62-.2 2.03.75A6.98 6.98 0 0 1 8 4c.63 0 1.26.08 1.85.25 1.4-.95 2.03-.75 2.03-.75.4 1 .15 1.75.07 1.94.47.51.76 1.16.76 1.96 0 2.82-1.72 3.44-3.35 3.62.27.23.5.68.5 1.37v2.03c0 .2.13.42.5.35A7.1 7.1 0 0 0 8 .9Z" />
+    </svg>
+  );
+}
+
+function SourceArticleIcon() {
+  return (
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <path d="M4 1.75h6.15L13 4.6v10.15H4A1.75 1.75 0 0 1 2.25 13V3.5A1.75 1.75 0 0 1 4 1.75Zm5.7 1.15V5h2.1L9.7 2.9ZM4.5 7h7v1.2h-7V7Zm0 2.35h7v1.2h-7v-1.2Zm0 2.35h4.8v1.2H4.5v-1.2Z" />
+    </svg>
+  );
+}
+
+type XProofTweet = {
+  author?: string;
+  authorHandle?: string;
+  authorName?: string;
+  authorProfileImageUrl?: string;
+  profileImageUrl?: string;
+  profilePicture?: string;
+  text?: string;
+  url?: string;
+  createdAt?: string;
+  lang?: string;
+  language?: string;
+  tweetLanguage?: string;
+  engagement?: {
+    likes?: number;
+    reposts?: number;
+    replies?: number;
+    views?: number;
+    total?: number;
+  };
+};
+
+type XProofRecord = {
+  tool?: string;
+  slug?: string;
+  x_handle?: string;
+  top_tweets?: XProofTweet[];
+};
+
+type XProofData = {
+  records?: XProofRecord[];
+};
+
+type XProofQualityRecord = {
+  slug?: string;
+  x_handle?: string;
+  useful_count?: number | string;
+  best_3_tweet_urls?: string;
+};
+
+type XProofQualityData = {
+  records?: XProofQualityRecord[];
+};
+
+function xProofSourcesForTool(tool: Tool): ToolEvidenceSource[] {
+  const qualityRecord = eligibleXProofQualityRecord(tool);
+  const proofData = xProofSourcesV2 as XProofData;
+  const record = proofData.records?.find((item) => item.slug === tool.slug);
+  if (!qualityRecord || !record || !handlesMatch(qualityRecord.x_handle, record.x_handle)) return [];
+
+  const usefulTweets = rankedXProofTweets(record, qualityRecord)
+    .filter((tweet) => isValidXProofTweet(tweet, tool, record))
+    .reduce(selectDiverseXProofTweets, [] as XProofTweet[])
+    .slice(0, 3);
+
+  if (!usefulTweets.length) return [];
+
+  return usefulTweets.map((tweet, index) => ({
+    id: `xproof_v2_${tool.slug}_${index + 1}`,
+    toolSlug: tool.slug,
+    sourceType: "x",
+    sourceTitle: tweet.text ?? "",
+    sourceAuthor: tweet.authorHandle || (tweet.author ? `@${tweet.author.replace(/^@/, "")}` : "X"),
+    sourceImageUrl: tweet.authorProfileImageUrl || tweet.profileImageUrl || tweet.profilePicture,
+    sourceUrl: tweet.url ?? "",
+    sourcePublishedAt: tweet.createdAt,
+    detectedAt: "2026-06-04T10:51:32.946Z",
+    matchedTools: [tool.name],
+    snippet: tweet.text ?? "",
+    platformLabel: `${compactNumber(tweet.engagement?.total ?? 0)} engagement`
+  }));
+}
+
+function eligibleXProofQualityRecord(tool: Tool) {
+  const qualityData = xProofQualityV3 as XProofQualityData;
+  const record = qualityData.records?.find((item) => item.slug === tool.slug);
+  if (!record || Number(record.useful_count ?? 0) < 3 || isSharedProofHandle(record.x_handle ?? "")) return undefined;
+  return record;
+}
+
+function isCryptoNoiseXProofTweet(tweet: XProofTweet) {
+  const text = String(tweet.text ?? "");
+  return /\$[A-Z0-9]{1,10}\b/i.test(text) || /\b(?:CA:|Contract:|contract address|airdrop|100x|moon|gem)\b/i.test(text);
+}
+
+const bluechipXProofSlugs = new Set([
+  "chatgpt",
+  "claude",
+  "perplexity",
+  "cursor",
+  "vercel",
+  "midjourney",
+  "runway",
+  "elevenlabs",
+  "kling",
+  "pika",
+  "heygen",
+  "synthesia",
+  "notebooklm",
+  "capcut"
+]);
+
+const bluechipAuthorCryptoNoiseTerms = [
+  "crypto",
+  "web3",
+  "defi",
+  "nft",
+  "btc",
+  "bitcoin",
+  "eth",
+  "ethereum",
+  "sol",
+  "solana",
+  "airdrop",
+  "memecoin",
+  "onchain",
+  "blockchain",
+  "token",
+  "tokens",
+  "altcoin",
+  "dao",
+  "dex",
+  "cex",
+  "staking",
+  "yield",
+  "pumpfun"
+];
+
+function isBluechipCryptoNoiseXProofTweet(tweet: XProofTweet, tool: Tool) {
+  if (!bluechipXProofSlugs.has(tool.slug)) return false;
+  const text = String(tweet.text ?? "");
+  return /\$[A-Z0-9]{1,10}\b/i.test(text) || /\b(?:CA:|contract address|airdrop|token|memecoin|solana|sol|web3|ethereum|eth|presale|launchpad|degen|100x|moon|gem|pump)\b/i.test(text);
+}
+
+function isBluechipAuthorCryptoNoiseXProofTweet(tweet: XProofTweet, tool: Tool) {
+  if (!bluechipXProofSlugs.has(tool.slug)) return false;
+  const authorText = `${tweet.author ?? ""} ${tweet.authorName ?? ""}`.toLowerCase();
+  return bluechipAuthorCryptoNoiseTerms.some((term) => authorText.includes(term));
+}
+
+function rankedXProofTweets(record: XProofRecord, qualityRecord: XProofQualityRecord) {
+  const tweetByUrl = new Map(record.top_tweets?.map((tweet) => [tweet.url, tweet]) ?? []);
+  const seen = new Set<string>();
+  const ranked: XProofTweet[] = [];
+  const addTweet = (tweet?: XProofTweet) => {
+    if (!tweet?.url || seen.has(tweet.url)) return;
+    seen.add(tweet.url);
+    ranked.push(tweet);
+  };
+
+  bestXProofUrls(qualityRecord).forEach((url) => addTweet(tweetByUrl.get(url)));
+  record.top_tweets?.forEach(addTweet);
+
+  return ranked;
+}
+
+function isValidXProofTweet(tweet: XProofTweet, tool: Tool, record: XProofRecord) {
+  if (!isEnglishLanguageXProofTweet(tweet) || isCryptoNoiseXProofTweet(tweet) || isBluechipCryptoNoiseXProofTweet(tweet, tool) || isBluechipAuthorCryptoNoiseXProofTweet(tweet, tool) || isSharedProofHandle(record.x_handle ?? "")) return false;
+  const text = String(tweet.text ?? "").toLowerCase();
+  return toolMentionTerms(tool, record).some((term) => text.includes(term));
+}
+
+function selectDiverseXProofTweets(selected: XProofTweet[], tweet: XProofTweet, _index: number, tweets: XProofTweet[]) {
+  const author = normalizeXHandle(tweet.author);
+  const selectedAuthors = new Set(selected.map((item) => normalizeXHandle(item.author)).filter(Boolean));
+  const uniqueAuthors = new Set(tweets.map((item) => normalizeXHandle(item.author)).filter(Boolean));
+
+  if (selected.length < Math.min(3, uniqueAuthors.size) && author && !selectedAuthors.has(author)) {
+    return [...selected, tweet];
+  }
+
+  if (selected.length < 3 && selected.length >= uniqueAuthors.size) {
+    return [...selected, tweet];
+  }
+
+  return selected;
+}
+
+function isEnglishLanguageXProofTweet(tweet: XProofTweet) {
+  const language = (tweet.lang ?? tweet.language ?? tweet.tweetLanguage)?.trim().toLowerCase();
+  if (!language) return true;
+  return language === "en" || language === "eng" || language === "english";
+}
+
+function toolMentionTerms(tool: Tool, record: XProofRecord) {
+  const terms = new Set<string>();
+  const addTerm = (value?: string) => {
+    const normalized = value?.trim().toLowerCase();
+    if (normalized) terms.add(normalized);
+  };
+  const handle = record.x_handle?.replace(/^@/, "").trim();
+
+  addTerm(tool.name);
+  addTerm(tool.slug);
+  addTerm(tool.slug.replace(/[-_]+/g, " "));
+  addTerm(tool.name.replace(/([a-z])([A-Z])/g, "$1 $2"));
+
+  if (handle && !isSharedProofHandle(handle)) {
+    addTerm(handle);
+    addTerm(`@${handle}`);
+  }
+
+  return Array.from(terms);
+}
+
+function bestXProofUrls(record: XProofQualityRecord) {
+  return String(record.best_3_tweet_urls ?? "")
+    .split("|")
+    .map((url) => url.trim())
+    .filter(Boolean)
+    .slice(0, 3);
+}
+
+function handlesMatch(left?: string, right?: string) {
+  const normalizedLeft = normalizeXHandle(left);
+  const normalizedRight = normalizeXHandle(right);
+  return Boolean(normalizedLeft && normalizedRight && normalizedLeft === normalizedRight);
+}
+
+function normalizeXHandle(handle?: string) {
+  return handle?.replace(/^@/, "").trim().toLowerCase() ?? "";
+}
+
+function isSharedProofHandle(handle: string) {
+  return new Set(["theresanaiforit", "producthunt", "toolfolio", "peerlist", "uneedlists", "betalist", "microlaunchhq", "tinylaunch"]).has(normalizeXHandle(handle));
+}
 
 function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof receiptSourceCards)[number]; evidenceItems: ToolEvidenceSource[]; tool: Tool }) {
   const sourceSummaries = sourceSummariesFor(evidenceItems.filter((item) => item.sourceType === source.type && isPublicSourceDisplayReceipt(item, tool))).slice(0, 3);
@@ -259,27 +520,39 @@ function SourceReceiptCard({ source, evidenceItems, tool }: { source: (typeof re
   return (
     <article className="toolEvidenceCard">
       <div className="toolReceiptSourceHeader">
-        <span>{source.icon}</span>
+        <span className={source.iconClassName}>{source.icon}</span>
         <strong>{source.label}</strong>
       </div>
       <div className="toolReceiptPreviewList">
-        {sourceSummaries.map((summary) => (
-          <a className="toolIntelMiniRow" href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" key={summary.key}>
-            {summary.imageUrl ? <img src={summary.imageUrl} alt="" width={28} height={28} /> : <span className="toolReceiptSourceHeader"><span>{source.icon}</span></span>}
-            <span>
-              <strong className="toolSourceEntityTitle">{summary.title}</strong>
-              {summary.name ? <small className="toolSourceEntityMeta">{summary.name}</small> : null}
-            </span>
-          </a>
-        ))}
+        {sourceSummaries.map((summary) => {
+          const avatarUrl = sourceIdentityAvatarUrl(summary.strongestReceipt) || summary.imageUrl;
+          return (
+            <a className="toolIntelMiniRow" href={summary.sourceUrl} target="_blank" rel="noopener noreferrer" key={summary.key}>
+              <SourceIdentityAvatar imageUrl={avatarUrl} fallbackIcon={source.icon} fallbackClassName={source.iconClassName} />
+              <span>
+                <strong className="toolSourceEntityTitle">{summary.title}</strong>
+                {summary.name ? <small className="toolSourceEntityMeta">{summary.name}</small> : null}
+              </span>
+            </a>
+          );
+        })}
       </div>
       <span className="toolReportCta">View All →</span>
     </article>
   );
 }
 
+function SourceIdentityAvatar({ imageUrl, fallbackIcon, fallbackClassName }: { imageUrl?: string; fallbackIcon: ReactNode; fallbackClassName: string }) {
+  if (imageUrl) return <img className="toolSourceAvatar" src={imageUrl} alt="" width={24} height={24} loading="lazy" />;
+  return (
+    <span className={`toolSourceAvatar toolSourceAvatarFallback ${fallbackClassName}`}>
+      {fallbackIcon}
+    </span>
+  );
+}
+
 function ToolEvidence({ tool, evidenceItems }: { tool: Tool; evidenceItems: ToolEvidenceSource[] }) {
-  const publicSourceEvidence = evidenceItems.filter((item) => !isOfficialOwnedPublicSource(item, tool));
+  const publicSourceEvidence = evidenceItems.filter((item) => item.sourceType !== "x" || isV2XProofSource(item)).filter((item) => !isOfficialOwnedPublicSource(item, tool));
   const activeSources = receiptSourceCards.filter((source) => publicSourceEvidence.some((item) => item.sourceType === source.type && isPublicSourceDisplayReceipt(item, tool)));
   if (!activeSources.length) return null;
 
@@ -294,6 +567,18 @@ function ToolEvidence({ tool, evidenceItems }: { tool: Tool; evidenceItems: Tool
 }
 
 function sourceSummariesFor(evidenceItems: ToolEvidenceSource[]) {
+  if (evidenceItems.some(isV2XProofSource)) {
+    return evidenceItems.filter(isV2XProofSource).map((item) => ({
+      key: item.id,
+      name: [item.sourceAuthor, item.platformLabel].filter(Boolean).join(" · "),
+      count: 1,
+      strongestReceipt: item,
+      title: sourceTitleForDisplay(item),
+      sourceUrl: item.sourceUrl,
+      imageUrl: item.sourceImageUrl
+    }));
+  }
+
   const groups = new Map<string, { name: string; receipts: ToolEvidenceSource[] }>();
 
   evidenceItems.forEach((item) => {
@@ -318,6 +603,18 @@ function sourceSummariesFor(evidenceItems: ToolEvidenceSource[]) {
       imageUrl: rankEvidence(group.receipts).find((item) => item.sourceImageUrl)?.sourceImageUrl
     }))
     .sort((a, b) => b.count - a.count || evidenceStrength(b.strongestReceipt) - evidenceStrength(a.strongestReceipt));
+}
+
+function isV2XProofSource(item: ToolEvidenceSource) {
+  return item.sourceType === "x" && item.id.startsWith("xproof_v2_");
+}
+
+function sourceIdentityAvatarUrl(item?: ToolEvidenceSource) {
+  if (!item) return "";
+  if (item.sourceImageUrl) return item.sourceImageUrl;
+  if (item.sourceType === "github") return githubAvatarUrl(item.sourceUrl);
+  if (item.sourceType === "article") return faviconUrlFor(item.sourceUrl);
+  return "";
 }
 
 function sourceNameForEvidence(item: ToolEvidenceSource) {
@@ -354,6 +651,21 @@ function githubEntityName(sourceUrl: string) {
   } catch {
     return "";
   }
+}
+
+function githubAvatarUrl(sourceUrl: string) {
+  try {
+    const url = new URL(sourceUrl);
+    const [owner] = url.pathname.split("/").filter(Boolean);
+    return owner ? `https://github.com/${owner}.png?size=48` : "";
+  } catch {
+    return "";
+  }
+}
+
+function faviconUrlFor(sourceUrl: string) {
+  const domain = domainFor(sourceUrl);
+  return domain ? `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=64` : "";
 }
 
 function isLowValueGithubReceipt(item: ToolEvidenceSource) {

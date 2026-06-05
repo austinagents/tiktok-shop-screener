@@ -512,11 +512,6 @@ export const logoAssets: Record<string, LogoAsset> = {
     "faviconUrl": "/logos/tools/webcrawler-api.png",
     "logoSource": "local"
   },
-  "dock": {
-    "officialLogoUrl": "/logos/tools/dock.svg",
-    "faviconUrl": "/logos/tools/dock.svg",
-    "logoSource": "local"
-  },
   "team-pulse": {
     "officialLogoUrl": "/logos/tools/team-pulse.png",
     "faviconUrl": "/logos/tools/team-pulse.png",
@@ -557,11 +552,6 @@ export const logoAssets: Record<string, LogoAsset> = {
     "faviconUrl": "/logos/tools/nomie.png",
     "logoSource": "local"
   },
-  "bookyolo": {
-    "officialLogoUrl": "/logos/tools/bookyolo.png",
-    "faviconUrl": "/logos/tools/bookyolo.png",
-    "logoSource": "local"
-  },
   "clocsy": {
     "officialLogoUrl": "/logos/tools/clocsy.png",
     "faviconUrl": "/logos/tools/clocsy.png",
@@ -600,11 +590,6 @@ export const logoAssets: Record<string, LogoAsset> = {
   "patentfig-ai": {
     "officialLogoUrl": "/logos/tools/patentfig-ai.svg",
     "faviconUrl": "/logos/tools/patentfig-ai.svg",
-    "logoSource": "local"
-  },
-  "flyne-ai": {
-    "officialLogoUrl": "/logos/tools/flyne-ai.svg",
-    "faviconUrl": "/logos/tools/flyne-ai.svg",
     "logoSource": "local"
   },
   "silky-ai": {
@@ -687,11 +672,6 @@ export const logoAssets: Record<string, LogoAsset> = {
     "faviconUrl": "/logos/tools/astrocarto.png",
     "logoSource": "local"
   },
-  "idox-ai-guardrail": {
-    "officialLogoUrl": "/logos/tools/idox-ai-guardrail.png",
-    "faviconUrl": "/logos/tools/idox-ai-guardrail.png",
-    "logoSource": "local"
-  },
   "optihedge": {
     "officialLogoUrl": "/logos/tools/optihedge.svg",
     "faviconUrl": "/logos/tools/optihedge.svg",
@@ -740,11 +720,6 @@ export const logoAssets: Record<string, LogoAsset> = {
   "vertech-academy": {
     "officialLogoUrl": "/logos/tools/vertech-academy.png",
     "faviconUrl": "/logos/tools/vertech-academy.png",
-    "logoSource": "local"
-  },
-  "scidraw-ai": {
-    "officialLogoUrl": "/logos/tools/scidraw-ai.png",
-    "faviconUrl": "/logos/tools/scidraw-ai.png",
     "logoSource": "local"
   },
   "vireel-ai-image-to-video-generator": {
@@ -1092,11 +1067,6 @@ export const logoAssets: Record<string, LogoAsset> = {
     "faviconUrl": "/logos/tools/remio.png",
     "logoSource": "local"
   },
-  "ai-effect-art": {
-    "officialLogoUrl": "/logos/tools/ai-effect-art.svg",
-    "faviconUrl": "/logos/tools/ai-effect-art.svg",
-    "logoSource": "local"
-  },
   "solyo": {
     "officialLogoUrl": "/logos/tools/solyo.svg",
     "faviconUrl": "/logos/tools/solyo.svg",
@@ -1171,5 +1141,340 @@ export const logoAssets: Record<string, LogoAsset> = {
     "officialLogoUrl": "/logos/tools/ai.svg",
     "faviconUrl": "/logos/tools/ai.svg",
     "logoSource": "local"
+  },
+  "github-copilot": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=github.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "coderabbit": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=coderabbit.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "sourcegraph": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "cline": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=cline.bot&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=cline.bot&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "augment-code": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=augmentcode.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=augmentcode.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "qodo": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=qodo.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=qodo.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "tabnine": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=tabnine.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=tabnine.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "polymarket": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=polymarket.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=polymarket.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "kalshi": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=kalshi.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=kalshi.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "tradingview": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=tradingview.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=tradingview.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "trendspider": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=trendspider.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=trendspider.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "option-alpha": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=optionalpha.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=optionalpha.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "quantconnect": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=quantconnect.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=quantconnect.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "arkham": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=arkhamintelligence.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=arkhamintelligence.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "glassnode": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=glassnode.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=glassnode.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "nansen": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=nansen.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=nansen.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "defillama": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=defillama.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=defillama.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "messari": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=messari.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=messari.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "santiment": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=santiment.net&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=santiment.net&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "crewai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=crewai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=crewai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "gumloop": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=gumloop.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=gumloop.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "langflow": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=langflow.org&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=langflow.org&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "flowise": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=flowiseai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=flowiseai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "agentops": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=agentops.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=agentops.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "dify": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=dify.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=dify.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "pipedream": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=pipedream.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=pipedream.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "activepieces": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=activepieces.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=activepieces.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "workato": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=workato.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=workato.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "rows": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=rows.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=rows.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "flux-black-forest-labs": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=blackforestlabs.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=blackforestlabs.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "recraft": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=recraft.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=recraft.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "leonardo-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=leonardo.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "canva-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=canva.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=canva.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "adobe-firefly": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=firefly.adobe.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "magnific": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=magnific.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=magnific.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "krea": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=krea.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=krea.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "freepik-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=freepik.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=freepik.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "playground-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=playground.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=playground.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "photoroom": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=photoroom.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=photoroom.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "openart": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=openart.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=openart.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "luma": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=lumalabs.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=lumalabs.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "veed": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=veed.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=veed.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "hedra": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=hedra.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=hedra.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "tavus": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=tavus.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=tavus.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "vidu": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=vidu.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=vidu.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "pixverse": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=pixverse.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=pixverse.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "exa": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=exa.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=exa.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "elicit": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=elicit.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=elicit.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "consensus": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=consensus.app&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=consensus.app&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "scite": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=scite.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=scite.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "research-rabbit": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=researchrabbit.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=researchrabbit.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "connected-papers": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=connectedpapers.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=connectedpapers.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "semantic-scholar": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=semanticscholar.org&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=semanticscholar.org&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "inworld": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=inworld.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=inworld.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "scenario": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=scenario.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=scenario.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "layer-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=layer.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=layer.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "ready-player-me": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=readyplayer.me&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=readyplayer.me&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "rosebud-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=rosebud.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=rosebud.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "ludo-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=ludo.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ludo.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "meshy": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=meshy.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=meshy.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "tripo": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=tripo3d.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=tripo3d.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "spline": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=spline.design&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=spline.design&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "kaedim": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=kaedim3d.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=kaedim3d.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "polycam": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=polycam.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=polycam.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "character-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=character.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=character.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "deepbrain-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=deepbrain.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=deepbrain.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "hour-one": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=hourone.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=hourone.ai&sz=64",
+    "logoSource": "google-favicon"
   }
 };
