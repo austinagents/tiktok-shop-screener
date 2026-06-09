@@ -21,5 +21,5 @@ export function CreatorAvatar({ name, src, size = 38 }: { name: string; src?: st
     );
   }
 
-  return <img className="creatorAvatar" src={src} alt="" width={size} height={size} onError={() => setFailed(true)} />;
+  return <img className="creatorAvatar" src={src} alt="" width={size} height={size} loading="lazy" onError={() => setFailed(true)} />;
 }

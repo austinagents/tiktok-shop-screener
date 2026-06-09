@@ -1,0 +1,8 @@
+metric,value
+x_proof_items_checked,360
+x_proof_items_enriched,357
+x_proof_items_fallback,3
+unique_authors_checked,293
+author_lookup_errors,2
+"error:googlecloud","This operation was aborted"
+"error:sebjohnsonuk","This operation was aborted"

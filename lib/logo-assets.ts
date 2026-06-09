@@ -1476,5 +1476,310 @@ export const logoAssets: Record<string, LogoAsset> = {
     "officialLogoUrl": "https://www.google.com/s2/favicons?domain=hourone.ai&sz=128",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=hourone.ai&sz=64",
     "logoSource": "google-favicon"
+  },
+  "google-gemini": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "microsoft-copilot": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=copilot.microsoft.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "deepseek": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=deepseek.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=deepseek.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "meta-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=ai.meta.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ai.meta.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "grammarly": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=grammarly.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "dall-e": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=openai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "stable-diffusion": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=stability.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=stability.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "hugging-face": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=huggingface.co&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "openai-platform": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=platform.openai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=platform.openai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "anthropic-console": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=console.anthropic.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=console.anthropic.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "langchain": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=langchain.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=langchain.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "llamaindex": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=llamaindex.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=llamaindex.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "mistral-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=mistral.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "vertex-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=cloud.google.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "amazon-bedrock": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=aws.amazon.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "azure-ai-foundry": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=ai.azure.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ai.azure.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "databricks-mosaic-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=databricks.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=databricks.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "cohere": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=cohere.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=cohere.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "ibm-watsonx": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=ibm.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ibm.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "pinecone": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=pinecone.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=pinecone.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "replicate": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=replicate.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=replicate.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "together-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=together.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=together.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "groq": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=groq.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=groq.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "fireworks-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=fireworks.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=fireworks.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "openrouter": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=openrouter.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=openrouter.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "claude-code": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=anthropic.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "openai-codex": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=openai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=openai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "devin": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=cognition.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=cognition.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "codeium": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=codeium.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=codeium.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "sourcegraph-cody": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=sourcegraph.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "phind": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=phind.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=phind.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "blackbox-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=blackbox.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=blackbox.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "weaviate": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=weaviate.io&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=weaviate.io&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "chroma": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=trychroma.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=trychroma.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "langsmith": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=smith.langchain.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=smith.langchain.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "modal": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=modal.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=modal.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "autogen": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=microsoft.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "relevance-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=relevanceai.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=relevanceai.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "hebbia": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=hebbia.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=hebbia.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "harvey": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=harvey.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=harvey.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "sierra": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=sierra.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=sierra.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "intercom-fin": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=intercom.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=intercom.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "zendesk-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=zendesk.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=zendesk.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "writer": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=writer.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=writer.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "copy-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=copy.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=copy.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "wordtune": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=wordtune.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=wordtune.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "figma-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=figma.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=figma.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "webflow-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=webflow.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=webflow.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "otter-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=otter.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=otter.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "fireflies-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=fireflies.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "fathom": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=fathom.video&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=fathom.video&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "superhuman-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=superhuman.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=superhuman.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "reclaim-ai": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=reclaim.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=reclaim.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "motion": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=usemotion.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "poe": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=poe.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=poe.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "you-com": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=you.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=you.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "ollama": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=ollama.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=ollama.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "lm-studio": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=lmstudio.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=lmstudio.ai&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "comfyui": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=comfy.org&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=comfy.org&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "anythingllm": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=anythingllm.com&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=anythingllm.com&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "aider": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=aider.chat&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=aider.chat&sz=64",
+    "logoSource": "google-favicon"
   }
 };

@@ -1,137 +1,52 @@
 {
-  "attemptedAt": "2026-05-24T10:19:23.071Z",
-  "source": "x_profile_image_url",
+  "attemptedAt": "2026-06-06T14:42:50.763Z",
+  "source": "twitterapi.io_author_profile_image",
+  "storagePath": "data/pdf-x-creators.json",
   "attemptedHandles": 100,
-  "updated": 0,
-  "missing": 0,
-  "failedBatches": [
+  "updated": 90,
+  "missingHandle": 0,
+  "retainedExistingAvatar": 0,
+  "failedLookups": [
     {
-      "handles": [
-        "karpathy",
-        "simonw",
-        "hamelhusain",
-        "swyx",
-        "chipro",
-        "jeremyphoward",
-        "rasbt",
-        "thom_wolf",
-        "jerryjliu0",
-        "hwchase17",
-        "rlancemartin",
-        "lilianweng",
-        "natolambert",
-        "drjimfan",
-        "fchollet",
-        "andrewyng",
-        "officiallogank",
-        "borismpower",
-        "alexalbert__",
-        "sh_reya"
-      ],
-      "reason": "fetch failed"
+      "handle": "@rubenhssd",
+      "reason": "avatar_not_found"
     },
     {
-      "handles": [
-        "eugeneyan",
-        "jxnlco",
-        "danshipper",
-        "skirano",
-        "goodside",
-        "osanseviero",
-        "_akhaliq",
-        "tim_dettmers",
-        "soumithchintala",
-        "gregkamradt",
-        "yoheinakajima",
-        "mreflow",
-        "bentossell",
-        "rowancheung",
-        "liorsinai",
-        "alliekmiller",
-        "rubenhssd",
-        "thatroblennon",
-        "nickfloats",
-        "minchoi"
-      ],
-      "reason": "fetch failed"
+      "handle": "@wesrothmoney",
+      "reason": "avatar_not_found"
     },
     {
-      "handles": [
-        "theomediaai",
-        "linusekenstam",
-        "juliangoldieseo",
-        "wesrothmoney",
-        "mattshumer_",
-        "dharmesh",
-        "emollick",
-        "amasad",
-        "rauchg",
-        "t3dotgg",
-        "leeerob",
-        "steipete",
-        "mitsuhiko",
-        "jeffdean",
-        "demishassabis",
-        "noamshazeer",
-        "aidangomez",
-        "clementdelangue",
-        "julsimon",
-        "_philschmid"
-      ],
-      "reason": "fetch failed"
+      "handle": "@leeerob",
+      "reason": "avatar_not_found"
     },
     {
-      "handles": [
-        "lewistunstall",
-        "risingsayak",
-        "mervenoyann",
-        "abidlabs",
-        "freddyaboulton",
-        "tri_dao",
-        "awnihannun",
-        "percyliang",
-        "chelseabfinn",
-        "pabbeel",
-        "svlevine",
-        "animaanandkumar",
-        "giffmana",
-        "rosstaylor90",
-        "lucidrains",
-        "_rockt",
-        "janleike",
-        "amandaaskell",
-        "leopoldasch",
-        "hardmaru"
-      ],
-      "reason": "fetch failed"
+      "handle": "@lewistunstall",
+      "reason": "avatar_not_found"
     },
     {
-      "handles": [
-        "aravsrinivas",
-        "davidsholz",
-        "emostaque",
-        "c_valenzuelab",
-        "demi_guo",
-        "_mohansolo",
-        "patrickc",
-        "natfriedman",
-        "danielgross",
-        "suhail",
-        "clairevo",
-        "jasonzhou1993",
-        "moritzkremb",
-        "colemedin",
-        "daveebbelaar",
-        "liamottley",
-        "nicksaraev",
-        "sander_schulhoff",
-        "thesephist",
-        "mckaywrigley"
-      ],
-      "reason": "fetch failed"
+      "handle": "@freddyaboulton",
+      "reason": "avatar_not_found"
+    },
+    {
+      "handle": "@lucidrains",
+      "reason": "avatar_not_found"
+    },
+    {
+      "handle": "@demi_guo",
+      "reason": "avatar_not_found"
+    },
+    {
+      "handle": "@colemedin",
+      "reason": "avatar_not_found"
+    },
+    {
+      "handle": "@liamottley",
+      "reason": "avatar_not_found"
+    },
+    {
+      "handle": "@sander_schulhoff",
+      "reason": "avatar_not_found"
     }
   ],
-  "notes": [
-    "No avatars were updated. X profile metadata was unavailable or blocked from this environment."
-  ]
+  "notes": []
 }

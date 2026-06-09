@@ -4,6 +4,7 @@ import { ClaimStatusBadge } from "@/components/claims/claim-status";
 import { MovementBadge } from "@/components/movement-badge";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
+import { XProfileButton } from "@/components/x-profile-button";
 import { creatorTagDisplayLabel, creatorTagSlug, creatorTagStyle } from "@/lib/creator-tags";
 import { creatorClaimStatus, creatorToolRelationships, creators, getCreator, getTool, microWorkflows, tools, toolsForMicroWorkflow, workflows } from "@/lib/data";
 import { betaEventBootstrapScript } from "@/lib/events";
@@ -34,7 +35,10 @@ export default function CreatorPage({ params }: { params: { id: string } }) {
           <div>
             <p className="eyebrow">Creator signal</p>
             <h1>{creator.name}</h1>
-            <p>{[creator.handle, creator.platform, creator.followers ? `${creator.followers.toLocaleString()} followers` : ""].filter(Boolean).join(" · ")}</p>
+            <p className="creatorMetaLine">
+              <span>{[creator.handle, creator.platform, creator.followers ? `${creator.followers.toLocaleString()} followers` : ""].filter(Boolean).join(" · ")}</span>
+              <XProfileButton href={creator.xUrl} label={`${creator.name} on X`} />
+            </p>
             <div className="tagRail">
               {tags.slice(0, 8).map((tag) => <a href={`/tags/${creatorTagSlug(tag)}`} key={tag} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>)}
             </div>
@@ -43,7 +47,6 @@ export default function CreatorPage({ params }: { params: { id: string } }) {
         <div className="headerActions">
           <ClaimStatusBadge status={claimStatus} />
           <a className="iconTextButton" href={`/claim/creator/${creator.id}`} data-beta-creator-claim-cta="true">{claimStatus === "claimed" ? "Manage Profile" : "Claim Profile"}</a>
-          <a className="iconTextButton" href={creator.xUrl} target="_blank" rel="noopener noreferrer">X Profile</a>
         </div>
       </section>
       <section className="sidePanel ownershipPrompt">

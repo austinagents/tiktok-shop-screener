@@ -10,6 +10,7 @@ import { MovementBadge } from "@/components/movement-badge";
 import { SaveButton } from "@/components/save-button";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
+import { XMarkIcon, XProfileButton } from "@/components/x-profile-button";
 import { creators, creatorToolRelationships, evidenceSourcesForTool, getTool, microWorkflows, tools, toolsForMicroWorkflow, toolsForWorkflow, workflows } from "@/lib/data";
 import { ecosystemTagSlug } from "@/lib/ecosystem-tags";
 import { betaEventBootstrapScript } from "@/lib/events";
@@ -47,7 +48,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   const microWorkflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "micro");
   const workflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "workflow");
   const relationshipSummaries = commonRelationshipSummaries(tool, [...microWorkflowGroups, ...workflowGroups]);
-  const verification = publicVerificationState(tool);
   const launchYear = knownYear(tool.launchDate);
   const relatedTags = [...new Set([...tool.subCategoryTags, ...tool.tags.slice(0, 5)])].slice(0, 8);
   const rank = [...tools].sort((a, b) => b.organicTrendingScore - a.organicTrendingScore).findIndex((item) => item.slug === tool.slug) + 1;
@@ -62,7 +62,10 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
             <div className="toolHeroBody">
               <ToolLogo officialSrc={tool.officialLogoUrl} src={tool.logoUrl} faviconSrc={tool.faviconUrl} fallback={tool.iconUrl} alt="" size={112} />
               <div>
-                <h1>{tool.name}<span>{verification || "Verified Momentum"}</span></h1>
+                <h1>
+                  {tool.name}
+                  <XProfileButton href={tool.officialXUrl} label={`${tool.name} on X`} />
+                </h1>
                 <p className="toolHeroCategory">{displayCategory(tool.category)}</p>
                 <p className="toolHeroDescription">{tool.description}</p>
                 <TagRail tool={tool} tags={relatedTags.slice(0, 5)} />
@@ -255,11 +258,7 @@ const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label:
 ];
 
 function SourceXIcon() {
-  return (
-    <svg viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M9.42 6.78 14.55 1h-1.22L8.88 6.02 5.32 1H1.22l5.38 7.6L1.22 15h1.22l4.7-5.3L10.88 15h4.1L9.42 6.78Zm-1.66 1.87-.54-.76L2.88 1.9h1.73l3.5 4.85.54.76 4.55 6.3h-1.73L7.76 8.65Z" />
-    </svg>
-  );
+  return <XMarkIcon />;
 }
 
 function SourceYouTubeIcon() {
