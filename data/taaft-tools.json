@@ -710,9 +710,9 @@
     "description": "AI-powered identity verification for trust. 15% off",
     "longDescription": "AI-powered identity verification for trust. 15% off AppScreener indexes this product for attention movement, related use cases, and emerging workflow fit.",
     "websiteUrl": "https://www.veriff.com/plans/self-serve?promo=taaft15",
-    "category": "AI Productivity",
+    "category": "AI Infrastructure",
     "categories": [
-      "AI Productivity"
+      "AI Infrastructure"
     ],
     "rawSourceCategories": [
       "Identity verification",
@@ -775,9 +775,9 @@
     "description": "The essential AI writing companion",
     "longDescription": "The essential AI writing companion AppScreener indexes this product for attention movement, related use cases, and emerging workflow fit.",
     "websiteUrl": "https://quillbot.com",
-    "category": "AI Agents",
+    "category": "AI Writing",
     "categories": [
-      "AI Agents"
+      "AI Writing"
     ],
     "rawSourceCategories": [
       "Writing",
@@ -902,9 +902,9 @@
     "description": "AI-powered solutions for enterprise search and customer support.",
     "longDescription": "AI-powered solutions for enterprise search and customer support. AppScreener indexes this product for attention movement, related use cases, and emerging workflow fit.",
     "websiteUrl": "https://www.inbenta.com",
-    "category": "AI Search",
+    "category": "AI Customer Support",
     "categories": [
-      "AI Search"
+      "AI Customer Support"
     ],
     "rawSourceCategories": [
       "Customer support",
@@ -3654,9 +3654,9 @@
     "description": "Temporal is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
     "longDescription": "Temporal is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
     "websiteUrl": "https://temporal.io",
-    "category": "AI Development",
+    "category": "AI Infrastructure",
     "categories": [
-      "AI Development"
+      "AI Infrastructure"
     ],
     "rawSourceCategories": [
       "manual 30d candidate"
@@ -6214,9 +6214,9 @@
     "description": "Rezonant is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
     "longDescription": "Rezonant is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
     "websiteUrl": "https://rezonant.ai",
-    "category": "AI Voice",
+    "category": "AI Development",
     "categories": [
-      "AI Voice"
+      "AI Development"
     ],
     "rawSourceCategories": [
       "manual-24h-discovery"
