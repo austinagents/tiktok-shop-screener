@@ -167,7 +167,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "markets",
     title: "Trading & Markets",
-    color: "#8fdc62",
+    color: "#14b8a6",
     icon: ChartNoAxesCombined,
     top: 70,
     left: 0,
@@ -183,7 +183,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "growth",
     title: "Growth & Sales",
-    color: "#f2aa3d",
+    color: "#14b8a6",
     icon: Megaphone,
     top: 70,
     left: 370,
@@ -229,7 +229,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "ops",
     title: "Automation & Ops",
-    color: "#38bdf8",
+    color: "#14b8a6",
     icon: Search,
     top: 575,
     left: 370,
