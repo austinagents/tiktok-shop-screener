@@ -12,10 +12,19 @@ const adViewPackages = [
   { value: "100000", label: "100,000 views ($599)" }
 ];
 
+const boostTierDisplay: Record<string, { duration: string; price: string }> = {
+  "10x": { duration: "12h", price: "$49" },
+  "30x": { duration: "12h", price: "$99" },
+  "50x": { duration: "12h", price: "$149" },
+  "100x": { duration: "24h", price: "$299" },
+  "500x": { duration: "24h", price: "$999" }
+};
+
 export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
   const [selectedAdPackage, setSelectedAdPackage] = useState("");
   const [adPackageOpen, setAdPackageOpen] = useState(false);
   const [selectedTier, setSelectedTier] = useState<string>("");
+  const [boostModalOpen, setBoostModalOpen] = useState(false);
   const adPackageRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
   const selectedAdPackageLabel = adViewPackages.find((adPackage) => adPackage.value === selectedAdPackage)?.label ?? "Select package";
@@ -30,6 +39,19 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
     document.addEventListener("mousedown", closeOnOutsideClick);
     return () => document.removeEventListener("mousedown", closeOnOutsideClick);
   }, []);
+
+  useEffect(() => {
+    if (!boostModalOpen) return;
+
+    function closeOnEscape(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setBoostModalOpen(false);
+      }
+    }
+
+    document.addEventListener("keydown", closeOnEscape);
+    return () => document.removeEventListener("keydown", closeOnEscape);
+  }, [boostModalOpen]);
 
   return (
     <section className="previewPanel boostPanel">
@@ -78,26 +100,46 @@ export function BoostPanel({ tiers }: { tiers: BoostTier[] }) {
         <span className="boostKicker"><Battery size={14} /> Boosts</span>
         <div className="boostZoneHeader">
           <h2>Boost Visibility</h2>
-          {selectedTier ? (
-            <div className="boostContinueRow">
-              <button type="button">Continue</button>
-            </div>
-          ) : null}
         </div>
-        <div className="boostTierGrid" role="radiogroup" aria-label="Boost tiers">
-          {tiers.map((tier) => (
-            <button
-              className={selectedTier === tier.id ? "active" : ""}
-              key={tier.id}
-              onClick={() => setSelectedTier((currentTier) => (currentTier === tier.id ? "" : tier.id))}
-              role="radio"
-              aria-checked={selectedTier === tier.id}
-            >
-              <strong>{tier.label}</strong>
-            </button>
-          ))}
+        <div className="boostCollapsedAction">
+          <button type="button" onClick={() => setBoostModalOpen(true)}>🔋 Boost</button>
         </div>
       </div>
+
+      {boostModalOpen ? (
+        <div className="boostPackOverlay" role="presentation" onMouseDown={() => setBoostModalOpen(false)}>
+          <div className="boostPackModal" role="dialog" aria-modal="true" aria-labelledby="boost-pack-title" onMouseDown={(event) => event.stopPropagation()}>
+            <div className="boostPackHeader">
+              <h2 id="boost-pack-title">Choose a boost pack:</h2>
+              <button className="boostPackClose" type="button" aria-label="Close boost pack chooser" onClick={() => setBoostModalOpen(false)}>×</button>
+            </div>
+            <div className="boostTierGrid boostPackGrid" role="radiogroup" aria-label="Boost tiers">
+              {tiers.map((tier) => {
+                const display = boostTierDisplay[tier.label] ?? { duration: tier.duration, price: tier.price };
+                return (
+                  <button
+                    className={selectedTier === tier.id ? "active" : ""}
+                    key={tier.id}
+                    onClick={() => setSelectedTier((currentTier) => (currentTier === tier.id ? "" : tier.id))}
+                    role="radio"
+                    aria-checked={selectedTier === tier.id}
+                  >
+                    <span className="boostTierBattery" aria-hidden="true">🔋</span>
+                    <strong>{tier.label}</strong>
+                    <span className="boostTierDuration">{display.duration}</span>
+                    <span className="boostTierPrice">{display.price}</span>
+                  </button>
+                );
+              })}
+            </div>
+            {selectedTier ? (
+              <div className="boostContinueRow boostPackContinue">
+                <button type="button">Continue</button>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
 
       <div className="boostZone boostMarketplaceZone">
         <div className="boostMarketplaceCard">
