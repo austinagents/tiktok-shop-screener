@@ -1086,5 +1086,3333 @@
     "creatorMentions": 61,
     "workflowInclusions": 3,
     "searchInterest": 55
+  },
+  {
+    "id": "manual_30d_openhands",
+    "name": "OpenHands",
+    "slug": "openhands",
+    "description": "OpenHands is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "OpenHands is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.all-hands.dev",
+    "category": "AI Coding",
+    "categories": [
+      "AI Coding"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "coding",
+      "openhands",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track OpenHands attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 184,
+    "sourceUrl": "https://www.all-hands.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/openhands.svg",
+    "officialLogoUrl": "/logos/tools/openhands.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_browserbase",
+    "name": "Browserbase",
+    "slug": "browserbase",
+    "description": "Browserbase is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Browserbase is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.browserbase.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "browserbase",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Browserbase attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 185,
+    "sourceUrl": "https://www.browserbase.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/browserbase.ico",
+    "officialLogoUrl": "/logos/tools/browserbase.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_stagehand",
+    "name": "Stagehand",
+    "slug": "stagehand",
+    "description": "Stagehand is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Stagehand is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.stagehand.dev",
+    "category": "AI Automation",
+    "categories": [
+      "AI Automation"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "automation",
+      "stagehand",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Stagehand attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 186,
+    "sourceUrl": "https://www.stagehand.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/stagehand.svg",
+    "officialLogoUrl": "/logos/tools/stagehand.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_deepgram",
+    "name": "Deepgram",
+    "slug": "deepgram",
+    "description": "Deepgram is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Deepgram is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://deepgram.com",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "deepgram",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Deepgram attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 187,
+    "sourceUrl": "https://deepgram.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/deepgram.ico",
+    "officialLogoUrl": "/logos/tools/deepgram.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_cartesia",
+    "name": "Cartesia",
+    "slug": "cartesia",
+    "description": "Cartesia is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Cartesia is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://cartesia.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "cartesia",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Cartesia attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 188,
+    "sourceUrl": "https://cartesia.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/cartesia.png",
+    "officialLogoUrl": "/logos/tools/cartesia.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_langgraph",
+    "name": "LangGraph",
+    "slug": "langgraph",
+    "description": "LangGraph is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "LangGraph is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.langchain.com/langgraph",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "agents",
+      "langgraph",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track LangGraph attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 189,
+    "sourceUrl": "https://www.langchain.com/langgraph",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/langgraph.png",
+    "officialLogoUrl": "/logos/tools/langgraph.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_wordware",
+    "name": "Wordware",
+    "slug": "wordware",
+    "description": "Wordware is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Wordware is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.wordware.ai",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "agents",
+      "wordware",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Wordware attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 190,
+    "sourceUrl": "https://www.wordware.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/wordware.png",
+    "officialLogoUrl": "/logos/tools/wordware.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_higgsfield",
+    "name": "Higgsfield",
+    "slug": "higgsfield",
+    "description": "Higgsfield is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Higgsfield is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://higgsfield.ai",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "video",
+      "higgsfield",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Higgsfield attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 191,
+    "sourceUrl": "https://higgsfield.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/higgsfield.png",
+    "officialLogoUrl": "/logos/tools/higgsfield.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_genspark",
+    "name": "Genspark",
+    "slug": "genspark",
+    "description": "Genspark is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Genspark is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.genspark.ai",
+    "category": "AI Search",
+    "categories": [
+      "AI Search"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "search",
+      "genspark",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Genspark attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 192,
+    "sourceUrl": "https://www.genspark.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/genspark.png",
+    "officialLogoUrl": "/logos/tools/genspark.png",
+    "faviconUrl": "/logos/tools/genspark.png",
+    "logoSource": "favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_retell-ai",
+    "name": "Retell AI",
+    "slug": "retell-ai",
+    "description": "Retell AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Retell AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.retellai.com",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "retell-ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Retell AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 193,
+    "sourceUrl": "https://www.retellai.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/retell-ai.png",
+    "officialLogoUrl": "/logos/tools/retell-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_hume-ai",
+    "name": "Hume AI",
+    "slug": "hume-ai",
+    "description": "Hume AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Hume AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.hume.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "hume-ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Hume AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 194,
+    "sourceUrl": "https://www.hume.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/hume-ai.ico",
+    "officialLogoUrl": "/logos/tools/hume-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_playai",
+    "name": "PlayAI",
+    "slug": "playai",
+    "description": "PlayAI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "PlayAI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://play.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "playai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track PlayAI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 195,
+    "sourceUrl": "https://play.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/playai.png",
+    "officialLogoUrl": "/logos/tools/playai.png",
+    "faviconUrl": "/logos/tools/playai.png",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_tavily",
+    "name": "Tavily",
+    "slug": "tavily",
+    "description": "Tavily is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Tavily is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://tavily.com",
+    "category": "AI Search",
+    "categories": [
+      "AI Search"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "search",
+      "tavily",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Tavily attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 196,
+    "sourceUrl": "https://tavily.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/tavily.ico",
+    "officialLogoUrl": "/logos/tools/tavily.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_jina-ai",
+    "name": "Jina AI",
+    "slug": "jina-ai",
+    "description": "Jina AI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Jina AI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://jina.ai",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "jina-ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Jina AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 197,
+    "sourceUrl": "https://jina.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/jina-ai.png",
+    "officialLogoUrl": "/logos/tools/jina-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_voiceflow",
+    "name": "Voiceflow",
+    "slug": "voiceflow",
+    "description": "Voiceflow is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Voiceflow is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.voiceflow.com",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "agents",
+      "voiceflow",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Voiceflow attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 198,
+    "sourceUrl": "https://www.voiceflow.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/voiceflow.png",
+    "officialLogoUrl": "/logos/tools/voiceflow.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_botpress",
+    "name": "Botpress",
+    "slug": "botpress",
+    "description": "Botpress is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Botpress is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://botpress.com",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "agents",
+      "botpress",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Botpress attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 199,
+    "sourceUrl": "https://botpress.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/botpress.png",
+    "officialLogoUrl": "/logos/tools/botpress.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_continue-dev",
+    "name": "Continue.dev",
+    "slug": "continue-dev",
+    "description": "Continue.dev is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Continue.dev is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://continue.dev",
+    "category": "AI Coding",
+    "categories": [
+      "AI Coding"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "coding",
+      "continue-dev",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Continue.dev attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 200,
+    "sourceUrl": "https://continue.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/continue-dev.png",
+    "officialLogoUrl": "/logos/tools/continue-dev.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_firecrawl",
+    "name": "Firecrawl",
+    "slug": "firecrawl",
+    "description": "Firecrawl is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Firecrawl is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://firecrawl.dev",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "firecrawl",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Firecrawl attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 201,
+    "sourceUrl": "https://firecrawl.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/firecrawl.png",
+    "officialLogoUrl": "/logos/tools/firecrawl.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_crawl4ai",
+    "name": "Crawl4AI",
+    "slug": "crawl4ai",
+    "description": "Crawl4AI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Crawl4AI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://crawl4ai.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "crawl4ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Crawl4AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 202,
+    "sourceUrl": "https://crawl4ai.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/crawl4ai.ico",
+    "officialLogoUrl": "/logos/tools/crawl4ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_open-webui",
+    "name": "Open WebUI",
+    "slug": "open-webui",
+    "description": "Open WebUI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Open WebUI is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://openwebui.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "open-webui",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Open WebUI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 203,
+    "sourceUrl": "https://openwebui.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/open-webui.png",
+    "officialLogoUrl": "/logos/tools/open-webui.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_baseten",
+    "name": "Baseten",
+    "slug": "baseten",
+    "description": "Baseten is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Baseten is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.baseten.co",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "baseten",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Baseten attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 204,
+    "sourceUrl": "https://www.baseten.co",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/baseten.ico",
+    "officialLogoUrl": "/logos/tools/baseten.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_langfuse",
+    "name": "Langfuse",
+    "slug": "langfuse",
+    "description": "Langfuse is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Langfuse is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://langfuse.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "langfuse",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Langfuse attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 205,
+    "sourceUrl": "https://langfuse.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/langfuse.ico",
+    "officialLogoUrl": "/logos/tools/langfuse.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_11x",
+    "name": "11x",
+    "slug": "11x",
+    "description": "11x is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "11x is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://11x.ai",
+    "category": "AI Sales",
+    "categories": [
+      "AI Sales"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "sales",
+      "11x",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track 11x attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 206,
+    "sourceUrl": "https://11x.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/11x.png",
+    "officialLogoUrl": "/logos/tools/11x.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_world-labs",
+    "name": "World Labs",
+    "slug": "world-labs",
+    "description": "World Labs is a 3d modeling product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "World Labs is a 3d modeling product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.worldlabs.ai",
+    "category": "AI 3D Modeling",
+    "categories": [
+      "AI 3D Modeling"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "3d modeling",
+      "world-labs",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track World Labs attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 207,
+    "sourceUrl": "https://www.worldlabs.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/world-labs.ico",
+    "officialLogoUrl": "/logos/tools/world-labs.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_mem0",
+    "name": "Mem0",
+    "slug": "mem0",
+    "description": "Mem0 is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Mem0 is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://mem0.ai",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "mem0",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Mem0 attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 208,
+    "sourceUrl": "https://mem0.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/mem0.svg",
+    "officialLogoUrl": "/logos/tools/mem0.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_helicone",
+    "name": "Helicone",
+    "slug": "helicone",
+    "description": "Helicone is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Helicone is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://helicone.ai",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "helicone",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Helicone attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 209,
+    "sourceUrl": "https://helicone.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/helicone.ico",
+    "officialLogoUrl": "/logos/tools/helicone.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_comet",
+    "name": "Comet",
+    "slug": "comet",
+    "description": "Comet is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Comet is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://comet.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "comet",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Comet attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 210,
+    "sourceUrl": "https://comet.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/comet.png",
+    "officialLogoUrl": "/logos/tools/comet.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_d-id",
+    "name": "D-ID",
+    "slug": "d-id",
+    "description": "D-ID is a avatars product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "D-ID is a avatars product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.d-id.com",
+    "category": "AI Avatars",
+    "categories": [
+      "AI Avatars"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "avatars",
+      "d-id",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track D-ID attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 211,
+    "sourceUrl": "https://www.d-id.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/d-id.png",
+    "officialLogoUrl": "/logos/tools/d-id.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_dreamina",
+    "name": "Dreamina",
+    "slug": "dreamina",
+    "description": "Dreamina is a image product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Dreamina is a image product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://dreamina.capcut.com",
+    "category": "AI Image",
+    "categories": [
+      "AI Image"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "image",
+      "dreamina",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Dreamina attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 212,
+    "sourceUrl": "https://dreamina.capcut.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/dreamina.ico",
+    "officialLogoUrl": "/logos/tools/dreamina.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_haiper",
+    "name": "Haiper",
+    "slug": "haiper",
+    "description": "Haiper is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Haiper is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://haiper.ai",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "video",
+      "haiper",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Haiper attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 213,
+    "sourceUrl": "https://haiper.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "https://www.google.com/s2/favicons?domain=haiper.ai&sz=128",
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=haiper.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=haiper.ai&sz=128",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_hailuo",
+    "name": "Hailuo",
+    "slug": "hailuo",
+    "description": "Hailuo is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Hailuo is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://hailuoai.video",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "video",
+      "hailuo",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Hailuo attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 214,
+    "sourceUrl": "https://hailuoai.video",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/hailuo.svg",
+    "officialLogoUrl": "/logos/tools/hailuo.svg",
+    "faviconUrl": "/logos/tools/hailuo.svg",
+    "logoSource": "favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_skyreels",
+    "name": "SkyReels",
+    "slug": "skyreels",
+    "description": "SkyReels is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "SkyReels is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://skyreels.ai",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "video",
+      "skyreels",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track SkyReels attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 215,
+    "sourceUrl": "https://skyreels.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/skyreels.png",
+    "officialLogoUrl": "/logos/tools/skyreels.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_bland-ai",
+    "name": "Bland AI",
+    "slug": "bland-ai",
+    "description": "Bland AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Bland AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.bland.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "bland-ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Bland AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 216,
+    "sourceUrl": "https://www.bland.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/bland-ai.ico",
+    "officialLogoUrl": "/logos/tools/bland-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_sesame",
+    "name": "Sesame",
+    "slug": "sesame",
+    "description": "Sesame is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Sesame is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.sesame.com",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "sesame",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Sesame attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 217,
+    "sourceUrl": "https://www.sesame.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/sesame.svg",
+    "officialLogoUrl": "/logos/tools/sesame.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_assemblyai",
+    "name": "AssemblyAI",
+    "slug": "assemblyai",
+    "description": "AssemblyAI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "AssemblyAI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.assemblyai.com",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "assemblyai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track AssemblyAI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 218,
+    "sourceUrl": "https://www.assemblyai.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/assemblyai.ico",
+    "officialLogoUrl": "/logos/tools/assemblyai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_smallest-ai",
+    "name": "Smallest AI",
+    "slug": "smallest-ai",
+    "description": "Smallest AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Smallest AI is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://smallest.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "voice",
+      "smallest-ai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Smallest AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 219,
+    "sourceUrl": "https://smallest.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/smallest-ai.png",
+    "officialLogoUrl": "/logos/tools/smallest-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_kagi-assistant",
+    "name": "Kagi Assistant",
+    "slug": "kagi-assistant",
+    "description": "Kagi Assistant is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Kagi Assistant is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://kagi.com",
+    "category": "AI Search",
+    "categories": [
+      "AI Search"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "search",
+      "kagi-assistant",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Kagi Assistant attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 220,
+    "sourceUrl": "https://kagi.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/kagi-assistant.png",
+    "officialLogoUrl": "/logos/tools/kagi-assistant.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_dia-browser",
+    "name": "Dia Browser",
+    "slug": "dia-browser",
+    "description": "Dia Browser is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Dia Browser is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.diabrowser.com",
+    "category": "AI Search",
+    "categories": [
+      "AI Search"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "search",
+      "dia-browser",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Dia Browser attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 221,
+    "sourceUrl": "https://www.diabrowser.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/dia-browser.png",
+    "officialLogoUrl": "/logos/tools/dia-browser.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_zed",
+    "name": "Zed",
+    "slug": "zed",
+    "description": "Zed is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Zed is a coding product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://zed.dev",
+    "category": "AI Coding",
+    "categories": [
+      "AI Coding"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "coding",
+      "zed",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Zed attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 222,
+    "sourceUrl": "https://zed.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/zed.png",
+    "officialLogoUrl": "/logos/tools/zed.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_trigger-dev",
+    "name": "Trigger.dev",
+    "slug": "trigger-dev",
+    "description": "Trigger.dev is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Trigger.dev is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://trigger.dev",
+    "category": "AI Development",
+    "categories": [
+      "AI Development"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "development",
+      "trigger-dev",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Trigger.dev attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 223,
+    "sourceUrl": "https://trigger.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/trigger-dev.ico",
+    "officialLogoUrl": "/logos/tools/trigger-dev.ico",
+    "faviconUrl": "/logos/tools/trigger-dev.ico",
+    "logoSource": "favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_temporal",
+    "name": "Temporal",
+    "slug": "temporal",
+    "description": "Temporal is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Temporal is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://temporal.io",
+    "category": "AI Development",
+    "categories": [
+      "AI Development"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "development",
+      "temporal",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Temporal attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 224,
+    "sourceUrl": "https://temporal.io",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/temporal.ico",
+    "officialLogoUrl": "/logos/tools/temporal.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_mindsdb",
+    "name": "MindsDB",
+    "slug": "mindsdb",
+    "description": "MindsDB is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "MindsDB is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://mindsdb.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "mindsdb",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track MindsDB attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 225,
+    "sourceUrl": "https://mindsdb.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/mindsdb.svg",
+    "officialLogoUrl": "/logos/tools/mindsdb.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_arize-phoenix",
+    "name": "Arize Phoenix",
+    "slug": "arize-phoenix",
+    "description": "Arize Phoenix is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Arize Phoenix is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://phoenix.arize.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "arize-phoenix",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Arize Phoenix attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 226,
+    "sourceUrl": "https://phoenix.arize.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/arize-phoenix.png",
+    "officialLogoUrl": "/logos/tools/arize-phoenix.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_weights-biases",
+    "name": "Weights & Biases",
+    "slug": "weights-biases",
+    "description": "Weights & Biases is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Weights & Biases is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://wandb.ai",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "weights-biases",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Weights & Biases attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 227,
+    "sourceUrl": "https://wandb.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/weights-biases.png",
+    "officialLogoUrl": "/logos/tools/weights-biases.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_unstructured",
+    "name": "Unstructured",
+    "slug": "unstructured",
+    "description": "Unstructured is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Unstructured is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://unstructured.io",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "unstructured",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Unstructured attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 228,
+    "sourceUrl": "https://unstructured.io",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/unstructured.svg",
+    "officialLogoUrl": "/logos/tools/unstructured.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_llamaparse",
+    "name": "LlamaParse",
+    "slug": "llamaparse",
+    "description": "LlamaParse is a research product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "LlamaParse is a research product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.llamaindex.ai/llamaparse",
+    "category": "AI Research",
+    "categories": [
+      "AI Research"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "research",
+      "llamaparse",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track LlamaParse attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 229,
+    "sourceUrl": "https://www.llamaindex.ai/llamaparse",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/llamaparse.ico",
+    "officialLogoUrl": "/logos/tools/llamaparse.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_fellou",
+    "name": "Fellou",
+    "slug": "fellou",
+    "description": "Fellou is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Fellou is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://fellou.ai",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "agents",
+      "fellou",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Fellou attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 230,
+    "sourceUrl": "https://fellou.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/fellou.ico",
+    "officialLogoUrl": "/logos/tools/fellou.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_screen-studio",
+    "name": "Screen Studio",
+    "slug": "screen-studio",
+    "description": "Screen Studio is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Screen Studio is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://screen.studio",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "video",
+      "screen-studio",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Screen Studio attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 231,
+    "sourceUrl": "https://screen.studio",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/screen-studio.png",
+    "officialLogoUrl": "/logos/tools/screen-studio.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_predibase",
+    "name": "Predibase",
+    "slug": "predibase",
+    "description": "Predibase is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Predibase is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://predibase.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "infrastructure",
+      "predibase",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Predibase attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 232,
+    "sourceUrl": "https://predibase.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/predibase.png",
+    "officialLogoUrl": "/logos/tools/predibase.png",
+    "faviconUrl": "/logos/tools/predibase.png",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_convai",
+    "name": "Convai",
+    "slug": "convai",
+    "description": "Convai is a gaming product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Convai is a gaming product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://convai.com",
+    "category": "AI Gaming",
+    "categories": [
+      "AI Gaming"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "gaming",
+      "convai",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Convai attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 233,
+    "sourceUrl": "https://convai.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/convai.png",
+    "officialLogoUrl": "/logos/tools/convai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_avaturn",
+    "name": "Avaturn",
+    "slug": "avaturn",
+    "description": "Avaturn is a avatars product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Avaturn is a avatars product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://avaturn.me",
+    "category": "AI Avatars",
+    "categories": [
+      "AI Avatars"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "avatars",
+      "avaturn",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Avaturn attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 234,
+    "sourceUrl": "https://avaturn.me",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/avaturn.ico",
+    "officialLogoUrl": "/logos/tools/avaturn.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_30d_masterpiece-studio",
+    "name": "Masterpiece Studio",
+    "slug": "masterpiece-studio",
+    "description": "Masterpiece Studio is a 3d modeling product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Masterpiece Studio is a 3d modeling product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://masterpiecestudio.com",
+    "category": "AI 3D Modeling",
+    "categories": [
+      "AI 3D Modeling"
+    ],
+    "rawSourceCategories": [
+      "manual 30d candidate"
+    ],
+    "tags": [
+      "3d modeling",
+      "masterpiece-studio",
+      "30d candidate",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Masterpiece Studio attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 235,
+    "sourceUrl": "https://masterpiecestudio.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-30d-candidate",
+    "importedAt": "2026-06-09T23:52:14.740Z",
+    "updatedAt": "2026-06-09T23:52:14.740Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/masterpiece-studio.png",
+    "officialLogoUrl": "/logos/tools/masterpiece-studio.png",
+    "faviconUrl": "/logos/tools/masterpiece-studio.png",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
   }
 ]

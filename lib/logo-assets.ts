@@ -1008,9 +1008,9 @@ export const logoAssets: Record<string, LogoAsset> = {
     "logoSource": "local"
   },
   "assemblyai": {
-    "officialLogoUrl": "/logos/tools/assemblyai.svg",
-    "faviconUrl": "/logos/tools/assemblyai.svg",
-    "logoSource": "local"
+    "officialLogoUrl": "/logos/tools/assemblyai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
   },
   "riskified": {
     "officialLogoUrl": "/logos/tools/riskified.svg",
@@ -1780,6 +1780,261 @@ export const logoAssets: Record<string, LogoAsset> = {
   "aider": {
     "officialLogoUrl": "https://www.google.com/s2/favicons?domain=aider.chat&sz=128",
     "faviconUrl": "https://www.google.com/s2/favicons?domain=aider.chat&sz=64",
+    "logoSource": "google-favicon"
+  },
+  "openhands": {
+    "officialLogoUrl": "/logos/tools/openhands.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "browserbase": {
+    "officialLogoUrl": "/logos/tools/browserbase.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "stagehand": {
+    "officialLogoUrl": "/logos/tools/stagehand.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "deepgram": {
+    "officialLogoUrl": "/logos/tools/deepgram.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "cartesia": {
+    "officialLogoUrl": "/logos/tools/cartesia.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "langgraph": {
+    "officialLogoUrl": "/logos/tools/langgraph.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "wordware": {
+    "officialLogoUrl": "/logos/tools/wordware.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "higgsfield": {
+    "officialLogoUrl": "/logos/tools/higgsfield.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "genspark": {
+    "officialLogoUrl": "/logos/tools/genspark.png",
+    "faviconUrl": "/logos/tools/genspark.png",
+    "logoSource": "favicon"
+  },
+  "retell-ai": {
+    "officialLogoUrl": "/logos/tools/retell-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "hume-ai": {
+    "officialLogoUrl": "/logos/tools/hume-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "playai": {
+    "officialLogoUrl": "/logos/tools/playai.png",
+    "faviconUrl": "/logos/tools/playai.png",
+    "logoSource": "google-favicon"
+  },
+  "tavily": {
+    "officialLogoUrl": "/logos/tools/tavily.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "jina-ai": {
+    "officialLogoUrl": "/logos/tools/jina-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "voiceflow": {
+    "officialLogoUrl": "/logos/tools/voiceflow.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "botpress": {
+    "officialLogoUrl": "/logos/tools/botpress.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "continue-dev": {
+    "officialLogoUrl": "/logos/tools/continue-dev.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "firecrawl": {
+    "officialLogoUrl": "/logos/tools/firecrawl.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "crawl4ai": {
+    "officialLogoUrl": "/logos/tools/crawl4ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "open-webui": {
+    "officialLogoUrl": "/logos/tools/open-webui.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "baseten": {
+    "officialLogoUrl": "/logos/tools/baseten.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "langfuse": {
+    "officialLogoUrl": "/logos/tools/langfuse.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "11x": {
+    "officialLogoUrl": "/logos/tools/11x.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "world-labs": {
+    "officialLogoUrl": "/logos/tools/world-labs.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "mem0": {
+    "officialLogoUrl": "/logos/tools/mem0.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "helicone": {
+    "officialLogoUrl": "/logos/tools/helicone.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "comet": {
+    "officialLogoUrl": "/logos/tools/comet.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "d-id": {
+    "officialLogoUrl": "/logos/tools/d-id.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "dreamina": {
+    "officialLogoUrl": "/logos/tools/dreamina.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "haiper": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=haiper.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=haiper.ai&sz=128",
+    "logoSource": "google-favicon"
+  },
+  "hailuo": {
+    "officialLogoUrl": "/logos/tools/hailuo.svg",
+    "faviconUrl": "/logos/tools/hailuo.svg",
+    "logoSource": "favicon"
+  },
+  "skyreels": {
+    "officialLogoUrl": "/logos/tools/skyreels.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "bland-ai": {
+    "officialLogoUrl": "/logos/tools/bland-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "sesame": {
+    "officialLogoUrl": "/logos/tools/sesame.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "smallest-ai": {
+    "officialLogoUrl": "/logos/tools/smallest-ai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "kagi-assistant": {
+    "officialLogoUrl": "/logos/tools/kagi-assistant.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "dia-browser": {
+    "officialLogoUrl": "/logos/tools/dia-browser.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "zed": {
+    "officialLogoUrl": "/logos/tools/zed.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "trigger-dev": {
+    "officialLogoUrl": "/logos/tools/trigger-dev.ico",
+    "faviconUrl": "/logos/tools/trigger-dev.ico",
+    "logoSource": "favicon"
+  },
+  "temporal": {
+    "officialLogoUrl": "/logos/tools/temporal.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "mindsdb": {
+    "officialLogoUrl": "/logos/tools/mindsdb.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "arize-phoenix": {
+    "officialLogoUrl": "/logos/tools/arize-phoenix.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "weights-biases": {
+    "officialLogoUrl": "/logos/tools/weights-biases.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "unstructured": {
+    "officialLogoUrl": "/logos/tools/unstructured.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "llamaparse": {
+    "officialLogoUrl": "/logos/tools/llamaparse.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "fellou": {
+    "officialLogoUrl": "/logos/tools/fellou.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "screen-studio": {
+    "officialLogoUrl": "/logos/tools/screen-studio.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "predibase": {
+    "officialLogoUrl": "/logos/tools/predibase.png",
+    "faviconUrl": "/logos/tools/predibase.png",
+    "logoSource": "google-favicon"
+  },
+  "convai": {
+    "officialLogoUrl": "/logos/tools/convai.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "avaturn": {
+    "officialLogoUrl": "/logos/tools/avaturn.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "masterpiece-studio": {
+    "officialLogoUrl": "/logos/tools/masterpiece-studio.png",
+    "faviconUrl": "/logos/tools/masterpiece-studio.png",
     "logoSource": "google-favicon"
   }
 };

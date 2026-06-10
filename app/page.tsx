@@ -60,7 +60,7 @@ export default function DiscoverPage() {
             ))}
           </PreviewPanel>
 
-          <PreviewPanel href="/events" title="Newly Launched" meta="recent products">
+          <PreviewPanel href="/events" title="Newly Listed" meta="recent products">
             <div className="launchRail">
               {newLaunches.map((tool) => (
                 <Link href={`/tools/${tool.slug}`} className="miniRow creatorMini launchItem" key={tool.slug}>

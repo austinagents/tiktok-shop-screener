@@ -16,6 +16,7 @@
     "discover:discussions:v1": "node scripts/discover-discussions-v1.mjs",
     "benchmark:x-recoverability:v1": "node scripts/x-recoverability-benchmark-v1.mjs",
     "benchmark:searchability:v1": "node scripts/searchability-benchmark-v1.mjs",
+    "benchmark:30d:x": "node scripts/benchmark-30d-x-momentum.mjs",
     "discover:x-adjacency:v1": "node scripts/x-adjacency-discovery-v1.mjs",
     "poc:twitterapi": "node scripts/twitterapi-io-poc.mjs",
     "ingest:x-proof:v1": "node scripts/ingest-x-proof-sources-v1.mjs",

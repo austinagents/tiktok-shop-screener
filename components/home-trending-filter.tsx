@@ -40,7 +40,6 @@ const allTimeTopToolSlugs = [
   "openai-platform",
   "anthropic-console",
   "meta-ai",
-  "character-ai",
   "runway",
   "adobe-firefly",
   "canva-ai",
@@ -49,7 +48,6 @@ const allTimeTopToolSlugs = [
   "llamaindex",
   "grok",
   "mistral-ai",
-  "dall-e",
   "synthesia",
   "heygen",
   "vertex-ai",
@@ -65,6 +63,13 @@ const allTimeTopToolSlugs = [
   "fireworks-ai",
   "weaviate",
   "chroma",
+  "vercel",
+  "linear",
+  "tradingview",
+  "polymarket",
+  "defillama",
+  "kalshi",
+  "apollo",
   "claude-code",
   "openai-codex",
   "windsurf",
@@ -73,35 +78,37 @@ const allTimeTopToolSlugs = [
   "bolt",
   "replit",
   "devin",
-  "codeium",
-  "sourcegraph-cody",
-  "tabnine",
-  "phind",
-  "blackbox-ai",
+  "manus",
+  "ideogram",
+  "flux-black-forest-labs",
+  "recraft",
+  "deepgram",
+  "cartesia",
+  "exa",
+  "openhands",
+  "browserbase",
+  "stagehand",
+  "coderabbit",
+  "augment-code",
+  "langflow",
+  "dify",
+  "leonardo-ai",
+  "sourcegraph",
   "langsmith",
-  "modal",
-  "crewai",
-  "autogen",
   "n8n",
   "zapier",
   "make",
-  "relevance-ai",
-  "lindy",
-  "gumloop",
   "glean",
   "hebbia",
   "harvey",
   "notion-ai",
   "grammarly",
-  "jasper",
-  "writer",
-  "copy-ai",
+  "clay",
   "gamma",
-  "tome",
   "descript",
   "capcut",
   "figma-ai",
-  "framer-ai",
+  "framer",
   "webflow-ai",
   "suno",
   "udio",
@@ -111,23 +118,121 @@ const allTimeTopToolSlugs = [
   "ollama",
   "lm-studio",
   "comfyui",
-  "anythingllm",
-  "flowise",
   "cline",
   "aider",
-  "otter-ai",
-  "fireflies-ai",
-  "fathom",
   "granola",
   "superhuman-ai",
-  "reclaim-ai",
-  "motion",
-  "clay",
-  "instantly",
-  "poe"
+  "jasper",
+  "poe",
+  "slack"
 ] as const;
 
 const allTimeRankBySlug = new Map<string, number>(allTimeTopToolSlugs.map((slug, index) => [slug, index]));
+
+const thirtyDayTopToolSlugs = [
+  "manus",
+  "ideogram",
+  "openhands",
+  "flux-black-forest-labs",
+  "recraft",
+  "browserbase",
+  "stagehand",
+  "wordware",
+  "higgsfield",
+  "hedra",
+  "genspark",
+  "deepgram",
+  "cartesia",
+  "retell-ai",
+  "exa",
+  "coderabbit",
+  "augment-code",
+  "langflow",
+  "dify",
+  "agentops",
+  "leonardo-ai",
+  "krea",
+  "magnific",
+  "wan-video",
+  "hume-ai",
+  "playai",
+  "tavily",
+  "jina-ai",
+  "nansen",
+  "meshy",
+  "tripo",
+  "voiceflow",
+  "botpress",
+  "langgraph",
+  "continue-dev",
+  "firecrawl",
+  "crawl4ai",
+  "open-webui",
+  "baseten",
+  "langfuse",
+  "11x",
+  "world-labs",
+  "mem0",
+  "helicone",
+  "comet",
+  "d-id",
+  "vidu",
+  "pixverse",
+  "tavus",
+  "dreamina",
+  "haiper",
+  "hailuo",
+  "skyreels",
+  "deepbrain-ai",
+  "bland-ai",
+  "sesame",
+  "assemblyai",
+  "smallest-ai",
+  "typefully",
+  "arkham",
+  "glassnode",
+  "santiment",
+  "elicit",
+  "consensus",
+  "research-rabbit",
+  "semantic-scholar",
+  "veed",
+  "photoroom",
+  "openart",
+  "freepik-ai",
+  "remove-bg",
+  "andi",
+  "kagi-assistant",
+  "dia-browser",
+  "zed",
+  "trigger-dev",
+  "temporal",
+  "option-alpha",
+  "quantconnect",
+  "rows",
+  "activepieces",
+  "workato",
+  "veriff",
+  "fetcher",
+  "qodo",
+  "scite",
+  "sierra",
+  "polycam",
+  "kaedim",
+  "mindsdb",
+  "arize-phoenix",
+  "weights-biases",
+  "unstructured",
+  "llamaparse",
+  "fellou",
+  "screen-studio",
+  "predibase",
+  "convai",
+  "avaturn",
+  "masterpiece-studio"
+] as const;
+
+const thirtyDayRankBySlug = new Map<string, number>(thirtyDayTopToolSlugs.map((slug, index) => [slug, index]));
 
 export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>("Trending");
@@ -136,6 +241,9 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
     const scopedTools = activeTab === "Trending" ? tools : tools.filter((tool) => matchesTab(tool, activeTab));
     if (activeTab === "Trending" && activeTimeframe === "ALL") {
       return selectAllTimeTools(scopedTools);
+    }
+    if (activeTab === "Trending" && activeTimeframe === "30D") {
+      return selectThirtyDayTools(scopedTools);
     }
     return sortByTimeframe(scopedTools, activeTimeframe).slice(0, 100);
   }, [activeTab, activeTimeframe, tools]);
@@ -172,12 +280,15 @@ function matchesTab(tool: Tool, tab: Exclude<ActiveTab, "Trending">) {
 
 function sortByTimeframe(tools: Tool[], timeframe: TrendingTimeframe) {
   if (timeframe === "30D") {
-    return [...tools].sort((a, b) =>
+    return [...tools].sort((a, b) => {
+      const aRank = thirtyDayRankBySlug.get(a.slug) ?? Number.MAX_SAFE_INTEGER;
+      const bRank = thirtyDayRankBySlug.get(b.slug) ?? Number.MAX_SAFE_INTEGER;
+      return aRank - bRank ||
       b.growth7d - a.growth7d ||
       b.mentions7d - a.mentions7d ||
       b.creatorMentions - a.creatorMentions ||
-      b.workflowInclusions - a.workflowInclusions
-    );
+      b.workflowInclusions - a.workflowInclusions;
+    });
   }
 
   if (timeframe === "ALL") {
@@ -199,11 +310,19 @@ function sortByAllTimeRanking(tools: Tool[]) {
 }
 
 function selectAllTimeTools(tools: Tool[]) {
+  return selectRankedTools(tools, allTimeTopToolSlugs, sortByAllTimeRanking);
+}
+
+function selectThirtyDayTools(tools: Tool[]) {
+  return selectRankedTools(tools, thirtyDayTopToolSlugs, (toolList) => sortByTimeframe(toolList, "30D"));
+}
+
+function selectRankedTools(tools: Tool[], rankedSlugs: readonly string[], fallbackSort: (tools: Tool[]) => Tool[]) {
   const toolsBySlug = new Map(tools.map((tool) => [tool.slug, tool]));
   const selected: Tool[] = [];
   const seenSlugs = new Set<string>();
 
-  for (const slug of allTimeTopToolSlugs) {
+  for (const slug of rankedSlugs) {
     const tool = toolsBySlug.get(slug);
     if (!tool || seenSlugs.has(tool.slug)) continue;
     selected.push(tool);
@@ -212,7 +331,7 @@ function selectAllTimeTools(tools: Tool[]) {
 
   if (selected.length >= 100) return selected.slice(0, 100);
 
-  for (const tool of sortByAllTimeRanking(tools)) {
+  for (const tool of fallbackSort(tools)) {
     if (seenSlugs.has(tool.slug)) continue;
     selected.push(tool);
     seenSlugs.add(tool.slug);
