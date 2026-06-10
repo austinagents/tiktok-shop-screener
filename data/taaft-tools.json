@@ -4414,5 +4414,1925 @@
     "creatorMentions": 58,
     "workflowInclusions": 4,
     "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_fundraisly",
+    "name": "Fundraisly",
+    "slug": "fundraisly",
+    "description": "Fundraisly is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Fundraisly is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://fundraisly.com",
+    "category": "AI Sales",
+    "categories": [
+      "AI Sales"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "sales",
+      "fundraisly",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Fundraisly attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 236,
+    "sourceUrl": "https://fundraisly.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/fundraisly.png",
+    "officialLogoUrl": "/logos/tools/fundraisly.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_co-invest",
+    "name": "Co-Invest",
+    "slug": "co-invest",
+    "description": "Co-Invest is a trading product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Co-Invest is a trading product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://coinvest.ai",
+    "category": "AI Trading",
+    "categories": [
+      "AI Trading"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "trading",
+      "co-invest",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Co-Invest attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 237,
+    "sourceUrl": "https://coinvest.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/co-invest.png",
+    "officialLogoUrl": "/logos/tools/co-invest.png",
+    "faviconUrl": "/logos/tools/co-invest.png",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_paste-app",
+    "name": "Paste App",
+    "slug": "paste-app",
+    "description": "Paste App is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Paste App is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://pasteapp.io",
+    "category": "AI Productivity",
+    "categories": [
+      "AI Productivity"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "productivity",
+      "paste-app",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Paste App attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 238,
+    "sourceUrl": "https://pasteapp.io",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/paste-app.png",
+    "officialLogoUrl": "/logos/tools/paste-app.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_rodeo-by-twelvelabs",
+    "name": "Rodeo by TwelveLabs",
+    "slug": "rodeo-by-twelvelabs",
+    "description": "Rodeo by TwelveLabs is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Rodeo by TwelveLabs is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.twelvelabs.io",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "video",
+      "rodeo-by-twelvelabs",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Rodeo by TwelveLabs attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 239,
+    "sourceUrl": "https://www.twelvelabs.io",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/rodeo-by-twelvelabs.png",
+    "officialLogoUrl": "/logos/tools/rodeo-by-twelvelabs.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_branda",
+    "name": "Branda",
+    "slug": "branda",
+    "description": "Branda is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Branda is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://branda.co",
+    "category": "AI Marketing",
+    "categories": [
+      "AI Marketing"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "marketing",
+      "branda",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Branda attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 240,
+    "sourceUrl": "https://branda.co",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/branda.png",
+    "officialLogoUrl": "/logos/tools/branda.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_knock-agent-for-slack",
+    "name": "Knock Agent for Slack",
+    "slug": "knock-agent-for-slack",
+    "description": "Knock Agent for Slack is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Knock Agent for Slack is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://knock.app",
+    "category": "AI Automation",
+    "categories": [
+      "AI Automation"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "automation",
+      "knock-agent-for-slack",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Knock Agent for Slack attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 241,
+    "sourceUrl": "https://knock.app",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/knock-agent-for-slack.svg",
+    "officialLogoUrl": "/logos/tools/knock-agent-for-slack.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_mina-meeting-assistant",
+    "name": "Mina Meeting Assistant",
+    "slug": "mina-meeting-assistant",
+    "description": "Mina Meeting Assistant is a meeting product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Mina Meeting Assistant is a meeting product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://getmina.ai",
+    "category": "AI Meeting",
+    "categories": [
+      "AI Meeting"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "meeting",
+      "mina-meeting-assistant",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Mina Meeting Assistant attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 242,
+    "sourceUrl": "https://getmina.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/mina-meeting-assistant.png",
+    "officialLogoUrl": "/logos/tools/mina-meeting-assistant.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_databox-mcp",
+    "name": "Databox MCP",
+    "slug": "databox-mcp",
+    "description": "Databox MCP is a analytics product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Databox MCP is a analytics product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://databox.com",
+    "category": "AI Analytics",
+    "categories": [
+      "AI Analytics"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "analytics",
+      "databox-mcp",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Databox MCP attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 243,
+    "sourceUrl": "https://databox.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/databox-mcp.png",
+    "officialLogoUrl": "/logos/tools/databox-mcp.png",
+    "faviconUrl": "",
+    "logoSource": "apple-touch-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_dune-keypad",
+    "name": "Dune Keypad",
+    "slug": "dune-keypad",
+    "description": "Dune Keypad is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Dune Keypad is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.projectmirage.ai",
+    "category": "AI Productivity",
+    "categories": [
+      "AI Productivity"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "productivity",
+      "dune-keypad",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Dune Keypad attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 244,
+    "sourceUrl": "https://www.projectmirage.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/dune-keypad.png",
+    "officialLogoUrl": "/logos/tools/dune-keypad.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_folk",
+    "name": "folk",
+    "slug": "folk",
+    "description": "folk is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "folk is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.folk.app",
+    "category": "AI Sales",
+    "categories": [
+      "AI Sales"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "sales",
+      "folk",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track folk attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 245,
+    "sourceUrl": "https://www.folk.app",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/folk.png",
+    "officialLogoUrl": "/logos/tools/folk.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_typeahead",
+    "name": "Typeahead",
+    "slug": "typeahead",
+    "description": "Typeahead is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Typeahead is a search product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://typeahead.app",
+    "category": "AI Search",
+    "categories": [
+      "AI Search"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "search",
+      "typeahead",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Typeahead attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 246,
+    "sourceUrl": "https://typeahead.app",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "https://www.google.com/s2/favicons?domain=typeahead.app&sz=128",
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=typeahead.app&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=typeahead.app&sz=128",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_tokenwise",
+    "name": "Tokenwise",
+    "slug": "tokenwise",
+    "description": "Tokenwise is a trading product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Tokenwise is a trading product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://tokenwise.ai",
+    "category": "AI Trading",
+    "categories": [
+      "AI Trading"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "trading",
+      "tokenwise",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Tokenwise attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 247,
+    "sourceUrl": "https://tokenwise.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/tokenwise.jpg",
+    "officialLogoUrl": "/logos/tools/tokenwise.jpg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_wingbits-ai",
+    "name": "Wingbits AI",
+    "slug": "wingbits-ai",
+    "description": "Wingbits AI is a analytics product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Wingbits AI is a analytics product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://wingbits.com",
+    "category": "AI Analytics",
+    "categories": [
+      "AI Analytics"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "analytics",
+      "wingbits-ai",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Wingbits AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 248,
+    "sourceUrl": "https://wingbits.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/wingbits-ai.ico",
+    "officialLogoUrl": "/logos/tools/wingbits-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_openstatus-health",
+    "name": "Openstatus Health",
+    "slug": "openstatus-health",
+    "description": "Openstatus Health is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Openstatus Health is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.openstatus.dev",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "infrastructure",
+      "openstatus-health",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Openstatus Health attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 249,
+    "sourceUrl": "https://www.openstatus.dev",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/openstatus-health.ico",
+    "officialLogoUrl": "/logos/tools/openstatus-health.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_step-3-7-flash",
+    "name": "Step 3.7 Flash",
+    "slug": "step-3-7-flash",
+    "description": "Step 3.7 Flash is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Step 3.7 Flash is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.stepfun.com",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "infrastructure",
+      "step-3-7-flash",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Step 3.7 Flash attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 250,
+    "sourceUrl": "https://www.stepfun.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/step-3-7-flash.svg",
+    "officialLogoUrl": "/logos/tools/step-3-7-flash.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_ava-studio",
+    "name": "Ava Studio",
+    "slug": "ava-studio",
+    "description": "Ava Studio is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Ava Studio is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://avastudio.ai",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "video",
+      "ava-studio",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Ava Studio attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 251,
+    "sourceUrl": "https://avastudio.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "https://www.google.com/s2/favicons?domain=avastudio.ai&sz=128",
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=avastudio.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=avastudio.ai&sz=128",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_agent-a-ahrefs",
+    "name": "Agent A | Ahrefs",
+    "slug": "agent-a-ahrefs",
+    "description": "Agent A | Ahrefs is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Agent A | Ahrefs is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://ahrefs.com",
+    "category": "AI Marketing",
+    "categories": [
+      "AI Marketing"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "marketing",
+      "agent-a-ahrefs",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Agent A | Ahrefs attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 252,
+    "sourceUrl": "https://ahrefs.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/agent-a-ahrefs.svg",
+    "officialLogoUrl": "/logos/tools/agent-a-ahrefs.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_mcp-bridge-appfactor",
+    "name": "MCP Bridge | Appfactor",
+    "slug": "mcp-bridge-appfactor",
+    "description": "MCP Bridge | Appfactor is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "MCP Bridge | Appfactor is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://appfactor.io",
+    "category": "AI Development",
+    "categories": [
+      "AI Development"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "development",
+      "mcp-bridge-appfactor",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track MCP Bridge | Appfactor attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 253,
+    "sourceUrl": "https://appfactor.io",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/mcp-bridge-appfactor.png",
+    "officialLogoUrl": "/logos/tools/mcp-bridge-appfactor.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_integuru",
+    "name": "Integuru",
+    "slug": "integuru",
+    "description": "Integuru is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Integuru is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://integuru.ai",
+    "category": "AI Automation",
+    "categories": [
+      "AI Automation"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "automation",
+      "integuru",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Integuru attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 254,
+    "sourceUrl": "https://integuru.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/integuru.svg",
+    "officialLogoUrl": "/logos/tools/integuru.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_basedash",
+    "name": "Basedash",
+    "slug": "basedash",
+    "description": "Basedash is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Basedash is a development product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://www.basedash.com",
+    "category": "AI Development",
+    "categories": [
+      "AI Development"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "development",
+      "basedash",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Basedash attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 255,
+    "sourceUrl": "https://www.basedash.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/basedash.ico",
+    "officialLogoUrl": "/logos/tools/basedash.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_clipline",
+    "name": "Clipline",
+    "slug": "clipline",
+    "description": "Clipline is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Clipline is a video product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://clipline.ai",
+    "category": "AI Video",
+    "categories": [
+      "AI Video"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "video",
+      "clipline",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Clipline attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 256,
+    "sourceUrl": "https://clipline.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "https://www.google.com/s2/favicons?domain=clipline.ai&sz=128",
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=clipline.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=clipline.ai&sz=128",
+    "logoSource": "google-favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_buffer-api",
+    "name": "Buffer API",
+    "slug": "buffer-api",
+    "description": "Buffer API is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Buffer API is a marketing product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://buffer.com",
+    "category": "AI Marketing",
+    "categories": [
+      "AI Marketing"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "marketing",
+      "buffer-api",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Buffer API attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 257,
+    "sourceUrl": "https://buffer.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/buffer-api.png",
+    "officialLogoUrl": "/logos/tools/buffer-api.png",
+    "faviconUrl": "",
+    "logoSource": "apple-touch-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_zero-xyz",
+    "name": "zero.xyz",
+    "slug": "zero-xyz",
+    "description": "zero.xyz is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "zero.xyz is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://zero.xyz",
+    "category": "AI Productivity",
+    "categories": [
+      "AI Productivity"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "productivity",
+      "zero-xyz",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track zero.xyz attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 258,
+    "sourceUrl": "https://zero.xyz",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/zero-xyz.ico",
+    "officialLogoUrl": "/logos/tools/zero-xyz.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_coworker-ai",
+    "name": "Coworker AI",
+    "slug": "coworker-ai",
+    "description": "Coworker AI is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Coworker AI is a agents product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://coworker.ai",
+    "category": "AI Agents",
+    "categories": [
+      "AI Agents"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "agents",
+      "coworker-ai",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Coworker AI attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 259,
+    "sourceUrl": "https://coworker.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/coworker-ai.svg",
+    "officialLogoUrl": "/logos/tools/coworker-ai.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_octolane",
+    "name": "Octolane",
+    "slug": "octolane",
+    "description": "Octolane is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Octolane is a sales product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://octolane.com",
+    "category": "AI Sales",
+    "categories": [
+      "AI Sales"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "sales",
+      "octolane",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Octolane attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 260,
+    "sourceUrl": "https://octolane.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/octolane.png",
+    "officialLogoUrl": "/logos/tools/octolane.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_krater",
+    "name": "Krater",
+    "slug": "krater",
+    "description": "Krater is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Krater is a productivity product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://krater.ai",
+    "category": "AI Productivity",
+    "categories": [
+      "AI Productivity"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "productivity",
+      "krater",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Krater attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 261,
+    "sourceUrl": "https://krater.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/krater.png",
+    "officialLogoUrl": "/logos/tools/krater.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_dodoform",
+    "name": "DodoForm",
+    "slug": "dodoform",
+    "description": "DodoForm is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "DodoForm is a automation product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://dodoform.com",
+    "category": "AI Automation",
+    "categories": [
+      "AI Automation"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "automation",
+      "dodoform",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track DodoForm attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 262,
+    "sourceUrl": "https://dodoform.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/dodoform.ico",
+    "officialLogoUrl": "/logos/tools/dodoform.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_parsewise-api",
+    "name": "Parsewise API",
+    "slug": "parsewise-api",
+    "description": "Parsewise API is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Parsewise API is a infrastructure product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://parsewise.ai",
+    "category": "AI Infrastructure",
+    "categories": [
+      "AI Infrastructure"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "infrastructure",
+      "parsewise-api",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Parsewise API attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 263,
+    "sourceUrl": "https://parsewise.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/parsewise-api.png",
+    "officialLogoUrl": "/logos/tools/parsewise-api.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_rezonant",
+    "name": "Rezonant",
+    "slug": "rezonant",
+    "description": "Rezonant is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Rezonant is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://rezonant.ai",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "voice",
+      "rezonant",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Rezonant attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 264,
+    "sourceUrl": "https://rezonant.ai",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/rezonant.svg",
+    "officialLogoUrl": "/logos/tools/rezonant.svg",
+    "faviconUrl": "/logos/tools/rezonant.svg",
+    "logoSource": "favicon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
+  },
+  {
+    "id": "manual_24h_discovery_willow-scribe",
+    "name": "Willow Scribe",
+    "slug": "willow-scribe",
+    "description": "Willow Scribe is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof.",
+    "longDescription": "Willow Scribe is a voice product tracked by AppScreener for public-source momentum, creator discussion, and ecosystem proof. AppScreener indexes this product for attention movement, source proof, related use cases, and emerging workflow fit.",
+    "websiteUrl": "https://willowvoice.com",
+    "category": "AI Voice",
+    "categories": [
+      "AI Voice"
+    ],
+    "rawSourceCategories": [
+      "manual-24h-discovery"
+    ],
+    "tags": [
+      "voice",
+      "willow-scribe",
+      "24h discovery",
+      "public discussion"
+    ],
+    "useCases": [
+      "Track Willow Scribe attention",
+      "Monitor public proof sources",
+      "Compare ecosystem momentum"
+    ],
+    "pricingType": "freemium",
+    "pricingSummary": "Not listed",
+    "pricingTiers": [
+      "Not listed"
+    ],
+    "taaftRank": 265,
+    "sourceUrl": "https://willowvoice.com",
+    "sourceConfidence": 100,
+    "verificationSignals": [
+      "manual_reviewed_seed",
+      "working_url_present",
+      "official_x_present",
+      "brand_asset_present"
+    ],
+    "importedFrom": "manual-24h-discovery",
+    "importedAt": "2026-06-10T05:37:32.662Z",
+    "updatedAt": "2026-06-10T05:37:32.662Z",
+    "listingStatus": "accepted",
+    "listingScore": 100,
+    "boostEligible": true,
+    "workflowEligible": true,
+    "creatorSignalEligible": true,
+    "logoUrl": "/logos/tools/willow-scribe.png",
+    "officialLogoUrl": "/logos/tools/willow-scribe.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon",
+    "baselineAttention": 860,
+    "relativeGrowthVsBaseline": 1.85,
+    "recentVelocity": 1.55,
+    "acceleration": 28,
+    "growth24h": 22,
+    "growth7d": 51,
+    "mentions24h": 760,
+    "mentions7d": 4100,
+    "savesCount": 5400,
+    "creatorMentions": 58,
+    "workflowInclusions": 4,
+    "searchInterest": 68
   }
 ]

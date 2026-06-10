@@ -2036,5 +2036,155 @@ export const logoAssets: Record<string, LogoAsset> = {
     "officialLogoUrl": "/logos/tools/masterpiece-studio.png",
     "faviconUrl": "/logos/tools/masterpiece-studio.png",
     "logoSource": "google-favicon"
+  },
+  "fundraisly": {
+    "officialLogoUrl": "/logos/tools/fundraisly.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "co-invest": {
+    "officialLogoUrl": "/logos/tools/co-invest.png",
+    "faviconUrl": "/logos/tools/co-invest.png",
+    "logoSource": "google-favicon"
+  },
+  "paste-app": {
+    "officialLogoUrl": "/logos/tools/paste-app.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "rodeo-by-twelvelabs": {
+    "officialLogoUrl": "/logos/tools/rodeo-by-twelvelabs.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "branda": {
+    "officialLogoUrl": "/logos/tools/branda.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "knock-agent-for-slack": {
+    "officialLogoUrl": "/logos/tools/knock-agent-for-slack.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "mina-meeting-assistant": {
+    "officialLogoUrl": "/logos/tools/mina-meeting-assistant.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "databox-mcp": {
+    "officialLogoUrl": "/logos/tools/databox-mcp.png",
+    "faviconUrl": "",
+    "logoSource": "apple-touch-icon"
+  },
+  "dune-keypad": {
+    "officialLogoUrl": "/logos/tools/dune-keypad.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "folk": {
+    "officialLogoUrl": "/logos/tools/folk.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "typeahead": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=typeahead.app&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=typeahead.app&sz=128",
+    "logoSource": "google-favicon"
+  },
+  "tokenwise": {
+    "officialLogoUrl": "/logos/tools/tokenwise.jpg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "wingbits-ai": {
+    "officialLogoUrl": "/logos/tools/wingbits-ai.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "openstatus-health": {
+    "officialLogoUrl": "/logos/tools/openstatus-health.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "step-3-7-flash": {
+    "officialLogoUrl": "/logos/tools/step-3-7-flash.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "ava-studio": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=avastudio.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=avastudio.ai&sz=128",
+    "logoSource": "google-favicon"
+  },
+  "agent-a-ahrefs": {
+    "officialLogoUrl": "/logos/tools/agent-a-ahrefs.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "mcp-bridge-appfactor": {
+    "officialLogoUrl": "/logos/tools/mcp-bridge-appfactor.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "integuru": {
+    "officialLogoUrl": "/logos/tools/integuru.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "basedash": {
+    "officialLogoUrl": "/logos/tools/basedash.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "clipline": {
+    "officialLogoUrl": "https://www.google.com/s2/favicons?domain=clipline.ai&sz=128",
+    "faviconUrl": "https://www.google.com/s2/favicons?domain=clipline.ai&sz=128",
+    "logoSource": "google-favicon"
+  },
+  "buffer-api": {
+    "officialLogoUrl": "/logos/tools/buffer-api.png",
+    "faviconUrl": "",
+    "logoSource": "apple-touch-icon"
+  },
+  "zero-xyz": {
+    "officialLogoUrl": "/logos/tools/zero-xyz.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "coworker-ai": {
+    "officialLogoUrl": "/logos/tools/coworker-ai.svg",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "octolane": {
+    "officialLogoUrl": "/logos/tools/octolane.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "krater": {
+    "officialLogoUrl": "/logos/tools/krater.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "dodoform": {
+    "officialLogoUrl": "/logos/tools/dodoform.ico",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "parsewise-api": {
+    "officialLogoUrl": "/logos/tools/parsewise-api.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
+  },
+  "rezonant": {
+    "officialLogoUrl": "/logos/tools/rezonant.svg",
+    "faviconUrl": "/logos/tools/rezonant.svg",
+    "logoSource": "favicon"
+  },
+  "willow-scribe": {
+    "officialLogoUrl": "/logos/tools/willow-scribe.png",
+    "faviconUrl": "",
+    "logoSource": "website-icon"
   }
 };

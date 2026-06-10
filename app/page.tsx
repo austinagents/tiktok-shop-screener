@@ -12,7 +12,8 @@ import { creatorTagDisplayLabel } from "@/lib/creator-tags";
 import { displayCategory } from "@/lib/format";
 
 export default function DiscoverPage() {
-  const newLaunches = [...tools].sort((a, b) => new Date(b.launchDate).getTime() - new Date(a.launchDate).getTime()).slice(0, 5);
+  const newlyListedSlugs = ["wingbits-ai", "integuru", "branda", "crewai", "voxdeck"];
+  const newLaunches = newlyListedSlugs.flatMap((slug) => tools.find((tool) => tool.slug === slug) ?? []);
   const narratives = [
     "AI video workflows are pulling creator attention away from static image generation.",
     "Coding agents are accelerating faster than general chat tools this week.",

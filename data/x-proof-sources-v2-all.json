@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_at": "2026-06-09T23:53:21.570Z",
+    "generated_at": "2026-06-10T05:39:15.890Z",
     "input": "data/proof-coverage-v1.csv",
     "query": "@handle -from:handle min_faves:3 -filter:replies",
     "tools_requested": 108,
@@ -13,17 +13,17 @@
     "cleaned_for_current_catalog_at": "2026-06-04T18:52:12.952Z",
     "records_after_catalog_cleanup": 127,
     "missing_tools_run": {
-      "tools_processed": 52,
+      "tools_processed": 30,
       "tools_failed": 0,
-      "total_tweets_returned": 970,
-      "total_useful_proof_posts": 837,
-      "tools_with_1_plus_useful_proof_posts": 49,
-      "tools_with_3_plus_useful_proof_posts": 48,
-      "tools_with_0_useful_proof_posts": 3,
-      "runtime_seconds": 11.99,
+      "total_tweets_returned": 333,
+      "total_useful_proof_posts": 307,
+      "tools_with_1_plus_useful_proof_posts": 21,
+      "tools_with_3_plus_useful_proof_posts": 19,
+      "tools_with_0_useful_proof_posts": 9,
+      "runtime_seconds": 14.41,
       "errors": []
     },
-    "records_after_missing_tools_run": 239,
+    "records_after_missing_tools_run": 269,
     "base_refresh_run": {
       "base_tools_processed": 14,
       "skipped_tools": 0,
@@ -891,6 +891,214 @@
             "replies": 11,
             "views": 842,
             "total": 47
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Agent A | Ahrefs",
+      "slug": "agent-a-ahrefs",
+      "x_handle": "@ahrefs",
+      "confidence": 100,
+      "query": "@ahrefs -from:ahrefs min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "elgermerlo",
+        "GasOnMarketing",
+        "lilyraynyc",
+        "Jbosch_",
+        "fseixas",
+        "audreytipsfr",
+        "timsoulo",
+        "DavidGQuaid",
+        "natzir9",
+        "ThomasMeyerSEO",
+        "AnthonyRochand",
+        "sergiopedemonte",
+        "JoyanneHawkins",
+        "illyism"
+      ],
+      "urls": [
+        "https://x.com/elgermerlo/status/2064348125137936482",
+        "https://x.com/GasOnMarketing/status/2064262529291829531",
+        "https://x.com/lilyraynyc/status/2064092638341382510",
+        "https://x.com/Jbosch_/status/2064084046603534762",
+        "https://x.com/fseixas/status/2063957801936814520",
+        "https://x.com/elgermerlo/status/2063912781414346871",
+        "https://x.com/elgermerlo/status/2063700120512672204",
+        "https://x.com/audreytipsfr/status/2062873077323628698",
+        "https://x.com/timsoulo/status/2062574349304078664",
+        "https://x.com/DavidGQuaid/status/2062237413162803575",
+        "https://x.com/timsoulo/status/2061796432534003866",
+        "https://x.com/natzir9/status/2061778057392779702",
+        "https://x.com/elgermerlo/status/2061771132047385008",
+        "https://x.com/ThomasMeyerSEO/status/2061758533754835159",
+        "https://x.com/AnthonyRochand/status/2060655822372286578",
+        "https://x.com/sergiopedemonte/status/2060113367155572890",
+        "https://x.com/sergiopedemonte/status/2060112379598270507",
+        "https://x.com/JoyanneHawkins/status/2059975097654403529",
+        "https://x.com/illyism/status/2059313831260967349",
+        "https://x.com/elgermerlo/status/2059234404027732376"
+      ],
+      "top_tweets": [
+        {
+          "id": "2061796432534003866",
+          "author": "timsoulo",
+          "authorName": "Tim Soulo 🇺🇦",
+          "text": "In the last 6 months at @Ahrefs, we analyzed over 1 billion data points across 14 studies. Here's what we learned about AI search optimization: 1) \"Best X\" blog listicles are the single most prominent content format cited by AI chatbots. They make up 43.8% of all page types cited by ChatGPT specifically. 2) 67% of ChatGPT's top 1,000 citations come from sources marketers can't influence: Wikipedia (29.7%), homepages (23.8%), app stores (6.6%). Only 32.3% are influenceable content like educational pages, reviews, news, and blog posts. 3) 28.3% of ChatGPT's most-cited pages have zero Google organic visibility. These pages get cited repeatedly by ChatGPT despite not ranking in Google at all. A completely separate discovery layer. 4) ChatGPT only cites about 50% of the URLs it retrieves. It fetches dozens of pages per query but uses half as background context without attribution. This means that being retrieved and being cited are very different things. 5) Adding schema markup had zero meaningful impact on AI citations. AI Overviews actually dipped −4.6%, while AI Mode (+2.4%) and ChatGPT (+2.2%) showed changes indistinguishable from zero. 6) YouTube mentions have the highest correlation (0.737) with AI brand visibility out of all the factors we studied (including all the conventional SEO metrics like backlinks, page count, DR, etc). This held true for both Google-owned and OpenAI products. 7) AI Overviews reduce clicks to the #1 result by 58%. That’s up from 34.5% just 10 months earlier. The trend is accelerating. 8) 99.9% of AI Overviews appear on informational intent queries. Transactional, navigational, and local searches are almost entirely AIO-free. Shopping triggers AIOs just 3.2% of the time. 9) For a given search query, Google’s AI Mode and AI Overviews reach the same conclusions 86% of the time — but cite almost entirely different sources (only 13.7% citation overlap). 10) AI Overviews change every 2.15 days on average, with 70% of content differing between consecutive observations. But semantic similarity stays at 0.95. The words, sources, and entities constantly shuffle, but the actual meaning barely moves.",
+          "url": "https://x.com/timsoulo/status/2061796432534003866",
+          "createdAt": "Tue Jun 02 13:05:50 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 3537,
+            "reposts": 401,
+            "replies": 142,
+            "views": 1012067,
+            "total": 4080
+          }
+        },
+        {
+          "id": "2059313831260967349",
+          "author": "illyism",
+          "authorName": "ILIAS ISM",
+          "text": "How to find your real SEO competition in 10 minutes: 1. Export top 1,000 keywords in your niche from @Ahrefs 2. Pull the top 10 ranking URLs for each 3. Count which URLs appear most 1,000 keywords → 68 unique pages → 30 domains https://t.co/gSzdWduZTx",
+          "url": "https://x.com/illyism/status/2059313831260967349",
+          "createdAt": "Tue May 26 16:40:52 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 107,
+            "reposts": 8,
+            "replies": 9,
+            "views": 15295,
+            "total": 124
+          }
+        },
+        {
+          "id": "2064092638341382510",
+          "author": "lilyraynyc",
+          "authorName": "Lily Ray 😏",
+          "text": "Think Google is leaning on Reddit more heavily in AI Overviews for \"best\" keywords The chart below is Reddit citations in AI Overviews via @ahrefs Brand Radar filtered for prompts containing \"Best\" https://t.co/S8yp7wTzpu",
+          "url": "https://x.com/lilyraynyc/status/2064092638341382510",
+          "createdAt": "Mon Jun 08 21:10:08 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 86,
+            "reposts": 6,
+            "replies": 10,
+            "views": 6114,
+            "total": 102
+          }
+        },
+        {
+          "id": "2062574349304078664",
+          "author": "timsoulo",
+          "authorName": "Tim Soulo 🇺🇦",
+          "text": "Once you build your first AI app, you're done for. Every single process in your day starts looking like something you should automate. Glen Allsopp [ @ViperChill ] (Head of Marketing Strategy & Research at @Ahrefs) showed me a perfect example of this. He used Agent A for competitive backlink research. Got exactly what he needed. Then typed: \"please turn this into an application.\" Three minutes later he had a reusable tool that analyzes backlinks across multiple websites in 20 seconds. Cost per run: less than one cent. Then he did the same with his task management workflow. Then with content research. Then with marketing copy. Then with AI visibility reports. Now almost every part of his workflow has a custom tool built around it So I invited Glen on Ahrefs Podcast to demo all of these tools live on screen, walk through how he built them with AI and what he learned in the process. Here's what we covered: 🔸 Why only 10% of marketers have tried building anything with AI 🔸 The \"imagination gap\" that stops most people from even starting 🔸 How a conversation with AI becomes a reusable marketing tool in 3 minutes 🔸 Why the cheapest AI model is often the right one for marketing tasks 🔸 Why your personal task manager should be built by you, not bought 🔸 Why copying someone's AI app is just the starting point, not a finished product 🔸 Why having marketing expertise matters more now, not less Watch/Listen here 👇 https://t.co/mQeJsERIdY P.S. If you enjoy these deep dives, a quick \"Like\" or comment helps us convince more great guests to come on the show. Thanks! 🙏",
+          "url": "https://x.com/timsoulo/status/2062574349304078664",
+          "createdAt": "Thu Jun 04 16:37:00 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 31,
+            "reposts": 5,
+            "replies": 2,
+            "views": 5359,
+            "total": 38
+          }
+        },
+        {
+          "id": "2061778057392779702",
+          "author": "natzir9",
+          "authorName": "Natzir",
+          "text": "There's not only Spearman correlation, but Pearson too. In other words, the relationship holds in rank order and in magnitude. Sharing this from a recent talk I gave. @ahrefs data https://t.co/oWW2dsfvWD",
+          "url": "https://x.com/natzir9/status/2061778057392779702",
+          "createdAt": "Tue Jun 02 11:52:49 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 2,
+            "replies": 1,
+            "views": 6317,
+            "total": 22
+          }
+        },
+        {
+          "id": "2059975097654403529",
+          "author": "JoyanneHawkins",
+          "authorName": "Joy Hawkins",
+          "text": "Anyone know if @ahrefs is working on a solution for these spam domains? They are getting out of hand and causing massive inaccuracies in referring domain graphs. https://t.co/QdcbhLBkec",
+          "url": "https://x.com/JoyanneHawkins/status/2059975097654403529",
+          "createdAt": "Thu May 28 12:28:30 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 0,
+            "replies": 5,
+            "views": 3425,
+            "total": 20
+          }
+        },
+        {
+          "id": "2062237413162803575",
+          "author": "DavidGQuaid",
+          "authorName": "Dave Quaid - SEO",
+          "text": "Myth Busting in SEO takes time. @HundleyJake bounced this idea past me and @edwardeachday about 6 months ago! He's devoted so much time, resources, peer reviews of the methodology, hypothesis and process. He's had tremendous support from @ahrefs - who need to be applauded for their time, effort, energy and focus on delivering data for good in SEO. While back at GEO Propaganda Studios Inc., people are filling the WWW with tons of made up studies, claims about research, on a colossal scale. https://t.co/VNI7RNCmXW",
+          "url": "https://x.com/DavidGQuaid/status/2062237413162803575",
+          "createdAt": "Wed Jun 03 18:18:08 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 1,
+            "replies": 0,
+            "views": 877,
+            "total": 12
+          }
+        },
+        {
+          "id": "2059234404027732376",
+          "author": "elgermerlo",
+          "authorName": "Germán Merlo 💻 🇦🇷",
+          "text": "Day 63/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 𝗹𝗮𝘂𝗻𝗰𝗵𝘃𝗮𝘂𝗹𝘁(𝗱𝗼𝘁)𝗱𝗲𝘃 DR 39 by @ahrefs DA 15 by @moz 18k - 20k monthly visitors It's key for engaging and exposure your idea. Great job @launchvaultdev https://t.co/eYsow6oCtt",
+          "url": "https://x.com/elgermerlo/status/2059234404027732376",
+          "createdAt": "Tue May 26 11:25:15 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 0,
+            "replies": 3,
+            "views": 207,
+            "total": 10
+          }
+        },
+        {
+          "id": "2064348125137936482",
+          "author": "elgermerlo",
+          "authorName": "Germán Merlo 💻 🇦🇷",
+          "text": "Day 76/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 1000tools(dot)best DR 6 by @ahrefs DA 15 by @moz 5k monthly visitors It's key for engaging and exposure your idea. Great job guys! https://t.co/673UQ64wx1",
+          "url": "https://x.com/elgermerlo/status/2064348125137936482",
+          "createdAt": "Tue Jun 09 14:05:21 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 5,
+            "reposts": 0,
+            "replies": 2,
+            "views": 119,
+            "total": 7
+          }
+        },
+        {
+          "id": "2060113367155572890",
+          "author": "sergiopedemonte",
+          "authorName": "Sergio Pedemonte",
+          "text": "Another interesting read from @ahrefs. ChatGPT has a large amount of search-like activity, but Google still sends far more traffic to websites. The main reason is that ChatGPT often keeps users inside the conversation, while Google is designed to send users to external websites. https://t.co/cJa3tN3khY",
+          "url": "https://x.com/sergiopedemonte/status/2060113367155572890",
+          "createdAt": "Thu May 28 21:37:56 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 0,
+            "replies": 2,
+            "views": 91,
+            "total": 6
           }
         }
       ]
@@ -2883,6 +3091,17 @@
       ]
     },
     {
+      "tool": "Ava Studio",
+      "slug": "ava-studio",
+      "x_handle": "@avastudio_ai",
+      "confidence": 100,
+      "query": "@avastudio_ai -from:avastudio_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
       "tool": "Avaturn",
       "slug": "avaturn",
       "x_handle": "@avaturn_me",
@@ -3300,6 +3519,213 @@
             "replies": 3,
             "views": 393,
             "total": 7
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Basedash",
+      "slug": "basedash",
+      "x_handle": "@Basedash",
+      "confidence": 100,
+      "query": "@Basedash -from:Basedash min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "KrisLachance",
+        "MaxMusing",
+        "thestartpod",
+        "BryanJacobHunte",
+        "valthvisuals",
+        "rabi_guha",
+        "ben_aguilera",
+        "RobertCooper_RC",
+        "MarkKnd",
+        "vrikhter",
+        "designspells_",
+        "antongridz",
+        "malatack"
+      ],
+      "urls": [
+        "https://x.com/KrisLachance/status/2059729739145768984",
+        "https://x.com/MaxMusing/status/2049242940988375365",
+        "https://x.com/MaxMusing/status/2048110369919406206",
+        "https://x.com/thestartpod/status/2047020125618868540",
+        "https://x.com/BryanJacobHunte/status/2042711283842027755",
+        "https://x.com/valthvisuals/status/2041744979026964740",
+        "https://x.com/rabi_guha/status/2041547036529709191",
+        "https://x.com/ben_aguilera/status/2037176916713546157",
+        "https://x.com/RobertCooper_RC/status/2033558489247682763",
+        "https://x.com/MarkKnd/status/2032427954806915170",
+        "https://x.com/vrikhter/status/2031437043448877449",
+        "https://x.com/KrisLachance/status/2026339525123887495",
+        "https://x.com/designspells_/status/2011823911131066705",
+        "https://x.com/MaxMusing/status/2010029780247404976",
+        "https://x.com/MaxMusing/status/2006089416477974846",
+        "https://x.com/RobertCooper_RC/status/2002085947832201422",
+        "https://x.com/antongridz/status/2001806000828092522",
+        "https://x.com/MaxMusing/status/2000583626904260861",
+        "https://x.com/malatack/status/1998888556102820296",
+        "https://x.com/ben_aguilera/status/1998798879400071388"
+      ],
+      "top_tweets": [
+        {
+          "id": "2041547036529709191",
+          "author": "rabi_guha",
+          "authorName": "Rabi Shanker Guha",
+          "text": "Replacing dashboards with a chatbar was step one Here's what step two could look like (Inspired by @Basedash - they've been building in this space for a while) https://t.co/tEmMe26kYx",
+          "url": "https://x.com/rabi_guha/status/2041547036529709191",
+          "createdAt": "Tue Apr 07 16:01:58 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 805,
+            "reposts": 38,
+            "replies": 27,
+            "views": 220255,
+            "total": 870
+          }
+        },
+        {
+          "id": "2032427954806915170",
+          "author": "MarkKnd",
+          "authorName": "Mark Vassilevskiy",
+          "text": "breakdown of the video for @Basedash https://t.co/oE2evrf9U7",
+          "url": "https://x.com/MarkKnd/status/2032427954806915170",
+          "createdAt": "Fri Mar 13 12:05:59 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 299,
+            "reposts": 13,
+            "replies": 7,
+            "views": 27917,
+            "total": 319
+          }
+        },
+        {
+          "id": "2059729739145768984",
+          "author": "KrisLachance",
+          "authorName": "Kris Lachance",
+          "text": "We’re hiring a Senior Full Stack Engineer at @Basedash! We’re a small team building the leading AI-native Business Intelligence platform. BI is a massive market entering a major shift with new ways of storing and computing data, and deeper governance for AI agents operating on company data. We’re looking for someone with strong full-stack fundamentals, real product sense, and genuine excitement about building with AI at the core of the product from day one.",
+          "url": "https://x.com/KrisLachance/status/2059729739145768984",
+          "createdAt": "Wed May 27 20:13:32 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 114,
+            "reposts": 10,
+            "replies": 10,
+            "views": 5382,
+            "total": 134
+          }
+        },
+        {
+          "id": "2011823911131066705",
+          "author": "designspells_",
+          "authorName": "Design Spells",
+          "text": "Interactive empty state graphics in @Basedash https://t.co/6dU3gNWeTs",
+          "url": "https://x.com/designspells_/status/2011823911131066705",
+          "createdAt": "Thu Jan 15 15:32:52 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 2,
+            "replies": 4,
+            "views": 1843,
+            "total": 29
+          }
+        },
+        {
+          "id": "2002085947832201422",
+          "author": "RobertCooper_RC",
+          "authorName": "Robert Cooper",
+          "text": "Every Friday morning, our changelog writes itself (well, almost). - @Basedash Autopilot scans our commit history - Figures out what actually shipped - Generates a changelog in Slack - We tag the @mintlify slack bot to create a changelog page in our docs - Mintlify opens a docs PR automatically We can then pull down the branch, tweak wording if needed, merge in the PR, done. Changelog is live at https://t.co/W8T9JPWNSo. Changelogs should be fast to produce—so more time goes to shipping features and fixes.",
+          "url": "https://x.com/RobertCooper_RC/status/2002085947832201422",
+          "createdAt": "Fri Dec 19 18:37:41 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 20,
+            "reposts": 3,
+            "replies": 3,
+            "views": 1561,
+            "total": 26
+          }
+        },
+        {
+          "id": "2047020125618868540",
+          "author": "thestartpod",
+          "authorName": "START",
+          "text": "Congrats on the launch @MaxMusing &amp; team @Basedash! 🚨 Live on @ProductHunt 👇 https://t.co/0EGR3vkoTE https://t.co/mitNbZmg1D",
+          "url": "https://x.com/thestartpod/status/2047020125618868540",
+          "createdAt": "Wed Apr 22 18:30:04 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 24,
+            "reposts": 1,
+            "replies": 0,
+            "views": 172,
+            "total": 25
+          }
+        },
+        {
+          "id": "2006089416477974846",
+          "author": "MaxMusing",
+          "authorName": "Max Musing",
+          "text": "We came to this exact conclusion at @Basedash which led us to what we're building today. Basedash: 1. Connects to your systems of record (Salesforce, Slack, Notion, GitHub, Linear, etc.) 2. Builds a context graph across all those systems 3. Finds insights and makes decisions for you That being said, I disagree that warehouses are the wrong data layer. Agree that current players are not well positioned, but MCPs (and equivalent) are fundamentally flawed for the read path. SQL is so much more expressive and capable than the patchwork of APIs and MCP servers for each system of record. The quality of insights and decisions we can get out of Basedash is 10x better than anything I've seen from other agents (and most humans 😄). We haven't even touched the write path yet though. In my opinion this is the (relatively) easy part 🤞",
+          "url": "https://x.com/MaxMusing/status/2006089416477974846",
+          "createdAt": "Tue Dec 30 19:46:02 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 2,
+            "replies": 1,
+            "views": 2735,
+            "total": 20
+          }
+        },
+        {
+          "id": "2001806000828092522",
+          "author": "antongridz",
+          "authorName": "Anton Gridz",
+          "text": "I built this tool about 6 months ago but was too hesitant to share it. Looking back at my journey this year, I realized that @tomjohndesign was one of the key people who shaped my eye for detail. His process for @Basedash is what pushed me to experiment with dithering in the first place. I used @cursor_ai to build Dither Studio back then to play with these textures. Today, I'm finally letting it out into the wild. Don't sit on your projects for too long, guys. Ship it. 👇",
+          "url": "https://x.com/antongridz/status/2001806000828092522",
+          "createdAt": "Fri Dec 19 00:05:17 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 0,
+            "replies": 1,
+            "views": 2779,
+            "total": 19
+          }
+        },
+        {
+          "id": "2041744979026964740",
+          "author": "valthvisuals",
+          "authorName": "Valth",
+          "text": "Launch video for @Basedash Insights, an AI agent that curates a continuous news feed on your company data. https://t.co/KWZaVqsTzL",
+          "url": "https://x.com/valthvisuals/status/2041744979026964740",
+          "createdAt": "Wed Apr 08 05:08:31 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 3,
+            "replies": 5,
+            "views": 690,
+            "total": 18
+          }
+        },
+        {
+          "id": "1998798879400071388",
+          "author": "ben_aguilera",
+          "authorName": "Ben Aguilera",
+          "text": "new one for @Basedash Autopilot will guide Q1 2026 at https://t.co/2LKAhnEpZM",
+          "url": "https://x.com/ben_aguilera/status/1998798879400071388",
+          "createdAt": "Wed Dec 10 16:56:03 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 0,
+            "replies": 3,
+            "views": 520,
+            "total": 13
           }
         }
       ]
@@ -4209,6 +4635,56 @@
       ]
     },
     {
+      "tool": "Branda",
+      "slug": "branda",
+      "x_handle": "@brandacooks",
+      "confidence": 100,
+      "query": "@brandacooks -from:brandacooks min_faves:3 -filter:replies",
+      "tweets_returned": 2,
+      "authors": [
+        "QuiverAI",
+        "davekova"
+      ],
+      "urls": [
+        "https://x.com/QuiverAI/status/2064370062128001142",
+        "https://x.com/davekova/status/2062587341512851602"
+      ],
+      "top_tweets": [
+        {
+          "id": "2062587341512851602",
+          "author": "davekova",
+          "authorName": "David Kovalev",
+          "text": "Create a pro brand in MINUTES ⚡️🤯 I'm using Branda 👉🏻 @brandacooks in this quick video demo tutorial. https://t.co/ajBiwic1fz",
+          "url": "https://x.com/davekova/status/2062587341512851602",
+          "createdAt": "Thu Jun 04 17:28:37 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 34,
+            "reposts": 3,
+            "replies": 3,
+            "views": 2503,
+            "total": 40
+          }
+        },
+        {
+          "id": "2064370062128001142",
+          "author": "QuiverAI",
+          "authorName": "QuiverAI",
+          "text": "Arrow 1.1 is now powering SVG conversion in Branda. We’re excited to partner with @brandacooks to help creators generate clean vector exports for logos, icons, and brand assets. Try it out and let us know what you create! https://t.co/GUUDfzs7Mi",
+          "url": "https://x.com/QuiverAI/status/2064370062128001142",
+          "createdAt": "Tue Jun 09 15:32:31 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 32,
+            "reposts": 3,
+            "replies": 3,
+            "views": 3700,
+            "total": 38
+          }
+        }
+      ]
+    },
+    {
       "tool": "Browserbase",
       "slug": "browserbase",
       "x_handle": "@browserbase",
@@ -4416,6 +4892,219 @@
             "replies": 0,
             "views": 1930,
             "total": 24
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Buffer API",
+      "slug": "buffer-api",
+      "x_handle": "@buffer",
+      "confidence": 100,
+      "query": "@buffer -from:buffer min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "LuigiMdpDev",
+        "SrinivasSi78619",
+        "cathooman28",
+        "DerekColley_",
+        "mepusica",
+        "oscargaske",
+        "JustinRFrench",
+        "Stevkingz1",
+        "danielkempe",
+        "diegocasmo",
+        "jglypt",
+        "Mike_Eck",
+        "juste_petr",
+        "danjelparas",
+        "n7studios",
+        "muskandotbacken",
+        "altryne",
+        "mgbtech77",
+        "SydesJokes"
+      ],
+      "urls": [
+        "https://x.com/LuigiMdpDev/status/2064099801474417078",
+        "https://x.com/SrinivasSi78619/status/2062997330950009286",
+        "https://x.com/cathooman28/status/2062912514078208296",
+        "https://x.com/DerekColley_/status/2062810424500711458",
+        "https://x.com/mepusica/status/2060962648527864056",
+        "https://x.com/oscargaske/status/2060443597145522690",
+        "https://x.com/JustinRFrench/status/2060168423636869366",
+        "https://x.com/Stevkingz1/status/2059955135871074330",
+        "https://x.com/danielkempe/status/2059726355126685951",
+        "https://x.com/diegocasmo/status/2059698669545259139",
+        "https://x.com/jglypt/status/2059694691642155294",
+        "https://x.com/Mike_Eck/status/2059670300435071375",
+        "https://x.com/juste_petr/status/2059650965246980289",
+        "https://x.com/danjelparas/status/2059642792951910874",
+        "https://x.com/n7studios/status/2059624429362041130",
+        "https://x.com/muskandotbacken/status/2059169702681948491",
+        "https://x.com/altryne/status/2058955830335258953",
+        "https://x.com/mgbtech77/status/2058775107187654982",
+        "https://x.com/SydesJokes/status/2058450326445810054",
+        "https://x.com/SydesJokes/status/2058250293624668642"
+      ],
+      "top_tweets": [
+        {
+          "id": "2060962648527864056",
+          "author": "mepusica",
+          "authorName": "Mepusica",
+          "text": "I used @Lovable and @buffer to build an app that helps create content for @TidyOnChainAI and it works like a charm. Meet TidyOps: 🔹Creates content suggestions based on a knowledge database, personality and inspirational tweets. 🔹Includes guardrails and feedback loops for continuous improvement. 🔹API integration for one-click scheduling of tweets.",
+          "url": "https://x.com/mepusica/status/2060962648527864056",
+          "createdAt": "Sun May 31 05:52:40 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 22,
+            "reposts": 3,
+            "replies": 4,
+            "views": 512,
+            "total": 29
+          }
+        },
+        {
+          "id": "2059624429362041130",
+          "author": "n7studios",
+          "authorName": "Tim Carr",
+          "text": "14 years ago, I built a small WordPress plugin that auto-posted blog content to social media using @buffer. It's running on tens of thousands of WordPress sites, and today it became one of the first integrations to launch on Buffer's brand new API. WordPress to Buffer and WordPress to Buffer Pro v6 is out: ✓ Faster, more reliable publishing ✓ A clearer Status Type dropdown (Text, Link, Image, Story, Pin, Google) replacing the old cryptic image settings ✓ Foundations laid for the next wave of Buffer features If you publish content on WordPress and use Buffer to schedule it across social networks, this release is for you. https://t.co/LhFG3z3Nyv Thanks to the Buffer team for their work on this new API. #WordPress #Buffer #BufferAPI #SocialMedia",
+          "url": "https://x.com/n7studios/status/2059624429362041130",
+          "createdAt": "Wed May 27 13:15:04 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 5,
+            "replies": 5,
+            "views": 2423,
+            "total": 23
+          }
+        },
+        {
+          "id": "2059650965246980289",
+          "author": "juste_petr",
+          "authorName": "Justina Petraityte",
+          "text": "Buffer API is officially live! 🎉 Big day for builders and developers - the public @buffer API is now available, opening the door to automated workflows, custom integrations, and third-party apps built on top of Buffer. I’ve been tinkering with the API for a while now, and I am excited about the endless possibilities. From smarter content operations to fully automated workflows, this feels like the start of a whole new ecosystem around Buffer. Excited to see what the developer community builds next 👀 If you haven’t checked it out yet: 👉 https://t.co/WhSXfnMQrU Let’s build together 🤩 #BufferAPI",
+          "url": "https://x.com/juste_petr/status/2059650965246980289",
+          "createdAt": "Wed May 27 15:00:31 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 4,
+            "replies": 1,
+            "views": 1767,
+            "total": 16
+          }
+        },
+        {
+          "id": "2058250293624668642",
+          "author": "SydesJokes",
+          "authorName": "Lord Sydes #NAFO #FBPE 🇬🇧🇩🇪🇸🇬🇫🇮🇪🇺",
+          "text": "Who uses @Buffer to feed tweets to your #socialmedia profiles? Did you know #Buffer now has an import function that uses csv files and can import images from urls for the tweets? I can give you free content just tag me in the tweets e.g. Via @SydesJokes https://t.co/tWEwdeKwkR",
+          "url": "https://x.com/SydesJokes/status/2058250293624668642",
+          "createdAt": "Sat May 23 18:14:45 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 4,
+            "replies": 1,
+            "views": 159,
+            "total": 15
+          }
+        },
+        {
+          "id": "2058450326445810054",
+          "author": "SydesJokes",
+          "authorName": "Lord Sydes #NAFO #FBPE 🇬🇧🇩🇪🇸🇬🇫🇮🇪🇺",
+          "text": "How to upload posts in bulk to @Buffer https://t.co/2fXhATK7Ii #socialmedia",
+          "url": "https://x.com/SydesJokes/status/2058450326445810054",
+          "createdAt": "Sun May 24 07:29:36 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 4,
+            "replies": 0,
+            "views": 96,
+            "total": 14
+          }
+        },
+        {
+          "id": "2059694691642155294",
+          "author": "jglypt",
+          "authorName": "jack",
+          "text": "WIP menu bar app for the Mac which lets you instantly post to your configured social profiles via @buffer with the new #BufferAPI! gonna fix some annoying last things, then i'll release it on GitHub + Tangled :) https://t.co/uxd4UZTisQ",
+          "url": "https://x.com/jglypt/status/2059694691642155294",
+          "createdAt": "Wed May 27 17:54:16 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 5,
+            "replies": 0,
+            "views": 2688,
+            "total": 13
+          }
+        },
+        {
+          "id": "2060168423636869366",
+          "author": "JustinRFrench",
+          "authorName": "Justin \"Results\" French 🥷🚀",
+          "text": "Breaking news you can now automatically schedule social media posts from @claudeai to @buffer the full content automation revenue system continues to improve 🫡🥷 https://t.co/D4wKVz4vbD",
+          "url": "https://x.com/JustinRFrench/status/2060168423636869366",
+          "createdAt": "Fri May 29 01:16:42 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 2,
+            "replies": 1,
+            "views": 343,
+            "total": 11
+          }
+        },
+        {
+          "id": "2059670300435071375",
+          "author": "Mike_Eck",
+          "authorName": "Michael Eckstein 😁",
+          "text": "I made an anti-slop social media writing tool with the new @buffer API 👉 https://t.co/zviRlX56rR Say no to slopaganda! 🙅‍♂️ https://t.co/MehUYjG7mh",
+          "url": "https://x.com/Mike_Eck/status/2059670300435071375",
+          "createdAt": "Wed May 27 16:17:21 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 2,
+            "replies": 0,
+            "views": 1264,
+            "total": 11
+          }
+        },
+        {
+          "id": "2059726355126685951",
+          "author": "danielkempe",
+          "authorName": "Daniel",
+          "text": "TEST Unlock new possibilities! 🚀 @Buffer's API is open for building. Seamlessly schedule, publish, and manage your social presence with the tools you love. #BufferAPI #SocialMediaTools https://t.co/fctwnG2xTb",
+          "url": "https://x.com/danielkempe/status/2059726355126685951",
+          "createdAt": "Wed May 27 20:00:05 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 0,
+            "replies": 2,
+            "views": 546,
+            "total": 10
+          }
+        },
+        {
+          "id": "2059955135871074330",
+          "author": "Stevkingz1",
+          "authorName": "Stephen Joel Ejiofor,Ghostwrites",
+          "text": "It's very easy to stay consistent these days if you've sorted basic needs. Turn on notifications of your always active mutuals. Batch create content Set reminders for everything you do. You can use @buffer or ultimateboss by @strategicnstyle",
+          "url": "https://x.com/Stevkingz1/status/2059955135871074330",
+          "createdAt": "Thu May 28 11:09:11 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 1,
+            "replies": 2,
+            "views": 168,
+            "total": 7
           }
         }
       ]
@@ -6671,6 +7360,28 @@
       ]
     },
     {
+      "tool": "Clipline",
+      "slug": "clipline",
+      "x_handle": "@clipline_ai",
+      "confidence": 100,
+      "query": "@clipline_ai -from:clipline_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
+      "tool": "Co-Invest",
+      "slug": "co-invest",
+      "x_handle": "@coinvest_ai",
+      "confidence": 100,
+      "query": "@coinvest_ai -from:coinvest_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
       "tool": "Codeium",
       "slug": "codeium",
       "x_handle": "@codeiumdev",
@@ -8540,6 +9251,220 @@
       ]
     },
     {
+      "tool": "Coworker AI",
+      "slug": "coworker-ai",
+      "x_handle": "@coworkerapp",
+      "confidence": 100,
+      "query": "@coworkerapp -from:coworkerapp min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "ATCalder",
+        "WonderStudiosX",
+        "Midey8u",
+        "Gheefted_01",
+        "FASTERRDADDY",
+        "garnachoszn17",
+        "jessica_moon04",
+        "Jags100x",
+        "heistruthX",
+        "I_amDorris",
+        "basedstona",
+        "paindotsol",
+        "kabNFA",
+        "vicdasol",
+        "Joker_On_Sol_",
+        "asakasol",
+        "vicdahustula",
+        "jessimckingpin",
+        "Lyxxmotion",
+        "biscuitweb3"
+      ],
+      "urls": [
+        "https://x.com/ATCalder/status/2060405823361466482",
+        "https://x.com/WonderStudiosX/status/2060349055763464320",
+        "https://x.com/Midey8u/status/2060334589218869457",
+        "https://x.com/Gheefted_01/status/2060108947084730387",
+        "https://x.com/FASTERRDADDY/status/2060096539872161846",
+        "https://x.com/garnachoszn17/status/2060093401358315579",
+        "https://x.com/jessica_moon04/status/2060087143154831366",
+        "https://x.com/Jags100x/status/2060086606350934081",
+        "https://x.com/heistruthX/status/2060085568927571974",
+        "https://x.com/I_amDorris/status/2060084985730621728",
+        "https://x.com/basedstona/status/2060084922535039249",
+        "https://x.com/paindotsol/status/2060083911074480584",
+        "https://x.com/kabNFA/status/2060083262827942011",
+        "https://x.com/vicdasol/status/2060082263119823247",
+        "https://x.com/Joker_On_Sol_/status/2060081413706137735",
+        "https://x.com/asakasol/status/2060080755938639958",
+        "https://x.com/vicdahustula/status/2060080706705846526",
+        "https://x.com/jessimckingpin/status/2060080613244182628",
+        "https://x.com/Lyxxmotion/status/2060080324399317053",
+        "https://x.com/biscuitweb3/status/2060079609748631820"
+      ],
+      "top_tweets": [
+        {
+          "id": "2060086606350934081",
+          "author": "Jags100x",
+          "authorName": "Jags",
+          "text": "Imagine creating Ai models with little cost expenses @coworkerapp really cooked with this That where I’m at, will you be checking them out?",
+          "url": "https://x.com/Jags100x/status/2060086606350934081",
+          "createdAt": "Thu May 28 19:51:36 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 128,
+            "reposts": 54,
+            "replies": 109,
+            "views": 2157,
+            "total": 291
+          }
+        },
+        {
+          "id": "2060096539872161846",
+          "author": "FASTERRDADDY",
+          "authorName": "FASTERR✝️",
+          "text": "we’re finally going to be able to exploit an high quality and seamless AI experience with low cost. good games @coworkerapp 😄❤️ https://t.co/pd8A58u6sv",
+          "url": "https://x.com/FASTERRDADDY/status/2060096539872161846",
+          "createdAt": "Thu May 28 20:31:04 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 137,
+            "reposts": 17,
+            "replies": 93,
+            "views": 2366,
+            "total": 247
+          }
+        },
+        {
+          "id": "2060079609748631820",
+          "author": "biscuitweb3",
+          "authorName": "Biscuit",
+          "text": "my ai spend has tripled in 18 months and i don’t have 3x the output to show for it @coworkerapp is the first product i’ve seen actually addressing that gap same frontier models, 5x more tokens per dollar, live today might be the most honest pitch in ai right now",
+          "url": "https://x.com/biscuitweb3/status/2060079609748631820",
+          "createdAt": "Thu May 28 19:23:48 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 104,
+            "reposts": 0,
+            "replies": 117,
+            "views": 2164,
+            "total": 221
+          }
+        },
+        {
+          "id": "2060084985730621728",
+          "author": "I_amDorris",
+          "authorName": "Doris💙",
+          "text": "How I feel after learning @coworkerapp costs lesser to keep AI agents running 5x more tokens per dollar?? Bring it on. https://t.co/WyxyPBpz8B",
+          "url": "https://x.com/I_amDorris/status/2060084985730621728",
+          "createdAt": "Thu May 28 19:45:09 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 153,
+            "reposts": 0,
+            "replies": 51,
+            "views": 3812,
+            "total": 204
+          }
+        },
+        {
+          "id": "2060080613244182628",
+          "author": "jessimckingpin",
+          "authorName": "Macjessie🏂",
+          "text": "These Guys just made it way more cheaper to Code and Create with AI, No More Shuffting btw 3 to 4 models for Several Creation, Just One Now! Amazing Tech @coworkerapp",
+          "url": "https://x.com/jessimckingpin/status/2060080613244182628",
+          "createdAt": "Thu May 28 19:27:47 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 105,
+            "reposts": 14,
+            "replies": 62,
+            "views": 8811,
+            "total": 181
+          }
+        },
+        {
+          "id": "2060093401358315579",
+          "author": "garnachoszn17",
+          "authorName": "AG17 🇦🇷 JACK",
+          "text": "AI creativity is becoming unbelievable A lot of things becoming way easy @coworkerapp cooked with this.",
+          "url": "https://x.com/garnachoszn17/status/2060093401358315579",
+          "createdAt": "Thu May 28 20:18:36 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 90,
+            "reposts": 15,
+            "replies": 66,
+            "views": 1671,
+            "total": 171
+          }
+        },
+        {
+          "id": "2060080755938639958",
+          "author": "asakasol",
+          "authorName": "asaka",
+          "text": "coworker is basically making things easier with 5x more tokens, it’s insane! when required to make a choice, i’ll choose @coworkerapp",
+          "url": "https://x.com/asakasol/status/2060080755938639958",
+          "createdAt": "Thu May 28 19:28:21 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 72,
+            "reposts": 5,
+            "replies": 49,
+            "views": 1034,
+            "total": 126
+          }
+        },
+        {
+          "id": "2060087143154831366",
+          "author": "jessica_moon04",
+          "authorName": "Chiamaka oni data ati Web3💕",
+          "text": "token costs have been eating budgets but @coworkerapp just fixed it same quality, just 5x more tokens per dollar you get 500 free credits on signup too I'd check it out if I were you (especially if you are into AI automation) https://t.co/9wIwRqOZWs",
+          "url": "https://x.com/jessica_moon04/status/2060087143154831366",
+          "createdAt": "Thu May 28 19:53:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 79,
+            "reposts": 7,
+            "replies": 32,
+            "views": 5625,
+            "total": 118
+          }
+        },
+        {
+          "id": "2060083262827942011",
+          "author": "kabNFA",
+          "authorName": "kab",
+          "text": "you think ai is taking your job? olodoo it's actually here to make it easier and faster.... @coworkerapp just proved that same quality and 5x cheaper go register and get 500 free credits asap https://t.co/nyTwERgWBO",
+          "url": "https://x.com/kabNFA/status/2060083262827942011",
+          "createdAt": "Thu May 28 19:38:19 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 67,
+            "reposts": 6,
+            "replies": 41,
+            "views": 2266,
+            "total": 114
+          }
+        },
+        {
+          "id": "2060084922535039249",
+          "author": "basedstona",
+          "authorName": "𝗣𝗔𝗧𝗛𝗘𝗭𝗬",
+          "text": "Token costs keep climbing and most companies are stuck choosing between burning more cash or cutting headcount. @coworkerapp feels like the smarter middle ground. Same frontier AI, way better efficiency.",
+          "url": "https://x.com/basedstona/status/2060084922535039249",
+          "createdAt": "Thu May 28 19:44:54 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 52,
+            "reposts": 9,
+            "replies": 39,
+            "views": 1002,
+            "total": 100
+          }
+        }
+      ]
+    },
+    {
       "tool": "Crawl4AI",
       "slug": "crawl4ai",
       "x_handle": "@crawl4ai",
@@ -9593,6 +10518,199 @@
             "replies": 0,
             "views": 92,
             "total": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Databox MCP",
+      "slug": "databox-mcp",
+      "x_handle": "@databoxHQ",
+      "confidence": 100,
+      "query": "@databoxHQ -from:databoxHQ min_faves:3 -filter:replies",
+      "tweets_returned": 10,
+      "authors": [
+        "anujcodes_21",
+        "LangChain",
+        "morphix",
+        "RohanChaubey4",
+        "designrushmag",
+        "Bizapalooza",
+        "vovafeldman",
+        "TycoonStoryCo",
+        "bubble_hack"
+      ],
+      "urls": [
+        "https://x.com/anujcodes_21/status/2061364816409927748",
+        "https://x.com/LangChain/status/2057534426293174709",
+        "https://x.com/morphix/status/2034353686999122152",
+        "https://x.com/RohanChaubey4/status/2034259043976712451",
+        "https://x.com/designrushmag/status/1981390081383682526",
+        "https://x.com/Bizapalooza/status/1944823992759554350",
+        "https://x.com/vovafeldman/status/1912577593582448875",
+        "https://x.com/TycoonStoryCo/status/1893880862187442274",
+        "https://x.com/bubble_hack/status/1872561058445132188",
+        "https://x.com/bubble_hack/status/1869413965023068592"
+      ],
+      "top_tweets": [
+        {
+          "id": "2061364816409927748",
+          "author": "anujcodes_21",
+          "authorName": "Anuj",
+          "text": "Dashboards are just pretty graveyards for data. 🪦 You open it at 9 AM. Stare at a red line. Go back to Excel to figure out why. That is not analytics. That is a screensaver with extra steps. Meet @databoxHQ MCP. It connects your business data directly to Claude, ChatGPT, or Cursor. No dashboard to build. No SQL to write. No \"let me ask the data team and get back to you.\" 👇 You just... ask. \"What happened to my CAC last week?\" \"Which Meta campaign actually drove revenue?\" \"Why did traffic drop on Tuesday?\" Your AI does the math. Using your real metrics. Your definitions. Your history. And it gives you an answer you can act on. Inside your chat. The part that broke my brain: ✅ 130+ data sources (Google Ads, HubSpot, Shopify, Meta). ✅ Interactive charts rendered inside Claude/ChatGPT. ✅ Push data from anywhere → AI can see it instantly. ✅ Automate reports with n8n or Make. Connect in under 60 seconds. Then stop staring at red lines. Start asking why they are red. 👉 Chat with your business data here: https://t.co/LUHJNvXDwl @databoxHQ MCP is live on ProductHunt right now: https://t.co/XdaX6y8V2m ♻️ Repost if you have ever ignored a dashboard. — #Analytics #AI #Claude #ChatGPT #DataScience #DataboxMCP",
+          "url": "https://x.com/anujcodes_21/status/2061364816409927748",
+          "createdAt": "Mon Jun 01 08:30:45 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 69,
+            "reposts": 24,
+            "replies": 13,
+            "views": 1266,
+            "total": 106
+          }
+        },
+        {
+          "id": "2034259043976712451",
+          "author": "RohanChaubey4",
+          "authorName": "Rohan Chaubey",
+          "text": "Hunted @databoxHQ on @ProductHunt today! 🥳 Most AI analysts rely on static or disconnected data. Genie felt different from my first chat with @zigapoto. It connects live data (100+ integrations), builds dashboards & explains why metrics move, not just what changed. Show them some love ❤️",
+          "url": "https://x.com/RohanChaubey4/status/2034259043976712451",
+          "createdAt": "Wed Mar 18 13:22:05 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 22,
+            "reposts": 8,
+            "replies": 2,
+            "views": 843,
+            "total": 32
+          }
+        },
+        {
+          "id": "2057534426293174709",
+          "author": "LangChain",
+          "authorName": "LangChain",
+          "text": ".@DataboxHQ uses LangSmith to evaluate their multi-turn analyst agent Genie. An inside look: https://t.co/SAgvAn6Se8 https://t.co/NXeit7i11f",
+          "url": "https://x.com/LangChain/status/2057534426293174709",
+          "createdAt": "Thu May 21 18:50:09 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 3,
+            "replies": 2,
+            "views": 3457,
+            "total": 22
+          }
+        },
+        {
+          "id": "1869413965023068592",
+          "author": "bubble_hack",
+          "authorName": "Jon Melo",
+          "text": "Has anyone explored @databoxHQ as an approach to building dashboards - either with your @bubble app or other #NoCode platform?",
+          "url": "https://x.com/bubble_hack/status/1869413965023068592",
+          "createdAt": "Wed Dec 18 16:06:35 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 2,
+            "replies": 3,
+            "views": 1559,
+            "total": 9
+          }
+        },
+        {
+          "id": "1872561058445132188",
+          "author": "bubble_hack",
+          "authorName": "Jon Melo",
+          "text": "Hey @fede_bubble - what would my best approach to connect the @bubble database to @databoxHQ ? Seems like there is some interest from the Databox side for a native integration but it's not clear if Bubble is interested (LI post below).",
+          "url": "https://x.com/bubble_hack/status/1872561058445132188",
+          "createdAt": "Fri Dec 27 08:32:01 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 5,
+            "reposts": 0,
+            "replies": 3,
+            "views": 731,
+            "total": 8
+          }
+        },
+        {
+          "id": "1944823992759554350",
+          "author": "Bizapalooza",
+          "authorName": "Bizapalooza",
+          "text": "Did you know? 💡 50% of the social media managers surveyed by Databox prefer to schedule content at least a month in advance. Source: @databoxHQ #socialmedia #digitalmarketing #contentmarketing #productivity #smallbusiness #contentcalendar #BizapaloozaChat https://t.co/H8RWkGcaOG",
+          "url": "https://x.com/Bizapalooza/status/1944823992759554350",
+          "createdAt": "Mon Jul 14 18:19:07 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 3,
+            "reposts": 1,
+            "replies": 3,
+            "views": 124,
+            "total": 7
+          }
+        },
+        {
+          "id": "1981390081383682526",
+          "author": "designrushmag",
+          "authorName": "DesignRush",
+          "text": "The #1 reason agencies fail? They chase everything and focus on nothing. According to Databox (@databoxHQ) CEO Pete Caputa, the agencies that scale predictably are the ones that: ✅ Pick a niche ✅ Build systems ✅ Turn data into discipline In this episode of the DesignRush Podcast, Pete breaks down what really separates growing agencies from those stuck in chaos. 🎧 Watch on YouTube or listen on Spotify & Apple Podcasts. Link below.",
+          "url": "https://x.com/designrushmag/status/1981390081383682526",
+          "createdAt": "Thu Oct 23 15:59:42 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 3,
+            "reposts": 1,
+            "replies": 1,
+            "views": 39,
+            "total": 5
+          }
+        },
+        {
+          "id": "1912577593582448875",
+          "author": "vovafeldman",
+          "authorName": "Vova",
+          "text": "Brilliant content marketing strategy by @databoxHQ 🧠 creating content with your audience for your audience 🤔 reminds me @digitalocean technical tutorials program. #UGC #Marketing",
+          "url": "https://x.com/vovafeldman/status/1912577593582448875",
+          "createdAt": "Wed Apr 16 18:43:26 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 5,
+            "reposts": 0,
+            "replies": 0,
+            "views": 204,
+            "total": 5
+          }
+        },
+        {
+          "id": "2034353686999122152",
+          "author": "morphix",
+          "authorName": "Gasper Vidovic",
+          "text": "This is what we have been building the last few months @databoxHQ",
+          "url": "https://x.com/morphix/status/2034353686999122152",
+          "createdAt": "Wed Mar 18 19:38:10 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 3,
+            "reposts": 1,
+            "replies": 0,
+            "views": 180,
+            "total": 4
+          }
+        },
+        {
+          "id": "1893880862187442274",
+          "author": "TycoonStoryCo",
+          "authorName": "TYCOONSTORY MEDIA",
+          "text": "🚀 Unlock #StrategiesForEntrepreneurs and boost your growth with key metrics, advanced analytics &amp; customer insights. Stay ahead of the curve! 🔥 Read more: https://t.co/VMSLKE2hWm #DataDriven #BusinessGrowth #Entrepreneurship @databoxHQ https://t.co/dluVDjM44A",
+          "url": "https://x.com/TycoonStoryCo/status/1893880862187442274",
+          "createdAt": "Mon Feb 24 04:29:18 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 3,
+            "reposts": 0,
+            "replies": 0,
+            "views": 46,
+            "total": 3
           }
         }
       ]
@@ -11412,11 +12530,54 @@
       ]
     },
     {
+      "tool": "DodoForm",
+      "slug": "dodoform",
+      "x_handle": "@dofolabs",
+      "confidence": 100,
+      "query": "@dofolabs -from:dofolabs min_faves:3 -filter:replies",
+      "tweets_returned": 1,
+      "authors": [
+        "faizydroid"
+      ],
+      "urls": [
+        "https://x.com/faizydroid/status/2058912073967616446"
+      ],
+      "top_tweets": [
+        {
+          "id": "2058912073967616446",
+          "author": "faizydroid",
+          "authorName": "Faiz",
+          "text": "Excited to announce @Dofolabs An AI-first lab focused on building and shipping SaaS products, apps, and creative tools for the internet era.",
+          "url": "https://x.com/faizydroid/status/2058912073967616446",
+          "createdAt": "Mon May 25 14:04:25 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 5,
+            "reposts": 0,
+            "replies": 4,
+            "views": 150,
+            "total": 9
+          }
+        }
+      ]
+    },
+    {
       "tool": "Dreamina",
       "slug": "dreamina",
       "x_handle": "@DreaminaAI",
       "confidence": 100,
       "query": "@DreaminaAI -from:DreaminaAI min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
+      "tool": "Dune Keypad",
+      "slug": "dune-keypad",
+      "x_handle": "@projectmirageai",
+      "confidence": 100,
+      "query": "@projectmirageai -from:projectmirageai min_faves:3 -filter:replies",
       "tweets_returned": 0,
       "authors": [],
       "urls": [],
@@ -13717,6 +14878,215 @@
       ]
     },
     {
+      "tool": "folk",
+      "slug": "folk",
+      "x_handle": "@FolkHQ",
+      "confidence": 100,
+      "query": "@FolkHQ -from:FolkHQ min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "dylsphillips",
+        "thestartpod",
+        "pollock",
+        "toplistly",
+        "pocketone",
+        "franco_pinto_",
+        "hobdaydesign",
+        "paultseluyko",
+        "dariorjeili",
+        "h1gallery",
+        "mobbin",
+        "StartupSavant",
+        "iamkylebalmer",
+        "alex_borto",
+        "romaindewolff"
+      ],
+      "urls": [
+        "https://x.com/dylsphillips/status/2011800040679907396",
+        "https://x.com/thestartpod/status/2011800003384062103",
+        "https://x.com/pollock/status/2008263927038169401",
+        "https://x.com/toplistly/status/2007436520861409744",
+        "https://x.com/pocketone/status/2000672452838326384",
+        "https://x.com/franco_pinto_/status/1988955348661858755",
+        "https://x.com/hobdaydesign/status/1945435723919700353",
+        "https://x.com/paultseluyko/status/1925982659294986455",
+        "https://x.com/hobdaydesign/status/1924757897659003242",
+        "https://x.com/dariorjeili/status/1915009974566035820",
+        "https://x.com/hobdaydesign/status/1905286365639569769",
+        "https://x.com/hobdaydesign/status/1904857182933229913",
+        "https://x.com/h1gallery/status/1896957802817732620",
+        "https://x.com/dylsphillips/status/1877440346445197689",
+        "https://x.com/thestartpod/status/1877439668842623056",
+        "https://x.com/mobbin/status/1876939414779383899",
+        "https://x.com/StartupSavant/status/1866618901989298340",
+        "https://x.com/iamkylebalmer/status/1839313606036586545",
+        "https://x.com/alex_borto/status/1837120989848600738",
+        "https://x.com/romaindewolff/status/1836879183814734190"
+      ],
+      "top_tweets": [
+        {
+          "id": "2008263927038169401",
+          "author": "pollock",
+          "authorName": "Tristan",
+          "text": "short list of top VC CRMs @affinity__crm - Leading relationship intelligence CRM for dealmakers in VC/PE @FolkHQ - Modern, flexible CRM tailored for VC deal flow and network activation @harmonic_ai - AI-powered startup discovery and comprehensive company database @dealroomco - Global intelligence platform for startups, ecosystems, and VC analytics @NFX Signal - Network intelligence and fundraising CRM tool @Foundersuite - Dedicated investor CRM for pipeline management and outreach @boardyai - AI-powered investor matching and sourcing @brdgapp - Investor relationship and deal management platform @ctd_ai - Relationship mapping and insights tool @AngelList - Early-stage platform for investor discovery and syndicates",
+          "url": "https://x.com/pollock/status/2008263927038169401",
+          "createdAt": "Mon Jan 05 19:46:46 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 40,
+            "reposts": 0,
+            "replies": 3,
+            "views": 1530,
+            "total": 43
+          }
+        },
+        {
+          "id": "1905286365639569769",
+          "author": "hobdaydesign",
+          "authorName": "Anthony Hobday",
+          "text": "I like it when websites use bright/approachable colours, noticeable black outlines, and orderly layout. Here are some examples. First up, @FolkHQ. https://t.co/GtcQOuTz5S",
+          "url": "https://x.com/hobdaydesign/status/1905286365639569769",
+          "createdAt": "Thu Mar 27 15:50:42 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 28,
+            "reposts": 1,
+            "replies": 2,
+            "views": 1776,
+            "total": 31
+          }
+        },
+        {
+          "id": "1877440346445197689",
+          "author": "dylsphillips",
+          "authorName": "Dylan S Phillips",
+          "text": "AI Follow-ups by @FolkHQ: \"Get suggested the best leads to follow-up\" 🌐 https://t.co/xl4cVAGim8",
+          "url": "https://x.com/dylsphillips/status/1877440346445197689",
+          "createdAt": "Thu Jan 09 19:40:34 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 12,
+            "reposts": 3,
+            "replies": 1,
+            "views": 6903,
+            "total": 16
+          }
+        },
+        {
+          "id": "2011800003384062103",
+          "author": "thestartpod",
+          "authorName": "START",
+          "text": "Congrats on the launch @LemhandezSimo &amp; team @FolkHQ! 🚨 Live on @ProductHunt 👇 https://t.co/dANIgrkzZN https://t.co/zrS4ro257h",
+          "url": "https://x.com/thestartpod/status/2011800003384062103",
+          "createdAt": "Thu Jan 15 13:57:52 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 1,
+            "replies": 0,
+            "views": 236,
+            "total": 14
+          }
+        },
+        {
+          "id": "1945435723919700353",
+          "author": "hobdaydesign",
+          "authorName": "Anthony Hobday",
+          "text": "They removed the tiny hands from the @FolkHQ website. I posted about this back in March. Clearly I have a lot of influence in the website design world, and I need to wield this power responsibly. https://t.co/zGDq5XE7Yj",
+          "url": "https://x.com/hobdaydesign/status/1945435723919700353",
+          "createdAt": "Wed Jul 16 10:49:55 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 12,
+            "reposts": 0,
+            "replies": 2,
+            "views": 2101,
+            "total": 14
+          }
+        },
+        {
+          "id": "1924757897659003242",
+          "author": "hobdaydesign",
+          "authorName": "Anthony Hobday",
+          "text": "I already liked the @FolkHQ website, but hadn't looked at the app interface. I think this might be one of my favourite app interfaces for visual design. Partly because it matches my personal preferences, but also because they committed to something extreme and it works. https://t.co/0gc3rFn51r",
+          "url": "https://x.com/hobdaydesign/status/1924757897659003242",
+          "createdAt": "Tue May 20 09:23:37 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 12,
+            "reposts": 1,
+            "replies": 1,
+            "views": 1526,
+            "total": 14
+          }
+        },
+        {
+          "id": "1925982659294986455",
+          "author": "paultseluyko",
+          "authorName": "Paul Tseluyko",
+          "text": "Friday website inspo - Clean, modern, engaging, very focused on conversion, product websites! Check them out: @GetActively @amplemarket @clay_gtm @FolkHQ @VentriloAI @superscale_ai @shortcut @simstudioai https://t.co/46ieh2Yfti",
+          "url": "https://x.com/paultseluyko/status/1925982659294986455",
+          "createdAt": "Fri May 23 18:30:23 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 2,
+            "replies": 1,
+            "views": 433,
+            "total": 12
+          }
+        },
+        {
+          "id": "1904857182933229913",
+          "author": "hobdaydesign",
+          "authorName": "Anthony Hobday",
+          "text": "The @FolkHQ website is excellent, except these hands feel too small. I assume that's supposed to be a laptop screen? 9/10 due to unusually small hands. https://t.co/Dte3LlffZm",
+          "url": "https://x.com/hobdaydesign/status/1904857182933229913",
+          "createdAt": "Wed Mar 26 11:25:17 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 0,
+            "replies": 3,
+            "views": 3133,
+            "total": 12
+          }
+        },
+        {
+          "id": "1877439668842623056",
+          "author": "thestartpod",
+          "authorName": "START",
+          "text": "Congrats on the launch @LemhandezSimo &amp; team @FolkHQ! 🚨 Live on @ProductHunt 👇 https://t.co/AdAY5BD79w https://t.co/590qacH8bc",
+          "url": "https://x.com/thestartpod/status/1877439668842623056",
+          "createdAt": "Thu Jan 09 19:37:52 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 2,
+            "replies": 0,
+            "views": 7154,
+            "total": 12
+          }
+        },
+        {
+          "id": "2000672452838326384",
+          "author": "pocketone",
+          "authorName": "Marc Petersen",
+          "text": "Spent the whole day not coding. Instead: • Researching German nonprofits • Testing @clay vs. @LinkedIn Sales Navigator • Cleaning and structuring data in @FolkHQ CRM • Designing a as-legal-as-possible cold email process 😅 Goal: Find a scalable way to go from 5 to 50–100 nonprofit orgs. Current hypothesis: 🎯 Focus on nonprofits with 11–50 employees → Big enough to have budget → Small enough for reasonable sales cycles Less “growth hacks,” more boring, repeatable systems.",
+          "url": "https://x.com/pocketone/status/2000672452838326384",
+          "createdAt": "Mon Dec 15 21:00:58 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 0,
+            "replies": 2,
+            "views": 142,
+            "total": 9
+          }
+        }
+      ]
+    },
+    {
       "tool": "Framer",
       "slug": "framer",
       "x_handle": "@framer",
@@ -14364,6 +15734,204 @@
             "replies": 0,
             "views": 307,
             "total": 10
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Fundraisly",
+      "slug": "fundraisly",
+      "x_handle": "@Fundraisely",
+      "confidence": 100,
+      "query": "@Fundraisely -from:Fundraisely min_faves:3 -filter:replies",
+      "tweets_returned": 17,
+      "authors": [
+        "buddiesforpaws",
+        "superteamIE",
+        "irishnftgal",
+        "ProfTAcademy",
+        "YellowFishZ",
+        "_Paolo_Dc",
+        "RominHitman"
+      ],
+      "urls": [
+        "https://x.com/buddiesforpaws/status/2054963882536644642",
+        "https://x.com/superteamIE/status/2050250978880811014",
+        "https://x.com/buddiesforpaws/status/2050178084427759945",
+        "https://x.com/irishnftgal/status/2049800743591231980",
+        "https://x.com/buddiesforpaws/status/2048774724650680349",
+        "https://x.com/superteamIE/status/2048766060191445480",
+        "https://x.com/superteamIE/status/2047306712839750016",
+        "https://x.com/ProfTAcademy/status/2046924226469220794",
+        "https://x.com/ProfTAcademy/status/2045472913609183383",
+        "https://x.com/ProfTAcademy/status/2044014050455982491",
+        "https://x.com/YellowFishZ/status/1994362624176198022",
+        "https://x.com/_Paolo_Dc/status/1988715449828171889",
+        "https://x.com/superteamIE/status/1988234739631714351",
+        "https://x.com/RominHitman/status/1987667330336186745",
+        "https://x.com/superteamIE/status/1983101949319970997",
+        "https://x.com/ProfTAcademy/status/1958504376508514440",
+        "https://x.com/ProfTAcademy/status/1957843201173123285"
+      ],
+      "top_tweets": [
+        {
+          "id": "1983101949319970997",
+          "author": "superteamIE",
+          "authorName": "Superteam Ireland",
+          "text": "BuildStation Dublin - Community Interviews ☘️ Meet the teams building for @colosseum Cypherpunk Hackathon 👇 🔥 @Fundraisely 🔥 @chatpaydotone 🔥 @StakerDotFun Each project brings a unique perspective on how @solana's infrastructure is powering innovation 🚀 https://t.co/rEJ9rgfBI5",
+          "url": "https://x.com/superteamIE/status/1983101949319970997",
+          "createdAt": "Tue Oct 28 09:22:03 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 41,
+            "reposts": 15,
+            "replies": 13,
+            "views": 1745,
+            "total": 69
+          }
+        },
+        {
+          "id": "2049800743591231980",
+          "author": "irishnftgal",
+          "authorName": "Niamh 🇮🇪",
+          "text": "Our Superteam mascot 🐾 Join us tomorrow for a pub quiz with @Fundraisely and @buddiesforpaws It’s Dog-friendly! https://t.co/fVZFfiz1pb",
+          "url": "https://x.com/irishnftgal/status/2049800743591231980",
+          "createdAt": "Thu Apr 30 10:39:15 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 46,
+            "reposts": 4,
+            "replies": 6,
+            "views": 1308,
+            "total": 56
+          }
+        },
+        {
+          "id": "2048774724650680349",
+          "author": "buddiesforpaws",
+          "authorName": "BFP",
+          "text": "BFP is coming to Dublin 🇮🇪 Join us on Friday, 1 May for a Charity Pub Quiz Night! A night full of fun, prizes & surprises, all for a great cause supporting animal welfare & wildlife conservation 🍀 In collaboration with @Fundraisely and @superteamIE All donations will be matched by @bonk_inu 🧡 Sign up below ↓",
+          "url": "https://x.com/buddiesforpaws/status/2048774724650680349",
+          "createdAt": "Mon Apr 27 14:42:13 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 38,
+            "reposts": 9,
+            "replies": 1,
+            "views": 9373,
+            "total": 48
+          }
+        },
+        {
+          "id": "1994362624176198022",
+          "author": "YellowFishZ",
+          "authorName": "YellowFish",
+          "text": "The Superteam with most entries on @craftsdev is @superteamIE 🇨🇮 Congratulations to all winners, and kudos to everyone who joined! As promised, some juicy merch for the winning Superteam #1 - @campfireinvest 58 votes #2 - @TrinityPrivacy 47 votes #2 - @Fundraisely 47 votes",
+          "url": "https://x.com/YellowFishZ/status/1994362624176198022",
+          "createdAt": "Fri Nov 28 11:07:57 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 30,
+            "reposts": 7,
+            "replies": 2,
+            "views": 432,
+            "total": 39
+          }
+        },
+        {
+          "id": "2047306712839750016",
+          "author": "superteamIE",
+          "authorName": "Superteam Ireland",
+          "text": "Superteam RTGs is now Live. 5 opportunities available: Private Entity Eosystem Connection The Internet We Actually Wanted Accelerate Retroactive Contributions Irish teams actively building on @Arcium: @stealf_finance @craftsdev @anon0mesh @Protocol01_ @Fundraisely",
+          "url": "https://x.com/superteamIE/status/2047306712839750016",
+          "createdAt": "Thu Apr 23 13:28:52 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 26,
+            "reposts": 3,
+            "replies": 2,
+            "views": 683,
+            "total": 31
+          }
+        },
+        {
+          "id": "2048766060191445480",
+          "author": "superteamIE",
+          "authorName": "Superteam Ireland",
+          "text": "PUB QUIZ with @Fundraisely and @buddiesforpaws. Support animal welfare and wildlife conservation. Location: The Green Room Bar, Dublin Date: Friday 1 May, 7:00pm @bonk_inu is matching donations. Register below.🐕‍🦺",
+          "url": "https://x.com/superteamIE/status/2048766060191445480",
+          "createdAt": "Mon Apr 27 14:07:47 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 3,
+            "replies": 3,
+            "views": 8764,
+            "total": 25
+          }
+        },
+        {
+          "id": "1988234739631714351",
+          "author": "superteamIE",
+          "authorName": "Superteam Ireland",
+          "text": "What's next after @solana's biggest hackathon; @colosseum Cypherpunk 🎥 ⬇️ Featuring: ☘️ @Fundraisely ☘️ @StakerDotFun ☘️ @chatpaydotone ⤵️ Hear it from the teams themselves! https://t.co/y1oTWDMBym",
+          "url": "https://x.com/superteamIE/status/1988234739631714351",
+          "createdAt": "Tue Nov 11 13:17:56 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 2,
+            "replies": 3,
+            "views": 370,
+            "total": 23
+          }
+        },
+        {
+          "id": "2050250978880811014",
+          "author": "superteamIE",
+          "authorName": "Superteam Ireland",
+          "text": "Lend a helping hand to furry frens tonight in aid of a good cause for @buddiesforpaws run by @Fundraisely. See you tonight, Pub Quiz 7pm in The Green Room Bar, Dublin. Chance to win from a range of prizes. All donations matched by @bonk_inu https://t.co/kstGzDBLfs",
+          "url": "https://x.com/superteamIE/status/2050250978880811014",
+          "createdAt": "Fri May 01 16:28:19 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 1,
+            "replies": 2,
+            "views": 368,
+            "total": 21
+          }
+        },
+        {
+          "id": "2050178084427759945",
+          "author": "buddiesforpaws",
+          "authorName": "BFP",
+          "text": "Tonight👇 If you’re in Dublin, don’t miss our Pub Quiz Night! Come hang out, have fun, and test your knowledge. Shoutout to @superteamIE , @Fundraisely and @ProfTAcademy for making this possible. 💛 All donations will be matched by @bonk_inu Sign up below ↓ https://t.co/5hG7zdcZwb",
+          "url": "https://x.com/buddiesforpaws/status/2050178084427759945",
+          "createdAt": "Fri May 01 11:38:40 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 2,
+            "replies": 3,
+            "views": 300,
+            "total": 16
+          }
+        },
+        {
+          "id": "1958504376508514440",
+          "author": "ProfTAcademy",
+          "authorName": "Paula 🟧 Founder",
+          "text": "Amazing night at the Investors Dinner 🌐 @Fundraisely is building the future of fundraising: transparent, fun &amp; powered by blockchain 🚀 Grateful to be in the room with the builders &amp; investors shaping Web3. https://t.co/bqwFNMRCSe",
+          "url": "https://x.com/ProfTAcademy/status/1958504376508514440",
+          "createdAt": "Thu Aug 21 12:20:05 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 0,
+            "replies": 2,
+            "views": 87,
+            "total": 11
           }
         }
       ]
@@ -20197,6 +21765,201 @@
       ]
     },
     {
+      "tool": "Integuru",
+      "slug": "integuru",
+      "x_handle": "@InteguruAI",
+      "confidence": 100,
+      "query": "@InteguruAI -from:InteguruAI min_faves:3 -filter:replies",
+      "tweets_returned": 17,
+      "authors": [
+        "atulajoy",
+        "richardfzhang",
+        "openintdev",
+        "amapel"
+      ],
+      "urls": [
+        "https://x.com/atulajoy/status/2059611452671971673",
+        "https://x.com/richardfzhang/status/2059277782048502093",
+        "https://x.com/richardfzhang/status/2051322964029653421",
+        "https://x.com/richardfzhang/status/1999516602945908864",
+        "https://x.com/richardfzhang/status/1990815936002019497",
+        "https://x.com/richardfzhang/status/1951289316556034441",
+        "https://x.com/richardfzhang/status/1932440771648774315",
+        "https://x.com/richardfzhang/status/1901998638366437442",
+        "https://x.com/richardfzhang/status/1884705875992207525",
+        "https://x.com/richardfzhang/status/1881423547568198106",
+        "https://x.com/richardfzhang/status/1879198792018457077",
+        "https://x.com/richardfzhang/status/1874895257110032554",
+        "https://x.com/richardfzhang/status/1870214712937590868",
+        "https://x.com/richardfzhang/status/1869099186093985863",
+        "https://x.com/richardfzhang/status/1867635007751434657",
+        "https://x.com/openintdev/status/1865100751690686744",
+        "https://x.com/amapel/status/1865048005604151461"
+      ],
+      "top_tweets": [
+        {
+          "id": "2059277782048502093",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "Agents should have access to every system. Introducing Integuru: generate fast, reliable APIs for any platform⚡️ API calls complete in ~3 seconds with 99.9%+ success. No browsers or RPA. No data caching needed. With auth support. @InteguruAI is free to use. Thread below.",
+          "url": "https://x.com/richardfzhang/status/2059277782048502093",
+          "createdAt": "Tue May 26 14:17:37 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 186,
+            "reposts": 31,
+            "replies": 42,
+            "views": 41103,
+            "total": 259
+          }
+        },
+        {
+          "id": "1951289316556034441",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "Our team at @InteguruAI has quietly achieved a major breakthrough with our newest AI agent 👀 It’s a big leap toward unifying the web and empowering agents to programmatically interact with any platform. Private beta invites rolling out now — comment for early access!",
+          "url": "https://x.com/richardfzhang/status/1951289316556034441",
+          "createdAt": "Fri Aug 01 14:30:00 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 29,
+            "reposts": 4,
+            "replies": 5,
+            "views": 1529,
+            "total": 38
+          }
+        },
+        {
+          "id": "1874895257110032554",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "We’re flattered to have copycats. Our sole focus is serving our users and being the best at it. May the copying war of @InteguruAI begin. Enjoy the show.",
+          "url": "https://x.com/richardfzhang/status/1874895257110032554",
+          "createdAt": "Thu Jan 02 19:07:17 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 24,
+            "reposts": 3,
+            "replies": 5,
+            "views": 4656,
+            "total": 32
+          }
+        },
+        {
+          "id": "1884705875992207525",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "Integuru reached 4k Github stars ⭐️ People are using @InteguruAI for healthcare, logistics, fintech, hospitality, AI, and even universal API products. We'll keep working toward platform interoperability! https://t.co/aDHla8dre6",
+          "url": "https://x.com/richardfzhang/status/1884705875992207525",
+          "createdAt": "Wed Jan 29 20:51:11 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 26,
+            "reposts": 2,
+            "replies": 1,
+            "views": 1002,
+            "total": 29
+          }
+        },
+        {
+          "id": "1865048005604151461",
+          "author": "amapel",
+          "authorName": "Amadeo Pellicce",
+          "text": "MEGA Launch Week 2024 -> Day 5 🤯 @launchweekdev Day 5, Introducing @openintdev Orchestrate and the OpenInt Partners Program. We’re thrilled to launch OpenInt Orchestrate and the OpenInt Partners Program with @ycombinator companies @InteguruAI, @skyvernai , and @cloudcruise_app.",
+          "url": "https://x.com/amapel/status/1865048005604151461",
+          "createdAt": "Fri Dec 06 14:57:50 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 6,
+            "replies": 3,
+            "views": 11021,
+            "total": 27
+          }
+        },
+        {
+          "id": "1870214712937590868",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "OpenAI released the o1 API this week, and we got right to work 🧑‍🏭 @InteguruAI uses AI to integrate platforms without official APIs. We compared o1 and 4o specifically for the integration use case. Check out the results in the thread below. (and yes, we can't wait for o3)",
+          "url": "https://x.com/richardfzhang/status/1870214712937590868",
+          "createdAt": "Fri Dec 20 21:08:29 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 3,
+            "replies": 3,
+            "views": 4246,
+            "total": 24
+          }
+        },
+        {
+          "id": "1881423547568198106",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "How to Launch Your Product on Hacker News 👇 🤔 What's Hacker News? Hacker News, by @ycombinator, is where the world's top developers share, discuss, and showcase ideas. At @InteguruAI, we've done a few HN launches leading to paying customers and great feedback. The community is full of early adopters, so a good launch means getting them to try your product or features. 👥 Who to write for? Like in any writing, knowing your audience is important. The HN community is mostly technical, but don't assume specialized knowledge in your domain. You can write in technical language, but explain details others may not know. 📰 What's a good title? Titles matter — a good title boosts clicks. Use \"Show HN: ...\" to signal you're showcasing something. Be succinct and direct. Show your value and uniqueness outright. For example, we titled one of our launches \"Show HN: Venmo Unofficial API\" for an integration that we built. Readers understood our offering right away. ✍️ What \"vibe\" should I go for in the main post? Hacker News isn't for constant product shilling. People are there to be entertained and learn new intellectual things. While sharing your product is important, tell how you arrived at the idea and the challenges you faced. Let your human stories shine! 🔢 What's a good structure? We don't recommend trying to game the system (you really can't). But if you're looking for a specific structure to inspire the writing process, we've found the following to help based on our experience: 1: Quickly explain your product and the problem it solves. Add a demo video. 2/3 (interchangeable): Storytelling about your journey. 2/3 (interchangeable): Real-life examples of you or others using the product. 4. Briefly mention future plans and invite the community to try the product. 🤯 Any counter-intuitive tips? While you may want to say you built the world's greatest product, being honest about current limitations is quite powerful. The HN community is full of people familiar with building from 0 to 1. They respect your attempt if you're upfront about the areas to improve. 🥵 Am I worrying too much about something? Don't stress about the post being long! When we started, we often feared we had too many words. If your post is engaging, people will finish it. However, every word, sentence, and paragraph should have real justifications for its existence. 🗣️ How to engage with comments? On launch day, expect to be at your keyboard for a handful of hours, especially if your post does well and remains on the front page for a while. Reply to comments quickly, often, and positively. HN users are good critical thinkers, so they'll post challenges. These allow you to better understand user needs. Lastly, remember to keep iterating regardless of the launch outcome, and enjoy this process!",
+          "url": "https://x.com/richardfzhang/status/1881423547568198106",
+          "createdAt": "Mon Jan 20 19:28:23 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 5,
+            "replies": 0,
+            "views": 1077,
+            "total": 23
+          }
+        },
+        {
+          "id": "1879198792018457077",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "OpenAI o1 supercharged @InteguruAI 🚀 Our open-source integration agent now supports more platforms than ever. In the spirit of ski season, watch how Integuru builds an eBay unofficial API to add a pair of skis to your cart ⛷️❄️",
+          "url": "https://x.com/richardfzhang/status/1879198792018457077",
+          "createdAt": "Tue Jan 14 16:08:00 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 2,
+            "replies": 2,
+            "views": 862,
+            "total": 22
+          }
+        },
+        {
+          "id": "2051322964029653421",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": ".@InteguruAI has solved EHR integrations. Gatekeeping, FHIR gaps, and HL7 one-offs have caused enough damage. Healthcare companies can now integrate with any EHR. With reliability, low latency, and high throughput. No more filtering hospitals and clinics by their systems. Serve any provider, regardless of the EHR they use.",
+          "url": "https://x.com/richardfzhang/status/2051322964029653421",
+          "createdAt": "Mon May 04 15:28:01 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 2,
+            "replies": 2,
+            "views": 740,
+            "total": 19
+          }
+        },
+        {
+          "id": "1867635007751434657",
+          "author": "richardfzhang",
+          "authorName": "Richard Zhang",
+          "text": "Today we’re excited to announce the Integration Affiliate Program🤝 @InteguruAI helps companies integrate platforms without official APIs. Many people asked to be an affiliate since our launch, and we listened! We’re sharing lifetime revenue for referrals. This is valid for any of our integrations — new and existing. If you’re interested, head to our website!",
+          "url": "https://x.com/richardfzhang/status/1867635007751434657",
+          "createdAt": "Fri Dec 13 18:17:39 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 0,
+            "replies": 1,
+            "views": 565,
+            "total": 17
+          }
+        }
+      ]
+    },
+    {
       "tool": "Intercom Fin",
       "slug": "intercom-fin",
       "x_handle": "@intercom",
@@ -21914,6 +23677,221 @@
           }
         }
       ]
+    },
+    {
+      "tool": "Knock Agent for Slack",
+      "slug": "knock-agent-for-slack",
+      "x_handle": "@knocklabs",
+      "confidence": 100,
+      "query": "@knocklabs -from:knocklabs min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "WorkOS",
+        "stephenmruiz",
+        "joe_reitz",
+        "cjbell_",
+        "scottjstrand",
+        "mikecarbone",
+        "leggetter",
+        "J_Everhart383",
+        "davydog187",
+        "whatyouhide"
+      ],
+      "urls": [
+        "https://x.com/WorkOS/status/2064052616959783092",
+        "https://x.com/stephenmruiz/status/2064002667274178598",
+        "https://x.com/joe_reitz/status/2062243405015744960",
+        "https://x.com/WorkOS/status/2061840262943633693",
+        "https://x.com/cjbell_/status/2061830099222102268",
+        "https://x.com/scottjstrand/status/2061794488478052432",
+        "https://x.com/mikecarbone/status/2057881220021735592",
+        "https://x.com/leggetter/status/2056367031453110525",
+        "https://x.com/mikecarbone/status/2052572865841496187",
+        "https://x.com/J_Everhart383/status/2050237141033034078",
+        "https://x.com/J_Everhart383/status/2049184543018569902",
+        "https://x.com/J_Everhart383/status/2044422846676439406",
+        "https://x.com/davydog187/status/2037256034893414457",
+        "https://x.com/J_Everhart383/status/2037248540385436085",
+        "https://x.com/whatyouhide/status/2034265685845524698",
+        "https://x.com/cjbell_/status/2033920452335165511",
+        "https://x.com/davydog187/status/2033913294117859448",
+        "https://x.com/J_Everhart383/status/2032090745096581434",
+        "https://x.com/cjbell_/status/2028580574336553024",
+        "https://x.com/J_Everhart383/status/2027056150697427380"
+      ],
+      "top_tweets": [
+        {
+          "id": "2034265685845524698",
+          "author": "whatyouhide",
+          "authorName": "Andrea Leopardi",
+          "text": "Just published a blog post about how we (@knocklabs) use @ClickHouseDB to periodically dump info about our most resource-intensive BEAM processes. Already 100s of millions of rows, sub-10ms queries. https://t.co/gwAA4WvlUq",
+          "url": "https://x.com/whatyouhide/status/2034265685845524698",
+          "createdAt": "Wed Mar 18 13:48:28 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 46,
+            "reposts": 9,
+            "replies": 2,
+            "views": 2428,
+            "total": 57
+          }
+        },
+        {
+          "id": "2064002667274178598",
+          "author": "stephenmruiz",
+          "authorName": "steve🎣",
+          "text": "Tomorrow Night ft @cursor_ai @knocklabs @tryprofound @tryramp @vercel @workos https://t.co/aqq5jEexWx",
+          "url": "https://x.com/stephenmruiz/status/2064002667274178598",
+          "createdAt": "Mon Jun 08 15:12:37 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 0,
+            "replies": 4,
+            "views": 2322,
+            "total": 27
+          }
+        },
+        {
+          "id": "2028580574336553024",
+          "author": "cjbell_",
+          "authorName": "Chris Bell | knock.app",
+          "text": "We've been building a new agent mode at @knocklabs on top of the elixir just bash port. @cramforce cooked with just bash. Not all agents need a full sandbox, but most agents will benefit from operating on a filesystem with bash. Now if you're in Elixir, you can just bash.",
+          "url": "https://x.com/cjbell_/status/2028580574336553024",
+          "createdAt": "Mon Mar 02 21:17:52 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 20,
+            "reposts": 2,
+            "replies": 0,
+            "views": 1769,
+            "total": 22
+          }
+        },
+        {
+          "id": "2049184543018569902",
+          "author": "J_Everhart383",
+          "authorName": "Jeff Everhart",
+          "text": "Using @clerk with @knocklabs data sources gets you a b2b saas notification system w/o any custom code: - sync Clerk events to Knock w/ webhooks - create a welcome workflow w/ Knock agent - embed preferences menu in &lt;UserProfile&gt; - drop Slack integration in &lt;OrganizationProfile&gt; https://t.co/MFIji7tDyw",
+          "url": "https://x.com/J_Everhart383/status/2049184543018569902",
+          "createdAt": "Tue Apr 28 17:50:41 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 2,
+            "replies": 8,
+            "views": 1778,
+            "total": 21
+          }
+        },
+        {
+          "id": "2061794488478052432",
+          "author": "scottjstrand",
+          "authorName": "Scott Strand",
+          "text": "This launch is a cool one. For a few weeks now, I've been messaging @knocklabs from @SlackHQ to build our newsletter, update our onboarding, draft in-app messages, and more. We're live on Product Hunt today -&gt; please upvote and then try it today: https://t.co/IVt3uqVqke",
+          "url": "https://x.com/scottjstrand/status/2061794488478052432",
+          "createdAt": "Tue Jun 02 12:58:06 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 1,
+            "replies": 7,
+            "views": 395,
+            "total": 19
+          }
+        },
+        {
+          "id": "2061840262943633693",
+          "author": "WorkOS",
+          "authorName": "WorkOS",
+          "text": "AI is changing how GTM teams build. June 9 in NYC, we're hosting a Marketing Engineer Meetup with @knocklabs. Come join speakers from @tryprofound, @tryramp, @clay_gtm, WorkOS and @cursor_ai. Spots are limited. https://t.co/WKJHyQhjpV",
+          "url": "https://x.com/WorkOS/status/2061840262943633693",
+          "createdAt": "Tue Jun 02 16:00:00 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 5,
+            "replies": 1,
+            "views": 913,
+            "total": 17
+          }
+        },
+        {
+          "id": "2052572865841496187",
+          "author": "mikecarbone",
+          "authorName": "Mike Carbone 🇺🇸",
+          "text": "Must be a tough day at Cloudflare, sorry friends. If you or someone you know was affected, we (@knocklabs) are hiring for a few roles Remote first, office in NYC, world-class team solving hard problems Please reach out if you have an intro! https://t.co/IOV6IjfDe9",
+          "url": "https://x.com/mikecarbone/status/2052572865841496187",
+          "createdAt": "Fri May 08 02:14:40 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 12,
+            "reposts": 1,
+            "replies": 2,
+            "views": 1073,
+            "total": 15
+          }
+        },
+        {
+          "id": "2061830099222102268",
+          "author": "cjbell_",
+          "authorName": "Chris Bell | knock.app",
+          "text": "You can now launch a @knocklabs agent directly from Slack. Build, ship, and ask questions about your customer messaging, right from where you and your team work. https://t.co/7GoDZraCsA",
+          "url": "https://x.com/cjbell_/status/2061830099222102268",
+          "createdAt": "Tue Jun 02 15:19:37 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 2,
+            "replies": 2,
+            "views": 841,
+            "total": 12
+          }
+        },
+        {
+          "id": "2033920452335165511",
+          "author": "cjbell_",
+          "authorName": "Chris Bell | knock.app",
+          "text": "Going to be showing off our new agent harness we've built at @knocklabs . Built on a virtual filesystem and powered by a bash interpreter written in Elixir. Elixir folks in NYC, come through!",
+          "url": "https://x.com/cjbell_/status/2033920452335165511",
+          "createdAt": "Tue Mar 17 14:56:38 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 1,
+            "replies": 1,
+            "views": 375,
+            "total": 12
+          }
+        },
+        {
+          "id": "2056367031453110525",
+          "author": "leggetter",
+          "authorName": "Phil Leggetter",
+          "text": "Knock uses Knock to message customers about hitting their Knock usage limits 🤯 Episode 1 of Webhooks by Example, with @J_Everhart383 from @knocklabs. The whole loop: @useOrb webhook, enrichment, 12-scenario message matrix, @postmarkapp. https://t.co/Jos5rgf8nE",
+          "url": "https://x.com/leggetter/status/2056367031453110525",
+          "createdAt": "Mon May 18 13:31:20 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 3,
+            "replies": 1,
+            "views": 386,
+            "total": 11
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Krater",
+      "slug": "krater",
+      "x_handle": "@krater_ai",
+      "confidence": 100,
+      "query": "@krater_ai -from:krater_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
     },
     {
       "tool": "Krea",
@@ -25770,6 +27748,17 @@
       ]
     },
     {
+      "tool": "MCP Bridge | Appfactor",
+      "slug": "mcp-bridge-appfactor",
+      "x_handle": "@appfactor",
+      "confidence": 100,
+      "query": "@appfactor -from:appfactor min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
       "tool": "Mem0",
       "slug": "mem0",
       "x_handle": "@mem0ai",
@@ -27040,6 +29029,21 @@
           }
         }
       ]
+    },
+    {
+      "tool": "Mina Meeting Assistant",
+      "slug": "mina-meeting-assistant",
+      "x_handle": "@HeyMinaAI",
+      "confidence": 100,
+      "query": "@HeyMinaAI -from:HeyMinaAI min_faves:3 -filter:replies",
+      "tweets_returned": 1,
+      "authors": [
+        "ZTO__SA"
+      ],
+      "urls": [
+        "https://x.com/ZTO__SA/status/2062882136097702145"
+      ],
+      "top_tweets": []
     },
     {
       "tool": "MindsDB",
@@ -28720,6 +30724,207 @@
       ]
     },
     {
+      "tool": "Octolane",
+      "slug": "octolane",
+      "x_handle": "@octolane",
+      "confidence": 100,
+      "query": "@octolane -from:octolane min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "halim__rafi",
+        "coffeewithone",
+        "kathrynwu1",
+        "yashsehgaldev",
+        "Chandrika633",
+        "tanayagrawal19",
+        "morad"
+      ],
+      "urls": [
+        "https://x.com/halim__rafi/status/2064396421823181207",
+        "https://x.com/coffeewithone/status/2062965977604915506",
+        "https://x.com/coffeewithone/status/2062595900309201113",
+        "https://x.com/coffeewithone/status/2062249821302644972",
+        "https://x.com/coffeewithone/status/2060846473257058687",
+        "https://x.com/coffeewithone/status/2060492699632087475",
+        "https://x.com/coffeewithone/status/2060488830608928878",
+        "https://x.com/coffeewithone/status/2060161976349900917",
+        "https://x.com/coffeewithone/status/2060063653148381336",
+        "https://x.com/coffeewithone/status/2059811798380110273",
+        "https://x.com/kathrynwu1/status/2059782940574581150",
+        "https://x.com/yashsehgaldev/status/2059707103133208758",
+        "https://x.com/Chandrika633/status/2059673182236512420",
+        "https://x.com/tanayagrawal19/status/2059670959628685444",
+        "https://x.com/halim__rafi/status/2059648885983985822",
+        "https://x.com/morad/status/2059628723612074132",
+        "https://x.com/coffeewithone/status/2057911560451068392",
+        "https://x.com/coffeewithone/status/2057508743932477878",
+        "https://x.com/coffeewithone/status/2057150582608351515",
+        "https://x.com/coffeewithone/status/2054709602630193566"
+      ],
+      "top_tweets": [
+        {
+          "id": "2060063653148381336",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "I just talked to my CRM. That's it. Said \"create a deal\" on a call. @octolane AI CRM did the rest, picked the right stage, added the primary contact, pulled in the extra stakeholder, swept in a year of history, ran the calcs, and built out full activity signals + enriched data The CRM that fills itself out 🚗",
+          "url": "https://x.com/coffeewithone/status/2060063653148381336",
+          "createdAt": "Thu May 28 18:20:23 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 113,
+            "reposts": 5,
+            "replies": 4,
+            "views": 13238,
+            "total": 122
+          }
+        },
+        {
+          "id": "2054709602630193566",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "Something happened in our @octolane AI CRM today that I want to share, because I don't think people realize what we've built yet. A new user signed up for Octolane. Within minutes, our own instance of Octolane: → Read the signup → Decided the question worth asking was \"is this a YC company?\" → Created that field itself → Wrote an ICP summary for the account → Did the same across all 1,205 records in our self-serve pipeline I did not create the \"is YC?\" column. I did not write a prompt. I did not tell it what our ICP was. Octolane read our sales conversations, figured out that YC batch mattered to us, and built the schema around it. Respan came back YES W24. Paradigm, YES W24. Korso, YES S26. Kapsule, NO - and a one-line summary of what they actually do. Every single value has a source. Every source has been verified by a second agent. This is what self-driving CRM means. Every other tool is still asking you to map fields. If you're a founder reading this, this is the bar now. If you're a VC reading this, ask your portfolio companies if their CRM is generating its own fields yet.",
+          "url": "https://x.com/coffeewithone/status/2054709602630193566",
+          "createdAt": "Wed May 13 23:45:18 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 106,
+            "reposts": 2,
+            "replies": 8,
+            "views": 15692,
+            "total": 116
+          }
+        },
+        {
+          "id": "2057911560451068392",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "third coffee in. just staring at this table. Last touch. Next meeting. First email. Last email - Every column, automatically filled in, by itself thanks to @octolane - Self-driving AI CRM Most founders i talk to are still out here manually updating last contacted. typing notes after every meeting. dragging cards. That sounds more like homework. octolane reads gmail. reads calendar. bi-directional sync actually doing the work, we did a lot of work to get this right. Octolane also suggests the next move before i even think to ask. - prep for next call - draft a follow-up - suggest a next move - research the company one tap. all of it reading the account status and telling me what to actually do. even the live graphs at the bottom feel alive. 24,993 accounts. numbers breathing in real time. I felt bad writing this. somewhere a founder is manually updating \"last contacted\" right now.",
+          "url": "https://x.com/coffeewithone/status/2057911560451068392",
+          "createdAt": "Fri May 22 19:48:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 68,
+            "reposts": 6,
+            "replies": 2,
+            "views": 4941,
+            "total": 76
+          }
+        },
+        {
+          "id": "2057508743932477878",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "woke up and @octolane had written new ai memory blocks about how i work, without me asking. - how i sign off investor updates - when i offer my personal cell in support emails - how i respond to competitor questions on calls - the footer i append to every AI-drafted email - my writing tone when handling negative feedback i taught it none of this. it watched me work and figured it out. the CRM you have to feed every day is dead. self-driving is the only thing that makes sense.",
+          "url": "https://x.com/coffeewithone/status/2057508743932477878",
+          "createdAt": "Thu May 21 17:08:05 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 54,
+            "reposts": 2,
+            "replies": 5,
+            "views": 3786,
+            "total": 61
+          }
+        },
+        {
+          "id": "2059811798380110273",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "I just asked @octolane: \"Find the last 11 signups and write onboarding emails.\" 60 sec later, I had all 11 email draft, personalized and in my voice! what happened under the hood: 1. Octolane pulled every new signup automatically. 2. Looked up each company. Matched the industry to tailor the messaging. 3. Then wrote each email the way I actually write 4. CRM updated in the process. This would normally take me 20+ minutes of tab-switching, copy-pasting, and rewriting. Instead I just ask Octolane and it did the work end to end. And based on the response rate it will automatically improve the email drafts for future responses. Just incredible!",
+          "url": "https://x.com/coffeewithone/status/2059811798380110273",
+          "createdAt": "Thu May 28 01:39:36 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 2,
+            "replies": 7,
+            "views": 5743,
+            "total": 32
+          }
+        },
+        {
+          "id": "2060488830608928878",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "I work way more hours now thanks to Claude Code and Codex. Like last night, I was doing a complex sentiment analysis AI skill creation for @octolane where AI CRM will analyze every customer touchpoint and suggest me deal state automatically to focus on what deals I should prioritize. Coding itself took less than 30m. But fixing every single edge case and deciding how to surface it to users took almost all night. The bottleneck moved and now it's me. I remember that writing code used to be the expensive part. AI definitely killed that cost. What's left is the part that was always hard but hidden behind keyboards: \"Taste\" What breaks at the edges and what users feel when they see it. AI did compress execution but It didn't compress thinking for us. So the future is not gonna be fewer hours. It's gonna be denser ones. Engineers and founders become decision compressors, more calls per day, where each one mattering more, none of them automatable. So the edge in 2026 isn't gonna be how fast you ship, It's gonna be \"Judgment at speed\" 1. are you shipping the right thing, for the right users, at the right time? 2. doesn't matter if it's 2pm or 2am, can you make decisions fast and make them well?",
+          "url": "https://x.com/coffeewithone/status/2060488830608928878",
+          "createdAt": "Fri May 29 22:29:53 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 24,
+            "reposts": 1,
+            "replies": 4,
+            "views": 990,
+            "total": 29
+          }
+        },
+        {
+          "id": "2060161976349900917",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "Watched a customer spend 6 hrs straight in @octolane today. Years of building AI CRM taught us one thing worth saving: 1. There's a specific number that unlocks activation 2. There's a specific feature set + specific numbers that unlocks retention When you find both of them, there's no going back. But how did we find ours? 🚀 Activation: Look at every user who converted to paid. What's that one behavior they all did in week 1 that churned users didn't? That's gonna be your activation event. Now your job to find the smallest number of repetitions that predicts conversion. 🔄 Retention: Research your month 2 retained users. What combination of features did they use in weeks 2 to 4 that churned users skipped? That's your retention game will surface. Sounds obvious but I promise you It's not gonna be when you're in it. We cracked activation first. Then retention. Both took painful iteration, shipping, breaking, rebuilding, shipping again. It was an excruciating process for us where we were not sure if we're getting closer or just running in circles. Until suddenly you are, and you can't unsee it. Teams are now migrating from HubSpot, Pipedrive, and Attio to Octolane. We did zero outbound and all word of mouth. Because the agent-first economy lets us solve the edges incumbents can't. Founders, what number unlocked activation for you?",
+          "url": "https://x.com/coffeewithone/status/2060161976349900917",
+          "createdAt": "Fri May 29 00:51:05 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 5,
+            "replies": 3,
+            "views": 2698,
+            "total": 27
+          }
+        },
+        {
+          "id": "2062595900309201113",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "A Salesforce customer just signed to switch to @octolane this morning. They just connected their Salesforce to Octolane, and Octolane did the rest: 1. Found where revenue was leaking 2. Identified 300+ missed follow-ups and drafted every single one 3. Built all the automations they needed 4. Enriched their entire dataset 5. Created a sales brain inside Octolane Now I have 5 more sales call to go today, and the research is already done by Octolane. Attached photo: new customer case study dropping soon!",
+          "url": "https://x.com/coffeewithone/status/2062595900309201113",
+          "createdAt": "Thu Jun 04 18:02:38 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 2,
+            "replies": 5,
+            "views": 2842,
+            "total": 25
+          }
+        },
+        {
+          "id": "2062965977604915506",
+          "author": "coffeewithone",
+          "authorName": "Coffee with One 🇺🇸",
+          "text": "fastest way to use @octolane is just talking to it. it's incredible seeing unbelievable uses cases customers use Octolane for: A customer asked Octolane to audit their existing CRM and clean up the pipeline. It flagged stale deals, duplicate contacts, opportunities sitting in the wrong stage and then fixed them. Then he generated a full pipeline report by pulling from 4 different data sources at once: deals, email activity, meeting notes, and enrichment data stitched into one narrative. zero csv back and forth. Then he started generating meeting prep in bulk with every call on the calendar that month. Dream scenario that we keep perfecting day after day is that I'll just describe the outcome and it will take care of the rest, and it's working. The best CRM is no CRM",
+          "url": "https://x.com/coffeewithone/status/2062965977604915506",
+          "createdAt": "Fri Jun 05 18:33:11 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 3,
+            "replies": 4,
+            "views": 1775,
+            "total": 24
+          }
+        },
+        {
+          "id": "2059707103133208758",
+          "author": "yashsehgaldev",
+          "authorName": "Yash Sehgal",
+          "text": "We have launched @octolane today. The last 2 months have been really exciting. The team is building new features every week to make the platform better, to make the common CRM using experience easier with AI and a lot of magic ✨ Grateful.",
+          "url": "https://x.com/yashsehgaldev/status/2059707103133208758",
+          "createdAt": "Wed May 27 18:43:35 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 3,
+            "replies": 4,
+            "views": 1595,
+            "total": 23
+          }
+        }
+      ]
+    },
+    {
       "tool": "Ollama",
       "slug": "ollama",
       "x_handle": "@ollama",
@@ -30212,6 +32417,211 @@
       ]
     },
     {
+      "tool": "Openstatus Health",
+      "slug": "openstatus-health",
+      "x_handle": "@openstatusHQ",
+      "confidence": 100,
+      "query": "@openstatusHQ -from:openstatusHQ min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "mxkaske",
+        "piotrkulpinski",
+        "jordienr",
+        "aliszu",
+        "abhishekashwinc",
+        "CarlLindesvard",
+        "nuqs47ng",
+        "twendykirn",
+        "xmok_",
+        "ElTimuro",
+        "tinybird"
+      ],
+      "urls": [
+        "https://x.com/mxkaske/status/2060325805536714867",
+        "https://x.com/mxkaske/status/2055654895462592945",
+        "https://x.com/mxkaske/status/2051332272251396116",
+        "https://x.com/piotrkulpinski/status/2021551896377667598",
+        "https://x.com/jordienr/status/2008157642099716553",
+        "https://x.com/aliszu/status/2005991272360837171",
+        "https://x.com/abhishekashwinc/status/2000477031176568844",
+        "https://x.com/aliszu/status/1996647130992463902",
+        "https://x.com/mxkaske/status/1994396396766781686",
+        "https://x.com/mxkaske/status/1991887073079435672",
+        "https://x.com/CarlLindesvard/status/1990827378621153774",
+        "https://x.com/nuqs47ng/status/1983287173328838853",
+        "https://x.com/twendykirn/status/1981085059810566546",
+        "https://x.com/xmok_/status/1980304936647950823",
+        "https://x.com/aliszu/status/1979644666523033613",
+        "https://x.com/aliszu/status/1979625541994250384",
+        "https://x.com/aliszu/status/1979610062529187894",
+        "https://x.com/twendykirn/status/1979580979049099759",
+        "https://x.com/ElTimuro/status/1977268015491350538",
+        "https://x.com/tinybird/status/1966411501775798397"
+      ],
+      "top_tweets": [
+        {
+          "id": "1979610062529187894",
+          "author": "aliszu",
+          "authorName": "alex 👀",
+          "text": "monitors 💻 don't forget to support @OpenStatusHQ and @mxkaske on PH! https://t.co/kmyHGWz5Yd",
+          "url": "https://x.com/aliszu/status/1979610062529187894",
+          "createdAt": "Sat Oct 18 18:06:32 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 121,
+            "reposts": 4,
+            "replies": 6,
+            "views": 8597,
+            "total": 131
+          }
+        },
+        {
+          "id": "1979644666523033613",
+          "author": "aliszu",
+          "authorName": "alex 👀",
+          "text": "did I mention @OpenStatusHQ is on PH today? https://t.co/pHDCooxzrS",
+          "url": "https://x.com/aliszu/status/1979644666523033613",
+          "createdAt": "Sat Oct 18 20:24:03 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 69,
+            "reposts": 3,
+            "replies": 5,
+            "views": 3608,
+            "total": 77
+          }
+        },
+        {
+          "id": "2021551896377667598",
+          "author": "piotrkulpinski",
+          "authorName": "Piotr Kulpinski",
+          "text": "If you have a website and not using @OpenStatusHQ speed check you're missing out 🤯 I was able to improve the performance in some regions by up to 150x 🤯 They have an AI skill you can install to let agents check the performance in multiple regions at once. Link ⬇️ https://t.co/3vxmDAlJFD",
+          "url": "https://x.com/piotrkulpinski/status/2021551896377667598",
+          "createdAt": "Wed Feb 11 11:48:25 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 2,
+            "replies": 6,
+            "views": 1446,
+            "total": 24
+          }
+        },
+        {
+          "id": "2005991272360837171",
+          "author": "aliszu",
+          "authorName": "alex 👀",
+          "text": "events for @OpenStatusHQ https://t.co/1DffAxk6jZ",
+          "url": "https://x.com/aliszu/status/2005991272360837171",
+          "createdAt": "Tue Dec 30 13:16:03 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 0,
+            "replies": 4,
+            "views": 2030,
+            "total": 22
+          }
+        },
+        {
+          "id": "1979625541994250384",
+          "author": "aliszu",
+          "authorName": "alex 👀",
+          "text": "celebration of @OpenStatusHQ PH day in progress!! https://t.co/WSwkXgL3gh",
+          "url": "https://x.com/aliszu/status/1979625541994250384",
+          "createdAt": "Sat Oct 18 19:08:03 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 2,
+            "replies": 2,
+            "views": 2017,
+            "total": 21
+          }
+        },
+        {
+          "id": "2008157642099716553",
+          "author": "jordienr",
+          "authorName": "jordi",
+          "text": "life pro tip use zenblog, it has 100% uptime, never breaks, always fast, snappy, reliable, simple, good, hosts ur images and videos, amazing customer support, i will never sell it, its like a child to me, everyone loves it follow me for more tips thanks @OpenStatusHQ for the status page",
+          "url": "https://x.com/jordienr/status/2008157642099716553",
+          "createdAt": "Mon Jan 05 12:44:26 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 0,
+            "replies": 3,
+            "views": 2641,
+            "total": 19
+          }
+        },
+        {
+          "id": "1980304936647950823",
+          "author": "xmok_",
+          "authorName": "xmok",
+          "text": "an extremely overdue shoutout: based on the quoted post Andre reached out to me and in appreciation for the @neon @raycast extension was nice enough to send me swag PLUS credits for their platform :D thank you @andrelandgraf. your move @resend @OpenStatusHQ @autumnpricing 👀 https://t.co/z1W40nmFHM",
+          "url": "https://x.com/xmok_/status/1980304936647950823",
+          "createdAt": "Mon Oct 20 16:07:43 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 0,
+            "replies": 5,
+            "views": 995,
+            "total": 18
+          }
+        },
+        {
+          "id": "1990827378621153774",
+          "author": "CarlLindesvard",
+          "authorName": "Carl Lindesvärd",
+          "text": "OpenPanel's api has been safe the entire day 🙏 Looking pretty green overall ✅ Thanks @OpenStatusHQ for giving me a sense of relaxation🧘 https://t.co/cd4bPVcpeR",
+          "url": "https://x.com/CarlLindesvard/status/1990827378621153774",
+          "createdAt": "Tue Nov 18 17:00:09 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 1,
+            "replies": 1,
+            "views": 746,
+            "total": 17
+          }
+        },
+        {
+          "id": "2051332272251396116",
+          "author": "mxkaske",
+          "authorName": "Maximilian Kaske 🏓",
+          "text": "working on the @openstatushq onboarding https://t.co/40TgFbSwjO",
+          "url": "https://x.com/mxkaske/status/2051332272251396116",
+          "createdAt": "Mon May 04 16:05:00 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 1,
+            "replies": 0,
+            "views": 967,
+            "total": 16
+          }
+        },
+        {
+          "id": "1983287173328838853",
+          "author": "nuqs47ng",
+          "authorName": "nuqs",
+          "text": "That slide didn't make the edit in my talk, so here they are: @mail0dotcom @OpenStatusHQ @upstash @unkeydev @trydatabuddy @middayai @getsentry @supabase @vercel @polar_sh @OpenPanelDev @_BearStudio @liveblocks @GitBookIO @calcom (and many more) Thanks y'all for using nuqs 🫶",
+          "url": "https://x.com/nuqs47ng/status/1983287173328838853",
+          "createdAt": "Tue Oct 28 21:38:04 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 0,
+            "replies": 0,
+            "views": 1242,
+            "total": 15
+          }
+        }
+      ]
+    },
+    {
       "tool": "Option Alpha",
       "slug": "option-alpha",
       "x_handle": "@OptionAlpha",
@@ -30630,6 +33040,288 @@
             "replies": 1,
             "views": 459,
             "total": 7
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Parsewise API",
+      "slug": "parsewise-api",
+      "x_handle": "@parsewise",
+      "confidence": 100,
+      "query": "@parsewise -from:parsewise min_faves:3 -filter:replies",
+      "tweets_returned": 3,
+      "authors": [
+        "adriankuleszo",
+        "maximilianhofer",
+        "ycombinator"
+      ],
+      "urls": [
+        "https://x.com/adriankuleszo/status/2038606032369532951",
+        "https://x.com/maximilianhofer/status/2031692456610128188",
+        "https://x.com/ycombinator/status/1922789019093537145"
+      ],
+      "top_tweets": [
+        {
+          "id": "2038606032369532951",
+          "author": "adriankuleszo",
+          "authorName": "Adrian",
+          "text": "One of 5 demo videos we did for @parsewise this month. Stack: figma + jitter https://t.co/AoTtUFqRdr",
+          "url": "https://x.com/adriankuleszo/status/2038606032369532951",
+          "createdAt": "Mon Mar 30 13:15:28 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 499,
+            "reposts": 16,
+            "replies": 14,
+            "views": 4039384,
+            "total": 529
+          }
+        },
+        {
+          "id": "1922789019093537145",
+          "author": "ycombinator",
+          "authorName": "Y Combinator",
+          "text": "Parsewise (@parsewise) turns complex documents into validated data that business users can trust, streamlining analytics, benchmarking, and reporting workflows. https://t.co/s0Lo41av1l Congrats on the launch, @maximilianhofer and @GCsegzi! https://t.co/53VXRr7SV6",
+          "url": "https://x.com/ycombinator/status/1922789019093537145",
+          "createdAt": "Wed May 14 23:00:00 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 103,
+            "reposts": 6,
+            "replies": 4,
+            "views": 16501,
+            "total": 113
+          }
+        },
+        {
+          "id": "2031692456610128188",
+          "author": "maximilianhofer",
+          "authorName": "Max Hofer",
+          "text": "We redesigned how business experts interact with AI agents on @parsewise: fewer pages, faster decisions, and a platform that remembers how you work. Our Founding Engineer, Mark, wrote about the thinking behind it: https://t.co/IwInw0Dyy9 https://t.co/uecdmoTKc4",
+          "url": "https://x.com/maximilianhofer/status/2031692456610128188",
+          "createdAt": "Wed Mar 11 11:23:23 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 2,
+            "reposts": 2,
+            "replies": 1,
+            "views": 76,
+            "total": 5
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Paste App",
+      "slug": "paste-app",
+      "x_handle": "@paste_app",
+      "confidence": 100,
+      "query": "@paste_app -from:paste_app min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "kenwuuuu",
+        "rottenapplebyte",
+        "freeshiuan",
+        "BoyC338",
+        "ahmedghanem",
+        "Evernote_Lab",
+        "ispykenny",
+        "PludaAlex",
+        "hunterknoche",
+        "noblinkyblinky",
+        "bethmcclelland_",
+        "jondkinney",
+        "Christophepas",
+        "MSiatrak",
+        "beihuo",
+        "dharmeshba",
+        "Ana_Sky42",
+        "AsadDhamani",
+        "isaacmurasaki",
+        "Prod_uct_"
+      ],
+      "urls": [
+        "https://x.com/kenwuuuu/status/2061688343558062363",
+        "https://x.com/rottenapplebyte/status/1961809912746405982",
+        "https://x.com/freeshiuan/status/1961383405150756921",
+        "https://x.com/BoyC338/status/1960964885682016298",
+        "https://x.com/ahmedghanem/status/1936751149010534666",
+        "https://x.com/Evernote_Lab/status/1907374630891127115",
+        "https://x.com/ispykenny/status/1899925336688910558",
+        "https://x.com/PludaAlex/status/1860933617637073061",
+        "https://x.com/hunterknoche/status/1824189391679656306",
+        "https://x.com/noblinkyblinky/status/1804169456630804490",
+        "https://x.com/bethmcclelland_/status/1796111966634729927",
+        "https://x.com/jondkinney/status/1790507291738775743",
+        "https://x.com/Christophepas/status/1770483364937580896",
+        "https://x.com/MSiatrak/status/1754898394105962562",
+        "https://x.com/beihuo/status/1752104334744256838",
+        "https://x.com/dharmeshba/status/1737812251133014385",
+        "https://x.com/Ana_Sky42/status/1721963324747706462",
+        "https://x.com/AsadDhamani/status/1719969321454318068",
+        "https://x.com/isaacmurasaki/status/1718062500086939964",
+        "https://x.com/Prod_uct_/status/1717244251178700917"
+      ],
+      "top_tweets": [
+        {
+          "id": "1737812251133014385",
+          "author": "dharmeshba",
+          "authorName": "Dharmesh Ba",
+          "text": "If you are a Mac user who uses ChatGPT a lot, use @paste_app to save a long list of GPT prompts, which is handy. Loving the product. https://t.co/zp1bs6vVMQ",
+          "url": "https://x.com/dharmeshba/status/1737812251133014385",
+          "createdAt": "Thu Dec 21 12:28:22 +0000 2023",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 0,
+            "replies": 0,
+            "views": 3719,
+            "total": 13
+          }
+        },
+        {
+          "id": "1770483364937580896",
+          "author": "Christophepas",
+          "authorName": "Christophe Pasquier 🇺🇦",
+          "text": "I shared my top tools to @toolfinderHQ and @FrancescoD_Ales! S/o to @Superhuman @tryamie @screenstudio @paste_app (and of course @SliteHQ 😘) https://t.co/JbfjPQPmlu",
+          "url": "https://x.com/Christophepas/status/1770483364937580896",
+          "createdAt": "Wed Mar 20 16:11:42 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 1,
+            "replies": 2,
+            "views": 1399,
+            "total": 10
+          }
+        },
+        {
+          "id": "1754898394105962562",
+          "author": "MSiatrak",
+          "authorName": "Matt Siatrak | ShipThat.App 🚀",
+          "text": "What's one tool you can't live without in your iOS development workflow? For me, it's @paste_app - great clipboard manager, and I have there my collection of handy snippets! Share yours and let's discover new gems together. #TechTipTuesday #iOSDev #indiehackers #buildinpublic 🛠️",
+          "url": "https://x.com/MSiatrak/status/1754898394105962562",
+          "createdAt": "Tue Feb 06 16:02:36 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 0,
+            "replies": 1,
+            "views": 261,
+            "total": 9
+          }
+        },
+        {
+          "id": "2061688343558062363",
+          "author": "kenwuuuu",
+          "authorName": "Ken Wu",
+          "text": "have been using @paste_app since middle school and wanted to make my open source alternative. so i did. take it for a spin and lemme know what u think https://t.co/BD2OOW20zL",
+          "url": "https://x.com/kenwuuuu/status/2061688343558062363",
+          "createdAt": "Tue Jun 02 05:56:20 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 6,
+            "reposts": 0,
+            "replies": 2,
+            "views": 915,
+            "total": 8
+          }
+        },
+        {
+          "id": "1860933617637073061",
+          "author": "PludaAlex",
+          "authorName": "Alex Pluda ⚡️",
+          "text": "What are the 3 micro/small apps that changed your flow? I'll start: ⚡️ Paste - @paste_app ✉️ Mimestream - @mimestream 🧞‍♂️ Raycast - @raycastapp What's yours?",
+          "url": "https://x.com/PludaAlex/status/1860933617637073061",
+          "createdAt": "Mon Nov 25 06:28:43 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 1,
+            "replies": 0,
+            "views": 353,
+            "total": 8
+          }
+        },
+        {
+          "id": "1824189391679656306",
+          "author": "hunterknoche",
+          "authorName": "Hunter Knoche",
+          "text": "One of my favorite MUST-HAVE apps of the year: @paste_app Check it out. Also available on @Setapp #productivity #productivitytools #productivityhacks #buildinpublic https://t.co/5qowVIiNcv",
+          "url": "https://x.com/hunterknoche/status/1824189391679656306",
+          "createdAt": "Thu Aug 15 21:00:17 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 0,
+            "replies": 1,
+            "views": 124,
+            "total": 8
+          }
+        },
+        {
+          "id": "1790507291738775743",
+          "author": "jondkinney",
+          "authorName": "Jon Kinney",
+          "text": "Y’all need this tool. Get it on @Setapp! I use it probably a dozen times a day. No 🧢. Couple it with @paste_app and thank me later!",
+          "url": "https://x.com/jondkinney/status/1790507291738775743",
+          "createdAt": "Tue May 14 22:19:39 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 0,
+            "replies": 0,
+            "views": 302,
+            "total": 7
+          }
+        },
+        {
+          "id": "1719969321454318068",
+          "author": "AsadDhamani",
+          "authorName": "Asad Dhamani",
+          "text": "Devs, what are the best developer tools that you happily pay for? Mine are: - @jetbrains all access pass - @gittower git GUI - @paste_app clipboard manager - @KagiHQ customisable search engine - @GitHubCopilot AI code autocomplete - @medisclient redis GUI",
+          "url": "https://x.com/AsadDhamani/status/1719969321454318068",
+          "createdAt": "Thu Nov 02 06:46:56 +0000 2023",
+          "lang": "en",
+          "engagement": {
+            "likes": 6,
+            "reposts": 1,
+            "replies": 0,
+            "views": 657,
+            "total": 7
+          }
+        },
+        {
+          "id": "1899925336688910558",
+          "author": "ispykenny",
+          "authorName": "Kenny Krosky",
+          "text": "I feel like people don't talk about @paste_app as much as they should be.",
+          "url": "https://x.com/ispykenny/status/1899925336688910558",
+          "createdAt": "Wed Mar 12 20:47:53 +0000 2025",
+          "lang": "en",
+          "engagement": {
+            "likes": 3,
+            "reposts": 0,
+            "replies": 3,
+            "views": 172,
+            "total": 6
+          }
+        },
+        {
+          "id": "1804169456630804490",
+          "author": "noblinkyblinky",
+          "authorName": "A.J. Murray",
+          "text": "I started using the @paste_app this year, at the recommendation of a coworker. I can't believe I haven't been using this all along! HUGE productivity game changer for me! Just being able to see clip board history means I can coy multiple things and paste them where I need them!",
+          "url": "https://x.com/noblinkyblinky/status/1804169456630804490",
+          "createdAt": "Fri Jun 21 15:08:12 +0000 2024",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 0,
+            "replies": 2,
+            "views": 400,
+            "total": 6
           }
         }
       ]
@@ -36052,6 +38744,17 @@
       ]
     },
     {
+      "tool": "Rezonant",
+      "slug": "rezonant",
+      "x_handle": "@rezonant_ai",
+      "confidence": 100,
+      "query": "@rezonant_ai -from:rezonant_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
       "tool": "Rocket",
       "slug": "rocket",
       "x_handle": "@rocketdotnew",
@@ -36266,6 +38969,219 @@
             "replies": 11,
             "views": 3489,
             "total": 45
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Rodeo by TwelveLabs",
+      "slug": "rodeo-by-twelvelabs",
+      "x_handle": "@twelve_labs",
+      "confidence": 100,
+      "query": "@twelve_labs -from:twelve_labs min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "lillian_ma_",
+        "nicoleegong",
+        "theDeepView",
+        "hrishikesh_ai",
+        "yinfeiy",
+        "gmi_cloud",
+        "qdrant_engine",
+        "Boltcutterlab",
+        "socialure",
+        "thestartpod",
+        "alexpark",
+        "ptdamiba",
+        "Chronicle_HQ",
+        "current_kev",
+        "LakshOnline",
+        "rlux",
+        "ethansteininger",
+        "FastCompany",
+        "InAIToday"
+      ],
+      "urls": [
+        "https://x.com/lillian_ma_/status/2063727543732130247",
+        "https://x.com/nicoleegong/status/2062367743710511118",
+        "https://x.com/theDeepView/status/2061423190799229387",
+        "https://x.com/hrishikesh_ai/status/2058503710964142351",
+        "https://x.com/yinfeiy/status/2057927359727374808",
+        "https://x.com/gmi_cloud/status/2057584078413861245",
+        "https://x.com/qdrant_engine/status/2057136770261635278",
+        "https://x.com/Boltcutterlab/status/2057125198122426801",
+        "https://x.com/socialure/status/2046634822110728620",
+        "https://x.com/thestartpod/status/2046285273592365280",
+        "https://x.com/alexpark/status/2041582923569361377",
+        "https://x.com/ptdamiba/status/2041570088562913558",
+        "https://x.com/Chronicle_HQ/status/2040659369080316364",
+        "https://x.com/current_kev/status/2039378563368198547",
+        "https://x.com/LakshOnline/status/2038969235108700481",
+        "https://x.com/rlux/status/2037253275804745796",
+        "https://x.com/ptdamiba/status/2033434734261678343",
+        "https://x.com/ethansteininger/status/2032473913389687227",
+        "https://x.com/FastCompany/status/2031170983361388901",
+        "https://x.com/InAIToday/status/2028952529262829594"
+      ],
+      "top_tweets": [
+        {
+          "id": "2063727543732130247",
+          "author": "lillian_ma_",
+          "authorName": "Lillian Ma",
+          "text": "We hosted the coolest event yesterday at @CVPR 2026 with @ElorianAI @twelve_labs @NEA @NVIDIAAI See y’all at ICML! @Rxdha1 @thomastjoshi @nicoleegong @PikakeWin @gmi_cloud https://t.co/K7SfVTLSIb",
+          "url": "https://x.com/lillian_ma_/status/2063727543732130247",
+          "createdAt": "Sun Jun 07 20:59:23 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 42,
+            "reposts": 4,
+            "replies": 5,
+            "views": 7384,
+            "total": 51
+          }
+        },
+        {
+          "id": "2062367743710511118",
+          "author": "nicoleegong",
+          "authorName": "Nicole Gong",
+          "text": "heyyy just arrived in denver for @CVPR let’s meet up! i’m building @scale_at_gmi at @gmi_cloud, looking for early stage ai startups, researchers in multimodal, physical ai field! also hosting two events with @nvidia, @NEA, @twelve_labs, @ElorianAI, check them out at @gmi_cloud!",
+          "url": "https://x.com/nicoleegong/status/2062367743710511118",
+          "createdAt": "Thu Jun 04 02:56:01 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 40,
+            "reposts": 0,
+            "replies": 6,
+            "views": 1884,
+            "total": 46
+          }
+        },
+        {
+          "id": "2057584078413861245",
+          "author": "gmi_cloud",
+          "authorName": "GMI Cloud",
+          "text": "Gonna talk about Visual AI in Denver with @NVIDIAAI , @ElorianAI (@yinfeiy and @AndrewDai ) , @NEA & @twelve_labs Looking for 50 researchers, engineers, founders & investors to join the conversation on compute, hardware, research, capital, application. RSVP and see you soon at @CVPR 👇",
+          "url": "https://x.com/gmi_cloud/status/2057584078413861245",
+          "createdAt": "Thu May 21 22:07:27 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 20,
+            "reposts": 4,
+            "replies": 2,
+            "views": 3992,
+            "total": 26
+          }
+        },
+        {
+          "id": "2046285273592365280",
+          "author": "thestartpod",
+          "authorName": "START",
+          "text": "Congrats on the launch @_jae_lee &amp; team @twelve_labs! 🚨 Live on @ProductHunt 👇 https://t.co/2CrRryoBrT https://t.co/hUFYcF4Cgr",
+          "url": "https://x.com/thestartpod/status/2046285273592365280",
+          "createdAt": "Mon Apr 20 17:50:02 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 2,
+            "replies": 0,
+            "views": 211,
+            "total": 25
+          }
+        },
+        {
+          "id": "2058503710964142351",
+          "author": "hrishikesh_ai",
+          "authorName": "Hrishikesh Yadav",
+          "text": "Presented an Automated GDPR Compliance App Demo using @twelve_labs models for video redaction at the event hosted by @marieandmaxx Do check out the demo video here - https://t.co/kVgNhtb8Mb https://t.co/Kh12kFqEe8",
+          "url": "https://x.com/hrishikesh_ai/status/2058503710964142351",
+          "createdAt": "Sun May 24 11:01:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 2,
+            "replies": 2,
+            "views": 1342,
+            "total": 20
+          }
+        },
+        {
+          "id": "2040659369080316364",
+          "author": "Chronicle_HQ",
+          "authorName": "Chronicle",
+          "text": "This section of @twelve_labs is always an eye-candy for us https://t.co/wc5Pp8ayWH",
+          "url": "https://x.com/Chronicle_HQ/status/2040659369080316364",
+          "createdAt": "Sun Apr 05 05:14:41 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 1,
+            "replies": 0,
+            "views": 794,
+            "total": 18
+          }
+        },
+        {
+          "id": "2057927359727374808",
+          "author": "yinfeiy",
+          "authorName": "Yinfei Yang",
+          "text": "@ElorianAI is co-hosting a dinner event in CVPR to discuss the reasoning gap in visual AI, together with @gmi_cloud @NVIDIAAI, @NEA , and @twelve_labs . RSVP and join us ! Link: https://t.co/gGwo2v6vNe",
+          "url": "https://x.com/yinfeiy/status/2057927359727374808",
+          "createdAt": "Fri May 22 20:51:31 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 4,
+            "replies": 0,
+            "views": 1779,
+            "total": 17
+          }
+        },
+        {
+          "id": "2033434734261678343",
+          "author": "ptdamiba",
+          "authorName": "Thierry Damiba",
+          "text": "Tomorrow at @NVIDIAGTC I'm at the @Vultr stage to talk about edge to cloud video anomaly detection with @qdrant_engine Edge, @twelve_labs Marengo 3.0, and @nvidia Metropolis. Traditional video classifiers need labeled examples of every anomaly you want to catch. That breaks in the real world. So I took a different approach..",
+          "url": "https://x.com/ptdamiba/status/2033434734261678343",
+          "createdAt": "Mon Mar 16 06:46:34 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 5,
+            "replies": 1,
+            "views": 1235,
+            "total": 16
+          }
+        },
+        {
+          "id": "2057136770261635278",
+          "author": "qdrant_engine",
+          "authorName": "Qdrant",
+          "text": "It’s here . . . We’ve lined up technical talks on vector search, AI memory, context engineering, or retrieval infra from @awscloud, @arizeai, @HubSpot, @neo4j, @Vultr, @twelve_labs, @Adobe, @Qualcomm, @GoogleDeepMind, @cognee_, @mem0ai, @llama_index, @SlackHQ and more. Join 300+ AI builders for a full day on agents and memory in production, retrieval from cloud to edge, and multimodal AI. Don’t miss Vector Space Day on June 11 at The Midway in San Francisco. Early bird tickets are on sale but end soon: https://t.co/a190Cwv5EF",
+          "url": "https://x.com/qdrant_engine/status/2057136770261635278",
+          "createdAt": "Wed May 20 16:30:00 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 4,
+            "replies": 1,
+            "views": 669,
+            "total": 14
+          }
+        },
+        {
+          "id": "2037253275804745796",
+          "author": "rlux",
+          "authorName": "Rachel Luxemburg",
+          "text": "Are you going to be in LA this weekend? Come learn about building professional video intelligence workflows with @twelve_labs, @awscloud, @nvidia, @baseten, and of course @ltx_model. Sign up here: https://t.co/lb4xiqdlVC https://t.co/x0yIJqjDh2",
+          "url": "https://x.com/rlux/status/2037253275804745796",
+          "createdAt": "Thu Mar 26 19:40:05 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 9,
+            "reposts": 2,
+            "replies": 1,
+            "views": 2117,
+            "total": 12
           }
         }
       ]
@@ -39643,6 +42559,214 @@
       ]
     },
     {
+      "tool": "Step 3.7 Flash",
+      "slug": "step-3-7-flash",
+      "x_handle": "@StepFun_ai",
+      "confidence": 100,
+      "query": "@StepFun_ai -from:StepFun_ai min_faves:3 -filter:replies",
+      "tweets_returned": 19,
+      "authors": [
+        "Gracemzshao",
+        "mr_r0b0t",
+        "madzadev",
+        "imaxichuhai",
+        "Rafa_Schwinger",
+        "godofprompt",
+        "4everland_org",
+        "FireworksAI_HQ",
+        "JasonVsTheNoise",
+        "nathanhabib1011",
+        "Italianclownz",
+        "kilocode",
+        "SpaceTimeViking",
+        "AbdMuizAdeyemo",
+        "vllm_project"
+      ],
+      "urls": [
+        "https://x.com/Gracemzshao/status/2064531551531282585",
+        "https://x.com/mr_r0b0t/status/2064375201521873085",
+        "https://x.com/madzadev/status/2064236328414486582",
+        "https://x.com/imaxichuhai/status/2064195493954048485",
+        "https://x.com/Rafa_Schwinger/status/2064155721206321355",
+        "https://x.com/godofprompt/status/2063912600472285296",
+        "https://x.com/4everland_org/status/2062788097608204616",
+        "https://x.com/mr_r0b0t/status/2062503261416862168",
+        "https://x.com/FireworksAI_HQ/status/2062382990685360398",
+        "https://x.com/mr_r0b0t/status/2062314522476458054",
+        "https://x.com/JasonVsTheNoise/status/2061773074505113695",
+        "https://x.com/nathanhabib1011/status/2061751385839042822",
+        "https://x.com/Italianclownz/status/2061250766183014802",
+        "https://x.com/kilocode/status/2061214195262107889",
+        "https://x.com/mr_r0b0t/status/2061130619732595029",
+        "https://x.com/SpaceTimeViking/status/2060918967690989854",
+        "https://x.com/mr_r0b0t/status/2060814057343537473",
+        "https://x.com/AbdMuizAdeyemo/status/2060763616769462460",
+        "https://x.com/vllm_project/status/2060741408198394188"
+      ],
+      "top_tweets": [
+        {
+          "id": "2062382990685360398",
+          "author": "FireworksAI_HQ",
+          "authorName": "Fireworks AI",
+          "text": "Many research labs only consider inference efficiency after the fact. Step 3.7 Flash is a 198B sparse MoE VLM designed by @StepFun_ai for inference from the start. 196B language backbone with a 1.8B vision encoder. Built for real-world agent workloads, running at up to 400 tok/sec. Native multimodal understanding and action, reliable tool use, and enhanced web and visual search. Apache 2.0. Try it now → https://t.co/OYqzBUBxqL",
+          "url": "https://x.com/FireworksAI_HQ/status/2062382990685360398",
+          "createdAt": "Thu Jun 04 03:56:36 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 107,
+            "reposts": 7,
+            "replies": 12,
+            "views": 10903,
+            "total": 126
+          }
+        },
+        {
+          "id": "2060741408198394188",
+          "author": "vllm_project",
+          "authorName": "vLLM",
+          "text": "Great to work with @NVIDIAAI on running @StepFun_ai's Step-3.7-Flash with vLLM on the DGX Station.🤝 Run it locally, or in production as an @NVIDIA NIM container, both powered by vLLM! Serve it now 🚀 🔗 https://t.co/VnMzyXW75R",
+          "url": "https://x.com/vllm_project/status/2060741408198394188",
+          "createdAt": "Sat May 30 15:13:33 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 81,
+            "reposts": 6,
+            "replies": 3,
+            "views": 20552,
+            "total": 90
+          }
+        },
+        {
+          "id": "2063912600472285296",
+          "author": "godofprompt",
+          "authorName": "God of Prompt",
+          "text": "Most AI agent demos are fake productivity theater. Cool for 30 seconds. Useless under real dev loops. So I ran @StepFun_ai Step Plan through actual coding-agent workflows: Cline in VS Code + Claude Code setup, both using step-3.5-flash-2603. This is where speed starts to matter.",
+          "url": "https://x.com/godofprompt/status/2063912600472285296",
+          "createdAt": "Mon Jun 08 09:14:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 60,
+            "reposts": 16,
+            "replies": 12,
+            "views": 16991,
+            "total": 88
+          }
+        },
+        {
+          "id": "2061214195262107889",
+          "author": "kilocode",
+          "authorName": "Kilo",
+          "text": "Update: We didn't get the blog out yet. It's been a busy weekend. But @StepFun_ai Step 3.7 Flash is currently FREE in Kilo. 👀 Enjoy!",
+          "url": "https://x.com/kilocode/status/2061214195262107889",
+          "createdAt": "Sun May 31 22:32:14 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 58,
+            "reposts": 3,
+            "replies": 2,
+            "views": 11174,
+            "total": 63
+          }
+        },
+        {
+          "id": "2062503261416862168",
+          "author": "mr_r0b0t",
+          "authorName": "mr-r0b0t",
+          "text": "SM121 optimized @StepFun_ai 3.7 Flash NVFP4 running quite well on the 2x GB10 setup! No Marlin fallback, TP=2, FLASHINFER_CUTLASS + VLLM_CUTLASS backend. Looks like this will be a quite performant model to have locally 🤩 Full results and repo (including container) below 🧵 https://t.co/PNx3ClpUHM",
+          "url": "https://x.com/mr_r0b0t/status/2062503261416862168",
+          "createdAt": "Thu Jun 04 11:54:31 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 54,
+            "reposts": 3,
+            "replies": 5,
+            "views": 3506,
+            "total": 62
+          }
+        },
+        {
+          "id": "2060814057343537473",
+          "author": "mr_r0b0t",
+          "authorName": "mr-r0b0t",
+          "text": "Official @StepFun_ai 3.7 Flash NVFP4 already on @huggingface 🤩 https://t.co/FezYQ5WEt6",
+          "url": "https://x.com/mr_r0b0t/status/2060814057343537473",
+          "createdAt": "Sat May 30 20:02:14 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 46,
+            "reposts": 3,
+            "replies": 3,
+            "views": 1792,
+            "total": 52
+          }
+        },
+        {
+          "id": "2060918967690989854",
+          "author": "SpaceTimeViking",
+          "authorName": "ÆON FORGE ✨",
+          "text": "Proactively quantized some Step 3.7 Flash GGUFs. When Step 3.7 Flash is supported on llama.cpp these should all run. Even a mind blowing 1bit quantization that brings total footprint down to 48GB! Let me know if you manage to get any of these working early. @StepFun_ai keep us in the loop on llama.cpp engine support. https://t.co/xkrpT2ASpZ",
+          "url": "https://x.com/SpaceTimeViking/status/2060918967690989854",
+          "createdAt": "Sun May 31 02:59:06 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 26,
+            "reposts": 5,
+            "replies": 6,
+            "views": 7885,
+            "total": 37
+          }
+        },
+        {
+          "id": "2061751385839042822",
+          "author": "nathanhabib1011",
+          "authorName": "Nathan",
+          "text": "Step-3.7-Flash from @StepFun_ai is a silent winner. Super impressive results, the best model under 500B params on HF leaderboards.. All while being multimodal https://t.co/Zo5nUdZTwq",
+          "url": "https://x.com/nathanhabib1011/status/2061751385839042822",
+          "createdAt": "Tue Jun 02 10:06:50 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 28,
+            "reposts": 2,
+            "replies": 1,
+            "views": 4299,
+            "total": 31
+          }
+        },
+        {
+          "id": "2061250766183014802",
+          "author": "Italianclownz",
+          "authorName": "Carlo",
+          "text": "Been working on this. @StepFun_ai Step 3.7 Flash with MTP. Quantized to the format I have been working on. Still experimenting but may push this update. I got some additional things to I need to do. I want to push the context up past 60k without issues. But I would have never thought I could get this to run, and it's running! It has coded HTML, answered questions, corrected itself on a wrong answer on its own. Reasoned with itself and came up with the right answer. Impressive. Results on AMD. File size 98 GB Quantized to ROCmfp4. Hey @AIatAMD you got some amazing hardware I am working with here on this @FrameworkPuter",
+          "url": "https://x.com/Italianclownz/status/2061250766183014802",
+          "createdAt": "Mon Jun 01 00:57:33 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 27,
+            "reposts": 1,
+            "replies": 2,
+            "views": 1654,
+            "total": 30
+          }
+        },
+        {
+          "id": "2064236328414486582",
+          "author": "madzadev",
+          "authorName": "Madza 👨‍💻⚡",
+          "text": "Step 3.7 Flash is a Flash model for real agent workflows. It’s fast and cost-efficient, but the part I care about is whether it can take a messy input and turn it into something actually usable. So I built ClipBrief. @StepFun_ai The idea is simple: upload a video, sample frames across the timeline, send them straight to Step 3.7 Flash, and get back a clean brief. No extra OCR step. No separate vision module glued on top. I tested it on a 6-minute YouTube explainer I hadn’t watched before. It picked up what was actually on screen — the article title, the diagram, the shift in the story — and turned that into a TL;DR plus timestamped key points. What I liked is that it didn’t stop at “this video is about X.” It gave me a structured readout of the clip: what happened, roughly when it happened, and how the main points connected. This is where Step 3.7 Flash makes sense to me. Not as a model that just answers one prompt quickly, but as something that can hold a small workflow together — read the frames, understand the context, organize the output — while staying quick and cheap enough to run often. I’d use this for lectures, meeting recordings, tutorials, product demos, or any video I want to skim as notes before deciding whether to watch the full thing. If you’re building AI agents, coding workflows, search-powered apps, or multimodal tools, Step 3.7 Flash is worth trying: https://t.co/2vfV8t7Zzb #sponsored #ad",
+          "url": "https://x.com/madzadev/status/2064236328414486582",
+          "createdAt": "Tue Jun 09 06:41:07 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 10,
+            "reposts": 4,
+            "replies": 2,
+            "views": 1628,
+            "total": 16
+          }
+        }
+      ]
+    },
+    {
       "tool": "Stockimg AI",
       "slug": "stockimg-ai",
       "x_handle": "@stockimgAI",
@@ -41773,6 +44897,17 @@
       ]
     },
     {
+      "tool": "Tokenwise",
+      "slug": "tokenwise",
+      "x_handle": "@tokenwise_ai",
+      "confidence": 100,
+      "query": "@tokenwise_ai -from:tokenwise_ai min_faves:3 -filter:replies",
+      "tweets_returned": 0,
+      "authors": [],
+      "urls": [],
+      "top_tweets": []
+    },
+    {
       "tool": "Tome",
       "slug": "tome",
       "x_handle": "@magicaltome",
@@ -42758,6 +45893,73 @@
             "replies": 0,
             "views": 1116,
             "total": 12
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Typeahead",
+      "slug": "typeahead",
+      "x_handle": "@typeaheadAI",
+      "confidence": 100,
+      "query": "@typeaheadAI -from:typeaheadAI min_faves:3 -filter:replies",
+      "tweets_returned": 3,
+      "authors": [
+        "hnshah",
+        "SamAsante"
+      ],
+      "urls": [
+        "https://x.com/hnshah/status/2062195789817090108",
+        "https://x.com/SamAsante/status/2061605832769310757",
+        "https://x.com/SamAsante/status/2061605259084984625"
+      ],
+      "top_tweets": [
+        {
+          "id": "2062195789817090108",
+          "author": "hnshah",
+          "authorName": "Hiten Shah",
+          "text": "If you know me, you know I love data and analytics. So, I couldn’t resist this one. Coming very soon to @TypeaheadAI… https://t.co/cFz5ZZL6bZ",
+          "url": "https://x.com/hnshah/status/2062195789817090108",
+          "createdAt": "Wed Jun 03 15:32:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 27,
+            "reposts": 5,
+            "replies": 11,
+            "views": 6818,
+            "total": 43
+          }
+        },
+        {
+          "id": "2061605259084984625",
+          "author": "SamAsante",
+          "authorName": "Sam Asante",
+          "text": "What do you think of these Product Hunt launch graphics for @TypeaheadAI? Live now: https://t.co/RPXDAH4BPY https://t.co/9167Ru2aPO",
+          "url": "https://x.com/SamAsante/status/2061605259084984625",
+          "createdAt": "Tue Jun 02 00:26:11 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 0,
+            "replies": 2,
+            "views": 194,
+            "total": 6
+          }
+        },
+        {
+          "id": "2061605832769310757",
+          "author": "SamAsante",
+          "authorName": "Sam Asante",
+          "text": "Here are some launch graphics I made for @TypeaheadAI Live on Product Hunt now: https://t.co/RPXDAH4BPY https://t.co/fLUbt9iHHt",
+          "url": "https://x.com/SamAsante/status/2061605832769310757",
+          "createdAt": "Tue Jun 02 00:28:27 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 4,
+            "reposts": 0,
+            "replies": 1,
+            "views": 160,
+            "total": 5
           }
         }
       ]
@@ -45637,6 +48839,219 @@
       ]
     },
     {
+      "tool": "Willow Scribe",
+      "slug": "willow-scribe",
+      "x_handle": "@WillowVoiceAI",
+      "confidence": 100,
+      "query": "@WillowVoiceAI -from:WillowVoiceAI min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "erikalee",
+        "LiuLawrence45",
+        "jonschr",
+        "Sujay__Raj",
+        "_allanguo",
+        "shreshthsaride",
+        "5harath",
+        "sudiprokaya",
+        "DamexyThe",
+        "alexminivan",
+        "Haleeeemahh",
+        "Amank1412",
+        "yoitsyoung",
+        "lighthousehq_",
+        "nikhilaprabhu",
+        "tannerdripjobs",
+        "astobbe_",
+        "yourealazyfvck",
+        "design_nocodeio"
+      ],
+      "urls": [
+        "https://x.com/erikalee/status/2064415786048143801",
+        "https://x.com/LiuLawrence45/status/2062598337745035528",
+        "https://x.com/jonschr/status/2060403773894217993",
+        "https://x.com/Sujay__Raj/status/2060023418276503650",
+        "https://x.com/_allanguo/status/2060017495973703744",
+        "https://x.com/shreshthsaride/status/2059784419645554992",
+        "https://x.com/5harath/status/2059426996858581309",
+        "https://x.com/sudiprokaya/status/2059411937159729168",
+        "https://x.com/DamexyThe/status/2059341269269127571",
+        "https://x.com/DamexyThe/status/2059328195560681631",
+        "https://x.com/alexminivan/status/2059320125397074428",
+        "https://x.com/Haleeeemahh/status/2054970288295620635",
+        "https://x.com/Amank1412/status/2054266119305957797",
+        "https://x.com/yoitsyoung/status/2052759085397967141",
+        "https://x.com/lighthousehq_/status/2052538087113441489",
+        "https://x.com/nikhilaprabhu/status/2047175598389473572",
+        "https://x.com/tannerdripjobs/status/2044777956950605881",
+        "https://x.com/astobbe_/status/2044731109540278374",
+        "https://x.com/yourealazyfvck/status/2043616263738626481",
+        "https://x.com/design_nocodeio/status/2042663604797755582"
+      ],
+      "top_tweets": [
+        {
+          "id": "2059328195560681631",
+          "author": "DamexyThe",
+          "authorName": "DAMI🤖🤖",
+          "text": "One thing about me when I see a good AI tech I will always speak about it. I came across @WillowVoiceAI’s new Willow Scribe and it feels like big leap in voice AI for everyday work. No more staring at a blank screen or typing out emails/Slack messages. https://t.co/uXhS84U1nR",
+          "url": "https://x.com/DamexyThe/status/2059328195560681631",
+          "createdAt": "Tue May 26 17:37:56 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 4,
+            "replies": 13,
+            "views": 450,
+            "total": 35
+          }
+        },
+        {
+          "id": "2064415786048143801",
+          "author": "erikalee",
+          "authorName": "Erika Lee",
+          "text": "congrats to my friends/the team at @WillowVoiceAI- this is super cool!",
+          "url": "https://x.com/erikalee/status/2064415786048143801",
+          "createdAt": "Tue Jun 09 18:34:13 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 0,
+            "replies": 5,
+            "views": 1128,
+            "total": 28
+          }
+        },
+        {
+          "id": "2059341269269127571",
+          "author": "DamexyThe",
+          "authorName": "DAMI🤖🤖",
+          "text": "When an average person comes across a new AI tech the first thing that comes to mind is “how it benefits me”. So here's why @WillowVoiceAI will be of benefit to you. Are you a busy professionals drowning in emails/Slack? willow helps you reclaim hours every week",
+          "url": "https://x.com/DamexyThe/status/2059341269269127571",
+          "createdAt": "Tue May 26 18:29:53 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 3,
+            "replies": 7,
+            "views": 225,
+            "total": 26
+          }
+        },
+        {
+          "id": "2060023418276503650",
+          "author": "Sujay__Raj",
+          "authorName": "Sujay.",
+          "text": "Unpopular opinion: Sticking to a physical keyboard in 2026 for raw brainstorming and communication is a massive speed bottleneck. If tools like @WillowVoiceAI Scribe can accurately parse unpolished speech, fix grammar on the fly, and clear a Slack queue hands-free, typing manually just feels like lagging on purpose. If a tool actually saved you 3 hours a day, would you finally drop the keyboard and go fully voice-driven?",
+          "url": "https://x.com/Sujay__Raj/status/2060023418276503650",
+          "createdAt": "Thu May 28 15:40:30 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 4,
+            "replies": 3,
+            "views": 500,
+            "total": 14
+          }
+        },
+        {
+          "id": "2059411937159729168",
+          "author": "sudiprokaya",
+          "authorName": "Sudip (YC P26)",
+          "text": "Be aware of these guys 😆 @WillowVoiceAI @allanguo https://t.co/2nDjAtYhZe",
+          "url": "https://x.com/sudiprokaya/status/2059411937159729168",
+          "createdAt": "Tue May 26 23:10:42 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 11,
+            "reposts": 1,
+            "replies": 2,
+            "views": 2647,
+            "total": 14
+          }
+        },
+        {
+          "id": "2052538087113441489",
+          "author": "lighthousehq_",
+          "authorName": "Lighthouse",
+          "text": "@WillowVoiceAI has changed how the Lighthouse team works. Voice allows the thought-to-text cycle to happen so much faster. Super talented team building a great product!",
+          "url": "https://x.com/lighthousehq_/status/2052538087113441489",
+          "createdAt": "Thu May 07 23:56:28 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 4,
+            "replies": 1,
+            "views": 1919,
+            "total": 13
+          }
+        },
+        {
+          "id": "2044777956950605881",
+          "author": "tannerdripjobs",
+          "authorName": "Tanner Mullen | Biz Ops",
+          "text": "I just want to say that if you work on a computer, you need the @WillowVoiceAI for voice-to-text. It's just an absolute game changer. Honestly, I'm surprised more people don't use it. One of the craziest things about it is I can talk and make mistakes, and it formats it perfectly in real time! It honestly feels like I'm going back to the stone age whenever I use talk to text on Apple. https://t.co/Rr5lmVxqDM",
+          "url": "https://x.com/tannerdripjobs/status/2044777956950605881",
+          "createdAt": "Thu Apr 16 14:00:29 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 1,
+            "replies": 3,
+            "views": 1428,
+            "total": 11
+          }
+        },
+        {
+          "id": "2043616263738626481",
+          "author": "yourealazyfvck",
+          "authorName": "David",
+          "text": "Someone get me in touch with the founders of @WillowVoiceAI let’s cook. I want to see how your new model holds up in real world production environments for Synthesys.",
+          "url": "https://x.com/yourealazyfvck/status/2043616263738626481",
+          "createdAt": "Mon Apr 13 09:04:20 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 0,
+            "replies": 2,
+            "views": 3763,
+            "total": 10
+          }
+        },
+        {
+          "id": "2059426996858581309",
+          "author": "5harath",
+          "authorName": "Sharath Kuruganty",
+          "text": "Spotted the viral @WillowVoiceAI ad on SF streets https://t.co/1HZqGG9AjU",
+          "url": "https://x.com/5harath/status/2059426996858581309",
+          "createdAt": "Wed May 27 00:10:33 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 8,
+            "reposts": 1,
+            "replies": 0,
+            "views": 2118,
+            "total": 9
+          }
+        },
+        {
+          "id": "2042663604797755582",
+          "author": "design_nocodeio",
+          "authorName": "Andrew Daniels 💜",
+          "text": "Just subscribed to @WillowVoiceAI man it is so much nicer to take than text. Really enjoy this tool.",
+          "url": "https://x.com/design_nocodeio/status/2042663604797755582",
+          "createdAt": "Fri Apr 10 17:58:48 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 7,
+            "reposts": 1,
+            "replies": 1,
+            "views": 1178,
+            "total": 9
+          }
+        }
+      ]
+    },
+    {
       "tool": "Windsurf",
       "slug": "windsurf",
       "x_handle": "@windsurf",
@@ -45850,6 +49265,205 @@
             "replies": 3,
             "views": 2120,
             "total": 8
+          }
+        }
+      ]
+    },
+    {
+      "tool": "Wingbits AI",
+      "slug": "wingbits-ai",
+      "x_handle": "@Wingbits",
+      "confidence": 100,
+      "query": "@Wingbits -from:Wingbits min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "airlivenet",
+        "yenalmh",
+        "solana",
+        "RobinWingbits",
+        "Coiniseasy"
+      ],
+      "urls": [
+        "https://x.com/airlivenet/status/2063949869039997157",
+        "https://x.com/yenalmh/status/2063896946729791703",
+        "https://x.com/airlivenet/status/2063665985396133900",
+        "https://x.com/yenalmh/status/2062544999800057945",
+        "https://x.com/yenalmh/status/2062462883657560249",
+        "https://x.com/yenalmh/status/2062121004046975368",
+        "https://x.com/solana/status/2061936032719749150",
+        "https://x.com/yenalmh/status/2061904332593778762",
+        "https://x.com/airlivenet/status/2061094543307469201",
+        "https://x.com/airlivenet/status/2061085038570053649",
+        "https://x.com/yenalmh/status/2060984767667941658",
+        "https://x.com/airlivenet/status/2060961982308553085",
+        "https://x.com/RobinWingbits/status/2060699613221548533",
+        "https://x.com/Coiniseasy/status/2060621787105579420",
+        "https://x.com/solana/status/2060366333502472265",
+        "https://x.com/airlivenet/status/2059910842364149841",
+        "https://x.com/yenalmh/status/2059257543340310567",
+        "https://x.com/yenalmh/status/2058646636478316553",
+        "https://x.com/airlivenet/status/2058611484817592809",
+        "https://x.com/yenalmh/status/2058279455110443290"
+      ],
+      "top_tweets": [
+        {
+          "id": "2060366333502472265",
+          "author": "solana",
+          "authorName": "Solana",
+          "text": "Monitoring the skies just got easier Only possible with @wingbits data on Solana",
+          "url": "https://x.com/solana/status/2060366333502472265",
+          "createdAt": "Fri May 29 14:23:08 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 208,
+            "reposts": 30,
+            "replies": 54,
+            "views": 28402,
+            "total": 292
+          }
+        },
+        {
+          "id": "2061936032719749150",
+          "author": "solana",
+          "authorName": "Solana",
+          "text": "Solana-based @wingbits ranked #2 on Product Hunt for the launch of https://t.co/Yy8eNcXscB",
+          "url": "https://x.com/solana/status/2061936032719749150",
+          "createdAt": "Tue Jun 02 22:20:33 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 174,
+            "reposts": 24,
+            "replies": 59,
+            "views": 31051,
+            "total": 257
+          }
+        },
+        {
+          "id": "2061085038570053649",
+          "author": "airlivenet",
+          "authorName": "AIRLIVE",
+          "text": "LIVE Two-time Champions League winners are entering French airspace, expected to land at Paris CDG in 30 minutes @wingbits https://t.co/A9NchLlzz7",
+          "url": "https://x.com/airlivenet/status/2061085038570053649",
+          "createdAt": "Sun May 31 13:59:00 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 68,
+            "reposts": 1,
+            "replies": 0,
+            "views": 10735,
+            "total": 69
+          }
+        },
+        {
+          "id": "2061094543307469201",
+          "author": "airlivenet",
+          "authorName": "AIRLIVE",
+          "text": "LIVE United #UA178 to Denver is turning back, diverting to Frankfurt @wingbits https://t.co/U7qqZA6Vh5",
+          "url": "https://x.com/airlivenet/status/2061094543307469201",
+          "createdAt": "Sun May 31 14:36:47 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 29,
+            "reposts": 5,
+            "replies": 2,
+            "views": 8389,
+            "total": 36
+          }
+        },
+        {
+          "id": "2060984767667941658",
+          "author": "yenalmh",
+          "authorName": "Yanal Hammoudeh",
+          "text": "#2 on Product Hunt on launch day. Thank you to everyone who supported, commented, and tried https://t.co/d1Hl8k1UCq today. Now we get to work. 🛩️ https://t.co/d1Hl8k1UCq / @wingbits https://t.co/2U3OIq3Nai",
+          "url": "https://x.com/yenalmh/status/2060984767667941658",
+          "createdAt": "Sun May 31 07:20:34 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 2,
+            "replies": 6,
+            "views": 713,
+            "total": 27
+          }
+        },
+        {
+          "id": "2062121004046975368",
+          "author": "yenalmh",
+          "authorName": "Yanal Hammoudeh",
+          "text": "✈️ Airport intelligence just landed on the @wingbits map. Now you can explore live airport activity with: 🛫 Departures & arrivals 🛬 Gate information 🛣️ Runway numbers 📡 Live aircraft movements Check out some of the world's busiest hubs: 📍 Charles de Gaulle - @ParisAeroport 📍 Istanbul - @igairport 📍 Frankfurt - @Airport_FRA 📍 Amsterdam Schiphol - @Schiphol See the pulse of global aviation in real time on Wingbits. 🌍 https://t.co/26uG2HZSpn #Wingbits #Aviation #FlightTracking #AvGeek #Airports #LiveFlights #ADSB #AviationData #AirTraffic",
+          "url": "https://x.com/yenalmh/status/2062121004046975368",
+          "createdAt": "Wed Jun 03 10:35:34 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 5,
+            "replies": 0,
+            "views": 1024,
+            "total": 24
+          }
+        },
+        {
+          "id": "2060961982308553085",
+          "author": "airlivenet",
+          "authorName": "AIRLIVE",
+          "text": "LIVE Corsair flight #SS985 to Paris ORY is diverting to Madrid @wingbits https://t.co/ND1550NWk7",
+          "url": "https://x.com/airlivenet/status/2060961982308553085",
+          "createdAt": "Sun May 31 05:50:02 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 21,
+            "reposts": 1,
+            "replies": 0,
+            "views": 5571,
+            "total": 22
+          }
+        },
+        {
+          "id": "2063896946729791703",
+          "author": "yenalmh",
+          "authorName": "Yanal Hammoudeh",
+          "text": "More stations boarding @wingbits this week! 🚀 Epic to see the network growing stronger every day. A huge welcome to all the new station operators joining the tribe, you're helping build the future of flight tracking, one station at a time. 📡✈️ #Wingbits #FlightTracking #DePIN #Aviation #WelcomeToTheTribe",
+          "url": "https://x.com/yenalmh/status/2063896946729791703",
+          "createdAt": "Mon Jun 08 08:12:32 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 14,
+            "reposts": 3,
+            "replies": 4,
+            "views": 1357,
+            "total": 21
+          }
+        },
+        {
+          "id": "2058611484817592809",
+          "author": "airlivenet",
+          "authorName": "AIRLIVE",
+          "text": "LIVE Air France #AF132 is returning to Paris CDG @wingbits https://t.co/StIFsV17je",
+          "url": "https://x.com/airlivenet/status/2058611484817592809",
+          "createdAt": "Sun May 24 18:09:59 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 19,
+            "reposts": 1,
+            "replies": 0,
+            "views": 5398,
+            "total": 20
+          }
+        },
+        {
+          "id": "2063949869039997157",
+          "author": "airlivenet",
+          "authorName": "AIRLIVE",
+          "text": "Several flights to Funchal are diverting due to winds gusting up to 32kt. TAP #TP1687 is returning to Lisbon @wingbits https://t.co/rcDjhDSvEI",
+          "url": "https://x.com/airlivenet/status/2063949869039997157",
+          "createdAt": "Mon Jun 08 11:42:49 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 2,
+            "replies": 1,
+            "views": 5199,
+            "total": 19
           }
         }
       ]
@@ -47758,6 +51372,207 @@
             "replies": 0,
             "views": 1327,
             "total": 13
+          }
+        }
+      ]
+    },
+    {
+      "tool": "zero.xyz",
+      "slug": "zero-xyz",
+      "x_handle": "@zeroxyz",
+      "confidence": 100,
+      "query": "@zeroxyz -from:zeroxyz min_faves:3 -filter:replies",
+      "tweets_returned": 20,
+      "authors": [
+        "Michael_Ludden",
+        "lindsey_pozz",
+        "joinpursuit",
+        "OffNevo4527",
+        "thestartpod",
+        "morad",
+        "realdanbaum"
+      ],
+      "urls": [
+        "https://x.com/Michael_Ludden/status/2064421532420751576",
+        "https://x.com/lindsey_pozz/status/2064339777730523552",
+        "https://x.com/Michael_Ludden/status/2063998669465260363",
+        "https://x.com/Michael_Ludden/status/2062267593692717206",
+        "https://x.com/lindsey_pozz/status/2062228451180900693",
+        "https://x.com/Michael_Ludden/status/2061837576349299166",
+        "https://x.com/joinpursuit/status/2061823901420626326",
+        "https://x.com/Michael_Ludden/status/2061207833509855337",
+        "https://x.com/OffNevo4527/status/2060770402318897361",
+        "https://x.com/Michael_Ludden/status/2060136300402164109",
+        "https://x.com/thestartpod/status/2059745222507024471",
+        "https://x.com/lindsey_pozz/status/2059659004138160164",
+        "https://x.com/morad/status/2059628723612074132",
+        "https://x.com/realdanbaum/status/2059545398415409239",
+        "https://x.com/Michael_Ludden/status/2056887701899825633",
+        "https://x.com/lindsey_pozz/status/2056722349022392731",
+        "https://x.com/Michael_Ludden/status/2056396441564880955",
+        "https://x.com/Michael_Ludden/status/2054310496753631432",
+        "https://x.com/Michael_Ludden/status/2052128431035584584",
+        "https://x.com/Michael_Ludden/status/2051761630204322040"
+      ],
+      "top_tweets": [
+        {
+          "id": "2056396441564880955",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "come try our @zeroxyz drink at Corgi Cafe in SF today - I'll be around buying your drink if you sign up ;)~",
+          "url": "https://x.com/Michael_Ludden/status/2056396441564880955",
+          "createdAt": "Mon May 18 15:28:12 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 3,
+            "replies": 4,
+            "views": 6017,
+            "total": 30
+          }
+        },
+        {
+          "id": "2063998669465260363",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "I'll be hanging out at the local @UseCorgi cafe in SF buying drinks for people installing @zeroxyz - and showing off our new \"Zero\" drink and sleeve being sold there. In case you're around, hit me up! :) https://t.co/cAMLGsJ2DW",
+          "url": "https://x.com/Michael_Ludden/status/2063998669465260363",
+          "createdAt": "Mon Jun 08 14:56:44 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 21,
+            "reposts": 2,
+            "replies": 6,
+            "views": 3359,
+            "total": 29
+          }
+        },
+        {
+          "id": "2059745222507024471",
+          "author": "thestartpod",
+          "authorName": "START",
+          "text": "Congrats on the launch @ketau &amp; team @zeroxyz! 🚨 Live on @ProductHunt 👇 https://t.co/hugjsTR1AQ https://t.co/hTKaSvzyI2",
+          "url": "https://x.com/thestartpod/status/2059745222507024471",
+          "createdAt": "Wed May 27 21:15:03 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 23,
+            "reposts": 1,
+            "replies": 0,
+            "views": 194,
+            "total": 24
+          }
+        },
+        {
+          "id": "2052128431035584584",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "creating memes with @zeroxyz 👀 (shoutout to the cmux mafia @manaflowai) https://t.co/rabOvkegKV",
+          "url": "https://x.com/Michael_Ludden/status/2052128431035584584",
+          "createdAt": "Wed May 06 20:48:39 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 18,
+            "reposts": 1,
+            "replies": 3,
+            "views": 797166,
+            "total": 22
+          }
+        },
+        {
+          "id": "2059545398415409239",
+          "author": "realdanbaum",
+          "authorName": "Daniel Baum",
+          "text": "Just launched @zeroxyz on @ProductHunt! Go toss it some love! With Sleek, we spent weeks prepping and won product of the week. With Zero, we spent 2 days... let's see how it goes! https://t.co/BE5ZhyQwnj",
+          "url": "https://x.com/realdanbaum/status/2059545398415409239",
+          "createdAt": "Wed May 27 08:01:02 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 0,
+            "replies": 8,
+            "views": 328,
+            "total": 21
+          }
+        },
+        {
+          "id": "2062267593692717206",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "i generated a kpop cover song of rage against the machine's 'killing in the name' from Claude Code using a minimax service I found with @zeroxyz https://t.co/c3c6wKhcRR",
+          "url": "https://x.com/Michael_Ludden/status/2062267593692717206",
+          "createdAt": "Wed Jun 03 20:18:04 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 17,
+            "reposts": 1,
+            "replies": 2,
+            "views": 265,
+            "total": 20
+          }
+        },
+        {
+          "id": "2061207833509855337",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "great @aiclubhouse_ openclaw meetup in progress at our @zeroxyz LA HQ 👀 https://t.co/cUsQ3CV2sa",
+          "url": "https://x.com/Michael_Ludden/status/2061207833509855337",
+          "createdAt": "Sun May 31 22:06:57 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 2,
+            "replies": 3,
+            "views": 449,
+            "total": 20
+          }
+        },
+        {
+          "id": "2059659004138160164",
+          "author": "lindsey_pozz",
+          "authorName": "Lindsey Pozzuto",
+          "text": "🔔 Our new product @zeroxyz launched today on @ProductHunt &amp; we’re already in the #4 spot! Show us some love with an upvote: https://t.co/1dMChbsipL https://t.co/3xM5NMBXL0",
+          "url": "https://x.com/lindsey_pozz/status/2059659004138160164",
+          "createdAt": "Wed May 27 15:32:27 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 15,
+            "reposts": 1,
+            "replies": 4,
+            "views": 269,
+            "total": 20
+          }
+        },
+        {
+          "id": "2056887701899825633",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "url shortening right from @claudeai with @zeroxyz for free, no config 👀 https://t.co/P166YYEQZn",
+          "url": "https://x.com/Michael_Ludden/status/2056887701899825633",
+          "createdAt": "Wed May 20 00:00:17 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 16,
+            "reposts": 1,
+            "replies": 1,
+            "views": 392,
+            "total": 18
+          }
+        },
+        {
+          "id": "2060136300402164109",
+          "author": "Michael_Ludden",
+          "authorName": "Michael Ludden",
+          "text": "You can now generate &amp; host forms from prompt with zero setup, for free, with @zeroxyz + your AI agent of choice and they'll email you responses as they come 👀 https://t.co/zIrMo0j4db",
+          "url": "https://x.com/Michael_Ludden/status/2060136300402164109",
+          "createdAt": "Thu May 28 23:09:04 +0000 2026",
+          "lang": "en",
+          "engagement": {
+            "likes": 13,
+            "reposts": 1,
+            "replies": 3,
+            "views": 803,
+            "total": 17
           }
         }
       ]

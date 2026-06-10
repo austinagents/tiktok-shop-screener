@@ -4,12 +4,19 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 
-const inputPath = "data/manual-missing-tools-30d-v1.csv";
+const args = process.argv.slice(2);
+const argValue = (name) => {
+  const prefix = `--${name}=`;
+  return args.find((arg) => arg.startsWith(prefix))?.slice(prefix.length);
+};
+
+const inputPath = argValue("input") || "data/manual-missing-tools-30d-v1.csv";
 const catalogPath = "data/taaft-tools.json";
 const dataPath = "lib/data.ts";
 const logoMapPath = "lib/logo-assets.ts";
 const logoDir = "public/logos/tools";
-const reportPath = "data/manual-missing-tools-30d-import-v1.csv";
+const reportPath = argValue("report") || "data/manual-missing-tools-30d-import-v1.csv";
+const importedFrom = argValue("imported-from") || "manual-30d-candidate";
 
 const categoryBySlug = {
   "openhands": "AI Coding",
@@ -63,7 +70,37 @@ const categoryBySlug = {
   "predibase": "AI Infrastructure",
   "convai": "AI Gaming",
   "avaturn": "AI Avatars",
-  "masterpiece-studio": "AI 3D Modeling"
+  "masterpiece-studio": "AI 3D Modeling",
+  "fundraisly": "AI Sales",
+  "co-invest": "AI Trading",
+  "paste-app": "AI Productivity",
+  "rodeo-by-twelvelabs": "AI Video",
+  "branda": "AI Marketing",
+  "knock-agent-for-slack": "AI Automation",
+  "mina-meeting-assistant": "AI Meeting",
+  "databox-mcp": "AI Analytics",
+  "dune-keypad": "AI Productivity",
+  "folk": "AI Sales",
+  "typeahead": "AI Search",
+  "tokenwise": "AI Trading",
+  "wingbits-ai": "AI Analytics",
+  "openstatus-health": "AI Infrastructure",
+  "step-3-7-flash": "AI Infrastructure",
+  "ava-studio": "AI Video",
+  "agent-a-ahrefs": "AI Marketing",
+  "mcp-bridge-appfactor": "AI Development",
+  "integuru": "AI Automation",
+  "basedash": "AI Development",
+  "clipline": "AI Video",
+  "buffer-api": "AI Marketing",
+  "zero-xyz": "AI Productivity",
+  "coworker-ai": "AI Agents",
+  "octolane": "AI Sales",
+  "krater": "AI Productivity",
+  "dodoform": "AI Automation",
+  "parsewise-api": "AI Infrastructure",
+  "rezonant": "AI Voice",
+  "willow-scribe": "AI Voice"
 };
 
 main().catch((error) => {
@@ -145,12 +182,12 @@ function buildRecord(seed, category, logoResult, now, rank) {
   const tags = [...new Set([
     category.replace("AI ", "").toLowerCase(),
     slugify(cleanName),
-    "30d candidate",
+    importedFrom.includes("24h") ? "24h discovery" : "30d candidate",
     "public discussion"
   ])];
   const description = descriptionFor(cleanName, category);
   return {
-    id: `manual_30d_${seed.slug}`,
+    id: `${importedFrom.replace(/[^a-z0-9]+/gi, "_")}_${seed.slug}`,
     name: cleanName,
     slug: seed.slug,
     description,
@@ -158,7 +195,7 @@ function buildRecord(seed, category, logoResult, now, rank) {
     websiteUrl: seed.websiteUrl,
     category,
     categories: [category],
-    rawSourceCategories: ["manual 30d candidate"],
+    rawSourceCategories: [importedFrom],
     tags,
     useCases: [`Track ${cleanName} attention`, "Monitor public proof sources", "Compare ecosystem momentum"],
     pricingType: "freemium",
@@ -168,7 +205,7 @@ function buildRecord(seed, category, logoResult, now, rank) {
     sourceUrl: seed.websiteUrl,
     sourceConfidence: 100,
     verificationSignals: ["manual_reviewed_seed", "working_url_present", "official_x_present", "brand_asset_present"],
-    importedFrom: "manual-30d-candidate",
+    importedFrom,
     importedAt: now,
     updatedAt: now,
     listingStatus: "accepted",

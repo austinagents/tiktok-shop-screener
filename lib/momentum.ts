@@ -43,7 +43,7 @@ export function isBreakingOut(tool: Tool) {
 }
 
 export function normalizeProductDisplayName(name: string) {
-  return name.split(/[|:-]/)[0].trim().replace(/\s+/g, " ");
+  return name.trim().replace(/\s+/g, " ");
 }
 
 export function canonicalizeProductName(name: string) {

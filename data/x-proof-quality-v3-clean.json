@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_at": "2026-06-09T23:53:21.570Z",
+    "generated_at": "2026-06-10T05:39:15.890Z",
     "source": "data/x-proof-sources-v2-all.json",
     "excluded_handle_source": "data/shared-x-handles-audit-v1.json",
     "excluded_handles": [
@@ -48,7 +48,7 @@
       "tools_with_3_plus_useful_proof_posts": -19,
       "tools_with_0_useful_proof_posts": 0
     },
-    "true_qualifying_tool_count": 226,
+    "true_qualifying_tool_count": 245,
     "top_tools": [
       {
         "tool": "Bolt",
@@ -176,17 +176,17 @@
     "cleaned_for_current_catalog_at": "2026-06-04T18:52:12.963Z",
     "records_after_catalog_cleanup": 127,
     "missing_tools_run": {
-      "tools_processed": 52,
+      "tools_processed": 30,
       "tools_failed": 0,
-      "total_tweets_returned": 970,
-      "total_useful_proof_posts": 837,
-      "tools_with_1_plus_useful_proof_posts": 49,
-      "tools_with_3_plus_useful_proof_posts": 48,
-      "tools_with_0_useful_proof_posts": 3,
-      "runtime_seconds": 11.99,
+      "total_tweets_returned": 333,
+      "total_useful_proof_posts": 307,
+      "tools_with_1_plus_useful_proof_posts": 21,
+      "tools_with_3_plus_useful_proof_posts": 19,
+      "tools_with_0_useful_proof_posts": 9,
+      "runtime_seconds": 14.41,
       "errors": []
     },
-    "records_after_missing_tools_run": 239,
+    "records_after_missing_tools_run": 269,
     "base_refresh_run": {
       "base_tools_processed": 14,
       "skipped_tools": 0,
@@ -794,6 +794,171 @@
         {
           "url": "https://x.com/georgethefourth/status/2061528174467403959",
           "text": "The third Doctor finds a Nestene Sphere. I had fun creating this scene. Music created in @AdobeFirefly. Keyframe in Gemini. Animated in @imagine https://t.co/ltx1sKNSwn",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Agent A | Ahrefs",
+      "slug": "agent-a-ahrefs",
+      "x_handle": "@ahrefs",
+      "tweets_returned": 20,
+      "useful_count": 14,
+      "bad_count": 6,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/timsoulo/status/2061796432534003866 | https://x.com/illyism/status/2059313831260967349 | https://x.com/lilyraynyc/status/2064092638341382510",
+      "notes": "hard_reject_non_english:5; hard_reject_crypto_noise:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/elgermerlo/status/2064348125137936482",
+          "text": "Day 76/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 1000tools(dot)best DR 6 by @ahrefs DA 15 by @moz 5k monthly visitors It's key for engaging and exposure your idea. Great job guys! https://t.co/673UQ64wx1",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/GasOnMarketing/status/2064262529291829531",
+          "text": "[FR] Être 1er sur Google ne suffit plus pour être cité par les IA. En un an, la corrélation entre top 10 Google et citations IA est passée de 76 % à 38 % @ahrefs. Le nouveau différenciateur ? La cohérence des signaux. Merci à @WebmarketingCOM pour la publication de mon article👇",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/lilyraynyc/status/2064092638341382510",
+          "text": "Think Google is leaning on Reddit more heavily in AI Overviews for \"best\" keywords The chart below is Reddit citations in AI Overviews via @ahrefs Brand Radar filtered for prompts containing \"Best\" https://t.co/S8yp7wTzpu",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Jbosch_/status/2064084046603534762",
+          "text": "I spent $450 on promoted launch sites. Here is the actual ROI: ✅ A handful of new users ✅ A few solid dofollow backlinks (long-term SEO win) ❌ Mentions on random directories (flagged as spam by @ahrefs) ❌ A completely flooded spam inbox Verdict: Good for SEO, terrible for immediate traction (at least with this level of $ investment, that could be different on higher layers).",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/fseixas/status/2063957801936814520",
+          "text": "Atualizei a skill Super GEO Agent Readiness com os aprendizados do excelente estudo da @ahrefs publicado aqui: https://t.co/1Bh8NCLyr6 Pra instalar: npx skills add fseixas/super-geo-agent-readiness https://t.co/4Q9fbJkBPB",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/elgermerlo/status/2063912781414346871",
+          "text": "Day 75/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 𝗶𝗻𝗱𝗶𝗲𝘀𝘁𝗼𝗿𝗲(𝗱𝗼𝘁)𝗰𝗼 DR 6 by @ahrefs DA 6 by @moz 2k - 3k monthly visitors It's key for engaging and exposure your idea. Great job @vamshi_builds! https://t.co/jOjol1EMm8",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/elgermerlo/status/2063700120512672204",
+          "text": "Day 74/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 𝗯𝗮𝘀𝗲𝗱𝘁𝗼𝗼𝗹𝘀(𝗱𝗼𝘁)𝗮𝗶 DR 43 by @ahrefs &lt;500 monthly visitors It's key for engaging and exposure your idea. Great job guys! https://t.co/L6hzCdeAdv",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/audreytipsfr/status/2062873077323628698",
+          "text": "#SEO 🎴 4 méthodes pour obtenir des backlinks Contrairement à l'idée reçue qu'il n'existe que 4 voies, toutes les stratégies de création de liens se séparent en réalité en 5 catégories distinctes. Maîtriser ce mix est la clé d'un profil sain. • 🧵 1/3 ✍️ @Ahrefs https://t.co/FXFL8SxT0D",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/timsoulo/status/2062574349304078664",
+          "text": "Once you build your first AI app, you're done for. Every single process in your day starts looking like something you should automate. Glen Allsopp [ @ViperChill ] (Head of Marketing Strategy & Research at @Ahrefs) showed me a perfect example of this. He used Agent A for competitive backlink research. Got exactly what he needed. Then typed: \"please turn this into an application.\" Three minutes later he had a reusable tool that analyzes backlinks across multiple websites in 20 seconds. Cost per run: less than one cent. Then he did the same with his task management workflow. Then with content research. Then with marketing copy. Then with AI visibility reports. Now almost every part of his workflow has a custom tool built around it So I invited Glen on Ahrefs Podcast to demo all of these tools live on screen, walk through how he built them with AI and what he learned in the process. Here's what we covered: 🔸 Why only 10% of marketers have tried building anything with AI 🔸 The \"imagination gap\" that stops most people from even starting 🔸 How a conversation with AI becomes a reusable marketing tool in 3 minutes 🔸 Why the cheapest AI model is often the right one for marketing tasks 🔸 Why your personal task manager should be built by you, not bought 🔸 Why copying someone's AI app is just the starting point, not a finished product 🔸 Why having marketing expertise matters more now, not less Watch/Listen here 👇 https://t.co/mQeJsERIdY P.S. If you enjoy these deep dives, a quick \"Like\" or comment helps us convince more great guests to come on the show. Thanks! 🙏",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/DavidGQuaid/status/2062237413162803575",
+          "text": "Myth Busting in SEO takes time. @HundleyJake bounced this idea past me and @edwardeachday about 6 months ago! He's devoted so much time, resources, peer reviews of the methodology, hypothesis and process. He's had tremendous support from @ahrefs - who need to be applauded for their time, effort, energy and focus on delivering data for good in SEO. While back at GEO Propaganda Studios Inc., people are filling the WWW with tons of made up studies, claims about research, on a colossal scale. https://t.co/VNI7RNCmXW",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/timsoulo/status/2061796432534003866",
+          "text": "In the last 6 months at @Ahrefs, we analyzed over 1 billion data points across 14 studies. Here's what we learned about AI search optimization: 1) \"Best X\" blog listicles are the single most prominent content format cited by AI chatbots. They make up 43.8% of all page types cited by ChatGPT specifically. 2) 67% of ChatGPT's top 1,000 citations come from sources marketers can't influence: Wikipedia (29.7%), homepages (23.8%), app stores (6.6%). Only 32.3% are influenceable content like educational pages, reviews, news, and blog posts. 3) 28.3% of ChatGPT's most-cited pages have zero Google organic visibility. These pages get cited repeatedly by ChatGPT despite not ranking in Google at all. A completely separate discovery layer. 4) ChatGPT only cites about 50% of the URLs it retrieves. It fetches dozens of pages per query but uses half as background context without attribution. This means that being retrieved and being cited are very different things. 5) Adding schema markup had zero meaningful impact on AI citations. AI Overviews actually dipped −4.6%, while AI Mode (+2.4%) and ChatGPT (+2.2%) showed changes indistinguishable from zero. 6) YouTube mentions have the highest correlation (0.737) with AI brand visibility out of all the factors we studied (including all the conventional SEO metrics like backlinks, page count, DR, etc). This held true for both Google-owned and OpenAI products. 7) AI Overviews reduce clicks to the #1 result by 58%. That’s up from 34.5% just 10 months earlier. The trend is accelerating. 8) 99.9% of AI Overviews appear on informational intent queries. Transactional, navigational, and local searches are almost entirely AIO-free. Shopping triggers AIOs just 3.2% of the time. 9) For a given search query, Google’s AI Mode and AI Overviews reach the same conclusions 86% of the time — but cite almost entirely different sources (only 13.7% citation overlap). 10) AI Overviews change every 2.15 days on average, with 70% of content differing between consecutive observations. But semantic similarity stays at 0.95. The words, sources, and entities constantly shuffle, but the actual meaning barely moves.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/natzir9/status/2061778057392779702",
+          "text": "There's not only Spearman correlation, but Pearson too. In other words, the relationship holds in rank order and in magnitude. Sharing this from a recent talk I gave. @ahrefs data https://t.co/oWW2dsfvWD",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/elgermerlo/status/2061771132047385008",
+          "text": "Day 69/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 𝗱𝗲𝘃𝗵𝘂𝗯(𝗱𝗼𝘁)𝗯𝗲𝘀𝘁 DR 33 by @ahrefs DA 14 by @moz 8k - 10k monthly visitors It's key for engaging and exposure your idea. Great job @saashuntbest https://t.co/CYe4zCnI7s",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ThomasMeyerSEO/status/2061758533754835159",
+          "text": "Vous pouvez toujours être 1er sur Google. Et quand même perdre 58% de vos clics. 🤡 Le dernier benchmark @ahrefs sur la recherche IA est enfin sorti. Ça a pris du temps, mais ça valait la peine d'attendre. Il y a 4 chiffres qui résument assez bien ce qui arrive. 1. Les AI Overviews apparaissent déjà sur 21% des mots-clés analysés. 🎯 Et plus la requête est longue, plus elles apparaissent. Sur les requêtes de 7 mots ou plus, on monte à 46,4%. Donc la longue traîne informationnelle est probablement la première zone d’impact. 2. Seulement 38% des pages citées dans les AI Overviews sont dans le top 10 Google. 🪚 Autrement dit : ranker aide. Mais ranker ne suffit plus. Une page peut être citée par l’IA sans être parfaitement positionnée dans la SERP classique. 3. 28% des pages les plus citées par ChatGPT n’ont aucune visibilité organique. 🤨 Ça, c’est probablement le chiffre le plus contre-intuitif. Certaines pages invisibles sur Google peuvent quand même devenir des sources pour les LLMs. Donc le SEO traditionnel reste important. 4. Les AI Overviews réduisent de 58% les clics vers les contenus en première position. 🔫 C’est le vrai sujet. Vous pouvez garder vos position tout en perdant une bonne partie de vos clics. Ce qu'il faut retenir : Le SEO ne va plus seulement consister à “ranker et récupérer le clic”. Les sites aux meilleures perf SEO ne seront pas toujours les plus visibles sur les IA. Vous avez vos chances. Il va aussi falloir : • être cité • être mentionné • être compris par les IA • contrôler son narratif de marque • apparaître dans les bonnes sources tierces Bref : le SEO devient moins “page contre page”. Et beaucoup plus : écosystème contre écosystème. C’est probablement ça, le vrai sujet du GEO : Pas juste ajouter une FAQ. Pas juste poster des trucs sur Reddit. Et encore moins ajouter des fichiers LLMS.txt à tout va. Mais construire une présence suffisamment claire, fiable et cohérente pour que les IA sachent : - Qui vous êtes - Ce que vous faites - Et pourquoi vous méritez d’être cité. Dropez un commentaire et je vous envoie l'étude 👇",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/AnthonyRochand/status/2060655822372286578",
+          "text": "Le schema markup aide-t-il vraiment à être cité par l'IA ? @ahrefs a fait l'analyse avec 2 périodes différentes. Résultat : les courbes tombent au même endroit sur les 3 plateformes. L'effet est réel, pas un hasard de calendrier. #IA #SEO https://t.co/18jGlAMAYF",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/sergiopedemonte/status/2060113367155572890",
+          "text": "Another interesting read from @ahrefs. ChatGPT has a large amount of search-like activity, but Google still sends far more traffic to websites. The main reason is that ChatGPT often keeps users inside the conversation, while Google is designed to send users to external websites. https://t.co/cJa3tN3khY",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/sergiopedemonte/status/2060112379598270507",
+          "text": "Interesting read from the recently released @ahrefs AI Search Benchmark Report. Only about 38% of pages cited in Google’s AI Overviews rank in the top 10 search results. Overviews can cite lower-ranking pages, even those outside the top 100, showing that source selection goes beyond traditional SEO rankings.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/JoyanneHawkins/status/2059975097654403529",
+          "text": "Anyone know if @ahrefs is working on a solution for these spam domains? They are getting out of hand and causing massive inaccuracies in referring domain graphs. https://t.co/QdcbhLBkec",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/illyism/status/2059313831260967349",
+          "text": "How to find your real SEO competition in 10 minutes: 1. Export top 1,000 keywords in your niche from @Ahrefs 2. Pull the top 10 ranking URLs for each 3. Count which URLs appear most 1,000 keywords → 68 unique pages → 30 domains https://t.co/gSzdWduZTx",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/elgermerlo/status/2059234404027732376",
+          "text": "Day 63/365 of sharing cool sites to validate your idea (and getting some good deal on #SEO) Today -&gt; 𝗹𝗮𝘂𝗻𝗰𝗵𝘃𝗮𝘂𝗹𝘁(𝗱𝗼𝘁)𝗱𝗲𝘃 DR 39 by @ahrefs DA 15 by @moz 18k - 20k monthly visitors It's key for engaging and exposure your idea. Great job @launchvaultdev https://t.co/eYsow6oCtt",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -2376,6 +2541,161 @@
       ]
     },
     {
+      "tool": "Basedash",
+      "slug": "basedash",
+      "x_handle": "@Basedash",
+      "tweets_returned": 20,
+      "useful_count": 19,
+      "bad_count": 1,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/rabi_guha/status/2041547036529709191 | https://x.com/MarkKnd/status/2032427954806915170 | https://x.com/KrisLachance/status/2059729739145768984",
+      "notes": "hard_reject_crypto_noise:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/KrisLachance/status/2059729739145768984",
+          "text": "We’re hiring a Senior Full Stack Engineer at @Basedash! We’re a small team building the leading AI-native Business Intelligence platform. BI is a massive market entering a major shift with new ways of storing and computing data, and deeper governance for AI agents operating on company data. We’re looking for someone with strong full-stack fundamentals, real product sense, and genuine excitement about building with AI at the core of the product from day one.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MaxMusing/status/2049242940988375365",
+          "text": "I never thought this would happen but we're actually considering migrating off GitHub too. I understand why the reliability issues are happening and I'm glad they're working on it, but it's actively affecting us at @Basedash (and our engineering team is literally 2 people).",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MaxMusing/status/2048110369919406206",
+          "text": "We used to do quarterly project planning and weekly sprints at @Basedash. Now we just plan our projects every sprint. Few projects take over a week to ship these days.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/thestartpod/status/2047020125618868540",
+          "text": "Congrats on the launch @MaxMusing &amp; team @Basedash! 🚨 Live on @ProductHunt 👇 https://t.co/0EGR3vkoTE https://t.co/mitNbZmg1D",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/BryanJacobHunte/status/2042711283842027755",
+          "text": "For the last 3 years, I have had the privilege of working with an amazingly talented, overwhelmingly Canadian, and all devilishly good looking team, @Basedash Despite my best efforts, I was unable to successfully clone myself, so that chapter has come to an end. We built an amazing product, a great team, and some real friendships. The team will be okay without me, but not sure about me without them 😭 Obligatory: excited about what's next ▲",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/valthvisuals/status/2041744979026964740",
+          "text": "Launch video for @Basedash Insights, an AI agent that curates a continuous news feed on your company data. https://t.co/KWZaVqsTzL",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/rabi_guha/status/2041547036529709191",
+          "text": "Replacing dashboards with a chatbar was step one Here's what step two could look like (Inspired by @Basedash - they've been building in this space for a while) https://t.co/tEmMe26kYx",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ben_aguilera/status/2037176916713546157",
+          "text": "more and more proactive agents. love to see it. go support Kris, Max and the @Basedash team 👇",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/RobertCooper_RC/status/2033558489247682763",
+          "text": "Our @Basedash slack bot just got a nice upgrade where we stream in the thinking steps right to slack. No more setting an 👀 emoji on a slack message and waiting and wondering. Also useful to check the chain of thought right from slack in case the agent looked through data incorrectly and you want to guide it in a follow-up to do something different.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MarkKnd/status/2032427954806915170",
+          "text": "breakdown of the video for @Basedash https://t.co/oE2evrf9U7",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/vrikhter/status/2031437043448877449",
+          "text": "Nice to see @Basedash get mentioned here! cc @KrisLachance https://t.co/pMgZN5IQfn",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/KrisLachance/status/2026339525123887495",
+          "text": "Rows has announced they will sunset the app by May 31. If you're a Rows customer, please get in touch. I'll personally migrate you over to @Basedash so you can keep working with your data. Congrats to the Rows team! They built a great product.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/designspells_/status/2011823911131066705",
+          "text": "Interactive empty state graphics in @Basedash https://t.co/6dU3gNWeTs",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MaxMusing/status/2010029780247404976",
+          "text": "\"I had no idea BI could just be 'look at this table and create an interesting dashboard' - it's a wild experience\" I love showing off the magic moment of @Basedash 💜",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MaxMusing/status/2006089416477974846",
+          "text": "We came to this exact conclusion at @Basedash which led us to what we're building today. Basedash: 1. Connects to your systems of record (Salesforce, Slack, Notion, GitHub, Linear, etc.) 2. Builds a context graph across all those systems 3. Finds insights and makes decisions for you That being said, I disagree that warehouses are the wrong data layer. Agree that current players are not well positioned, but MCPs (and equivalent) are fundamentally flawed for the read path. SQL is so much more expressive and capable than the patchwork of APIs and MCP servers for each system of record. The quality of insights and decisions we can get out of Basedash is 10x better than anything I've seen from other agents (and most humans 😄). We haven't even touched the write path yet though. In my opinion this is the (relatively) easy part 🤞",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/RobertCooper_RC/status/2002085947832201422",
+          "text": "Every Friday morning, our changelog writes itself (well, almost). - @Basedash Autopilot scans our commit history - Figures out what actually shipped - Generates a changelog in Slack - We tag the @mintlify slack bot to create a changelog page in our docs - Mintlify opens a docs PR automatically We can then pull down the branch, tweak wording if needed, merge in the PR, done. Changelog is live at https://t.co/W8T9JPWNSo. Changelogs should be fast to produce—so more time goes to shipping features and fixes.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/antongridz/status/2001806000828092522",
+          "text": "I built this tool about 6 months ago but was too hesitant to share it. Looking back at my journey this year, I realized that @tomjohndesign was one of the key people who shaped my eye for detail. His process for @Basedash is what pushed me to experiment with dithering in the first place. I used @cursor_ai to build Dither Studio back then to play with these textures. Today, I'm finally letting it out into the wild. Don't sit on your projects for too long, guys. Ship it. 👇",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MaxMusing/status/2000583626904260861",
+          "text": "This is insane. Users are comparing @Basedash Autopilot to a $500k VP (but for a fraction of the price). Every company needs to be using this. DM/comment and I'll personally get you set up. https://t.co/dFyk4okffp",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/malatack/status/1998888556102820296",
+          "text": "@MaxMusing and team keep shipping awesome stuff at @Basedash. You love to see it.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ben_aguilera/status/1998798879400071388",
+          "text": "new one for @Basedash Autopilot will guide Q1 2026 at https://t.co/2LKAhnEpZM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Baseten",
       "slug": "baseten",
       "x_handle": "@basetenco",
@@ -3146,6 +3466,165 @@
         {
           "url": "https://x.com/daveinou/status/2060448498147905689",
           "text": "Smart browser automation is the future. Using @browserbase to save ops 1000s of hours. 🛠️ Why it works: - Hybrid AI + Predictable APIs - Session replays for audit If you do it in a browser, it’s automatable. Stop wasting time. DM me to learn more! 🚀 https://t.co/fR52BJ8hZA",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Buffer API",
+      "slug": "buffer-api",
+      "x_handle": "@buffer",
+      "tweets_returned": 20,
+      "useful_count": 17,
+      "bad_count": 3,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/mepusica/status/2060962648527864056 | https://x.com/n7studios/status/2059624429362041130 | https://x.com/juste_petr/status/2059650965246980289",
+      "notes": "hard_reject_non_english:2; hard_reject_crypto_noise:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/LuigiMdpDev/status/2064099801474417078",
+          "text": "El sabado di una charla sobre como delegar tus redes a un agente de IA con @cursor_ai + @editframe + @buffer dejo los slides y un preview de la charla. https://t.co/2wx4TyGb2R Todo esto en el evento Bit & Beat de la comunidad @Mardeldev El caso de uso es el de @pavla_app (reemplazamos X por Linkedin hace un rato)",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/SrinivasSi78619/status/2062997330950009286",
+          "text": "I built OopsProof, a small safety tool for @buffer's API. It checks scheduled posts for simple mistakes that automation can miss: - launch terms going out too early - words like today or tomorrow that might be wrong by publish time - posts that start the same way and make the queue feel repetitive When it finds something risky, it creates a new Buffer draft in the same channel so a human can review it before it goes live. The idea is simple, automation should help people move faster, but it should not blindly publish things that might be wrong. @Marochko live - https://t.co/ZRgNGkB4Re github - https://t.co/3pf636Jwkc",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/cathooman28/status/2062912514078208296",
+          "text": "It's been a hot minute since I used @buffer so this is a new feature for me. NGL it's smoother than Twitter's own notifications 👀 https://t.co/74LCTW9bn7",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/DerekColley_/status/2062810424500711458",
+          "text": "I've been trying @buffer to manage the release of content for the past 2 weeks. I am more focused on the quality of content now, and I can see a slight uptick in the numbers. What really seems to help is having a place where I can dump ideas, and come back to later. What are your engagement tips and tricks?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mepusica/status/2060962648527864056",
+          "text": "I used @Lovable and @buffer to build an app that helps create content for @TidyOnChainAI and it works like a charm. Meet TidyOps: 🔹Creates content suggestions based on a knowledge database, personality and inspirational tweets. 🔹Includes guardrails and feedback loops for continuous improvement. 🔹API integration for one-click scheduling of tweets.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/oscargaske/status/2060443597145522690",
+          "text": "I'm about to go crazy with automation @buffer https://t.co/dMpiqUj4LQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/JustinRFrench/status/2060168423636869366",
+          "text": "Breaking news you can now automatically schedule social media posts from @claudeai to @buffer the full content automation revenue system continues to improve 🫡🥷 https://t.co/D4wKVz4vbD",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Stevkingz1/status/2059955135871074330",
+          "text": "It's very easy to stay consistent these days if you've sorted basic needs. Turn on notifications of your always active mutuals. Batch create content Set reminders for everything you do. You can use @buffer or ultimateboss by @strategicnstyle",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/danielkempe/status/2059726355126685951",
+          "text": "TEST Unlock new possibilities! 🚀 @Buffer's API is open for building. Seamlessly schedule, publish, and manage your social presence with the tools you love. #BufferAPI #SocialMediaTools https://t.co/fctwnG2xTb",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/diegocasmo/status/2059698669545259139",
+          "text": "Composable products used to be a nice-to-have. Now they're expected. I posted about this a while back: https://t.co/cYf4clRpl9 A composable product is one you can build on top of. Without that, you can only use the product as it ships. The @buffer public API is live today. There's an MCP server and a CLI too. You can build on Buffer now. Took a lot of people across Buffer to make this happen. I'm glad I got to be part of it. Try it out: https://t.co/PGSbvrLVKk #BufferAPI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jglypt/status/2059694691642155294",
+          "text": "WIP menu bar app for the Mac which lets you instantly post to your configured social profiles via @buffer with the new #BufferAPI! gonna fix some annoying last things, then i'll release it on GitHub + Tangled :) https://t.co/uxd4UZTisQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Mike_Eck/status/2059670300435071375",
+          "text": "I made an anti-slop social media writing tool with the new @buffer API 👉 https://t.co/zviRlX56rR Say no to slopaganda! 🙅‍♂️ https://t.co/MehUYjG7mh",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/juste_petr/status/2059650965246980289",
+          "text": "Buffer API is officially live! 🎉 Big day for builders and developers - the public @buffer API is now available, opening the door to automated workflows, custom integrations, and third-party apps built on top of Buffer. I’ve been tinkering with the API for a while now, and I am excited about the endless possibilities. From smarter content operations to fully automated workflows, this feels like the start of a whole new ecosystem around Buffer. Excited to see what the developer community builds next 👀 If you haven’t checked it out yet: 👉 https://t.co/WhSXfnMQrU Let’s build together 🤩 #BufferAPI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/danjelparas/status/2059642792951910874",
+          "text": "Boom. @buffer API is here. 💥 If APIs aren't your thing, the landing page alone is worth a look: https://t.co/AoXPx7VogQ ✨ If they are, today's your day. Go play 🧑‍💻 One API. Every major social platform. #BufferAPI https://t.co/wWKO6VZvmI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/n7studios/status/2059624429362041130",
+          "text": "14 years ago, I built a small WordPress plugin that auto-posted blog content to social media using @buffer. It's running on tens of thousands of WordPress sites, and today it became one of the first integrations to launch on Buffer's brand new API. WordPress to Buffer and WordPress to Buffer Pro v6 is out: ✓ Faster, more reliable publishing ✓ A clearer Status Type dropdown (Text, Link, Image, Story, Pin, Google) replacing the old cryptic image settings ✓ Foundations laid for the next wave of Buffer features If you publish content on WordPress and use Buffer to schedule it across social networks, this release is for you. https://t.co/LhFG3z3Nyv Thanks to the Buffer team for their work on this new API. #WordPress #Buffer #BufferAPI #SocialMedia",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/muskandotbacken/status/2059169702681948491",
+          "text": "Day 70 of building a $10K MRR Consumer Company. Two payments yesterday. - releasing a major pivot today (almost on the verge of publishing the app). - researched and figured out tools for cross-posting across socials. @buffer seems to be winning here. Onto doubling down on distribution again. Lfg🚀🚀🚀🚀",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/altryne/status/2058955830335258953",
+          "text": "very much a long shot but anyone outhere uses @buffer and their MCP? it's broken for me since yesterday with no code changes (and yes, refreshed API creds) and obvi on memorial day nobody there to answer! https://t.co/NC91Cml1XC",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mgbtech77/status/2058775107187654982",
+          "text": "YADDA ZAKA TSARA POST SAMA DA 20 A CIKIN MINTUNA Gm CT STEP1 Zaka fara dauko wannan app a playstore mai suna (@buffer) daga nan Ka shiga cikin app din sannan ka yi sign in. Za ka iya shiga da X ko kuma email ɗinka. STEP 2 Connect Social Media Accounts Bayan ka shiga app din za ka haɗa X da Buffer account ɗinka. (Abin Lura: A free version, za ka iya haɗa accounts guda 3 ne kawai). STEP 3 Rubuta post da Schedule Da zarar ka shiga dashboard za ka iya rubuta post ka schedule nashi ka saka shi Ta yadda da lokacin post din nacika ko baka online zaiyi maka post. Abin lura ana: Zaka iya Publish post, Video ko Hoto Ka rubuta duk update din da kakeson rubutawa, sannan za ka iya saka hotuna ko bidiyo tare da post ɗin. Da akwai feature masu kyau a tattare da app din buffer sanna zai taimakawa mara i sashen lokacin post tsara post a cikin sauki Zaka iya follow domin samun wasu tip da zasu taimaka wajen grow up na account dinka",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/SydesJokes/status/2058450326445810054",
+          "text": "How to upload posts in bulk to @Buffer https://t.co/2fXhATK7Ii #socialmedia",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/SydesJokes/status/2058250293624668642",
+          "text": "Who uses @Buffer to feed tweets to your #socialmedia profiles? Did you know #Buffer now has an import function that uses csv files and can import images from urls for the tweets? I can give you free content just tag me in the tweets e.g. Via @SydesJokes https://t.co/tWEwdeKwkR",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -5996,6 +6475,159 @@
       ]
     },
     {
+      "tool": "Coworker AI",
+      "slug": "coworker-ai",
+      "x_handle": "@coworkerapp",
+      "tweets_returned": 20,
+      "useful_count": 20,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/Jags100x/status/2060086606350934081 | https://x.com/FASTERRDADDY/status/2060096539872161846 | https://x.com/biscuitweb3/status/2060079609748631820",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/ATCalder/status/2060405823361466482",
+          "text": "Worth reading. This is exactly why we launched @coworkerapp",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/WonderStudiosX/status/2060349055763464320",
+          "text": "Companies shouldn't have to choose between AI spend or their people. We had a lot of fun making this one with @coworkerapp 👇",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Midey8u/status/2060334589218869457",
+          "text": "5X tokens per dollar. Still paying GPT or Claude prices? What a waste @coworkerapp just made your AI bill look ridiculous. Welcome to the new math.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Gheefted_01/status/2060108947084730387",
+          "text": "With token costs exploding, companies are stuck choosing between slashing AI spend or cutting headcount. that's why @coworkerapp is the smarter third option with the same frontier AI for chat, cowork &amp; code, and now with 5X more tokens per dollar.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/FASTERRDADDY/status/2060096539872161846",
+          "text": "we’re finally going to be able to exploit an high quality and seamless AI experience with low cost. good games @coworkerapp 😄❤️ https://t.co/pd8A58u6sv",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/garnachoszn17/status/2060093401358315579",
+          "text": "AI creativity is becoming unbelievable A lot of things becoming way easy @coworkerapp cooked with this.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jessica_moon04/status/2060087143154831366",
+          "text": "token costs have been eating budgets but @coworkerapp just fixed it same quality, just 5x more tokens per dollar you get 500 free credits on signup too I'd check it out if I were you (especially if you are into AI automation) https://t.co/9wIwRqOZWs",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Jags100x/status/2060086606350934081",
+          "text": "Imagine creating Ai models with little cost expenses @coworkerapp really cooked with this That where I’m at, will you be checking them out?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/heistruthX/status/2060085568927571974",
+          "text": "the AI industry sold you the future. but forgot to mention the future has a subscription fee. Coworker is the refund. 5x more tokens per dollar is the apology. get in! @coworkerapp https://t.co/5opXp27jA3",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/I_amDorris/status/2060084985730621728",
+          "text": "How I feel after learning @coworkerapp costs lesser to keep AI agents running 5x more tokens per dollar?? Bring it on. https://t.co/WyxyPBpz8B",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/basedstona/status/2060084922535039249",
+          "text": "Token costs keep climbing and most companies are stuck choosing between burning more cash or cutting headcount. @coworkerapp feels like the smarter middle ground. Same frontier AI, way better efficiency.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/paindotsol/status/2060083911074480584",
+          "text": "AI went from \"wow this is powerful\" to \"damn can we actually afford to scale this ?\" 😭 @coworkerapp is actually solving the part no one talks about enough because 5X more tokens per dollar is really not a small improvement",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/kabNFA/status/2060083262827942011",
+          "text": "you think ai is taking your job? olodoo it's actually here to make it easier and faster.... @coworkerapp just proved that same quality and 5x cheaper go register and get 500 free credits asap https://t.co/nyTwERgWBO",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/vicdasol/status/2060082263119823247",
+          "text": "while other products have to chose, @coworkerapp is managing ai cost with more productiveness , couldn’t ask for anything better",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Joker_On_Sol_/status/2060081413706137735",
+          "text": "Tired of insane AI token costs? @coworkerapp delivers frontier performance (chat + code + cowork) with smart routing for 5X more tokens per $. 500 free credits on signup. Absolute game changer.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/asakasol/status/2060080755938639958",
+          "text": "coworker is basically making things easier with 5x more tokens, it’s insane! when required to make a choice, i’ll choose @coworkerapp",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/vicdahustula/status/2060080706705846526",
+          "text": "@coworkerapp is live and they are going to make ai output more productive and yet cheaper ! good tek. more output at cheaper prices.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jessimckingpin/status/2060080613244182628",
+          "text": "These Guys just made it way more cheaper to Code and Create with AI, No More Shuffting btw 3 to 4 models for Several Creation, Just One Now! Amazing Tech @coworkerapp",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Lyxxmotion/status/2060080324399317053",
+          "text": "Most AI launches feel forgettable after 5 minutes ngl But lowkey @coworkerapp actually something so unique",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/biscuitweb3/status/2060079609748631820",
+          "text": "my ai spend has tripled in 18 months and i don’t have 3x the output to show for it @coworkerapp is the first product i’ve seen actually addressing that gap same frontier models, 5x more tokens per dollar, live today might be the most honest pitch in ai right now",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Crawl4AI",
       "slug": "crawl4ai",
       "x_handle": "@crawl4ai",
@@ -6760,6 +7392,89 @@
         {
           "url": "https://x.com/Ppkook4/status/2062962179012489720",
           "text": "When I'm happy, I miss 4o; when I'm sad, I miss 4o even more; when I run into problems, I want to get advice from 4o.Anyway, I miss 4o, please give it back to us.@sama @OpenAI #keep4o #ChatGPT #BringBack4o #4oforever #keep4oAPI #OpenSource4o https://t.co/ebWJRxAVi6",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Databox MCP",
+      "slug": "databox-mcp",
+      "x_handle": "@databoxHQ",
+      "tweets_returned": 10,
+      "useful_count": 10,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/anujcodes_21/status/2061364816409927748 | https://x.com/RohanChaubey4/status/2034259043976712451 | https://x.com/LangChain/status/2057534426293174709",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/anujcodes_21/status/2061364816409927748",
+          "text": "Dashboards are just pretty graveyards for data. 🪦 You open it at 9 AM. Stare at a red line. Go back to Excel to figure out why. That is not analytics. That is a screensaver with extra steps. Meet @databoxHQ MCP. It connects your business data directly to Claude, ChatGPT, or Cursor. No dashboard to build. No SQL to write. No \"let me ask the data team and get back to you.\" 👇 You just... ask. \"What happened to my CAC last week?\" \"Which Meta campaign actually drove revenue?\" \"Why did traffic drop on Tuesday?\" Your AI does the math. Using your real metrics. Your definitions. Your history. And it gives you an answer you can act on. Inside your chat. The part that broke my brain: ✅ 130+ data sources (Google Ads, HubSpot, Shopify, Meta). ✅ Interactive charts rendered inside Claude/ChatGPT. ✅ Push data from anywhere → AI can see it instantly. ✅ Automate reports with n8n or Make. Connect in under 60 seconds. Then stop staring at red lines. Start asking why they are red. 👉 Chat with your business data here: https://t.co/LUHJNvXDwl @databoxHQ MCP is live on ProductHunt right now: https://t.co/XdaX6y8V2m ♻️ Repost if you have ever ignored a dashboard. — #Analytics #AI #Claude #ChatGPT #DataScience #DataboxMCP",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/LangChain/status/2057534426293174709",
+          "text": ".@DataboxHQ uses LangSmith to evaluate their multi-turn analyst agent Genie. An inside look: https://t.co/SAgvAn6Se8 https://t.co/NXeit7i11f",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/morphix/status/2034353686999122152",
+          "text": "This is what we have been building the last few months @databoxHQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/RohanChaubey4/status/2034259043976712451",
+          "text": "Hunted @databoxHQ on @ProductHunt today! 🥳 Most AI analysts rely on static or disconnected data. Genie felt different from my first chat with @zigapoto. It connects live data (100+ integrations), builds dashboards & explains why metrics move, not just what changed. Show them some love ❤️",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/designrushmag/status/1981390081383682526",
+          "text": "The #1 reason agencies fail? They chase everything and focus on nothing. According to Databox (@databoxHQ) CEO Pete Caputa, the agencies that scale predictably are the ones that: ✅ Pick a niche ✅ Build systems ✅ Turn data into discipline In this episode of the DesignRush Podcast, Pete breaks down what really separates growing agencies from those stuck in chaos. 🎧 Watch on YouTube or listen on Spotify & Apple Podcasts. Link below.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Bizapalooza/status/1944823992759554350",
+          "text": "Did you know? 💡 50% of the social media managers surveyed by Databox prefer to schedule content at least a month in advance. Source: @databoxHQ #socialmedia #digitalmarketing #contentmarketing #productivity #smallbusiness #contentcalendar #BizapaloozaChat https://t.co/H8RWkGcaOG",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/vovafeldman/status/1912577593582448875",
+          "text": "Brilliant content marketing strategy by @databoxHQ 🧠 creating content with your audience for your audience 🤔 reminds me @digitalocean technical tutorials program. #UGC #Marketing",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/TycoonStoryCo/status/1893880862187442274",
+          "text": "🚀 Unlock #StrategiesForEntrepreneurs and boost your growth with key metrics, advanced analytics &amp; customer insights. Stay ahead of the curve! 🔥 Read more: https://t.co/VMSLKE2hWm #DataDriven #BusinessGrowth #Entrepreneurship @databoxHQ https://t.co/dluVDjM44A",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/bubble_hack/status/1872561058445132188",
+          "text": "Hey @fede_bubble - what would my best approach to connect the @bubble database to @databoxHQ ? Seems like there is some interest from the Databox side for a native integration but it's not clear if Bubble is interested (LI post below).",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/bubble_hack/status/1869413965023068592",
+          "text": "Has anyone explored @databoxHQ as an approach to building dashboards - either with your @bubble app or other #NoCode platform?",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -9458,6 +10173,165 @@
       ]
     },
     {
+      "tool": "folk",
+      "slug": "folk",
+      "x_handle": "@FolkHQ",
+      "tweets_returned": 20,
+      "useful_count": 17,
+      "bad_count": 3,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/pollock/status/2008263927038169401 | https://x.com/hobdaydesign/status/1905286365639569769 | https://x.com/dylsphillips/status/1877440346445197689",
+      "notes": "hard_reject_non_english:3",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/dylsphillips/status/2011800040679907396",
+          "text": "Congrats on the launch, @FolkHQ! https://t.co/RxdKVyb3k2",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/thestartpod/status/2011800003384062103",
+          "text": "Congrats on the launch @LemhandezSimo &amp; team @FolkHQ! 🚨 Live on @ProductHunt 👇 https://t.co/dANIgrkzZN https://t.co/zrS4ro257h",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/pollock/status/2008263927038169401",
+          "text": "short list of top VC CRMs @affinity__crm - Leading relationship intelligence CRM for dealmakers in VC/PE @FolkHQ - Modern, flexible CRM tailored for VC deal flow and network activation @harmonic_ai - AI-powered startup discovery and comprehensive company database @dealroomco - Global intelligence platform for startups, ecosystems, and VC analytics @NFX Signal - Network intelligence and fundraising CRM tool @Foundersuite - Dedicated investor CRM for pipeline management and outreach @boardyai - AI-powered investor matching and sourcing @brdgapp - Investor relationship and deal management platform @ctd_ai - Relationship mapping and insights tool @AngelList - Early-stage platform for investor discovery and syndicates",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/toplistly/status/2007436520861409744",
+          "text": "Today's product launch is @folkhq - Real relationships. Winning deals. Check it out 👇 https://t.co/p5tjo1RgLs",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/pocketone/status/2000672452838326384",
+          "text": "Spent the whole day not coding. Instead: • Researching German nonprofits • Testing @clay vs. @LinkedIn Sales Navigator • Cleaning and structuring data in @FolkHQ CRM • Designing a as-legal-as-possible cold email process 😅 Goal: Find a scalable way to go from 5 to 50–100 nonprofit orgs. Current hypothesis: 🎯 Focus on nonprofits with 11–50 employees → Big enough to have budget → Small enough for reasonable sales cycles Less “growth hacks,” more boring, repeatable systems.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/franco_pinto_/status/1988955348661858755",
+          "text": "Tremenda la velocidad de este equipo para shipear integraciones. @FolkHQ 🔥",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/hobdaydesign/status/1945435723919700353",
+          "text": "They removed the tiny hands from the @FolkHQ website. I posted about this back in March. Clearly I have a lot of influence in the website design world, and I need to wield this power responsibly. https://t.co/zGDq5XE7Yj",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/paultseluyko/status/1925982659294986455",
+          "text": "Friday website inspo - Clean, modern, engaging, very focused on conversion, product websites! Check them out: @GetActively @amplemarket @clay_gtm @FolkHQ @VentriloAI @superscale_ai @shortcut @simstudioai https://t.co/46ieh2Yfti",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/hobdaydesign/status/1924757897659003242",
+          "text": "I already liked the @FolkHQ website, but hadn't looked at the app interface. I think this might be one of my favourite app interfaces for visual design. Partly because it matches my personal preferences, but also because they committed to something extreme and it works. https://t.co/0gc3rFn51r",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/dariorjeili/status/1915009974566035820",
+          "text": "Every time @FolkHQ updates their desktop app, it just stops working. Literally every month. Still happy to be a customer tho",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/hobdaydesign/status/1905286365639569769",
+          "text": "I like it when websites use bright/approachable colours, noticeable black outlines, and orderly layout. Here are some examples. First up, @FolkHQ. https://t.co/GtcQOuTz5S",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/hobdaydesign/status/1904857182933229913",
+          "text": "The @FolkHQ website is excellent, except these hands feel too small. I assume that's supposed to be a laptop screen? 9/10 due to unusually small hands. https://t.co/Dte3LlffZm",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/h1gallery/status/1896957802817732620",
+          "text": "- @FolkHQ https://t.co/DeUrnFwrmr",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/dylsphillips/status/1877440346445197689",
+          "text": "AI Follow-ups by @FolkHQ: \"Get suggested the best leads to follow-up\" 🌐 https://t.co/xl4cVAGim8",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/thestartpod/status/1877439668842623056",
+          "text": "Congrats on the launch @LemhandezSimo &amp; team @FolkHQ! 🚨 Live on @ProductHunt 👇 https://t.co/AdAY5BD79w https://t.co/590qacH8bc",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mobbin/status/1876939414779383899",
+          "text": "New web apps on Mobbin this week. Featuring @Airbnb, @trycampsite, @FolkHQ and 1 more. Check them out on https://t.co/SrJ6RfYMvQ https://t.co/rURjeBmtAm",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/StartupSavant/status/1866618901989298340",
+          "text": "Top CRM Startups to Follow: https://t.co/c33nij482i #customerrelationshipmanagement #tech #entrepreneur #innovation @clickup @devrev @CopperInc @usepylon @dexprm @fullstory @CommonRoomHQ @FolkHQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/iamkylebalmer/status/1839313606036586545",
+          "text": "Nearly done with new sales flow for AI workshop kit The stack @HeyFormHQ to @zapier to @FolkHQ Very lightweight. Loving it so far",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/alex_borto/status/1837120989848600738",
+          "text": "Merci à @leroynicolasfr pour son aide afin d'extraire les compte qui on aimé une publication LinkedIn. Avec @make_hq, ils arrivent directement dans notre CRM @FolkHQ.✌️ Si vous avez besoin d'automatiser votre business, faites appel à lui. 😎 https://t.co/3dXyxROBxa https://t.co/cpuZWCkH63",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/romaindewolff/status/1836879183814734190",
+          "text": "I cannot wait that AI can merge 2-3 of my tools into one. me: Can you combine @FolkHQ @SalesmateIO and @close featuure A-B-C into one please? gpt5: Yes sir,.... done ✅",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Framer",
       "slug": "framer",
       "x_handle": "@framer",
@@ -9920,6 +10794,140 @@
         {
           "url": "https://x.com/heathergreen/status/2049145130393731160",
           "text": "#promptshare with Recraft V4 using @freepik @magnific PROMPT: fun, hand-painted design featuring playful, beachy typography displaying the words 'BEACH PLEASE', bold brush-painted letterforms with organic edges and subtle paint streaks, perfectly centered composition on a clean solid pastel background, harmonious sun-washed color palette with gentle complementary contrasts, seashells, starfish, waves and palm fronds subtly surrounding and framing the text, soft drop shadows for depth, subtle vintage paper texture with light grain and speckling, evenly lit, crisp high-resolution illustration",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Fundraisly",
+      "slug": "fundraisly",
+      "x_handle": "@Fundraisely",
+      "tweets_returned": 17,
+      "useful_count": 16,
+      "bad_count": 1,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/superteamIE/status/1983101949319970997 | https://x.com/irishnftgal/status/2049800743591231980 | https://x.com/buddiesforpaws/status/2048774724650680349",
+      "notes": "hard_reject_crypto_noise:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/buddiesforpaws/status/2054963882536644642",
+          "text": "What a night ❤️ Our Pub Quiz in Dublin brought together builders, friends, and the community for a fun evening while supporting a great cause. Together, we raised almost $340 for our charity partners 🐾 Huge thanks to @SuperteamIE and @Fundraisely for making this possible and everyone who joined, donated, played, and supported the event. Where should we host the next quiz? 👀",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/superteamIE/status/2050250978880811014",
+          "text": "Lend a helping hand to furry frens tonight in aid of a good cause for @buddiesforpaws run by @Fundraisely. See you tonight, Pub Quiz 7pm in The Green Room Bar, Dublin. Chance to win from a range of prizes. All donations matched by @bonk_inu https://t.co/kstGzDBLfs",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/buddiesforpaws/status/2050178084427759945",
+          "text": "Tonight👇 If you’re in Dublin, don’t miss our Pub Quiz Night! Come hang out, have fun, and test your knowledge. Shoutout to @superteamIE , @Fundraisely and @ProfTAcademy for making this possible. 💛 All donations will be matched by @bonk_inu Sign up below ↓ https://t.co/5hG7zdcZwb",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/irishnftgal/status/2049800743591231980",
+          "text": "Our Superteam mascot 🐾 Join us tomorrow for a pub quiz with @Fundraisely and @buddiesforpaws It’s Dog-friendly! https://t.co/fVZFfiz1pb",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/buddiesforpaws/status/2048774724650680349",
+          "text": "BFP is coming to Dublin 🇮🇪 Join us on Friday, 1 May for a Charity Pub Quiz Night! A night full of fun, prizes & surprises, all for a great cause supporting animal welfare & wildlife conservation 🍀 In collaboration with @Fundraisely and @superteamIE All donations will be matched by @bonk_inu 🧡 Sign up below ↓",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/superteamIE/status/2048766060191445480",
+          "text": "PUB QUIZ with @Fundraisely and @buddiesforpaws. Support animal welfare and wildlife conservation. Location: The Green Room Bar, Dublin Date: Friday 1 May, 7:00pm @bonk_inu is matching donations. Register below.🐕‍🦺",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/superteamIE/status/2047306712839750016",
+          "text": "Superteam RTGs is now Live. 5 opportunities available: Private Entity Eosystem Connection The Internet We Actually Wanted Accelerate Retroactive Contributions Irish teams actively building on @Arcium: @stealf_finance @craftsdev @anon0mesh @Protocol01_ @Fundraisely",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ProfTAcademy/status/2046924226469220794",
+          "text": "It’s live. off Devnet and onto Solana Mainnet @Fundraisely",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ProfTAcademy/status/2045472913609183383",
+          "text": "I’m going to run a small live event next week to test @Fundraisely properly. Nothing big. Just real people, real payouts, real flow. Are you interested?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ProfTAcademy/status/2044014050455982491",
+          "text": "So I asked a simple question: What if people didn’t have to donate at all? @Fundraisely",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/YellowFishZ/status/1994362624176198022",
+          "text": "The Superteam with most entries on @craftsdev is @superteamIE 🇨🇮 Congratulations to all winners, and kudos to everyone who joined! As promised, some juicy merch for the winning Superteam #1 - @campfireinvest 58 votes #2 - @TrinityPrivacy 47 votes #2 - @Fundraisely 47 votes",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/_Paolo_Dc/status/1988715449828171889",
+          "text": "I just found @fundraisely on https://t.co/g6kUcx44LH",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/superteamIE/status/1988234739631714351",
+          "text": "What's next after @solana's biggest hackathon; @colosseum Cypherpunk 🎥 ⬇️ Featuring: ☘️ @Fundraisely ☘️ @StakerDotFun ☘️ @chatpaydotone ⤵️ Hear it from the teams themselves! https://t.co/y1oTWDMBym",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/RominHitman/status/1987667330336186745",
+          "text": "I just found @fundraisely on https://t.co/0vahu4R8mo",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/superteamIE/status/1983101949319970997",
+          "text": "BuildStation Dublin - Community Interviews ☘️ Meet the teams building for @colosseum Cypherpunk Hackathon 👇 🔥 @Fundraisely 🔥 @chatpaydotone 🔥 @StakerDotFun Each project brings a unique perspective on how @solana's infrastructure is powering innovation 🚀 https://t.co/rEJ9rgfBI5",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ProfTAcademy/status/1958504376508514440",
+          "text": "Amazing night at the Investors Dinner 🌐 @Fundraisely is building the future of fundraising: transparent, fun &amp; powered by blockchain 🚀 Grateful to be in the room with the builders &amp; investors shaping Web3. https://t.co/bqwFNMRCSe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ProfTAcademy/status/1957843201173123285",
+          "text": "Proud moment 🙌 — @FundRaisely has just been featured in @Blockleaders! Building fundraising that’s transparent, fun &amp; frictionless for grassroots communities. Check it out 👉 https://t.co/RvyJs8MMG5 #StartupLife #Fundraising #Web3Impact",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -14193,6 +15201,138 @@
       ]
     },
     {
+      "tool": "Integuru",
+      "slug": "integuru",
+      "x_handle": "@InteguruAI",
+      "tweets_returned": 17,
+      "useful_count": 17,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/richardfzhang/status/2059277782048502093 | https://x.com/amapel/status/1865048005604151461 | https://x.com/richardfzhang/status/1870214712937590868",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/atulajoy/status/2059611452671971673",
+          "text": "Richard is incredible and the level of detail that's gone into building @InteguruAI is insane. If AI is accelerating your integrations problem, as I think it is for everyone, go check them out!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/2059277782048502093",
+          "text": "Agents should have access to every system. Introducing Integuru: generate fast, reliable APIs for any platform⚡️ API calls complete in ~3 seconds with 99.9%+ success. No browsers or RPA. No data caching needed. With auth support. @InteguruAI is free to use. Thread below.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/2051322964029653421",
+          "text": ".@InteguruAI has solved EHR integrations. Gatekeeping, FHIR gaps, and HL7 one-offs have caused enough damage. Healthcare companies can now integrate with any EHR. With reliability, low latency, and high throughput. No more filtering hospitals and clinics by their systems. Serve any provider, regardless of the EHR they use.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1999516602945908864",
+          "text": "It's the holiday season, and we're approaching 2 years of building @InteguruAI. I reflected on this journey and hope these lessons are useful to others. 1. Momentum compounds with time and effort. @ycombinator partners told our batch that companies see a significant increase in the likelihood of success after making it past 2 years. As we approach that milestone, I’m starting to see our hard work pay off (though we still have much work to do!). Startup momentum occurs when you stay alive and continue to engage with customers. Every line of code and every minute with customers adds to your expertise and reputation. Don't die and keep moving. 2. Startups are built by doing, not by thinking. Startup progress favors doers far more than thinkers. This may be why nerds often have a better time building startups on average. People may assume that startups are planned from whiteboarding sessions. In reality, many important insights are gathered during execution. We listen to customers and push our engineering. Along the way, we gain knowledge we wouldn't have gained without real work. For founders who're just starting or pivoting, I recommend committing real time and energy into one direction and diving deep. 3. Your cofounder relationship should be a top priority. Some say cofounder relationships are like a marriage. I wouldn't know whether this is true because I haven't married. But I can attest that a great cofounder relationship makes the startup a shared passion, while I've seen poor ones turn the experience into hell. Seek uncomfortable and radically honest communication. Hold each other's best interests at heart. Nurture this relationship, and it'll propel your startup to new heights. 4. FOMO isn't going to help anyone. Great artists steal, but it doesn't mean they steal everything. Others' decisions and actions shouldn't be driving forces for your own. Pay less attention to TechCrunch articles and more to customers. This takes discipline, but true insights root from focus and deep trust in the right process. 5. Remember that building startups is a privilege. Building a startup is hard, but our lives could be much worse. Remembering that we're privileged to pursue our visions for the world puts our challenges in context. I try to remind myself and my team to cherish the good and the bad. Since we're dedicating years of our lives to something, let's enjoy and feel grateful that we're in a position to do so.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1990815936002019497",
+          "text": "We now process millions of API calls per month at @InteguruAI. 99.9%+ success rate. 3-second average latency. Here's what we're powering for some new customers:",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1951289316556034441",
+          "text": "Our team at @InteguruAI has quietly achieved a major breakthrough with our newest AI agent 👀 It’s a big leap toward unifying the web and empowering agents to programmatically interact with any platform. Private beta invites rolling out now — comment for early access!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1932440771648774315",
+          "text": "Customer usage is consistently growing at @InteguruAI. Every customer has a Slack channel with us or texts me personally, and we've been getting some great messages lately 😁 Our customers' success is the ultimate reward. https://t.co/sEujPSLx2e",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1901998638366437442",
+          "text": "If you have an \"implementation team\", I'm talking to you. @InteguruAI helps enterprises migrate customer data from previous vendors. Lower switching costs ➡️ More deals closed. Imagine automatically switching a company over. Yes, it's possible. DM for details.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1884705875992207525",
+          "text": "Integuru reached 4k Github stars ⭐️ People are using @InteguruAI for healthcare, logistics, fintech, hospitality, AI, and even universal API products. We'll keep working toward platform interoperability! https://t.co/aDHla8dre6",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1881423547568198106",
+          "text": "How to Launch Your Product on Hacker News 👇 🤔 What's Hacker News? Hacker News, by @ycombinator, is where the world's top developers share, discuss, and showcase ideas. At @InteguruAI, we've done a few HN launches leading to paying customers and great feedback. The community is full of early adopters, so a good launch means getting them to try your product or features. 👥 Who to write for? Like in any writing, knowing your audience is important. The HN community is mostly technical, but don't assume specialized knowledge in your domain. You can write in technical language, but explain details others may not know. 📰 What's a good title? Titles matter — a good title boosts clicks. Use \"Show HN: ...\" to signal you're showcasing something. Be succinct and direct. Show your value and uniqueness outright. For example, we titled one of our launches \"Show HN: Venmo Unofficial API\" for an integration that we built. Readers understood our offering right away. ✍️ What \"vibe\" should I go for in the main post? Hacker News isn't for constant product shilling. People are there to be entertained and learn new intellectual things. While sharing your product is important, tell how you arrived at the idea and the challenges you faced. Let your human stories shine! 🔢 What's a good structure? We don't recommend trying to game the system (you really can't). But if you're looking for a specific structure to inspire the writing process, we've found the following to help based on our experience: 1: Quickly explain your product and the problem it solves. Add a demo video. 2/3 (interchangeable): Storytelling about your journey. 2/3 (interchangeable): Real-life examples of you or others using the product. 4. Briefly mention future plans and invite the community to try the product. 🤯 Any counter-intuitive tips? While you may want to say you built the world's greatest product, being honest about current limitations is quite powerful. The HN community is full of people familiar with building from 0 to 1. They respect your attempt if you're upfront about the areas to improve. 🥵 Am I worrying too much about something? Don't stress about the post being long! When we started, we often feared we had too many words. If your post is engaging, people will finish it. However, every word, sentence, and paragraph should have real justifications for its existence. 🗣️ How to engage with comments? On launch day, expect to be at your keyboard for a handful of hours, especially if your post does well and remains on the front page for a while. Reply to comments quickly, often, and positively. HN users are good critical thinkers, so they'll post challenges. These allow you to better understand user needs. Lastly, remember to keep iterating regardless of the launch outcome, and enjoy this process!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1879198792018457077",
+          "text": "OpenAI o1 supercharged @InteguruAI 🚀 Our open-source integration agent now supports more platforms than ever. In the spirit of ski season, watch how Integuru builds an eBay unofficial API to add a pair of skis to your cart ⛷️❄️",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1874895257110032554",
+          "text": "We’re flattered to have copycats. Our sole focus is serving our users and being the best at it. May the copying war of @InteguruAI begin. Enjoy the show.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1870214712937590868",
+          "text": "OpenAI released the o1 API this week, and we got right to work 🧑‍🏭 @InteguruAI uses AI to integrate platforms without official APIs. We compared o1 and 4o specifically for the integration use case. Check out the results in the thread below. (and yes, we can't wait for o3)",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1869099186093985863",
+          "text": "Going to test @InteguruAI's integration agent with o1. Will report back our findings 👀",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/richardfzhang/status/1867635007751434657",
+          "text": "Today we’re excited to announce the Integration Affiliate Program🤝 @InteguruAI helps companies integrate platforms without official APIs. Many people asked to be an affiliate since our launch, and we listened! We’re sharing lifetime revenue for referrals. This is valid for any of our integrations — new and existing. If you’re interested, head to our website!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/openintdev/status/1865100751690686744",
+          "text": "🔥 @ycombinator Companies @openintdev (W23), @skyvernai (S23), @integuruai (W24), @cloudcruise_app (W24) have joined forces to scale Product Integrations with AI &amp; Open Source. https://t.co/wxZtT4UieY",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/amapel/status/1865048005604151461",
+          "text": "MEGA Launch Week 2024 -> Day 5 🤯 @launchweekdev Day 5, Introducing @openintdev Orchestrate and the OpenInt Partners Program. We’re thrilled to launch OpenInt Orchestrate and the OpenInt Partners Program with @ycombinator companies @InteguruAI, @skyvernai , and @cloudcruise_app.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Intercom Fin",
       "slug": "intercom-fin",
       "x_handle": "@intercom",
@@ -15465,6 +16605,159 @@
           "reasons": [
             "hard_reject_non_english"
           ]
+        }
+      ]
+    },
+    {
+      "tool": "Knock Agent for Slack",
+      "slug": "knock-agent-for-slack",
+      "x_handle": "@knocklabs",
+      "tweets_returned": 20,
+      "useful_count": 20,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/whatyouhide/status/2034265685845524698 | https://x.com/stephenmruiz/status/2064002667274178598 | https://x.com/cjbell_/status/2028580574336553024",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/WorkOS/status/2064052616959783092",
+          "text": "GTM engineers are building what marketing vendors won't. Jack Parales from WorkOS speaks at the Marketing Engineering Meetup tomorrow in NYC with @tryprofound, @tryramp, @cursor_ai, and @knocklabs. Register here: https://t.co/WKJHyQhjpV https://t.co/XhkuiQzNam",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/stephenmruiz/status/2064002667274178598",
+          "text": "Tomorrow Night ft @cursor_ai @knocklabs @tryprofound @tryramp @vercel @workos https://t.co/aqq5jEexWx",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/joe_reitz/status/2062243405015744960",
+          "text": "Excited for this next week. Big thanks to @knocklabs for organizing! I'm going to share a bit about how our agent, mOperator, has helped us save over 200 hours across 8 weeks and is setting us up to automate &amp; decentralize most campaign operations work. https://t.co/Uk3HmF3ry8 https://t.co/yETh6PmS1P",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/WorkOS/status/2061840262943633693",
+          "text": "AI is changing how GTM teams build. June 9 in NYC, we're hosting a Marketing Engineer Meetup with @knocklabs. Come join speakers from @tryprofound, @tryramp, @clay_gtm, WorkOS and @cursor_ai. Spots are limited. https://t.co/WKJHyQhjpV",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/cjbell_/status/2061830099222102268",
+          "text": "You can now launch a @knocklabs agent directly from Slack. Build, ship, and ask questions about your customer messaging, right from where you and your team work. https://t.co/7GoDZraCsA",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/scottjstrand/status/2061794488478052432",
+          "text": "This launch is a cool one. For a few weeks now, I've been messaging @knocklabs from @SlackHQ to build our newsletter, update our onboarding, draft in-app messages, and more. We're live on Product Hunt today -&gt; please upvote and then try it today: https://t.co/IVt3uqVqke",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mikecarbone/status/2057881220021735592",
+          "text": "The @knocklabs event ingestion engine is already the most powerful on the market. Today it gets even better. We're shipping a pre-built Shopify data source. Connect events from your Shopify store and use them to trigger order confirmations, shipping updates, refund receipts and more.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/leggetter/status/2056367031453110525",
+          "text": "Knock uses Knock to message customers about hitting their Knock usage limits 🤯 Episode 1 of Webhooks by Example, with @J_Everhart383 from @knocklabs. The whole loop: @useOrb webhook, enrichment, 12-scenario message matrix, @postmarkapp. https://t.co/Jos5rgf8nE",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mikecarbone/status/2052572865841496187",
+          "text": "Must be a tough day at Cloudflare, sorry friends. If you or someone you know was affected, we (@knocklabs) are hiring for a few roles Remote first, office in NYC, world-class team solving hard problems Please reach out if you have an intro! https://t.co/IOV6IjfDe9",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2050237141033034078",
+          "text": "Most @supabase messaging integrations stop at the auth table. With @knocklabs data sources you can trigger messaging from any table event: auth, posts, subscriptions, whatever. No serverless functions. Just webhooks → action mappings. Check it out: https://t.co/IFtJqDCzdh https://t.co/oFOc9C6DGX",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2049184543018569902",
+          "text": "Using @clerk with @knocklabs data sources gets you a b2b saas notification system w/o any custom code: - sync Clerk events to Knock w/ webhooks - create a welcome workflow w/ Knock agent - embed preferences menu in &lt;UserProfile&gt; - drop Slack integration in &lt;OrganizationProfile&gt; https://t.co/MFIji7tDyw",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2044422846676439406",
+          "text": "In-app messaging with @knocklabs guides just got a whole lot more powerful. Now everyone on your team can preview, test, and debug in-app messages directly inside your product using the guides toolbar. 👇 Check it out here or read the changelog https://t.co/ITt46tVIeN",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/davydog187/status/2037256034893414457",
+          "text": "I got an early preview of this feature, the finished product is absolutely stunning. Well done @knocklabs 👏",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2037248540385436085",
+          "text": "With the @knocklabs agent, an hour of email schlep just became 5 minutes. Here's the last prompt I sent to update multiples templates across a billing sequence with 12 different possible email variants: \"I'd like your help in updating all of the templates for this workflow. I want to filter out an item in current_usage before we loop through it and display a usage_summary partial. If the current_usage_name property matches AI credits, I'd like for that to be excluded from what gets rendered in the email for now.\" Then I visually QAd all the combos on actual email clients, committed the changes, and promoted to prod. 🤌",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/whatyouhide/status/2034265685845524698",
+          "text": "Just published a blog post about how we (@knocklabs) use @ClickHouseDB to periodically dump info about our most resource-intensive BEAM processes. Already 100s of millions of rows, sub-10ms queries. https://t.co/gwAA4WvlUq",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/cjbell_/status/2033920452335165511",
+          "text": "Going to be showing off our new agent harness we've built at @knocklabs . Built on a virtual filesystem and powered by a bash interpreter written in Elixir. Elixir folks in NYC, come through!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/davydog187/status/2033913294117859448",
+          "text": "The NYC Elixir meetup is THIS THURSDAY! Fork em if you got em, @ivarvong is going to share his @elixirlang implementation of @vercel JustBash with @cjbell_ sharing how they use it at @knocklabs #myelixirstatus",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2032090745096581434",
+          "text": "Today we’re releasing Knock email API benchmarks. A realtime leaderboard of email provider response times, error rates, &amp; growth, all powered by billions of data points we collect @knocklabs. Check it out at https://t.co/oEN5r382n4 https://t.co/NgC8OeLHem",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/cjbell_/status/2028580574336553024",
+          "text": "We've been building a new agent mode at @knocklabs on top of the elixir just bash port. @cramforce cooked with just bash. Not all agents need a full sandbox, but most agents will benefit from operating on a filesystem with bash. Now if you're in Elixir, you can just bash.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/J_Everhart383/status/2027056150697427380",
+          "text": "For most growth teams, email is the highest-ROI channel they have...but one of the slowest to iterate and improve. We took what we’ve learned from working with top teams using @knocklabs to drive growth with email and distilled it into a post about what modern email design systems look like in practice: - How design tokens and component architecture eliminate one-off template requests. - How to structure ownership so non-engineers can ship without filing a ticket. - A practical roadmap for getting there without rebuilding everything at once. Read the full post here: https://t.co/kvLtDPGSLH",
+          "useful": true,
+          "spam": false,
+          "reasons": []
         }
       ]
     },
@@ -20229,6 +21522,159 @@
       ]
     },
     {
+      "tool": "Octolane",
+      "slug": "octolane",
+      "x_handle": "@octolane",
+      "tweets_returned": 20,
+      "useful_count": 20,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/coffeewithone/status/2060063653148381336 | https://x.com/yashsehgaldev/status/2059707103133208758",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/halim__rafi/status/2064396421823181207",
+          "text": "before: 20 minutes before every call. open the calendar. find the deal. scroll the thread. dig up last meeting's notes. after: one Prep click. @vitorviesi designed the flows ✨. we wired them into everything @octolane already knows",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2062965977604915506",
+          "text": "fastest way to use @octolane is just talking to it. it's incredible seeing unbelievable uses cases customers use Octolane for: A customer asked Octolane to audit their existing CRM and clean up the pipeline. It flagged stale deals, duplicate contacts, opportunities sitting in the wrong stage and then fixed them. Then he generated a full pipeline report by pulling from 4 different data sources at once: deals, email activity, meeting notes, and enrichment data stitched into one narrative. zero csv back and forth. Then he started generating meeting prep in bulk with every call on the calendar that month. Dream scenario that we keep perfecting day after day is that I'll just describe the outcome and it will take care of the rest, and it's working. The best CRM is no CRM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2062595900309201113",
+          "text": "A Salesforce customer just signed to switch to @octolane this morning. They just connected their Salesforce to Octolane, and Octolane did the rest: 1. Found where revenue was leaking 2. Identified 300+ missed follow-ups and drafted every single one 3. Built all the automations they needed 4. Enriched their entire dataset 5. Created a sales brain inside Octolane Now I have 5 more sales call to go today, and the research is already done by Octolane. Attached photo: new customer case study dropping soon!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2062249821302644972",
+          "text": "Here' me talking to our ai crm @octolane to generate report, find icp and then draft emails in your voice at scale. Hours of work, done in 5m! https://t.co/4Dje0P3aRL",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2060846473257058687",
+          "text": "Café Réveille should be renamed Café Revenue. I'm not joking. The amount of revenue I've closed and code I've shipped from this place for @octolane is unmatched from any other coffee shops I worked from. My Saturday at Café Revenue today: 1. Adding 2 new customer case studies to our site, both migrated from traditional CRMs to Octolane 2. PLG conversion rate keeps climbing (so happy), gonna push it a bit further today With same hot americano ☕️",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2060492699632087475",
+          "text": "Got quoted in the sf standard. this is not satire. this is just another friday night in SF. @bryan_johnson won. the cocktail is dead. And my gen z friends won't: – drink – smoke – eat after 6pm – open salesforce building @octolane for the last one https://t.co/NwO4HjZpsk",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2060488830608928878",
+          "text": "I work way more hours now thanks to Claude Code and Codex. Like last night, I was doing a complex sentiment analysis AI skill creation for @octolane where AI CRM will analyze every customer touchpoint and suggest me deal state automatically to focus on what deals I should prioritize. Coding itself took less than 30m. But fixing every single edge case and deciding how to surface it to users took almost all night. The bottleneck moved and now it's me. I remember that writing code used to be the expensive part. AI definitely killed that cost. What's left is the part that was always hard but hidden behind keyboards: \"Taste\" What breaks at the edges and what users feel when they see it. AI did compress execution but It didn't compress thinking for us. So the future is not gonna be fewer hours. It's gonna be denser ones. Engineers and founders become decision compressors, more calls per day, where each one mattering more, none of them automatable. So the edge in 2026 isn't gonna be how fast you ship, It's gonna be \"Judgment at speed\" 1. are you shipping the right thing, for the right users, at the right time? 2. doesn't matter if it's 2pm or 2am, can you make decisions fast and make them well?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2060161976349900917",
+          "text": "Watched a customer spend 6 hrs straight in @octolane today. Years of building AI CRM taught us one thing worth saving: 1. There's a specific number that unlocks activation 2. There's a specific feature set + specific numbers that unlocks retention When you find both of them, there's no going back. But how did we find ours? 🚀 Activation: Look at every user who converted to paid. What's that one behavior they all did in week 1 that churned users didn't? That's gonna be your activation event. Now your job to find the smallest number of repetitions that predicts conversion. 🔄 Retention: Research your month 2 retained users. What combination of features did they use in weeks 2 to 4 that churned users skipped? That's your retention game will surface. Sounds obvious but I promise you It's not gonna be when you're in it. We cracked activation first. Then retention. Both took painful iteration, shipping, breaking, rebuilding, shipping again. It was an excruciating process for us where we were not sure if we're getting closer or just running in circles. Until suddenly you are, and you can't unsee it. Teams are now migrating from HubSpot, Pipedrive, and Attio to Octolane. We did zero outbound and all word of mouth. Because the agent-first economy lets us solve the edges incumbents can't. Founders, what number unlocked activation for you?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2060063653148381336",
+          "text": "I just talked to my CRM. That's it. Said \"create a deal\" on a call. @octolane AI CRM did the rest, picked the right stage, added the primary contact, pulled in the extra stakeholder, swept in a year of history, ran the calcs, and built out full activity signals + enriched data The CRM that fills itself out 🚗",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2059811798380110273",
+          "text": "I just asked @octolane: \"Find the last 11 signups and write onboarding emails.\" 60 sec later, I had all 11 email draft, personalized and in my voice! what happened under the hood: 1. Octolane pulled every new signup automatically. 2. Looked up each company. Matched the industry to tailor the messaging. 3. Then wrote each email the way I actually write 4. CRM updated in the process. This would normally take me 20+ minutes of tab-switching, copy-pasting, and rewriting. Instead I just ask Octolane and it did the work end to end. And based on the response rate it will automatically improve the email drafts for future responses. Just incredible!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/kathrynwu1/status/2059782940574581150",
+          "text": ". U need to try @octolane",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yashsehgaldev/status/2059707103133208758",
+          "text": "We have launched @octolane today. The last 2 months have been really exciting. The team is building new features every week to make the platform better, to make the common CRM using experience easier with AI and a lot of magic ✨ Grateful.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Chandrika633/status/2059673182236512420",
+          "text": "been a proud @octolane customer for a few months now and the speed at which this team ships while still obsessing over the details is inspirational. congrats @coffeewithone @halim__rafi and the rest of the team. this is just the beginning 🚀",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/tanayagrawal19/status/2059670959628685444",
+          "text": "if you sell, you need @octolane",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/halim__rafi/status/2059648885983985822",
+          "text": "1,000+ companies onboarded. Migrated customers from legacy CRMs. Built a database from scratch where each AI agent talks to each other. You just ask for what you need. like talking to a co-founder, and @octolane figures it out and does the work end to end. Proud to be building it with @coffeewithone and the fabulous team! Give it a shot today. Text me directly if you need a walkthrough and if you hit any issues, we're right here. Built in San Francisco 🌉 thanks to Y Combinator",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/morad/status/2059628723612074132",
+          "text": "Didn't make today's @ProductHunt Top list (yet 😅). Still having so much fun 😀 though - and credit where credit's due. Congrats to today's leading products 👏 @bluedot_ai, @zeroxyz, @wr, @KahanaHQ, @coworkerapp, @octolane, @CometChat https://t.co/cP6ewFBb7F",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2057911560451068392",
+          "text": "third coffee in. just staring at this table. Last touch. Next meeting. First email. Last email - Every column, automatically filled in, by itself thanks to @octolane - Self-driving AI CRM Most founders i talk to are still out here manually updating last contacted. typing notes after every meeting. dragging cards. That sounds more like homework. octolane reads gmail. reads calendar. bi-directional sync actually doing the work, we did a lot of work to get this right. Octolane also suggests the next move before i even think to ask. - prep for next call - draft a follow-up - suggest a next move - research the company one tap. all of it reading the account status and telling me what to actually do. even the live graphs at the bottom feel alive. 24,993 accounts. numbers breathing in real time. I felt bad writing this. somewhere a founder is manually updating \"last contacted\" right now.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2057508743932477878",
+          "text": "woke up and @octolane had written new ai memory blocks about how i work, without me asking. - how i sign off investor updates - when i offer my personal cell in support emails - how i respond to competitor questions on calls - the footer i append to every AI-drafted email - my writing tone when handling negative feedback i taught it none of this. it watched me work and figured it out. the CRM you have to feed every day is dead. self-driving is the only thing that makes sense.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2057150582608351515",
+          "text": "@octolane found every deal stuck in Conversation 14+ days and wrote check-ins to each champion. in my voice. with context. from memory of every past thread. with self-driving AI CRM you stop chasing your own pipeline. it chases itself. https://t.co/PtXE7YLbn9",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/coffeewithone/status/2054709602630193566",
+          "text": "Something happened in our @octolane AI CRM today that I want to share, because I don't think people realize what we've built yet. A new user signed up for Octolane. Within minutes, our own instance of Octolane: → Read the signup → Decided the question worth asking was \"is this a YC company?\" → Created that field itself → Wrote an ICP summary for the account → Did the same across all 1,205 records in our self-serve pipeline I did not create the \"is YC?\" column. I did not write a prompt. I did not tell it what our ICP was. Octolane read our sales conversations, figured out that YC batch mattered to us, and built the schema around it. Respan came back YES W24. Paradigm, YES W24. Korso, YES S26. Kapsule, NO - and a one-line summary of what they actually do. Every single value has a source. Every source has been verified by a second agent. This is what self-driving CRM means. Every other tool is still asking you to map fields. If you're a founder reading this, this is the bar now. If you're a VC reading this, ask your portfolio companies if their CRM is generating its own fields yet.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Ollama",
       "slug": "ollama",
       "x_handle": "@ollama",
@@ -21342,6 +22788,163 @@
       ]
     },
     {
+      "tool": "Openstatus Health",
+      "slug": "openstatus-health",
+      "x_handle": "@openstatusHQ",
+      "tweets_returned": 20,
+      "useful_count": 18,
+      "bad_count": 2,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/aliszu/status/1979610062529187894 | https://x.com/piotrkulpinski/status/2021551896377667598 | https://x.com/jordienr/status/2008157642099716553",
+      "notes": "hard_reject_non_english:2",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/mxkaske/status/2060325805536714867",
+          "text": "What actually worked for @openstatushq: an unfiltered look at our first full year, and the hard strategic lessons it took to get here. https://t.co/n5Q4nh5Cnn",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mxkaske/status/2055654895462592945",
+          "text": "every tool call in our @openstatushq ai assistant is a collapsible card: → status dot → one-line summary so you can skim → rich tab rendering a proper UI component, raw tab rendering params and result details the dashboard's own components, rendered inside the chat https://t.co/J2bM1Lejdq",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mxkaske/status/2051332272251396116",
+          "text": "working on the @openstatushq onboarding https://t.co/40TgFbSwjO",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/piotrkulpinski/status/2021551896377667598",
+          "text": "If you have a website and not using @OpenStatusHQ speed check you're missing out 🤯 I was able to improve the performance in some regions by up to 150x 🤯 They have an AI skill you can install to let agents check the performance in multiple regions at once. Link ⬇️ https://t.co/3vxmDAlJFD",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jordienr/status/2008157642099716553",
+          "text": "life pro tip use zenblog, it has 100% uptime, never breaks, always fast, snappy, reliable, simple, good, hosts ur images and videos, amazing customer support, i will never sell it, its like a child to me, everyone loves it follow me for more tips thanks @OpenStatusHQ for the status page",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/aliszu/status/2005991272360837171",
+          "text": "events for @OpenStatusHQ https://t.co/1DffAxk6jZ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/abhishekashwinc/status/2000477031176568844",
+          "text": "Editors' Choice Apps @urabindotcom. @sciraai @OpenStatusHQ @dodopayments https://t.co/I0E8gfI8BW",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/aliszu/status/1996647130992463902",
+          "text": "hover @OpenStatusHQ https://t.co/fLkV9qH7oh",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/mxkaske/status/1994396396766781686",
+          "text": "It’s wild how much the async work with @aliszu shapes the way we think about and perceive @openstatushq. It’s this blend of visuals, communication, and thoughtful questions. We didn't go for a perfect 1:1 representation - what matters is that it makes you think. Thanks, Alex!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mxkaske/status/1991887073079435672",
+          "text": "list of tools we've been shipping over time @openstatushq https://t.co/D4MMuI6LvM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/CarlLindesvard/status/1990827378621153774",
+          "text": "OpenPanel's api has been safe the entire day 🙏 Looking pretty green overall ✅ Thanks @OpenStatusHQ for giving me a sense of relaxation🧘 https://t.co/cd4bPVcpeR",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/nuqs47ng/status/1983287173328838853",
+          "text": "That slide didn't make the edit in my talk, so here they are: @mail0dotcom @OpenStatusHQ @upstash @unkeydev @trydatabuddy @middayai @getsentry @supabase @vercel @polar_sh @OpenPanelDev @_BearStudio @liveblocks @GitBookIO @calcom (and many more) Thanks y'all for using nuqs 🫶",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/twendykirn/status/1981085059810566546",
+          "text": "Now Unlingo has own status page!🚀 Currently it monitors only API health. Used @OpenStatusHQ, the setup was super quick and easy, awesome tool! https://t.co/1hbGhvMtoe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/xmok_/status/1980304936647950823",
+          "text": "an extremely overdue shoutout: based on the quoted post Andre reached out to me and in appreciation for the @neon @raycast extension was nice enough to send me swag PLUS credits for their platform :D thank you @andrelandgraf. your move @resend @OpenStatusHQ @autumnpricing 👀 https://t.co/z1W40nmFHM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/aliszu/status/1979644666523033613",
+          "text": "did I mention @OpenStatusHQ is on PH today? https://t.co/pHDCooxzrS",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/aliszu/status/1979625541994250384",
+          "text": "celebration of @OpenStatusHQ PH day in progress!! https://t.co/WSwkXgL3gh",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/aliszu/status/1979610062529187894",
+          "text": "monitors 💻 don't forget to support @OpenStatusHQ and @mxkaske on PH! https://t.co/kmyHGWz5Yd",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/twendykirn/status/1979580979049099759",
+          "text": "Small roadmap for Unlingo: 1. Finish v2 redesign and new sync algorithm 2. Move all analytics to @OpenPanelDev 3. Rewrite frontend with @tan_stack start and @bunjavascript and possibly host on @gokoyeb 4. Add status page with @OpenStatusHQ for better health visibility 5. Potentially move to @WorkOS for better B2B Excited to make localization faster and better for everyone!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ElTimuro/status/1977268015491350538",
+          "text": "Few understand. Thanks @OpenStatusHQ for the awesome swag 🧢 https://t.co/19ko3gH64o",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/tinybird/status/1966411501775798397",
+          "text": "Introducing the Tinybird Open Source Program 🪺 Follow OSS companies like @Ghost, @dubdotco, @localstack, @papermarkio, and @OpenStatusHQ in adding Tinybird-backed analytics into your OSS project. Get credits, swag, and support. Apply here 👉 https://t.co/i6qApobkZz Scroll for more ↓",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Option Alpha",
       "slug": "option-alpha",
       "x_handle": "@OptionAlpha",
@@ -21662,6 +23265,167 @@
           "reasons": [
             "hard_reject_non_english"
           ]
+        }
+      ]
+    },
+    {
+      "tool": "Paste App",
+      "slug": "paste-app",
+      "x_handle": "@paste_app",
+      "tweets_returned": 20,
+      "useful_count": 16,
+      "bad_count": 4,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/dharmeshba/status/1737812251133014385 | https://x.com/Christophepas/status/1770483364937580896 | https://x.com/MSiatrak/status/1754898394105962562",
+      "notes": "hard_reject_non_english:4",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/kenwuuuu/status/2061688343558062363",
+          "text": "have been using @paste_app since middle school and wanted to make my open source alternative. so i did. take it for a spin and lemme know what u think https://t.co/BD2OOW20zL",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/rottenapplebyte/status/1961809912746405982",
+          "text": "I've said this before in a video, but @paste_app is the only clipboard managing app for Mac that allows me to copy and store my silly FCP edits within their dashboard. it's been extremely convenient and useful when working on content. congrats on a decade! #paste10years https://t.co/pAjluVbGGQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/freeshiuan/status/1961383405150756921",
+          "text": "之前分享影片時，有人在留言提問： 「我是怎麼快速貼上會議記錄 prompt 的？」 答案就是 Paste Paste 真的是 AI 時代必備，我的幾十個常用 prompt， 都用 paste 管理。 而且手機(iOS) 也能同步使用，在不同裝置都能呼叫一致的 prompt ，跟 AI 互動，真的是生產力好物。 @paste_app #paste10years https://t.co/nkdK92zWTb",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/BoyC338/status/1960964885682016298",
+          "text": "paste好用。用了二年多。快速的 @paste_app",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/ahmedghanem/status/1936751149010534666",
+          "text": "The Mac version is not working properly and not syncing due to the error in the attached image @paste_app https://t.co/YC6RlDwVxX",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Evernote_Lab/status/1907374630891127115",
+          "text": "Evernoteのテンプレートからはノートが作られるが、将来は、1つのノート内に複数貼り付けられる要素のテンプレートができると良いと思っている。 私がMacで使っているクリップボード拡張アプリの「Paste (@paste_app)」には、コピーした内容をピンボードに固定(保存)できる機能がある。今はそれを",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/ispykenny/status/1899925336688910558",
+          "text": "I feel like people don't talk about @paste_app as much as they should be.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/PludaAlex/status/1860933617637073061",
+          "text": "What are the 3 micro/small apps that changed your flow? I'll start: ⚡️ Paste - @paste_app ✉️ Mimestream - @mimestream 🧞‍♂️ Raycast - @raycastapp What's yours?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/hunterknoche/status/1824189391679656306",
+          "text": "One of my favorite MUST-HAVE apps of the year: @paste_app Check it out. Also available on @Setapp #productivity #productivitytools #productivityhacks #buildinpublic https://t.co/5qowVIiNcv",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/noblinkyblinky/status/1804169456630804490",
+          "text": "I started using the @paste_app this year, at the recommendation of a coworker. I can't believe I haven't been using this all along! HUGE productivity game changer for me! Just being able to see clip board history means I can coy multiple things and paste them where I need them!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/bethmcclelland_/status/1796111966634729927",
+          "text": "I truly believe @paste_app is one of the best apps ever created.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jondkinney/status/1790507291738775743",
+          "text": "Y’all need this tool. Get it on @Setapp! I use it probably a dozen times a day. No 🧢. Couple it with @paste_app and thank me later!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Christophepas/status/1770483364937580896",
+          "text": "I shared my top tools to @toolfinderHQ and @FrancescoD_Ales! S/o to @Superhuman @tryamie @screenstudio @paste_app (and of course @SliteHQ 😘) https://t.co/JbfjPQPmlu",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/MSiatrak/status/1754898394105962562",
+          "text": "What's one tool you can't live without in your iOS development workflow? For me, it's @paste_app - great clipboard manager, and I have there my collection of handy snippets! Share yours and let's discover new gems together. #TechTipTuesday #iOSDev #indiehackers #buildinpublic 🛠️",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/beihuo/status/1752104334744256838",
+          "text": "试用了@s1ntone 开发的 @cleanclipapp，并且和 @pastebot 还有 @paste_app 做了一下比较。 他们都支持这类软件的一些基本操作，比如 Paste History，Paste Stack，还有信息的分组和筛选功能。但是 CleanClip 在 Paste Stack 上的功能设计十分有意思。 PasteApp 的 Paste Stack 的操作流程如下： - ⇧-⌘-C 启动 Paste Stack - ⌘-C 复制到 Paste Stack 并同时存储到 Paste History - ⌘-V 粘贴并从 Paste Stack 中删除 - 当 Paste Stack 为空的时候，自动退出 Paste Stack 而 CleanClip 的 Paste Stack 操作流程则是： - ⌘-‘ 启动 Paste Stack - ⌘-C 复制到 Paste Stack 并同时存储到 Paste History - ⌘-V 粘贴并从 Paste Stack 中标记为灰色 - 继续 ⌘-V 会从 Paste Stack 第一条开始重复以上操作 - 关闭 Paste Stack 之后再打开，仍旧保留上次操作的状态。 二者最大的不同是，PasteApp 提供了从 A 到 B 的批量数据转移，而 CleanClip 则是一个临时的数据存储和简单处理中心。在 CleanClip 的 Paste Stack 中，数据可以重新排序，可以转换大小写。我还可以暂停 Paste Stack，粘贴完毕之后继续重用之前的数据。这一点非常棒，因为我之前需要频繁填写大量表单的时候，极度依赖 PasteBot，但是它不能重用粘贴板数据，一旦粘贴错误就很麻烦。 我希望 Paste Stack 能增加/修改的功能： 1. 可以从 Paste History 中拖拽条目到 Paste Stack 2. 当 Paste Stack 中只有最后一条的时候，粘贴之后不会标记为灰色，猜测是一个 bug。 3. 当从 Paste History 中删除数据之后，Paste Stack 里面的条目会变成 0 bytes，猜测是一个 bug。 4. 当我操作 Paste History 的时候，我没有意料到也会影响到 Paste Stack。如果二者可以独立，可能会更好一些。 5. 可以重新设置 Paste Stack 当前的位置。 6. 支持使用 JavaScript 脚本处理数据。 总之 CleanClip 像是一个集合了 PasteApp 和 PasteBot 的瑞士军刀。推荐需要大量复制粘贴工作的用户使用。",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/dharmeshba/status/1737812251133014385",
+          "text": "If you are a Mac user who uses ChatGPT a lot, use @paste_app to save a long list of GPT prompts, which is handy. Loving the product. https://t.co/zp1bs6vVMQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Ana_Sky42/status/1721963324747706462",
+          "text": "Combining @paste_app active paste stack feature with new @midjourney #tune is gold to quickly paste and test the different styles 🤩 @juliewdesign_ if it helps 😉🌸 Thanks @Setapp for providing Paste 🙏 https://t.co/bcqd7dYfzX",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/AsadDhamani/status/1719969321454318068",
+          "text": "Devs, what are the best developer tools that you happily pay for? Mine are: - @jetbrains all access pass - @gittower git GUI - @paste_app clipboard manager - @KagiHQ customisable search engine - @GitHubCopilot AI code autocomplete - @medisclient redis GUI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/isaacmurasaki/status/1718062500086939964",
+          "text": "Useful Mac utilities to have: • @CleanShot • @paste_app • @macbartender • Dato @ https://t.co/tZplI5FAVG • Dropover @ https://t.co/W0bT7D9Z40 You can get them all (except for Dropover) on @Setapp. https://t.co/T4cfB0aoZK",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Prod_uct_/status/1717244251178700917",
+          "text": "value prop highlight: @paste_app Something often overlooked: beauty = function. Paste creates a beautiful experience around something as simple as copy and pasting, and that alone is what makes it so delightful and unique.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
         }
       ]
     },
@@ -25633,6 +27397,159 @@
       ]
     },
     {
+      "tool": "Rodeo by TwelveLabs",
+      "slug": "rodeo-by-twelvelabs",
+      "x_handle": "@twelve_labs",
+      "tweets_returned": 20,
+      "useful_count": 20,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/lillian_ma_/status/2063727543732130247 | https://x.com/nicoleegong/status/2062367743710511118 | https://x.com/gmi_cloud/status/2057584078413861245",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/lillian_ma_/status/2063727543732130247",
+          "text": "We hosted the coolest event yesterday at @CVPR 2026 with @ElorianAI @twelve_labs @NEA @NVIDIAAI See y’all at ICML! @Rxdha1 @thomastjoshi @nicoleegong @PikakeWin @gmi_cloud https://t.co/K7SfVTLSIb",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/nicoleegong/status/2062367743710511118",
+          "text": "heyyy just arrived in denver for @CVPR let’s meet up! i’m building @scale_at_gmi at @gmi_cloud, looking for early stage ai startups, researchers in multimodal, physical ai field! also hosting two events with @nvidia, @NEA, @twelve_labs, @ElorianAI, check them out at @gmi_cloud!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/theDeepView/status/2061423190799229387",
+          "text": "See how @Twelve_Labs just unveiled new tools to help fight AI slop by making it easier and faster for creators to produce and edit real video. This is an exclusive from The Deep View's Nat Rubio-Licht (@natrubio__). 🔗 https://t.co/HW14XDafGr",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/hrishikesh_ai/status/2058503710964142351",
+          "text": "Presented an Automated GDPR Compliance App Demo using @twelve_labs models for video redaction at the event hosted by @marieandmaxx Do check out the demo video here - https://t.co/kVgNhtb8Mb https://t.co/Kh12kFqEe8",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yinfeiy/status/2057927359727374808",
+          "text": "@ElorianAI is co-hosting a dinner event in CVPR to discuss the reasoning gap in visual AI, together with @gmi_cloud @NVIDIAAI, @NEA , and @twelve_labs . RSVP and join us ! Link: https://t.co/gGwo2v6vNe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/gmi_cloud/status/2057584078413861245",
+          "text": "Gonna talk about Visual AI in Denver with @NVIDIAAI , @ElorianAI (@yinfeiy and @AndrewDai ) , @NEA & @twelve_labs Looking for 50 researchers, engineers, founders & investors to join the conversation on compute, hardware, research, capital, application. RSVP and see you soon at @CVPR 👇",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/qdrant_engine/status/2057136770261635278",
+          "text": "It’s here . . . We’ve lined up technical talks on vector search, AI memory, context engineering, or retrieval infra from @awscloud, @arizeai, @HubSpot, @neo4j, @Vultr, @twelve_labs, @Adobe, @Qualcomm, @GoogleDeepMind, @cognee_, @mem0ai, @llama_index, @SlackHQ and more. Join 300+ AI builders for a full day on agents and memory in production, retrieval from cloud to edge, and multimodal AI. Don’t miss Vector Space Day on June 11 at The Midway in San Francisco. Early bird tickets are on sale but end soon: https://t.co/a190Cwv5EF",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Boltcutterlab/status/2057125198122426801",
+          "text": "Do you do external calls? (sales, investor pitches, customer success) Get a call recorder. Feed it to an LLM that can watch for tonality and cadence- like @twelve_labs Improve. Filler words can be ID'd with just a transcript and any LLM. Tone matters when the outcome matters.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/socialure/status/2046634822110728620",
+          "text": "Hello @twelve_labs https://t.co/7oP1WMTRsz",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/thestartpod/status/2046285273592365280",
+          "text": "Congrats on the launch @_jae_lee &amp; team @twelve_labs! 🚨 Live on @ProductHunt 👇 https://t.co/2CrRryoBrT https://t.co/hUFYcF4Cgr",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/alexpark/status/2041582923569361377",
+          "text": "Placed Top 3 out of 30 at @twelve_labs Video AI hackathon last weekend! Judged by executives from Warner Bros, Fox Entertainment, Lionsgate, and Sony Pictures. Been doing this for a while... ⏬ https://t.co/6CduPvPFF3",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ptdamiba/status/2041570088562913558",
+          "text": "In 90 minutes @HumanXCo I’m speaking on edge to cloud video anomaly detection with @qdrant_engine, @Vultr, and @twelve_labs Drop by and say hello! https://t.co/wpY6NFVECh",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Chronicle_HQ/status/2040659369080316364",
+          "text": "This section of @twelve_labs is always an eye-candy for us https://t.co/wc5Pp8ayWH",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/current_kev/status/2039378563368198547",
+          "text": "I just gave my content research agent superpowers I uploaded competitor videos to @twelve_labs and used pegasus1.2 to query them directly now I can ask it what hooks and visual cues made a video blow up and it can answer First 10 hours have free indexing too! Very generous :) https://t.co/0Gxq2Uur1H",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/LakshOnline/status/2038969235108700481",
+          "text": "Built a video intelligence agent with @twelve_labs and @hyperagent . It hit an API wall mid-task and found another way — without being asked. New article 👇 https://t.co/ClaukKobcY",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/rlux/status/2037253275804745796",
+          "text": "Are you going to be in LA this weekend? Come learn about building professional video intelligence workflows with @twelve_labs, @awscloud, @nvidia, @baseten, and of course @ltx_model. Sign up here: https://t.co/lb4xiqdlVC https://t.co/x0yIJqjDh2",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ptdamiba/status/2033434734261678343",
+          "text": "Tomorrow at @NVIDIAGTC I'm at the @Vultr stage to talk about edge to cloud video anomaly detection with @qdrant_engine Edge, @twelve_labs Marengo 3.0, and @nvidia Metropolis. Traditional video classifiers need labeled examples of every anomaly you want to catch. That breaks in the real world. So I took a different approach..",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ethansteininger/status/2032473913389687227",
+          "text": "Three multimodal embedding models were released this week alone - the market is hot for \"embedding all the things\". But which should you use and why? We benchmarked 5 video embedding models head-to-head on text-to-video retrieval with graded relevance. @twelve_labs , @mixedbreadai, @Google, and Open Source variants. The one that surprised me most: @twelve_labs hit a perfect MRR of 1.000. It never once ranked the wrong video first. But Gemini is 7x faster and free for most teams. So what actually wins depends on what you're optimizing for. Full benchmark, all 20 videos, dataset, and code are open source: https://t.co/4T4J8meECf Full writeup: https://t.co/3y9MLMUYlg",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/FastCompany/status/2031170983361388901",
+          "text": "AI is not the end-game. It still needs human judgment. Here’s why. @twelve_labs #FCImpactCouncil https://t.co/HDZg78aUh8",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/InAIToday/status/2028952529262829594",
+          "text": ".@VASTDataAI and @Twelve_Labs partner to expand video intelligence for the world’s largest and most secure video archives https://t.co/xC8PihrOgT #AI #artificialintelligence #AInews #technology #tech #technews #videointelligence #video https://t.co/FxbJ8vUE94",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Rosebud AI",
       "slug": "rosebud-ai",
       "x_handle": "@rosebud_ai",
@@ -27979,6 +29896,154 @@
         {
           "url": "https://x.com/jamiesmotion/status/2011547134785720747",
           "text": "Short motion video I made for @Stagehanddev 🟨 https://t.co/OsqztC7tl1",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Step 3.7 Flash",
+      "slug": "step-3-7-flash",
+      "x_handle": "@StepFun_ai",
+      "tweets_returned": 19,
+      "useful_count": 18,
+      "bad_count": 1,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/FireworksAI_HQ/status/2062382990685360398 | https://x.com/vllm_project/status/2060741408198394188 | https://x.com/godofprompt/status/2063912600472285296",
+      "notes": "hard_reject_non_english:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/Gracemzshao/status/2064531551531282585",
+          "text": "China AI corner at SuperAI’s welcoming drinks for speakers. @StepFun_ai @tencentcloud @Zai_org and of course AI Proem :p #ChinaAI @superai_conf https://t.co/W0VQribofB",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mr_r0b0t/status/2064375201521873085",
+          "text": "@NousResearch Hermes Desktop makes it so very easy to continue a session. It just picked up right where we left off...two weeks ago! 😍 Big thanks to @StepFun_ai for the free 3.7 Flash through the Nous Portal &lt;3 https://t.co/CO9YgkQAVY",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/madzadev/status/2064236328414486582",
+          "text": "Step 3.7 Flash is a Flash model for real agent workflows. It’s fast and cost-efficient, but the part I care about is whether it can take a messy input and turn it into something actually usable. So I built ClipBrief. @StepFun_ai The idea is simple: upload a video, sample frames across the timeline, send them straight to Step 3.7 Flash, and get back a clean brief. No extra OCR step. No separate vision module glued on top. I tested it on a 6-minute YouTube explainer I hadn’t watched before. It picked up what was actually on screen — the article title, the diagram, the shift in the story — and turned that into a TL;DR plus timestamped key points. What I liked is that it didn’t stop at “this video is about X.” It gave me a structured readout of the clip: what happened, roughly when it happened, and how the main points connected. This is where Step 3.7 Flash makes sense to me. Not as a model that just answers one prompt quickly, but as something that can hold a small workflow together — read the frames, understand the context, organize the output — while staying quick and cheap enough to run often. I’d use this for lectures, meeting recordings, tutorials, product demos, or any video I want to skim as notes before deciding whether to watch the full thing. If you’re building AI agents, coding workflows, search-powered apps, or multimodal tools, Step 3.7 Flash is worth trying: https://t.co/2vfV8t7Zzb #sponsored #ad",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/imaxichuhai/status/2064195493954048485",
+          "text": "朋友找我帮忙做一个电商库存后台，功能挺复杂的，高并发下单、库存扣减、防超卖，前后台都要有。 最近听说@StepFun_ai 出了新模型 Step 3.7 Flash，在 Agent 任务上表现不错，就想拿这个项目试试手。 结果它一口气给我做出来了，用户前台、管理后台、并发测试全部跑通，将近16万行代码，整个过程就花了不到2块钱。 它没有上来就写代码，先问我技术选型，确认完再自己设计数据库，一层层往上搭。 中间遇到报错，还会自己读日志、改路径、重新跑通，全程没有我介入。 这种需要持续推进的工程任务，目标一致性比我预期的稳，感兴趣的可以试一试，地址见评论区👇",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        },
+        {
+          "url": "https://x.com/Rafa_Schwinger/status/2064155721206321355",
+          "text": "Current highest Aura AIs: Hermes (@NousResearch) Deepseek (@deepseek_ai) Claude (@claudeai ) Pi (@badlogicgames ) Qwen (@Alibaba_Qwen ) Ideogram (@ideogram_ai ) Stepfun (@StepFun_ai ) They are Rafa approved",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/godofprompt/status/2063912600472285296",
+          "text": "Most AI agent demos are fake productivity theater. Cool for 30 seconds. Useless under real dev loops. So I ran @StepFun_ai Step Plan through actual coding-agent workflows: Cline in VS Code + Claude Code setup, both using step-3.5-flash-2603. This is where speed starts to matter.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/4everland_org/status/2062788097608204616",
+          "text": "🤖 New LLMs in #4EVERLAND #AI RPC: ✅@MiniMax_AI: MiniMax M3 ✅@StepFun_ai: Step 3.7 Flash ✅@AnthropicAI: Claude Opus 4.8 Get fast, reliable, and scalable access to cutting-edge #AI. Build the next big thing, faster. ➡️ Try it in seconds: https://t.co/T0vTJHpFIn",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mr_r0b0t/status/2062503261416862168",
+          "text": "SM121 optimized @StepFun_ai 3.7 Flash NVFP4 running quite well on the 2x GB10 setup! No Marlin fallback, TP=2, FLASHINFER_CUTLASS + VLLM_CUTLASS backend. Looks like this will be a quite performant model to have locally 🤩 Full results and repo (including container) below 🧵 https://t.co/PNx3ClpUHM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/FireworksAI_HQ/status/2062382990685360398",
+          "text": "Many research labs only consider inference efficiency after the fact. Step 3.7 Flash is a 198B sparse MoE VLM designed by @StepFun_ai for inference from the start. 196B language backbone with a 1.8B vision encoder. Built for real-world agent workloads, running at up to 400 tok/sec. Native multimodal understanding and action, reliable tool use, and enhanced web and visual search. Apache 2.0. Try it now → https://t.co/OYqzBUBxqL",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mr_r0b0t/status/2062314522476458054",
+          "text": "@PCasino73066 here is your equation, captured in python by my @NousResearch Hermes Agent, all math. Thanks to @StepFun_ai for the free inference that provided this through the Nous Portal 😍 https://t.co/MYiHEy6bb0",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/JasonVsTheNoise/status/2061773074505113695",
+          "text": "If you are building with #AI and #AIagents, the worlds fastest open source model just dropped and it's free with one of my favourite agent models (also free). So this is worth a look. But essentially: @StepFun_ai just dropped Step 3.7 Flash onto the #NousPortal. First 30 days free use but then its dramatically cheaper then Opus or GPT. This is the kind of thing that gets buried in a Tuesday afternoon X post and then quietly becomes one of the most important additions to your AI stack. So here's the full picture. What Step 3.7 Flash Actually Is: 198 billion parameter sparse Mixture of Experts model. The \"sparse\" part matters. It only activates around 11 billion parameters per token, which is why it runs so fast while still having access to a 198B brain. The headline numbers: 256K context window. Up to 400 tokens per second. Native image and video understanding built in from the ground up, not bolted on. Apache 2.0 license, meaning the weights are open and you can do what you want with them (self host). It currently sits first on ClawEval 1.1, which is the benchmark designed specifically for agentic use. This is not a model built for polished conversation. It is a model built to do things. When to Use It: (1) The first is agentic workflows. Search, scrape, summarise, plan, call a tool, repeat. Flash-tier speed means it handles lots of small hops without making the whole pipeline feel sluggish. At roughly a ninth of the cost of Claude Opus on SWE-Bench-style tasks, it makes sense as your default executor, with a heavier model on standby for the hard calls. (2) The second is long document work. 256K context is genuinely large. If you are parsing long reports, full codebases, or multi-document research, this fits. Where it is less suited: tasks where prose quality is the whole point. It is competitive with flash-tier models on coding quality, but if you need something that writes like a careful editor rather than a fast executor, reach for something else. The pattern that makes sense: run Step 3.7 Flash as the main agent loop, escalate to a premium model for planning and failure recovery. Cheap where fast is good enough. Expensive only where it earns it. Video explainer and an install guide in the comments. Have fun!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/nathanhabib1011/status/2061751385839042822",
+          "text": "Step-3.7-Flash from @StepFun_ai is a silent winner. Super impressive results, the best model under 500B params on HF leaderboards.. All while being multimodal https://t.co/Zo5nUdZTwq",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Italianclownz/status/2061250766183014802",
+          "text": "Been working on this. @StepFun_ai Step 3.7 Flash with MTP. Quantized to the format I have been working on. Still experimenting but may push this update. I got some additional things to I need to do. I want to push the context up past 60k without issues. But I would have never thought I could get this to run, and it's running! It has coded HTML, answered questions, corrected itself on a wrong answer on its own. Reasoned with itself and came up with the right answer. Impressive. Results on AMD. File size 98 GB Quantized to ROCmfp4. Hey @AIatAMD you got some amazing hardware I am working with here on this @FrameworkPuter",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/kilocode/status/2061214195262107889",
+          "text": "Update: We didn't get the blog out yet. It's been a busy weekend. But @StepFun_ai Step 3.7 Flash is currently FREE in Kilo. 👀 Enjoy!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mr_r0b0t/status/2061130619732595029",
+          "text": "@StepFun_ai 3.7 Flash + @NousResearch Hermes Agent present to you \"torus knot\" 🤩 https://t.co/VxB1fcVyUC",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/SpaceTimeViking/status/2060918967690989854",
+          "text": "Proactively quantized some Step 3.7 Flash GGUFs. When Step 3.7 Flash is supported on llama.cpp these should all run. Even a mind blowing 1bit quantization that brings total footprint down to 48GB! Let me know if you manage to get any of these working early. @StepFun_ai keep us in the loop on llama.cpp engine support. https://t.co/xkrpT2ASpZ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/mr_r0b0t/status/2060814057343537473",
+          "text": "Official @StepFun_ai 3.7 Flash NVFP4 already on @huggingface 🤩 https://t.co/FezYQ5WEt6",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/AbdMuizAdeyemo/status/2060763616769462460",
+          "text": "Thanks so much @hqmank I just switched the default model in my hermes from DeepSeek-V4-Flash to Step-3.7-flash from @StepFun_ai since they are offering it free. I can continue shipping to @cliploopapp now",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/vllm_project/status/2060741408198394188",
+          "text": "Great to work with @NVIDIAAI on running @StepFun_ai's Step-3.7-Flash with vLLM on the DGX Station.🤝 Run it locally, or in production as an @NVIDIA NIM container, both powered by vLLM! Serve it now 🚀 🔗 https://t.co/VnMzyXW75R",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -32099,6 +34164,163 @@
       ]
     },
     {
+      "tool": "Willow Scribe",
+      "slug": "willow-scribe",
+      "x_handle": "@WillowVoiceAI",
+      "tweets_returned": 20,
+      "useful_count": 18,
+      "bad_count": 2,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/DamexyThe/status/2059328195560681631 | https://x.com/erikalee/status/2064415786048143801 | https://x.com/Sujay__Raj/status/2060023418276503650",
+      "notes": "hard_reject_crypto_noise:2",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/erikalee/status/2064415786048143801",
+          "text": "congrats to my friends/the team at @WillowVoiceAI- this is super cool!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/LiuLawrence45/status/2062598337745035528",
+          "text": "95% of engineers can talk to machines but not humans. Make an engineer talk to humans and they send three cold sentences that read like ChatGPT. @WillowVoiceAI Scribe fixes that. Ramble out loud, it writes a reply that sounds exactly like you. Watch how 👇 https://t.co/uOZi3Hlf1K",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/jonschr/status/2060403773894217993",
+          "text": "I'm finally moving on from Whisperflow, which I've really enjoyed. @WillowVoiceAI is just a little bit faster at transcribing and has better quality of life in terms of switching between different microphones automatically. I use voice A LOT and apparently, I talk really fast. https://t.co/Q03dE94imM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Sujay__Raj/status/2060023418276503650",
+          "text": "Unpopular opinion: Sticking to a physical keyboard in 2026 for raw brainstorming and communication is a massive speed bottleneck. If tools like @WillowVoiceAI Scribe can accurately parse unpolished speech, fix grammar on the fly, and clear a Slack queue hands-free, typing manually just feels like lagging on purpose. If a tool actually saved you 3 hours a day, would you finally drop the keyboard and go fully voice-driven?",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/_allanguo/status/2060017495973703744",
+          "text": "I broke my cofounder's arm to prove a point: you don't need a keyboard. Meet @WillowVoiceAI Scribe, our voice AI assistant. It clears your email, Slack, and docs in seconds. We'll pay you $10k if you still need to type after trying it. Don't believe? Try Scribe below and win. https://t.co/nyPrdvV4zo",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/shreshthsaride/status/2059784419645554992",
+          "text": "@WillowVoiceAI scribe mode is goated",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/5harath/status/2059426996858581309",
+          "text": "Spotted the viral @WillowVoiceAI ad on SF streets https://t.co/1HZqGG9AjU",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/sudiprokaya/status/2059411937159729168",
+          "text": "Be aware of these guys 😆 @WillowVoiceAI @allanguo https://t.co/2nDjAtYhZe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/DamexyThe/status/2059341269269127571",
+          "text": "When an average person comes across a new AI tech the first thing that comes to mind is “how it benefits me”. So here's why @WillowVoiceAI will be of benefit to you. Are you a busy professionals drowning in emails/Slack? willow helps you reclaim hours every week",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/DamexyThe/status/2059328195560681631",
+          "text": "One thing about me when I see a good AI tech I will always speak about it. I came across @WillowVoiceAI’s new Willow Scribe and it feels like big leap in voice AI for everyday work. No more staring at a blank screen or typing out emails/Slack messages. https://t.co/uXhS84U1nR",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/alexminivan/status/2059320125397074428",
+          "text": "new movie made for @WillowVoiceAI one of my favs we’ve made recently shoutout my goats @LiuLawrence45 @_allanguo ⌨️🪦",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Haleeeemahh/status/2054970288295620635",
+          "text": "1st startup spotlight: @willowvoiceai a yc-backed ai startup (spring 2025) if you hate voice notes, you’d definitely love this willow is a system-wide dictation app for: - mac, windows and ios it turns natural speech into text in real time features: - real-time transcription + auto editing - works in whisper mode or noisy environments - ai mode: speak a short prompt and it expands into a polished message/email. - 100+ languages - hotkey activated & no copy paste needed raised $4.5m seed around july 2025 backed by: - boxgroup, goodwater capital, burst capital and liquid 2 ventures founded in san francisco by two young stanford dropouts: - @allanguo (ceo) - @liulawrence45 (cto) now building with a fast-moving yc team also hiring roles like product design and growth lead etc they’re building what could become a real keyboard replacement go check them out!",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/Amank1412/status/2054266119305957797",
+          "text": "Every big company really does start as just a sentence in your head. The hard part has always been turning that into something real, fast. Tools like @WillowVoiceAI are quietly removing that barrier. https://t.co/HTDGQHAsY7",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yoitsyoung/status/2052759085397967141",
+          "text": "Anyone else changing tools almost every week? Everyday a new alternative pops up 2x better Last week --&gt; This week Perplexity browser --&gt; ChatGPT Atlas Wispr Flow --&gt; Willow AI @WillowVoiceAI Openclaw --&gt; Hermes Agent @NousResearch What a time to be alive",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/lighthousehq_/status/2052538087113441489",
+          "text": "@WillowVoiceAI has changed how the Lighthouse team works. Voice allows the thought-to-text cycle to happen so much faster. Super talented team building a great product!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/nikhilaprabhu/status/2047175598389473572",
+          "text": "when im out of @WillowVoiceAI, this is what i do cc @WisprFlow https://t.co/IwZuq5SPsQ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/tannerdripjobs/status/2044777956950605881",
+          "text": "I just want to say that if you work on a computer, you need the @WillowVoiceAI for voice-to-text. It's just an absolute game changer. Honestly, I'm surprised more people don't use it. One of the craziest things about it is I can talk and make mistakes, and it formats it perfectly in real time! It honestly feels like I'm going back to the stone age whenever I use talk to text on Apple. https://t.co/Rr5lmVxqDM",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/astobbe_/status/2044731109540278374",
+          "text": "Been using @macwhisperapp for a long time, but since trying @WillowVoiceAI which nicely formats output, cleans filler words, better term accuracy, I wanted sth better. SOLUTION: @ElevenLabsDevs scribe + no_verbatim mode get really good performance for very little money",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yourealazyfvck/status/2043616263738626481",
+          "text": "Someone get me in touch with the founders of @WillowVoiceAI let’s cook. I want to see how your new model holds up in real world production environments for Synthesys.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/design_nocodeio/status/2042663604797755582",
+          "text": "Just subscribed to @WillowVoiceAI man it is so much nicer to take than text. Really enjoy this tool.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Windsurf",
       "slug": "windsurf",
       "x_handle": "@windsurf",
@@ -32255,6 +34477,159 @@
         {
           "url": "https://x.com/BackupBrainy/status/2057293170170605986",
           "text": "Why am I unable to access student pricing with edu mail even in USA @DevinAI @WindsurfCurrent @windsurf @dabit3 @cognition",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Wingbits AI",
+      "slug": "wingbits-ai",
+      "x_handle": "@Wingbits",
+      "tweets_returned": 20,
+      "useful_count": 20,
+      "bad_count": 0,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/solana/status/2060366333502472265 | https://x.com/airlivenet/status/2061085038570053649 | https://x.com/yenalmh/status/2060984767667941658",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/airlivenet/status/2063949869039997157",
+          "text": "Several flights to Funchal are diverting due to winds gusting up to 32kt. TAP #TP1687 is returning to Lisbon @wingbits https://t.co/rcDjhDSvEI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2063896946729791703",
+          "text": "More stations boarding @wingbits this week! 🚀 Epic to see the network growing stronger every day. A huge welcome to all the new station operators joining the tribe, you're helping build the future of flight tracking, one station at a time. 📡✈️ #Wingbits #FlightTracking #DePIN #Aviation #WelcomeToTheTribe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2063665985396133900",
+          "text": "Many flights to Dallas-Fort Worth are diverting to OKC, TUL, AMA, ACT, AUS, SAT due to heavy thunderstorms impacting runway visual range @wingbits https://t.co/COf8RYOouW",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2062544999800057945",
+          "text": "Excited to see @Wingbits join @hub71ad Cohort18! 🚀 The Middle East is one of the world’s most important aviation hubs, connecting continents and driving innovation across the industry. Looking forward to building alongside this incredible community and contributing to the future of aviation. #Hub71 #Wingbits #Aviation",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2062462883657560249",
+          "text": "@LFC fans right now: 📱 Refresh BBC 📱 Refresh @wingbits 📱 Refresh Twitter A private jet en route from San Sebastián to Liverpool has got supporters connecting dots after reports that Andoni Iraola is set for Anfield. 👀✈️ Nothing confirmed, but the flight trackers are undefeated. #LFC #Iraola #TransferTracking",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2062121004046975368",
+          "text": "✈️ Airport intelligence just landed on the @wingbits map. Now you can explore live airport activity with: 🛫 Departures & arrivals 🛬 Gate information 🛣️ Runway numbers 📡 Live aircraft movements Check out some of the world's busiest hubs: 📍 Charles de Gaulle - @ParisAeroport 📍 Istanbul - @igairport 📍 Frankfurt - @Airport_FRA 📍 Amsterdam Schiphol - @Schiphol See the pulse of global aviation in real time on Wingbits. 🌍 https://t.co/26uG2HZSpn #Wingbits #Aviation #FlightTracking #AvGeek #Airports #LiveFlights #ADSB #AviationData #AirTraffic",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/solana/status/2061936032719749150",
+          "text": "Solana-based @wingbits ranked #2 on Product Hunt for the launch of https://t.co/Yy8eNcXscB",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2061904332593778762",
+          "text": "We’ve rolled out a small update to the @Wingbits map. Airports now show additional information, including runway details and schedules. We’ve also made live and recently landed flights clickable where available. On top of that, tower icons have been toned down to keep the focus on flight activity. This update has a particularly big impact on smaller airports, which now provide much richer context. ✈️",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2061094543307469201",
+          "text": "LIVE United #UA178 to Denver is turning back, diverting to Frankfurt @wingbits https://t.co/U7qqZA6Vh5",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2061085038570053649",
+          "text": "LIVE Two-time Champions League winners are entering French airspace, expected to land at Paris CDG in 30 minutes @wingbits https://t.co/A9NchLlzz7",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2060984767667941658",
+          "text": "#2 on Product Hunt on launch day. Thank you to everyone who supported, commented, and tried https://t.co/d1Hl8k1UCq today. Now we get to work. 🛩️ https://t.co/d1Hl8k1UCq / @wingbits https://t.co/2U3OIq3Nai",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2060961982308553085",
+          "text": "LIVE Corsair flight #SS985 to Paris ORY is diverting to Madrid @wingbits https://t.co/ND1550NWk7",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/RobinWingbits/status/2060699613221548533",
+          "text": "@wingbits is now launched on @ProductHunt , and we'd love as much feedback as possible. https://t.co/rbjEaUF6ou Wingbits AI is the world’s first aviation intelligence platform, powered by the network you've helped build. This tool lets anyone explore what's happening in the skies in plain language - ask a question, get real answers based on data from Wingbits stations around the world. You can also set up AI agents that monitor the skies 24/7 and send real-time alerts to your Inbox. The best way to support is to drop by our Product Hunt page, try the tool and provide honest feedback, reviews and questions on our page. Genuine discussion from our community is what carries the most weight. You can sign up with our freemium version, or get 1 month of Pro account free with code HUNTERS. Thanks so much for the support!",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Coiniseasy/status/2060621787105579420",
+          "text": "🛩️ @Wingbits just launched Wingbits AI on Product Hunt \"Chat with the sky\" AI agents on top of the Solana aviation DePIN. Track military aircraft, private/gov jets, GPS-jamming spikes, or a friend's flight 24/7 alerts the moment it matters. Show some love 👇🧡 https://t.co/ALrqFUPYFI",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/solana/status/2060366333502472265",
+          "text": "Monitoring the skies just got easier Only possible with @wingbits data on Solana",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2059910842364149841",
+          "text": "LIVE Ryanair FR2447 to Leeds is diverting to Manchester @wingbits https://t.co/PQgnZ1nmBN",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2059257543340310567",
+          "text": "These images show just 4 stations out of 6,000 live on @Wingbits… yet the coverage hexes spill across borders like a living, breathing network. 🌍📡 Now imagine the global coverage created by all 6,000 stations combined. The flexibility of the hex system is absolutely epic. Pure network effect in motion. EPIC STUFF ALWAYS #Wingbits #DePIN #Aviation",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2058646636478316553",
+          "text": "🚨 Most tracked flight right now on @wingbits : 🇺🇸 United States Air Force aircraft over Germany squawking 7700. For those unfamiliar, Squawk 7700 is the universal emergency transponder code used by pilots to declare an in-flight emergency. Once activated, ATC immediately prioritizes the aircraft and highlights it on radar for urgent handling.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/airlivenet/status/2058611484817592809",
+          "text": "LIVE Air France #AF132 is returning to Paris CDG @wingbits https://t.co/StIFsV17je",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/yenalmh/status/2058279455110443290",
+          "text": "Our signals still show moderate GPS jamming in the Middle East, but nowhere near last week’s levels. Early sign of a possible deal taking shape between Israel, Iran, and the U.S.?! Very important hours ahead... @wingbits monitoring 👀 https://t.co/8KoPFVJeiP",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -33674,6 +36049,163 @@
         {
           "url": "https://x.com/caro_milanesi/status/2057823802747142517",
           "text": "In the 1800s, economists expected more efficient steam engines to reduce coal consumption. The opposite happened. Adrian McDermott (@amcdermo), CTO of @Zendesk, applies the same logic to AI-powered customer service: the more efficient you make it, the more people will use it. That is not a problem. That is the point. @creativestrat",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "zero.xyz",
+      "slug": "zero-xyz",
+      "x_handle": "@zeroxyz",
+      "tweets_returned": 20,
+      "useful_count": 18,
+      "bad_count": 2,
+      "proof_quality_score": 100,
+      "best_3_tweet_urls": "https://x.com/Michael_Ludden/status/2056396441564880955 | https://x.com/thestartpod/status/2059745222507024471 | https://x.com/realdanbaum/status/2059545398415409239",
+      "notes": "hard_reject_crypto_noise:2",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/Michael_Ludden/status/2064421532420751576",
+          "text": "Ordering postcards of myself holding Mjölnir 🔨 with @zeroxyz https://t.co/frLyAs3HwA",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/lindsey_pozz/status/2064339777730523552",
+          "text": "Built our farm's new website with Claude + @zeroxyz today The unlock: I wanted our real IG photos on the site, but Claude couldn't reach Instagram. @zeroxyz fixed that in seconds, pulled in our actual posts, and dropped them on the page. Total cost: a fraction of a cent. 🐝 https://t.co/TzcGJA2vfe",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2063998669465260363",
+          "text": "I'll be hanging out at the local @UseCorgi cafe in SF buying drinks for people installing @zeroxyz - and showing off our new \"Zero\" drink and sleeve being sold there. In case you're around, hit me up! :) https://t.co/cAMLGsJ2DW",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2062267593692717206",
+          "text": "i generated a kpop cover song of rage against the machine's 'killing in the name' from Claude Code using a minimax service I found with @zeroxyz https://t.co/c3c6wKhcRR",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/lindsey_pozz/status/2062228451180900693",
+          "text": "@getnachonacho x @zeroxyz NY Tech Week event last night 10/10, no notes 🤌👏 https://t.co/ejpQHS6Sq4",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2061837576349299166",
+          "text": "So I had my agent call me with @zeroxyz 👀 https://t.co/eNMWE3njyP",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/joinpursuit/status/2061823901420626326",
+          "text": "A community of 30 Pursuit Builders and staff. Every team received credits to build with @zeroxyz , a brand-new product for AI agents. Amazing things get built when we give talented people the right tools. In partnership with @zeroxyz (https://t.co/oQlmYXs8wf) — a search engine for AI agents that indexes hundreds of live APIs so Builders can discover and use capabilities on the fly — we hosted our third cross-cohort mini hackathon. Thank you Brian Luscombe and Lindsey Pozzuto for sharing Zero and your passion with the Builders. Theme: Unlocked. Every team got Zero credits and a simple question: what do you build when the barrier to capabilities is gone? Two hours later, they had live, deployed products. Winner Curtain Call (https://t.co/8hehQPLYOk) — Input a scene description, and an AI agent interprets the world of your play, generates a moodboard, and finds your best-matched conceptualizer. Team Unlocked Spotlight: Beatrice Mackenzie, Christina Ruiz, Kalila Green, Yaasameen Perez, and Nylah Lee. Crowd Favorite + Zero Award Fanzone Unlocked (https://t.co/J3WJnzpnsU) — Real-time city guide for sports fans following their team on the road. Team PainPoint: Bo Moldenhauer, Brandon Jackson, David Kim, Mitra Kermanian, Rob Walker. Why Didn't I Think of That CivicReel (https://t.co/1hyKaqjl3i) — Convert benefits flyers to short-form videos in any language, so more people claim what they're owed. Team DreamTeam: Edwin Perez, Lebert Mcdonald, Raphael Ribot, Schiffon Lola Wise. It was great to see everyone coming together for another fun night. We'll keep pushing the boundaries. #pursuit #ainative #hackathon #ai #nyc #tech",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2061207833509855337",
+          "text": "great @aiclubhouse_ openclaw meetup in progress at our @zeroxyz LA HQ 👀 https://t.co/cUsQ3CV2sa",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/OffNevo4527/status/2060770402318897361",
+          "text": "Designed a premium visual concept for @zeroxyz to help scale their organic reach. 📈 The strategy behind this edit is kept exclusive. https://t.co/gtGW7IOBoO",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2060136300402164109",
+          "text": "You can now generate &amp; host forms from prompt with zero setup, for free, with @zeroxyz + your AI agent of choice and they'll email you responses as they come 👀 https://t.co/zIrMo0j4db",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/thestartpod/status/2059745222507024471",
+          "text": "Congrats on the launch @ketau &amp; team @zeroxyz! 🚨 Live on @ProductHunt 👇 https://t.co/hugjsTR1AQ https://t.co/hTKaSvzyI2",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/lindsey_pozz/status/2059659004138160164",
+          "text": "🔔 Our new product @zeroxyz launched today on @ProductHunt &amp; we’re already in the #4 spot! Show us some love with an upvote: https://t.co/1dMChbsipL https://t.co/3xM5NMBXL0",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/morad/status/2059628723612074132",
+          "text": "Didn't make today's @ProductHunt Top list (yet 😅). Still having so much fun 😀 though - and credit where credit's due. Congrats to today's leading products 👏 @bluedot_ai, @zeroxyz, @wr, @KahanaHQ, @coworkerapp, @octolane, @CometChat https://t.co/cP6ewFBb7F",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/realdanbaum/status/2059545398415409239",
+          "text": "Just launched @zeroxyz on @ProductHunt! Go toss it some love! With Sleek, we spent weeks prepping and won product of the week. With Zero, we spent 2 days... let's see how it goes! https://t.co/BE5ZhyQwnj",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2056887701899825633",
+          "text": "url shortening right from @claudeai with @zeroxyz for free, no config 👀 https://t.co/P166YYEQZn",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/lindsey_pozz/status/2056722349022392731",
+          "text": "I built my travel advisor website with Claude + @zeroxyz in a 2-hour session, for &lt; $1 @zeroxyz lets AI agents like Claude access paid capabilities such as web hosting &amp; image generation for pennies 🔗 https://t.co/LmqOvcsC0a ⚡️ install Zero @ https://t.co/vvD93nFkeA https://t.co/jQMyBVmTJs",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2056396441564880955",
+          "text": "come try our @zeroxyz drink at Corgi Cafe in SF today - I'll be around buying your drink if you sign up ;)~",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2054310496753631432",
+          "text": "With a single prompt I sent 5 indie AI hackers I'd never met personalized landing pages with $5 of @zeroxyz credit on each, and produced a video recap (shout out @BunnyCDN) of the whole pipeline - all facilitated via Zero. https://t.co/c1s52j6x9u",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_crypto_noise"
+          ]
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2052128431035584584",
+          "text": "creating memes with @zeroxyz 👀 (shoutout to the cmux mafia @manaflowai) https://t.co/rabOvkegKV",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/Michael_Ludden/status/2051761630204322040",
+          "text": "“SEO Wizard” is a @zeroxyz tool that one-prompt builds and hosts SEO/GEO/AEO websites full of optimized content based on a URL you point it to 👀 https://t.co/DLDKnYhjaU",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -35451,6 +37983,40 @@
       ]
     },
     {
+      "tool": "Parsewise API",
+      "slug": "parsewise-api",
+      "x_handle": "@parsewise",
+      "tweets_returned": 3,
+      "useful_count": 3,
+      "bad_count": 0,
+      "proof_quality_score": 30,
+      "best_3_tweet_urls": "https://x.com/adriankuleszo/status/2038606032369532951 | https://x.com/ycombinator/status/1922789019093537145 | https://x.com/maximilianhofer/status/2031692456610128188",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/adriankuleszo/status/2038606032369532951",
+          "text": "One of 5 demo videos we did for @parsewise this month. Stack: figma + jitter https://t.co/AoTtUFqRdr",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/maximilianhofer/status/2031692456610128188",
+          "text": "We redesigned how business experts interact with AI agents on @parsewise: fewer pages, faster decisions, and a platform that remembers how you work. Our Founding Engineer, Mark, wrote about the thinking behind it: https://t.co/IwInw0Dyy9 https://t.co/uecdmoTKc4",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/ycombinator/status/1922789019093537145",
+          "text": "Parsewise (@parsewise) turns complex documents into validated data that business users can trust, streamlining analytics, benchmarking, and reporting workflows. https://t.co/s0Lo41av1l Congrats on the launch, @maximilianhofer and @GCsegzi! https://t.co/53VXRr7SV6",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Semantic Scholar",
       "slug": "semantic-scholar",
       "x_handle": "@SemanticScholar",
@@ -35485,6 +38051,40 @@
       ]
     },
     {
+      "tool": "Typeahead",
+      "slug": "typeahead",
+      "x_handle": "@typeaheadAI",
+      "tweets_returned": 3,
+      "useful_count": 3,
+      "bad_count": 0,
+      "proof_quality_score": 30,
+      "best_3_tweet_urls": "https://x.com/hnshah/status/2062195789817090108 | https://x.com/SamAsante/status/2061605259084984625 | https://x.com/SamAsante/status/2061605832769310757",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/hnshah/status/2062195789817090108",
+          "text": "If you know me, you know I love data and analytics. So, I couldn’t resist this one. Coming very soon to @TypeaheadAI… https://t.co/cFz5ZZL6bZ",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/SamAsante/status/2061605832769310757",
+          "text": "Here are some launch graphics I made for @TypeaheadAI Live on Product Hunt now: https://t.co/RPXDAH4BPY https://t.co/fLUbt9iHHt",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/SamAsante/status/2061605259084984625",
+          "text": "What do you think of these Product Hunt launch graphics for @TypeaheadAI? Live now: https://t.co/RPXDAH4BPY https://t.co/9167Ru2aPO",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "Blackbox AI",
       "slug": "blackbox-ai",
       "x_handle": "@blackbox_ai",
@@ -35505,6 +38105,33 @@
         {
           "url": "https://x.com/tec_aryan/status/1928206677448478957",
           "text": "🚫 No more manual slicing from @figma @blackbox_ai turns your designs into production-ready code. Senior or beginner, it’s time to build smarter. Just get started now: https://t.co/26P9IkWDmr",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "tool": "Branda",
+      "slug": "branda",
+      "x_handle": "@brandacooks",
+      "tweets_returned": 2,
+      "useful_count": 2,
+      "bad_count": 0,
+      "proof_quality_score": 20,
+      "best_3_tweet_urls": "https://x.com/davekova/status/2062587341512851602 | https://x.com/QuiverAI/status/2064370062128001142",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/QuiverAI/status/2064370062128001142",
+          "text": "Arrow 1.1 is now powering SVG conversion in Branda. We’re excited to partner with @brandacooks to help creators generate clean vector exports for logos, icons, and brand assets. Try it out and let us know what you create! https://t.co/GUUDfzs7Mi",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        },
+        {
+          "url": "https://x.com/davekova/status/2062587341512851602",
+          "text": "Create a pro brand in MINUTES ⚡️🤯 I'm using Branda 👉🏻 @brandacooks in this quick video demo tutorial. https://t.co/ajBiwic1fz",
           "useful": true,
           "spam": false,
           "reasons": []
@@ -36032,6 +38659,26 @@
       ]
     },
     {
+      "tool": "DodoForm",
+      "slug": "dodoform",
+      "x_handle": "@dofolabs",
+      "tweets_returned": 1,
+      "useful_count": 1,
+      "bad_count": 0,
+      "proof_quality_score": 10,
+      "best_3_tweet_urls": "https://x.com/faizydroid/status/2058912073967616446",
+      "notes": "",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/faizydroid/status/2058912073967616446",
+          "text": "Excited to announce @Dofolabs An AI-first lab focused on building and shipping SaaS products, apps, and creative tools for the internet era.",
+          "useful": true,
+          "spam": false,
+          "reasons": []
+        }
+      ]
+    },
+    {
       "tool": "LangSmith",
       "slug": "langsmith",
       "x_handle": "@LangChainAI",
@@ -36457,6 +39104,42 @@
       ]
     },
     {
+      "tool": "Ava Studio",
+      "slug": "ava-studio",
+      "x_handle": "@avastudio_ai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "Clipline",
+      "slug": "clipline",
+      "x_handle": "@clipline_ai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "Co-Invest",
+      "slug": "co-invest",
+      "x_handle": "@coinvest_ai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
       "tool": "Convai",
       "slug": "convai",
       "x_handle": "@convai",
@@ -36481,9 +39164,91 @@
       "scored_tweets": []
     },
     {
+      "tool": "Dune Keypad",
+      "slug": "dune-keypad",
+      "x_handle": "@projectmirageai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "Krater",
+      "slug": "krater",
+      "x_handle": "@krater_ai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "MCP Bridge | Appfactor",
+      "slug": "mcp-bridge-appfactor",
+      "x_handle": "@appfactor",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "Mina Meeting Assistant",
+      "slug": "mina-meeting-assistant",
+      "x_handle": "@HeyMinaAI",
+      "tweets_returned": 1,
+      "useful_count": 0,
+      "bad_count": 1,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "hard_reject_non_english:1",
+      "scored_tweets": [
+        {
+          "url": "https://x.com/ZTO__SA/status/2062882136097702145",
+          "text": "أداة ذكاء اصطناعي تشارك عنك في الاجتماعات 💻 منصة @HeyMinaAI تعمل كمساعد تفاعلي داخل الاجتماعات عن طريق الاستماع للمحادثة وتنفيذ المهام والرد صوتيًا أثناء المكالمة - تنفذ الأوامر الصوتية مباشرة خلال الاجتماع مثل البحث عن الأسعار أو صياغة العروض أو إرسال اتفاقيات أو تقارير - تستخرج القرارات والمهام من المحادثة المباشرة وتسجلها تلقائيًا في أنظمة CRM وإدارة المشاريع دون تدخل بشري - تتكامل مع أكثر من 200 منصة منها Zoom وGoogle Meet وSlack وSalesforce",
+          "useful": false,
+          "spam": true,
+          "reasons": [
+            "hard_reject_non_english"
+          ]
+        }
+      ]
+    },
+    {
+      "tool": "Rezonant",
+      "slug": "rezonant",
+      "x_handle": "@rezonant_ai",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
       "tool": "SkyReels",
       "slug": "skyreels",
       "x_handle": "@SkyReelsAI",
+      "tweets_returned": 0,
+      "useful_count": 0,
+      "bad_count": 0,
+      "proof_quality_score": 0,
+      "best_3_tweet_urls": "",
+      "notes": "",
+      "scored_tweets": []
+    },
+    {
+      "tool": "Tokenwise",
+      "slug": "tokenwise",
+      "x_handle": "@tokenwise_ai",
       "tweets_returned": 0,
       "useful_count": 0,
       "bad_count": 0,

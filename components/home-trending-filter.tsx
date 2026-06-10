@@ -234,6 +234,117 @@ const thirtyDayTopToolSlugs = [
 
 const thirtyDayRankBySlug = new Map<string, number>(thirtyDayTopToolSlugs.map((slug, index) => [slug, index]));
 
+const twentyFourHourDiscoverySlugs = [
+  "fundraisly",
+  "paste-app",
+  "rodeo-by-twelvelabs",
+  "branda",
+  "knock-agent-for-slack",
+  "mina-meeting-assistant",
+  "databox-mcp",
+  "dune-keypad",
+  "folk",
+  "typeahead",
+  "tokenwise",
+  "wingbits-ai",
+  "openstatus-health",
+  "step-3-7-flash",
+  "ava-studio",
+  "integuru",
+  "basedash",
+  "clipline",
+  "buffer-api",
+  "zero-xyz",
+  "coworker-ai",
+  "octolane",
+  "krater",
+  "dodoform",
+  "parsewise-api",
+  "rezonant",
+  "willow-scribe",
+  "co-invest",
+  "agent-a-ahrefs",
+  "mcp-bridge-appfactor"
+] as const;
+
+const twentyFourHourTopToolSlugs = [
+  ...twentyFourHourDiscoverySlugs,
+  "adapt",
+  "remio",
+  "subquadratic",
+  "lindy",
+  "floot",
+  "catdoes",
+  "saveto-ai",
+  "pixiebrix",
+  "voxdeck",
+  "rocket",
+  "codeium",
+  "sourcegraph-cody",
+  "phind",
+  "blackbox-ai",
+  "you-com",
+  "autogen",
+  "relevance-ai",
+  "writer",
+  "copy-ai",
+  "wordtune",
+  "otter-ai",
+  "fireflies-ai",
+  "fathom",
+  "reclaim-ai",
+  "motion",
+  "ibm-watsonx",
+  "modal",
+  "crewai",
+  "flowise",
+  "gumloop",
+  "h2o-ai",
+  "quillbot",
+  "inbenta",
+  "tendem",
+  "instantly",
+  "pipedream",
+  "playground-ai",
+  "connected-papers",
+  "inworld",
+  "scenario",
+  "layer-ai",
+  "ready-player-me",
+  "rosebud-ai",
+  "ludo-ai",
+  "spline",
+  "character-ai",
+  "hour-one",
+  "anythingllm",
+  "framer-ai",
+  "hubspot",
+  "manus",
+  "ideogram",
+  "openhands",
+  "flux-black-forest-labs",
+  "recraft",
+  "browserbase",
+  "stagehand",
+  "wordware",
+  "higgsfield",
+  "hedra",
+  "genspark",
+  "deepgram",
+  "trendspider",
+  "messari",
+  "dall-e",
+  "zendesk-ai",
+  "tome",
+  "stockimg-ai",
+  "tabnine",
+  "intercom-fin"
+] as const;
+
+const twentyFourHourDiscoverySlugSet = new Set<string>(twentyFourHourDiscoverySlugs);
+const allTimeSlugSet = new Set<string>(allTimeTopToolSlugs);
+const thirtyDaySlugSet = new Set<string>(thirtyDayTopToolSlugs);
+
 export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>("Trending");
   const [activeTimeframe, setActiveTimeframe] = useState<TrendingTimeframe>("24H");
@@ -244,6 +355,9 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
     }
     if (activeTab === "Trending" && activeTimeframe === "30D") {
       return selectThirtyDayTools(scopedTools);
+    }
+    if (activeTab === "Trending" && activeTimeframe === "24H") {
+      return selectTwentyFourHourTools(scopedTools);
     }
     return sortByTimeframe(scopedTools, activeTimeframe).slice(0, 100);
   }, [activeTab, activeTimeframe, tools]);
@@ -315,6 +429,24 @@ function selectAllTimeTools(tools: Tool[]) {
 
 function selectThirtyDayTools(tools: Tool[]) {
   return selectRankedTools(tools, thirtyDayTopToolSlugs, (toolList) => sortByTimeframe(toolList, "30D"));
+}
+
+function selectTwentyFourHourTools(tools: Tool[]) {
+  const toolsBySlug = new Map(tools.map((tool) => [tool.slug, tool]));
+  const selected: Tool[] = [];
+  const seenSlugs = new Set<string>();
+  const add = (tool: Tool | undefined) => {
+    if (!tool || seenSlugs.has(tool.slug) || selected.length >= 100) return;
+    selected.push(tool);
+    seenSlugs.add(tool.slug);
+  };
+
+  for (const slug of twentyFourHourTopToolSlugs) add(toolsBySlug.get(slug));
+
+  if (selected.length >= 100) return selected.slice(0, 100);
+
+  for (const tool of tools) add(tool);
+  return selected;
 }
 
 function selectRankedTools(tools: Tool[], rankedSlugs: readonly string[], fallbackSort: (tools: Tool[]) => Tool[]) {
