@@ -167,7 +167,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "markets",
     title: "Trading & Markets",
-    color: "#14b8a6",
+    color: "#6FA7A2",
     icon: ChartNoAxesCombined,
     top: 70,
     left: 0,
@@ -183,7 +183,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "growth",
     title: "Growth & Sales",
-    color: "#14b8a6",
+    color: "#6FA7A2",
     icon: Megaphone,
     top: 70,
     left: 370,
@@ -199,7 +199,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "center",
     title: "Daily Buzz",
-    color: "#DFFF4F",
+    color: "#6FA7A2",
     icon: Sparkles,
     top: 362,
     left: 185,
@@ -213,7 +213,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "builders",
     title: "Builder Tools",
-    color: "#14b8a6",
+    color: "#6FA7A2",
     icon: Code2,
     top: 575,
     left: 0,
@@ -229,7 +229,7 @@ const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "ops",
     title: "Automation & Ops",
-    color: "#14b8a6",
+    color: "#6FA7A2",
     icon: Search,
     top: 575,
     left: 370,

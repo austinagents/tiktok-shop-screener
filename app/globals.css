@@ -2821,7 +2821,7 @@ body {
   width: min(238px, calc(100% - 24px));
   transform: translate(-50%, -50%) scale(0.5);
   border-radius: 1.35rem;
-  background: #0b1015;
+  background: #0C171E;
   box-shadow: none;
 }
 
@@ -2833,16 +2833,12 @@ body {
   flex-direction: column;
   gap: 8px;
   padding: 10px;
-  border: 1px solid color-mix(in srgb, var(--cluster-color) 24%, transparent);
-  border-left-color: color-mix(in srgb, var(--cluster-color) 44%, transparent);
+  border: 1px solid rgba(42, 74, 82, 0.75);
+  border-left-color: rgba(42, 74, 82, 0.75);
   border-radius: 18px;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--cluster-color) 8%, transparent), rgba(255, 255, 255, 0.008)),
-    rgba(12, 18, 23, 0.42);
-  color: var(--cluster-color);
-  box-shadow:
-    inset 0 1px 0 color-mix(in srgb, var(--cluster-color) 10%, transparent),
-    inset 0 0 18px color-mix(in srgb, var(--cluster-color) 3%, transparent);
+  background: #0C171E;
+  color: #6FA7A2;
+  box-shadow: 0 0 8px rgba(111, 167, 162, 0.06);
 }
 
 .attentionHeatmapComponent .attentionCluster.markets {
@@ -2857,10 +2853,15 @@ body {
 
 .attentionHeatmapComponent .attentionCluster.center {
   width: 100%;
+  border-color: rgba(42, 74, 82, 0.75);
+  border-left-color: rgba(42, 74, 82, 0.75);
+  background: #0C171E;
+  color: #6FA7A2;
+  box-shadow: 0 0 8px rgba(111, 167, 162, 0.06);
 }
 
 .attentionHeatmapComponent .attentionCluster.center .attentionClusterLabel {
-  color: var(--cluster-color);
+  color: #6FA7A2;
   font-size: 20px;
 }
 
@@ -2889,7 +2890,7 @@ body {
   align-items: center;
   gap: 6px;
   min-height: 16px;
-  color: var(--cluster-color);
+  color: #6FA7A2;
   font-size: 10px;
   font-weight: 720;
   letter-spacing: 0.08em;
@@ -2917,12 +2918,22 @@ body {
 .attentionHeatmapComponent .attentionCluster.center .attentionNode {
   min-height: 52px;
   padding: 12px 18px;
+  border-color: #22343F;
+  background: #0D151D;
+  color: #A4D0CC;
   font-size: 22px;
 }
 
 .attentionHeatmapComponent .attentionCluster.center .attentionNode svg {
   width: 26px;
   height: 26px;
+  color: #6FA7A2;
+}
+
+.attentionHeatmapComponent .attentionCluster.center .attentionNode:hover {
+  border-color: #315056;
+  background: #101A24;
+  color: #A4D0CC;
 }
 
 .attentionHeatmapComponent .attentionNode {
@@ -2936,12 +2947,10 @@ body {
   padding: 6px 9px;
   box-sizing: border-box;
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--cluster-color) 38%, transparent);
+  border: 1px solid #22343F;
   border-radius: 5px;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--cluster-color) 10%, transparent), rgba(255, 255, 255, 0.008)),
-    rgba(10, 16, 21, 0.72);
-  color: color-mix(in srgb, var(--cluster-color) 84%, var(--text-primary));
+  background: #0D151D;
+  color: #A4D0CC;
   font-size: 11px;
   font-weight: 650;
   line-height: 1;
@@ -2955,6 +2964,7 @@ body {
   width: 13px;
   height: 13px;
   margin-right: 0;
+  color: #6FA7A2;
 }
 
 .attentionHeatmapComponent .attentionNode span {
@@ -2966,11 +2976,9 @@ body {
 }
 
 .attentionHeatmapComponent .attentionNode:hover {
-  border-color: color-mix(in srgb, var(--cluster-color) 60%, transparent);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--cluster-color) 15%, transparent), rgba(255, 255, 255, 0.012)),
-    rgba(12, 18, 23, 0.9);
-  color: color-mix(in srgb, var(--cluster-color) 94%, var(--text-primary));
+  border-color: #315056;
+  background: #101A24;
+  color: #A4D0CC;
 }
 
 .attentionHeatmapComponent .attentionNode em {
@@ -2979,9 +2987,9 @@ body {
   flex-shrink: 0;
   margin-left: 2px;
   padding: 2px 5px;
-  border: 1px solid color-mix(in srgb, var(--cluster-color) 26%, transparent);
+  border: 1px solid #22343F;
   border-radius: 4px;
-  color: color-mix(in srgb, var(--cluster-color) 86%, var(--text-primary));
+  color: #A4D0CC;
   font-size: 10px;
   font-style: normal;
   font-weight: 720;
