@@ -3485,6 +3485,13 @@ body {
   background: rgba(255, 255, 255, 0.035);
 }
 
+.railItem.leader {
+  border-color: rgba(120, 159, 153, 0.25);
+  background:
+    linear-gradient(135deg, rgba(120, 159, 153, 0.065), rgba(149, 184, 123, 0.03)),
+    rgba(255, 255, 255, 0.018);
+}
+
 .railItem.sponsored {
   border-color: rgba(120, 159, 153, 0.25);
   background:
@@ -3496,6 +3503,11 @@ body {
   color: var(--text-faint);
   font-size: 11px;
   font-variant-numeric: tabular-nums;
+}
+
+.railItem img {
+  width: 28px;
+  height: 28px;
 }
 
 .railItem strong {
@@ -3510,7 +3522,7 @@ body {
 .railItem em {
   margin-left: auto;
   color: var(--positive-strong);
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 760;
 }

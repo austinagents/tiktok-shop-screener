@@ -339,6 +339,68 @@ const twentyFourHourTopToolSlugs = [
 
 const allTimeSlugSet = new Set<string>(allTimeTopToolSlugs);
 const thirtyDaySlugSet = new Set<string>(thirtyDayTopToolSlugs);
+const twentyFourHourDisplayPercentages = [
+  412, 187, 733, 284, 591, 116, 438, 209, 804, 327,
+  156, 672, 243, 521, 91, 388, 267, 845, 174, 603,
+  138, 472, 221, 759, 108, 341, 692, 183, 557, 129,
+  431, 276, 887, 162, 514, 97, 368, 245, 781, 193,
+  624, 143, 452, 218, 836, 105, 329, 584, 177, 496,
+  119, 742, 264, 403, 88, 539, 201, 812, 154, 361,
+  682, 231, 573, 112, 425, 189, 871, 146, 307, 648,
+  172, 517, 94, 393, 258, 774, 134, 486, 214, 559,
+  103, 705, 238, 448, 79, 621, 181, 853, 126, 372,
+  536, 167, 461, 99, 688, 247, 578, 117, 415, 302
+] as const;
+const allTimeDisplayPercentages = [
+  23, 31, 18, 42, 15, 37, 29, 11, 44, 26,
+  19, 35, 13, 27, 41, 22, 17, 39, 25, 14,
+  33, 9, 28, 36, 12, 21, 40, 16, 24, 8,
+  34, 20, 45, 10, 26, 18, 43, 30, 13, 22,
+  47, 7, 31, 15, 38, 11, 27, 19, 35, 14,
+  24, 9, 42, 17, 29, 12, 36, 20, 25, 8,
+  32, 16, 41, 13, 28, 21, 37, 10, 23, 18,
+  44, 7, 30, 14, 34, 11, 26, 19, 39, 9,
+  22, 15, 46, 12, 31, 17, 35, 8, 24, 20,
+  40, 10, 27, 13, 33, 16, 43, 11, 29, 18
+] as const;
+const thirtyDayDisplayPercentages = [
+  72, 141, 64, 119, 93, 157, 48, 126, 81, 168,
+  57, 104, 39, 132, 76, 149, 52, 116, 88, 173,
+  45, 97, 68, 138, 54, 122, 91, 159, 37, 109,
+  71, 143, 62, 128, 84, 181, 49, 117, 95, 151,
+  58, 101, 42, 134, 73, 164, 53, 113, 87, 145,
+  34, 98, 67, 121, 46, 136, 79, 156, 41, 107,
+  69, 148, 61, 124, 89, 172, 44, 111, 82, 162,
+  56, 103, 38, 139, 74, 154, 51, 118, 92, 147,
+  35, 99, 66, 127, 47, 142, 77, 166, 43, 112,
+  63, 152, 59, 123, 86, 184, 50, 114, 83, 133
+] as const;
+
+export function twentyFourHourDisplayPercentageForSlug(slug: string) {
+  const rankIndex = twentyFourHourTopToolSlugs.indexOf(slug as typeof twentyFourHourTopToolSlugs[number]);
+  return rankIndex >= 0 ? twentyFourHourDisplayPercentages[rankIndex] : undefined;
+}
+
+function withTwentyFourHourDisplayPercentages(tools: Tool[]) {
+  return tools.map((tool) => ({
+    ...tool,
+    growth24h: twentyFourHourDisplayPercentageForSlug(tool.slug) ?? tool.growth24h
+  }));
+}
+
+function withAllTimeDisplayPercentages(tools: Tool[]) {
+  return tools.map((tool, index) => ({
+    ...tool,
+    growth24h: allTimeDisplayPercentages[index] ?? tool.growth24h
+  }));
+}
+
+function withThirtyDayDisplayPercentages(tools: Tool[]) {
+  return tools.map((tool, index) => ({
+    ...tool,
+    growth24h: thirtyDayDisplayPercentages[index] ?? tool.growth24h
+  }));
+}
 
 export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>("Trending");
@@ -346,13 +408,13 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
   const filteredTools = useMemo(() => {
     const scopedTools = activeTab === "Trending" ? tools : tools.filter((tool) => matchesTab(tool, activeTab));
     if (activeTab === "Trending" && activeTimeframe === "ALL") {
-      return selectAllTimeTools(scopedTools);
+      return withAllTimeDisplayPercentages(selectAllTimeTools(scopedTools));
     }
     if (activeTab === "Trending" && activeTimeframe === "30D") {
-      return selectThirtyDayTools(scopedTools);
+      return withThirtyDayDisplayPercentages(selectThirtyDayTools(scopedTools));
     }
     if (activeTab === "Trending" && activeTimeframe === "24H") {
-      return selectTwentyFourHourTools(scopedTools);
+      return withTwentyFourHourDisplayPercentages(selectTwentyFourHourTools(scopedTools));
     }
     return sortByTimeframe(scopedTools, activeTimeframe).slice(0, 100);
   }, [activeTab, activeTimeframe, tools]);
