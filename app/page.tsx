@@ -7,7 +7,7 @@ import { HomeTrendingFilter } from "@/components/home-trending-filter";
 import { PromotedMomentumRail } from "@/components/promoted-momentum-rail";
 import { ToolLogo } from "@/components/tool-logo";
 import { WorkflowStack } from "@/components/workflow-stack";
-import { attentionFeed, attentionSubCategories, boostTiers, categories, creatorIntelligenceStatus, creators, liveMetrics, movementEvents, tools, workflows } from "@/lib/data";
+import { attentionFeed, attentionSubCategories, boostTiers, categories, creatorIntelligenceStatus, creators, movementEvents, tools, workflows } from "@/lib/data";
 import { creatorTagDisplayLabel } from "@/lib/creator-tags";
 import { displayCategory } from "@/lib/format";
 
@@ -23,15 +23,6 @@ export default function DiscoverPage() {
   return (
     <div className="homeStack">
       <PromotedMomentumRail />
-
-      <section className="terminalStatus compactStats">
-        <div className="statusIdentity"><strong>Ecosystem</strong><span>LIVE</span></div>
-        <Metric label="Tools tracked" value={liveMetrics.toolsTracked.toLocaleString()} />
-        <Metric label="Mentions 24h" value={`${(liveMetrics.mentions24h / 1000).toFixed(1)}k`} />
-        <Metric label="Breaking out" value={liveMetrics.breakingOut.toString()} />
-        <Link className="metric" href="/workflows"><span>Workflows</span><strong>{liveMetrics.workflowsTracked}</strong></Link>
-        <Metric label="Attention rotation" value="+31%" />
-      </section>
 
       <HomeTrendingFilter tools={tools}>
         <aside className="homeRail">
@@ -111,8 +102,4 @@ function PreviewPanel({ title, meta, href, children }: { title: string; meta: st
 
 function FeedLine({ time, title }: { time: string; title: string }) {
   return <Link href="/moving" className="feedLine"><strong>{title}</strong><small>{time}</small></Link>;
-}
-
-function Metric({ label, value, hot = false }: { label: string; value: string; hot?: boolean }) {
-  return <div className={`metric ${hot ? "hotMetric" : ""}`}><span>{label}</span><strong>{value}</strong></div>;
 }
