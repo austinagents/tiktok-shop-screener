@@ -20,6 +20,8 @@
     "discover:x-adjacency:v1": "node scripts/x-adjacency-discovery-v1.mjs",
     "poc:twitterapi": "node scripts/twitterapi-io-poc.mjs",
     "ingest:x-proof:v1": "node scripts/ingest-x-proof-sources-v1.mjs",
+    "scan:x": "node scripts/x-scanner-v1.mjs",
+    "signals:x": "node scripts/x-signals-v1.mjs",
     "enrich:evidence": "node scripts/enrich-evidence.mjs",
     "creators:avatars": "node scripts/fetch-creator-avatars.mjs",
     "logos:fetch": "node scripts/fetch-logos.mjs",
