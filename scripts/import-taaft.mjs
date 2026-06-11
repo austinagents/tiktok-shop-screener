@@ -32,7 +32,7 @@ const APP_CATEGORIES = [
   "AI Education",
   "AI Writing",
   "AI Sales",
-  "AI Customer Support"
+  "Support"
 ];
 
 const CATEGORY_RULES = [
@@ -53,7 +53,7 @@ const CATEGORY_RULES = [
   ["AI Meeting", ["meeting", "transcript", "minutes"]],
   ["AI Design", ["design", "presentation", "website", "ui", "ux", "mockup"]],
   ["AI Analytics", ["analytics", "data", "dashboard", "insight", "metric"]],
-  ["AI Customer Support", ["customer support", "support", "helpdesk", "ticket"]],
+  ["Support", ["customer support", "support", "helpdesk", "ticket"]],
   ["AI Education", ["education", "learning", "teacher", "student", "tutor", "homework"]],
   ["AI Infrastructure", ["infrastructure", "model", "hosting", "compute", "cloud", "security"]],
   ["AI Avatars", ["avatar", "vtuber", "character"]]

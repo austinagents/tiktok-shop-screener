@@ -437,7 +437,7 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             </div>
             <TimeframeToggle compact options={timeframeTabs} active={activeTimeframe} onChange={(frame) => setActiveTimeframe(frame as TrendingTimeframe)} />
           </div>
-          <ToolTable tools={filteredTools} focused />
+          <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
         </div>
         {children}
       </section>

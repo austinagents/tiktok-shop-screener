@@ -35,7 +35,7 @@ const categoryNames: CategoryName[] = [
   "AI Education",
   "AI Writing",
   "AI Sales",
-  "AI Customer Support"
+  "Support"
 ];
 
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -122,7 +122,7 @@ function subCategoryTagsForTool(name: string, category: CategoryName, descriptio
     else if (category === "AI Research" || category === "AI Search") matches.add("Research Agents");
     else if (category === "AI Automation" || category === "AI Agents") matches.add("AI Employees");
     else if (category === "AI Marketing" || category === "AI Sales") matches.add("Lead Generation");
-    else if (category === "AI Customer Support") matches.add("Customer Support");
+    else if (category === "Support") matches.add("Customer Support");
     else if (category === "AI Image" || category === "AI Design") matches.add("Thumbnails");
   }
 
@@ -377,9 +377,9 @@ const rawTools: Array<[string, CategoryName, string, string, string, string, num
   ["Relevance AI", "AI Agents", "Relevance AI is an approved Top 100 ALL tool tracked for agent workflows, automation use cases, and operational adoption signals.", "https://relevanceai.com/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
   ["Hebbia", "AI Research", "Hebbia is an approved Top 100 ALL tool tracked for research workflows, citation patterns, and knowledge work signals.", "https://www.hebbia.ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
   ["Harvey", "AI Research", "Harvey is an approved Top 100 ALL tool tracked for productivity workflows, workplace usage, and public attention signals.", "https://www.harvey.ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
-  ["Sierra", "AI Customer Support", "Sierra is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://sierra.ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
-  ["Intercom Fin", "AI Customer Support", "Intercom Fin is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://www.intercom.com/fin", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
-  ["Zendesk AI", "AI Customer Support", "Zendesk AI is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://www.zendesk.com/ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
+  ["Sierra", "Support", "Sierra is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://sierra.ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
+  ["Intercom Fin", "Support", "Intercom Fin is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://www.intercom.com/fin", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
+  ["Zendesk AI", "Support", "Zendesk AI is an approved Top 100 ALL tool tracked for support workflows, customer operations, and service automation signals.", "https://www.zendesk.com/ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
   ["Writer", "AI Writing", "Writer is an approved Top 100 ALL tool tracked for writing workflows, editing use cases, and creator adoption signals.", "https://writer.com/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
   ["Copy.ai", "AI Writing", "Copy.ai is an approved Top 100 ALL tool tracked for writing workflows, editing use cases, and creator adoption signals.", "https://www.copy.ai/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],
   ["Wordtune", "AI Writing", "Wordtune is an approved Top 100 ALL tool tracked for writing workflows, editing use cases, and creator adoption signals.", "https://www.wordtune.com/", "Not listed", "2026-06-05", 700, 4200, 9800, 20, 36, 64, 4, 82],

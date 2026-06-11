@@ -34,7 +34,7 @@ export const ecosystemColors: Record<string, string> = {
   "AI Education": "#A67638",
   "AI Writing": "#747B83",
   "AI Sales": "#3C8067",
-  "AI Customer Support": "#3D789D"
+  "Support": "#3D789D"
 };
 
 export function ecosystemColorFor(key: string) {

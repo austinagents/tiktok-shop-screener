@@ -35,7 +35,7 @@ export type CategoryName =
   | "AI Education"
   | "AI Writing"
   | "AI Sales"
-  | "AI Customer Support";
+  | "Support";
 
 export type PricingType = "free" | "freemium" | "paid" | "enterprise" | "waitlist";
 export type LogoSource = "website-icon" | "apple-touch-icon" | "favicon" | "clearbit" | "google-favicon" | "local" | "generated-fallback";
