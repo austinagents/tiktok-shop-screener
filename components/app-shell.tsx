@@ -1,6 +1,6 @@
 "use client";
 
-import { Activity, Bookmark, Grid2X2, UserPlus, UserRound, Workflow } from "lucide-react";
+import { Activity, Bookmark, Grid2X2, Palette, UserPlus, UserRound, Workflow } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
@@ -11,7 +11,7 @@ import { CommandSearch } from "./command-search";
 const tabs = [
   { href: "/search", label: "Discover", icon: Activity },
   { href: "/workflows", label: "Workflows", icon: Workflow },
-  { href: "/creators", label: "Creators", icon: Activity },
+  { href: "/creators", label: "Creators", icon: Palette },
   { href: "/heatmap", label: "Heatmap", icon: Grid2X2 },
   { href: "/watchlist", label: "Watchlist", icon: Bookmark }
 ];

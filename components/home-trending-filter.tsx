@@ -433,7 +433,6 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
           <div className="sectionHeader tightHeader">
             <div>
               <h1>Trending Tools</h1>
-              <p>The live screener for AI product attention.</p>
             </div>
             <TimeframeToggle compact options={timeframeTabs} active={activeTimeframe} onChange={(frame) => setActiveTimeframe(frame as TrendingTimeframe)} />
           </div>
