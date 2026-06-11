@@ -106,7 +106,9 @@
             "replies": 5,
             "views": 3380,
             "total": 57
-          }
+          },
+          "authorHandle": "@lorimerventures",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1912957758959222784/Q3YvAvDY_400x400.jpg"
         },
         {
           "id": "1934653983710453926",
@@ -122,7 +124,9 @@
             "replies": 2,
             "views": 12084,
             "total": 51
-          }
+          },
+          "authorHandle": "@langchain",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_400x400.jpg"
         },
         {
           "id": "1914122950615375965",
@@ -138,7 +142,9 @@
             "replies": 8,
             "views": 6452,
             "total": 42
-          }
+          },
+          "authorHandle": "@shcallaway",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1887439671254523905/sj7XjRhP_400x400.jpg"
         },
         {
           "id": "1954978852729655315",
@@ -955,7 +961,9 @@
             "replies": 142,
             "views": 1012067,
             "total": 4080
-          }
+          },
+          "authorHandle": "@timsoulo",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1757758819134836736/LJevsZAx_400x400.jpg"
         },
         {
           "id": "2059313831260967349",
@@ -971,7 +979,9 @@
             "replies": 9,
             "views": 15295,
             "total": 124
-          }
+          },
+          "authorHandle": "@illyism",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1688814790620196865/TGVXWLNW_400x400.jpg"
         },
         {
           "id": "2064092638341382510",
@@ -987,7 +997,9 @@
             "replies": 10,
             "views": 6114,
             "total": 102
-          }
+          },
+          "authorHandle": "@lilyraynyc",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1935460090821189632/UvkORAsU_400x400.jpg"
         },
         {
           "id": "2062574349304078664",
@@ -1215,7 +1227,9 @@
             "replies": 0,
             "views": 4713,
             "total": 19
-          }
+          },
+          "authorHandle": "@gregkamradt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1467896309453570052/BGy5XYVQ_400x400.jpg"
         },
         {
           "id": "1968110733465637005",
@@ -1381,7 +1395,9 @@
             "replies": 57,
             "views": 57762,
             "total": 404
-          }
+          },
+          "authorHandle": "@nba",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2064916193601822720/OjrzzrSu_400x400.jpg"
         },
         {
           "id": "2062720143193719218",
@@ -1397,7 +1413,9 @@
             "replies": 10,
             "views": 12677,
             "total": 222
-          }
+          },
+          "authorHandle": "@quinnypig",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1840839119037218817/3aPpjjwH_400x400.jpg"
         },
         {
           "id": "2062825585718509769",
@@ -1413,7 +1431,9 @@
             "replies": 0,
             "views": 599,
             "total": 107
-          }
+          },
+          "authorHandle": "@truthnetwork24",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2020519748027678720/bG2ylihB_400x400.jpg"
         },
         {
           "id": "2063006238187667509",
@@ -1593,7 +1613,9 @@
             "replies": 184,
             "views": 38295,
             "total": 1198
-          }
+          },
+          "authorHandle": "@zendadddy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1957968775090958341/wE_NUXj3_400x400.jpg"
         },
         {
           "id": "2062984764441932127",
@@ -1609,7 +1631,9 @@
             "replies": 4,
             "views": 5884,
             "total": 22
-          }
+          },
+          "authorHandle": "@femisapien_z",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1740317001862500352/L3EdTmyU_400x400.jpg"
         },
         {
           "id": "2062976916286501265",
@@ -1625,7 +1649,9 @@
             "replies": 0,
             "views": 476,
             "total": 22
-          }
+          },
+          "authorHandle": "@ilex_ulmus",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2017742284784340994/ZQ_XFytv_400x400.jpg"
         },
         {
           "id": "2062976186213437531",
@@ -1785,7 +1811,9 @@
             "replies": 6,
             "views": 107431,
             "total": 657
-          }
+          },
+          "authorHandle": "@langchain",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_400x400.jpg"
         },
         {
           "id": "1833067257565708418",
@@ -1801,7 +1829,9 @@
             "replies": 0,
             "views": 2168,
             "total": 38
-          }
+          },
+          "authorHandle": "@trending_repos",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1166400472665808897/wn7Cs5GU_400x400.jpg"
         },
         {
           "id": "1907463049021174086",
@@ -1817,7 +1847,9 @@
             "replies": 1,
             "views": 1090,
             "total": 20
-          }
+          },
+          "authorHandle": "@lancedb",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1774928875790938112/TspHmgyr_400x400.png"
         },
         {
           "id": "1912506299511722074",
@@ -2183,7 +2215,9 @@
             "replies": 8,
             "views": 3973,
             "total": 77
-          }
+          },
+          "authorHandle": "@kleffew94",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1885781841682317312/miSPKFJk_400x400.jpg"
         },
         {
           "id": "2062536130147307543",
@@ -2199,7 +2233,9 @@
             "replies": 9,
             "views": 11415,
             "total": 76
-          }
+          },
+          "authorHandle": "@londonmaxxing",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2031715763195662336/3oC87qaQ_400x400.jpg"
         },
         {
           "id": "2064304955825983676",
@@ -2231,7 +2267,9 @@
             "replies": 5,
             "views": 4107,
             "total": 58
-          }
+          },
+          "authorHandle": "@chintanturakhia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1883614781556568064/p2OenYCH_400x400.jpg"
         },
         {
           "id": "2062730212874629616",
@@ -2512,7 +2550,9 @@
             "replies": 15,
             "views": 15145,
             "total": 178
-          }
+          },
+          "authorHandle": "@svpino",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1581385027757264898/j5GjtUiq_400x400.jpg"
         },
         {
           "id": "2053204909445587136",
@@ -2528,7 +2568,9 @@
             "replies": 5,
             "views": 8019,
             "total": 97
-          }
+          },
+          "authorHandle": "@jasonkneen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2025853506272342016/35FdXe2a_400x400.jpg"
         },
         {
           "id": "2062515954513318118",
@@ -2544,7 +2586,9 @@
             "replies": 4,
             "views": 1308,
             "total": 19
-          }
+          },
+          "authorHandle": "@hermes_f",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1907413672323952641/5FOhQYxN_400x400.jpg"
         },
         {
           "id": "2051749466282279236",
@@ -2942,7 +2986,9 @@
             "replies": 7,
             "views": 30129,
             "total": 242
-          }
+          },
+          "authorHandle": "@shuhaibmehri",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1946346412389609472/WPXSa9aT_400x400.jpg"
         },
         {
           "id": "2054970084364636356",
@@ -2958,7 +3004,9 @@
             "replies": 10,
             "views": 13361,
             "total": 229
-          }
+          },
+          "authorHandle": "@teksedge",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1682428434792980485/Z3VcwEl7_400x400.jpg"
         },
         {
           "id": "2060644384820134399",
@@ -2974,7 +3022,9 @@
             "replies": 6,
             "views": 6856,
             "total": 115
-          }
+          },
+          "authorHandle": "@samarthp6",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1756760485045936128/xFF_C43-_400x400.jpg"
         },
         {
           "id": "2056378020059816014",
@@ -3164,7 +3214,9 @@
             "replies": 10,
             "views": 6602,
             "total": 98
-          }
+          },
+          "authorHandle": "@paigepiskin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1995647448371666944/j6Qmj8EQ_400x400.jpg"
         },
         {
           "id": "1768653428962570745",
@@ -3180,7 +3232,9 @@
             "replies": 2,
             "views": 3680,
             "total": 60
-          }
+          },
+          "authorHandle": "@rfox_valt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1612267297674260480/LCN5KPE3_400x400.jpg"
         },
         {
           "id": "2059611807057101308",
@@ -3196,7 +3250,9 @@
             "replies": 5,
             "views": 7293,
             "total": 54
-          }
+          },
+          "authorHandle": "@datachaz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1967672234056523776/FoFd2843_400x400.jpg"
         },
         {
           "id": "1774722960000966759",
@@ -3375,7 +3431,9 @@
             "replies": 0,
             "views": 1801,
             "total": 22
-          }
+          },
+          "authorHandle": "@kunalstwt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2005054950443749376/L4ZdvNG5_400x400.jpg"
         },
         {
           "id": "2062548964809809947",
@@ -3391,7 +3449,9 @@
             "replies": 1,
             "views": 670,
             "total": 17
-          }
+          },
+          "authorHandle": "@c3_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1621627230681202689/E6auw5VP_400x400.jpg"
         },
         {
           "id": "2062003786022010888",
@@ -3407,7 +3467,9 @@
             "replies": 2,
             "views": 898,
             "total": 15
-          }
+          },
+          "authorHandle": "@acoustik",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1522361819381174272/jQ6XAz8c_400x400.jpg"
         },
         {
           "id": "2061513684405612710",
@@ -3582,7 +3644,9 @@
             "replies": 27,
             "views": 220255,
             "total": 870
-          }
+          },
+          "authorHandle": "@rabi_guha",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1963952175463436288/HcjljLvY_400x400.jpg"
         },
         {
           "id": "2032427954806915170",
@@ -3598,7 +3662,9 @@
             "replies": 7,
             "views": 27917,
             "total": 319
-          }
+          },
+          "authorHandle": "@markknd",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1923971076276502528/uw7iJX4A_400x400.jpg"
         },
         {
           "id": "2059729739145768984",
@@ -3614,7 +3680,9 @@
             "replies": 10,
             "views": 5382,
             "total": 134
-          }
+          },
+          "authorHandle": "@krislachance",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1912879054492942336/LTQtXdfw_400x400.jpg"
         },
         {
           "id": "2011823911131066705",
@@ -3795,7 +3863,9 @@
             "replies": 4,
             "views": 10658,
             "total": 137
-          }
+          },
+          "authorHandle": "@nvidiaaidev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1836133629694742531/verSRYr8_400x400.jpg"
         },
         {
           "id": "2033359034888462517",
@@ -3811,7 +3881,9 @@
             "replies": 10,
             "views": 12463,
             "total": 133
-          }
+          },
+          "authorHandle": "@mon__lim",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1723047606547619840/u2lXQ4At_400x400.jpg"
         },
         {
           "id": "2032681728528310339",
@@ -3827,7 +3899,9 @@
             "replies": 9,
             "views": 20997,
             "total": 125
-          }
+          },
+          "authorHandle": "@creebeauvoir",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028913862133927936/YZ_9GrSX_400x400.jpg"
         },
         {
           "id": "2033583238019768767",
@@ -4055,7 +4129,9 @@
             "replies": 9,
             "views": 43701,
             "total": 188
-          }
+          },
+          "authorHandle": "@marionawfal",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1938244629071015936/UwtzYY-R_400x400.jpg"
         },
         {
           "id": "2036859260274172372",
@@ -4087,7 +4163,9 @@
             "replies": 15,
             "views": 15819,
             "total": 94
-          }
+          },
+          "authorHandle": "@brycent",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2011197982679412736/KZFLv3ri_400x400.jpg"
         },
         {
           "id": "2037552726310093240",
@@ -4103,7 +4181,9 @@
             "replies": 9,
             "views": 14292,
             "total": 43
-          }
+          },
+          "authorHandle": "@techcrunch",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1096066608034918401/m8wnTWsX_400x400.png"
         },
         {
           "id": "2037301286354268566",
@@ -4486,7 +4566,9 @@
             "replies": 0,
             "views": 55124,
             "total": 29
-          }
+          },
+          "authorHandle": "@alexbouchardd",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1400602915799244807/25yuXvwb_400x400.jpg"
         },
         {
           "id": "1904869661055082907",
@@ -4502,7 +4584,9 @@
             "replies": 3,
             "views": 462,
             "total": 26
-          }
+          },
+          "authorHandle": "@tysonlester",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1722741496573759488/Hz2cmyjU_400x400.jpg"
         },
         {
           "id": "1991286003034681370",
@@ -4518,7 +4602,9 @@
             "replies": 0,
             "views": 1476,
             "total": 14
-          }
+          },
+          "authorHandle": "@dfdavidfontaine",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1534688977516650501/8Jubnfmc_400x400.jpg"
         },
         {
           "id": "1935749029247565909",
@@ -4748,7 +4834,9 @@
             "replies": 17,
             "views": 7040,
             "total": 144
-          }
+          },
+          "authorHandle": "@harsehaj",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1919413086999498753/Kf5xtB_s_400x400.jpg"
         },
         {
           "id": "2062580141016928396",
@@ -4764,7 +4852,9 @@
             "replies": 14,
             "views": 4347,
             "total": 97
-          }
+          },
+          "authorHandle": "@thunderking_ola",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2057972705757102080/oMwhBhrM_400x400.jpg"
         },
         {
           "id": "2062239641257050231",
@@ -4780,7 +4870,9 @@
             "replies": 6,
             "views": 13126,
             "total": 51
-          }
+          },
+          "authorHandle": "@naturalpay",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2030861924930633728/3jjTuMzP_400x400.jpg"
         },
         {
           "id": "2061869482079859154",
@@ -4961,7 +5053,9 @@
             "replies": 4,
             "views": 512,
             "total": 29
-          }
+          },
+          "authorHandle": "@mepusica",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875365421173633025/F2BWyjZw_400x400.jpg"
         },
         {
           "id": "2059624429362041130",
@@ -4977,7 +5071,9 @@
             "replies": 5,
             "views": 2423,
             "total": 23
-          }
+          },
+          "authorHandle": "@n7studios",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2019970655429722112/B_M4OPLm_400x400.jpg"
         },
         {
           "id": "2059650965246980289",
@@ -4993,7 +5089,9 @@
             "replies": 1,
             "views": 1767,
             "total": 16
-          }
+          },
+          "authorHandle": "@juste_petr",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1761508183187599362/zf8oCqOh_400x400.jpg"
         },
         {
           "id": "2058250293624668642",
@@ -5607,7 +5705,9 @@
             "replies": 6,
             "views": 150,
             "total": 27
-          }
+          },
+          "authorHandle": "@trioma_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061734183731400704/KH76yvb1_400x400.jpg"
         },
         {
           "id": "2060331669446438924",
@@ -5623,7 +5723,9 @@
             "replies": 0,
             "views": 1738,
             "total": 27
-          }
+          },
+          "authorHandle": "@bolna_dev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1808595799711911937/hnFj0sYU_400x400.jpg"
         },
         {
           "id": "2063588923511894365",
@@ -5639,7 +5741,9 @@
             "replies": 0,
             "views": 1121,
             "total": 21
-          }
+          },
+          "authorHandle": "@voicearena_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052353384154312705/e1J_ddPh_400x400.jpg"
         },
         {
           "id": "2060051515885437295",
@@ -6116,7 +6220,9 @@
             "replies": 2,
             "views": 807,
             "total": 16
-          }
+          },
+          "authorHandle": "@sailorlightblue",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2059899372847206400/ecTyXlm3_400x400.jpg"
         },
         {
           "id": "2053814917287858192",
@@ -6300,7 +6406,9 @@
             "replies": 30,
             "views": 1366,
             "total": 90
-          }
+          },
+          "authorHandle": "@obsidian_fr1",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2053492150575534080/wxP9TgBj_400x400.jpg"
         },
         {
           "id": "2062579332023787958",
@@ -6316,7 +6424,9 @@
             "replies": 6,
             "views": 7040,
             "total": 57
-          }
+          },
+          "authorHandle": "@public",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2029954921500450820/TM-s7Olp_400x400.png"
         },
         {
           "id": "2062572357974155468",
@@ -6462,7 +6572,9 @@
             "replies": 17,
             "views": 39440,
             "total": 495
-          }
+          },
+          "authorHandle": "@_philschmid",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1831321531852496896/1yBZG884_400x400.jpg"
         },
         {
           "id": "2037925148599243005",
@@ -6494,7 +6606,9 @@
             "replies": 9,
             "views": 32597,
             "total": 228
-          }
+          },
+          "authorHandle": "@hammadtime",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1785129224648720384/Q08cBFDv_400x400.jpg"
         },
         {
           "id": "2040837274124886091",
@@ -6510,7 +6624,9 @@
             "replies": 3,
             "views": 8565,
             "total": 102
-          }
+          },
+          "authorHandle": "@daniel_mac8",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1972999017551249408/kNdZGnUv_400x400.jpg"
         },
         {
           "id": "2041220577462219074",
@@ -6730,7 +6846,9 @@
             "replies": 2,
             "views": 1179,
             "total": 18
-          }
+          },
+          "authorHandle": "@official_ad3",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1893198679558770688/QCuBgixJ_400x400.jpg"
         },
         {
           "id": "2062595412037406762",
@@ -6894,7 +7012,9 @@
             "replies": 184,
             "views": 38295,
             "total": 1198
-          }
+          },
+          "authorHandle": "@zendadddy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1957968775090958341/wE_NUXj3_400x400.jpg"
         },
         {
           "id": "2062984764441932127",
@@ -6910,7 +7030,9 @@
             "replies": 4,
             "views": 5884,
             "total": 22
-          }
+          },
+          "authorHandle": "@femisapien_z",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1740317001862500352/L3EdTmyU_400x400.jpg"
         },
         {
           "id": "2062976916286501265",
@@ -6926,7 +7048,9 @@
             "replies": 0,
             "views": 476,
             "total": 22
-          }
+          },
+          "authorHandle": "@ilex_ulmus",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2017742284784340994/ZQ_XFytv_400x400.jpg"
         },
         {
           "id": "2062976186213437531",
@@ -7105,7 +7229,9 @@
             "replies": 51,
             "views": 49478,
             "total": 334
-          }
+          },
+          "authorHandle": "@zmh",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1009209833822801920/hQU11dPS_400x400.jpg"
         },
         {
           "id": "2011138466449694913",
@@ -7121,7 +7247,9 @@
             "replies": 1,
             "views": 838,
             "total": 11
-          }
+          },
+          "authorHandle": "@paulgeller",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1161658518639980545/um1J7UCS_400x400.jpg"
         },
         {
           "id": "1945105345111580896",
@@ -7137,7 +7265,9 @@
             "replies": 1,
             "views": 1111,
             "total": 7
-          }
+          },
+          "authorHandle": "@mattmedeiros",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1843717746455875584/1xRuDtbk_400x400.jpg"
         }
       ]
     },
@@ -7259,7 +7389,9 @@
             "replies": 2,
             "views": 36921,
             "total": 117
-          }
+          },
+          "authorHandle": "@origin_trail",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1745101388709814272/emMOmENi_400x400.jpg"
         },
         {
           "id": "2054594543287484667",
@@ -7447,7 +7579,9 @@
             "replies": 34,
             "views": 15672,
             "total": 182
-          }
+          },
+          "authorHandle": "@anjalisayswhat",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1978934794407813120/a0xq6o0z_400x400.jpg"
         },
         {
           "id": "1909334846499086810",
@@ -7463,7 +7597,9 @@
             "replies": 11,
             "views": 20218,
             "total": 154
-          }
+          },
+          "authorHandle": "@corinnemriley",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1705368829613010944/XBU49TdO_400x400.jpg"
         },
         {
           "id": "1910398401935794417",
@@ -7479,7 +7615,9 @@
             "replies": 5,
             "views": 14691,
             "total": 117
-          }
+          },
+          "authorHandle": "@chrmanning",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/512256295542333440/8Jo4w8kV_400x400.jpeg"
         },
         {
           "id": "1909249988690850281",
@@ -7878,7 +8016,9 @@
             "replies": 28,
             "views": 52687,
             "total": 257
-          }
+          },
+          "authorHandle": "@tokifyi",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1979801508087570432/1S2QfJ5m_400x400.jpg"
         },
         {
           "id": "2061196746277916836",
@@ -7894,7 +8034,9 @@
             "replies": 2,
             "views": 10336,
             "total": 71
-          }
+          },
+          "authorHandle": "@jameygannon",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1996721908004343808/lPnecCcQ_400x400.jpg"
         },
         {
           "id": "2062646181017121179",
@@ -7910,7 +8052,9 @@
             "replies": 10,
             "views": 2688,
             "total": 67
-          }
+          },
+          "authorHandle": "@lucashjin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2056107695623503872/iUbqqN5Q_400x400.jpg"
         },
         {
           "id": "2061893457434578997",
@@ -8088,7 +8232,9 @@
             "replies": 5,
             "views": 3837,
             "total": 70
-          }
+          },
+          "authorHandle": "@effylives",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2059297835489591296/V_gJPbVy_400x400.jpg"
         },
         {
           "id": "2060753878795370798",
@@ -8104,7 +8250,9 @@
             "replies": 4,
             "views": 1386,
             "total": 53
-          }
+          },
+          "authorHandle": "@jasminstclaire",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1630823173032910854/lAuRJFCe_400x400.jpg"
         },
         {
           "id": "2061220884384510184",
@@ -8136,7 +8284,9 @@
             "replies": 1,
             "views": 11082,
             "total": 24
-          }
+          },
+          "authorHandle": "@julianmeoficial",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1844447639502204954/rG6X2Wiz_400x400.jpg"
         },
         {
           "id": "2057521527524839646",
@@ -8296,7 +8446,9 @@
             "replies": 23,
             "views": 16678,
             "total": 439
-          }
+          },
+          "authorHandle": "@ingi_erlingsson",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1817939762449145857/oI98DuhU_400x400.jpg"
         },
         {
           "id": "2061825397868630454",
@@ -8312,7 +8464,9 @@
             "replies": 9,
             "views": 31977,
             "total": 233
-          }
+          },
+          "authorHandle": "@nvidiartxspark",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061303426479431680/BDJQPK6Q_400x400.jpg"
         },
         {
           "id": "2061515964127039683",
@@ -8328,7 +8482,9 @@
             "replies": 3,
             "views": 4655,
             "total": 75
-          }
+          },
+          "authorHandle": "@radiancefields",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1736870707617742848/Q0-wm6x__400x400.jpg"
         },
         {
           "id": "2061856377338003716",
@@ -8538,7 +8694,9 @@
             "replies": 0,
             "views": 6395,
             "total": 20
-          }
+          },
+          "authorHandle": "@arxiv",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1365352170267299840/IzvjKckL_400x400.jpg"
         },
         {
           "id": "1964723143534313474",
@@ -8554,7 +8712,9 @@
             "replies": 0,
             "views": 700,
             "total": 14
-          }
+          },
+          "authorHandle": "@sid_srk",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1408657728524984320/maDSx_Zi_400x400.jpg"
         },
         {
           "id": "1883157377584619524",
@@ -8888,7 +9048,9 @@
             "replies": 1,
             "views": 4477,
             "total": 94
-          }
+          },
+          "authorHandle": "@cotinetwork",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1982413205990166528/peUB_-n4_400x400.jpg"
         },
         {
           "id": "2048260059256521035",
@@ -8904,7 +9066,9 @@
             "replies": 9,
             "views": 5405,
             "total": 82
-          }
+          },
+          "authorHandle": "@vincent_koc",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1894690664568254465/8aNlXUm2_400x400.jpg"
         },
         {
           "id": "2061008655718502851",
@@ -8920,7 +9084,9 @@
             "replies": 8,
             "views": 2264,
             "total": 58
-          }
+          },
+          "authorHandle": "@solvrbot",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2051334344053252096/Hhd6H4Id_400x400.jpg"
         },
         {
           "id": "2037533941691826547",
@@ -9102,7 +9268,9 @@
             "replies": 19,
             "views": 34769,
             "total": 815
-          }
+          },
+          "authorHandle": "@uisavior",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1957472500679348224/XzIvstmK_400x400.jpg"
         },
         {
           "id": "2017579403824554079",
@@ -9118,7 +9286,9 @@
             "replies": 70,
             "views": 21421,
             "total": 387
-          }
+          },
+          "authorHandle": "@ravikumarsahu78",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1839646960560537600/Bl02AIde_400x400.jpg"
         },
         {
           "id": "2009615362766106720",
@@ -9166,7 +9336,9 @@
             "replies": 14,
             "views": 7418,
             "total": 227
-          }
+          },
+          "authorHandle": "@janetmachuka_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1524797123228848130/Njr-uK9Z_400x400.jpg"
         },
         {
           "id": "2019652916831727915",
@@ -9316,7 +9488,9 @@
             "replies": 109,
             "views": 2157,
             "total": 291
-          }
+          },
+          "authorHandle": "@jags100x",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2055232950745108481/9VRmob1n_400x400.jpg"
         },
         {
           "id": "2060096539872161846",
@@ -9332,7 +9506,9 @@
             "replies": 93,
             "views": 2366,
             "total": 247
-          }
+          },
+          "authorHandle": "@fasterrdaddy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2051818597597560836/1bqTaIAE_400x400.jpg"
         },
         {
           "id": "2060079609748631820",
@@ -9348,7 +9524,9 @@
             "replies": 117,
             "views": 2164,
             "total": 221
-          }
+          },
+          "authorHandle": "@biscuitweb3",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1981830817492922368/63UnaPXz_400x400.jpg"
         },
         {
           "id": "2060084985730621728",
@@ -9517,7 +9695,9 @@
             "replies": 2,
             "views": 339,
             "total": 13
-          }
+          },
+          "authorHandle": "@unclecode",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1863507975438299136/Tgi1wWHR_400x400.jpg"
         },
         {
           "id": "1891686873828852178",
@@ -9533,7 +9713,9 @@
             "replies": 2,
             "views": 415,
             "total": 12
-          }
+          },
+          "authorHandle": "@brettdavies",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1873247521793032192/5mrlX2w8_400x400.jpg"
         },
         {
           "id": "2036449781782880264",
@@ -9565,7 +9747,9 @@
             "replies": 0,
             "views": 603,
             "total": 10
-          }
+          },
+          "authorHandle": "@papermoon98",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1903761649774768128/fTw1SqM__400x400.jpg"
         },
         {
           "id": "1978698461655572492",
@@ -10166,7 +10350,9 @@
             "replies": 3,
             "views": 4889,
             "total": 26
-          }
+          },
+          "authorHandle": "@hoocrypto",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018044543384358913/ZiLBaRbN_400x400.jpg"
         },
         {
           "id": "2064383123299684376",
@@ -10198,7 +10384,9 @@
             "replies": 3,
             "views": 454,
             "total": 13
-          }
+          },
+          "authorHandle": "@__padmanabhan",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2063128177342627841/PkUmrfOO_400x400.jpg"
         },
         {
           "id": "1924595977710928067",
@@ -10214,7 +10402,9 @@
             "replies": 0,
             "views": 1007,
             "total": 13
-          }
+          },
+          "authorHandle": "@orinthomas",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1430298210858258436/fFxx7LYW_400x400.jpg"
         },
         {
           "id": "2001864434420269333",
@@ -10374,7 +10564,9 @@
             "replies": 15,
             "views": 46656,
             "total": 188
-          }
+          },
+          "authorHandle": "@adityavg13",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1540763259812192256/-2jiXL3u_400x400.jpg"
         },
         {
           "id": "2062962179012489720",
@@ -10390,7 +10582,9 @@
             "replies": 1,
             "views": 244,
             "total": 33
-          }
+          },
+          "authorHandle": "@ppkook4",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2023710153439379457/-G5B15RP_400x400.jpg"
         },
         {
           "id": "2062974769692336262",
@@ -10406,7 +10600,9 @@
             "replies": 4,
             "views": 733,
             "total": 29
-          }
+          },
+          "authorHandle": "@rahaincrease",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2030452750073622529/TZZ6jV6K_400x400.jpg"
         },
         {
           "id": "2062964957336207619",
@@ -10567,7 +10763,9 @@
             "replies": 13,
             "views": 1266,
             "total": 106
-          }
+          },
+          "authorHandle": "@anujcodes_21",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1823409668993245187/zP-_Y2Cg_400x400.jpg"
         },
         {
           "id": "2034259043976712451",
@@ -10583,7 +10781,9 @@
             "replies": 2,
             "views": 843,
             "total": 32
-          }
+          },
+          "authorHandle": "@rohanchaubey4",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1208295289108361217/SD1pgMdw_400x400.jpg"
         },
         {
           "id": "2057534426293174709",
@@ -10599,7 +10799,9 @@
             "replies": 2,
             "views": 3457,
             "total": 22
-          }
+          },
+          "authorHandle": "@langchain",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_400x400.jpg"
         },
         {
           "id": "1869413965023068592",
@@ -10775,7 +10977,9 @@
             "replies": 9,
             "views": 3843,
             "total": 183
-          }
+          },
+          "authorHandle": "@shannonjoyradio",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1709025594099298304/lTvSzHfI_400x400.jpg"
         },
         {
           "id": "2061870572028727403",
@@ -10791,7 +10995,9 @@
             "replies": 4,
             "views": 1959,
             "total": 48
-          }
+          },
+          "authorHandle": "@covalent_hq",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1970196037999697923/YayVFD_P_400x400.jpg"
         },
         {
           "id": "2061921064415007079",
@@ -10807,7 +11013,9 @@
             "replies": 0,
             "views": 2181,
             "total": 33
-          }
+          },
+          "authorHandle": "@apachespark",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1029806457665937408/hNHMcixV_400x400.jpg"
         },
         {
           "id": "2062624962276692103",
@@ -11131,7 +11339,9 @@
             "replies": 5,
             "views": 8019,
             "total": 97
-          }
+          },
+          "authorHandle": "@jasonkneen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2025853506272342016/35FdXe2a_400x400.jpg"
         },
         {
           "id": "2050689078979596762",
@@ -11147,7 +11357,9 @@
             "replies": 2,
             "views": 9366,
             "total": 75
-          }
+          },
+          "authorHandle": "@kwindla",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1790772534914551808/YpwkVUIl_400x400.jpg"
         },
         {
           "id": "2064473736737358105",
@@ -11163,7 +11375,9 @@
             "replies": 8,
             "views": 13369,
             "total": 62
-          }
+          },
+          "authorHandle": "@nvidia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1828904711124078593/SRvCZSfQ_400x400.jpg"
         },
         {
           "id": "2061966979892949109",
@@ -11342,7 +11556,9 @@
             "replies": 0,
             "views": 7092,
             "total": 57
-          }
+          },
+          "authorHandle": "@digitalocean",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2050225101212123136/2fGuxzWh_400x400.jpg"
         },
         {
           "id": "2062547132285087988",
@@ -11358,7 +11574,9 @@
             "replies": 1,
             "views": 8088,
             "total": 51
-          }
+          },
+          "authorHandle": "@happycapyai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2014583631034130432/ZNDrJp1i_400x400.jpg"
         },
         {
           "id": "2062232427125199275",
@@ -11374,7 +11592,9 @@
             "replies": 2,
             "views": 1412,
             "total": 29
-          }
+          },
+          "authorHandle": "@presidentlin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2050063778469781504/Q8uT2UFB_400x400.jpg"
         },
         {
           "id": "2062854527192273075",
@@ -11951,7 +12171,9 @@
             "replies": 109,
             "views": 634125,
             "total": 2770
-          }
+          },
+          "authorHandle": "@zjasper",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1929721010049503232/dCqfpEMX_400x400.jpg"
         },
         {
           "id": "2002061365075124344",
@@ -11967,7 +12189,9 @@
             "replies": 9,
             "views": 5951,
             "total": 112
-          }
+          },
+          "authorHandle": "@nvidiaai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_400x400.png"
         },
         {
           "id": "1989311492517244942",
@@ -11983,7 +12207,9 @@
             "replies": 22,
             "views": 723,
             "total": 72
-          }
+          },
+          "authorHandle": "@mankol181777",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2006495556730818560/1L0dSD7Y_400x400.jpg"
         },
         {
           "id": "2016496709233266769",
@@ -12165,7 +12391,9 @@
             "replies": 24,
             "views": 101694,
             "total": 491
-          }
+          },
+          "authorHandle": "@adamstern_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1371425447972601858/pY2EVz31_400x400.jpg"
         },
         {
           "id": "2055779005706670158",
@@ -12181,7 +12409,9 @@
             "replies": 4,
             "views": 9775,
             "total": 74
-          }
+          },
+          "authorHandle": "@ryanzhuuuu",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1869114564333412352/difAW4Aj_400x400.jpg"
         },
         {
           "id": "2057932050850861483",
@@ -12197,7 +12427,9 @@
             "replies": 4,
             "views": 8987,
             "total": 57
-          }
+          },
+          "authorHandle": "@mcannonbrookes",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/568401563538841600/2eTVtXXO_400x400.jpeg"
         },
         {
           "id": "2062868762265604430",
@@ -13133,7 +13365,9 @@
             "replies": 3,
             "views": 25783,
             "total": 138
-          }
+          },
+          "authorHandle": "@tansuyegen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1994489071859634177/Rf2ZfLcZ_400x400.jpg"
         },
         {
           "id": "1964344156203209047",
@@ -13149,7 +13383,9 @@
             "replies": 47,
             "views": 48156,
             "total": 130
-          }
+          },
+          "authorHandle": "@altiamkabir",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2058928085337333760/qcLw8Mzu_400x400.jpg"
         },
         {
           "id": "1972404252195815752",
@@ -13165,7 +13401,9 @@
             "replies": 34,
             "views": 10831,
             "total": 85
-          }
+          },
+          "authorHandle": "@jaydendavid23",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1763861672572182528/6mpa8WW__400x400.jpg"
         },
         {
           "id": "1965080597136605581",
@@ -13317,7 +13555,8 @@
             "views": 261,
             "total": 6
           },
-          "authorHandle": "@recruitingblogs"
+          "authorHandle": "@recruitingblogs",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1495105886561480705/SEBEmcc9_400x400.jpg"
         },
         {
           "id": "1612593977345048576",
@@ -13454,7 +13693,9 @@
             "replies": 24,
             "views": 19416,
             "total": 232
-          }
+          },
+          "authorHandle": "@joshclemm",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2010044419131805697/VUZk3bze_400x400.jpg"
         },
         {
           "id": "2062941936198226245",
@@ -13470,7 +13711,9 @@
             "replies": 1,
             "views": 3520,
             "total": 33
-          }
+          },
+          "authorHandle": "@greghuntoon",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1986087902506516480/xxnE4UET_400x400.jpg"
         },
         {
           "id": "2062921172040216579",
@@ -13486,7 +13729,9 @@
             "replies": 0,
             "views": 354,
             "total": 24
-          }
+          },
+          "authorHandle": "@ifeoluwaajeigb1",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2060365902906834946/eluTdrLa_400x400.jpg"
         },
         {
           "id": "2062932329031463287",
@@ -13661,7 +13906,9 @@
             "replies": 34,
             "views": 54148,
             "total": 614
-          }
+          },
+          "authorHandle": "@ericciarla",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1975556183189569536/GRnYDpgT_400x400.jpg"
         },
         {
           "id": "1996988519697535453",
@@ -13693,7 +13940,9 @@
             "replies": 24,
             "views": 72486,
             "total": 331
-          }
+          },
+          "authorHandle": "@tomosman",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1971119785128689664/WOSHPZQx_400x400.jpg"
         },
         {
           "id": "1995075373697319365",
@@ -13773,7 +14022,9 @@
             "replies": 12,
             "views": 21725,
             "total": 80
-          }
+          },
+          "authorHandle": "@nickscamara_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1957959002568159232/LbXLiTBS_400x400.jpg"
         },
         {
           "id": "1999911791632261452",
@@ -13875,7 +14126,9 @@
             "replies": 6,
             "views": 8687,
             "total": 79
-          }
+          },
+          "authorHandle": "@virgin_hunter69",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2044348685174321152/RvZsq08R_400x400.jpg"
         },
         {
           "id": "2017269458822180917",
@@ -13891,7 +14144,9 @@
             "replies": 21,
             "views": 1517,
             "total": 64
-          }
+          },
+          "authorHandle": "@youfadedwealth",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061277226650214406/urBuD_LO_400x400.jpg"
         },
         {
           "id": "2046584228263977345",
@@ -13907,7 +14162,9 @@
             "replies": 9,
             "views": 1024,
             "total": 31
-          }
+          },
+          "authorHandle": "@timhaldorsson",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2025517047107510272/UlP5Jfrv_400x400.jpg"
         },
         {
           "id": "2022566907489186290",
@@ -14088,7 +14345,9 @@
             "replies": 11,
             "views": 21274,
             "total": 416
-          }
+          },
+          "authorHandle": "@minimax_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_400x400.jpg"
         },
         {
           "id": "2061877175410934210",
@@ -14104,7 +14363,9 @@
             "replies": 15,
             "views": 15676,
             "total": 239
-          }
+          },
+          "authorHandle": "@dzhulgakov",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1123832863730880512/qZsss3GJ_400x400.jpg"
         },
         {
           "id": "2062048485181137184",
@@ -14120,7 +14381,9 @@
             "replies": 9,
             "views": 9965,
             "total": 116
-          }
+          },
+          "authorHandle": "@lqiao",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1594101249254731776/-cNhmmTk_400x400.jpg"
         },
         {
           "id": "2060578391284457863",
@@ -14360,7 +14623,9 @@
             "replies": 2,
             "views": 496,
             "total": 12
-          }
+          },
+          "authorHandle": "@jeredking",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2034752414642053122/d07yJ4UP_400x400.jpg"
         },
         {
           "id": "1974285407203495980",
@@ -14376,7 +14641,9 @@
             "replies": 0,
             "views": 2467,
             "total": 12
-          }
+          },
+          "authorHandle": "@guilleflorvs",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1930737028037021697/ynq4PLyJ_400x400.jpg"
         },
         {
           "id": "2020199118459793606",
@@ -14938,7 +15205,9 @@
             "replies": 3,
             "views": 1530,
             "total": 43
-          }
+          },
+          "authorHandle": "@pollock",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1915640508250304512/Z2HNzEY7_400x400.jpg"
         },
         {
           "id": "1905286365639569769",
@@ -14954,7 +15223,9 @@
             "replies": 2,
             "views": 1776,
             "total": 31
-          }
+          },
+          "authorHandle": "@hobdaydesign",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1537069432291442692/z8YvQdk4_400x400.jpg"
         },
         {
           "id": "1877440346445197689",
@@ -14970,7 +15241,9 @@
             "replies": 1,
             "views": 6903,
             "total": 16
-          }
+          },
+          "authorHandle": "@dylsphillips",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1915868210546745344/pekdzJF6_400x400.jpg"
         },
         {
           "id": "2011800003384062103",
@@ -15788,7 +16061,9 @@
             "replies": 13,
             "views": 1745,
             "total": 69
-          }
+          },
+          "authorHandle": "@superteamie",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1907059994626863105/rDfv5cll_400x400.jpg"
         },
         {
           "id": "2049800743591231980",
@@ -15804,7 +16079,9 @@
             "replies": 6,
             "views": 1308,
             "total": 56
-          }
+          },
+          "authorHandle": "@irishnftgal",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2059252943581327360/nh1qJ4P__400x400.jpg"
         },
         {
           "id": "2048774724650680349",
@@ -15820,7 +16097,9 @@
             "replies": 1,
             "views": 9373,
             "total": 48
-          }
+          },
+          "authorHandle": "@buddiesforpaws",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1925890862350790656/Klf1zk8-_400x400.jpg"
         },
         {
           "id": "1994362624176198022",
@@ -16217,7 +16496,9 @@
             "replies": 197,
             "views": 337233,
             "total": 2453
-          }
+          },
+          "authorHandle": "@claudeai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_400x400.jpg"
         },
         {
           "id": "2056562736772051376",
@@ -16233,7 +16514,9 @@
             "replies": 7,
             "views": 12399,
             "total": 82
-          }
+          },
+          "authorHandle": "@tanayj",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/806762286383665156/peWa7SS9_400x400.jpg"
         },
         {
           "id": "2060780648495808599",
@@ -16249,7 +16532,9 @@
             "replies": 28,
             "views": 4556,
             "total": 79
-          }
+          },
+          "authorHandle": "@dcbk2la",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2040342517791784960/2H6QZ1eb_400x400.jpg"
         },
         {
           "id": "2059871143595577531",
@@ -16514,7 +16799,9 @@
             "replies": 5,
             "views": 275,
             "total": 26
-          }
+          },
+          "authorHandle": "@openmind_agi",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2008369731586416640/jjpaoz7e_400x400.jpg"
         },
         {
           "id": "2062496814423486774",
@@ -16699,7 +16986,9 @@
             "replies": 4,
             "views": 4628,
             "total": 127
-          }
+          },
+          "authorHandle": "@top7ico",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1928127819059482624/yYOE_tLx_400x400.png"
         },
         {
           "id": "2060257671039930444",
@@ -16912,7 +17201,9 @@
             "replies": 3,
             "views": 14184,
             "total": 29
-          }
+          },
+          "authorHandle": "@axios",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1641458976049995776/GtO-0zYe_400x400.jpg"
         },
         {
           "id": "2060072785347510613",
@@ -17076,7 +17367,9 @@
             "replies": 22,
             "views": 1205,
             "total": 65
-          }
+          },
+          "authorHandle": "@pictsbyai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2026934657321689088/DA7BkW61_400x400.jpg"
         },
         {
           "id": "2062945041564553249",
@@ -17092,7 +17385,9 @@
             "replies": 4,
             "views": 2170,
             "total": 63
-          }
+          },
+          "authorHandle": "@asklumo",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2044098956368531456/jTPlv647_400x400.jpg"
         },
         {
           "id": "2062905508164669804",
@@ -17108,7 +17403,9 @@
             "replies": 14,
             "views": 378,
             "total": 61
-          }
+          },
+          "authorHandle": "@codi_fyy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1955758931193872384/NcDD6uk1_400x400.jpg"
         },
         {
           "id": "2062844391098867771",
@@ -17289,7 +17586,9 @@
             "replies": 95,
             "views": 244929,
             "total": 1286
-          }
+          },
+          "authorHandle": "@mikesmith187",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1544323457562906625/5G1a50xJ_400x400.jpg"
         },
         {
           "id": "1983604439828353473",
@@ -17305,7 +17604,9 @@
             "replies": 3,
             "views": 11483,
             "total": 58
-          }
+          },
+          "authorHandle": "@gauravvohra",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1914084806566289408/Xbr5y51N_400x400.jpg"
         },
         {
           "id": "1983682975071138289",
@@ -17321,7 +17622,9 @@
             "replies": 1,
             "views": 6103,
             "total": 53
-          }
+          },
+          "authorHandle": "@prukalpa",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/378800000562427372/f3a662fb95566fb48339dd1c1a882f37_400x400.jpeg"
         },
         {
           "id": "1983819651500192141",
@@ -17935,7 +18238,9 @@
             "replies": 45,
             "views": 34307,
             "total": 1017
-          }
+          },
+          "authorHandle": "@ringmagazine",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1867218325194891264/dPjbZ27w_400x400.jpg"
         },
         {
           "id": "2062195814693278134",
@@ -17951,7 +18256,9 @@
             "replies": 2,
             "views": 10017,
             "total": 93
-          }
+          },
+          "authorHandle": "@travis_sch",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1042260496043323392/F5ij5Cab_400x400.jpg"
         },
         {
           "id": "2055602689728237612",
@@ -17967,7 +18274,9 @@
             "replies": 3,
             "views": 11680,
             "total": 35
-          }
+          },
+          "authorHandle": "@remilouf",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1570519314142318595/PJGWEkfu_400x400.jpg"
         },
         {
           "id": "2055053471691530331",
@@ -18413,7 +18722,9 @@
             "replies": 3,
             "views": 472,
             "total": 26
-          }
+          },
+          "authorHandle": "@haroldsinnott",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1214348334841901056/QSdqkzO-_400x400.jpg"
         },
         {
           "id": "2006908311774572941",
@@ -18573,7 +18884,9 @@
             "replies": 2,
             "views": 958,
             "total": 178
-          }
+          },
+          "authorHandle": "@i_amshiti",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2036423514660708352/PtFecw86_400x400.jpg"
         },
         {
           "id": "2064164125924855968",
@@ -18589,7 +18902,9 @@
             "replies": 44,
             "views": 2550,
             "total": 149
-          }
+          },
+          "authorHandle": "@strength04_x",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2047561489616363520/NbhoYDNT_400x400.jpg"
         },
         {
           "id": "2063954209393803403",
@@ -18605,7 +18920,9 @@
             "replies": 33,
             "views": 13246,
             "total": 143
-          }
+          },
+          "authorHandle": "@jaykay65220066",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1826312644862595072/76RUbpk5_400x400.jpg"
         },
         {
           "id": "2063576772105453658",
@@ -18782,7 +19099,9 @@
             "replies": 9,
             "views": 5684,
             "total": 243
-          }
+          },
+          "authorHandle": "@netmindai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1649427403071016962/F8OaE7Bp_400x400.jpg"
         },
         {
           "id": "2057778793176326404",
@@ -18798,7 +19117,9 @@
             "replies": 18,
             "views": 875,
             "total": 73
-          }
+          },
+          "authorHandle": "@savefilmer",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2056703669866033152/SIjbktjD_400x400.jpg"
         },
         {
           "id": "1901252609370902996",
@@ -18814,7 +19135,9 @@
             "replies": 1,
             "views": 9889,
             "total": 44
-          }
+          },
+          "authorHandle": "@airina_xyz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1966109828159254528/uPGV85vm_400x400.jpg"
         },
         {
           "id": "1892324517239779654",
@@ -18995,7 +19318,9 @@
             "replies": 11,
             "views": 11430,
             "total": 72
-          }
+          },
+          "authorHandle": "@j0hnwang",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2006103215687827456/KCV2Mo8f_400x400.jpg"
         },
         {
           "id": "1952381057778737198",
@@ -19011,7 +19336,9 @@
             "replies": 2,
             "views": 2335,
             "total": 27
-          }
+          },
+          "authorHandle": "@katieburkie",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/825171206961844224/gpz145fs_400x400.jpg"
         },
         {
           "id": "1950611809289039996",
@@ -19027,7 +19354,9 @@
             "replies": 3,
             "views": 1219,
             "total": 24
-          }
+          },
+          "authorHandle": "@lancedb",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1774928875790938112/TspHmgyr_400x400.png"
         },
         {
           "id": "1953214624213680145",
@@ -19205,7 +19534,9 @@
             "replies": 9,
             "views": 64393,
             "total": 78
-          }
+          },
+          "authorHandle": "@gsivulka",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1983215737561841664/dpDuL3B0_400x400.jpg"
         },
         {
           "id": "1981412263509610801",
@@ -19237,7 +19568,9 @@
             "replies": 5,
             "views": 49008,
             "total": 59
-          }
+          },
+          "authorHandle": "@rippling",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1956047534633189378/sChH_uNm_400x400.jpg"
         },
         {
           "id": "1979269076645220589",
@@ -19253,7 +19586,9 @@
             "replies": 1,
             "views": 4807,
             "total": 40
-          }
+          },
+          "authorHandle": "@mgarimella",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2048945799061786624/ifnedlOP_400x400.jpg"
         },
         {
           "id": "1950933579178954827",
@@ -19630,7 +19965,9 @@
             "replies": 23,
             "views": 41713,
             "total": 251
-          }
+          },
+          "authorHandle": "@jeff_weinstein",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1000426988149002240/B9OhM1Rm_400x400.jpg"
         },
         {
           "id": "2028878173971390914",
@@ -19646,7 +19983,9 @@
             "replies": 23,
             "views": 60377,
             "total": 237
-          }
+          },
+          "authorHandle": "@mintlify",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2007938629797310464/XmtD5CZz_400x400.jpg"
         },
         {
           "id": "2028889863966343596",
@@ -19662,7 +20001,9 @@
             "replies": 9,
             "views": 6896,
             "total": 155
-          }
+          },
+          "authorHandle": "@hiteshdotcom",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1724344976715468800/MasktpKz_400x400.jpg"
         },
         {
           "id": "2029283981833978037",
@@ -19896,7 +20237,9 @@
             "replies": 3,
             "views": 8270,
             "total": 77
-          }
+          },
+          "authorHandle": "@viipin8",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1902031349328019456/kLruAg6o_400x400.jpg"
         },
         {
           "id": "2061832905140146449",
@@ -20057,7 +20400,9 @@
             "replies": 56,
             "views": 3108,
             "total": 253
-          }
+          },
+          "authorHandle": "@mechanismo0",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1933842946660433920/peuZ7QI9_400x400.jpg"
         },
         {
           "id": "2064322295221682302",
@@ -20073,7 +20418,9 @@
             "replies": 36,
             "views": 4802,
             "total": 96
-          }
+          },
+          "authorHandle": "@aiwithkhan",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2043791038528331776/rcl0HoZd_400x400.jpg"
         },
         {
           "id": "2063946642571800843",
@@ -20089,7 +20436,9 @@
             "replies": 11,
             "views": 1298,
             "total": 69
-          }
+          },
+          "authorHandle": "@pzdesignai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1995614534686355456/upzAeysW_400x400.jpg"
         },
         {
           "id": "2064295646706720943",
@@ -20305,7 +20654,8 @@
             "views": 5575,
             "total": 43
           },
-          "authorHandle": "@googlecloud"
+          "authorHandle": "@googlecloud",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2047008530478346240/2ZoDIjwe_400x400.jpg"
         },
         {
           "id": "1960414307344097615",
@@ -20701,7 +21051,9 @@
             "replies": 5,
             "views": 8218,
             "total": 78
-          }
+          },
+          "authorHandle": "@sarahookr",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1403376500192071683/zvr_Hkox_400x400.jpg"
         },
         {
           "id": "2062938381785403586",
@@ -20717,7 +21069,9 @@
             "replies": 1,
             "views": 5801,
             "total": 73
-          }
+          },
+          "authorHandle": "@multimodalart",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1998217136209289216/yL6PoQig_400x400.jpg"
         },
         {
           "id": "2062920605507174653",
@@ -20733,7 +21087,9 @@
             "replies": 7,
             "views": 5019,
             "total": 50
-          }
+          },
+          "authorHandle": "@cohere",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1650250832909152260/760DZ0cv_400x400.png"
         },
         {
           "id": "2062555614132204003",
@@ -20910,7 +21266,9 @@
             "replies": 39,
             "views": 56542,
             "total": 646
-          }
+          },
+          "authorHandle": "@alancowen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1537178918654025729/8qIiV3CP_400x400.jpg"
         },
         {
           "id": "2038674930514985363",
@@ -20926,7 +21284,9 @@
             "replies": 6,
             "views": 15452,
             "total": 266
-          }
+          },
+          "authorHandle": "@prince_canuma",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018690435636510720/Aq3-a3Mv_400x400.jpg"
         },
         {
           "id": "2037650327214739719",
@@ -20942,7 +21302,9 @@
             "replies": 9,
             "views": 7684,
             "total": 118
-          }
+          },
+          "authorHandle": "@zachkrall",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2037603805127454720/R7Je0hb3_400x400.jpg"
         },
         {
           "id": "2018718151999910182",
@@ -21121,7 +21483,9 @@
             "replies": 17,
             "views": 12786,
             "total": 171
-          }
+          },
+          "authorHandle": "@ibm",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1677090954350583811/Xy93qVY4_400x400.jpg"
         },
         {
           "id": "1989408829554000029",
@@ -21153,7 +21517,9 @@
             "replies": 6,
             "views": 8049,
             "total": 84
-          }
+          },
+          "authorHandle": "@ibmnews",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1494704356729495563/eJTciqMK_400x400.jpg"
         },
         {
           "id": "2014684545337979285",
@@ -21185,7 +21551,9 @@
             "replies": 4,
             "views": 1322,
             "total": 32
-          }
+          },
+          "authorHandle": "@haroldsinnott",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1214348334841901056/QSdqkzO-_400x400.jpg"
         },
         {
           "id": "2028381837865730274",
@@ -21811,7 +22179,9 @@
             "replies": 42,
             "views": 41103,
             "total": 259
-          }
+          },
+          "authorHandle": "@richardfzhang",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1608909323106947074/LMjxNKQa_400x400.jpg"
         },
         {
           "id": "1951289316556034441",
@@ -21875,7 +22245,9 @@
             "replies": 3,
             "views": 11021,
             "total": 27
-          }
+          },
+          "authorHandle": "@amapel",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1913423565808193536/ymJodBPO_400x400.jpg"
         },
         {
           "id": "1870214712937590868",
@@ -21891,7 +22263,9 @@
             "replies": 3,
             "views": 4246,
             "total": 24
-          }
+          },
+          "authorHandle": "@richardfzhang",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1608909323106947074/LMjxNKQa_400x400.jpg"
         },
         {
           "id": "1881423547568198106",
@@ -22025,7 +22399,9 @@
             "replies": 4,
             "views": 95684,
             "total": 149
-          }
+          },
+          "authorHandle": "@charlieeriksen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2007095966986313728/OQumw0JK_400x400.jpg"
         },
         {
           "id": "2050240373637677087",
@@ -22041,7 +22417,9 @@
             "replies": 1,
             "views": 6269,
             "total": 34
-          }
+          },
+          "authorHandle": "@evilmartians",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1345069260570288138/Ve6raQhL_400x400.jpg"
         },
         {
           "id": "2055112576757887427",
@@ -22057,7 +22435,9 @@
             "replies": 3,
             "views": 2969,
             "total": 33
-          }
+          },
+          "authorHandle": "@fin_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2054602489064796160/jSDwIY99_400x400.jpg"
         },
         {
           "id": "2047109552618053671",
@@ -22506,7 +22886,9 @@
             "replies": 1,
             "views": 1132,
             "total": 41
-          }
+          },
+          "authorHandle": "@arcreactorai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1837206721892339716/UMbWTLyu_400x400.jpg"
         },
         {
           "id": "2031648416409776395",
@@ -22667,7 +23049,9 @@
             "replies": 1,
             "views": 12665,
             "total": 164
-          }
+          },
+          "authorHandle": "@elastic_devs",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1990466058071769088/siRhfCJw_400x400.jpg"
         },
         {
           "id": "2024499516418801914",
@@ -22683,7 +23067,9 @@
             "replies": 0,
             "views": 3084,
             "total": 73
-          }
+          },
+          "authorHandle": "@alvarobartt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052282525360242693/L12GieUi_400x400.jpg"
         },
         {
           "id": "2024497716701622621",
@@ -22699,7 +23085,9 @@
             "replies": 2,
             "views": 2354,
             "total": 71
-          }
+          },
+          "authorHandle": "@tomaarsen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1731648253618233344/ikRZwAqv_400x400.jpg"
         },
         {
           "id": "2037534875331268812",
@@ -23094,7 +23482,9 @@
             "replies": 0,
             "views": 6530,
             "total": 31
-          }
+          },
+          "authorHandle": "@_imsigh",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018563858059890689/mkVnLof9_400x400.jpg"
         },
         {
           "id": "2058587376809869699",
@@ -23110,7 +23500,9 @@
             "replies": 0,
             "views": 2626,
             "total": 26
-          }
+          },
+          "authorHandle": "@alternativeto",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2011816868852400128/lqTcMAy8_400x400.jpg"
         },
         {
           "id": "2063705810799411243",
@@ -23142,7 +23534,9 @@
             "replies": 0,
             "views": 1302,
             "total": 17
-          }
+          },
+          "authorHandle": "@metroscorner",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1993183629892030464/zoZ_4luV_400x400.jpg"
         },
         {
           "id": "2060147181156278389",
@@ -23594,7 +23988,9 @@
             "replies": 6,
             "views": 859,
             "total": 38
-          }
+          },
+          "authorHandle": "@aianddesign",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2036894106463723524/PuUJq0VR_400x400.jpg"
         },
         {
           "id": "2062388647375102445",
@@ -23734,7 +24130,9 @@
             "replies": 2,
             "views": 2428,
             "total": 57
-          }
+          },
+          "authorHandle": "@whatyouhide",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2041117689763307520/pvUNASkk_400x400.jpg"
         },
         {
           "id": "2064002667274178598",
@@ -23750,7 +24148,9 @@
             "replies": 4,
             "views": 2322,
             "total": 27
-          }
+          },
+          "authorHandle": "@stephenmruiz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1976322234772836355/uDlugSJp_400x400.jpg"
         },
         {
           "id": "2028580574336553024",
@@ -23766,7 +24166,9 @@
             "replies": 0,
             "views": 1769,
             "total": 22
-          }
+          },
+          "authorHandle": "@cjbell_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1620901653435092992/-wyA7pCA_400x400.jpg"
         },
         {
           "id": "2049184543018569902",
@@ -24170,7 +24572,9 @@
             "replies": 9,
             "views": 15844,
             "total": 281
-          }
+          },
+          "authorHandle": "@itsafiz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1910376042163822592/uqSpLylP_400x400.jpg"
         },
         {
           "id": "2002535481699885294",
@@ -24186,7 +24590,9 @@
             "replies": 17,
             "views": 21677,
             "total": 120
-          }
+          },
+          "authorHandle": "@chaiwithjai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1432334309411758089/A0ZADTht_400x400.jpg"
         },
         {
           "id": "2002895889690407382",
@@ -24218,7 +24624,9 @@
             "replies": 0,
             "views": 1984,
             "total": 65
-          }
+          },
+          "authorHandle": "@tdatascience",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1261315088478343169/PKP-HJDv_400x400.jpg"
         },
         {
           "id": "2006466840386752728",
@@ -24593,7 +25001,9 @@
             "replies": 1,
             "views": 2940,
             "total": 36
-          }
+          },
+          "authorHandle": "@marcklingen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2013040658370396160/sjTsUKR8_400x400.jpg"
         },
         {
           "id": "2053504315705204895",
@@ -24609,7 +25019,9 @@
             "replies": 4,
             "views": 1958,
             "total": 20
-          }
+          },
+          "authorHandle": "@andylackie",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1992531019774226432/JCG5A4OZ_400x400.jpg"
         },
         {
           "id": "2055192744377872483",
@@ -24625,7 +25037,9 @@
             "replies": 1,
             "views": 605,
             "total": 18
-          }
+          },
+          "authorHandle": "@itsclelia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2010129136501555200/gaI8nXYh_400x400.jpg"
         },
         {
           "id": "2053835537803354165",
@@ -24801,7 +25215,9 @@
             "replies": 9,
             "views": 15844,
             "total": 282
-          }
+          },
+          "authorHandle": "@itsafiz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1910376042163822592/uqSpLylP_400x400.jpg"
         },
         {
           "id": "2002444761215742090",
@@ -24817,7 +25233,9 @@
             "replies": 1,
             "views": 21829,
             "total": 24
-          }
+          },
+          "authorHandle": "@yadnesh_sa88965",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1966180913714499584/FXaG75Cp_400x400.jpg"
         },
         {
           "id": "2004181839255138332",
@@ -24833,7 +25251,9 @@
             "replies": 0,
             "views": 1826,
             "total": 18
-          }
+          },
+          "authorHandle": "@tdatascience",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1261315088478343169/PKP-HJDv_400x400.jpg"
         }
       ]
     },
@@ -25516,7 +25936,9 @@
             "replies": 12,
             "views": 6140,
             "total": 162
-          }
+          },
+          "authorHandle": "@pdotcv",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1862280749086294016/IuQHCw-k_400x400.jpg"
         },
         {
           "id": "2062286353963033012",
@@ -25548,7 +25970,9 @@
             "replies": 1,
             "views": 8611,
             "total": 35
-          }
+          },
+          "authorHandle": "@griveau",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1722558348610994177/aTGHHyv0_400x400.jpg"
         },
         {
           "id": "2061700673180152203",
@@ -25676,7 +26100,9 @@
             "replies": 6,
             "views": 7173,
             "total": 103
-          }
+          },
+          "authorHandle": "@jerryjliu0",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_400x400.jpg"
         },
         {
           "id": "2060439904929382700",
@@ -25692,7 +26118,9 @@
             "replies": 1,
             "views": 27792,
             "total": 98
-          }
+          },
+          "authorHandle": "@googleaidevs",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1865153179341426688/g3bdgQ0P_400x400.jpg"
         },
         {
           "id": "2062086326850392308",
@@ -25708,7 +26136,9 @@
             "replies": 8,
             "views": 4383,
             "total": 54
-          }
+          },
+          "authorHandle": "@nehaaaa_6",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2063685320898695168/Rp2LmwO7_400x400.jpg"
         },
         {
           "id": "2062864654066430457",
@@ -25887,7 +26317,9 @@
             "replies": 1,
             "views": 27992,
             "total": 99
-          }
+          },
+          "authorHandle": "@googleaidevs",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1865153179341426688/g3bdgQ0P_400x400.jpg"
         },
         {
           "id": "2062086326850392308",
@@ -25903,7 +26335,9 @@
             "replies": 8,
             "views": 4708,
             "total": 54
-          }
+          },
+          "authorHandle": "@nehaaaa_6",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2063685320898695168/Rp2LmwO7_400x400.jpg"
         },
         {
           "id": "2062602112853536836",
@@ -25919,7 +26353,9 @@
             "replies": 10,
             "views": 6033,
             "total": 52
-          }
+          },
+          "authorHandle": "@conorbronsdon",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1588759668012519425/Spc_UUAO_400x400.jpg"
         },
         {
           "id": "2058563674160185646",
@@ -26099,7 +26535,9 @@
             "replies": 42,
             "views": 42723,
             "total": 861
-          }
+          },
+          "authorHandle": "@locallyaiapp",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1917177939747012608/PwUQxMza_400x400.jpg"
         },
         {
           "id": "2062586310041505886",
@@ -26115,7 +26553,9 @@
             "replies": 46,
             "views": 44096,
             "total": 511
-          }
+          },
+          "authorHandle": "@adrgrondin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1947971805379006464/Xg1r2Z96_400x400.jpg"
         },
         {
           "id": "2057908120102609062",
@@ -26131,7 +26571,9 @@
             "replies": 10,
             "views": 20351,
             "total": 193
-          }
+          },
+          "authorHandle": "@letta_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1940424059990200321/59lbFsxt_400x400.jpg"
         },
         {
           "id": "2062637781130543186",
@@ -26639,7 +27081,9 @@
             "replies": 2,
             "views": 420,
             "total": 18
-          }
+          },
+          "authorHandle": "@codeprojektgrit",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1818824436838957056/beQorJk9_400x400.jpg"
         },
         {
           "id": "1661969770328236032",
@@ -26655,7 +27099,9 @@
             "replies": 4,
             "views": 385,
             "total": 17
-          }
+          },
+          "authorHandle": "@lumeberrymedia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1928509908363685889/3U3OttRh_400x400.jpg"
         },
         {
           "id": "1659506567434125312",
@@ -27442,7 +27888,9 @@
             "replies": 28,
             "views": 8970,
             "total": 128
-          }
+          },
+          "authorHandle": "@stacy_muur",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1605592382908628992/v1qmOV_P_400x400.jpg"
         },
         {
           "id": "2062590057794691268",
@@ -27599,7 +28047,9 @@
             "replies": 5,
             "views": 0,
             "total": 96
-          }
+          },
+          "authorHandle": "@_lucasrizzotto",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2009071495050326016/Wv59Avvo_400x400.jpg"
         },
         {
           "id": "1465713221654958086",
@@ -27615,7 +28065,9 @@
             "replies": 0,
             "views": 0,
             "total": 38
-          }
+          },
+          "authorHandle": "@rtovr",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/3231199751/565fba330ed547537c41d45115b2cb15_400x400.png"
         },
         {
           "id": "1354451760715325440",
@@ -27647,7 +28099,9 @@
             "replies": 0,
             "views": 0,
             "total": 18
-          }
+          },
+          "authorHandle": "@ibcshow",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052699829877264386/5wik9ydi_400x400.jpg"
         },
         {
           "id": "1282990527386923008",
@@ -27819,7 +28273,9 @@
             "replies": 11,
             "views": 10721,
             "total": 205
-          }
+          },
+          "authorHandle": "@minimax_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_400x400.jpg"
         },
         {
           "id": "2064157310151528954",
@@ -27835,7 +28291,9 @@
             "replies": 1,
             "views": 1736,
             "total": 45
-          }
+          },
+          "authorHandle": "@dianeemccormack",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2063517371013398528/_OlvjEOG_400x400.jpg"
         },
         {
           "id": "2063769806231474602",
@@ -27851,7 +28309,9 @@
             "replies": 5,
             "views": 3031,
             "total": 44
-          }
+          },
+          "authorHandle": "@annieliao_2000",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2057044170922172416/z-wclnwr_400x400.jpg"
         },
         {
           "id": "2061800952840241644",
@@ -28079,7 +28539,9 @@
             "replies": 1,
             "views": 4521,
             "total": 62
-          }
+          },
+          "authorHandle": "@keenanisalive",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1392755637/dirac_disk_400x400.png"
         },
         {
           "id": "2059769003346886911",
@@ -28459,7 +28921,9 @@
             "replies": 18,
             "views": 68737,
             "total": 1530
-          }
+          },
+          "authorHandle": "@skalskip92",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1557421659925237763/RzJu2YI3_400x400.jpg"
         },
         {
           "id": "2062663991756005423",
@@ -28475,7 +28939,9 @@
             "replies": 67,
             "views": 28110,
             "total": 316
-          }
+          },
+          "authorHandle": "@idyll",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1944504764773064704/zK-tzJEE_400x400.jpg"
         },
         {
           "id": "2062630233077915657",
@@ -28491,7 +28957,9 @@
             "replies": 24,
             "views": 5705,
             "total": 97
-          }
+          },
+          "authorHandle": "@babydodo999",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1978480522796912640/IBMF-tTp_400x400.jpg"
         },
         {
           "id": "2062166397372055688",
@@ -28673,7 +29141,9 @@
             "replies": 4,
             "views": 6673,
             "total": 140
-          }
+          },
+          "authorHandle": "@rvrsh3ll",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1905678701519380480/KSxd3jmv_400x400.jpg"
         },
         {
           "id": "1898280721342410966",
@@ -28689,7 +29159,9 @@
             "replies": 2,
             "views": 1792,
             "total": 44
-          }
+          },
+          "authorHandle": "@xymbiz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1576537716484935682/NKzrcjKP_400x400.jpg"
         },
         {
           "id": "1898614253592117744",
@@ -28705,7 +29177,9 @@
             "replies": 13,
             "views": 596,
             "total": 32
-          }
+          },
+          "authorHandle": "@iashwinikumaar",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1551251070084870144/8f2hwBja_400x400.jpg"
         },
         {
           "id": "1897018134219108746",
@@ -28994,7 +29468,9 @@
             "replies": 3,
             "views": 143,
             "total": 26
-          }
+          },
+          "authorHandle": "@maxime887812",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2008317208452366337/IzYTmnSr_400x400.jpg"
         },
         {
           "id": "2062338547768516683",
@@ -29010,7 +29486,9 @@
             "replies": 0,
             "views": 1665,
             "total": 26
-          }
+          },
+          "authorHandle": "@timetravelwalls",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2053594739971182592/nlEiRs9u_400x400.jpg"
         },
         {
           "id": "2062580139356287400",
@@ -29100,7 +29578,9 @@
             "replies": 1,
             "views": 55979,
             "total": 133
-          }
+          },
+          "authorHandle": "@pydantic",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018769774977728512/E04ZHJQQ_400x400.jpg"
         },
         {
           "id": "2027333012069736876",
@@ -29116,7 +29596,9 @@
             "replies": 2,
             "views": 16305,
             "total": 90
-          }
+          },
+          "authorHandle": "@samuelcolvin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1678332260569710594/of0Ed11O_400x400.jpg"
         },
         {
           "id": "2052841265553924106",
@@ -29132,7 +29614,9 @@
             "replies": 2,
             "views": 2448,
             "total": 36
-          }
+          },
+          "authorHandle": "@aiswarya_sankar",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1984729973606006785/MGBYOsv8_400x400.jpg"
         },
         {
           "id": "2015213797200519333",
@@ -29312,7 +29796,9 @@
             "replies": 27,
             "views": 22887,
             "total": 293
-          }
+          },
+          "authorHandle": "@nvidiaai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_400x400.png"
         },
         {
           "id": "2062965189453259017",
@@ -29328,7 +29814,9 @@
             "replies": 4,
             "views": 6133,
             "total": 101
-          }
+          },
+          "authorHandle": "@arena",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_400x400.jpg"
         },
         {
           "id": "2061870026559250631",
@@ -29344,7 +29832,9 @@
             "replies": 5,
             "views": 6226,
             "total": 69
-          }
+          },
+          "authorHandle": "@ivanlandabaso",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1963613131340394496/BhS_sqD6_400x400.jpg"
         },
         {
           "id": "2062520844413272522",
@@ -29525,7 +30015,9 @@
             "replies": 10,
             "views": 25836,
             "total": 291
-          }
+          },
+          "authorHandle": "@bernhardsson",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1971935694047105024/dpmg1_bB_400x400.jpg"
         },
         {
           "id": "1953556759534350738",
@@ -29541,7 +30033,9 @@
             "replies": 20,
             "views": 190916,
             "total": 255
-          }
+          },
+          "authorHandle": "@devindesktop",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061887856314810368/2JyE9zA5_400x400.jpg"
         },
         {
           "id": "1952865447747211495",
@@ -29557,7 +30051,9 @@
             "replies": 7,
             "views": 7950,
             "total": 151
-          }
+          },
+          "authorHandle": "@charles_irl",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1320840184494108674/d7A64nIG_400x400.jpg"
         },
         {
           "id": "1955340754479616111",
@@ -29736,7 +30232,9 @@
             "replies": 3,
             "views": 4249,
             "total": 29
-          }
+          },
+          "authorHandle": "@peer_rich",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1816814706000080897/uSIidPHz_400x400.png"
         },
         {
           "id": "1966810330471751709",
@@ -29752,7 +30250,9 @@
             "replies": 2,
             "views": 3413,
             "total": 28
-          }
+          },
+          "authorHandle": "@pavelhegler",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1944874256447287296/sAu5S4Pw_400x400.jpg"
         },
         {
           "id": "1983327846643994985",
@@ -29768,7 +30268,9 @@
             "replies": 6,
             "views": 1642,
             "total": 16
-          }
+          },
+          "authorHandle": "@shaughnessy119",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1976669967694118912/T1EnJx6f_400x400.jpg"
         },
         {
           "id": "2037747531916992599",
@@ -30776,7 +31278,9 @@
             "replies": 4,
             "views": 13238,
             "total": 122
-          }
+          },
+          "authorHandle": "@coffeewithone",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1833297541196300288/4aTlZoSg_400x400.jpg"
         },
         {
           "id": "2054709602630193566",
@@ -30792,7 +31296,9 @@
             "replies": 8,
             "views": 15692,
             "total": 116
-          }
+          },
+          "authorHandle": "@coffeewithone",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1833297541196300288/4aTlZoSg_400x400.jpg"
         },
         {
           "id": "2057911560451068392",
@@ -30920,7 +31426,9 @@
             "replies": 4,
             "views": 1595,
             "total": 23
-          }
+          },
+          "authorHandle": "@yashsehgaldev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2040429101706878976/KQsZqNtf_400x400.jpg"
         }
       ]
     },
@@ -30987,7 +31495,9 @@
             "replies": 11,
             "views": 24720,
             "total": 342
-          }
+          },
+          "authorHandle": "@lyalindotcom",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2062256437967900672/fL5iP8CH_400x400.jpg"
         },
         {
           "id": "2062061813731074166",
@@ -31003,7 +31513,9 @@
             "replies": 7,
             "views": 2257,
             "total": 53
-          }
+          },
+          "authorHandle": "@keridwencodet",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1970203883000434688/UKLrEFFf_400x400.jpg"
         },
         {
           "id": "2062560846392250878",
@@ -31019,7 +31531,9 @@
             "replies": 2,
             "views": 4883,
             "total": 21
-          }
+          },
+          "authorHandle": "@luksamuk",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2056114447836446720/2NDybW7b_400x400.jpg"
         },
         {
           "id": "2062151362977423761",
@@ -31200,7 +31714,9 @@
             "replies": 257,
             "views": 294763,
             "total": 2930
-          }
+          },
+          "authorHandle": "@openclaw",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2017100664984186880/orbYx-3U_400x400.jpg"
         },
         {
           "id": "2036824286988816737",
@@ -31216,7 +31732,9 @@
             "replies": 68,
             "views": 104237,
             "total": 1024
-          }
+          },
+          "authorHandle": "@steipete",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1131851609774985216/OcsssQ9J_400x400.png"
         },
         {
           "id": "2040998328461316524",
@@ -31232,7 +31750,9 @@
             "replies": 16,
             "views": 18599,
             "total": 519
-          }
+          },
+          "authorHandle": "@teknium",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1642401912648777728/2KFikPsE_400x400.jpg"
         },
         {
           "id": "2061212100647944482",
@@ -31413,7 +31933,9 @@
             "replies": 52,
             "views": 44240,
             "total": 279
-          }
+          },
+          "authorHandle": "@jturntdev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1999767537827926019/RvTSzs_M_400x400.jpg"
         },
         {
           "id": "2062969651777118495",
@@ -31429,7 +31951,9 @@
             "replies": 15,
             "views": 46656,
             "total": 188
-          }
+          },
+          "authorHandle": "@adityavg13",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1540763259812192256/-2jiXL3u_400x400.jpg"
         },
         {
           "id": "2062736605581128125",
@@ -31445,7 +31969,9 @@
             "replies": 69,
             "views": 48659,
             "total": 186
-          }
+          },
+          "authorHandle": "@iamadig",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018060853728448512/gZB9-ed6_400x400.jpg"
         },
         {
           "id": "2062756843106255203",
@@ -31626,7 +32152,9 @@
             "replies": 52,
             "views": 44240,
             "total": 279
-          }
+          },
+          "authorHandle": "@jturntdev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1999767537827926019/RvTSzs_M_400x400.jpg"
         },
         {
           "id": "2062969651777118495",
@@ -31642,7 +32170,9 @@
             "replies": 15,
             "views": 46656,
             "total": 188
-          }
+          },
+          "authorHandle": "@adityavg13",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1540763259812192256/-2jiXL3u_400x400.jpg"
         },
         {
           "id": "2062736605581128125",
@@ -31658,7 +32188,9 @@
             "replies": 69,
             "views": 48659,
             "total": 186
-          }
+          },
+          "authorHandle": "@iamadig",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2018060853728448512/gZB9-ed6_400x400.jpg"
         },
         {
           "id": "2062756843106255203",
@@ -32054,7 +32586,9 @@
             "replies": 70,
             "views": 71497,
             "total": 999
-          }
+          },
+          "authorHandle": "@teknium",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1642401912648777728/2KFikPsE_400x400.jpg"
         },
         {
           "id": "2060071852970844377",
@@ -32070,7 +32604,9 @@
             "replies": 16,
             "views": 44098,
             "total": 478
-          }
+          },
+          "authorHandle": "@minimax_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_400x400.jpg"
         },
         {
           "id": "2045449098082623504",
@@ -32086,7 +32622,9 @@
             "replies": 32,
             "views": 11586,
             "total": 128
-          }
+          },
+          "authorHandle": "@sentientagi",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1966252290500710400/iacpKDQc_400x400.jpg"
         },
         {
           "id": "2048260059256521035",
@@ -32268,7 +32806,9 @@
             "replies": 25,
             "views": 235303,
             "total": 470
-          }
+          },
+          "authorHandle": "@minimax_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_400x400.jpg"
         },
         {
           "id": "2022830728753324110",
@@ -32284,7 +32824,9 @@
             "replies": 35,
             "views": 59808,
             "total": 344
-          }
+          },
+          "authorHandle": "@nummanali",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1958877571103281152/0BOHse4E_400x400.jpg"
         },
         {
           "id": "2023602047837409311",
@@ -32300,7 +32842,9 @@
             "replies": 11,
             "views": 26826,
             "total": 280
-          }
+          },
+          "authorHandle": "@alibaba_qwen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2064231947149377536/Ab70PxT5_400x400.jpg"
         },
         {
           "id": "2022887485466923369",
@@ -32473,7 +33017,9 @@
             "replies": 6,
             "views": 8597,
             "total": 131
-          }
+          },
+          "authorHandle": "@aliszu",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1810926952120832000/DbRUegIC_400x400.jpg"
         },
         {
           "id": "1979644666523033613",
@@ -32505,7 +33051,9 @@
             "replies": 6,
             "views": 1446,
             "total": 24
-          }
+          },
+          "authorHandle": "@piotrkulpinski",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2012162725070163968/KjRwyi1Q_400x400.jpg"
         },
         {
           "id": "2005991272360837171",
@@ -32553,7 +33101,9 @@
             "replies": 3,
             "views": 2641,
             "total": 19
-          }
+          },
+          "authorHandle": "@jordienr",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2053541405121769475/TUDez6zL_400x400.jpg"
         },
         {
           "id": "1980304936647950823",
@@ -32751,7 +33301,9 @@
             "replies": 9,
             "views": 149458,
             "total": 31
-          }
+          },
+          "authorHandle": "@tradestation",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2021653643741499392/UH2CXdWp_400x400.jpg"
         },
         {
           "id": "1774849818004693301",
@@ -32767,7 +33319,9 @@
             "replies": 3,
             "views": 10092,
             "total": 27
-          }
+          },
+          "authorHandle": "@capjack2000",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/774443980234850304/N11U7mNT_400x400.jpg"
         },
         {
           "id": "1930772699745292721",
@@ -32896,7 +33450,9 @@
             "replies": 53,
             "views": 136678,
             "total": 584
-          }
+          },
+          "authorHandle": "@0xsuman",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1999757173686226944/YMpp92fg_400x400.jpg"
         },
         {
           "id": "2054520937530470600",
@@ -32912,7 +33468,9 @@
             "replies": 6,
             "views": 8687,
             "total": 79
-          }
+          },
+          "authorHandle": "@virgin_hunter69",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2044348685174321152/RvZsq08R_400x400.jpg"
         },
         {
           "id": "2026029011990659300",
@@ -32928,7 +33486,9 @@
             "replies": 1,
             "views": 4095,
             "total": 27
-          }
+          },
+          "authorHandle": "@theinformation",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1747484907163516928/d_K3Z_hH_400x400.jpg"
         },
         {
           "id": "2049057082767196576",
@@ -33076,7 +33636,9 @@
             "replies": 14,
             "views": 4039384,
             "total": 529
-          }
+          },
+          "authorHandle": "@adriankuleszo",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2022632685311598592/hXu3NHSJ_400x400.jpg"
         },
         {
           "id": "1922789019093537145",
@@ -33092,7 +33654,9 @@
             "replies": 4,
             "views": 16501,
             "total": 113
-          }
+          },
+          "authorHandle": "@ycombinator",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1623777064821358592/9CApQWXe_400x400.png"
         },
         {
           "id": "2031692456610128188",
@@ -33108,7 +33672,9 @@
             "replies": 1,
             "views": 76,
             "total": 5
-          }
+          },
+          "authorHandle": "@maximilianhofer",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1935860777547710464/ntKVZTh4_400x400.jpg"
         }
       ]
     },
@@ -33178,7 +33744,9 @@
             "replies": 0,
             "views": 3719,
             "total": 13
-          }
+          },
+          "authorHandle": "@dharmeshba",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1477206467715362818/0L0xqnkP_400x400.jpg"
         },
         {
           "id": "1770483364937580896",
@@ -33194,7 +33762,9 @@
             "replies": 2,
             "views": 1399,
             "total": 10
-          }
+          },
+          "authorHandle": "@christophepas",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1935993409509974016/A-3IW6Up_400x400.jpg"
         },
         {
           "id": "1754898394105962562",
@@ -33210,7 +33780,9 @@
             "replies": 1,
             "views": 261,
             "total": 9
-          }
+          },
+          "authorHandle": "@msiatrak",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1902337124021813248/Ifw9Y194_400x400.jpg"
         },
         {
           "id": "2061688343558062363",
@@ -33444,7 +34016,9 @@
             "replies": 6,
             "views": 7040,
             "total": 57
-          }
+          },
+          "authorHandle": "@public",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2029954921500450820/TM-s7Olp_400x400.png"
         },
         {
           "id": "2062558903590625781",
@@ -33606,7 +34180,9 @@
             "replies": 1,
             "views": 11226,
             "total": 52
-          }
+          },
+          "authorHandle": "@jedwhite",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1583629269917466625/U3SPi5KK_400x400.jpg"
         },
         {
           "id": "1828890101885350027",
@@ -33622,7 +34198,9 @@
             "replies": 6,
             "views": 2383,
             "total": 45
-          }
+          },
+          "authorHandle": "@ivanfioravanti",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1992614705974611968/2ow40fhA_400x400.jpg"
         },
         {
           "id": "1870056750096757181",
@@ -33638,7 +34216,9 @@
             "replies": 4,
             "views": 5004,
             "total": 28
-          }
+          },
+          "authorHandle": "@julianharris",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1874357111238406144/1m841wVl_400x400.jpg"
         },
         {
           "id": "2011304267311956115",
@@ -34249,7 +34829,9 @@
             "replies": 8,
             "views": 14463,
             "total": 254
-          }
+          },
+          "authorHandle": "@theturingpost",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052479476605333508/_-CG4lvC_400x400.jpg"
         },
         {
           "id": "2041501162587787582",
@@ -34265,7 +34847,9 @@
             "replies": 8,
             "views": 3628,
             "total": 86
-          }
+          },
+          "authorHandle": "@camrobinsonnn",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2060003192746721282/llCc59DQ_400x400.jpg"
         },
         {
           "id": "2051418383535517801",
@@ -34281,7 +34865,9 @@
             "replies": 5,
             "views": 10458,
             "total": 62
-          }
+          },
+          "authorHandle": "@langchain",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_400x400.jpg"
         },
         {
           "id": "2063040804285980927",
@@ -34507,7 +35093,9 @@
             "replies": 0,
             "views": 0,
             "total": 12
-          }
+          },
+          "authorHandle": "@stackshareio",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/786493810431762432/DTmZmIyp_400x400.png"
         },
         {
           "id": "1204014295329193984",
@@ -35232,7 +35820,9 @@
             "replies": 3,
             "views": 792,
             "total": 20
-          }
+          },
+          "authorHandle": "@njkumarr",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1844625999444705285/ifAm85sY_400x400.jpg"
         },
         {
           "id": "1874295304679547246",
@@ -35392,7 +35982,9 @@
             "replies": 32,
             "views": 14218,
             "total": 190
-          }
+          },
+          "authorHandle": "@ysiu",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1953429786577321984/kCFuGGWv_400x400.png"
         },
         {
           "id": "2032899451740647484",
@@ -35424,7 +36016,9 @@
             "replies": 3,
             "views": 3397,
             "total": 69
-          }
+          },
+          "authorHandle": "@hls_dev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1945919910946680833/tn8x9SVZ_400x400.jpg"
         },
         {
           "id": "1993675482806866405",
@@ -35440,7 +36034,9 @@
             "replies": 4,
             "views": 454,
             "total": 39
-          }
+          },
+          "authorHandle": "@lukebligth1706",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1825007161824411648/kjvVX9Ek_400x400.jpg"
         },
         {
           "id": "2013894765637476740",
@@ -36032,7 +36628,9 @@
             "replies": 2,
             "views": 765,
             "total": 88
-          }
+          },
+          "authorHandle": "@tysonlester",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1722741496573759488/Hz2cmyjU_400x400.jpg"
         },
         {
           "id": "1937836544871518677",
@@ -36048,7 +36646,9 @@
             "replies": 0,
             "views": 10253,
             "total": 32
-          }
+          },
+          "authorHandle": "@rubrikinc",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1638532859567718401/V3BOkqC8_400x400.jpg"
         },
         {
           "id": "1928964034663166004",
@@ -36064,7 +36664,9 @@
             "replies": 4,
             "views": 5331,
             "total": 25
-          }
+          },
+          "authorHandle": "@theturingpost",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052479476605333508/_-CG4lvC_400x400.jpg"
         },
         {
           "id": "1964102012276285444",
@@ -36310,7 +36912,9 @@
             "replies": 2,
             "views": 5878,
             "total": 33
-          }
+          },
+          "authorHandle": "@langchain",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_400x400.jpg"
         },
         {
           "id": "2056893863399395672",
@@ -37114,7 +37718,9 @@
             "replies": 4,
             "views": 712,
             "total": 22
-          }
+          },
+          "authorHandle": "@asafnadler",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2017121716942548992/r3U_Kdol_400x400.jpg"
         },
         {
           "id": "1980963219893272839",
@@ -37130,7 +37736,9 @@
             "replies": 2,
             "views": 1403,
             "total": 17
-          }
+          },
+          "authorHandle": "@adith_wp",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1962799161704955904/AQDsh4kf_400x400.jpg"
         },
         {
           "id": "1994416291390570613",
@@ -37146,7 +37754,9 @@
             "replies": 3,
             "views": 4007,
             "total": 16
-          }
+          },
+          "authorHandle": "@noahkagan",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1511713653103464450/6E7UXq8J_400x400.jpg"
         },
         {
           "id": "1888953310947770770",
@@ -37532,7 +38142,9 @@
             "replies": 4,
             "views": 6815,
             "total": 63
-          }
+          },
+          "authorHandle": "@v0",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1955397769138667520/XoWT5Huy_400x400.jpg"
         },
         {
           "id": "2016911128010666087",
@@ -37548,7 +38160,9 @@
             "replies": 5,
             "views": 1547,
             "total": 33
-          }
+          },
+          "authorHandle": "@annieliao_2000",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2057044170922172416/z-wclnwr_400x400.jpg"
         },
         {
           "id": "2009107858500276702",
@@ -37580,7 +38194,9 @@
             "replies": 0,
             "views": 568,
             "total": 12
-          }
+          },
+          "authorHandle": "@jamesfromsydney",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1674265668936691712/J2dClc11_400x400.jpg"
         },
         {
           "id": "2043005723169415601",
@@ -38135,7 +38751,9 @@
             "replies": 25,
             "views": 127853,
             "total": 449
-          }
+          },
+          "authorHandle": "@levelsio",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1996831016720486400/vycHz0uG_400x400.jpg"
         },
         {
           "id": "2051371079122264379",
@@ -38151,7 +38769,9 @@
             "replies": 6,
             "views": 9302,
             "total": 84
-          }
+          },
+          "authorHandle": "@lucatac0",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1595570933414215680/qG0SPfeR_400x400.jpg"
         },
         {
           "id": "2062137321554604257",
@@ -38167,7 +38787,9 @@
             "replies": 5,
             "views": 2407,
             "total": 50
-          }
+          },
+          "authorHandle": "@jamesqquick",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1596308940794609664/ETIx-wHp_400x400.jpg"
         },
         {
           "id": "2046678621109301707",
@@ -38595,7 +39217,9 @@
             "replies": 24,
             "views": 49446,
             "total": 522
-          }
+          },
+          "authorHandle": "@lanceyyan",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1974745601624686594/8Xc7tiWt_400x400.jpg"
         },
         {
           "id": "2006045007287898148",
@@ -38611,7 +39235,9 @@
             "replies": 26,
             "views": 56429,
             "total": 347
-          }
+          },
+          "authorHandle": "@brexhq",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1798046733815136256/BbynhUkt_400x400.jpg"
         },
         {
           "id": "2041205262619705768",
@@ -38627,7 +39253,9 @@
             "replies": 2,
             "views": 2188423,
             "total": 96
-          }
+          },
+          "authorHandle": "@tarush_agarwal_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1817318966953738240/3CMViSZd_400x400.jpg"
         },
         {
           "id": "2000129608080097751",
@@ -39038,7 +39666,9 @@
             "replies": 5,
             "views": 7384,
             "total": 51
-          }
+          },
+          "authorHandle": "@lillian_ma_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2046692666830880768/G-vRW3lP_400x400.jpg"
         },
         {
           "id": "2062367743710511118",
@@ -39054,7 +39684,9 @@
             "replies": 6,
             "views": 1884,
             "total": 46
-          }
+          },
+          "authorHandle": "@nicoleegong",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2041786249938399233/MzbNOTzB_400x400.jpg"
         },
         {
           "id": "2057584078413861245",
@@ -39070,7 +39702,9 @@
             "replies": 2,
             "views": 3992,
             "total": 26
-          }
+          },
+          "authorHandle": "@gmi_cloud",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052070853324718081/4THl2AP4_400x400.jpg"
         },
         {
           "id": "2046285273592365280",
@@ -40056,7 +40690,9 @@
             "replies": 18,
             "views": 872,
             "total": 72
-          }
+          },
+          "authorHandle": "@savefilmer",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2056703669866033152/SIjbktjD_400x400.jpg"
         },
         {
           "id": "2037916266581655956",
@@ -40255,7 +40891,9 @@
             "replies": 2,
             "views": 2397,
             "total": 53
-          }
+          },
+          "authorHandle": "@raziaaliani",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1970619468985315328/14AwLGGe_400x400.jpg"
         },
         {
           "id": "2027140187872972894",
@@ -40421,7 +41059,9 @@
             "replies": 59,
             "views": 24447,
             "total": 406
-          }
+          },
+          "authorHandle": "@pie6k",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1746461554302722048/svOF2HG7_400x400.jpg"
         },
         {
           "id": "2053663209488544141",
@@ -40437,7 +41077,9 @@
             "replies": 3,
             "views": 3334,
             "total": 33
-          }
+          },
+          "authorHandle": "@metasal",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2062446212008288256/RCklKglD_400x400.jpg"
         },
         {
           "id": "2060086737964003349",
@@ -40453,7 +41095,9 @@
             "replies": 0,
             "views": 616,
             "total": 20
-          }
+          },
+          "authorHandle": "@ritviii",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1545272602079334400/4EpvYdMQ_400x400.jpg"
         },
         {
           "id": "2060019321594593510",
@@ -40708,7 +41352,9 @@
             "replies": 106,
             "views": 393276,
             "total": 1123
-          }
+          },
+          "authorHandle": "@stammy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1499826420591304708/Wa6rdm24_400x400.jpg"
         },
         {
           "id": "2035548191714652627",
@@ -40724,7 +41370,9 @@
             "replies": 38,
             "views": 5632,
             "total": 316
-          }
+          },
+          "authorHandle": "@rileyralmuto",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1756369604002062336/WHMjPgyO_400x400.jpg"
         },
         {
           "id": "2048929342735147229",
@@ -40740,7 +41388,9 @@
             "replies": 7,
             "views": 10884,
             "total": 134
-          }
+          },
+          "authorHandle": "@anjneymidha",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2056397552447365120/_sHKWeso_400x400.jpg"
         },
         {
           "id": "2041663799808430301",
@@ -40918,7 +41568,9 @@
             "replies": 23,
             "views": 13049,
             "total": 301
-          }
+          },
+          "authorHandle": "@parker__conrad",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2047560501828468736/jr4BqZd2_400x400.jpg"
         },
         {
           "id": "2052043256154964415",
@@ -40934,7 +41586,9 @@
             "replies": 10,
             "views": 23328,
             "total": 284
-          }
+          },
+          "authorHandle": "@benblumenrose",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2055383770707152896/rdryeOtE_400x400.jpg"
         },
         {
           "id": "2054615192638738915",
@@ -40950,7 +41604,9 @@
             "replies": 1,
             "views": 4360,
             "total": 51
-          }
+          },
+          "authorHandle": "@sherwinwu",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1616710195358625792/fr1kIAwe_400x400.jpg"
         },
         {
           "id": "2057725821532647683",
@@ -41356,7 +42012,9 @@
             "replies": 5,
             "views": 16539,
             "total": 391
-          }
+          },
+          "authorHandle": "@jackedaj",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1942838099903426560/reZc01mV_400x400.jpg"
         },
         {
           "id": "2058431802541510747",
@@ -41372,7 +42030,9 @@
             "replies": 25,
             "views": 11726,
             "total": 243
-          }
+          },
+          "authorHandle": "@muskanjain0401",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2007843927290949632/MSsjokjf_400x400.jpg"
         },
         {
           "id": "2057027631586107902",
@@ -41404,7 +42064,9 @@
             "replies": 11,
             "views": 8210,
             "total": 81
-          }
+          },
+          "authorHandle": "@_akashnagaraj",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1935764891828199424/jkDIFf0l_400x400.jpg"
         },
         {
           "id": "2063616880879993160",
@@ -41630,7 +42292,9 @@
             "replies": 1,
             "views": 1187,
             "total": 23
-          }
+          },
+          "authorHandle": "@snyksec",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2039685083410653184/3ikR1h8f_400x400.png"
         },
         {
           "id": "2047745374966935905",
@@ -41770,7 +42434,9 @@
             "replies": 16,
             "views": 9174,
             "total": 97
-          }
+          },
+          "authorHandle": "@swyx",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1867875781676007424/RIF4Kt7U_400x400.jpg"
         },
         {
           "id": "2035616639912452505",
@@ -41786,7 +42452,9 @@
             "replies": 2,
             "views": 33317,
             "total": 90
-          }
+          },
+          "authorHandle": "@danielnealadler",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1942993183371333635/S1lnq_uJ_400x400.jpg"
         },
         {
           "id": "2051391000623636783",
@@ -41834,7 +42502,9 @@
             "replies": 1,
             "views": 1187,
             "total": 23
-          }
+          },
+          "authorHandle": "@snyksec",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2039685083410653184/3ikR1h8f_400x400.png"
         },
         {
           "id": "2047745374966935905",
@@ -42065,7 +42735,9 @@
             "replies": 3,
             "views": 4519,
             "total": 67
-          }
+          },
+          "authorHandle": "@vgruev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2053950292601835520/bwN4DtOD_400x400.jpg"
         },
         {
           "id": "2057816250257219775",
@@ -42198,7 +42870,9 @@
             "replies": 35,
             "views": 72866,
             "total": 773
-          }
+          },
+          "authorHandle": "@lluciano_btc",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2016059793698701312/V01XeDM4_400x400.jpg"
         },
         {
           "id": "2057154251558682798",
@@ -42214,7 +42888,9 @@
             "replies": 9,
             "views": 41305,
             "total": 413
-          }
+          },
+          "authorHandle": "@multimodalart",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1998217136209289216/yL6PoQig_400x400.jpg"
         },
         {
           "id": "2060158200146489521",
@@ -42230,7 +42906,9 @@
             "replies": 3,
             "views": 5149,
             "total": 175
-          }
+          },
+          "authorHandle": "@rendernetwork",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1457177843780263941/UZz903Wg_400x400.jpg"
         },
         {
           "id": "2059607295353303460",
@@ -42410,7 +43088,9 @@
             "replies": 7,
             "views": 641183,
             "total": 320
-          }
+          },
+          "authorHandle": "@baz_scm",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1987497974755123200/sSyrSHNI_400x400.jpg"
         },
         {
           "id": "2011547134785720747",
@@ -42426,7 +43106,9 @@
             "replies": 31,
             "views": 3197,
             "total": 125
-          }
+          },
+          "authorHandle": "@jamiesmotion",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052693636299579392/4SWwjYm9_400x400.jpg"
         },
         {
           "id": "2021682279001829423",
@@ -42442,7 +43124,9 @@
             "replies": 6,
             "views": 9881,
             "total": 50
-          }
+          },
+          "authorHandle": "@kylejeong",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2059342964816809984/YvJ9VY7X_400x400.jpg"
         },
         {
           "id": "2019138606905143524",
@@ -42618,7 +43302,9 @@
             "replies": 12,
             "views": 10903,
             "total": 126
-          }
+          },
+          "authorHandle": "@fireworksai_hq",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1776371265839980544/PUpa_Ui0_400x400.jpg"
         },
         {
           "id": "2060741408198394188",
@@ -42634,7 +43320,9 @@
             "replies": 3,
             "views": 20552,
             "total": 90
-          }
+          },
+          "authorHandle": "@vllm_project",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1774187681746182144/N_5NJ8B1_400x400.jpg"
         },
         {
           "id": "2063912600472285296",
@@ -42650,7 +43338,9 @@
             "replies": 12,
             "views": 16991,
             "total": 88
-          }
+          },
+          "authorHandle": "@godofprompt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2048642406841745408/S_79ns6C_400x400.jpg"
         },
         {
           "id": "2061214195262107889",
@@ -42877,7 +43567,9 @@
             "replies": 1,
             "views": 4831,
             "total": 85
-          }
+          },
+          "authorHandle": "@faheem_uh",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1546008913786523648/lHyzLJhq_400x400.jpg"
         },
         {
           "id": "1907165902581219389",
@@ -43416,7 +44108,9 @@
             "replies": 6,
             "views": 24198,
             "total": 213
-          }
+          },
+          "authorHandle": "@quinnypig",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1840839119037218817/3aPpjjwH_400x400.jpg"
         },
         {
           "id": "2059142950014034356",
@@ -43432,7 +44126,9 @@
             "replies": 4,
             "views": 27468,
             "total": 58
-          }
+          },
+          "authorHandle": "@nikstep",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2059295304155901952/IO0fN1a5_400x400.jpg"
         },
         {
           "id": "2057108923966996710",
@@ -43448,7 +44144,9 @@
             "replies": 3,
             "views": 2952,
             "total": 57
-          }
+          },
+          "authorHandle": "@databricks",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2024132141139857408/gqYcpjGG_400x400.jpg"
         },
         {
           "id": "2058038819400917077",
@@ -43623,7 +44321,8 @@
             "views": 32701,
             "total": 482
           },
-          "authorHandle": "@sebjohnsonuk"
+          "authorHandle": "@sebjohnsonuk",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1975936063777472512/TqPY1KKM_400x400.jpg"
         },
         {
           "id": "2047254448305582273",
@@ -43675,7 +44374,9 @@
             "replies": 1,
             "views": 2618,
             "total": 29
-          }
+          },
+          "authorHandle": "@alexvoica",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2033200770850476032/cI6Cawww_400x400.jpg"
         },
         {
           "id": "2046597373653123308",
@@ -44059,7 +44760,9 @@
             "replies": 10,
             "views": 63019,
             "total": 722
-          }
+          },
+          "authorHandle": "@romanchernin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1784183328351850496/0j7K7JOQ_400x400.jpg"
         },
         {
           "id": "2063994256617021495",
@@ -44075,7 +44778,9 @@
             "replies": 11,
             "views": 15844,
             "total": 91
-          }
+          },
+          "authorHandle": "@1littlecoder",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1491057237132931076/g60gGrFL_400x400.jpg"
         },
         {
           "id": "2060074529712742767",
@@ -44091,7 +44796,9 @@
             "replies": 7,
             "views": 4097,
             "total": 67
-          }
+          },
+          "authorHandle": "@coinbasedev",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1963276257157840896/OiKkC0Je_400x400.jpg"
         },
         {
           "id": "2060444865041949061",
@@ -44490,7 +45197,9 @@
             "replies": 5,
             "views": 3870,
             "total": 56
-          }
+          },
+          "authorHandle": "@mastra",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2010770369897271296/o4rz23Gd_400x400.jpg"
         },
         {
           "id": "2057629048688525515",
@@ -44506,7 +45215,9 @@
             "replies": 1,
             "views": 1378,
             "total": 28
-          }
+          },
+          "authorHandle": "@inazarova",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1996835151368921089/-JSZeEWZ_400x400.jpg"
         },
         {
           "id": "2052545713351856179",
@@ -44522,7 +45233,9 @@
             "replies": 3,
             "views": 1218,
             "total": 26
-          }
+          },
+          "authorHandle": "@jonathangrahl",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1939052969200173056/S3BT1bAv_400x400.jpg"
         },
         {
           "id": "2064043392468766929",
@@ -44748,7 +45461,9 @@
             "replies": 3,
             "views": 21146,
             "total": 648
-          }
+          },
+          "authorHandle": "@minimax_ai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_400x400.jpg"
         },
         {
           "id": "2062570629128196136",
@@ -44764,7 +45479,9 @@
             "replies": 14,
             "views": 18732,
             "total": 334
-          }
+          },
+          "authorHandle": "@nutlope",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1727415759859552256/9rqaxXUR_400x400.jpg"
         },
         {
           "id": "2062199127866548276",
@@ -44844,7 +45561,9 @@
             "replies": 6,
             "views": 4867,
             "total": 42
-          }
+          },
+          "authorHandle": "@vipulved",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1510468262609371139/17Rvl-e9_400x400.jpg"
         },
         {
           "id": "2061186879404540349",
@@ -44962,7 +45681,9 @@
             "replies": 28,
             "views": 249258,
             "total": 483
-          }
+          },
+          "authorHandle": "@hliriani",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1955372820399263749/5PdqVSr9_400x400.jpg"
         },
         {
           "id": "1888951138529230855",
@@ -44978,7 +45699,9 @@
             "replies": 2,
             "views": 18450,
             "total": 323
-          }
+          },
+          "authorHandle": "@jayneil",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1933734309304688640/zvrH1m3G_400x400.jpg"
         },
         {
           "id": "1877354736971850011",
@@ -45090,7 +45813,9 @@
             "replies": 1,
             "views": 4640,
             "total": 45
-          }
+          },
+          "authorHandle": "@keithpeiris",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1632084765401821185/aW7RhCSW_400x400.jpg"
         },
         {
           "id": "1816931886171881731",
@@ -45294,7 +46019,9 @@
             "replies": 1,
             "views": 550,
             "total": 8
-          }
+          },
+          "authorHandle": "@forexstophunter",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1850870441902002176/dv887f2W_400x400.jpg"
         },
         {
           "id": "2062551417286500607",
@@ -45310,7 +46037,9 @@
             "replies": 0,
             "views": 447,
             "total": 8
-          }
+          },
+          "authorHandle": "@jtheretohelp1",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1977442411547676672/B7xZzOrp_400x400.jpg"
         }
       ]
     },
@@ -45531,7 +46260,9 @@
             "replies": 56,
             "views": 31800,
             "total": 539
-          }
+          },
+          "authorHandle": "@bzagrodzki",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1761858066083880962/7nacsEzz_400x400.jpg"
         },
         {
           "id": "2053187761029668930",
@@ -45547,7 +46278,9 @@
             "replies": 9,
             "views": 29879,
             "total": 79
-          }
+          },
+          "authorHandle": "@koomen",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1904328473625366528/-6yo3Od0_400x400.jpg"
         },
         {
           "id": "2056054415950586129",
@@ -45579,7 +46312,9 @@
             "replies": 1,
             "views": 1290,
             "total": 21
-          }
+          },
+          "authorHandle": "@scalingdevtools",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1599832987809595418/UEJ0sxBT_400x400.jpg"
         },
         {
           "id": "2061752685334790164",
@@ -45928,7 +46663,9 @@
             "replies": 11,
             "views": 6818,
             "total": 43
-          }
+          },
+          "authorHandle": "@hnshah",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1498191257218076672/rvtMDI8Q_400x400.jpg"
         },
         {
           "id": "2061605259084984625",
@@ -45944,7 +46681,9 @@
             "replies": 2,
             "views": 194,
             "total": 6
-          }
+          },
+          "authorHandle": "@samasante",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1628997449929920513/9NSVqZt__400x400.png"
         },
         {
           "id": "2061605832769310757",
@@ -45960,7 +46699,9 @@
             "replies": 1,
             "views": 160,
             "total": 5
-          }
+          },
+          "authorHandle": "@samasante",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1628997449929920513/9NSVqZt__400x400.png"
         }
       ]
     },
@@ -46460,7 +47201,9 @@
             "replies": 7,
             "views": 14586,
             "total": 182
-          }
+          },
+          "authorHandle": "@cerebras",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1894806880804913152/zLdh072p_400x400.jpg"
         },
         {
           "id": "2056652202077454650",
@@ -46476,7 +47219,9 @@
             "replies": 2,
             "views": 715,
             "total": 40
-          }
+          },
+          "authorHandle": "@planogaming",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2011923446188699648/glPhiAuQ_400x400.jpg"
         },
         {
           "id": "2036827358360228184",
@@ -46492,7 +47237,9 @@
             "replies": 0,
             "views": 1229,
             "total": 20
-          }
+          },
+          "authorHandle": "@baincapvc",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1790404088833728512/HShSGp-k_400x400.jpg"
         },
         {
           "id": "2036524107194589473",
@@ -47160,7 +47907,9 @@
             "replies": 5,
             "views": 2905,
             "total": 26
-          }
+          },
+          "authorHandle": "@agentphonehq",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2051813362380722176/zWv1YQYl_400x400.jpg"
         },
         {
           "id": "2062241855371182339",
@@ -47540,7 +48289,9 @@
             "replies": 32,
             "views": 112085,
             "total": 642
-          }
+          },
+          "authorHandle": "@mlb",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2062036634850226176/CD9Lik9k_400x400.jpg"
         },
         {
           "id": "2062225756483137974",
@@ -47556,7 +48307,9 @@
             "replies": 2,
             "views": 25093,
             "total": 325
-          }
+          },
+          "authorHandle": "@mlbstats",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1956019567743889413/cUs6RlCu_400x400.jpg"
         },
         {
           "id": "2062904903618507149",
@@ -47572,7 +48325,9 @@
             "replies": 3,
             "views": 16301,
             "total": 188
-          }
+          },
+          "authorHandle": "@mclarenf1",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2028807860675895296/VgR0QJPp_400x400.jpg"
         },
         {
           "id": "2062237519727460734",
@@ -47956,7 +48711,9 @@
             "replies": 11,
             "views": 9020,
             "total": 84
-          }
+          },
+          "authorHandle": "@uxuimartin",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1970652854550417409/06MDGHU__400x400.jpg"
         },
         {
           "id": "1983897158526083408",
@@ -47972,7 +48729,9 @@
             "replies": 2,
             "views": 1525,
             "total": 28
-          }
+          },
+          "authorHandle": "@reambraden",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1811884083061911552/hkr7WnWW_400x400.jpg"
         },
         {
           "id": "1963597622666826149",
@@ -47988,7 +48747,9 @@
             "replies": 5,
             "views": 547,
             "total": 16
-          }
+          },
+          "authorHandle": "@fikedove",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2408691948/IMG00623-20120715-1122_400x400.jpg"
         },
         {
           "id": "1950224806747558363",
@@ -48274,7 +49035,9 @@
             "replies": 6,
             "views": 8025,
             "total": 123
-          }
+          },
+          "authorHandle": "@patloeber",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1960117571232964608/Tpnsw5cD_400x400.jpg"
         },
         {
           "id": "2032141700412686592",
@@ -48290,7 +49053,9 @@
             "replies": 5,
             "views": 3133,
             "total": 48
-          }
+          },
+          "authorHandle": "@victorialslocum",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1869063543678468096/AKcYQ5RR_400x400.jpg"
         },
         {
           "id": "2049091759402020884",
@@ -48322,7 +49087,9 @@
             "replies": 3,
             "views": 3187,
             "total": 37
-          }
+          },
+          "authorHandle": "@cshorten30",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1997374267743150080/eg2Eq3S2_400x400.jpg"
         },
         {
           "id": "2037880135228203474",
@@ -48486,7 +49253,9 @@
             "replies": 10,
             "views": 11062,
             "total": 110
-          }
+          },
+          "authorHandle": "@layoffai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2064951015330439168/p9Uqu7gw_400x400.jpg"
         },
         {
           "id": "2061394828261208537",
@@ -48502,7 +49271,9 @@
             "replies": 19,
             "views": 4160,
             "total": 84
-          }
+          },
+          "authorHandle": "@ralconstudio",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1797611792321114112/uRHlClPA_400x400.jpg"
         },
         {
           "id": "2062183377067790410",
@@ -48518,7 +49289,9 @@
             "replies": 10,
             "views": 2759,
             "total": 54
-          }
+          },
+          "authorHandle": "@maybeflorent",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1807826892466315265/slbgPLYZ_400x400.jpg"
         },
         {
           "id": "2061363350844416478",
@@ -48690,7 +49463,9 @@
             "replies": 12,
             "views": 20763,
             "total": 105
-          }
+          },
+          "authorHandle": "@_fracapuano",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1789212472353632257/A5nXjAhI_400x400.jpg"
         },
         {
           "id": "2062190821747945928",
@@ -48706,7 +49481,9 @@
             "replies": 5,
             "views": 4761,
             "total": 73
-          }
+          },
+          "authorHandle": "@coreweave",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2049523237684690944/zXWk4Luv_400x400.jpg"
         },
         {
           "id": "2063800833180070289",
@@ -48722,7 +49499,9 @@
             "replies": 4,
             "views": 7300,
             "total": 63
-          }
+          },
+          "authorHandle": "@sofiiiiiasz",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061164924433555456/LOSmcizk_400x400.jpg"
         },
         {
           "id": "2063118459584835604",
@@ -48903,7 +49682,9 @@
             "replies": 13,
             "views": 450,
             "total": 35
-          }
+          },
+          "authorHandle": "@damexythe",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1894790486423896064/eQDEp1nt_400x400.jpg"
         },
         {
           "id": "2064415786048143801",
@@ -48919,7 +49700,9 @@
             "replies": 5,
             "views": 1128,
             "total": 28
-          }
+          },
+          "authorHandle": "@erikalee",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2014798332422742016/PpGkzoim_400x400.jpg"
         },
         {
           "id": "2059341269269127571",
@@ -48951,7 +49734,9 @@
             "replies": 3,
             "views": 500,
             "total": 14
-          }
+          },
+          "authorHandle": "@sujay__raj",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2010036808260956166/R8iWealV_400x400.jpg"
         },
         {
           "id": "2059411937159729168",
@@ -49320,7 +50105,9 @@
             "replies": 54,
             "views": 28402,
             "total": 292
-          }
+          },
+          "authorHandle": "@solana",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2049882120039063552/Gav4-zee_400x400.jpg"
         },
         {
           "id": "2061936032719749150",
@@ -49352,7 +50139,9 @@
             "replies": 0,
             "views": 10735,
             "total": 69
-          }
+          },
+          "authorHandle": "@airlivenet",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1181105118902665216/vh0yeqGX_400x400.jpg"
         },
         {
           "id": "2061094543307469201",
@@ -49384,7 +50173,9 @@
             "replies": 6,
             "views": 713,
             "total": 27
-          }
+          },
+          "authorHandle": "@yenalmh",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2051584791909208065/m6DvRRDv_400x400.jpg"
         },
         {
           "id": "2062121004046975368",
@@ -49531,7 +50322,9 @@
             "replies": 58,
             "views": 3206,
             "total": 155
-          }
+          },
+          "authorHandle": "@threadingfinese",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1978587211323850752/Q87l3N9J_400x400.jpg"
         },
         {
           "id": "1722320289676017707",
@@ -49547,7 +50340,9 @@
             "replies": 17,
             "views": 815,
             "total": 58
-          }
+          },
+          "authorHandle": "@theworldia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1686779258092335104/fdIKR8RS_400x400.jpg"
         },
         {
           "id": "1748729361698529506",
@@ -49579,7 +50374,9 @@
             "replies": 8,
             "views": 493,
             "total": 24
-          }
+          },
+          "authorHandle": "@dropyourai",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1703192570858270720/Uqo3gFyW_400x400.jpg"
         },
         {
           "id": "1727944121107767470",
@@ -49744,7 +50541,9 @@
             "replies": 5,
             "views": 4506,
             "total": 22
-          }
+          },
+          "authorHandle": "@producthunt",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1772624223195873280/pqadeFo8_400x400.jpg"
         },
         {
           "id": "2022796667884388710",
@@ -49760,7 +50559,9 @@
             "replies": 4,
             "views": 2394,
             "total": 21
-          }
+          },
+          "authorHandle": "@adilmania",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2053037834471366657/q2JNF2yZ_400x400.jpg"
         },
         {
           "id": "1997004114463691106",
@@ -49776,7 +50577,9 @@
             "replies": 4,
             "views": 1401,
             "total": 18
-          }
+          },
+          "authorHandle": "@dexhorthy",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1936650128518938624/tCFV_MZO_400x400.jpg"
         },
         {
           "id": "2037151961410162934",
@@ -50004,7 +50807,9 @@
             "replies": 0,
             "views": 1219,
             "total": 14
-          }
+          },
+          "authorHandle": "@adamse",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1640195196448309248/iEQgJ8De_400x400.jpg"
         },
         {
           "id": "2059449612218585572",
@@ -50166,7 +50971,9 @@
             "replies": 12,
             "views": 17519,
             "total": 178
-          }
+          },
+          "authorHandle": "@drfeifei",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/841385099799085056/R1iX4QGX_400x400.jpg"
         },
         {
           "id": "2059420122943541461",
@@ -50182,7 +50989,9 @@
             "replies": 3,
             "views": 4272,
             "total": 67
-          }
+          },
+          "authorHandle": "@jamesckane",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1991165811218657280/_tNsEF54_400x400.jpg"
         },
         {
           "id": "2063711773593854403",
@@ -50198,7 +51007,9 @@
             "replies": 1,
             "views": 682,
             "total": 20
-          }
+          },
+          "authorHandle": "@morietschel",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1851737040028889088/bl1UDqdD_400x400.jpg"
         },
         {
           "id": "2062696306112622945",
@@ -50378,7 +51189,9 @@
             "replies": 1,
             "views": 2007,
             "total": 43
-          }
+          },
+          "authorHandle": "@daytonaio",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1764766523770494977/NwdtuoVp_400x400.jpg"
         },
         {
           "id": "2037535259953180829",
@@ -50410,7 +51223,9 @@
             "replies": 5,
             "views": 907,
             "total": 32
-          }
+          },
+          "authorHandle": "@iamkierrad",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1985773732367945728/evO3qAWk_400x400.jpg"
         },
         {
           "id": "2031466317254144341",
@@ -50426,7 +51241,9 @@
             "replies": 0,
             "views": 2570,
             "total": 31
-          }
+          },
+          "authorHandle": "@darian314",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2025670485162532864/yvN8vDqO_400x400.jpg"
         },
         {
           "id": "2045164540116287545",
@@ -50590,7 +51407,9 @@
             "replies": 54,
             "views": 20937,
             "total": 386
-          }
+          },
+          "authorHandle": "@mervinpraison",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1760008481791262720/7W5b_qVc_400x400.jpg"
         },
         {
           "id": "1810556211001270472",
@@ -50606,7 +51425,9 @@
             "replies": 3,
             "views": 3711,
             "total": 61
-          }
+          },
+          "authorHandle": "@juliangoldieseo",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1322760467979268096/b3RoYhTq_400x400.jpg"
         },
         {
           "id": "1807746241456910606",
@@ -50622,7 +51443,9 @@
             "replies": 2,
             "views": 7366,
             "total": 33
-          }
+          },
+          "authorHandle": "@thealexbanks",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1825121831868616704/fuy9hj0W_400x400.jpg"
         },
         {
           "id": "1803248484038090928",
@@ -51021,7 +51844,9 @@
             "replies": 19,
             "views": 34965,
             "total": 182
-          }
+          },
+          "authorHandle": "@obiabo_immanuel",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2057820949899104256/sDh079CS_400x400.jpg"
         },
         {
           "id": "2061172637154566161",
@@ -51037,7 +51862,9 @@
             "replies": 5,
             "views": 12080,
             "total": 111
-          }
+          },
+          "authorHandle": "@martyitsarocket",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2039655181332389888/eCie-Bgc_400x400.jpg"
         },
         {
           "id": "2062985856558776422",
@@ -51053,7 +51880,9 @@
             "replies": 0,
             "views": 5734,
             "total": 102
-          }
+          },
+          "authorHandle": "@effectts_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2022984508979494912/AQvX8v7M_400x400.png"
         },
         {
           "id": "2062536130147307543",
@@ -51228,7 +52057,9 @@
             "replies": 2,
             "views": 4670,
             "total": 101
-          }
+          },
+          "authorHandle": "@valkyries",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2061951688756592640/MMTlJi8u_400x400.jpg"
         },
         {
           "id": "2062344749990764731",
@@ -51244,7 +52075,9 @@
             "replies": 3,
             "views": 830,
             "total": 26
-          }
+          },
+          "authorHandle": "@tracymassaro_",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1887397065732534272/lCQTz2jx_400x400.jpg"
         },
         {
           "id": "2062625436434071588",
@@ -51260,7 +52093,9 @@
             "replies": 1,
             "views": 50759,
             "total": 24
-          }
+          },
+          "authorHandle": "@thesixfivemedia",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1790141809168961536/r3GjIZZi_400x400.jpg"
         },
         {
           "id": "2061425563735093684",
@@ -51429,7 +52264,9 @@
             "replies": 4,
             "views": 6017,
             "total": 30
-          }
+          },
+          "authorHandle": "@michael_ludden",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2009354490449956864/PjgQG2IJ_400x400.jpg"
         },
         {
           "id": "2063998669465260363",
@@ -51461,7 +52298,9 @@
             "replies": 0,
             "views": 194,
             "total": 24
-          }
+          },
+          "authorHandle": "@thestartpod",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/2052519720432361472/QYZycd6W_400x400.jpg"
         },
         {
           "id": "2052128431035584584",
@@ -51493,7 +52332,9 @@
             "replies": 8,
             "views": 328,
             "total": 21
-          }
+          },
+          "authorHandle": "@realdanbaum",
+          "authorProfileImageUrl": "https://pbs.twimg.com/profile_images/1616166811698872341/FgfSxP7r_400x400.jpg"
         },
         {
           "id": "2062267593692717206",

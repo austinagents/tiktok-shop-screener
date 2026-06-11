@@ -48,7 +48,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
   const microWorkflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "micro");
   const workflowGroups = evidenceGraphGroups(tool, validEvidenceItems, "workflow");
   const relationshipSummaries = commonRelationshipSummaries(tool, [...microWorkflowGroups, ...workflowGroups]);
-  const launchYear = knownYear(tool.launchDate);
   const relatedTags = [...new Set([...tool.subCategoryTags, ...tool.tags.slice(0, 5)])].slice(0, 8);
   const rank = [...tools].sort((a, b) => b.organicTrendingScore - a.organicTrendingScore).findIndex((item) => item.slug === tool.slug) + 1;
 
@@ -85,27 +84,6 @@ export default function ToolPage({ params }: { params: { slug: string } }) {
         <CommonlyAppearsWithOverview tool={tool} relationships={relationshipSummaries} />
         <EvidenceWorkflows tool={tool} groups={workflowGroups} />
         <EvidenceMicroWorkflows tool={tool} groups={microWorkflowGroups} />
-
-        <section className="toolReportGrid">
-          <Panel className="toolReportAbout" title={`About ${tool.name}`}>
-            <div className="toolAboutTable">
-              <InfoRow label="Best for" value={tool.useCases.slice(0, 2).join(", ")} />
-              <InfoRow label="Use cases" value={tool.useCases.slice(0, 3).join(", ")} />
-              <InfoRow label="Platform" value={tool.supportedPlatforms.join(", ")} />
-              <InfoRow label="Pricing" value={tool.pricingSummary} />
-              <InfoRow label="Website" value={<a href={tool.websiteUrl} target="_blank" rel="noreferrer">{domainFor(tool.websiteUrl)}</a>} />
-              <InfoRow label="Integrations" value={tool.integrations.join(", ")} />
-              <InfoRow label="API" value={tool.apiAvailable ? "Yes" : ""} />
-              <InfoRow label="Status" value={publicTrackingState(tool)} />
-              {launchYear ? <InfoRow label="Launched" value={launchYear} /> : null}
-            </div>
-          </Panel>
-
-          <Panel className="toolReportMethodology" title="Methodology">
-            <p className="toolEmptyState">AppScreener tracks public mentions and tool relationships to surface what's trending in AI.</p>
-            <Link className="toolReportCta" href="/">Learn more about our methodology</Link>
-          </Panel>
-        </section>
       </div>
     </div>
   );
@@ -840,22 +818,18 @@ function EvidenceGraphGroupCard({ group }: { group: EvidenceGraphGroup }) {
     </article>
   );
 }
-function TrendingCard({ tool, rank }: { tool: Tool; rank: number }) {
-  const detections = toolDetectionCount(tool);
+function TrendingCard({ tool }: { tool: Tool; rank: number }) {
   return (
     <aside className="toolTrendPanel">
-      <h2>Live Momentum</h2>
-      <div className="toolTrendStats">
-        <span><small>24H Growth</small><strong><MovementBadge value={tool.growth24h} /></strong></span>
-        <span><small>Rank</small><strong>#{rank || "N/A"}</strong></span>
-        <span><small>Mentions</small><strong>{compactNumber(tool.mentions24h)}</strong></span>
-        <span><small>Creators</small><strong>{compactNumber(tool.creatorMentions)}</strong></span>
-        <span><small>Workflow Activity</small><strong>{compactNumber(tool.workflowInclusions || tool.savesCount)}</strong></span>
-        <span><small>Detections</small><strong>{compactNumber(detections)}</strong></span>
-        <span><small>Unique Creators</small><strong>{compactNumber(uniqueCreatorCount(tool))}</strong></span>
-        <span><small>Last Seen</small><strong>{lastSeenFor(tool)}</strong></span>
+      <h2>About {tool.name}</h2>
+      <div className="toolTrendStats toolAboutStats">
+        <span><small>Category</small><strong>{displayCategory(tool.category)}</strong></span>
+        <span><small>Use cases</small><strong>{tool.useCases.slice(0, 2).join(", ")}</strong></span>
+        <span><small>Platform</small><strong>{tool.supportedPlatforms.slice(0, 3).join(", ")}</strong></span>
+        <span><small>Pricing</small><strong>{tool.pricingSummary}</strong></span>
+        <span><small>Launch Year</small><strong>{knownYear(tool.launchDate) || "Not listed"}</strong></span>
+        <span><small>Status</small><strong>{publicTrackingState(tool)}</strong></span>
       </div>
-      <p><span /> Active tracking in the current organic ranking.</p>
     </aside>
   );
 }

@@ -1126,6 +1126,11 @@ p { color: var(--muted); line-height: 1.5; }
   font-size: 22px;
 }
 
+.toolAboutStats strong {
+  font-size: 13px;
+  line-height: 1.25;
+}
+
 .toolTrendPanel p {
   display: inline-flex;
   align-items: center;
