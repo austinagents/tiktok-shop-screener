@@ -76,7 +76,7 @@ export default function AdminPage() {
         {section === "Categories" && <AdminList title="Category Rotation" items={categories.map((category) => `${displayCategory(category.name)} · ${category.growth24h}% 24h`)} actions={["edit category", "pin sector", "boost narrative"]} />}
         {section === "Creators" && <AdminList title="Creator Profiles" items={[`accepted · ${creatorIntelligenceStatus.accepted}`, `pending review · ${creatorIntelligenceStatus.pendingReview}`, ...importedCreators.map((creator) => `${creator.name} · ${creator.listingStatus} · ${creator.creatorScore} score · ${creator.platform}`)]} actions={["edit creator", "verify signal", "suppress creator"]} />}
         {section === "Movement Events" && <AdminList title="Movement Events" items={movementEvents.map((event) => `${event.eventType} · ${event.title}`)} actions={["create event", "attach to tool", "push to ticker"]} />}
-        {section === "Signals" && <AdminList title="Signal Types" items={["creator relationship review", "workflow acceleration", "launch event", "trend shift", "category surge", "AI rotation event"]} actions={["create signal", "score signal", "merge duplicate"]} />}
+        {section === "Signals" && <AdminList title="Signal Types" items={["creator relationship review", "workflow acceleration", "launch event", "trend shift", "category surge"]} actions={["create signal", "score signal", "merge duplicate"]} />}
         {section === "Attention Feed" && <AdminList title="Attention Feed" items={attentionFeed.map((item) => `${item.severity} · ${item.title}`)} actions={["publish", "mute", "attach alert"]} />}
         {section === "Imports" && <AdminList title="Ingestion Sources" items={[`imported products · ${importStats.totalImportedProducts}`, `accepted imports · ${importStats.acceptedImportedProducts}`, `pending review · ${importStats.pendingReviewProducts}`, `duplicate merges · ${importStats.duplicateMergeCount}`, `fallback logos · ${importStats.logoFallbackCount}`, `source coverage · ${importStats.sourceCoverage}`, ...ingestionSources.map((source) => `${source.enabled ? "on" : "off"} · ${source.sourceName} · ${source.sourceType}`)]} actions={["run import", "pause source", "view payloads"]} />}
         {section === "Moderation" && <AdminList title="MVP Listing Gate" items={[`trusted sources · ${trustedDiscoverySources.join(" / ")}`, ...mvpListingRequirements, ...tools.slice(0, 8).map((tool) => `${tool.name} · ${tool.listingStatus} · ${tool.trustedDiscoverySources.join(" + ")}`)]} actions={["verify source", "accept listing", "reject spam"]} />}
@@ -94,7 +94,7 @@ export default function AdminPage() {
 function Overview() {
   return (
     <section className="adminGrid">
-      <AdminList title="Operating Loop" items={["verify Product Hunt or TAAFT provenance", "ingest signals", "canonicalize products", "rank momentum", "publish movement feed"]} actions={["run loop"]} />
+      <AdminList title="Operating Loop" items={["verify source provenance", "ingest signals", "canonicalize products", "rank momentum", "publish movement feed"]} actions={["run loop"]} />
       <AdminList title="Editorial Controls" items={["featured workflows", "featured tools", "homepage modules", "manual breakout boosts"]} actions={["edit modules"]} />
       <AdminList title="Alert Architecture" items={["breakout detection", "creator relationship changes", "workflow growth", "category momentum", "tool acceleration"]} actions={["create alert"]} />
       <AdminList title="Listing Policy" items={mvpListingRequirements} actions={["view policy"]} />

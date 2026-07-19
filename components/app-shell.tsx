@@ -22,11 +22,11 @@ export function AppShell({ children }: { children: ReactNode }) {
   return (
     <>
       <header className="topbar">
-        <Link href="/" className="brand" aria-label="AppScreener home">
+        <Link href="/" className="brand" aria-label="TikTok Shop Screener home">
           <span className="brandMark"><Image src="/logo.png" alt="" width={36} height={36} priority /></span>
           <span>
-            <strong>AppScreener</strong>
-            <small>The live screener for AI products.</small>
+            <strong>TikTok Shop Screener</strong>
+            <small>The live screener for TikTok Shop.</small>
           </span>
         </Link>
         <CommandSearch />

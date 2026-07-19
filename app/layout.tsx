@@ -12,8 +12,8 @@ const geistSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AppScreener",
-  description: "The live screener for AI products."
+  title: "TikTok Shop Screener",
+  description: "The live screener for TikTok Shop."
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

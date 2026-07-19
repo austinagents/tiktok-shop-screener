@@ -1,12 +1,8 @@
+import { placeholderCategoryNames } from "./placeholder-data";
 import { ecosystemColorFor } from "./ecosystem-colors";
 import type { CategoryName } from "./types";
 
-export type AttentionHeatmapCluster =
-  | "Trading & Markets"
-  | "Growth & Sales"
-  | "Daily Buzz"
-  | "Builder Tools"
-  | "Automation & Ops";
+export type AttentionHeatmapCluster = string;
 
 export type AttentionSubCategoryTag = {
   id: string;
@@ -42,26 +38,9 @@ const attentionTag = (
   };
 };
 
-export const canonicalAttentionSubCategories: AttentionSubCategoryTag[] = [
-  attentionTag("Trading Bots", "Trading & Markets", ["AI Trading", "AI Automation"]),
-  attentionTag("Prediction Markets", "Trading & Markets", ["AI Trading"]),
-  attentionTag("Market Analysis", "Trading & Markets", ["AI Trading", "AI Research"]),
-  attentionTag("Whale Tracking", "Trading & Markets", ["AI Trading", "AI Research"]),
-  attentionTag("Mass Email", "Growth & Sales", ["AI Automation"]),
-  attentionTag("Lead Generation", "Growth & Sales", ["AI Automation", "AI Research"]),
-  attentionTag("Cold Outreach", "Growth & Sales", ["AI Automation"]),
-  attentionTag("Web Scraping", "Growth & Sales", ["AI Automation", "AI Research"]),
-  attentionTag("Daily Buzz", "Daily Buzz", ["AI Video", "AI Image"]),
-  attentionTag("Thumbnails", "Daily Buzz", ["AI Image", "AI Video"]),
-  attentionTag("Websites", "Builder Tools", ["AI Coding"]),
-  attentionTag("Vibe Coding", "Builder Tools", ["AI Coding"]),
-  attentionTag("Debugging", "Builder Tools", ["AI Coding"]),
-  attentionTag("3D Assets", "Builder Tools", ["AI 3D Modeling"]),
-  attentionTag("Research Agents", "Automation & Ops", ["AI Research", "AI Agents"]),
-  attentionTag("AI Employees", "Automation & Ops", ["AI Agents", "AI Automation"]),
-  attentionTag("Video Editing", "Automation & Ops", ["AI Video"]),
-  attentionTag("Automation", "Automation & Ops", ["AI Automation"])
-];
+export const canonicalAttentionSubCategories: AttentionSubCategoryTag[] = Array.from({ length: 9 }, (_, index) =>
+  attentionTag(`Subcategory ${index + 1}`, "Category", [placeholderCategoryNames[index % placeholderCategoryNames.length]])
+);
 
 export const attentionSubCategoryLabels = canonicalAttentionSubCategories.map((tag) => tag.label);
 

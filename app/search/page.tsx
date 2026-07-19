@@ -26,7 +26,7 @@ export default function SearchPage({ searchParams }: { searchParams: { q?: strin
       <section className="searchSurface">
         <form className="searchPageForm" action="/search" data-beta-search-form="true">
           <Search size={18} />
-          <input name="q" defaultValue={query} placeholder="Search lead generation, Claude, founder outbound, AI coding..." />
+          <input name="q" defaultValue={query} placeholder="Search products, creators, workflows, topics, or categories..." />
           <input type="hidden" name="type" value={activeType} />
           <button type="submit">Search</button>
         </form>
@@ -121,7 +121,7 @@ function SearchResultRow({ result }: { result: SearchResult & { score?: number }
       <p>{rowContext(result)}</p>
       <small>{secondaryContext(result)}</small>
       <div className="searchTagRail">
-        {result.tags.slice(0, 4).map((tag) => <span key={tag}>{tag}</span>)}
+        {result.tags.slice(0, 4).map((tag, index) => <span key={`${tag}-${index}`}>{tag}</span>)}
       </div>
     </Link>
   );

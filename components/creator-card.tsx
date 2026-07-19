@@ -19,8 +19,8 @@ export function CreatorCard({ creator }: { creator: CreatorProfile }) {
       </span>
       <XProfileButton href={creator.xUrl} label={`${creator.name} on X`} className="creatorExternalChip creatorCardXButton" />
       <div className="creatorTagRail">
-        {publicCreatorTags(creator).slice(0, 5).map((tag) => (
-          <a className="creatorTagLink" href={`/tags/${creatorTagSlug(tag)}`} key={tag} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>
+        {publicCreatorTags(creator).slice(0, 5).map((tag, index) => (
+          <a className="creatorTagLink" href={`/tags/${creatorTagSlug(tag)}`} key={`${tag}-${index}`} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>
         ))}
       </div>
     </article>

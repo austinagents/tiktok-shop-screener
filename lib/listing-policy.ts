@@ -1,23 +1,21 @@
 import type { ListingStatus, Tool, TrustedDiscoverySource } from "./types";
 
-export const trustedDiscoverySources: TrustedDiscoverySource[] = ["Product Hunt", "TAAFT"];
+export const trustedDiscoverySources: TrustedDiscoverySource[] = [];
 
 export const mvpListingRequirements = [
-  "Discoverable on Product Hunt or TAAFT",
   "Working product, site, or demo",
   "Identifiable branding or logo",
-  "Clear AI or software use case",
+  "Clear public use case",
   "Non-malicious and non-spam",
   "Usable public product page"
 ];
 
 export function trustedSourcesForSeed(index: number): TrustedDiscoverySource[] {
-  if (index % 5 === 0) return ["Product Hunt", "TAAFT"];
-  return index % 2 === 0 ? ["Product Hunt"] : ["TAAFT"];
+  return [];
 }
 
 export function trustedSourceUrls(slug: string, sources: TrustedDiscoverySource[]) {
-  return sources.map((source) => source === "Product Hunt" ? `https://www.producthunt.com/search?q=${slug}` : `https://theresanaiforthat.com/s/${slug}/`);
+  return sources.map(() => "#");
 }
 
 export function listingChecksForSeed(sources: TrustedDiscoverySource[]) {

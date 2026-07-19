@@ -9,37 +9,11 @@ export type LifecycleState =
   | "Cooling Off"
   | "Reviving";
 
-export type CategoryName =
-  | "AI Video"
-  | "AI Coding"
-  | "AI Agents"
-  | "AI Voice"
-  | "AI Design"
-  | "AI Workflow"
-  | "AI Research"
-  | "AI Marketing"
-  | "AI Automation"
-  | "AI Trading"
-  | "AI Gaming"
-  | "AI 3D Modeling"
-  | "AI Search"
-  | "AI Infrastructure"
-  | "AI Image"
-  | "AI Productivity"
-  | "AI Meeting"
-  | "AI Audio"
-  | "AI Music"
-  | "AI Avatars"
-  | "AI Development"
-  | "AI Analytics"
-  | "AI Education"
-  | "AI Writing"
-  | "AI Sales"
-  | "Support";
+export type CategoryName = string;
 
 export type PricingType = "free" | "freemium" | "paid" | "enterprise" | "waitlist";
 export type LogoSource = "website-icon" | "apple-touch-icon" | "favicon" | "clearbit" | "google-favicon" | "local" | "generated-fallback";
-export type TrustedDiscoverySource = "Product Hunt" | "TAAFT";
+export type TrustedDiscoverySource = string;
 export type ListingStatus = "accepted" | "pending_source" | "pending_review" | "rejected";
 export type SizeClass = "Micro" | "Emerging" | "Growth" | "Major" | "Mega";
 export type RankingMode = "Trending" | "Most Used" | "Breaking Out" | "Blue Chips" | "New" | "Fastest Growing" | "Most Discussed" | "Most Saved" | "Boosted";

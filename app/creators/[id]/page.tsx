@@ -40,7 +40,7 @@ export default function CreatorPage({ params }: { params: { id: string } }) {
               <XProfileButton href={creator.xUrl} label={`${creator.name} on X`} />
             </p>
             <div className="tagRail">
-              {tags.slice(0, 8).map((tag) => <a href={`/tags/${creatorTagSlug(tag)}`} key={tag} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>)}
+              {tags.slice(0, 8).map((tag, index) => <a href={`/tags/${creatorTagSlug(tag)}`} key={`${tag}-${index}`} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>)}
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function CreatorPage({ params }: { params: { id: string } }) {
       <section>
         <div className="sectionHeader"><h2>Topics / Known For</h2><p>Public identity categories connected to this creator node.</p></div>
         <div className="tagRail">
-          {tags.map((tag) => <a href={`/tags/${creatorTagSlug(tag)}`} key={tag} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>)}
+          {tags.map((tag, index) => <a href={`/tags/${creatorTagSlug(tag)}`} key={`${tag}-${index}`} style={creatorTagStyle(tag)}>{creatorTagDisplayLabel(tag)}</a>)}
         </div>
       </section>
       {creatorTools.length ? (
@@ -141,7 +141,7 @@ function LocalCreatorProfile({ slug }: { slug: string }) {
           <div>
             <p className="eyebrow">Creator profile</p>
             <h1 id="localCreatorName">Local creator profile</h1>
-            <p id="localCreatorBio">Looking for this creator in your local AppScreener graph.</p>
+            <p id="localCreatorBio">Looking for this creator in your local graph.</p>
           </div>
         </div>
         <div className="headerActions">

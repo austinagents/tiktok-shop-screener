@@ -16,7 +16,7 @@ const metrics = [
 ] as const;
 
 export default function ComparePage() {
-  const [selected, setSelected] = useState(["chatgpt", "claude", "cursor"]);
+  const [selected, setSelected] = useState<string[]>([]);
   const selectedTools = useMemo(() => tools.filter((tool) => selected.includes(tool.slug)), [selected]);
 
   function toggle(slug: string) {
@@ -27,7 +27,7 @@ export default function ComparePage() {
     <div className="stack">
       <section className="terminalStatus">
         <div className="statusIdentity"><strong>Compare Terminal</strong><span>LIVE</span></div>
-        <div className="metric hotMetric"><span>suggested matchup</span><strong>Cursor vs Windsurf</strong></div>
+        <div className="metric hotMetric"><span>suggested matchup</span><strong>No products selected</strong></div>
         <div className="metric"><span>selected</span><strong>{selectedTools.length}/4</strong></div>
         <TimeframeToggle compact />
       </section>
@@ -42,14 +42,14 @@ export default function ComparePage() {
           <thead><tr><th>Metric</th>{selectedTools.map((tool) => <th key={tool.slug}>{tool.name}</th>)}</tr></thead>
           <tbody>
             {metrics.map(([label, key]) => <tr key={key}><td>{label}</td>{selectedTools.map((tool) => <td key={tool.slug}>{tool[key].toLocaleString()}{key.includes("growth") ? "%" : ""}</td>)}</tr>)}
-            <tr><td>Category</td>{selectedTools.map((tool) => <td key={tool.slug}>{tool.category.replace(/^AI\s+/, "")}</td>)}</tr>
+            <tr><td>Category</td>{selectedTools.map((tool) => <td key={tool.slug}>{tool.category}</td>)}</tr>
             <tr><td>Lifecycle state</td>{selectedTools.map((tool) => <td key={tool.slug}><span className="lifecycle">{tool.lifecycleState}</span></td>)}</tr>
           </tbody>
         </table>
       </div>
       <section className="narrativeGrid">
         <span>Decision read: compare momentum, workflow inclusion, category position, and lifecycle before choosing a stack.</span>
-        <span>Workflow inclusion shows which tools are becoming operating systems, not just apps.</span>
+        <span>Workflow inclusion shows which products are becoming recurring parts of tracked stacks.</span>
       </section>
     </div>
   );

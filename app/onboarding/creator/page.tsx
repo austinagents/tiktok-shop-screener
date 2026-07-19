@@ -256,7 +256,7 @@ function SelectorVisual({ item }: { item: SelectorItem }) {
 }
 
 function suggestTools(items: SelectorItem[]) {
-  const defaults = ["chatgpt", "claude", "cursor", "clay"];
+  const defaults = ["placeholder-product-1", "placeholder-product-2", "placeholder-product-3", "placeholder-product-4"];
   return uniqueItems([...defaults.map((slug) => items.find((item) => item.id === slug)).filter(Boolean) as SelectorItem[], ...items]).slice(0, 4);
 }
 

@@ -37,11 +37,11 @@ export type SearchFilters = {
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 const normalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 const compactNormalize = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, "");
-const workflowIntentTerms = ["workflow", "workflows", "lead generation", "outbound", "founder", "ai video", "research", "automation", "agents", "coding"];
+const workflowIntentTerms = ["workflow", "workflows", "process", "playbook", "system", "engine"];
 const creatorIntentTerms = ["creator", "creators", "influencer", "thought leader"];
-const outboundTerms = ["outbound", "lead generation", "prospecting", "sales"];
-const aiVideoTerms = ["ai video", "video", "faceless", "tiktok", "youtube"];
-const broadExplorationTerms = ["lead generation", "ai video", "research", "automation", "agents", "outbound", "coding"];
+const outboundTerms = ["outbound", "prospecting", "sales"];
+const aiVideoTerms = ["video", "faceless", "tiktok", "youtube"];
+const broadExplorationTerms = ["research", "automation", "outbound"];
 const publicResultTypes: PublicSearchResultType[] = ["product", "creator", "workflow", "micro_workflow"];
 const defaultGroupOrder: PublicSearchResultType[] = ["product", "creator", "workflow", "micro_workflow"];
 const workflowGroupOrder: PublicSearchResultType[] = ["workflow", "product", "creator", "micro_workflow"];
@@ -256,7 +256,7 @@ function topicResults(): SearchResult[] {
       name: tag.label,
       slug: tag.slug,
       href: `/tags/${tag.slug}`,
-      description: `${tag.label} ecosystem tag across AppScreener graph nodes.`,
+      description: `${tag.label} ecosystem tag across graph nodes.`,
       tags: [...tag.categories, tag.kind].slice(0, 6),
       graphContext: relatedTools.length ? `Related tools: ${relatedTools.map((tool) => tool.name).join(", ")}` : "Ecosystem tag for creator and attention navigation",
       scoreSeed: relatedTools.length * 8 + (tag.slug === tagSlug ? 20 : 10),
@@ -383,14 +383,12 @@ function scoreResult(result: SearchResult, query: string) {
 
   if (hasOutboundIntent) {
     if (result.type === "workflow" && /outbound|prospecting|lead/.test(normalizedSearchable)) score += 520;
-    if (result.type === "product" && /clay|apollo|hubspot|lindy|instantly|linkedin|taplio/.test(normalizedSearchable)) score += 360;
     if (result.type === "topic" && /lead|outreach/.test(normalizedName)) score += 260;
   }
 
   if (hasAiVideoIntent) {
     if (result.type === "workflow" && /video|tiktok|youtube|influencer/.test(normalizedSearchable)) score += 540;
-    if (result.type === "product" && /runway|kling|capcut|elevenlabs|heygen|descript|pika/.test(normalizedSearchable)) score += 380;
-    if (result.type === "creator" && /video|creator|runway|kling|capcut|elevenlabs/.test(normalizedSearchable)) score += 180;
+    if (result.type === "creator" && /video|creator/.test(normalizedSearchable)) score += 180;
   }
 
   if (normalizedQuery === "workflow" || normalizedQuery === "workflows") {

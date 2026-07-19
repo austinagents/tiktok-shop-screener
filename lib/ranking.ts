@@ -3,20 +3,7 @@ import type { PromotionPlacement, RankingMode, SizeClass, Tool } from "./types";
 const clamp = (value: number, min = 0, max = 100) => Math.min(max, Math.max(min, value));
 const normalized = (value: number, max: number) => clamp((value / max) * 100);
 
-const knownUserEstimates: Record<string, number> = {
-  chatgpt: 180_000_000,
-  claude: 22_000_000,
-  perplexity: 18_000_000,
-  midjourney: 20_000_000,
-  capcut: 90_000_000,
-  cursor: 800_000,
-  runway: 900_000,
-  elevenlabs: 1_500_000,
-  "notion-ai": 8_000_000,
-  zapier: 7_000_000,
-  replit: 5_000_000,
-  grok: 35_000_000
-};
+const knownUserEstimates: Record<string, number> = {};
 
 export function estimateUsers(input: { slug: string; mentions24h: number; mentions7d: number; savesCount: number; creatorMentions: number; searchInterest: number }) {
   if (knownUserEstimates[input.slug]) return knownUserEstimates[input.slug];

@@ -43,7 +43,7 @@ export default function DashboardPage() {
   const watchlistItems = useMemo(() => tools.filter((tool) => watchlist.tools.includes(tool.slug)).slice(0, 4), [watchlist.tools]);
   const watchlistCount = watchlist.tools.length + watchlist.workflows.length + watchlist.categories.length + watchlist.creators.length;
   const workflowCount = new Set([...(product?.workflowSlugs ?? []), ...(creator?.workflowSlugs ?? [])]).size;
-  const profileName = creator?.name ?? product?.name ?? "AppScreener Profile";
+  const profileName = creator?.name ?? product?.name ?? "TikTok Shop Screener Profile";
   const profileRole = [product ? "Founder" : null, creator ? "Creator" : null].filter(Boolean).join(" · ") || "Founder · Creator";
   const profileDescription = "Manage products, creator profiles, watchlist, and account settings from one profile.";
 

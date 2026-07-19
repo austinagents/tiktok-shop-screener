@@ -9,8 +9,8 @@ import { displayCategory } from "@/lib/format";
 import { latestLocalProduct } from "@/lib/local-graph";
 import type { LocalProductRecord } from "@/lib/types";
 
-const mockWorkflowSlugs = ["founder-outbound-engine", "agency-prospecting", "b2b-lead-research"];
-const mockTopics = ["Lead Generation", "Outbound", "AI Sales", "Automation"];
+const mockWorkflowSlugs: string[] = [];
+const mockTopics: string[] = [];
 
 export default function ProductDashboardPage() {
   const [localProduct, setLocalProduct] = useState<LocalProductRecord | null>(null);
@@ -22,8 +22,9 @@ export default function ProductDashboardPage() {
   const activeDescription = localProduct?.description || fallbackTool?.description || "";
   const activeTagline = localProduct?.tagline || fallbackTool?.tagline || "";
   const activeCategory = localProduct?.category ? displayCategory(localProduct.category) : fallbackTool ? fallbackTool.categories.map(displayCategory).join(" · ") : "Add category";
-  const selectedWorkflowSlugs = localProduct ? localProduct.workflowSlugs : mockWorkflowSlugs;
+  const selectedWorkflowSlugs = localProduct?.workflowSlugs ?? (fallbackTool ? workflows.filter((workflow) => workflow.toolSlugs.includes(fallbackTool.slug)).map((workflow) => workflow.slug) : mockWorkflowSlugs);
   const selectedMicroWorkflowSlugs = localProduct?.microWorkflowSlugs ?? [];
+  const selectedTopics = fallbackTool?.subCategoryTags ?? mockTopics;
   const selectedWorkflows = workflows.filter((workflow) => selectedWorkflowSlugs.includes(workflow.slug));
   const selectedMicroWorkflows = microWorkflows.filter((microWorkflow) => selectedMicroWorkflowSlugs.includes(microWorkflow.slug));
   const relatedCreators = fallbackTool ? creatorToolRelationships
@@ -99,7 +100,7 @@ export default function ProductDashboardPage() {
           <section className="sidePanel" id="topics">
             <div className="panelHeader"><h2>Topics</h2></div>
             <div className="ownershipChipRail">
-              {mockTopics.map((topic) => <span key={topic}>{topic}</span>)}
+              {selectedTopics.map((topic) => <span key={topic}>{topic}</span>)}
               <button type="button">Add Topic</button>
             </div>
           </section>
@@ -110,7 +111,7 @@ export default function ProductDashboardPage() {
               <div className="ownershipPreview">
                 {fallbackTool ? <ToolLogo officialSrc={fallbackTool.officialLogoUrl} src={fallbackTool.logoUrl} faviconSrc={fallbackTool.faviconUrl} fallback={fallbackTool.iconUrl} alt="" size={44} /> : null}
                 {localProduct ? <img className="creatorAvatar" src={localProduct.logoUrl} alt="" width={44} height={44} /> : null}
-                <span><strong>{activeProductName}</strong><small>{[activeCategory, ...mockTopics].filter(Boolean).slice(0, 3).join(" · ")}</small></span>
+                <span><strong>{activeProductName}</strong><small>{[activeCategory, ...selectedTopics].filter(Boolean).slice(0, 3).join(" · ")}</small></span>
                 <Link className="iconTextButton" href={localProduct ? `/tools/${localProduct.slug}` : fallbackTool ? `/tools/${fallbackTool.slug}` : "/dashboard/product"}>{localProduct || fallbackTool ? "Preview Public Product" : "Preview Workspace"}</Link>
               </div>
             ) : <Link className="iconTextButton" href="/search?type=product">Browse Products</Link>}
@@ -134,7 +135,5 @@ function OwnershipRow({ title, meta, detail }: { title: string; meta: string; de
 }
 
 function roleForWorkflow(slug: string) {
-  if (slug === "founder-outbound-engine") return "Role: Lead enrichment";
-  if (slug === "agency-prospecting") return "Role: Prospect qualification";
-  return "Role: Account research";
+  return slug ? "Role: —" : "Role: —";
 }

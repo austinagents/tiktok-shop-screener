@@ -3239,7 +3239,7 @@ body {
   h1 { font-size: 30px; }
 }
 
-/* Production polish pass: AppScreener identity without neon overload. */
+/* Production polish pass: product identity without neon overload. */
 :root {
   color-scheme: dark;
   --bg-main: #06080b;

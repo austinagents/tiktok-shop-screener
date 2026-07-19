@@ -8,63 +8,12 @@ import { ToolLogo } from "./tool-logo";
 const visibleRailSlots = 8;
 const millisecondsPerDay = 24 * 60 * 60 * 1000;
 const safeSponsoredTextColor = "#789F99";
-const temporaryDiscoverySlotSlug = "clocsy";
+const temporaryDiscoverySlotSlug = "placeholder-product-1";
 
-export const INDUSTRY_LEADER_EXCLUSIONS = [
-  "chatgpt",
-  "claude",
-  "perplexity",
-  "cursor",
-  "windsurf",
-  "lovable",
-  "replit",
-  "runway",
-  "kling",
-  "pika",
-  "elevenlabs",
-  "midjourney",
-  "ideogram",
-  "heygen",
-  "synthesia",
-  "notion-ai",
-  "zapier",
-  "gamma",
-  "v0",
-  "bolt",
-  "linear",
-  "capcut",
-  "descript",
-  "suno",
-  "notebooklm",
-  "grok",
-  "clay",
-  "jasper",
-  "glean",
-  "make",
-  "framer-ai",
-  "vercel",
-  "n8n",
-  "apollo",
-  "framer",
-  "slack",
-  "hubspot",
-  "linkedin",
-  "google-maps",
-  "manus",
-  "udio",
-  "granola",
-  "lindy",
-  "tome",
-  "typefully",
-  "instantly",
-  "taplio"
-] as const;
+export const INDUSTRY_LEADER_EXCLUSIONS = [] as const;
 
 const industryLeaderExclusions = new Set<string>(INDUSTRY_LEADER_EXCLUSIONS);
-const sponsoredBrandColors: Record<string, string> = {
-  "biela-dev": "#4ADE80",
-  clocsy: "#16F1FD"
-};
+const sponsoredBrandColors: Record<string, string> = {};
 type MomentumRailItem = {
   tool: (typeof tools)[number];
   placement: { momentumLift: number } | null;
@@ -87,20 +36,8 @@ function sponsoredBrandColorFor(slug: string) {
   return sponsoredBrandColors[slug] ?? safeSponsoredTextColor;
 }
 
-const momentumRailToolSlugs = [
-  "step-3-7-flash",
-  "messari",
-  "willow-scribe",
-  "lindy",
-  "wingbits-ai",
-  "higgsfield",
-  "trendspider",
-  "fireflies-ai"
-] as const;
-
-const toolsBySlug = new Map(tools.map((tool) => [tool.slug, tool]));
-const momentumRailItems = momentumRailToolSlugs
-  .flatMap((slug) => toolsBySlug.get(slug) ?? [])
+const momentumRailItems = tools
+  .slice(0, visibleRailSlots)
   .map((tool) => ({ tool, placement: null, railScore: tool.organicTrendingScore }));
 
 function DiscoverySlotName({ name }: { name: string }) {

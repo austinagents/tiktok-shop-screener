@@ -10,15 +10,11 @@ import { WorkflowStack } from "@/components/workflow-stack";
 import { attentionFeed, attentionSubCategories, boostTiers, categories, creatorIntelligenceStatus, creators, movementEvents, tools, workflows } from "@/lib/data";
 import { creatorTagDisplayLabel } from "@/lib/creator-tags";
 import { displayCategory } from "@/lib/format";
+import { placeholderNarratives } from "@/lib/placeholder-data";
 
 export default function DiscoverPage() {
-  const newlyListedSlugs = ["wingbits-ai", "integuru", "branda", "crewai", "voxdeck"];
-  const newLaunches = newlyListedSlugs.flatMap((slug) => tools.find((tool) => tool.slug === slug) ?? []);
-  const narratives = [
-    "AI video workflows are pulling creator attention away from static image generation.",
-    "Coding agents are accelerating faster than general chat tools this week.",
-    "Research stacks are spreading among founders using NotebookLM, Perplexity, and Claude."
-  ];
+  const newLaunches = tools.slice(0, 5);
+  const narratives = placeholderNarratives;
 
   return (
     <div className="homeStack">
@@ -78,7 +74,7 @@ export default function DiscoverPage() {
           {attentionFeed.slice(0, 4).map((item) => <FeedLine key={item.id} time={item.timestamp} title={item.title} />)}
         </PreviewPanel>
         <PreviewPanel href="/narratives" title="Micro Narratives" meta="today's read">
-          {narratives.map((narrative) => <p className="editorialNote" key={narrative}>{narrative}</p>)}
+          {narratives.map((narrative, index) => <p className="editorialNote" key={`${narrative}-${index}`}>{narrative}</p>)}
         </PreviewPanel>
         <PreviewPanel href="/events" title="News & Events" meta="curated highlights">
           {movementEvents.slice(0, 4).map((event) => <FeedLine key={event.id} time={event.timestamp} title={event.title} />)}

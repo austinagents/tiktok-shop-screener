@@ -8,18 +8,10 @@ import { WorkflowStack } from "@/components/workflow-stack";
 import { categories, creators, discoveryEdges, tools, toolsForWorkflow, workflows } from "@/lib/data";
 import { ecosystemColorFor } from "@/lib/ecosystem-colors";
 import { displayCategory } from "@/lib/format";
+import { placeholderCategoryNames } from "@/lib/placeholder-data";
 import type { CategoryName, CreatorProfile, Tool, Workflow as WorkflowType } from "@/lib/types";
 
-const clusterCategories: CategoryName[] = [
-  "AI Coding",
-  "AI Video",
-  "AI Automation",
-  "AI Research",
-  "AI Agents",
-  "AI Image",
-  "AI Infrastructure",
-  "AI Search"
-];
+const clusterCategories: CategoryName[] = placeholderCategoryNames;
 
 function toolsForCategory(category: CategoryName) {
   return tools

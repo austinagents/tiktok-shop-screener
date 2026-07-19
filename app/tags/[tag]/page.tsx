@@ -96,7 +96,7 @@ function Metric({ label, value }: { label: string; value: number }) {
 }
 
 function creatorCategoryFor(tag: string): CategoryName {
-  return tag === "AI Workflows" ? "AI Workflow" : tag as CategoryName;
+  return tag as CategoryName;
 }
 
 function normalized(value: string) {

@@ -8,14 +8,10 @@ import { creatorClaimRequests, getCreator, getTool, microWorkflows, toolsForMicr
 import { latestLocalCreator } from "@/lib/local-graph";
 import type { LocalCreatorRecord } from "@/lib/types";
 
-const mockTools = [
-  { toolSlug: "clay", useCase: "Lead enrichment", priority: "Primary", workflowSlug: "founder-outbound-engine" },
-  { toolSlug: "claude", useCase: "Research synthesis", priority: "Primary", workflowSlug: "research-assistant" },
-  { toolSlug: "chatgpt", useCase: "Content repurposing", priority: "Secondary", workflowSlug: "ai-content-repurposing" }
-];
+const mockTools: Array<{ toolSlug: string; useCase: string; priority: string; workflowSlug: string }> = [];
 
-const mockWorkflowSlugs = ["founder-outbound-engine", "research-assistant", "ai-content-repurposing"];
-const mockTopics = ["Lead Generation", "AI Research", "Automation", "AI Agents"];
+const mockWorkflowSlugs: string[] = [];
+const mockTopics: string[] = [];
 
 export default function CreatorDashboardPage() {
   const [localCreator, setLocalCreator] = useState<LocalCreatorRecord | null>(null);
@@ -26,9 +22,10 @@ export default function CreatorDashboardPage() {
   const activeBio = localCreator?.bio || fallbackCreator?.bio || "";
   const activeWebsite = localCreator?.website || fallbackCreator?.websiteUrl || fallbackCreator?.officialWebsite || "";
   const activeSocials = localCreator?.socialUrl || [fallbackCreator?.xUrl, fallbackCreator?.youtubeUrl, fallbackCreator?.linkedinUrl].filter(Boolean).join(" · ");
-  const selectedToolSlugs = localCreator ? localCreator.toolSlugs : mockTools.map((item) => item.toolSlug);
-  const selectedWorkflowSlugs = localCreator ? localCreator.workflowSlugs : mockWorkflowSlugs;
+  const selectedToolSlugs = localCreator?.toolSlugs ?? fallbackCreator?.toolSlugs ?? mockTools.map((item) => item.toolSlug);
+  const selectedWorkflowSlugs = localCreator?.workflowSlugs ?? fallbackCreator?.workflowSlugs ?? mockWorkflowSlugs;
   const selectedMicroWorkflowSlugs = localCreator?.microWorkflowSlugs ?? [];
+  const selectedTopics = fallbackCreator?.specializationTags ?? mockTopics;
   const selectedWorkflows = workflows.filter((workflow) => selectedWorkflowSlugs.includes(workflow.slug));
   const selectedMicroWorkflows = microWorkflows.filter((microWorkflow) => selectedMicroWorkflowSlugs.includes(microWorkflow.slug));
   const hasProfile = Boolean(localCreator || fallbackCreator);
@@ -101,7 +98,7 @@ export default function CreatorDashboardPage() {
           <section className="sidePanel" id="topics">
             <div className="panelHeader"><h2>Topics</h2></div>
             <div className="ownershipChipRail">
-              {mockTopics.map((topic) => <span key={topic}>{topic}</span>)}
+              {selectedTopics.map((topic) => <span key={topic}>{topic}</span>)}
               <button type="button">Add Topic</button>
             </div>
           </section>
@@ -111,7 +108,7 @@ export default function CreatorDashboardPage() {
             {hasProfile ? (
               <div className="ownershipPreview">
                 <CreatorAvatar name={activeName} src={localCreator?.avatarUrl || fallbackCreator?.avatarUrl} size={44} />
-                <span><strong>{activeName}</strong><small>{mockTopics.slice(0, 3).join(" · ")}</small></span>
+                <span><strong>{activeName}</strong><small>{selectedTopics.slice(0, 3).join(" · ")}</small></span>
                 <Link className="iconTextButton" href={localCreator ? `/creators/${localCreator.slug}` : fallbackCreator ? `/creators/${fallbackCreator.id}` : "/dashboard/creator"}>{localCreator || fallbackCreator ? "Preview Public Profile" : "Preview Workspace"}</Link>
               </div>
             ) : <Link className="iconTextButton" href="/creators">Browse Creators</Link>}

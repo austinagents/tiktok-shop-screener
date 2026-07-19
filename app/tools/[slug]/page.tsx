@@ -2,8 +2,6 @@ import Link from "next/link";
 import Script from "next/script";
 import type { ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
-import xProofQualityV3 from "@/data/x-proof-quality-v3-clean.json";
-import xProofSourcesV2 from "@/data/x-proof-sources-v2-all.json";
 import { ClaimStatusBadge } from "@/components/claims/claim-status";
 import { CreatorAvatar } from "@/components/creator-avatar";
 import { MovementBadge } from "@/components/movement-badge";
@@ -17,6 +15,9 @@ import { betaEventBootstrapScript } from "@/lib/events";
 import { displayCategory } from "@/lib/format";
 import { LOCAL_PRODUCTS_KEY } from "@/lib/local-graph";
 import type { CreatorProfile, CreatorToolRelationship, Tool, ToolEvidenceSource, Workflow as WorkflowType } from "@/lib/types";
+
+const xProofQualityV3: XProofQualityData = {};
+const xProofSourcesV2: XProofData = {};
 
 function isTool(item: Tool | undefined): item is Tool {
   return Boolean(item);
@@ -109,7 +110,7 @@ function LocalProductProfile({ slug }: { slug: string }) {
               <div>
                 <h1 id="localProductName">Local product profile</h1>
                 <p className="toolHeroCategory" id="localProductCategory">Created product</p>
-                <p className="toolHeroDescription" id="localProductDescription">Looking for this product in your local AppScreener graph.</p>
+                <p className="toolHeroDescription" id="localProductDescription">Looking for this product in your local graph.</p>
                 <p className="ownershipUnlockCopy" id="localProductTagline" />
                 <div className="toolHeroActions">
                   <a className="iconTextButton primaryWebsiteButton" id="localProductWebsite" href="/dashboard/product">Visit website <ExternalLink size={14} /></a>
@@ -231,7 +232,7 @@ function productProfileEventScript(toolSlug: string) {
 const receiptSourceCards: Array<{ type: ToolEvidenceSource["sourceType"]; label: string; icon: ReactNode; iconClassName: string }> = [
   { type: "x", label: "X", icon: <SourceXIcon />, iconClassName: "sourceIconX" },
   { type: "youtube", label: "YouTube", icon: <SourceYouTubeIcon />, iconClassName: "sourceIconYouTube" },
-  { type: "github", label: "GitHub", icon: <SourceGitHubIcon />, iconClassName: "sourceIconGitHub" },
+  { type: "github", label: "Repository", icon: <SourceGitHubIcon />, iconClassName: "sourceIconGitHub" },
   { type: "article", label: "Articles", icon: <SourceArticleIcon />, iconClassName: "sourceIconArticle" }
 ];
 
@@ -348,22 +349,7 @@ function isCryptoNoiseXProofTweet(tweet: XProofTweet) {
   return /\$[A-Z0-9]{1,10}\b/i.test(text) || /\b(?:CA:|Contract:|contract address|airdrop|100x|moon|gem)\b/i.test(text);
 }
 
-const bluechipXProofSlugs = new Set([
-  "chatgpt",
-  "claude",
-  "perplexity",
-  "cursor",
-  "vercel",
-  "midjourney",
-  "runway",
-  "elevenlabs",
-  "kling",
-  "pika",
-  "heygen",
-  "synthesia",
-  "notebooklm",
-  "capcut"
-]);
+const bluechipXProofSlugs = new Set<string>();
 
 const bluechipAuthorCryptoNoiseTerms = [
   "crypto",
@@ -595,7 +581,7 @@ function sourceIdentityAvatarUrl(item?: ToolEvidenceSource) {
 }
 
 function sourceNameForEvidence(item: ToolEvidenceSource) {
-  if (item.sourceType === "github") return githubEntityName(item.sourceUrl) || cleanSourceName(item.sourceAuthor) || "GitHub";
+  if (item.sourceType === "github") return githubEntityName(item.sourceUrl) || cleanSourceName(item.sourceAuthor) || "Repository";
   if (item.sourceType === "x") return cleanSourceName(item.sourceAuthor, ["X"]) || xEntityName(item.sourceUrl) || "X";
   if (item.sourceType === "youtube") return cleanSourceName(item.sourceAuthor, ["YouTube"]) || cleanSourceName(item.platformLabel, ["YouTube"]) || "YouTube";
   return item.sourceAuthor || item.platformLabel || domainFor(item.sourceUrl);
@@ -673,15 +659,7 @@ function xEntityName(sourceUrl: string) {
   }
 }
 
-const officialSourceKeysByTool: Record<string, string[]> = {
-  chatgpt: ["openai", "chatgpt"],
-  claude: ["anthropic", "anthropics", "claude", "claudeai"],
-  cursor: ["cursor", "anysphere"],
-  elevenlabs: ["elevenlabs"],
-  heygen: ["heygen"],
-  n8n: ["n8n"],
-  vercel: ["vercel"]
-};
+const officialSourceKeysByTool: Record<string, string[]> = {};
 
 function isOfficialOwnedPublicSource(item: ToolEvidenceSource, tool: Tool) {
   const keys = officialSourceKeysForTool(tool);
@@ -947,7 +925,7 @@ function TagRail({ tool, tags }: { tool: Tool; tags: string[] }) {
   return (
     <div className="toolIntelTags">
       <Link href={`/categories/${slugify(tool.category)}`}>{displayCategory(tool.category)}</Link>
-      {tags.map((tag) => <Link href={`/tags/${ecosystemTagSlug(tag)}`} key={tag}>{tag}</Link>)}
+      {tags.map((tag, index) => <Link href={`/tags/${ecosystemTagSlug(tag)}`} key={`${tag}-${index}`}>{tag}</Link>)}
     </div>
   );
 }
@@ -986,7 +964,7 @@ function reasonsForTool(tool: Tool, workflowCount: number, relatedCount: number,
         ? { title: "Creator attention", text: "Seeded attention metrics show creator-side activity and room to connect more public attribution." }
         : { title: "Creator relationships", text: "Connect creator usage to improve product discovery." },
     workflowCount
-      ? { title: `Active in ${displayCategory(tool.category)} workflows`, text: `Appears in ${workflowCount} tracked workflow ${workflowCount === 1 ? "stack" : "stacks"} on AppScreener.` }
+      ? { title: `Active in ${displayCategory(tool.category)} workflows`, text: `Appears in ${workflowCount} tracked workflow ${workflowCount === 1 ? "stack" : "stacks"}.` }
       : { title: "Workflow relationships forming", text: "No verified workflow stack currently includes this tool." },
     relatedCount
       ? { title: "Often paired with adjacent tools", text: "Relationship mapping shows nearby products in similar workflow and category lanes." }
@@ -1021,7 +999,7 @@ function knownYear(date: string) {
 function sourceTypeLabel(type: ToolEvidenceSource["sourceType"]) {
   if (type === "x") return "X";
   if (type === "youtube") return "YouTube";
-  if (type === "github") return "GitHub";
+  if (type === "github") return "Repository";
   if (type === "docs") return "Docs";
   if (type === "official") return "Official";
   if (type === "news") return "News";

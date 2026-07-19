@@ -17,14 +17,14 @@ declare global {
 export function trackBetaEvent(eventName: BetaEventName, payload: BetaEventPayload = {}) {
   if (typeof window === "undefined") return;
   if (process.env.NODE_ENV === "production") return;
-  console.info("[AppScreener beta event]", eventName, payload);
+  console.info("[TikTok Shop Screener beta event]", eventName, payload);
 }
 
 export function betaEventBootstrapScript() {
   return `
     window.__appscreenerTrackBetaEvent = window.__appscreenerTrackBetaEvent || function(eventName, payload) {
       if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
-        console.info("[AppScreener beta event]", eventName, payload || {});
+        console.info("[TikTok Shop Screener beta event]", eventName, payload || {});
       }
     };
   `;

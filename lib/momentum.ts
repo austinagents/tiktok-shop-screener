@@ -49,18 +49,7 @@ export function normalizeProductDisplayName(name: string) {
 export function canonicalizeProductName(name: string) {
   const normalizedName = normalizeProductDisplayName(name);
   const compact = normalizedName.toLowerCase().replace(/[^a-z0-9 ]/g, "").replace(/\b(ai|app|tool)\b/g, "").replace(/\s+/g, " ").trim();
-  const aliases: Record<string, string> = {
-    "anthropic claude": "Claude",
-    claude: "Claude",
-    "openai chatgpt": "ChatGPT",
-    chatgpt: "ChatGPT",
-    "midjourney": "Midjourney",
-    "midjourney ai": "Midjourney",
-    "google notebooklm": "NotebookLM",
-    notebooklm: "NotebookLM",
-    "xai grok": "Grok",
-    grok: "Grok"
-  };
+  const aliases: Record<string, string> = {};
 
   return aliases[compact] ?? normalizedName;
 }

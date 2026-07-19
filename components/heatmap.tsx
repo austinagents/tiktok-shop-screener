@@ -46,7 +46,7 @@ export function CategoryHeatmap({ categories }: { categories: Category[] }) {
         >
           <div className="heatTileTop">
             <span>{displayCategory(category.name)}</span>
-            <em>sector rotation</em>
+            <em>category rotation</em>
           </div>
           <strong>
             {category.momentumScore}
@@ -68,7 +68,7 @@ export function CategoryHeatmap({ categories }: { categories: Category[] }) {
               }}
             />
           </div>
-          <small>{category.toolsTracked} tools tracked</small>
+          <small>{category.toolsTracked} products tracked</small>
         </Link>
       ))}
     </div>
@@ -95,8 +95,8 @@ export function AttentionHeatmap({ items }: { items: AttentionSubCategory[] }) {
           <span>{cluster.title}</span>
         </div>
         <div className="attentionClusterBody">
-          {cluster.tags.map((tag) => (
-            <Link className={`attentionNode heatmap-tag-button ${tag.size}`} href={`/tags/${ecosystemTagSlug(tag.label)}`} key={tag.label}>
+          {cluster.tags.map((tag, index) => (
+            <Link className={`attentionNode heatmap-tag-button ${tag.size}`} href={`/tags/${ecosystemTagSlug(tag.label)}`} key={`${cluster.id}-${tag.label}-${index}`}>
               <tag.icon size={tag.iconSize ?? 14} />
               <span>{tag.label}</span>
             </Link>
@@ -108,7 +108,7 @@ export function AttentionHeatmap({ items }: { items: AttentionSubCategory[] }) {
 
   return (
     <div className="attentionHeatmapComponent">
-      <div className="heatmapCanvasFrame heatmap-container-relative-wrapper" aria-label="Attention pocket pressure map">
+      <div className="heatmapCanvasFrame heatmap-container-relative-wrapper" aria-label="Attention heatmap">
         <div className="attentionTaxonomyGrid heatmap-grid-container heatmap-grid-main">
           {topLeft ? renderCluster(topLeft) : null}
           {topRight ? renderCluster(topRight) : null}
@@ -124,8 +124,8 @@ export function AttentionHeatmap({ items }: { items: AttentionSubCategory[] }) {
                 <span>{centerpiece.title}</span>
               </div>
               <div className="attentionClusterBody">
-                {centerpiece.tags.filter((tag) => tag.label !== "TikTok Clips").map((tag) => (
-                  <Link className={`attentionNode heatmap-tag-button ${tag.size}`} href={`/tags/${ecosystemTagSlug(tag.label)}`} key={tag.label}>
+                {centerpiece.tags.filter((tag) => tag.label !== "TikTok Clips").map((tag, index) => (
+                  <Link className={`attentionNode heatmap-tag-button ${tag.size}`} href={`/tags/${ecosystemTagSlug(tag.label)}`} key={`${centerpiece.id}-${tag.label}-${index}`}>
                     <tag.icon size={tag.iconSize ?? 14} />
                     <span>{tag.label}</span>
                   </Link>
@@ -166,80 +166,80 @@ type AttentionClusterConfig = {
 const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "markets",
-    title: "Trading & Markets",
-    color: "#6FA7A2",
+    title: "Category",
+    color: "#64748B",
     icon: ChartNoAxesCombined,
     top: 70,
     left: 0,
     width: 330,
     height: 250,
     tags: [
-      { label: "Trading Bots", icon: Bot, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
-      { label: "Prediction Markets", icon: ChartNoAxesCombined, size: "medium", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Market Analysis", icon: CircleDollarSign, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Whale Tracking", icon: Pickaxe, size: "small", top: 202, left: 70, width: 190, height: 40 }
+      { label: "Subcategory 1", icon: Bot, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
+      { label: "Subcategory 2", icon: ChartNoAxesCombined, size: "medium", top: 98, left: 55, width: 220, height: 40 },
+      { label: "—", icon: CircleDollarSign, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "—", icon: Pickaxe, size: "small", top: 202, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "growth",
-    title: "Growth & Sales",
-    color: "#6FA7A2",
+    title: "Category",
+    color: "#64748B",
     icon: Megaphone,
     top: 70,
     left: 370,
     width: 330,
     height: 250,
     tags: [
-      { label: "Mass Email", icon: Mail, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
-      { label: "Lead Generation", icon: UserPlus, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Cold Outreach", icon: Send, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Web Scraping", icon: Globe2, size: "medium", top: 202, left: 70, width: 190, height: 40 }
+      { label: "Subcategory 3", icon: Mail, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
+      { label: "Subcategory 4", icon: UserPlus, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "—", icon: Send, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "—", icon: Globe2, size: "medium", top: 202, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "center",
-    title: "Daily Buzz",
-    color: "#6FA7A2",
+    title: "Category",
+    color: "#64748B",
     icon: Sparkles,
     top: 362,
     left: 185,
     width: 330,
     height: 150,
     tags: [
-      { label: "TikTok Clips", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
-      { label: "Thumbnails", icon: FileText, size: "medium", top: 94, left: 75, width: 180, height: 40 }
+      { label: "Subcategory 5", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
+      { label: "—", icon: FileText, size: "medium", top: 94, left: 75, width: 180, height: 40 }
     ]
   },
   {
     id: "builders",
-    title: "Builder Tools",
-    color: "#6FA7A2",
+    title: "Category",
+    color: "#64748B",
     icon: Code2,
     top: 575,
     left: 0,
     width: 330,
     height: 250,
     tags: [
-      { label: "Websites", icon: Globe2, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
-      { label: "Vibe Coding", icon: Code2, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Debugging", icon: Bug, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "3D Assets", icon: Box, size: "medium", top: 202, left: 70, width: 190, height: 40 }
+      { label: "Subcategory 6", icon: Box, size: "large", badge: "High", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Subcategory 7", icon: Code2, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "—", icon: Bug, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "—", icon: Tags, size: "medium", top: 202, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "ops",
-    title: "Automation & Ops",
-    color: "#6FA7A2",
-    icon: Search,
+    title: "Category",
+    color: "#64748B",
+    icon: BriefcaseBusiness,
     top: 575,
     left: 370,
     width: 330,
     height: 250,
     tags: [
-      { label: "Research Agents", icon: Search, size: "large", badge: "Rising", top: 32, left: 25, width: 280, height: 52 },
-      { label: "AI Employees", icon: Users, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Video Editing", icon: Video, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Automation", icon: BriefcaseBusiness, size: "medium", top: 202, left: 70, width: 190, height: 40 }
+      { label: "Subcategory 8", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Subcategory 9", icon: Users, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "—", icon: Video, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "—", icon: BriefcaseBusiness, size: "medium", top: 202, left: 70, width: 190, height: 40 }
     ]
   }
 ];

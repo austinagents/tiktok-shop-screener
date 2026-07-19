@@ -142,7 +142,7 @@ function sourceTypesFor(evidenceItems: ToolEvidenceSource[]) {
 function sourceTypeLabel(type: ToolEvidenceSource["sourceType"]) {
   if (type === "x") return "X";
   if (type === "youtube") return "YouTube";
-  if (type === "github") return "GitHub";
+  if (type === "github") return "Repository";
   if (type === "docs") return "Docs";
   if (type === "official") return "Official";
   if (type === "news") return "News";
@@ -173,57 +173,21 @@ function isTool(item: Tool | undefined): item is Tool {
 }
 
 function whatToDoForTool(tool: Tool, otherTool: Tool) {
-  const name = tool.name.toLowerCase();
-  if (name.includes("chatgpt")) return "Use ChatGPT to draft the script, structure the message, generate variations, or refine the prompt/content logic.";
-  if (name.includes("claude")) return `Use Claude to reason through the task, structure the logic, and prepare the instructions or content that ${otherTool.name} can act on.`;
-  if (name.includes("perplexity")) return "Use Perplexity to gather sourced context, examples, and research inputs before the second tool executes or packages the work.";
-  if (name.includes("n8n")) return "Use n8n to automate the execution layer, connect apps/services, and turn the reasoning output into a repeatable flow.";
-  if (name.includes("cursor")) return "Use Cursor to turn the plan, prompt, or requirements into working code inside the development environment.";
-  if (name.includes("vercel")) return "Use Vercel to publish, host, and validate the working output in a live environment.";
-  if (name.includes("elevenlabs")) return "Use ElevenLabs to turn the script into realistic voice/audio.";
-  if (name.includes("heygen")) return "Use HeyGen to turn the script, voice, or assets into an avatar-led video output.";
   return `Use ${tool.name} to handle the ${cleanCategory(tool.category).toLowerCase()} layer before passing the result to ${otherTool.name}.`;
 }
 
 function whatToLookForTool(tool: Tool) {
-  const name = tool.name.toLowerCase();
-  if (name.includes("chatgpt")) return "Clear language, reusable structure, strong hook, concise pacing, and content that can move cleanly into the next tool.";
-  if (name.includes("claude")) return "Sound reasoning, clear constraints, complete task logic, and instructions that are specific enough to execute.";
-  if (name.includes("perplexity")) return "Credible sources, useful examples, current context, and a concise research packet with low noise.";
-  if (name.includes("n8n")) return "Reliable triggers, clean app connections, mapped inputs/outputs, and a workflow that can run repeatedly.";
-  if (name.includes("cursor")) return "Working code, clear file changes, coherent implementation, and a result that can be tested or shipped.";
-  if (name.includes("vercel")) return "A successful deployment, working production settings, and a live URL that behaves like the local build.";
-  if (name.includes("elevenlabs")) return "Voice quality, pacing, emotion, clarity, pronunciation, and whether the audio matches the intended format.";
-  if (name.includes("heygen")) return "Avatar delivery, timing, visual quality, scene framing, and whether the video matches the intended message.";
   return "A clean output, clear handoff point, and enough structure for the second tool to use without extra cleanup.";
 }
 
 function outputForTool(tool: Tool) {
-  const name = tool.name.toLowerCase();
-  if (name.includes("chatgpt")) return "A ready-to-use script, prompt, outline, or content sequence.";
-  if (name.includes("claude")) return "A structured reasoning pass, implementation plan, task logic, or instruction set.";
-  if (name.includes("perplexity")) return "A sourced research packet, context brief, or evidence-backed input set.";
-  if (name.includes("n8n")) return "A repeatable automation flow with connected triggers, actions, and handoffs.";
-  if (name.includes("cursor")) return "A working code change, prototype, or implementation path.";
-  if (name.includes("vercel")) return "A deployed URL or production-ready preview.";
-  if (name.includes("elevenlabs")) return "A generated voiceover or audio file.";
-  if (name.includes("heygen")) return "An avatar video, presenter clip, or generated video asset.";
   return `A ${cleanCategory(tool.category).toLowerCase()} output ready for the next tool.`;
 }
 
 function whyStepMattersForTool(tool: Tool, otherTool: Tool) {
-  const name = tool.name.toLowerCase();
-  if (name.includes("chatgpt")) return `ChatGPT defines the reasoning/content layer before ${otherTool.name} turns it into the next operational asset.`;
-  if (name.includes("claude")) return `Claude sharpens the reasoning layer so ${otherTool.name} receives cleaner logic, instructions, or content.`;
-  if (name.includes("perplexity")) return `Perplexity grounds the workflow in public context before ${otherTool.name} uses it downstream.`;
-  if (name.includes("n8n")) return `n8n turns the upstream logic from ${otherTool.name} into a repeatable automated operation.`;
-  if (name.includes("cursor")) return `Cursor converts the upstream plan or logic from ${otherTool.name} into working software.`;
-  if (name.includes("vercel")) return `Vercel makes the output from ${otherTool.name} reachable, testable, and shareable.`;
-  if (name.includes("elevenlabs")) return `ElevenLabs converts the text/content layer from ${otherTool.name} into the final audio layer.`;
-  if (name.includes("heygen")) return `HeyGen turns the upstream content from ${otherTool.name} into a finished video layer.`;
   return `${tool.name} provides the ${cleanCategory(tool.category).toLowerCase()} step that makes the handoff with ${otherTool.name} useful.`;
 }
 
 function cleanCategory(category: string) {
-  return category.replace(/^AI\s+/i, "");
+  return category;
 }

@@ -22,8 +22,6 @@ export const ecosystemTagSlug = (label: string) =>
     .replace(/(^-|-$)/g, "");
 
 const creatorCategoryFor = (tag: (typeof creatorSpecializations)[number]): CategoryName[] => {
-  if (tag === "AI Workflows") return ["AI Workflow"];
-  if (tag === "Open Source AI") return [];
   return [tag as CategoryName];
 };
 

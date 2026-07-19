@@ -24,7 +24,7 @@ export default function CreatorClaimPage({ params, searchParams }: { params: { i
           <div>
             <p className="eyebrow">Creator Ownership</p>
             <h1>Claim {creator.name}</h1>
-            <p>AppScreener reviews creator claims before profile ownership is granted.</p>
+            <p>TikTok Shop Screener reviews creator claims before profile ownership is granted.</p>
           </div>
         </div>
         <div className="headerActions">
@@ -40,7 +40,7 @@ export default function CreatorClaimPage({ params, searchParams }: { params: { i
             <label>Name<input defaultValue={creator.name} required /></label>
             <label>Email<input type="email" placeholder="you@example.com" required /></label>
             <label>Creator social proof URL<input defaultValue={creator.xUrl || creator.websiteUrl || ""} placeholder="https://x.com/handle" required /></label>
-            <label>Claim note<textarea placeholder="Briefly explain how AppScreener can verify this is your profile." /></label>
+            <label>Claim note<textarea placeholder="Briefly explain how this profile can be verified." /></label>
             <button className="primaryButton" type="submit">Submit Claim For Review</button>
           </form>
           <aside className="sidePanel claimSidePanel">
