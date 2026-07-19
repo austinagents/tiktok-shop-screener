@@ -206,8 +206,7 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 150,
     tags: [
-      { label: "Subcategory 5", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
-      { label: "—", icon: FileText, size: "medium", top: 94, left: 75, width: 180, height: 40 }
+      { label: "Subcategory 5", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 }
     ]
   },
   {
