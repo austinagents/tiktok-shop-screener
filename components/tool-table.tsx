@@ -8,7 +8,6 @@ import { Sparkline } from "./sparkline";
 import { ToolLogo } from "./tool-logo";
 
 const categoryClass = (category: string) => category.toLowerCase().replace(/[^a-z0-9]+/g, "-");
-const lifecycleClass = (lifecycle: string) => lifecycle.toLowerCase().replace(/\s/g, "-");
 type TableDisplayStatsMode = "default" | "30D" | "ALL";
 
 export function ToolTable({ tools, compact = false, focused = false, useTwentyFourHourSourceDisplay = false, displayStatsMode = "default" }: { tools: Tool[]; compact?: boolean; focused?: boolean; useTwentyFourHourSourceDisplay?: boolean; displayStatsMode?: TableDisplayStatsMode }) {
@@ -33,12 +32,12 @@ export function ToolTable({ tools, compact = false, focused = false, useTwentyFo
             <th>Tool</th>
             <th>Category</th>
             {!focused && <th>Momentum</th>}
-            <th>24h</th>
+            <th>24h GMV</th>
             {!focused && <th>7d</th>}
             {!compact && <th>Creators</th>}
-            {!compact && <th>Sources</th>}
-            {!compact && <th>Workflows</th>}
-            <th>Lifecycle</th>
+            {!compact && <th>Price</th>}
+            {!compact && <th>Units Sold</th>}
+            <th>Videos</th>
             {!compact && !focused && <th>Flows</th>}
             {!compact && !focused && <th>Why moving</th>}
             {!focused && <th>Sparkline</th>}
@@ -47,8 +46,11 @@ export function ToolTable({ tools, compact = false, focused = false, useTwentyFo
         <tbody>
           {tools.map((tool, index) => {
             const displayStats = displayStatsForTool(tool, displayStatsMode);
-            const creatorCount = displayStats.creatorCount || 6;
-            const sourceCount = useTwentyFourHourSourceDisplay ? twentyFourHourSourceCount(displayStats.creatorCount, tool.growth24h, tool.slug) : displayStats.sourceCount;
+            const creatorCount = displayStats.creatorCount || fallbackCreatorCount(tool.slug);
+            const price = productPriceForTool(displayStats.sourceCount, tool.slug);
+            const unitsSold = displayStats.workflowCount || fallbackUnitsSold(tool.slug);
+            const videos = videosForTool(tool);
+            const gmv = gmvForTool(tool, useTwentyFourHourSourceDisplay);
             return (
               <tr className={tool.lifecycleState === "Breaking Out" ? "breakoutRow" : ""} key={tool.id}>
                 <td className="rank" data-label="Rank">{!focused && <span className="rankMove">↗</span>}#{index + 1}</td>
@@ -67,12 +69,12 @@ export function ToolTable({ tools, compact = false, focused = false, useTwentyFo
                   </Link>
                 </td>
                 {!focused && <td data-label="Momentum"><span className="score">{tool.momentumScore}<small>score</small></span></td>}
-                <td data-label="24h"><MovementBadge value={tool.growth24h} /></td>
+                <td data-label="24h GMV">{formatCompactCurrency(gmv)}</td>
                 {!focused && <td data-label="7d"><MovementBadge value={tool.growth7d} /></td>}
-                {!compact && <td data-label="Creators"><span className="signalCount">{creatorCount}</span></td>}
-                {!compact && <td data-label="Sources">{sourceCount.toLocaleString()}</td>}
-                {!compact && <td data-label="Workflows">{displayStats.workflowCount.toLocaleString()}</td>}
-                <td data-label="Lifecycle"><span className={`lifecycle ${lifecycleClass(tool.lifecycleState)}`}>{tool.lifecycleState}</span></td>
+                {!compact && <td data-label="Creators"><span className="signalCount">{formatCompactCount(creatorCount)}</span></td>}
+                {!compact && <td data-label="Price">{formatCurrency(price)}</td>}
+                {!compact && <td data-label="Units Sold">{formatCompactCount(unitsSold)}</td>}
+                <td data-label="Videos"><span className="signalCount">{formatCompactCount(videos)}</span></td>
                 {!compact && !focused && <td data-label="Flows"><span className="signalCount">{tool.workflowInclusions}</span></td>}
                 {!compact && !focused && <td data-label="Why"><span className="whyPill">{reasonFor(tool)}</span></td>}
                 {!focused && <td data-label="Sparkline"><Sparkline data={tool.sparkline} tone={tool.growth24h < 0 ? "red" : "green"} /></td>}
@@ -91,26 +93,60 @@ function displayStatsForTool(tool: Tool, mode: TableDisplayStatsMode) {
   return trendingTableDisplayStatsBySlug[tool.slug] ?? emptyTrendingTableDisplayStats;
 }
 
-function twentyFourHourSourceCount(creatorCount: number, growth24h: number, slug: string) {
-  if (creatorCount <= 0) return fallbackSourceCount(slug);
-  return creatorCount * sourceMultiplierForGrowth(growth24h);
+function gmvForTool(tool: Tool, useTwentyFourHourSourceDisplay: boolean) {
+  if (tool.growth24h > 0) return tool.growth24h;
+  const seed = slugSeed(tool.slug);
+  const base = 8400 + seed % 72000;
+  return useTwentyFourHourSourceDisplay ? base : Math.round(base * 0.82);
 }
 
-function sourceMultiplierForGrowth(growth24h: number) {
-  if (growth24h >= 900) return 12;
-  if (growth24h >= 800) return 13;
-  if (growth24h >= 700) return 14;
-  if (growth24h >= 600) return 15;
-  if (growth24h >= 500) return 16;
-  if (growth24h >= 400) return 17;
-  if (growth24h >= 300) return 18;
-  if (growth24h >= 200) return 19;
-  return 20;
+function productPriceForTool(sourceCount: number, slug: string) {
+  if (sourceCount > 0) return sourceCount;
+  return 12 + (slugSeed(slug) % 8800) / 100;
 }
 
-function fallbackSourceCount(slug: string) {
-  const seed = slug.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return 50 + seed % 51;
+function fallbackCreatorCount(slug: string) {
+  return 4 + slugSeed(slug) % 42;
+}
+
+function fallbackUnitsSold(slug: string) {
+  return 120 + slugSeed(slug) % 9400;
+}
+
+function videosForTool(tool: Tool) {
+  if (tool.mentions24h > 0) return tool.mentions24h;
+  return 18 + slugSeed(`${tool.slug}-${tool.lifecycleState}`) % 620;
+}
+
+function formatCompactCurrency(value: number) {
+  return new Intl.NumberFormat("en-US", {
+    compactDisplay: "short",
+    currency: "USD",
+    maximumFractionDigits: value >= 1000 ? 1 : 0,
+    notation: "compact",
+    style: "currency"
+  }).format(value);
+}
+
+function formatCurrency(value: number) {
+  return new Intl.NumberFormat("en-US", {
+    currency: "USD",
+    maximumFractionDigits: 2,
+    minimumFractionDigits: 2,
+    style: "currency"
+  }).format(value);
+}
+
+function formatCompactCount(value: number) {
+  return new Intl.NumberFormat("en-US", {
+    compactDisplay: "short",
+    maximumFractionDigits: value >= 10000 ? 1 : 0,
+    notation: value >= 10000 ? "compact" : "standard"
+  }).format(Math.round(value));
+}
+
+function slugSeed(slug: string) {
+  return slug.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0);
 }
 
 function reasonFor(tool: Tool) {

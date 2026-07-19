@@ -5805,7 +5805,7 @@ a:hover .toolLogo {
   }
 
   .terminalTable td[data-label="Category"],
-  .terminalTable td[data-label="Lifecycle"],
+  .terminalTable td[data-label="Videos"],
   .terminalTable td[data-label="Why"],
   .terminalTable td[data-label="Sparkline"] {
     grid-column: 1 / -1;

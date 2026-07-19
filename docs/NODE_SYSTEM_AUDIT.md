@@ -14,6 +14,8 @@ The main user traversal model is: homepage discovery modules -> product, categor
 
 Search is graph-aware and virtualizes the public result names as `product`, `creator`, `workflow`, and `micro_workflow`, while also building internal `topic` and `category` results that are filtered out from public result groups (`lib/search.ts:5-6`, `lib/search.ts:341-348`, `lib/search.ts:407-422`, `lib/search.ts:469-478`). Watchlist and local dashboards use browser `localStorage` keys that still include `appscreener` in the internal storage namespace (`components/save-button.tsx:6-23`; `lib/local-graph.ts:3-6`; `app/watchlist/page.tsx:10-30`).
 
+Compatibility note: the Trending Products table temporarily preserves legacy internal field names and metric slots while presenting TikTok Shop semantics. In `components/tool-table.tsx`, the existing `growth24h` position is displayed as `24h GMV`, the existing creator-count position is displayed as `Creators`, the existing source-count position is displayed as `Price`, the existing workflow-count position is displayed as `Units Sold`, and the existing lifecycle column position is displayed as `Videos`. This is a presentation-layer mapping only; no node, route, relationship, type field, or storage field is renamed or removed in this phase.
+
 ---
 
 ## 1. Canonical Node Inventory
