@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const requestedCategory = searchParams.get("category");
 
-  const allowedCategories = new Set(["Golf", "Skincare", "Makeup"]);
+  const allowedCategories = new Set(["Golf", "Skincare", "Makeup", "Haircare"]);
   const category =
     requestedCategory && allowedCategories.has(requestedCategory)
       ? requestedCategory
