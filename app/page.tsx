@@ -5,10 +5,12 @@ import { HomeTrendingFilter } from "@/components/home-trending-filter";
 import { PromotedMomentumRail } from "@/components/promoted-momentum-rail";
 import { attentionSubCategories, tools } from "@/lib/data";
 
+const showArchivedMomentumRail = false;
+
 export default function DiscoverPage() {
   return (
     <div className="homeStack">
-      <PromotedMomentumRail showDiscoverySlot={false} />
+      {showArchivedMomentumRail ? <PromotedMomentumRail showDiscoverySlot={false} /> : null}
 
       <HomeTrendingFilter tools={tools}>
         <aside className="homeRail">

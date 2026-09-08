@@ -17,6 +17,7 @@ const tabs = [
 ];
 
 const showArchivedNavigation = false;
+const showArchivedHeaderSearch = false;
 
 export function AppShell({ children }: { children: ReactNode }) {
   const hasProfile = useHasLocalProfile();
@@ -31,7 +32,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             <small>The live screener for TikTok Shop.</small>
           </span>
         </Link>
-        <CommandSearch />
+        {showArchivedHeaderSearch ? <CommandSearch /> : null}
         {showArchivedNavigation ? (
           <nav className="navTabs">
             {tabs.map((tab) => (
