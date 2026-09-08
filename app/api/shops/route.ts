@@ -3,27 +3,39 @@ import path from "node:path";
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+export async function GET(request: Request) {
   const dbPath = path.join(
     process.env.HOME!,
     "Desktop/shopsearch/data/shopsearch.sqlite"
   );
 
+  const { searchParams } = new URL(request.url);
+  const requestedCategory = searchParams.get("category");
+
+  const allowedCategories = new Set(["Golf", "Skincare"]);
+  const category =
+    requestedCategory && allowedCategories.has(requestedCategory)
+      ? requestedCategory
+      : "Golf";
+
   const sql = `
     SELECT
-      seller_id,
-      name,
-      brand,
-      shop_rating,
-      total_units_sold,
-      total_gmv,
-      day7_units_sold,
-      day7_total_gmv,
-      on_sale_product_count,
-      affiliate_creator_count,
-      tiktok_unique_id
-    FROM shops
-    ORDER BY day7_total_gmv DESC;
+      s.seller_id,
+      s.name,
+      s.brand,
+      s.shop_rating,
+      s.total_units_sold,
+      s.total_gmv,
+      s.day7_units_sold,
+      s.day7_total_gmv,
+      s.on_sale_product_count,
+      s.affiliate_creator_count,
+      s.tiktok_unique_id
+    FROM shops s
+    INNER JOIN shop_categories sc
+      ON sc.seller_id = s.seller_id
+    WHERE sc.category = '${category}'
+    ORDER BY s.day7_total_gmv DESC;
   `;
 
   try {
@@ -33,9 +45,17 @@ export async function GET() {
 
     const shops = output.trim() ? JSON.parse(output) : [];
 
-    return Response.json({ count: shops.length, shops });
+    return Response.json({
+      category,
+      count: shops.length,
+      shops
+    });
   } catch (error) {
     console.error(error);
-    return Response.json({ error: "Failed to read shops database" }, { status: 500 });
+
+    return Response.json(
+      { error: "Failed to read shops database" },
+      { status: 500 }
+    );
   }
 }

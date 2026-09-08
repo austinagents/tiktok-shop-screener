@@ -124,8 +124,8 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             </div>
             <TimeframeToggle compact options={timeframeTabs} active={activeTimeframe} onChange={(frame) => setActiveTimeframe(frame as TrendingTimeframe)} />
           </div>
-          {activeTab === "Golf" ? (
-            <GolfShopTable />
+          {activeTab === "Golf" || activeTab === "Skincare" ? (
+            <GolfShopTable category={activeTab} />
           ) : (
             <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
           )}

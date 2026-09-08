@@ -123,7 +123,7 @@ function renderAttentionNode(tag: AttentionTagConfig, key: string, interactionMo
         className={`attentionNode heatmap-tag-button ${tag.size}${activeLabel === tag.label ? " active" : ""}`}
         type="button"
         key={key}
-        onClick={() => tag.label === "Golf" && onSelect?.("Golf")}
+        onClick={() => onSelect?.(tag.label)}
       >
         {content}
       </button>

@@ -16,14 +16,14 @@ type Shop = {
   tiktok_unique_id: string | null;
 };
 
-export function GolfShopTable() {
+export function GolfShopTable({ category = "Golf" }: { category?: string }) {
   const [shops, setShops] = useState<Shop[]>([]);
 
   useEffect(() => {
-    fetch("/api/shops")
+    fetch(`/api/shops?category=${encodeURIComponent(category)}`)
       .then((res) => res.json())
       .then((data) => setShops(data.shops ?? []));
-  }, []);
+  }, [category]);
 
   return (
     <div className="tableWrap">
