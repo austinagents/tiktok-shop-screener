@@ -29,7 +29,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           <span className="brandMark"><Image src="/logo.png" alt="" width={36} height={36} priority /></span>
           <span>
             <strong>TikTok Shop Screener</strong>
-            <small>The live screener for TikTok Shop.</small>
+            <small>BY UGC NETWORK</small>
           </span>
         </Link>
         {showArchivedHeaderSearch ? <CommandSearch /> : null}

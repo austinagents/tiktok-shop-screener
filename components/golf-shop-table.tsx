@@ -36,7 +36,7 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
             <th>Lifetime GMV</th>
             <th>Creators</th>
             <th>Products</th>
-            <th>7D Units</th>
+            
             <th>TikTok</th>
           </tr>
         </thead>
@@ -49,7 +49,7 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
                 <div className="toolCell">
                   <span>
                     <strong>{shop.name ?? "Unknown Shop"}</strong>
-                    {shop.brand && <small>{shop.brand}</small>}
+                    
                   </span>
                 </div>
               </td>
@@ -58,7 +58,7 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
               <td>{formatCurrency(shop.total_gmv)}</td>
               <td>{formatCount(shop.affiliate_creator_count)}</td>
               <td>{formatCount(shop.on_sale_product_count)}</td>
-              <td>{formatCount(shop.day7_units_sold)}</td>
+              
 
               <td>
                 {shop.tiktok_unique_id ? (

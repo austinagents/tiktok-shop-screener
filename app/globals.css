@@ -6161,3 +6161,71 @@ body {
   background: rgba(141, 178, 111, 0.10);
   color: #b7d89b;
 }
+
+/* TikTok handle links */
+.focusedToolsTable a {
+  color: #3b82f6;
+}
+
+/* Show full TikTok handles */
+.focusedToolsTable td:last-child,
+.focusedToolsTable td:last-child a {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+  max-width: none;
+}
+
+/* Give Shop more room by tightening Rank */
+.focusedToolsTable th:first-child,
+.focusedToolsTable td:first-child {
+  width: 70px;
+  min-width: 70px;
+}
+
+.focusedToolsTable th:nth-child(2),
+.focusedToolsTable td:nth-child(2) {
+  width: 220px;
+  max-width: 220px;
+}
+
+/* Redistribute table width after removing 7D Units */
+.focusedToolsTable {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.focusedToolsTable th:nth-child(1),
+.focusedToolsTable td:nth-child(1) {
+  width: 7%;
+}
+
+.focusedToolsTable th:nth-child(2),
+.focusedToolsTable td:nth-child(2) {
+  width: 22%;
+}
+
+.focusedToolsTable th:nth-child(3),
+.focusedToolsTable td:nth-child(3) {
+  width: 15%;
+}
+
+.focusedToolsTable th:nth-child(4),
+.focusedToolsTable td:nth-child(4) {
+  width: 17%;
+}
+
+.focusedToolsTable th:nth-child(5),
+.focusedToolsTable td:nth-child(5) {
+  width: 13%;
+}
+
+.focusedToolsTable th:nth-child(6),
+.focusedToolsTable td:nth-child(6) {
+  width: 11%;
+}
+
+.focusedToolsTable th:nth-child(7),
+.focusedToolsTable td:nth-child(7) {
+  width: 15%;
+}

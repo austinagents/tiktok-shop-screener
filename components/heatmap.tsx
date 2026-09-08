@@ -164,7 +164,7 @@ type AttentionClusterConfig = {
 const attentionClusters: AttentionClusterConfig[] = [
   {
     id: "markets",
-    title: "Category",
+    title: "SPORTS & OUTDOORS",
     color: "#64748B",
     icon: ChartNoAxesCombined,
     top: 70,
@@ -174,15 +174,15 @@ const attentionClusters: AttentionClusterConfig[] = [
     tags: [
       { label: "Golf", icon: Bot, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
       { label: "Pickleball", icon: ChartNoAxesCombined, size: "medium", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Running", icon: CircleDollarSign, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Yoga Gear", icon: Pickaxe, size: "small", top: 202, left: 70, width: 190, height: 40 },
-        { label: "Golf Grips", icon: Tags, size: "small", top: 254, left: 70, width: 190, height: 40 },
-        { label: "Recovery Gear", icon: Sparkles, size: "small", top: 306, left: 70, width: 190, height: 40 }
+      { label: "Fitness", icon: CircleDollarSign, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Running", icon: Pickaxe, size: "small", top: 202, left: 70, width: 190, height: 40 },
+        { label: "Camping", icon: Tags, size: "small", top: 254, left: 70, width: 190, height: 40 },
+        { label: "Fishing", icon: Sparkles, size: "small", top: 306, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "growth",
-    title: "Category",
+    title: "FASHION",
     color: "#64748B",
     icon: Megaphone,
     top: 70,
@@ -190,17 +190,17 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 250,
     tags: [
-      { label: "Skincare", icon: Mail, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
-      { label: "Makeup", icon: UserPlus, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Energy Drinks", icon: Send, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Protein Snacks", icon: Globe2, size: "medium", top: 202, left: 70, width: 190, height: 40 },
-        { label: "Supplements", icon: Sparkles, size: "small", top: 254, left: 70, width: 190, height: 40 },
-        { label: "Hair Care", icon: Tags, size: "small", top: 306, left: 70, width: 190, height: 40 }
+      { label: "Dresses", icon: Mail, size: "large", badge: "High", top: 32, left: 35, width: 260, height: 52 },
+      { label: "Activewear", icon: UserPlus, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "Shoes", icon: Send, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Jewelry", icon: Globe2, size: "medium", top: 202, left: 70, width: 190, height: 40 },
+        { label: "Handbags", icon: Sparkles, size: "small", top: 254, left: 70, width: 190, height: 40 },
+        { label: "Menswear", icon: Tags, size: "small", top: 306, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "kitchen",
-    title: "Category",
+    title: "BEAUTY & CARE",
     color: "#64748B",
     icon: Sparkles,
     top: 362,
@@ -208,17 +208,17 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 250,
     tags: [
-      { label: "Coffee", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
-      { label: "Matcha", icon: CircleDollarSign, size: "medium", top: 82, left: 55, width: 220, height: 40 },
-      { label: "Lunch Prep", icon: FileText, size: "small", top: 134, left: 75, width: 180, height: 40 },
-      { label: "Water Bottles", icon: Globe2, size: "small", top: 186, left: 70, width: 190, height: 40 },
-        { label: "Cookware", icon: Box, size: "small", top: 238, left: 70, width: 190, height: 40 },
-        { label: "Meal Prep", icon: BriefcaseBusiness, size: "small", top: 290, left: 70, width: 190, height: 40 }
+      { label: "Skincare", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
+      { label: "Makeup", icon: CircleDollarSign, size: "medium", top: 82, left: 55, width: 220, height: 40 },
+      { label: "Haircare", icon: FileText, size: "small", top: 134, left: 75, width: 180, height: 40 },
+      { label: "Fragrance", icon: Globe2, size: "small", top: 186, left: 70, width: 190, height: 40 },
+        { label: "Bodycare", icon: Box, size: "small", top: 238, left: 70, width: 190, height: 40 },
+        { label: "Nails", icon: BriefcaseBusiness, size: "small", top: 290, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "builders",
-    title: "Category",
+    title: "FOOD & BEVERAGE",
     color: "#64748B",
     icon: Code2,
     top: 575,
@@ -226,17 +226,17 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 250,
     tags: [
-      { label: "Dog Toys", icon: Box, size: "large", badge: "High", top: 34, left: 35, width: 260, height: 52 },
-      { label: "Trading Cards", icon: Code2, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Kitchen Storage", icon: Bug, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Phone Accessories", icon: Tags, size: "medium", top: 202, left: 70, width: 190, height: 40 },
-        { label: "Collectibles", icon: Box, size: "small", top: 254, left: 70, width: 190, height: 40 },
-        { label: "Gaming Gear", icon: Video, size: "small", top: 306, left: 70, width: 190, height: 40 }
+      { label: "Energy", icon: Box, size: "large", badge: "High", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Snacks", icon: Code2, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "Coffee", icon: Bug, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Protein", icon: Tags, size: "medium", top: 202, left: 70, width: 190, height: 40 },
+        { label: "Hydration", icon: Box, size: "small", top: 254, left: 70, width: 190, height: 40 },
+        { label: "Candy", icon: Video, size: "small", top: 306, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "ops",
-    title: "Category",
+    title: "HOME & LIVING",
     color: "#64748B",
     icon: BriefcaseBusiness,
     top: 575,
@@ -244,17 +244,17 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 250,
     tags: [
-      { label: "Car Detailing", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
-      { label: "Garage Storage", icon: Users, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Cat Supplies", icon: Video, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Camping Gear", icon: BriefcaseBusiness, size: "medium", top: 202, left: 70, width: 190, height: 40 },
-        { label: "Power Tools", icon: Pickaxe, size: "small", top: 254, left: 70, width: 190, height: 40 },
-        { label: "Auto Accessories", icon: Tags, size: "small", top: 306, left: 70, width: 190, height: 40 }
+      { label: "Kitchen", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Cleaning", icon: Users, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "Storage", icon: Video, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Decor", icon: BriefcaseBusiness, size: "medium", top: 202, left: 70, width: 190, height: 40 },
+        { label: "Bedding", icon: Pickaxe, size: "small", top: 254, left: 70, width: 190, height: 40 },
+        { label: "Bathroom", icon: Tags, size: "small", top: 306, left: 70, width: 190, height: 40 }
     ]
   },
   {
     id: "beauty-tools",
-    title: "Category",
+    title: "PETS & HOBBIES",
     color: "#64748B",
     icon: Sparkles,
     top: 575,
@@ -262,12 +262,12 @@ const attentionClusters: AttentionClusterConfig[] = [
     width: 330,
     height: 250,
     tags: [
-      { label: "Hair Tools", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
-      { label: "Nail Kits", icon: Tags, size: "small", top: 98, left: 55, width: 220, height: 40 },
-      { label: "Sunscreen", icon: Mail, size: "small", top: 150, left: 75, width: 180, height: 40 },
-      { label: "Body Care", icon: UserPlus, size: "medium", top: 202, left: 70, width: 190, height: 40 },
-        { label: "Hair Styling", icon: Sparkles, size: "small", top: 254, left: 70, width: 190, height: 40 },
-        { label: "Beauty Devices", icon: Search, size: "small", top: 306, left: 70, width: 190, height: 40 }
+      { label: "Dogs", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Cats", icon: Tags, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "Toys", icon: Mail, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Collectibles", icon: UserPlus, size: "medium", top: 202, left: 70, width: 190, height: 40 },
+        { label: "Cards", icon: Sparkles, size: "small", top: 254, left: 70, width: 190, height: 40 },
+        { label: "Crafts", icon: Search, size: "small", top: 306, left: 70, width: 190, height: 40 }
     ]
   }
 ];
