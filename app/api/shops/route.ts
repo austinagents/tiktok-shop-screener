@@ -29,6 +29,9 @@ export async function GET(request: Request) {
     "Energy",
     "Snacks",
     "Coffee",
+    "Candy",
+    "Protein",
+    "Hydration",
   ]);
 
   const category =
