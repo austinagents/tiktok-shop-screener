@@ -2696,6 +2696,9 @@ body {
 
 .primaryTable {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .primaryTable .tableWrap {
@@ -2798,8 +2801,9 @@ body {
 .attentionHeatmapComponent .heatmapCanvasFrame {
   position: relative;
   z-index: 0;
-  width: 350px;
-  height: 410px;
+  width: 100%;
+  max-width: 350px;
+  height: 100%;
   margin: 0 auto;
   overflow: visible;
   border-radius: var(--radius-sm);
@@ -2810,8 +2814,8 @@ body {
   z-index: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-template-rows: repeat(2, minmax(0, 1fr));
-  row-gap: 4.5rem;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  row-gap: 0.75rem;
   column-gap: 0.75rem;
   width: 100%;
   height: 100%;
@@ -2885,6 +2889,16 @@ body {
   grid-row: 2;
 }
 
+.attentionHeatmapComponent .attentionCluster.kitchen {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.attentionHeatmapComponent .attentionCluster.beauty-tools {
+  grid-column: 2;
+  grid-row: 3;
+}
+
 .attentionHeatmapComponent .attentionGridSpacer {
   min-width: 0;
   min-height: 0;
@@ -2913,6 +2927,7 @@ body {
   flex-wrap: wrap;
   gap: 6px;
   align-content: start;
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -3657,7 +3672,19 @@ body {
 }
 
 .homeRail {
-  height: calc(100% - var(--boost-extra-height));
+  height: 100%;
+}
+
+.homeRail .previewPanel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+.homeRail .attentionHeatmapComponent {
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .homeSecondary > .boostPanel {
@@ -3719,22 +3746,28 @@ body {
   background: rgba(10, 15, 20, 0.94);
 }
 
+.primaryTable .tableWrap {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .terminalTable {
   min-width: 1160px;
 }
 
 .focusedToolsTable {
-  min-width: 980px;
+  width: 100%;
+  min-width: 0;
   table-layout: fixed;
 }
 
-.focusedToolsTable .rankColumn { width: 72px; }
-.focusedToolsTable .toolColumn { width: 29%; }
-.focusedToolsTable .categoryColumn { width: 16%; }
-.focusedToolsTable .metricColumn { width: 9%; }
+.focusedToolsTable .rankColumn { width: 7%; }
+.focusedToolsTable .toolColumn { width: 25%; }
+.focusedToolsTable .categoryColumn { width: 17%; }
+.focusedToolsTable .metricColumn { width: 10%; }
 .focusedToolsTable .signalColumn { width: 10%; }
-.focusedToolsTable .numberColumn { width: 11%; }
-.focusedToolsTable .lifecycleColumn { width: 14%; }
+.focusedToolsTable .numberColumn { width: 10.5%; }
+.focusedToolsTable .lifecycleColumn { width: 10%; }
 
 .focusedToolsTable th,
 .focusedToolsTable td {

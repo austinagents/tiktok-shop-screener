@@ -79,11 +79,6 @@ type AttentionHeatmapInteractionMode = "links" | "buttons";
 
 export function AttentionHeatmap({ items, interactionMode = "links" }: { items: AttentionSubCategory[]; interactionMode?: AttentionHeatmapInteractionMode }) {
   void items;
-  const centerpiece = attentionClusters.find((cluster) => cluster.id === "center");
-  const topLeft = attentionClusters.find((cluster) => cluster.id === "markets");
-  const topRight = attentionClusters.find((cluster) => cluster.id === "growth");
-  const bottomLeft = attentionClusters.find((cluster) => cluster.id === "builders");
-  const bottomRight = attentionClusters.find((cluster) => cluster.id === "ops");
 
   const renderCluster = (cluster: AttentionClusterConfig) => {
     const clusterStyle = {
@@ -107,27 +102,8 @@ export function AttentionHeatmap({ items, interactionMode = "links" }: { items: 
     <div className="attentionHeatmapComponent">
       <div className="heatmapCanvasFrame heatmap-container-relative-wrapper" aria-label="Attention heatmap">
         <div className="attentionTaxonomyGrid heatmap-grid-container heatmap-grid-main">
-          {topLeft ? renderCluster(topLeft) : null}
-          {topRight ? renderCluster(topRight) : null}
-          {bottomLeft ? renderCluster(bottomLeft) : null}
-          {bottomRight ? renderCluster(bottomRight) : null}
+          {attentionClusters.map(renderCluster)}
         </div>
-
-        {centerpiece ? (
-          <div className="attentionCenterpiece centerpiece-overlay heatmap-centerpiece-overlay">
-            <section className={`attentionCluster ${centerpiece.id}`} style={{ "--cluster-color": centerpiece.color } as CSSProperties} aria-label={centerpiece.title}>
-              <div className="attentionClusterLabel">
-                <centerpiece.icon size={14} />
-                <span>{centerpiece.title}</span>
-              </div>
-              <div className="attentionClusterBody">
-                {centerpiece.tags.filter((tag) => tag.label !== "TikTok Clips").map((tag, index) => (
-                  renderAttentionNode(tag, `${centerpiece.id}-${tag.label}-${index}`, interactionMode)
-                ))}
-              </div>
-            </section>
-          </div>
-        ) : null}
       </div>
     </div>
   );
@@ -214,16 +190,19 @@ const attentionClusters: AttentionClusterConfig[] = [
     ]
   },
   {
-    id: "center",
+    id: "kitchen",
     title: "Category",
     color: "#64748B",
     icon: Sparkles,
     top: 362,
     left: 185,
     width: 330,
-    height: 150,
+    height: 250,
     tags: [
-      { label: "Coffee", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 }
+      { label: "Coffee", icon: MousePointer2, size: "large", badge: "Rising", top: 24, left: 30, width: 270, height: 52 },
+      { label: "Matcha", icon: CircleDollarSign, size: "medium", top: 82, left: 55, width: 220, height: 40 },
+      { label: "Lunch Prep", icon: FileText, size: "small", top: 134, left: 75, width: 180, height: 40 },
+      { label: "Water Bottles", icon: Globe2, size: "small", top: 186, left: 70, width: 190, height: 40 }
     ]
   },
   {
@@ -256,6 +235,22 @@ const attentionClusters: AttentionClusterConfig[] = [
       { label: "Garage Storage", icon: Users, size: "small", top: 98, left: 55, width: 220, height: 40 },
       { label: "Cat Supplies", icon: Video, size: "small", top: 150, left: 75, width: 180, height: 40 },
       { label: "Camping Gear", icon: BriefcaseBusiness, size: "medium", top: 202, left: 70, width: 190, height: 40 }
+    ]
+  },
+  {
+    id: "beauty-tools",
+    title: "Category",
+    color: "#64748B",
+    icon: Sparkles,
+    top: 575,
+    left: 370,
+    width: 330,
+    height: 250,
+    tags: [
+      { label: "Hair Tools", icon: Search, size: "large", badge: "Rising", top: 34, left: 35, width: 260, height: 52 },
+      { label: "Nail Kits", icon: Tags, size: "small", top: 98, left: 55, width: 220, height: 40 },
+      { label: "Sunscreen", icon: Mail, size: "small", top: 150, left: 75, width: 180, height: 40 },
+      { label: "Body Care", icon: UserPlus, size: "medium", top: 202, left: 70, width: 190, height: 40 }
     ]
   }
 ];
