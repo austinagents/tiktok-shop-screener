@@ -26,6 +26,9 @@ export async function GET(request: Request) {
     "Jewelry",
     "Handbags",
     "Menswear",
+    "Energy",
+    "Snacks",
+    "Coffee",
   ]);
 
   const category =
