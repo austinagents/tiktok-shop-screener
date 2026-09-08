@@ -12,7 +12,16 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const requestedCategory = searchParams.get("category");
 
-  const allowedCategories = new Set(["Golf", "Skincare", "Makeup", "Haircare"]);
+  const allowedCategories = new Set([
+    "Golf",
+    "Skincare",
+    "Makeup",
+    "Haircare",
+    "Fragrance",
+    "Nails",
+    "Bodycare",
+  ]);
+
   const category =
     requestedCategory && allowedCategories.has(requestedCategory)
       ? requestedCategory
@@ -36,12 +45,16 @@ export async function GET(request: Request) {
     INNER JOIN shop_categories sc
       ON sc.seller_id = s.seller_id
     WHERE sc.category = '${category}'
+      AND s.tiktok_unique_id IS NOT NULL
+      AND TRIM(s.tiktok_unique_id) <> ''
+      AND TRIM(s.tiktok_unique_id) NOT IN ('-', '—')
+      AND LOWER(TRIM(s.tiktok_unique_id)) NOT LIKE '@user%'
     ORDER BY s.day7_total_gmv DESC;
   `;
 
   try {
     const output = execFileSync("sqlite3", ["-json", dbPath, sql], {
-      encoding: "utf8"
+      encoding: "utf8",
     });
 
     const shops = output.trim() ? JSON.parse(output) : [];
@@ -49,7 +62,7 @@ export async function GET(request: Request) {
     return Response.json({
       category,
       count: shops.length,
-      shops
+      shops,
     });
   } catch (error) {
     console.error(error);
