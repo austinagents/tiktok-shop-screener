@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { TimeframeToggle } from "@/components/timeframe-toggle";
 import { ToolTable } from "@/components/tool-table";
+import { GolfShopTable } from "@/components/golf-shop-table";
 import { displayCategory } from "@/lib/format";
 import { placeholderCategoryNames } from "@/lib/placeholder-data";
 import type { Tool } from "@/lib/types";
@@ -123,7 +124,11 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             </div>
             <TimeframeToggle compact options={timeframeTabs} active={activeTimeframe} onChange={(frame) => setActiveTimeframe(frame as TrendingTimeframe)} />
           </div>
-          <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
+          {activeTab === "Golf" ? (
+            <GolfShopTable />
+          ) : (
+            <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
+          )}
         </div>
         {typeof children === "function" ? children(setActiveTab, activeTab) : children}
       </section>
