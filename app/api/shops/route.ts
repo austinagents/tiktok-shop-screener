@@ -20,6 +20,12 @@ export async function GET(request: Request) {
     "Fragrance",
     "Nails",
     "Bodycare",
+    "Dresses",
+    "Activewear",
+    "Shoes",
+    "Jewelry",
+    "Handbags",
+    "Menswear",
   ]);
 
   const category =
@@ -48,7 +54,10 @@ export async function GET(request: Request) {
       AND s.tiktok_unique_id IS NOT NULL
       AND TRIM(s.tiktok_unique_id) <> ''
       AND TRIM(s.tiktok_unique_id) NOT IN ('-', '—')
-      AND LOWER(TRIM(s.tiktok_unique_id)) NOT LIKE '@user%'
+      AND NOT (
+        LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) GLOB 'user[0-9]*'
+        AND LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) NOT GLOB '*[^0-9user]*'
+      )
     ORDER BY s.day7_total_gmv DESC;
   `;
 

@@ -124,7 +124,7 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             </div>
             {/* TimeframeToggle archived from user-facing UI */}
           </div>
-          {activeTab === "Golf" || activeTab === "Skincare" || activeTab === "Makeup" || activeTab === "Haircare" || activeTab === "Fragrance" || activeTab === "Nails" || activeTab === "Bodycare" ? (
+          {activeTab === "Golf" || activeTab === "Skincare" || activeTab === "Makeup" || activeTab === "Haircare" || activeTab === "Fragrance" || activeTab === "Nails" || activeTab === "Bodycare" || activeTab === "Dresses" || activeTab === "Activewear" || activeTab === "Shoes" || activeTab === "Jewelry" || activeTab === "Handbags" || activeTab === "Menswear" ? (
             <GolfShopTable category={activeTab} />
           ) : (
             <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
