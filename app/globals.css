@@ -2880,18 +2880,18 @@ body {
 }
 
 .attentionHeatmapComponent .attentionCluster.builders {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.attentionHeatmapComponent .attentionCluster.ops {
   grid-column: 2;
   grid-row: 2;
 }
 
-.attentionHeatmapComponent .attentionCluster.kitchen {
+.attentionHeatmapComponent .attentionCluster.ops {
   grid-column: 1;
   grid-row: 3;
+}
+
+.attentionHeatmapComponent .attentionCluster.kitchen {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .attentionHeatmapComponent .attentionCluster.beauty-tools {

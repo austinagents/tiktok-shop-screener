@@ -122,7 +122,7 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             <div>
               <h1>{activeTab === "Trending" ? "Trending Products" : activeTab}</h1>
             </div>
-            <TimeframeToggle compact options={timeframeTabs} active={activeTimeframe} onChange={(frame) => setActiveTimeframe(frame as TrendingTimeframe)} />
+            {/* TimeframeToggle archived from user-facing UI */}
           </div>
           {activeTab === "Golf" || activeTab === "Skincare" ? (
             <GolfShopTable category={activeTab} />

@@ -204,7 +204,7 @@ const attentionClusters: AttentionClusterConfig[] = [
     color: "#64748B",
     icon: Sparkles,
     top: 362,
-    left: 185,
+    left: 0,
     width: 330,
     height: 250,
     tags: [
@@ -221,8 +221,8 @@ const attentionClusters: AttentionClusterConfig[] = [
     title: "FOOD & BEVERAGE",
     color: "#64748B",
     icon: Code2,
-    top: 575,
-    left: 0,
+    top: 362,
+    left: 370,
     width: 330,
     height: 250,
     tags: [
@@ -240,7 +240,7 @@ const attentionClusters: AttentionClusterConfig[] = [
     color: "#64748B",
     icon: BriefcaseBusiness,
     top: 575,
-    left: 370,
+    left: 0,
     width: 330,
     height: 250,
     tags: [
