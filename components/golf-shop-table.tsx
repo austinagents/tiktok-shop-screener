@@ -14,6 +14,7 @@ type Shop = {
   on_sale_product_count: number | null;
   affiliate_creator_count: number | null;
   tiktok_unique_id: string | null;
+  avatar_url: string | null;
 };
 
 export function GolfShopTable({ category = "Golf" }: { category?: string }) {
@@ -35,7 +36,6 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
             <th>7D GMV</th>
             <th>Lifetime GMV</th>
             <th>Creators</th>
-            <th>Products</th>
             
             <th>TikTok</th>
           </tr>
@@ -47,6 +47,14 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
 
               <td>
                 <div className="toolCell">
+                  {shop.avatar_url && (
+                    <img
+                      src={shop.avatar_url}
+                      alt=""
+                      width={32}
+                      height={32}
+                    />
+                  )}
                   <span>
                     <strong>{shop.name ?? "Unknown Shop"}</strong>
                     
@@ -57,7 +65,6 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
               <td>{formatCurrency(shop.day7_total_gmv)}</td>
               <td>{formatCurrency(shop.total_gmv)}</td>
               <td>{formatCount(shop.affiliate_creator_count)}</td>
-              <td>{formatCount(shop.on_sale_product_count)}</td>
               
 
               <td>
@@ -82,17 +89,29 @@ export function GolfShopTable({ category = "Golf" }: { category?: string }) {
 }
 
 function formatCurrency(value: number | null) {
+  const amount = value ?? 0;
+
+  if (amount < 500) {
+    return "?";
+  }
+
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
     notation: "compact",
     maximumFractionDigits: 1
-  }).format(value ?? 0);
+  }).format(amount);
 }
 
 function formatCount(value: number | null) {
+  const amount = value ?? 0;
+
+  if (amount < 5) {
+    return "?";
+  }
+
   return new Intl.NumberFormat("en-US", {
-    notation: value && value >= 10000 ? "compact" : "standard",
+    notation: amount >= 10000 ? "compact" : "standard",
     maximumFractionDigits: 1
-  }).format(value ?? 0);
+  }).format(amount);
 }

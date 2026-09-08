@@ -6229,3 +6229,30 @@ body {
 .focusedToolsTable td:nth-child(7) {
   width: 15%;
 }
+
+/* Shop screener table column spacing */
+.focusedToolsTable th:nth-child(2),
+.focusedToolsTable td:nth-child(2) {
+  width: 26%;
+}
+
+.focusedToolsTable th:nth-child(3),
+.focusedToolsTable td:nth-child(3) {
+  width: 18%;
+}
+
+.focusedToolsTable th:nth-child(4),
+.focusedToolsTable td:nth-child(4) {
+  width: 20%;
+}
+
+.focusedToolsTable th:nth-child(5),
+.focusedToolsTable td:nth-child(5) {
+  width: 16%;
+}
+
+.focusedToolsTable th:nth-child(6),
+.focusedToolsTable td:nth-child(6) {
+  width: 20%;
+}
+

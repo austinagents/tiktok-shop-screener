@@ -12,7 +12,7 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const requestedCategory = searchParams.get("category");
 
-  const allowedCategories = new Set(["Golf", "Skincare"]);
+  const allowedCategories = new Set(["Golf", "Skincare", "Makeup"]);
   const category =
     requestedCategory && allowedCategories.has(requestedCategory)
       ? requestedCategory
@@ -30,7 +30,8 @@ export async function GET(request: Request) {
       s.day7_total_gmv,
       s.on_sale_product_count,
       s.affiliate_creator_count,
-      s.tiktok_unique_id
+      s.tiktok_unique_id,
+      s.avatar_url
     FROM shops s
     INNER JOIN shop_categories sc
       ON sc.seller_id = s.seller_id
