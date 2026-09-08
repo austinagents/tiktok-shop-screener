@@ -6122,3 +6122,35 @@ body {
 .searchResultCard:hover {
   border-color: var(--border-strong) !important;
 }
+
+
+/* SCREENER 6X6 RESTORE */
+.homeRail .attentionHeatmapComponent .attentionCluster {
+  padding: 10px;
+}
+
+.homeRail .attentionHeatmapComponent .attentionClusterBody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.homeRail .attentionHeatmapComponent .attentionNode {
+  min-height: 0;
+  height: 100%;
+  padding: 5px 8px;
+}
+
+.homeRail .attentionHeatmapComponent .heatmapCanvasFrame {
+  max-width: 100%;
+}
+
+.homeRail .attentionHeatmapComponent .attentionTaxonomyGrid {
+  min-height: 760px;
+}
+
+.primaryTable .tableWrap {
+  height: 820px;
+  max-height: 820px;
+}
