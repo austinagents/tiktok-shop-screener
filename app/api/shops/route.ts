@@ -32,6 +32,23 @@ export async function GET(request: Request) {
     "Candy",
     "Protein",
     "Hydration",
+    "Pickleball",
+    "Fitness",
+    "Running",
+    "Camping",
+    "Fishing",
+    "Kitchen",
+    "Cleaning",
+    "Storage",
+    "Decor",
+    "Bedding",
+    "Bathroom",
+    "Dogs",
+    "Cats",
+    "Toys",
+    "Collectibles",
+    "Cards",
+    "Crafts",
   ]);
 
   const category =
