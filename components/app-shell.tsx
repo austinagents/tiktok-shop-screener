@@ -16,6 +16,8 @@ const tabs = [
   { href: "/watchlist", label: "Watchlist", icon: Bookmark }
 ];
 
+const showArchivedNavigation = false;
+
 export function AppShell({ children }: { children: ReactNode }) {
   const hasProfile = useHasLocalProfile();
 
@@ -30,18 +32,20 @@ export function AppShell({ children }: { children: ReactNode }) {
           </span>
         </Link>
         <CommandSearch />
-        <nav className="navTabs">
-          {tabs.map((tab) => (
-            <Link href={tab.href} key={tab.href}>
-              <tab.icon size={15} />
-              {tab.label}
+        {showArchivedNavigation ? (
+          <nav className="navTabs">
+            {tabs.map((tab) => (
+              <Link href={tab.href} key={tab.href}>
+                <tab.icon size={15} />
+                {tab.label}
+              </Link>
+            ))}
+            <Link href="/dashboard">
+              {hasProfile ? <UserRound size={15} /> : <UserPlus size={15} />}
+              {hasProfile ? "Profile" : "Sign Up"}
             </Link>
-          ))}
-          <Link href="/dashboard">
-            {hasProfile ? <UserRound size={15} /> : <UserPlus size={15} />}
-            {hasProfile ? "Profile" : "Sign Up"}
-          </Link>
-        </nav>
+          </nav>
+        ) : null}
       </header>
       <main className="pageShell">{children}</main>
     </>

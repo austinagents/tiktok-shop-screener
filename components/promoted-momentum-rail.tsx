@@ -44,7 +44,7 @@ function DiscoverySlotName({ name }: { name: string }) {
   return <span>{name.toUpperCase()}</span>;
 }
 
-export function PromotedMomentumRail() {
+export function PromotedMomentumRail({ showDiscoverySlot = true }: { showDiscoverySlot?: boolean }) {
   const discoveryCandidate = tools.find((tool) => tool.slug === temporaryDiscoverySlotSlug) ?? discoveryCandidateForDay();
   const discoveryHref = discoveryCandidate?.websiteUrl || `/tools/${discoveryCandidate?.slug}`;
   const discoveryIsExternal = Boolean(discoveryCandidate?.websiteUrl);
@@ -53,7 +53,7 @@ export function PromotedMomentumRail() {
 
   return (
     <section className="promotedRail" aria-label="Promoted momentum rail">
-      {discoveryCandidate ? (
+      {showDiscoverySlot && discoveryCandidate ? (
         <a
           className="railLabel railAdSlot"
           aria-label={`Discovery candidate: ${discoveryCandidate.name}`}

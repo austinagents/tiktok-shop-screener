@@ -29,14 +29,29 @@ const placeholderIcon = (label: string) => {
 const sparkline = Array.from({ length: 18 }, () => 0);
 
 export const placeholderCategoryNames: CategoryName[] = [
-  "Category 1",
-  "Category 2",
-  "Category 3",
-  "Category 4",
-  "Category 5",
-  "Category 6",
-  "Category 7",
-  "Category 8"
+  "Beauty",
+  "Fashion",
+  "Health & Wellness",
+  "Sports & Outdoors",
+  "Food & Beverage",
+  "Home & Living",
+  "Electronics",
+  "Pets",
+  "Hobbies & Collectibles",
+  "Automotive & Tools"
+];
+
+const placeholderNicheNames = [
+  "Golf",
+  "Pickleball",
+  "Running",
+  "Skincare",
+  "Makeup",
+  "Energy Drinks",
+  "Coffee",
+  "Dog Toys",
+  "Trading Cards",
+  "Car Detailing"
 ];
 
 export const placeholderTools: Tool[] = Array.from({ length: 24 }, (_, index) => {
@@ -55,7 +70,7 @@ export const placeholderTools: Tool[] = Array.from({ length: 24 }, (_, index) =>
     category,
     categories: [category],
     rawSourceCategories: [category],
-    subCategoryTags: [`Subcategory ${number}`],
+    subCategoryTags: [placeholderNicheNames[index % placeholderNicheNames.length]],
     logoUrl: "",
     officialLogoUrl: "",
     faviconUrl: "",
@@ -147,8 +162,8 @@ export const placeholderCategories: Category[] = placeholderCategoryNames.map((n
 
 export const placeholderAttentionSubCategories: AttentionSubCategory[] = Array.from({ length: 18 }, (_, index) => ({
   id: `subcat_placeholder_${index + 1}`,
-  slug: `placeholder-subcategory-${index + 1}`,
-  label: index % 2 === 0 ? "Subcategory" : "—",
+  slug: placeholderNicheNames[index % placeholderNicheNames.length].toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""),
+  label: placeholderNicheNames[index % placeholderNicheNames.length],
   color: "#64748B",
   momentumScore: 0,
   growth24h: 0,
