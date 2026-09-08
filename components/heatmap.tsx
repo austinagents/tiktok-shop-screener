@@ -77,7 +77,7 @@ export function CategoryHeatmap({ categories }: { categories: Category[] }) {
 
 type AttentionHeatmapInteractionMode = "links" | "buttons";
 
-export function AttentionHeatmap({ items, interactionMode = "links" }: { items: AttentionSubCategory[]; interactionMode?: AttentionHeatmapInteractionMode }) {
+export function AttentionHeatmap({ items, interactionMode = "links", onSelect, activeLabel }: { items: AttentionSubCategory[]; interactionMode?: AttentionHeatmapInteractionMode; onSelect?: (label: string) => void; activeLabel?: string }) {
   void items;
 
   const renderCluster = (cluster: AttentionClusterConfig) => {
@@ -92,7 +92,7 @@ export function AttentionHeatmap({ items, interactionMode = "links" }: { items: 
           <span>{cluster.title}</span>
         </div>
         <div className="attentionClusterBody">
-          {cluster.tags.map((tag, index) => renderAttentionNode(tag, `${cluster.id}-${tag.label}-${index}`, interactionMode))}
+          {cluster.tags.map((tag, index) => renderAttentionNode(tag, `${cluster.id}-${tag.label}-${index}`, interactionMode, onSelect, activeLabel))}
         </div>
       </section>
     );
@@ -109,7 +109,7 @@ export function AttentionHeatmap({ items, interactionMode = "links" }: { items: 
   );
 }
 
-function renderAttentionNode(tag: AttentionTagConfig, key: string, interactionMode: AttentionHeatmapInteractionMode) {
+function renderAttentionNode(tag: AttentionTagConfig, key: string, interactionMode: AttentionHeatmapInteractionMode, onSelect?: (label: string) => void, activeLabel?: string) {
   const content = (
     <>
       <tag.icon size={tag.iconSize ?? 14} />
@@ -119,7 +119,12 @@ function renderAttentionNode(tag: AttentionTagConfig, key: string, interactionMo
 
   if (interactionMode === "buttons") {
     return (
-      <button className={`attentionNode heatmap-tag-button ${tag.size}`} type="button" key={key}>
+      <button
+        className={`attentionNode heatmap-tag-button ${tag.size}${activeLabel === tag.label ? " active" : ""}`}
+        type="button"
+        key={key}
+        onClick={() => tag.label === "Golf" && onSelect?.("Golf")}
+      >
         {content}
       </button>
     );

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { AttentionHeatmap } from "@/components/heatmap";
@@ -13,11 +15,18 @@ export default function DiscoverPage() {
       {showArchivedMomentumRail ? <PromotedMomentumRail showDiscoverySlot={false} /> : null}
 
       <HomeTrendingFilter tools={tools}>
-        <aside className="homeRail">
-          <PreviewPanel href="/heatmap" title="Attention Heatmap" meta="">
-            <AttentionHeatmap items={attentionSubCategories} interactionMode="buttons" />
-          </PreviewPanel>
-        </aside>
+        {(setActiveTab, activeTab) => (
+          <aside className="homeRail">
+            <PreviewPanel href="/heatmap" title="Attention Heatmap" meta="">
+              <AttentionHeatmap
+                items={attentionSubCategories}
+                interactionMode="buttons"
+                onSelect={setActiveTab}
+                activeLabel={activeTab}
+              />
+            </PreviewPanel>
+          </aside>
+        )}
       </HomeTrendingFilter>
     </div>
   );

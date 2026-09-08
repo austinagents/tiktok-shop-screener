@@ -29,15 +29,15 @@ export function ToolTable({ tools, compact = false, focused = false, useTwentyFo
         <thead>
           <tr>
             <th>Rank</th>
-            <th>Tool</th>
-            <th>Category</th>
+            <th>Shop</th>
+            <th>7D GMV</th>
             {!focused && <th>Momentum</th>}
-            <th>24h GMV</th>
+            <th>Lifetime GMV</th>
             {!focused && <th>7d</th>}
             {!compact && <th>Creators</th>}
-            {!compact && <th>Price</th>}
-            {!compact && <th>Units Sold</th>}
-            <th>Videos</th>
+            {!compact && <th>Products</th>}
+            {!compact && <th>7D Units</th>}
+            <th>TikTok</th>
             {!compact && !focused && <th>Flows</th>}
             {!compact && !focused && <th>Why moving</th>}
             {!focused && <th>Sparkline</th>}

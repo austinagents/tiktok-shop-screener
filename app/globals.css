@@ -6154,3 +6154,10 @@ body {
   height: 820px;
   max-height: 820px;
 }
+
+/* Active Attention Heatmap selection */
+.attentionNode.heatmap-tag-button.active {
+  border-color: #8db26f;
+  background: rgba(141, 178, 111, 0.10);
+  color: #b7d89b;
+}

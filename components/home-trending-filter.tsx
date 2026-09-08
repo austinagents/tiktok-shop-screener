@@ -89,7 +89,7 @@ function withThirtyDayDisplayPercentages(tools: Tool[]) {
   }));
 }
 
-export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode }) {
+export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode | ((setActiveTab: (tab: string) => void, activeTab: string) => ReactNode) }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>("Trending");
   const [activeTimeframe, setActiveTimeframe] = useState<TrendingTimeframe>("24H");
   const filteredTools = useMemo(() => {
@@ -125,13 +125,17 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
           </div>
           <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
         </div>
-        {children}
+        {typeof children === "function" ? children(setActiveTab, activeTab) : children}
       </section>
     </>
   );
 }
 
 function matchesTab(tool: Tool, tab: Exclude<ActiveTab, "Trending">) {
+  if (tab === "Golf") {
+    return tool.subCategoryTags.includes("Golf") || tool.tags.includes("Golf");
+  }
+
   return tool.categories.some((category) => displayCategory(category) === tab);
 }
 
