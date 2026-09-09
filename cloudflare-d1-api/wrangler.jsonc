@@ -8,5 +8,11 @@
       "database_name": "tiktok-shop-screener",
       "database_id": "32bf0cf4-54cc-431c-b1cf-241d0a4784ec"
     }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "AVATARS",
+      "bucket_name": "tiktok-shop-avatars"
+    }
   ]
 }

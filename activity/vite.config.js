@@ -16,6 +16,11 @@ export default defineConfig({
       "/api": {
         target: "http://localhost:3000",
         changeOrigin: true
+      },
+
+      "/avatar": {
+        target: "https://tiktok-shop-screener-api.austindtaylor7.workers.dev",
+        changeOrigin: true
       }
     }
   }

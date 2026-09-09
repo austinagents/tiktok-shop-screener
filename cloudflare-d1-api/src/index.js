@@ -64,6 +64,65 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
+    if (url.pathname.startsWith("/avatar/")) {
+      const filename = url.pathname.slice("/avatar/".length);
+
+      if (!/^[A-Za-z0-9._-]+$/.test(filename)) {
+        return new Response("Invalid avatar", { status: 400 });
+      }
+
+      const object = await env.AVATARS.get(`shop-avatars/${filename}`);
+
+      if (!object) {
+        const sellerId = filename.replace(/\.(webp|jpe?g|png)$/i, "");
+
+        const row = await env.DB
+          .prepare(
+            "SELECT avatar_url FROM shops WHERE seller_id = ? LIMIT 1"
+          )
+          .bind(sellerId)
+          .first();
+
+        if (!row?.avatar_url) {
+          return new Response("Avatar not found", { status: 404 });
+        }
+
+        try {
+          const sourceResponse = await fetch(row.avatar_url);
+
+          if (!sourceResponse.ok) {
+            return new Response("Avatar not found", { status: 404 });
+          }
+
+          const headers = new Headers();
+
+          headers.set(
+            "content-type",
+            sourceResponse.headers.get("content-type") ||
+              "application/octet-stream"
+          );
+
+          headers.set("cache-control", "public, max-age=86400");
+
+          return new Response(sourceResponse.body, {
+            status: 200,
+            headers,
+          });
+        } catch {
+          return new Response("Avatar not found", { status: 404 });
+        }
+      }
+
+      const headers = new Headers();
+      object.writeHttpMetadata(headers);
+      headers.set("etag", object.httpEtag);
+      headers.set("cache-control", "public, max-age=86400");
+
+      return new Response(object.body, {
+        headers,
+      });
+    }
+
     if (url.pathname === "/health") {
       const row = await env.DB
         .prepare("SELECT COUNT(*) AS count FROM shops")
@@ -169,7 +228,23 @@ export default {
           pageSize: PAGE_SIZE,
           totalPages,
           count: result.results.length,
-          shops: result.results,
+          shops: result.results.map((shop) => {
+            let extension = "jpeg";
+            const sourceAvatar = String(shop.avatar_url || "").toLowerCase();
+
+            if (sourceAvatar.includes(".webp")) {
+              extension = "webp";
+            } else if (sourceAvatar.includes(".png")) {
+              extension = "png";
+            }
+
+            return {
+              ...shop,
+              avatar_url: shop.avatar_url
+                ? `${url.origin}/avatar/${shop.seller_id}.${extension}`
+                : null,
+            };
+          }),
         });
       } catch (error) {
         console.error(error);

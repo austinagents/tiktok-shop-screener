@@ -252,7 +252,11 @@ function ShopTable({
                   <div className="toolCell">
                     {shop.avatar_url ? (
                       <img
-                        src={shop.avatar_url}
+                        src={
+                      shop.avatar_url
+                        ? new URL(shop.avatar_url).pathname
+                        : ""
+                    }
                         alt=""
                         width="32"
                         height="32"
