@@ -1,0 +1,12 @@
+{
+  "name": "tiktok-shop-screener-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-08",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tiktok-shop-screener",
+      "database_id": "32bf0cf4-54cc-431c-b1cf-241d0a4784ec"
+    }
+  ]
+}
