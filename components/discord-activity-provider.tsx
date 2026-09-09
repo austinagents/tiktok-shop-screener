@@ -8,12 +8,10 @@ const DISCORD_APPLICATION_ID = "1547077950199828480";
 
 function isDiscordActivityLaunch() {
   const params = new URLSearchParams(window.location.search);
-  const platform = params.get("platform");
 
-  return (
-    Boolean(params.get("frame_id")) &&
-    Boolean(params.get("instance_id")) &&
-    (platform === "desktop" || platform === "mobile")
+  return Boolean(
+    params.get("frame_id") ||
+    params.get("instance_id")
   );
 }
 
