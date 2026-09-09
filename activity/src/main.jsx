@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { initializeDiscord } from "./discord";
+import { initializeDiscord, openExternalLink } from "./discord";
 import "./style.css";
 
 const CATEGORY_TABS = [
@@ -278,8 +278,17 @@ function ShopTable({
                   {shop.tiktok_unique_id ? (
                     <a
                       href={`https://www.tiktok.com/@${shop.tiktok_unique_id}`}
-                      target="_blank"
-                      rel="noreferrer"
+                      onClick={async event => {
+                        event.preventDefault();
+
+                        try {
+                          await openExternalLink(
+                            `https://www.tiktok.com/@${shop.tiktok_unique_id}`
+                          );
+                        } catch (error) {
+                          console.error("Failed to open TikTok link", error);
+                        }
+                      }}
                     >
                       @{shop.tiktok_unique_id}
                     </a>

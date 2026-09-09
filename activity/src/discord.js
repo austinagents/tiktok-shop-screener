@@ -26,3 +26,12 @@ export async function initializeDiscord() {
 
   return discordSdk;
 }
+
+export async function openExternalLink(url) {
+  if (discordSdk) {
+    await discordSdk.commands.openExternalLink({ url });
+    return;
+  }
+
+  window.open(url, "_blank", "noopener,noreferrer");
+}
