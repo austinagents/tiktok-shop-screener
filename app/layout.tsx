@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { AppShell } from "@/components/app-shell";
+import { DiscordActivityProvider } from "@/components/discord-activity-provider";
 import type { ReactNode } from "react";
 import "./globals.css";
 
@@ -20,7 +21,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className={geistSans.variable}>
-        <AppShell>{children}</AppShell>
+        <DiscordActivityProvider>
+          <AppShell>{children}</AppShell>
+        </DiscordActivityProvider>
       </body>
     </html>
   );
