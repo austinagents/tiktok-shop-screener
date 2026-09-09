@@ -3,6 +3,61 @@ import path from "node:path";
 
 export const dynamic = "force-dynamic";
 
+const categoryGroups: Record<string, string[]> = {
+  "Sports & Outdoors": [
+    "Golf",
+    "Pickleball",
+    "Fitness",
+    "Running",
+    "Camping",
+    "Fishing",
+  ],
+  Fashion: [
+    "Dresses",
+    "Activewear",
+    "Shoes",
+    "Jewelry",
+    "Handbags",
+    "Menswear",
+  ],
+  "Beauty & Care": [
+    "Skincare",
+    "Makeup",
+    "Haircare",
+    "Fragrance",
+    "Bodycare",
+    "Nails",
+  ],
+  "Food & Beverage": [
+    "Energy",
+    "Snacks",
+    "Coffee",
+    "Protein",
+    "Hydration",
+    "Candy",
+  ],
+  "Home & Living": [
+    "Kitchen",
+    "Cleaning",
+    "Storage",
+    "Decor",
+    "Bedding",
+    "Bathroom",
+  ],
+  "Pets & Hobbies": [
+    "Dogs",
+    "Cats",
+    "Toys",
+    "Collectibles",
+    "Cards",
+    "Crafts",
+  ],
+};
+
+const individualCategories = new Set(
+  Object.values(categoryGroups).flat()
+);
+
 export async function GET(request: Request) {
   const dbPath = path.join(
     process.env.HOME!,
@@ -12,49 +67,23 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const requestedCategory = searchParams.get("category");
 
-  const allowedCategories = new Set([
-    "Golf",
-    "Skincare",
-    "Makeup",
-    "Haircare",
-    "Fragrance",
-    "Nails",
-    "Bodycare",
-    "Dresses",
-    "Activewear",
-    "Shoes",
-    "Jewelry",
-    "Handbags",
-    "Menswear",
-    "Energy",
-    "Snacks",
-    "Coffee",
-    "Candy",
-    "Protein",
-    "Hydration",
-    "Pickleball",
-    "Fitness",
-    "Running",
-    "Camping",
-    "Fishing",
-    "Kitchen",
-    "Cleaning",
-    "Storage",
-    "Decor",
-    "Bedding",
-    "Bathroom",
-    "Dogs",
-    "Cats",
-    "Toys",
-    "Collectibles",
-    "Cards",
-    "Crafts",
-  ]);
+  let category = "Sports & Outdoors";
+  let categories = categoryGroups["Sports & Outdoors"];
 
-  const category =
-    requestedCategory && allowedCategories.has(requestedCategory)
-      ? requestedCategory
-      : "Golf";
+  if (requestedCategory && categoryGroups[requestedCategory]) {
+    category = requestedCategory;
+    categories = categoryGroups[requestedCategory];
+  } else if (
+    requestedCategory &&
+    individualCategories.has(requestedCategory)
+  ) {
+    category = requestedCategory;
+    categories = [requestedCategory];
+  }
+
+  const categorySql = categories
+    .map((value) => `'${value.replaceAll("'", "''")}'`)
+    .join(", ");
 
   const sql = `
     SELECT
@@ -71,9 +100,12 @@ export async function GET(request: Request) {
       s.tiktok_unique_id,
       s.avatar_url
     FROM shops s
-    INNER JOIN shop_categories sc
-      ON sc.seller_id = s.seller_id
-    WHERE sc.category = '${category}'
+    WHERE EXISTS (
+      SELECT 1
+      FROM shop_categories sc
+      WHERE sc.seller_id = s.seller_id
+        AND sc.category IN (${categorySql})
+    )
       AND s.tiktok_unique_id IS NOT NULL
       AND TRIM(s.tiktok_unique_id) <> ''
       AND TRIM(s.tiktok_unique_id) NOT IN ('-', '—')
@@ -87,12 +119,14 @@ export async function GET(request: Request) {
   try {
     const output = execFileSync("sqlite3", ["-json", dbPath, sql], {
       encoding: "utf8",
+      maxBuffer: 50 * 1024 * 1024,
     });
 
     const shops = output.trim() ? JSON.parse(output) : [];
 
     return Response.json({
       category,
+      categories,
       count: shops.length,
       shops,
     });

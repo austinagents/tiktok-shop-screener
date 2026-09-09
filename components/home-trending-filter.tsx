@@ -6,10 +6,16 @@ import { TimeframeToggle } from "@/components/timeframe-toggle";
 import { ToolTable } from "@/components/tool-table";
 import { GolfShopTable } from "@/components/golf-shop-table";
 import { displayCategory } from "@/lib/format";
-import { placeholderCategoryNames } from "@/lib/placeholder-data";
 import type { Tool } from "@/lib/types";
 
-const categoryTabs = placeholderCategoryNames;
+const categoryTabs = [
+  "Sports & Outdoors",
+  "Fashion",
+  "Beauty & Care",
+  "Food & Beverage",
+  "Home & Living",
+  "Pets & Hobbies",
+] as const;
 
 type ActiveTab = "Trending" | string;
 type TrendingTimeframe = "24H" | "30D" | "ALL";
@@ -91,7 +97,7 @@ function withThirtyDayDisplayPercentages(tools: Tool[]) {
 }
 
 export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; children: ReactNode | ((setActiveTab: (tab: string) => void, activeTab: string) => ReactNode) }) {
-  const [activeTab, setActiveTab] = useState<ActiveTab>("Trending");
+  const [activeTab, setActiveTab] = useState<ActiveTab>("Sports & Outdoors");
   const [activeTimeframe, setActiveTimeframe] = useState<TrendingTimeframe>("24H");
   const filteredTools = useMemo(() => {
     const scopedTools = activeTab === "Trending" ? tools : tools.filter((tool) => matchesTab(tool, activeTab));
@@ -109,12 +115,18 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
 
   return (
     <>
-      <nav className="screenTabs" aria-label="Trending products filters">
-        <button className={activeTab === "Trending" ? "active" : ""} onClick={() => setActiveTab("Trending")} type="button">Trending</button>
-        {categoryTabs.map((tab) => (
-          <button className={activeTab === tab ? "active" : ""} onClick={() => setActiveTab(tab)} type="button" key={tab}>{tab}</button>
-        ))}
-      </nav>
+      <nav className="screenTabs" aria-label="Shop category filters">
+          {categoryTabs.map((tab) => (
+            <button
+              className={activeTab === tab ? "active" : ""}
+              onClick={() => setActiveTab(tab)}
+              type="button"
+              key={tab}
+            >
+              {tab}
+            </button>
+          ))}
+        </nav>
 
       <section className="homePrimary">
         <div className="primaryTable">
@@ -124,7 +136,7 @@ export function HomeTrendingFilter({ tools, children }: { tools: Tool[]; childre
             </div>
             {/* TimeframeToggle archived from user-facing UI */}
           </div>
-          {activeTab === "Golf" || activeTab === "Skincare" || activeTab === "Makeup" || activeTab === "Haircare" || activeTab === "Fragrance" || activeTab === "Nails" || activeTab === "Bodycare" || activeTab === "Dresses" || activeTab === "Activewear" || activeTab === "Shoes" || activeTab === "Jewelry" || activeTab === "Handbags" || activeTab === "Menswear" || activeTab === "Energy" || activeTab === "Snacks" || activeTab === "Coffee" || activeTab === "Candy" || activeTab === "Protein" || activeTab === "Hydration" || activeTab === "Pickleball" || activeTab === "Fitness" || activeTab === "Running" || activeTab === "Camping" || activeTab === "Fishing" || activeTab === "Kitchen" || activeTab === "Cleaning" || activeTab === "Storage" || activeTab === "Decor" || activeTab === "Bedding" || activeTab === "Bathroom" || activeTab === "Dogs" || activeTab === "Cats" || activeTab === "Toys" || activeTab === "Collectibles" || activeTab === "Cards" || activeTab === "Crafts" ? (
+          {activeTab === "Sports & Outdoors" || activeTab === "Fashion" || activeTab === "Beauty & Care" || activeTab === "Food & Beverage" || activeTab === "Home & Living" || activeTab === "Pets & Hobbies" || activeTab === "Golf" || activeTab === "Skincare" || activeTab === "Makeup" || activeTab === "Haircare" || activeTab === "Fragrance" || activeTab === "Nails" || activeTab === "Bodycare" || activeTab === "Dresses" || activeTab === "Activewear" || activeTab === "Shoes" || activeTab === "Jewelry" || activeTab === "Handbags" || activeTab === "Menswear" || activeTab === "Energy" || activeTab === "Snacks" || activeTab === "Coffee" || activeTab === "Candy" || activeTab === "Protein" || activeTab === "Hydration" || activeTab === "Pickleball" || activeTab === "Fitness" || activeTab === "Running" || activeTab === "Camping" || activeTab === "Fishing" || activeTab === "Kitchen" || activeTab === "Cleaning" || activeTab === "Storage" || activeTab === "Decor" || activeTab === "Bedding" || activeTab === "Bathroom" || activeTab === "Dogs" || activeTab === "Cats" || activeTab === "Toys" || activeTab === "Collectibles" || activeTab === "Cards" || activeTab === "Crafts" ? (
             <GolfShopTable category={activeTab} />
           ) : (
             <ToolTable tools={filteredTools} focused useTwentyFourHourSourceDisplay={activeTab === "Trending" && activeTimeframe === "24H"} displayStatsMode={activeTab === "Trending" ? activeTimeframe === "30D" ? "30D" : activeTimeframe === "ALL" ? "ALL" : "default" : "default"} />
