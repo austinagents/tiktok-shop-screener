@@ -53,6 +53,13 @@ const individualCategories = new Set(
   Object.values(categoryGroups).flat()
 );
 
+const PAGE_SIZE = 100;
+
+function parsePage(value) {
+  const page = Number.parseInt(value ?? "1", 10);
+  return Number.isFinite(page) && page > 0 ? page : 1;
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -70,6 +77,7 @@ export default {
 
     if (url.pathname === "/shops") {
       const requestedCategory = url.searchParams.get("category");
+      const requestedPage = parsePage(url.searchParams.get("page"));
 
       let category = "Sports & Outdoors";
       let categories = categoryGroups["Sports & Outdoors"];
@@ -86,8 +94,35 @@ export default {
       }
 
       const placeholders = categories.map(() => "?").join(", ");
+      const filteredSellersSql = `
+        WITH matched_sellers AS (
+          SELECT DISTINCT seller_id
+          FROM shop_categories
+          WHERE category IN (${placeholders})
+        )
+      `;
 
-      const sql = `
+      const shopFiltersSql = `
+        s.tiktok_unique_id IS NOT NULL
+        AND TRIM(s.tiktok_unique_id) <> ''
+        AND TRIM(s.tiktok_unique_id) NOT IN ('-', '—')
+        AND NOT (
+          LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) GLOB 'user[0-9]*'
+          AND LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) NOT GLOB '*[^0-9user]*'
+        )
+      `;
+
+      const countSql = `
+        ${filteredSellersSql}
+        SELECT COUNT(*) AS total
+        FROM matched_sellers ms
+        INNER JOIN shops s
+          ON s.seller_id = ms.seller_id
+        WHERE ${shopFiltersSql}
+      `;
+
+      const shopsSql = `
+        ${filteredSellersSql}
         SELECT
           s.seller_id,
           s.name,
@@ -101,32 +136,38 @@ export default {
           s.affiliate_creator_count,
           s.tiktok_unique_id,
           s.avatar_url
-        FROM shops s
-        WHERE EXISTS (
-          SELECT 1
-          FROM shop_categories sc
-          WHERE sc.seller_id = s.seller_id
-            AND sc.category IN (${placeholders})
-        )
-          AND s.tiktok_unique_id IS NOT NULL
-          AND TRIM(s.tiktok_unique_id) <> ''
-          AND TRIM(s.tiktok_unique_id) NOT IN ('-', '—')
-          AND NOT (
-            LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) GLOB 'user[0-9]*'
-            AND LOWER(LTRIM(TRIM(s.tiktok_unique_id), '@')) NOT GLOB '*[^0-9user]*'
-          )
-        ORDER BY s.day7_total_gmv DESC
+        FROM matched_sellers ms
+        INNER JOIN shops s
+          ON s.seller_id = ms.seller_id
+        WHERE ${shopFiltersSql}
+        ORDER BY s.day7_total_gmv DESC, s.seller_id
+        LIMIT ?
+        OFFSET ?
       `;
 
       try {
-        const result = await env.DB
-          .prepare(sql)
+        const totalRow = await env.DB
+          .prepare(countSql)
           .bind(...categories)
+          .first();
+
+        const total = totalRow?.total ?? 0;
+        const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+        const page = Math.min(requestedPage, totalPages);
+        const offset = (page - 1) * PAGE_SIZE;
+
+        const result = await env.DB
+          .prepare(shopsSql)
+          .bind(...categories, PAGE_SIZE, offset)
           .all();
 
         return Response.json({
           category,
           categories,
+          total,
+          page,
+          pageSize: PAGE_SIZE,
+          totalPages,
           count: result.results.length,
           shops: result.results,
         });

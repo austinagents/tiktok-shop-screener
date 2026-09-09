@@ -6,16 +6,17 @@ const SHOPS_API_BASE_URL =
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
-  const category =
-    searchParams.get("category") ?? "Sports & Outdoors";
+  const category = searchParams.get("category") ?? "Sports & Outdoors";
+  const page = searchParams.get("page") ?? "1";
 
   try {
-    const response = await fetch(
-      `${SHOPS_API_BASE_URL}/shops?category=${encodeURIComponent(category)}`,
-      {
-        cache: "no-store",
-      }
-    );
+    const workerUrl = new URL("/shops", SHOPS_API_BASE_URL);
+    workerUrl.searchParams.set("category", category);
+    workerUrl.searchParams.set("page", page);
+
+    const response = await fetch(workerUrl, {
+      cache: "no-store",
+    });
 
     const body = await response.text();
 
