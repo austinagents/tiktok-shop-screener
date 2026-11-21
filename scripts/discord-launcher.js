@@ -18,13 +18,15 @@ const {
 const DISCORD_APPLICATION_ID = "1547077950199828480";
 const SCREENER_CHANNEL_ID = "1547082017471070288";
 const LAUNCH_CUSTOM_ID = "screener:launch";
+const MODERATED_CHANNEL_ID = "1568479851889954836";
+const LINK_PATTERN = /(?:https?:\/\/|www\.)\S+|\b(?:[a-z0-9-]+\.)+[a-z]{2,24}(?:[\/?#]\S*)?/i;
 
 if (!process.env.DISCORD_TOKEN) {
   throw new Error("DISCORD_TOKEN is missing from the environment.");
 }
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds]
+  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
 
 function componentsV2(components, extra = {}) {
@@ -110,6 +112,32 @@ async function ensurePublicMessage() {
   console.log("TikTok Shop Screener launcher created.");
   return message;
 }
+
+
+// Quiet moderation: only the designated channel; never reply or send a DM.
+async function silentlyRemoveLinksAndFiles(message) {
+  if (!message || message.channelId !== MODERATED_CHANNEL_ID || message.author?.bot) {
+    return;
+  }
+
+  if (!message.attachments?.size && !LINK_PATTERN.test(message.content || "")) {
+    return;
+  }
+
+  try {
+    await message.delete();
+  } catch (error) {
+    // Log only to the service console; no channel messages or user notifications.
+    if (error.code !== 10008) {
+      console.error("Screener channel moderation delete failed:", error);
+    }
+  }
+}
+
+client.on(Events.MessageCreate, silentlyRemoveLinksAndFiles);
+client.on(Events.MessageUpdate, (_oldMessage, newMessage) => {
+  void silentlyRemoveLinksAndFiles(newMessage);
+});
 
 client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isButton() || interaction.customId !== LAUNCH_CUSTOM_ID) {
