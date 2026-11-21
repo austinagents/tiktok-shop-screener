@@ -8,6 +8,7 @@ const {
   Client,
   ContainerBuilder,
   Events,
+  EmbedBuilder,
   GatewayIntentBits,
   MessageFlags,
   SeparatorBuilder,
@@ -19,6 +20,7 @@ const DISCORD_APPLICATION_ID = "1547077950199828480";
 const SCREENER_CHANNEL_ID = "1547082017471070288";
 const LAUNCH_CUSTOM_ID = "screener:launch";
 const MODERATED_CHANNEL_ID = "1568479851889954836";
+const MODERATION_LOG_CHANNEL_ID = "1573591477420957829";
 const LINK_PATTERN = /(?:https?:\/\/|www\.)\S+|\b(?:[a-z0-9-]+\.)+[a-z]{2,24}(?:[\/?#]\S*)?/i;
 
 if (!process.env.DISCORD_TOKEN) {
@@ -124,13 +126,49 @@ async function silentlyRemoveLinksAndFiles(message) {
     return;
   }
 
+  const hasAttachments = Boolean(message.attachments?.size);
+  const hasLink = LINK_PATTERN.test(message.content || "");
+  const reason = [hasLink && "Link", hasAttachments && "Attachment"].filter(Boolean).join(" + ");
+
   try {
     await message.delete();
   } catch (error) {
-    // Log only to the service console; no channel messages or user notifications.
     if (error.code !== 10008) {
       console.error("Screener channel moderation delete failed:", error);
     }
+    return;
+  }
+
+  // Log only successful deletions; no public response or user notification.
+  try {
+    const logChannel = await client.channels.fetch(MODERATION_LOG_CHANNEL_ID);
+    if (!logChannel?.isTextBased() || typeof logChannel.send !== "function") {
+      throw new Error("Moderation log channel is not a writable text channel.");
+    }
+
+    const originalContent = message.content || "";
+    const attachmentList = [...(message.attachments?.values() || [])]
+      .map((file) => file.name || file.url || "Unnamed attachment")
+      .join("\n");
+    const embed = new EmbedBuilder()
+      .setColor(0xc75b5b)
+      .setTitle("Message removed")
+      .addFields(
+        { name: "User", value: (message.author?.username || "Unknown") + " (ID: " + (message.author?.id || "unknown") + ")" },
+        { name: "Channel", value: "<#" + MODERATED_CHANNEL_ID + ">" },
+        { name: "Reason", value: reason },
+        { name: "Message", value: originalContent.slice(0, 1024) || "(No text)" }
+      )
+      .setTimestamp(new Date());
+    if (attachmentList) {
+      embed.addFields({ name: "Attachments", value: attachmentList.slice(0, 1024) });
+    }
+    if (originalContent.length > 1024) {
+      embed.addFields({ name: "Note", value: "Message truncated to 1,024 characters." });
+    }
+    await logChannel.send({ embeds: [embed], allowedMentions: { parse: [] } });
+  } catch (error) {
+    console.error("Screener moderation admin log failed:", error);
   }
 }
 
