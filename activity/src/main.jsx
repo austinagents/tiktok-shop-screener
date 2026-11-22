@@ -40,9 +40,6 @@ const HEATMAP_GROUPS = [
 ];
 
 function App() {
-  const isDiscord =
-    new URLSearchParams(window.location.search).has("frame_id") ||
-    new URLSearchParams(window.location.search).has("instance_id");
   const [ready, setReady] = useState(false);
   const [activityError, setActivityError] = useState("");
 
@@ -166,7 +163,8 @@ function App() {
             <div className="primaryTable">
               <div className="sectionHeader tightHeader">
                 <div>
-                  <h1>{category}</h1>
+                  <h1>Trending TikTok Shops</h1>
+                  <p className="activitySectionHint">{category} · Shop rankings and estimated sales</p>
                 </div>
               </div>
 
@@ -186,7 +184,8 @@ function App() {
               <section className="previewPanel">
                 <div className="panelHeader">
                   <div>
-                    <h2>Attention Heatmap</h2>
+                    <h2>Category Map</h2>
+                    <p className="activityMapHint">Explore shops by category</p>
                   </div>
                 </div>
 
@@ -197,6 +196,37 @@ function App() {
               </section>
             </aside>
           </section>
+
+          <div className="activityPagination" aria-label="Shop results pagination">
+                  <span className="paginationSummary">
+                    {loading ? "Loading shops..." : `${total.toLocaleString()} shops`}
+                  </span>
+          
+                  {totalPages > 1 ? (
+                    <div className="paginationControls">
+                      <button
+                        type="button"
+                        disabled={loading || page === 1}
+                        onClick={() => setPage(page - 1)}
+                      >
+                        Previous
+                      </button>
+          
+                      <span className="paginationPage">
+                        Page {page} of {totalPages}
+                      </span>
+          
+                      <button
+                        type="button"
+                        disabled={loading || page === totalPages}
+                        onClick={() => setPage(page + 1)}
+                      >
+                        Next
+                      </button>
+                    </div>
+                  ) : null}
+                </div>
+
         </div>
       </main>
     </div>
@@ -310,43 +340,7 @@ function ShopTable({
         </table>
       </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 16,
-          padding: "18px 4px 8px"
-        }}
-      >
-        <span style={{ fontSize: 13, opacity: 0.75 }}>
-          {loading ? "Loading shops..." : `${total.toLocaleString()} shops`}
-        </span>
 
-        {totalPages > 1 ? (
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <button
-              type="button"
-              disabled={loading || page === 1}
-              onClick={() => setPage(page - 1)}
-            >
-              Previous
-            </button>
-
-            <span style={{ fontSize: 13 }}>
-              Page {page} of {totalPages}
-            </span>
-
-            <button
-              type="button"
-              disabled={loading || page === totalPages}
-              onClick={() => setPage(page + 1)}
-            >
-              Next
-            </button>
-          </div>
-        ) : null}
-      </div>
     </>
   );
 }
