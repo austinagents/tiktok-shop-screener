@@ -6402,7 +6402,6 @@ body {
 .activity-app .homeRail { width: 100%; min-width: 0; }
 .activity-app .activityPagination {
   display: flex;
-  grid-column: 1 / -1;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -6432,7 +6431,7 @@ body {
 .activity-app .homeRail .attentionHeatmapComponent .attentionTaxonomyGrid { min-height: 0; }
 @media (max-width: 900px) {
   .activity-app .homePrimary { grid-template-columns: minmax(0, 1fr); }
-  .activity-app .activityPagination { grid-column: 1; }
+  
   .activity-app .homeRail { width: 100%; }
   .activity-app .attentionTaxonomyGrid { min-height: 0; }
 }
