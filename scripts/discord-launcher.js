@@ -117,18 +117,17 @@ async function ensurePublicMessage() {
 
 
 // Quiet moderation: only the designated channel; never reply or send a DM.
-async function silentlyRemoveLinksAndFiles(message) {
+async function silentlyRemoveLinks(message) {
   if (!message || message.channelId !== MODERATED_CHANNEL_ID || message.author?.bot) {
     return;
   }
 
-  if (!message.attachments?.size && !LINK_PATTERN.test(message.content || "")) {
+  // Only links in message text are prohibited. Images and other uploads are allowed.
+  if (!LINK_PATTERN.test(message.content || "")) {
     return;
   }
 
-  const hasAttachments = Boolean(message.attachments?.size);
-  const hasLink = LINK_PATTERN.test(message.content || "");
-  const reason = [hasLink && "Link", hasAttachments && "Attachment"].filter(Boolean).join(" + ");
+  const reason = "Link";
 
   try {
     await message.delete();
@@ -172,9 +171,9 @@ async function silentlyRemoveLinksAndFiles(message) {
   }
 }
 
-client.on(Events.MessageCreate, silentlyRemoveLinksAndFiles);
+client.on(Events.MessageCreate, silentlyRemoveLinks);
 client.on(Events.MessageUpdate, (_oldMessage, newMessage) => {
-  void silentlyRemoveLinksAndFiles(newMessage);
+  void silentlyRemoveLinks(newMessage);
 });
 
 client.on(Events.InteractionCreate, async (interaction) => {
