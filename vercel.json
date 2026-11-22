@@ -1,0 +1,16 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "cd activity && npm ci && npm run build",
+  "outputDirectory": "activity/dist",
+  "rewrites": [
+    {
+      "source": "/api/shops",
+      "destination": "https://tiktok-shop-screener-api.austindtaylor7.workers.dev/shops"
+    },
+    {
+      "source": "/avatar/:path*",
+      "destination": "https://tiktok-shop-screener-api.austindtaylor7.workers.dev/avatar/:path*"
+    }
+  ]
+}
