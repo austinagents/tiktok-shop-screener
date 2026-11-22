@@ -1,0 +1,55 @@
+
+.screenerSourceTabs {display:flex;gap:8px;margin:4px 0 16px;flex-wrap:wrap;}
+.screenerSourceTabs button {border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:7px;padding:10px 15px;cursor:pointer;}
+.screenerSourceTabs button.active,.screenerSourceTabs button:hover {border-color:var(--green);color:var(--text);background:rgba(149,184,123,.1);}
+.plScreen {min-width:0;display:grid;gap:14px;color:var(--text);}
+.plHeading {display:flex;align-items:center;justify-content:space-between;gap:20px;min-width:0;}
+.plHeading h1 {font-size:clamp(22px,2.7vw,32px);line-height:1.25;margin:4px 0 5px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.plHeading p {margin:0;font-size:12px;}
+.plFeedLabel {font-size:11px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--muted);white-space:nowrap;}
+.plModeToggle {display:inline-flex;gap:4px;background:#0c1216;border:1px solid var(--line);border-radius:8px;padding:4px;vertical-align:middle;}
+.plModeToggle button {font-size:17px;font-weight:700;cursor:pointer;padding:7px 12px;border:0;background:transparent;color:var(--muted);border-radius:5px;}
+.plModeToggle button.active {background:rgba(149,184,123,.16);color:var(--green);}
+.plCategoryNav {display:flex;gap:6px;max-width:100%;overflow-x:auto;padding:0 0 7px;scrollbar-width:thin;}
+.plCategoryNav button {flex:0 0 auto;padding:9px 12px;background:var(--panel);border:1px solid var(--line);color:var(--muted);border-radius:6px;white-space:nowrap;cursor:pointer;font-size:12px;}
+.plCategoryNav button.active,.plCategoryNav button:hover {color:var(--green);border-color:var(--green);}
+.plTableHeading {display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.plTableHeading h2 {font-size:20px;margin:0;}
+.plTableHeading p {font-size:12px;margin:3px 0 0;}
+.plTableHeading>span {font-size:12px;color:var(--green);border:1px solid var(--line);padding:7px 10px;border-radius:6px;}
+.plTableCard {min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden;}
+.plScroll {max-height:min(67vh,850px);overflow:auto;}
+.plTable {width:100%;border-collapse:collapse;min-width:875px;}
+.plTable th {position:sticky;top:0;z-index:1;text-align:left;color:var(--muted);background:#0b1115;font-weight:600;font-size:11px;text-transform:uppercase;white-space:nowrap;padding:12px 11px;border-bottom:1px solid var(--line);}
+.plTable td {padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:12px;}
+.plTable tbody tr:hover {background:rgba(149,184,123,.045);}
+.plIdentity {display:flex;align-items:center;gap:8px;min-width:180px;}
+.plIdentity strong {overflow:hidden;text-overflow:ellipsis;max-width:220px;}
+.plAvatar {height:30px;width:30px;flex:0 0 30px;border:1px solid var(--line);border-radius:6px;background:#0b1712;display:grid;place-items:center;color:var(--green);font-weight:800;overflow:hidden;}
+.plAvatar img {width:100%;height:100%;object-fit:cover;}
+.plGmv {color:var(--green);font-weight:700;}
+.plTable a {color:#78b5ef;}
+.plState {padding:28px 18px;min-height:130px;color:var(--muted);}
+.plState p {margin:7px 0 0;}
+.plFooter {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 14px;min-height:58px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);}
+.plFooter>div {display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.plFooter button {background:#10181e;color:var(--text);border:1px solid var(--line);padding:7px 12px;border-radius:6px;cursor:pointer;}
+.plFooter button:hover:not(:disabled) {border-color:var(--green);}
+.plFooter button:disabled {opacity:.35;cursor:default;}
+.plDisclaimer {font-size:11px;margin:0;color:var(--muted);}
+@media(max-width:680px){
+ .plHeading {align-items:flex-start;}
+ .plFeedLabel {display:none;}
+ .plScroll {max-height:none;overflow:visible;}
+ .plTable {min-width:0;}
+ .plTable thead {display:none;}
+ .plTable tbody {display:grid;gap:8px;padding:8px;}
+ .plTable tr {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border:1px solid var(--line);border-radius:7px;}
+ .plTable td {display:grid;gap:4px;min-width:0;white-space:normal;border:0;padding:0;overflow-wrap:anywhere;}
+ .plTable td::before {content:attr(data-label);text-transform:uppercase;color:var(--muted);font-size:10px;}
+ .plTable td:nth-child(2) {grid-column:span 2;}
+ .plIdentity {min-width:0;}
+ .plIdentity strong {max-width:100%;}
+ .plFooter {justify-content:center;text-align:center;}
+ .plFooter>div {justify-content:center;}
+}
