@@ -11,6 +11,14 @@
     {
       "source": "/avatar/:path*",
       "destination": "https://tiktok-shop-screener-api.austindtaylor7.workers.dev/avatar/:path*"
+    },
+    {
+      "source": "/partnerlinks-api/shops",
+      "destination": "https://partnerlinks.ai/api/shops"
+    },
+    {
+      "source": "/partnerlinks-api/creators",
+      "destination": "https://partnerlinks.ai/api/creators"
     }
   ]
 }
