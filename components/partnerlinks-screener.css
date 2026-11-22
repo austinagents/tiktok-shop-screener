@@ -53,3 +53,7 @@
 
 .plEyebrow{display:block;color:var(--green);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;}
 .plScreen .plHeader h1{margin:0 0 5px;}
+
+.screenerSourceTabs{display:flex;gap:8px;flex-wrap:wrap;margin:2px 0 12px;}
+.screenerSourceTabs button{border:1px solid var(--line);background:var(--panel);color:var(--muted);padding:10px 14px;border-radius:7px;cursor:pointer;}
+.screenerSourceTabs button.active,.screenerSourceTabs button:hover{border-color:var(--green);color:var(--text);background:rgba(149,184,123,.1);}
