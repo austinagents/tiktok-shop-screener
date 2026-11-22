@@ -178,6 +178,36 @@ function App() {
                 totalPages={totalPages}
                 setPage={setPage}
               />
+
+              <div className="activityPagination" aria-label="Shop results pagination">
+                                <span className="paginationSummary">
+                                  {loading ? "Loading shops..." : `${total.toLocaleString()} shops`}
+                                </span>
+                        
+                                {totalPages > 1 ? (
+                                  <div className="paginationControls">
+                                    <button
+                                      type="button"
+                                      disabled={loading || page === 1}
+                                      onClick={() => setPage(page - 1)}
+                                    >
+                                      Previous
+                                    </button>
+                        
+                                    <span className="paginationPage">
+                                      Page {page} of {totalPages}
+                                    </span>
+                        
+                                    <button
+                                      type="button"
+                                      disabled={loading || page === totalPages}
+                                      onClick={() => setPage(page + 1)}
+                                    >
+                                      Next
+                                    </button>
+                                  </div>
+                                ) : null}
+                              </div>
             </div>
 
             <aside className="homeRail">
@@ -197,35 +227,7 @@ function App() {
             </aside>
           </section>
 
-          <div className="activityPagination" aria-label="Shop results pagination">
-                  <span className="paginationSummary">
-                    {loading ? "Loading shops..." : `${total.toLocaleString()} shops`}
-                  </span>
-          
-                  {totalPages > 1 ? (
-                    <div className="paginationControls">
-                      <button
-                        type="button"
-                        disabled={loading || page === 1}
-                        onClick={() => setPage(page - 1)}
-                      >
-                        Previous
-                      </button>
-          
-                      <span className="paginationPage">
-                        Page {page} of {totalPages}
-                      </span>
-          
-                      <button
-                        type="button"
-                        disabled={loading || page === totalPages}
-                        onClick={() => setPage(page + 1)}
-                      >
-                        Next
-                      </button>
-                    </div>
-                  ) : null}
-                </div>
+
 
         </div>
       </main>
