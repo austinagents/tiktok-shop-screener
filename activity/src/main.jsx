@@ -40,9 +40,6 @@ const HEATMAP_GROUPS = [
 ];
 
 function App() {
-  const isDiscord =
-    new URLSearchParams(window.location.search).has("frame_id") ||
-    new URLSearchParams(window.location.search).has("instance_id");
   const [ready, setReady] = useState(false);
   const [activityError, setActivityError] = useState("");
 
@@ -149,6 +146,17 @@ function App() {
 
       <main className="pageShell">
         <div className="homeStack">
+          <div className="pageIntro">
+            <div>
+              <span className="eyebrow">Shop intelligence</span>
+              <h1>Shop rankings</h1>
+              <p>Explore category leaders by recent and lifetime sales performance.</p>
+            </div>
+            <div className="dataStatus" aria-label="Live shop data">
+              <span aria-hidden="true" /> Live data
+            </div>
+          </div>
+
           <nav className="screenTabs" aria-label="Shop category filters">
             {CATEGORY_TABS.map(tab => (
               <button
@@ -164,9 +172,10 @@ function App() {
 
           <section className="homePrimary">
             <div className="primaryTable">
-              <div className="sectionHeader tightHeader">
+              <div className="sectionHeader tableSectionHeader">
                 <div>
                   <h1>{category}</h1>
+                  <p>{loading ? "Updating rankings…" : `${total.toLocaleString()} ranked shops`}</p>
                 </div>
               </div>
 
@@ -186,7 +195,9 @@ function App() {
               <section className="previewPanel">
                 <div className="panelHeader">
                   <div>
-                    <h2>Attention Heatmap</h2>
+                    <span className="eyebrow">Browse</span>
+                    <h2>Category map</h2>
+                    <p>Select a subcategory to refine the rankings.</p>
                   </div>
                 </div>
 
@@ -217,10 +228,10 @@ function ShopTable({
 
   if (error) {
     return (
-      <div className="tableWrap">
-        <div style={{ padding: 24 }}>
+      <div className="shopTableCard tableState">
+        <div>
           <strong>Unable to load shops.</strong>
-          <p style={{ margin: "8px 0 0", opacity: 0.75 }}>{error}</p>
+          <p>{error}</p>
         </div>
       </div>
     );
@@ -228,7 +239,8 @@ function ShopTable({
 
   return (
     <>
-      <div className="tableWrap">
+      <div className="shopTableCard">
+        <div className="tableWrap" aria-busy={loading}>
         <table className="terminalTable toolsTable focusedToolsTable">
           <thead>
             <tr>
@@ -244,11 +256,11 @@ function ShopTable({
           <tbody>
             {shops.map((shop, index) => (
               <tr key={shop.seller_id}>
-                <td className="rank">
+                <td className="rank" data-label="Rank">
                   #{startRank + index + 1}
                 </td>
 
-                <td>
+                <td data-label="Shop">
                   <div className="toolCell">
                     {shop.avatar_url ? (
                       <img
@@ -261,6 +273,9 @@ function ShopTable({
                         width="32"
                         height="32"
                         loading="lazy"
+                        onError={event => {
+                          event.currentTarget.style.display = "none";
+                        }}
                       />
                     ) : null}
 
@@ -270,11 +285,11 @@ function ShopTable({
                   </div>
                 </td>
 
-                <td>{formatCurrency(shop.day7_total_gmv)}</td>
-                <td>{formatCurrency(shop.total_gmv)}</td>
-                <td>{formatCount(shop.affiliate_creator_count)}</td>
+                <td data-label="7D GMV">{formatCurrency(shop.day7_total_gmv)}</td>
+                <td data-label="Lifetime GMV">{formatCurrency(shop.total_gmv)}</td>
+                <td data-label="Creators">{formatCount(shop.affiliate_creator_count)}</td>
 
-                <td>
+                <td data-label="TikTok">
                   {shop.tiktok_unique_id ? (
                     <a
                       href={`https://www.tiktok.com/@${shop.tiktok_unique_id}`}
@@ -308,44 +323,40 @@ function ShopTable({
             ) : null}
           </tbody>
         </table>
-      </div>
+        {loading && shops.length === 0 ? (
+          <div className="loadingState" role="status">Loading shop rankings…</div>
+        ) : null}
+        </div>
 
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 16,
-          padding: "18px 4px 8px"
-        }}
-      >
-        <span style={{ fontSize: 13, opacity: 0.75 }}>
-          {loading ? "Loading shops..." : `${total.toLocaleString()} shops`}
-        </span>
+        <div className="tableFooter">
+          <span className="shopCount">
+            {loading ? "Updating…" : `${total.toLocaleString()} shops`}
+          </span>
 
-        {totalPages > 1 ? (
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div className="pagination" aria-label="Shop ranking pages">
             <button
               type="button"
               disabled={loading || page === 1}
               onClick={() => setPage(page - 1)}
+              aria-label="Previous page"
             >
               Previous
             </button>
 
-            <span style={{ fontSize: 13 }}>
-              Page {page} of {totalPages}
+            <span>
+              <strong>{page}</strong> <span aria-hidden="true">/</span><span className="srOnly">of</span> {totalPages}
             </span>
 
             <button
               type="button"
               disabled={loading || page === totalPages}
               onClick={() => setPage(page + 1)}
+              aria-label="Next page"
             >
               Next
             </button>
           </div>
-        ) : null}
+        </div>
       </div>
     </>
   );
