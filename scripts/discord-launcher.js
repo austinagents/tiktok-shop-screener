@@ -21,6 +21,7 @@ const SCREENER_CHANNEL_ID = "1547082017471070288";
 const LAUNCH_CUSTOM_ID = "screener:launch";
 const MODERATED_CHANNEL_ID = "1568479851889954836";
 const MODERATION_LOG_CHANNEL_ID = "1573591477420957829";
+const LINK_EXEMPT_USER_ID = "1499515682964902070";
 const LINK_PATTERN = /(?:https?:\/\/|www\.)\S+|\b(?:[a-z0-9-]+\.)+[a-z]{2,24}(?:[\/?#]\S*)?/i;
 
 if (!process.env.DISCORD_TOKEN) {
@@ -118,7 +119,7 @@ async function ensurePublicMessage() {
 
 // Quiet moderation: only the designated channel; never reply or send a DM.
 async function silentlyRemoveLinks(message) {
-  if (!message || message.channelId !== MODERATED_CHANNEL_ID || message.author?.bot) {
+  if (!message || message.channelId !== MODERATED_CHANNEL_ID || message.author?.bot || message.author?.id === LINK_EXEMPT_USER_ID) {
     return;
   }
 
