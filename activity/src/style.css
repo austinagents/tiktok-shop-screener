@@ -6388,3 +6388,401 @@ body {
 .activity-app .homePrimary {
   gap: 18px;
 }
+
+/* Screener Activity — consolidated interface layer */
+.activity-app {
+  --activity-bg: #07100f;
+  --activity-panel: #0d1715;
+  --activity-panel-raised: #111d1a;
+  --activity-line: #25342f;
+  --activity-line-strong: #3b5148;
+  --activity-text: #eef4f0;
+  --activity-muted: #8fa098;
+  --activity-accent: #a8c98d;
+  min-height: 100dvh;
+  color: var(--activity-text);
+  background:
+    radial-gradient(circle at 50% -12%, rgba(141, 178, 111, 0.1), transparent 32rem),
+    var(--activity-bg);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.activity-app .topbar {
+  height: 68px;
+  padding: 11px max(20px, calc((100% - 1240px) / 2));
+  border-color: rgba(59, 81, 72, 0.7);
+  background: rgba(7, 16, 15, 0.9);
+}
+
+.activity-app .brandMark {
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 10px;
+  background: var(--activity-panel-raised);
+}
+
+.activity-app .brandMark img { width: 38px; height: 38px; }
+.activity-app .brand strong { font-size: 14px; letter-spacing: -0.01em; }
+.activity-app .brand small { color: var(--activity-muted); font-size: 10px; letter-spacing: 0.08em; }
+
+.activity-app .pageShell {
+  width: min(1240px, calc(100% - 40px));
+  padding: 28px 0 48px;
+}
+
+.activity-app .homeStack { gap: 18px; }
+
+.activity-app .pageIntro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.activity-app .eyebrow {
+  display: block;
+  margin: 0 0 6px;
+  color: var(--activity-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.activity-app .pageIntro h1 {
+  margin: 0;
+  font-size: clamp(26px, 3.4vw, 38px);
+  font-weight: 680;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.activity-app .pageIntro p,
+.activity-app .panelHeader p {
+  margin: 7px 0 0;
+  color: var(--activity-muted);
+  font-size: 13px;
+}
+
+.activity-app .dataStatus {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid var(--activity-line);
+  border-radius: 999px;
+  color: #b8c5bf;
+  background: rgba(13, 23, 21, 0.78);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.activity-app .dataStatus > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--activity-accent);
+}
+
+.activity-app .screenTabs {
+  gap: 5px;
+  margin: 0;
+  padding: 4px;
+  border: 1px solid var(--activity-line);
+  border-radius: 10px;
+  background: rgba(13, 23, 21, 0.72);
+  scrollbar-width: none;
+}
+
+.activity-app .screenTabs::-webkit-scrollbar { display: none; }
+
+.activity-app .screenTabs button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  color: #9baba4;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.activity-app .screenTabs button:hover {
+  border-color: var(--activity-line);
+  color: var(--activity-text);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.activity-app .screenTabs button.active {
+  border-color: var(--activity-line-strong);
+  color: #dcebd4;
+  background: #18251f;
+}
+
+.activity-app .homePrimary {
+  grid-template-columns: minmax(0, 1fr) 310px;
+  gap: 18px;
+  align-items: start;
+}
+
+.activity-app .tableSectionHeader {
+  min-height: 52px;
+  margin: 0;
+  padding: 0 2px 10px;
+  align-items: flex-end;
+}
+
+.activity-app .tableSectionHeader h1 {
+  margin: 0;
+  color: var(--activity-text);
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.activity-app .tableSectionHeader p {
+  margin: 4px 0 0;
+  color: var(--activity-muted);
+  font-size: 12px;
+}
+
+.activity-app .shopTableCard {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 56px;
+  height: 760px;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--activity-line);
+  border-radius: 11px;
+  background: var(--activity-panel);
+}
+
+.activity-app .shopTableCard.tableState {
+  display: grid;
+  place-items: center;
+  height: 220px;
+  padding: 24px;
+  text-align: center;
+}
+
+.activity-app .shopTableCard.tableState p { margin: 7px 0 0; color: var(--activity-muted); }
+
+.activity-app .primaryTable .tableWrap {
+  height: auto;
+  max-height: none;
+  overflow: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  scrollbar-color: #3a4c45 transparent;
+  scrollbar-width: thin;
+}
+
+.activity-app .focusedToolsTable {
+  min-width: 700px;
+  table-layout: fixed;
+  background: transparent;
+}
+
+.activity-app .focusedToolsTable th,
+.activity-app .focusedToolsTable td {
+  height: 50px;
+  padding: 9px 12px;
+  overflow: hidden;
+  border-color: rgba(37, 52, 47, 0.74);
+  color: #dce5e0;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+
+.activity-app .focusedToolsTable th {
+  height: 42px;
+  color: #84968e;
+  background: #0a1311;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.activity-app .focusedToolsTable tr:hover td { background: rgba(168, 201, 141, 0.035) !important; }
+.activity-app .focusedToolsTable .rank { color: #71827a; }
+.activity-app .focusedToolsTable .toolCell { gap: 10px; min-width: 0; }
+.activity-app .focusedToolsTable .toolCell span { min-width: 0; overflow: hidden; }
+.activity-app .focusedToolsTable .toolCell strong { overflow: hidden; font-size: 13px; font-weight: 620; text-overflow: ellipsis; }
+
+.activity-app .focusedToolsTable .toolCell img {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border: 1px solid var(--activity-line);
+  border-radius: 7px;
+  object-fit: cover;
+  background: #101a17;
+}
+
+.activity-app .focusedToolsTable a {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  color: #8dbfb9;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+
+.activity-app .focusedToolsTable a:hover { color: #b9ded9; text-decoration: underline; text-underline-offset: 3px; }
+.activity-app .focusedToolsTable th:nth-child(1), .activity-app .focusedToolsTable td:nth-child(1) { width: 9%; min-width: 0; }
+.activity-app .focusedToolsTable th:nth-child(2), .activity-app .focusedToolsTable td:nth-child(2) { width: 27%; max-width: none; }
+.activity-app .focusedToolsTable th:nth-child(3), .activity-app .focusedToolsTable td:nth-child(3) { width: 15%; }
+.activity-app .focusedToolsTable th:nth-child(4), .activity-app .focusedToolsTable td:nth-child(4) { width: 17%; }
+.activity-app .focusedToolsTable th:nth-child(5), .activity-app .focusedToolsTable td:nth-child(5) { width: 13%; }
+.activity-app .focusedToolsTable th:nth-child(6), .activity-app .focusedToolsTable td:nth-child(6) { width: 19%; }
+
+.activity-app .loadingState {
+  display: grid;
+  place-items: center;
+  min-height: 160px;
+  color: var(--activity-muted);
+  font-size: 13px;
+}
+
+.activity-app .tableFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 12px 0 16px;
+  border-top: 1px solid var(--activity-line);
+  background: #0b1512;
+}
+
+.activity-app .shopCount { color: var(--activity-muted); font-size: 12px; }
+.activity-app .pagination { display: flex; align-items: center; gap: 10px; }
+.activity-app .pagination > span { min-width: 42px; color: var(--activity-muted); text-align: center; font-size: 12px; }
+.activity-app .pagination strong { color: var(--activity-text); font-weight: 650; }
+
+.activity-app .pagination button {
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid var(--activity-line);
+  border-radius: 7px;
+  color: #cbd7d1;
+  background: var(--activity-panel-raised);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.activity-app .pagination button:hover:not(:disabled) { border-color: var(--activity-line-strong); color: white; }
+.activity-app .pagination button:disabled { opacity: 0.38; cursor: not-allowed; }
+.activity-app .srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+
+.activity-app .homeRail { width: 310px; min-width: 310px; }
+
+.activity-app .previewPanel {
+  height: 760px;
+  margin-top: 52px;
+  padding: 16px;
+  overflow: hidden;
+  border-color: var(--activity-line);
+  border-radius: 11px;
+  background: var(--activity-panel);
+}
+
+.activity-app .previewPanel .panelHeader { min-height: 72px; margin: 0 0 14px; }
+.activity-app .previewPanel h2 { color: var(--activity-text); font-size: 17px; font-weight: 650; letter-spacing: -0.02em; }
+.activity-app .previewPanel .panelHeader p { line-height: 1.4; }
+.activity-app .homeRail .attentionHeatmapComponent .attentionTaxonomyGrid { min-height: 0; height: 626px; gap: 8px; }
+.activity-app .homeRail .attentionHeatmapComponent .attentionCluster { gap: 6px; padding: 8px; border-color: var(--activity-line); border-radius: 9px; background: #0b1512; }
+.activity-app .homeRail .attentionHeatmapComponent .attentionClusterLabel { min-height: 14px; color: #789087; font-size: 8px; letter-spacing: 0.07em; }
+.activity-app .homeRail .attentionHeatmapComponent .attentionClusterBody { gap: 4px; }
+.activity-app .homeRail .attentionHeatmapComponent .attentionNode {
+  min-height: 0;
+  padding: 3px 5px;
+  border-color: #263a33;
+  border-radius: 5px;
+  color: #a9c2b8;
+  background: #101b18;
+  font-size: 10px;
+}
+.activity-app .homeRail .attentionHeatmapComponent .attentionNode:hover { border-color: #4b665b; color: #d8e5df; background: #14231e; }
+.activity-app .attentionNode.heatmap-tag-button.active { border-color: #88ab70; color: #d5ecc3; background: rgba(141, 178, 111, 0.14); }
+
+@media (max-width: 980px) {
+  .activity-app .homePrimary { grid-template-columns: 1fr; }
+  .activity-app .homeRail { width: 100%; min-width: 0; }
+  .activity-app .previewPanel { height: auto; margin-top: 0; }
+  .activity-app .homeRail .attentionHeatmapComponent .attentionTaxonomyGrid { height: auto; min-height: 520px; }
+}
+
+@media (max-width: 720px) {
+  .activity-app .topbar { height: 62px; padding-inline: 14px; }
+  .activity-app .pageShell { width: calc(100% - 24px); padding: 20px 0 32px; }
+  .activity-app .pageIntro { align-items: flex-start; }
+  .activity-app .pageIntro p { max-width: 28rem; }
+  .activity-app .dataStatus { display: none; }
+  .activity-app .screenTabs { margin-inline: 0; padding-inline: 4px; }
+  .activity-app .screenTabs button { padding-inline: 11px; font-size: 12px; }
+  .activity-app .shopTableCard { height: 680px; }
+  .activity-app .focusedToolsTable,
+  .activity-app .focusedToolsTable tbody { display: block; min-width: 0; width: 100%; }
+  .activity-app .focusedToolsTable thead { display: none; }
+  .activity-app .focusedToolsTable tbody { padding: 8px; }
+  .activity-app .focusedToolsTable tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 14px;
+    margin-bottom: 8px;
+    padding: 14px;
+    border: 1px solid var(--activity-line);
+    border-radius: 9px;
+    background: #0c1614;
+  }
+  .activity-app .focusedToolsTable td,
+  .activity-app .focusedToolsTable td:nth-child(n) {
+    display: block;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    text-overflow: ellipsis;
+  }
+  .activity-app .focusedToolsTable td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 4px;
+    color: #71847b;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .activity-app .focusedToolsTable td[data-label="Shop"] { grid-column: 1 / -1; grid-row: 1; }
+  .activity-app .focusedToolsTable td[data-label="Rank"] { grid-column: 1 / -1; grid-row: 2; }
+  .activity-app .focusedToolsTable .toolCell strong { white-space: normal; }
+  .activity-app .focusedToolsTable td:last-child,
+  .activity-app .focusedToolsTable td:last-child a { overflow: hidden; text-overflow: ellipsis; }
+  .activity-app .previewPanel { padding: 14px; }
+  .activity-app .homeRail .attentionHeatmapComponent .attentionTaxonomyGrid { min-height: 580px; }
+}
+
+@media (max-width: 430px) {
+  .activity-app .brand strong { font-size: 13px; }
+  .activity-app .pageIntro h1 { font-size: 27px; }
+  .activity-app .tableFooter { padding-inline: 10px; }
+  .activity-app .pagination { gap: 6px; }
+  .activity-app .pagination button { padding-inline: 9px; }
+  .activity-app .shopCount { max-width: 76px; }
+  .activity-app .homeRail .attentionHeatmapComponent .attentionTaxonomyGrid { grid-template-columns: 1fr; grid-template-rows: none; min-height: 0; }
+  .activity-app .attentionHeatmapComponent .attentionCluster.markets,
+  .activity-app .attentionHeatmapComponent .attentionCluster.growth,
+  .activity-app .attentionHeatmapComponent .attentionCluster.kitchen,
+  .activity-app .attentionHeatmapComponent .attentionCluster.builders,
+  .activity-app .attentionHeatmapComponent .attentionCluster.ops,
+  .activity-app .attentionHeatmapComponent .attentionCluster.beauty-tools { grid-column: 1; grid-row: auto; }
+  .activity-app .homeRail .attentionHeatmapComponent .attentionClusterBody { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, 34px); }
+}
