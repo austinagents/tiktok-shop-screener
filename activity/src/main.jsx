@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { initializeDiscord, openExternalLink } from "./discord";
 import "./style.css";
+import { PartnerLinksIntelligence } from "./partnerlinks";
+import "./partnerlinks.css";
 
 const CATEGORY_TABS = [
   "Sports & Outdoors",
@@ -40,6 +42,7 @@ const HEATMAP_GROUPS = [
 ];
 
 function App() {
+  const [view, setView] = useState("partnerlinks");
   const [ready, setReady] = useState(false);
   const [activityError, setActivityError] = useState("");
 
@@ -67,7 +70,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || view !== "legacy") return;
 
     const controller = new AbortController();
 
@@ -104,7 +107,7 @@ function App() {
       });
 
     return () => controller.abort();
-  }, [ready, category, page]);
+  }, [ready, view, category, page]);
 
   function chooseCategory(nextCategory) {
     setCategory(nextCategory);
@@ -145,7 +148,11 @@ function App() {
       </header>
 
       <main className="pageShell">
-        <div className="homeStack">
+        <nav className="screenerSourceTabs" aria-label="Screener data source">
+          <button type="button" aria-pressed={view === "partnerlinks"} className={view === "partnerlinks" ? "active" : ""} onClick={() => setView("partnerlinks")}>PartnerLinks Intelligence</button>
+          <button type="button" aria-pressed={view === "legacy"} className={view === "legacy" ? "active" : ""} onClick={() => setView("legacy")}>Original Shop Screener</button>
+        </nav>
+        {view === "partnerlinks" ? <PartnerLinksIntelligence openExternalLink={openExternalLink} /> : <div className="homeStack">
           <div className="pageIntro">
             <div>
               <span className="eyebrow">Shop intelligence</span>
@@ -208,7 +215,7 @@ function App() {
               </section>
             </aside>
           </section>
-        </div>
+        </div>}
       </main>
     </div>
   );
