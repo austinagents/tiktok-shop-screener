@@ -1,0 +1,55 @@
+
+.plScreen {min-width:0;display:grid;gap:14px;color:var(--text);}
+.plHeader {display:flex;align-items:center;justify-content:space-between;gap:20px;min-width:0;}
+.plHeader h1 {font-size:clamp(22px,2.7vw,32px);line-height:1.25;margin:4px 0 5px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.plHeader p {margin:0;font-size:12px;}
+.plDataSource {font-size:11px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--muted);white-space:nowrap;}
+.plMode {display:inline-flex;gap:4px;background:#0c1216;border:1px solid var(--line);border-radius:8px;padding:4px;vertical-align:middle;}
+.plMode button {font-size:17px;font-weight:700;cursor:pointer;padding:7px 12px;border:0;background:transparent;color:var(--muted);border-radius:5px;}
+.plMode button.active {background:rgba(149,184,123,.16);color:var(--green);}
+.plCategories {display:flex;gap:6px;max-width:100%;overflow-x:auto;padding:0 0 7px;scrollbar-width:thin;}
+.plCategories button {flex:0 0 auto;padding:9px 12px;background:var(--panel);border:1px solid var(--line);color:var(--muted);border-radius:6px;white-space:nowrap;cursor:pointer;font-size:12px;}
+.plCategories button.active,.plCategories button:hover {color:var(--green);border-color:var(--green);}
+.plSectionTitle {display:flex;justify-content:space-between;align-items:center;gap:12px;}
+.plSectionTitle h2 {font-size:20px;margin:0;}
+.plSectionTitle p {font-size:12px;margin:3px 0 0;}
+.plSectionTitle>span {font-size:12px;color:var(--green);border:1px solid var(--line);padding:7px 10px;border-radius:6px;}
+.plTableFrame {min-width:0;background:var(--panel);border:1px solid var(--line);border-radius:9px;overflow:hidden;}
+.plScroll {max-height:min(67vh,850px);overflow:auto;}
+.plResults {width:100%;border-collapse:collapse;min-width:875px;}
+.plResults th {position:sticky;top:0;z-index:1;text-align:left;color:var(--muted);background:#0b1115;font-weight:600;font-size:11px;text-transform:uppercase;white-space:nowrap;padding:12px 11px;border-bottom:1px solid var(--line);}
+.plResults td {padding:9px 11px;border-bottom:1px solid var(--line);white-space:nowrap;font-size:12px;}
+.plResults tbody tr:hover {background:rgba(149,184,123,.045);}
+.plIdentity {display:flex;align-items:center;gap:8px;min-width:180px;}
+.plIdentity strong {overflow:hidden;text-overflow:ellipsis;max-width:220px;}
+.plAvatar {height:30px;width:30px;flex:0 0 30px;border:1px solid var(--line);border-radius:6px;background:#0b1712;display:grid;place-items:center;color:var(--green);font-weight:800;overflow:hidden;}
+.plAvatar img {width:100%;height:100%;object-fit:cover;}
+.plMetric {color:var(--green);font-weight:700;}
+.plResults a {color:#78b5ef;}
+.plMessage {padding:28px 18px;min-height:130px;color:var(--muted);}
+.plMessage p {margin:7px 0 0;}
+.plFooter {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 14px;min-height:58px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);}
+.plFooter>div {display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+.plFooter button {background:#10181e;color:var(--text);border:1px solid var(--line);padding:7px 12px;border-radius:6px;cursor:pointer;}
+.plFooter button:hover:not(:disabled) {border-color:var(--green);}
+.plFooter button:disabled {opacity:.35;cursor:default;}
+.plFootnote {font-size:11px;margin:0;color:var(--muted);}
+@media(max-width:680px){
+ .plHeader {align-items:flex-start;}
+ .plDataSource {display:none;}
+ .plScroll {max-height:none;overflow:visible;}
+ .plResults {min-width:0;}
+ .plResults thead {display:none;}
+ .plResults tbody {display:grid;gap:8px;padding:8px;}
+ .plResults tr {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:12px;border:1px solid var(--line);border-radius:7px;}
+ .plResults td {display:grid;gap:4px;min-width:0;white-space:normal;border:0;padding:0;overflow-wrap:anywhere;}
+ .plResults td::before {content:attr(data-label);text-transform:uppercase;color:var(--muted);font-size:10px;}
+ .plResults td:nth-child(2) {grid-column:span 2;}
+ .plIdentity {min-width:0;}
+ .plIdentity strong {max-width:100%;}
+ .plFooter {justify-content:center;text-align:center;}
+ .plFooter>div {justify-content:center;}
+}
+
+.plEyebrow{display:block;color:var(--green);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;}
+.plScreen .plHeader h1{margin:0 0 5px;}
